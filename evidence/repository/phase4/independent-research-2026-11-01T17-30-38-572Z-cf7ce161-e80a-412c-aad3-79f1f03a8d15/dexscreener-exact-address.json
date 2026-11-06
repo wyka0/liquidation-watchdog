@@ -1,0 +1,18 @@
+{
+  "subjectAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+  "subjectChainId": 1672,
+  "url": "https://api.dexscreener.com/token-pairs/v1/pharos/0x4809010926aec940b550D34a46A52739f996D75D",
+  "block": null,
+  "independentComparatorEligible": false,
+  "classification": "RESEARCH_NOT_QUALIFIED_PRICE_EVIDENCE",
+  "retrievedAt": "2026-11-01T17:30:38.388Z",
+  "status": 200,
+  "responseSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "retainedText": "[]",
+  "exactRelevantRows": [],
+  "transformation": "Public document retained in full within byte bound; URL userinfo, queries and fragments removed. Original response SHA-256 retained.",
+  "unresolved": [
+    "No exact temporally aligned collateral/loan quote with proved independent operator and upstream is adopted.",
+    "Issuer redemption rates, API display prices and differently denominated cross-chain feeds require separate qualification."
+  ]
+}

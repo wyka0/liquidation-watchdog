@@ -1,0 +1,16 @@
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+ ✓ test/runtime-process.test.ts (4 tests) 94397ms
+   ✓ PHASE8 FIXTURE: actual runtime processes (4)
+     ✓ guards source imports against HTTP construction, SQLite opens and provider requests 15882ms
+     ✓ shuts down a child runtime through SIGINT (Windows: IPC handler simulation) 23739ms
+     ✓ shuts down a child runtime through SIGTERM (Windows: IPC handler simulation) 18136ms
+     ✓ fences a second process and recovers after actual forced OS termination with an unfinished cycle 36628ms
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  05:30:53
+   Duration  106.35s (tests 90%, import 6%, transform 4%)
+
+JSON report written to [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/runtime-rerun-tests.json

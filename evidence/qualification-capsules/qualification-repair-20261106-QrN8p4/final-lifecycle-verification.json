@@ -1,0 +1,2201 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-11-06T00:57:29.103Z",
+  "completedAt": "2026-11-06T00:57:30.438Z",
+  "checks": [
+    {
+      "id": "BATCH_ALL_PHASES_PASS",
+      "status": "PASS",
+      "detail": [
+        "qualified-independent-v2",
+        "qualified-runtime-process-v2",
+        "qualified-focused-v2",
+        "qualified-full-v2",
+        "qualified-checks-v2"
+      ]
+    },
+    {
+      "id": "qualified-independent-v2_SUMMARY_HASH",
+      "status": "PASS",
+      "detail": "83554bb3fc3572d14c6d13416fb717eb9bcdbc14d935d83397403cb3c2dd2b70"
+    },
+    {
+      "id": "qualified-independent-v2_ARTIFACT_tests.stdout.txt",
+      "status": "PASS",
+      "detail": "2155ec8cc4941d9088cfd8a8e237b413bea1b401c01bf0c263eb3a3b352d535f"
+    },
+    {
+      "id": "qualified-independent-v2_ARTIFACT_tests.stderr.txt",
+      "status": "PASS",
+      "detail": "e7de150c607ddc721a185b2be588ba714cb4f2ec0ba08d60c0f72ee1a4ad881c"
+    },
+    {
+      "id": "qualified-independent-v2_ARTIFACT_network-guard.jsonl",
+      "status": "PASS",
+      "detail": "53e51f5ce61029e95d76d35c57fde7536d83bfeb3128ab95988fb3b07972e303"
+    },
+    {
+      "id": "qualified-independent-v2_ARTIFACT_process-lifecycle.jsonl",
+      "status": "PASS",
+      "detail": "a71861cc8c0465fbeab939c877077f3d654564962b7f637e2d13212bb5600e4f"
+    },
+    {
+      "id": "qualified-independent-v2_ARTIFACT_diagnostic-preloader-used.cjs",
+      "status": "PASS",
+      "detail": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    {
+      "id": "qualified-independent-v2_ARTIFACT_test-runner-used.mjs",
+      "status": "PASS",
+      "detail": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+    },
+    {
+      "id": "qualified-independent-v2_ARTIFACT_runtime-process-test-used.ts",
+      "status": "PASS",
+      "detail": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    {
+      "id": "qualified-independent-v2_ARTIFACT_runtime-helper-used.ts",
+      "status": "PASS",
+      "detail": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    },
+    {
+      "id": "qualified-independent-v2_CHILD_8864",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 1,
+        "forcedOSDeath": true,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-independent-v2_CHILD_7808",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-independent-v2_REMOVE_watchdog-phase3-fixture-Oezc2E",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          8864,
+          7808
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-independent-v2_NO_FIXTURE_REMNANTS_OR_CLEANUP_ERRORS",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "qualified-independent-v2_NO_REMOTE_ATTEMPTS",
+      "status": "PASS",
+      "detail": {
+        "records": 4,
+        "allowedLocalNamedPipes": 4
+      }
+    },
+    {
+      "id": "qualified-independent-v2_EXACT_TEST_ACCOUNTING",
+      "status": "PASS",
+      "detail": {
+        "total": 4,
+        "intentionallyUnselected": 3
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_SUMMARY_HASH",
+      "status": "PASS",
+      "detail": "920fc1fc4807dfaec44fe233c6f6de7ec25e1022e6748441641e487f2c6aba29"
+    },
+    {
+      "id": "qualified-runtime-process-v2_ARTIFACT_tests.stdout.txt",
+      "status": "PASS",
+      "detail": "5283ef64241fe43fa92b5f664c15ae46c72ea94080749dd3a6f2f599b36284c9"
+    },
+    {
+      "id": "qualified-runtime-process-v2_ARTIFACT_tests.stderr.txt",
+      "status": "PASS",
+      "detail": "b9e9f46ee1cbc742b746211d106c909700b66b1ee3f01382b89db4a87114d228"
+    },
+    {
+      "id": "qualified-runtime-process-v2_ARTIFACT_network-guard.jsonl",
+      "status": "PASS",
+      "detail": "a015b14d6d2bf13d44a3076ecac82e7f9bcf1cb6714db69655c7d8c8655efd96"
+    },
+    {
+      "id": "qualified-runtime-process-v2_ARTIFACT_process-lifecycle.jsonl",
+      "status": "PASS",
+      "detail": "b4cd947b6027b5499b199f68d079027efd55f51017ffb3eebd8018202e653e8f"
+    },
+    {
+      "id": "qualified-runtime-process-v2_ARTIFACT_diagnostic-preloader-used.cjs",
+      "status": "PASS",
+      "detail": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    {
+      "id": "qualified-runtime-process-v2_ARTIFACT_test-runner-used.mjs",
+      "status": "PASS",
+      "detail": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+    },
+    {
+      "id": "qualified-runtime-process-v2_ARTIFACT_runtime-process-test-used.ts",
+      "status": "PASS",
+      "detail": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    {
+      "id": "qualified-runtime-process-v2_ARTIFACT_runtime-helper-used.ts",
+      "status": "PASS",
+      "detail": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    },
+    {
+      "id": "qualified-runtime-process-v2_CHILD_2232",
+      "status": "PASS",
+      "detail": {
+        "kind": "IMPORT_WITHOUT_IPC",
+        "openedDatabases": 0,
+        "explicitCloses": 0,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_CHILD_13944",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_CHILD_12752",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_CHILD_5512",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 1,
+        "forcedOSDeath": true,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_CHILD_8220",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_REMOVE_watchdog-phase3-fixture-KYhxvW",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          13944
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_REMOVE_watchdog-phase3-fixture-wG0tzt",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          12752
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_REMOVE_watchdog-phase3-fixture-lLVnqQ",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          5512,
+          8220
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_NO_FIXTURE_REMNANTS_OR_CLEANUP_ERRORS",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "qualified-runtime-process-v2_NO_REMOTE_ATTEMPTS",
+      "status": "PASS",
+      "detail": {
+        "records": 10,
+        "allowedLocalNamedPipes": 10
+      }
+    },
+    {
+      "id": "qualified-runtime-process-v2_EXACT_TEST_ACCOUNTING",
+      "status": "PASS",
+      "detail": {
+        "total": 4,
+        "intentionallyUnselected": 0
+      }
+    },
+    {
+      "id": "qualified-focused-v2_SUMMARY_HASH",
+      "status": "PASS",
+      "detail": "2594096d1da195657058940d8eb696ba8ff759311e6e51207a65464217c51ac7"
+    },
+    {
+      "id": "qualified-focused-v2_ARTIFACT_tests.stdout.txt",
+      "status": "PASS",
+      "detail": "2f3db5965577eb0c6665344d7b05f5c87923b953bc8fd6c179518834f1edaa17"
+    },
+    {
+      "id": "qualified-focused-v2_ARTIFACT_tests.stderr.txt",
+      "status": "PASS",
+      "detail": "011c098d59862dcb08992ab4d14a86780c21968c71e8de0bb935fc900d732a6f"
+    },
+    {
+      "id": "qualified-focused-v2_ARTIFACT_network-guard.jsonl",
+      "status": "PASS",
+      "detail": "a902a238845ff77bf4be5870dd4187dc9c3da12247d6912e52a63fbe18fb0f50"
+    },
+    {
+      "id": "qualified-focused-v2_ARTIFACT_process-lifecycle.jsonl",
+      "status": "PASS",
+      "detail": "335616d0cbb1ae85dcc9b6e812124dbd5f06b01006981e856c5fb474dbd4dcf0"
+    },
+    {
+      "id": "qualified-focused-v2_ARTIFACT_diagnostic-preloader-used.cjs",
+      "status": "PASS",
+      "detail": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    {
+      "id": "qualified-focused-v2_ARTIFACT_test-runner-used.mjs",
+      "status": "PASS",
+      "detail": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+    },
+    {
+      "id": "qualified-focused-v2_ARTIFACT_runtime-process-test-used.ts",
+      "status": "PASS",
+      "detail": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    {
+      "id": "qualified-focused-v2_ARTIFACT_runtime-helper-used.ts",
+      "status": "PASS",
+      "detail": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    },
+    {
+      "id": "qualified-focused-v2_CHILD_3656",
+      "status": "PASS",
+      "detail": {
+        "kind": "IMPORT_WITHOUT_IPC",
+        "openedDatabases": 0,
+        "explicitCloses": 0,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-focused-v2_CHILD_3376",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-focused-v2_CHILD_15892",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-focused-v2_CHILD_2916",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 1,
+        "forcedOSDeath": true,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-focused-v2_CHILD_12240",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-focused-v2_REMOVE_watchdog-phase3-fixture-SDrjGD",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          3376
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-focused-v2_REMOVE_watchdog-phase3-fixture-GFVqXf",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          15892
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-focused-v2_REMOVE_watchdog-phase3-fixture-ajIHc8",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          2916,
+          12240
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-focused-v2_NO_FIXTURE_REMNANTS_OR_CLEANUP_ERRORS",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "qualified-focused-v2_NO_REMOTE_ATTEMPTS",
+      "status": "PASS",
+      "detail": {
+        "records": 34,
+        "allowedLocalNamedPipes": 10
+      }
+    },
+    {
+      "id": "qualified-focused-v2_EXACT_TEST_ACCOUNTING",
+      "status": "PASS",
+      "detail": {
+        "total": 31,
+        "intentionallyUnselected": 0
+      }
+    },
+    {
+      "id": "qualified-full-v2_SUMMARY_HASH",
+      "status": "PASS",
+      "detail": "f8436aa5748ec9972816dda97152f97dfce4e0b2d9cc143615beda28ec93f8b9"
+    },
+    {
+      "id": "qualified-full-v2_ARTIFACT_tests.stdout.txt",
+      "status": "PASS",
+      "detail": "1a86a9d51864ebb7dcdd455ff0483df6ebbc86be4d88ae68f3346ab471208bac"
+    },
+    {
+      "id": "qualified-full-v2_ARTIFACT_tests.stderr.txt",
+      "status": "PASS",
+      "detail": "b0547be537678967593d1acd989261773a270ec18f8a875b3dc32839a2fb04d5"
+    },
+    {
+      "id": "qualified-full-v2_ARTIFACT_network-guard.jsonl",
+      "status": "PASS",
+      "detail": "028cef46ae0ab9c10830cb6e80c330bb27f6729b5e78f680d5bf2f75d4ecc7f5"
+    },
+    {
+      "id": "qualified-full-v2_ARTIFACT_process-lifecycle.jsonl",
+      "status": "PASS",
+      "detail": "33ad382bef584acbc77510883a2329355067d948f015a7f82c0c28f2aa7d8b8b"
+    },
+    {
+      "id": "qualified-full-v2_ARTIFACT_diagnostic-preloader-used.cjs",
+      "status": "PASS",
+      "detail": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    {
+      "id": "qualified-full-v2_ARTIFACT_test-runner-used.mjs",
+      "status": "PASS",
+      "detail": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+    },
+    {
+      "id": "qualified-full-v2_ARTIFACT_runtime-process-test-used.ts",
+      "status": "PASS",
+      "detail": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    {
+      "id": "qualified-full-v2_ARTIFACT_runtime-helper-used.ts",
+      "status": "PASS",
+      "detail": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    },
+    {
+      "id": "qualified-full-v2_CHILD_1476",
+      "status": "PASS",
+      "detail": {
+        "kind": "IMPORT_WITHOUT_IPC",
+        "openedDatabases": 0,
+        "explicitCloses": 0,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-full-v2_CHILD_14012",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-full-v2_CHILD_8292",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-full-v2_CHILD_15140",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 1,
+        "forcedOSDeath": true,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-full-v2_CHILD_16004",
+      "status": "PASS",
+      "detail": {
+        "kind": "RUNTIME_WITH_IPC",
+        "openedDatabases": 5,
+        "explicitCloses": 5,
+        "forcedOSDeath": false,
+        "ipcStateAtClose": false
+      }
+    },
+    {
+      "id": "qualified-full-v2_REMOVE_watchdog-phase3-fixture-VFtBhu",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          14012
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-full-v2_REMOVE_watchdog-phase3-fixture-bFqsNd",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          8292
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-full-v2_REMOVE_watchdog-phase3-fixture-FOzu02",
+      "status": "PASS",
+      "detail": {
+        "childPids": [
+          15140,
+          16004
+        ],
+        "childrenClosedBeforeRemoval": true,
+        "unreleasedObservedSqliteConnections": []
+      }
+    },
+    {
+      "id": "qualified-full-v2_NO_FIXTURE_REMNANTS_OR_CLEANUP_ERRORS",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "qualified-full-v2_NO_REMOTE_ATTEMPTS",
+      "status": "PASS",
+      "detail": {
+        "records": 556,
+        "allowedLocalNamedPipes": 18
+      }
+    },
+    {
+      "id": "qualified-full-v2_EXACT_TEST_ACCOUNTING",
+      "status": "PASS",
+      "detail": {
+        "total": 1007,
+        "intentionallyUnselected": 0
+      }
+    },
+    {
+      "id": "FULL_ORIGINAL_1007_TEST_INVENTORY_PRESERVED",
+      "status": "PASS",
+      "detail": {
+        "oldFiles": 49,
+        "newFiles": 49,
+        "oldTests": 1007,
+        "newTests": 1007
+      }
+    },
+    {
+      "id": "qualified-checks-v2_SUMMARY_HASH",
+      "status": "PASS",
+      "detail": "1ea45d046abc6a58be5b5a597c94df8fcfe49de8528ae118139b9bc49dbf084d"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_typecheck.stdout.txt",
+      "status": "PASS",
+      "detail": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_typecheck.stderr.txt",
+      "status": "PASS",
+      "detail": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_lint.stdout.txt",
+      "status": "PASS",
+      "detail": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_lint.stderr.txt",
+      "status": "PASS",
+      "detail": "e4011ffd490ca039c5470dd1d76c475d0f64e59ef16fc4f2f58f1ed82b8d4dea"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_build.stdout.txt",
+      "status": "PASS",
+      "detail": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_build.stderr.txt",
+      "status": "PASS",
+      "detail": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_network-guard.jsonl",
+      "status": "PASS",
+      "detail": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_process-lifecycle.jsonl",
+      "status": "PASS",
+      "detail": "5b069692552ce589bc1cd83864afb3348326569324feeef7f919f5ab256f8142"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_diagnostic-preloader-used.cjs",
+      "status": "PASS",
+      "detail": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_test-runner-used.mjs",
+      "status": "PASS",
+      "detail": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_runtime-process-test-used.ts",
+      "status": "PASS",
+      "detail": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    {
+      "id": "qualified-checks-v2_ARTIFACT_runtime-helper-used.ts",
+      "status": "PASS",
+      "detail": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    },
+    {
+      "id": "qualified-checks-v2_NO_FIXTURE_REMNANTS_OR_CLEANUP_ERRORS",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "qualified-checks-v2_NO_REMOTE_ATTEMPTS",
+      "status": "PASS",
+      "detail": {
+        "records": 0,
+        "allowedLocalNamedPipes": 0
+      }
+    },
+    {
+      "id": "FINAL_OS_NO_RELEVANT_FIXTURE_TEST_OR_REAL_MONITOR_PROCESS",
+      "status": "PASS",
+      "detail": {
+        "inspectorPid": 14168,
+        "recordedPidsPresent": [],
+        "totalNodeProcesses": 2,
+        "relevantNodeProcesses": [],
+        "observedAtUtc": "2026-11-06T00:57:30.3030948Z"
+      }
+    },
+    {
+      "id": "STAGE2_SOURCE_DATABASE_HASH_BEFORE",
+      "status": "PASS",
+      "detail": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6"
+    },
+    {
+      "id": "STAGE2_DATABASE_COPY_IDENTICAL",
+      "status": "PASS",
+      "detail": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6"
+    },
+    {
+      "id": "STAGE2_STORED_HISTORY_STILL_STOPPED_NO_NEW_CYCLE_OR_DELIVERY",
+      "status": "PASS",
+      "detail": {
+        "quickCheck": [
+          {
+            "quick_check": "ok"
+          }
+        ],
+        "schemaVersion": 5,
+        "cycles": [
+          {
+            "id": "a4e2d2de-af29-4f39-a534-c5dda37c5b60",
+            "status": "COMPLETED",
+            "accepted": 1,
+            "block_number": "22225454",
+            "block_hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d"
+          }
+        ],
+        "runtimes": [
+          {
+            "status": "STOPPED"
+          }
+        ],
+        "deliveries": [
+          {
+            "channel": "console",
+            "status": "DELIVERED",
+            "attempts": 1,
+            "ambiguous": 0
+          },
+          {
+            "channel": "console",
+            "status": "DELIVERED",
+            "attempts": 1,
+            "ambiguous": 0
+          },
+          {
+            "channel": "console",
+            "status": "DELIVERED",
+            "attempts": 1,
+            "ambiguous": 0
+          }
+        ],
+        "actions": [
+          {
+            "code": "DATA_QUALITY_CHANGED",
+            "type": "NON_FINANCIAL",
+            "actionable": 0,
+            "financialOptions": 0
+          },
+          {
+            "code": "ORACLE_QUALITY_CHANGED",
+            "type": "NON_FINANCIAL",
+            "actionable": 0,
+            "financialOptions": 0
+          },
+          {
+            "code": "INITIAL_RISK",
+            "type": "NON_FINANCIAL",
+            "actionable": 0,
+            "financialOptions": 0
+          }
+        ],
+        "unfinishedCycles": 0,
+        "observations": 1
+      }
+    },
+    {
+      "id": "STAGE2_SOURCE_AND_READONLY_COPY_UNCHANGED_AFTER_INSPECTION",
+      "status": "PASS",
+      "detail": {
+        "sourceHash": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6",
+        "copyHash": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6"
+      }
+    }
+  ],
+  "phases": [
+    {
+      "name": "qualified-independent-v2",
+      "status": "PASS",
+      "network": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 4,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 4,
+        "caveat": null
+      },
+      "children": [
+        {
+          "pid": 8864,
+          "parentPid": 5708,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-Oezc2E",
+          "mode": "read",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:48:52.652Z",
+          "readinessAt": "2026-11-06T00:48:57.761Z",
+          "readinessEvent": "reading",
+          "spawnToReadinessMs": 5108.2282,
+          "signal": null,
+          "signalToCloseMs": null,
+          "exitAt": "2026-11-06T00:48:58.392Z",
+          "closeAt": "2026-11-06T00:48:58.393Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 1,
+            "outstandingAtDeath": [
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-independent-v2/temp/opencode/watchdog-phase3-fixture-oezc2e/storage/runtime-owner.sqlite",
+                "count": 1
+              },
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-independent-v2/temp/opencode/watchdog-phase3-fixture-oezc2e/storage/watchdog.sqlite",
+                "count": 2
+              },
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-independent-v2/temp/opencode/watchdog-phase3-fixture-oezc2e/storage/watchdog.sqlite-monitor-lock",
+                "count": 1
+              }
+            ],
+            "release": "OS_RELEASE_AFTER_ACTUAL_SIGKILL_CONFIRMED_BY_CLOSE_REOPEN_AND_REMOVAL",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-Oezc2E\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-Oezc2E\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-Oezc2E\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": null,
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": true
+        },
+        {
+          "pid": 7808,
+          "parentPid": 5708,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-Oezc2E",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:48:58.418Z",
+          "readinessAt": "2026-11-06T00:49:02.881Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 4462.6738,
+          "signal": "SIGTERM",
+          "signalToCloseMs": 39.3036,
+          "exitAt": "2026-11-06T00:49:02.920Z",
+          "closeAt": "2026-11-06T00:49:02.921Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-Oezc2E\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-Oezc2E\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-Oezc2E\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        }
+      ],
+      "runtimeFixtureRemovals": [
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-Oezc2E",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:49:03.081Z",
+          "removedAt": "2026-11-06T00:49:03.099Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            8864,
+            7808
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 8864,
+              "ms": 4687.4425
+            },
+            {
+              "pid": 7808,
+              "ms": 159.8084
+            }
+          ],
+          "pathStillExists": false
+        }
+      ],
+      "allLoggedFixtureRemovalAttempts": 1,
+      "finalFixtureDirectories": [],
+      "retainedTemporaryTopLevelEntries": [
+        "opencode",
+        "tsx-[REDACTED_USER]"
+      ],
+      "rawLifecycleSha256": "a71861cc8c0465fbeab939c877077f3d654564962b7f637e2d13212bb5600e4f"
+    },
+    {
+      "name": "qualified-runtime-process-v2",
+      "status": "PASS",
+      "network": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 10,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 10,
+        "caveat": null
+      },
+      "children": [
+        {
+          "pid": 2232,
+          "parentPid": 11388,
+          "status": "PASS",
+          "kind": "IMPORT_WITHOUT_IPC",
+          "directory": null,
+          "mode": null,
+          "unchangedSpawnTimeoutMs": 20000,
+          "spawnAt": "2026-11-06T00:49:08.456Z",
+          "readinessAt": null,
+          "readinessEvent": null,
+          "spawnToReadinessMs": null,
+          "signal": null,
+          "signalToCloseMs": null,
+          "exitAt": "2026-11-06T00:49:12.154Z",
+          "closeAt": "2026-11-06T00:49:12.155Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": false,
+            "disconnectEventObserved": false,
+            "disconnectedAtClose": true,
+            "limitation": "Import child has no IPC channel; no disconnect event is expected."
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 0,
+            "explicitCloseCallsCompleted": 0,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": []
+          },
+          "workspaceProbes": {
+            "opened": 0,
+            "closed": 0
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        },
+        {
+          "pid": 13944,
+          "parentPid": 11388,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-KYhxvW",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:49:12.254Z",
+          "readinessAt": "2026-11-06T00:49:16.953Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 4698.5301,
+          "signal": "SIGINT",
+          "signalToCloseMs": 51.2692,
+          "exitAt": "2026-11-06T00:49:17.005Z",
+          "closeAt": "2026-11-06T00:49:17.005Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-KYhxvW\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-KYhxvW\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-KYhxvW\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        },
+        {
+          "pid": 12752,
+          "parentPid": 11388,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-wG0tzt",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:49:17.254Z",
+          "readinessAt": "2026-11-06T00:49:22.064Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 4810.3431,
+          "signal": "SIGTERM",
+          "signalToCloseMs": 48.2761,
+          "exitAt": "2026-11-06T00:49:22.112Z",
+          "closeAt": "2026-11-06T00:49:22.113Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-wG0tzt\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-wG0tzt\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-wG0tzt\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        },
+        {
+          "pid": 5512,
+          "parentPid": 11388,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-lLVnqQ",
+          "mode": "read",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:49:22.311Z",
+          "readinessAt": "2026-11-06T00:49:26.850Z",
+          "readinessEvent": "reading",
+          "spawnToReadinessMs": 4538.626,
+          "signal": null,
+          "signalToCloseMs": null,
+          "exitAt": "2026-11-06T00:49:27.787Z",
+          "closeAt": "2026-11-06T00:49:27.787Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 1,
+            "outstandingAtDeath": [
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-runtime-process-v2/temp/opencode/watchdog-phase3-fixture-llvnqq/storage/runtime-owner.sqlite",
+                "count": 1
+              },
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-runtime-process-v2/temp/opencode/watchdog-phase3-fixture-llvnqq/storage/watchdog.sqlite",
+                "count": 2
+              },
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-runtime-process-v2/temp/opencode/watchdog-phase3-fixture-llvnqq/storage/watchdog.sqlite-monitor-lock",
+                "count": 1
+              }
+            ],
+            "release": "OS_RELEASE_AFTER_ACTUAL_SIGKILL_CONFIRMED_BY_CLOSE_REOPEN_AND_REMOVAL",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-lLVnqQ\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-lLVnqQ\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-lLVnqQ\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": null,
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": true
+        },
+        {
+          "pid": 8220,
+          "parentPid": 11388,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-lLVnqQ",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:49:27.813Z",
+          "readinessAt": "2026-11-06T00:49:32.168Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 4354.3981,
+          "signal": "SIGTERM",
+          "signalToCloseMs": 43.2984,
+          "exitAt": "2026-11-06T00:49:32.211Z",
+          "closeAt": "2026-11-06T00:49:32.212Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-lLVnqQ\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-lLVnqQ\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-lLVnqQ\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        }
+      ],
+      "runtimeFixtureRemovals": [
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-KYhxvW",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:49:17.161Z",
+          "removedAt": "2026-11-06T00:49:17.179Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            13944
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 13944,
+              "ms": 156.3444
+            }
+          ],
+          "pathStillExists": false
+        },
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-wG0tzt",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:49:22.213Z",
+          "removedAt": "2026-11-06T00:49:22.231Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            12752
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 12752,
+              "ms": 100.4233
+            }
+          ],
+          "pathStillExists": false
+        },
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-runtime-process-v2\\temp\\opencode\\watchdog-phase3-fixture-lLVnqQ",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:49:32.351Z",
+          "removedAt": "2026-11-06T00:49:32.369Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            5512,
+            8220
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 5512,
+              "ms": 4563.2215
+            },
+            {
+              "pid": 8220,
+              "ms": 138.9843
+            }
+          ],
+          "pathStillExists": false
+        }
+      ],
+      "allLoggedFixtureRemovalAttempts": 3,
+      "finalFixtureDirectories": [],
+      "retainedTemporaryTopLevelEntries": [
+        "opencode",
+        "tsx-[REDACTED_USER]"
+      ],
+      "rawLifecycleSha256": "b4cd947b6027b5499b199f68d079027efd55f51017ffb3eebd8018202e653e8f"
+    },
+    {
+      "name": "qualified-focused-v2",
+      "status": "PASS",
+      "network": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 34,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 10,
+        "caveat": null
+      },
+      "children": [
+        {
+          "pid": 3656,
+          "parentPid": 9532,
+          "status": "PASS",
+          "kind": "IMPORT_WITHOUT_IPC",
+          "directory": null,
+          "mode": null,
+          "unchangedSpawnTimeoutMs": 20000,
+          "spawnAt": "2026-11-06T00:49:47.929Z",
+          "readinessAt": null,
+          "readinessEvent": null,
+          "spawnToReadinessMs": null,
+          "signal": null,
+          "signalToCloseMs": null,
+          "exitAt": "2026-11-06T00:49:51.980Z",
+          "closeAt": "2026-11-06T00:49:51.981Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": false,
+            "disconnectEventObserved": false,
+            "disconnectedAtClose": true,
+            "limitation": "Import child has no IPC channel; no disconnect event is expected."
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 0,
+            "explicitCloseCallsCompleted": 0,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": []
+          },
+          "workspaceProbes": {
+            "opened": 0,
+            "closed": 0
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        },
+        {
+          "pid": 3376,
+          "parentPid": 9532,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-SDrjGD",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:49:52.087Z",
+          "readinessAt": "2026-11-06T00:49:57.685Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 5597.9471,
+          "signal": "SIGINT",
+          "signalToCloseMs": 68.3595,
+          "exitAt": "2026-11-06T00:49:57.754Z",
+          "closeAt": "2026-11-06T00:49:57.755Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-SDrjGD\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-SDrjGD\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-SDrjGD\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        },
+        {
+          "pid": 15892,
+          "parentPid": 9532,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-GFVqXf",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:49:58.271Z",
+          "readinessAt": "2026-11-06T00:50:03.091Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 4819.9111,
+          "signal": "SIGTERM",
+          "signalToCloseMs": 46.7225,
+          "exitAt": "2026-11-06T00:50:03.139Z",
+          "closeAt": "2026-11-06T00:50:03.139Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-GFVqXf\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-GFVqXf\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-GFVqXf\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        },
+        {
+          "pid": 2916,
+          "parentPid": 9532,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-ajIHc8",
+          "mode": "read",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:50:03.335Z",
+          "readinessAt": "2026-11-06T00:50:07.941Z",
+          "readinessEvent": "reading",
+          "spawnToReadinessMs": 4605.4787,
+          "signal": null,
+          "signalToCloseMs": null,
+          "exitAt": "2026-11-06T00:50:08.601Z",
+          "closeAt": "2026-11-06T00:50:08.602Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 1,
+            "outstandingAtDeath": [
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-focused-v2/temp/opencode/watchdog-phase3-fixture-ajihc8/storage/runtime-owner.sqlite",
+                "count": 1
+              },
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-focused-v2/temp/opencode/watchdog-phase3-fixture-ajihc8/storage/watchdog.sqlite",
+                "count": 2
+              },
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-focused-v2/temp/opencode/watchdog-phase3-fixture-ajihc8/storage/watchdog.sqlite-monitor-lock",
+                "count": 1
+              }
+            ],
+            "release": "OS_RELEASE_AFTER_ACTUAL_SIGKILL_CONFIRMED_BY_CLOSE_REOPEN_AND_REMOVAL",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-ajIHc8\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-ajIHc8\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-ajIHc8\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": null,
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": true
+        },
+        {
+          "pid": 12240,
+          "parentPid": 9532,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-ajIHc8",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:50:08.626Z",
+          "readinessAt": "2026-11-06T00:50:12.947Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 4320.9336,
+          "signal": "SIGTERM",
+          "signalToCloseMs": 39.4284,
+          "exitAt": "2026-11-06T00:50:12.987Z",
+          "closeAt": "2026-11-06T00:50:12.987Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-ajIHc8\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-ajIHc8\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-ajIHc8\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        }
+      ],
+      "runtimeFixtureRemovals": [
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-SDrjGD",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:49:58.170Z",
+          "removedAt": "2026-11-06T00:49:58.189Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            3376
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 3376,
+              "ms": 415.8217
+            }
+          ],
+          "pathStillExists": false
+        },
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-GFVqXf",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:50:03.234Z",
+          "removedAt": "2026-11-06T00:50:03.254Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            15892
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 15892,
+              "ms": 95.2796
+            }
+          ],
+          "pathStillExists": false
+        },
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\temp\\opencode\\watchdog-phase3-fixture-ajIHc8",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:50:13.114Z",
+          "removedAt": "2026-11-06T00:50:13.132Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            2916,
+            12240
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 2916,
+              "ms": 4512.6826
+            },
+            {
+              "pid": 12240,
+              "ms": 127.1473
+            }
+          ],
+          "pathStillExists": false
+        }
+      ],
+      "allLoggedFixtureRemovalAttempts": 29,
+      "finalFixtureDirectories": [],
+      "retainedTemporaryTopLevelEntries": [
+        "opencode",
+        "tsx-[REDACTED_USER]"
+      ],
+      "rawLifecycleSha256": "335616d0cbb1ae85dcc9b6e812124dbd5f06b01006981e856c5fb474dbd4dcf0"
+    },
+    {
+      "name": "qualified-full-v2",
+      "status": "PASS",
+      "network": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 556,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 18,
+        "caveat": null
+      },
+      "children": [
+        {
+          "pid": 1476,
+          "parentPid": 12148,
+          "status": "PASS",
+          "kind": "IMPORT_WITHOUT_IPC",
+          "directory": null,
+          "mode": null,
+          "unchangedSpawnTimeoutMs": 20000,
+          "spawnAt": "2026-11-06T00:52:00.820Z",
+          "readinessAt": null,
+          "readinessEvent": null,
+          "spawnToReadinessMs": null,
+          "signal": null,
+          "signalToCloseMs": null,
+          "exitAt": "2026-11-06T00:52:05.382Z",
+          "closeAt": "2026-11-06T00:52:05.383Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": false,
+            "disconnectEventObserved": false,
+            "disconnectedAtClose": true,
+            "limitation": "Import child has no IPC channel; no disconnect event is expected."
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 0,
+            "explicitCloseCallsCompleted": 0,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": []
+          },
+          "workspaceProbes": {
+            "opened": 0,
+            "closed": 0
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        },
+        {
+          "pid": 14012,
+          "parentPid": 12148,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-VFtBhu",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:52:05.527Z",
+          "readinessAt": "2026-11-06T00:52:12.429Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 6901.5286,
+          "signal": "SIGINT",
+          "signalToCloseMs": 65.7286,
+          "exitAt": "2026-11-06T00:52:12.495Z",
+          "closeAt": "2026-11-06T00:52:12.495Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-VFtBhu\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-VFtBhu\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-VFtBhu\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        },
+        {
+          "pid": 8292,
+          "parentPid": 12148,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-bFqsNd",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:52:13.065Z",
+          "readinessAt": "2026-11-06T00:52:19.834Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 6768.3892,
+          "signal": "SIGTERM",
+          "signalToCloseMs": 58.7683,
+          "exitAt": "2026-11-06T00:52:19.892Z",
+          "closeAt": "2026-11-06T00:52:19.893Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-bFqsNd\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-bFqsNd\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-bFqsNd\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        },
+        {
+          "pid": 15140,
+          "parentPid": 12148,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-FOzu02",
+          "mode": "read",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:52:20.211Z",
+          "readinessAt": "2026-11-06T00:52:26.798Z",
+          "readinessEvent": "reading",
+          "spawnToReadinessMs": 6587.6826,
+          "signal": null,
+          "signalToCloseMs": null,
+          "exitAt": "2026-11-06T00:52:27.940Z",
+          "closeAt": "2026-11-06T00:52:27.941Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 1,
+            "outstandingAtDeath": [
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-full-v2/temp/opencode/watchdog-phase3-fixture-fozu02/storage/runtime-owner.sqlite",
+                "count": 1
+              },
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-full-v2/temp/opencode/watchdog-phase3-fixture-fozu02/storage/watchdog.sqlite",
+                "count": 2
+              },
+              {
+                "path": "[REDACTED_LOCAL_PATH]/appdata/local/temp/opencode/qualification-repair-20261106-qrn8p4/qualified-full-v2/temp/opencode/watchdog-phase3-fixture-fozu02/storage/watchdog.sqlite-monitor-lock",
+                "count": 1
+              }
+            ],
+            "release": "OS_RELEASE_AFTER_ACTUAL_SIGKILL_CONFIRMED_BY_CLOSE_REOPEN_AND_REMOVAL",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-FOzu02\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-FOzu02\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-FOzu02\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": null,
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": true
+        },
+        {
+          "pid": 16004,
+          "parentPid": 12148,
+          "status": "PASS",
+          "kind": "RUNTIME_WITH_IPC",
+          "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-FOzu02",
+          "mode": "idle",
+          "unchangedSpawnTimeoutMs": 30000,
+          "spawnAt": "2026-11-06T00:52:27.981Z",
+          "readinessAt": "2026-11-06T00:52:34.476Z",
+          "readinessEvent": "idle",
+          "spawnToReadinessMs": 6494.7395,
+          "signal": "SIGTERM",
+          "signalToCloseMs": 44.8288,
+          "exitAt": "2026-11-06T00:52:34.521Z",
+          "closeAt": "2026-11-06T00:52:34.521Z",
+          "exitBeforeClose": true,
+          "ipc": {
+            "expected": true,
+            "disconnectEventObserved": true,
+            "disconnectedAtClose": true,
+            "limitation": null
+          },
+          "stdio": {
+            "stdoutDestroyedAtClose": true,
+            "stderrDestroyedAtClose": true
+          },
+          "databaseResources": {
+            "openedConnections": 5,
+            "explicitCloseCallsCompleted": 5,
+            "outstandingAtDeath": [],
+            "release": "ALL_OBSERVED_CONNECTIONS_EXPLICITLY_CLOSED",
+            "paths": [
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-FOzu02\\storage\\runtime-owner.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-FOzu02\\storage\\watchdog.sqlite",
+              "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-FOzu02\\storage\\watchdog.sqlite-monitor-lock"
+            ]
+          },
+          "workspaceProbes": {
+            "opened": 4,
+            "closed": 4
+          },
+          "processExitHandleClasses": {
+            "Socket": 2
+          },
+          "closeCallbackParentHandles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          },
+          "childErrors": [],
+          "forcedOSDeath": false
+        }
+      ],
+      "runtimeFixtureRemovals": [
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-VFtBhu",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:52:12.917Z",
+          "removedAt": "2026-11-06T00:52:12.943Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            14012
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 14012,
+              "ms": 421.52
+            }
+          ],
+          "pathStillExists": false
+        },
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-bFqsNd",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:52:20.067Z",
+          "removedAt": "2026-11-06T00:52:20.091Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            8292
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 8292,
+              "ms": 173.9069
+            }
+          ],
+          "pathStillExists": false
+        },
+        {
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-full-v2\\temp\\opencode\\watchdog-phase3-fixture-FOzu02",
+          "status": "PASS",
+          "removalAt": "2026-11-06T00:52:34.693Z",
+          "removedAt": "2026-11-06T00:52:34.718Z",
+          "childrenClosedBeforeRemoval": true,
+          "childPids": [
+            15140,
+            16004
+          ],
+          "unreleasedObservedSqliteConnections": [],
+          "closeToRemovalMs": [
+            {
+              "pid": 15140,
+              "ms": 6752.0372
+            },
+            {
+              "pid": 16004,
+              "ms": 172.0404
+            }
+          ],
+          "pathStillExists": false
+        }
+      ],
+      "allLoggedFixtureRemovalAttempts": 52,
+      "finalFixtureDirectories": [],
+      "retainedTemporaryTopLevelEntries": [
+        "opencode",
+        "tsx-[REDACTED_USER]"
+      ],
+      "rawLifecycleSha256": "33ad382bef584acbc77510883a2329355067d948f015a7f82c0c28f2aa7d8b8b"
+    },
+    {
+      "name": "qualified-checks-v2",
+      "status": "PASS",
+      "network": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 0,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 0,
+        "caveat": null
+      },
+      "children": [],
+      "runtimeFixtureRemovals": [],
+      "allLoggedFixtureRemovalAttempts": 0,
+      "finalFixtureDirectories": [],
+      "retainedTemporaryTopLevelEntries": [
+        "opencode"
+      ],
+      "rawLifecycleSha256": "5b069692552ce589bc1cd83864afb3348326569324feeef7f919f5ab256f8142"
+    }
+  ],
+  "osObservation": {
+    "inspectorPid": 14168,
+    "recordedPidsPresent": [],
+    "totalNodeProcesses": 2,
+    "relevantNodeProcesses": [],
+    "observedAtUtc": "2026-11-06T00:57:30.3030948Z"
+  },
+  "recordedPids": [
+    1476,
+    1608,
+    1788,
+    1976,
+    2008,
+    2220,
+    2232,
+    2716,
+    2916,
+    3040,
+    3148,
+    3368,
+    3376,
+    3440,
+    3520,
+    3532,
+    3564,
+    3656,
+    4000,
+    4192,
+    4608,
+    4860,
+    5056,
+    5216,
+    5400,
+    5512,
+    5708,
+    6060,
+    6268,
+    7104,
+    7416,
+    7808,
+    8220,
+    8292,
+    8864,
+    9068,
+    9244,
+    9412,
+    9532,
+    9540,
+    10204,
+    10600,
+    10800,
+    11176,
+    11388,
+    11804,
+    11988,
+    12040,
+    12148,
+    12240,
+    12332,
+    12340,
+    12380,
+    12496,
+    12752,
+    12820,
+    12892,
+    13732,
+    13772,
+    13800,
+    13860,
+    13944,
+    14012,
+    14028,
+    15140,
+    15320,
+    15432,
+    15436,
+    15444,
+    15564,
+    15668,
+    15672,
+    15840,
+    15852,
+    15892,
+    16004,
+    16372,
+    16376
+  ],
+  "realStage2StoreInspection": {
+    "source": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\watchdog.sqlite",
+    "sourceSha256": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6",
+    "readOnlyCopy": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\final-read-only-store-copies\\stage2-watchdog.sqlite",
+    "copiedSha256": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6",
+    "closeCompleted": true,
+    "stored": {
+      "quickCheck": [
+        {
+          "quick_check": "ok"
+        }
+      ],
+      "schemaVersion": 5,
+      "cycles": [
+        {
+          "id": "a4e2d2de-af29-4f39-a534-c5dda37c5b60",
+          "status": "COMPLETED",
+          "accepted": 1,
+          "block_number": "22225454",
+          "block_hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d"
+        }
+      ],
+      "runtimes": [
+        {
+          "status": "STOPPED"
+        }
+      ],
+      "deliveries": [
+        {
+          "channel": "console",
+          "status": "DELIVERED",
+          "attempts": 1,
+          "ambiguous": 0
+        },
+        {
+          "channel": "console",
+          "status": "DELIVERED",
+          "attempts": 1,
+          "ambiguous": 0
+        },
+        {
+          "channel": "console",
+          "status": "DELIVERED",
+          "attempts": 1,
+          "ambiguous": 0
+        }
+      ],
+      "actions": [
+        {
+          "code": "DATA_QUALITY_CHANGED",
+          "type": "NON_FINANCIAL",
+          "actionable": 0,
+          "financialOptions": 0
+        },
+        {
+          "code": "ORACLE_QUALITY_CHANGED",
+          "type": "NON_FINANCIAL",
+          "actionable": 0,
+          "financialOptions": 0
+        },
+        {
+          "code": "INITIAL_RISK",
+          "type": "NON_FINANCIAL",
+          "actionable": 0,
+          "financialOptions": 0
+        }
+      ],
+      "unfinishedCycles": 0,
+      "observations": 1
+    }
+  },
+  "limits": [
+    "Observed _getActiveHandles classes are diagnostics, not an exhaustive OS handle inventory; the close callback may still display a retiring parent ChildProcess handle.",
+    "No IPC disconnect event is expected for the import-only child. Each runtime child has an observed disconnect plus destroyed stdout/stderr at close.",
+    "SIGKILL does not execute application finally or SQLite close; resource release is established by actual process close, successful original lock/recovery assertions, directory removal and final OS absence.",
+    "The OS observation is point-in-time. Unrelated user/harness processes are not terminated or modified, and no command line or credential is printed.",
+    "Evidence/output directories and tool caches are deliberately retained; qualified runtime fixture directories are removed, while historical failure remnants stay preserved."
+  ],
+  "safety": {
+    "noApplicationImportsOrMonitoringCycle": true,
+    "noNetworkRequest": true,
+    "noOriginalDatabaseOpened": true,
+    "readOnlyCopiedDatabaseExplicitlyClosed": true,
+    "noProcessTermination": true,
+    "noRepositoryWrite": true,
+    "noExternalNotificationTransactionOrWalletOperation": true,
+    "realMonitor": "STOPPED"
+  }
+}

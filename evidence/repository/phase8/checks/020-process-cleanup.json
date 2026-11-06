@@ -1,0 +1,12 @@
+{
+  "command": "node [REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-process.mjs",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T15:05:38.838Z",
+  "finishedAt": "2026-11-02T15:05:40.521Z",
+  "durationMs": 1678,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "{\n  \"kind\": \"PHASE8_OWNED_RUNTIME_PROCESS_CLEANUP\",\n  \"checkedAt\": \"2026-11-02T15:05:40.479Z\",\n  \"passed\": true,\n  \"command\": \"node [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-process.mjs\",\n  \"query\": {\n    \"provider\": \"Win32_Process\",\n    \"filter\": \"Name = 'node.exe' AND (CommandLine LIKE '%dist%service.js%' OR CommandLine LIKE '%src%service.ts%' OR CommandLine LIKE '%dist%cli.js%' OR CommandLine LIKE '%src%cli.ts%' OR CommandLine LIKE '%phase5-worker.ts%' OR CommandLine LIKE '%phase8-runtime.ts%' OR CommandLine LIKE '%monitoring-smoke.ts%' OR CommandLine LIKE '%oracle-smoke.ts%' OR CommandLine LIKE '%operations-smoke.ts%' OR CommandLine LIKE '%phase5-stability.ts%' OR CommandLine LIKE '%phase8-reliability.ts%')\",\n    \"returnedProperties\": [\n      \"Name\",\n      \"ProcessId\"\n    ]\n  },\n  \"matchingProcesses\": [],\n  \"count\": 0,\n  \"commandLinesRetrieved\": false,\n  \"processesStoppedByThisCheck\": 0,\n  \"unrelatedSellerProcess\": \"NOT_TARGETED_OR_MODIFIED\",\n  \"productionServiceInstalled\": false,\n  \"indefiniteMonitoringStarted\": false\n}\n",
+  "stderr": ""
+}

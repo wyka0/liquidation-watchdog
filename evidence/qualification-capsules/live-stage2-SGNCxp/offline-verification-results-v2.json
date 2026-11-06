@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "evidenceClass": "OFFLINE_VERIFICATION_OF_CAPTURED_LIVE_BYTES_NOT_A_NEW_LIVE_CYCLE",
+  "startedAt": "2026-11-05T23:58:39.679Z",
+  "completedAt": "2026-11-05T23:58:41.231Z",
+  "checks": [
+    {
+      "name": "LIVE_ARTIFACT_BYTE_HASHES",
+      "status": "PASS",
+      "detail": {
+        "count": 12,
+        "mainEvidenceSha256": "f94ec2761c77d2ddb219c8215dd3b6ac0ee9836ced59798c36740fe19f6b2124"
+      }
+    },
+    {
+      "name": "IDENTITY_CONFIGURATION_AND_REVIEWED_SOURCE_HASHES",
+      "status": "PASS",
+      "detail": {
+        "sourceReferences": 6,
+        "scope": "1d9d31ed07649d3c00247bb62b508432ece0d26c3f29ab74b8ff82fa7325eb61",
+        "positionId": "2868fdc6591f5ec9674c9a33febfd27023f136783e11c24cb6dbd5f82994a06f",
+        "historicalDataUsedAsCurrentInput": false,
+        "newBlockDelta": "2423"
+      }
+    },
+    {
+      "name": "CANONICAL_SNAPSHOT_AND_ASSURANCE_REFERENCE_BINDINGS",
+      "status": "PASS",
+      "detail": {
+        "canonicalSnapshotIdentifier": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+        "snapshotFileSha256": "c4df894aeb206fa42c808525a47b5ed7524f54d9915b354e8f01e3a5c770938a",
+        "schemaParsedSnapshotSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+        "assuranceReferencesChecked": 33,
+        "supplementalSha256": "ee8b81e3c10b119d7f94688c923d7953b3fd4202965d144b6c23bc41ad3e06f6",
+        "explanation": "Canonical typed identity, captured-file bytes and schema-parsed serialization hashes are deliberately distinct."
+      }
+    },
+    {
+      "name": "PURE_CAPTURED_PIPELINE_REPRODUCTION",
+      "status": "PASS",
+      "detail": {
+        "accepted": true,
+        "alertCodes": [
+          "INITIAL_RISK",
+          "DATA_QUALITY_CHANGED",
+          "ORACLE_QUALITY_CHANGED"
+        ],
+        "newLiveReads": 0,
+        "monitoringServiceInvocations": 0,
+        "progression": "UNKNOWN/FIRST_OBSERVATION",
+        "financialOptionsGenerated": 0
+      }
+    },
+    {
+      "name": "PINNED_GETTER_REDECODING_AND_PRODUCTION_CROSS_CHECKS",
+      "status": "PASS",
+      "detail": {
+        "directGetters": 10,
+        "productionComparisons": 58,
+        "sentinels": 6,
+        "contracts": 10,
+        "mixedBlockProductionReads": 0,
+        "beforeAfterHeaderSets": 2,
+        "providerIndependence": "RPC_MCP_SHARED_UPSTREAM_NOT_INDEPENDENT"
+      }
+    },
+    {
+      "name": "SEPARATE_INTEGER_ACCOUNTING_AND_THRESHOLD_RECHECK",
+      "status": "PASS",
+      "detail": {
+        "fields": 17,
+        "debt": "18001980562580",
+        "collateral": "18706585513096000000000000",
+        "safetyRatioWad": "1052543254080507595",
+        "mathematical": "CRITICAL",
+        "effective": "DATA_UNVERIFIED",
+        "liquidationEligibilityProven": false
+      }
+    },
+    {
+      "name": "ACTUAL_CONSOLE_BYTES_TIMESTAMPS_AND_ONE_TYPED_ACTION",
+      "status": "PASS",
+      "detail": {
+        "alerts": 3,
+        "actionsPerAlert": 1,
+        "generatedNonFinancialActions": 3,
+        "financialOptions": 0,
+        "actualConsoleTranscriptBytes": 3664,
+        "actualConsoleTranscriptSha256": "1fa8721cd6de619e98f3ac46837627e02eb7f39bff042d6df0bd7168a938aaa8"
+      }
+    },
+    {
+      "name": "BOUNDED_ORACLE_AUDIT_REDECODING_AND_GAP_CHECK",
+      "status": "PASS",
+      "detail": {
+        "requests": 44,
+        "configurationEvents": 0,
+        "updateSamples": 2,
+        "signedSamples": [
+          {
+            "transactionHash": "0xf4e5dbc3bca19c58e5c6b5eac7cbad45769a9ead1f7379292599780d2b73fbb4",
+            "recoveredSignatures": 4,
+            "reportAndReceiptMatched": true,
+            "workflowAllowedAtTransactionBlock": true,
+            "historicalSignerOperatorIdentityProven": false
+          },
+          {
+            "transactionHash": "0xd549e17fc2b8ca9170091e9884df6baefca6ee9f6ff1f4de8fb1218438680b09",
+            "recoveredSignatures": 4,
+            "reportAndReceiptMatched": true,
+            "workflowAllowedAtTransactionBlock": true,
+            "historicalSignerOperatorIdentityProven": false
+          }
+        ],
+        "sampledCurrentSigners": 10,
+        "f": 3,
+        "currentAndHistoricalMembershipKeptDistinct": true,
+        "observedIntervalSeconds": "3601",
+        "intervalIsHeartbeatGuarantee": false,
+        "freshness": "UNKNOWN",
+        "independentValidation": "NOT_CONFIGURED",
+        "financialRecoveryEligible": false
+      }
+    },
+    {
+      "name": "READ_ONLY_SQLITE_PERSISTENCE_AND_RESTART_BINDING",
+      "status": "PASS",
+      "detail": {
+        "cycles": 1,
+        "alerts": 3,
+        "delivered": 3,
+        "attemptsEach": 1,
+        "pending": 0,
+        "runtime": "STOPPED",
+        "logicalTableHashesUnchanged": true,
+        "restartNewObservations": 0,
+        "restartResends": 0,
+        "liveReadOnlyNetworkRequests": 118,
+        "exactlyOneLiveRunOnce": true
+      }
+    }
+  ],
+  "checkGroupsPassed": 9,
+  "checkGroupsFailed": 0,
+  "network": {
+    "fetchAttempts": 0,
+    "socketAttempts": 0,
+    "remoteAccessPermitted": false
+  },
+  "verifierNote": "The first offline verifier stopped on a JS-prototype-only comparison of SQLite attempt rows versus parsed JSON. Its diagnostic result is retained; this revision compares their complete serialized values, without changing evidence or production code.",
+  "retainedDiagnosticFile": "offline-verification-results.json",
+  "baselineStoreContentHashes": {
+    "schema_migrations": "9d0c7ef044fb9d259c2c40f01bf03f772d1b0478e8f36bf44a2757e3e028fcb6",
+    "streams": "5d0ed3362750fb03e5957e1707a9ede4980d43a34b89117be4794aeadd55292f",
+    "cycles": "2658e6f67cb7ecde7e26416c84f333a5fdd1a65911fb3ffdddcf3bc4f6770d6d",
+    "fingerprints": "b4703d25e8ee1b48c00c06319427ab4ce1c27ed32201f5c34783d9eb0828061e",
+    "alerts": "e5dd7c201ca5a14ed9821eaf4069499230e764c9337fd05d14766be00e7ec268",
+    "deliveries": "2591037f212ad493e664d536bb960f1423aba1cfaadcaaf02b827d9b9bc0d160",
+    "delivery_attempts": "d428b62bdaf5e14e26d9debc5a622b9c57f1709ebaa28383c212b0a24c4f0c5d",
+    "delivery_events": "2d1737c7db07faf5886fd11e0136cfa00f0d5216a0e9bd605377b881c2502162",
+    "provider_limits": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "oracle_assurance": "87b45b3c6584fbe18cf4c97f2b93175bf1faf2f598ae27b7a3e9834d714099b7",
+    "worker_runtime": "d4ed4492411fb19a93bd4488ef544bec7e387efd71f734492acc3a9706a523b7",
+    "operational_events": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "statement": "No delivery adapter or MonitoringService was called; all re-rendering and recalculation are offline."
+}

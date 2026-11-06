@@ -1,0 +1,2 @@
+Usage: npm run watchdog -- inspect [--block <decimal block>] [--save-evidence]
+Default: a current block-pinned public demonstration position, checked by RPC and Chain MCP.

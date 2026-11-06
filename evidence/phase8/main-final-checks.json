@@ -1,0 +1,3285 @@
+{
+  "kind": "PHASE8_FINAL_MAIN_TREE_CHECKS",
+  "startedAt": "2026-11-02T15:15:41.376Z",
+  "finishedAt": "2026-11-02T15:17:30.732Z",
+  "passed": true,
+  "integrity": {
+    "checkedAt": "2026-11-02T15:15:48.044Z",
+    "passed": true,
+    "immutableOriginalFilesMatched": 1236,
+    "expectedSourceOrBuildChanges": [
+      {
+        "path": "dist/storage/store.d.ts",
+        "bytes": 194371,
+        "sha256": "dfedde000b6d9a4b58693be48cab8a21d7395a5efd2f5c30d0805959a2eaae7b"
+      },
+      {
+        "path": "dist/storage/store.js",
+        "bytes": 42006,
+        "sha256": "a87fb24ac16a710f37089585e17f0df79cf177759bd05755b2b6d4f4665031b3"
+      },
+      {
+        "path": "dist/storage/store.js.map",
+        "bytes": 36246,
+        "sha256": "1556816be8becb665955023bd2c58d074a3e2c2ad79f5c4660d558473aff0be5"
+      },
+      {
+        "path": "scripts/release-inputs.ts",
+        "bytes": 5169,
+        "sha256": "d58940e8fe7d76d38d18252f8f0f00ae8ff6018dd333fa033743df4b6b819324"
+      },
+      {
+        "path": "src/storage/store.ts",
+        "bytes": 39310,
+        "sha256": "86f5292bb04c2147dc71e02d6d7b1b3f81c6136dcc8838ad2b74acc8284332d9"
+      }
+    ],
+    "originalSnapshotFilesMatched": 1241,
+    "phase7BindingsMatched": 7,
+    "gitIndexUnchanged": true,
+    "gitIndexSha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689",
+    "command": "node [REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-safety.mjs check"
+  },
+  "sourceMatchesCandidate": true,
+  "buildMatchesCandidate": true,
+  "checkedDocuments": [
+    {
+      "path": "docs/phase8-report.md",
+      "bytes": 17991,
+      "sha256": "f6b6d3bfe0969827f89a9207c2ad8da6c365ac6033373cc8f50957ee297ea702"
+    },
+    {
+      "path": "docs/phase8-files.md",
+      "bytes": 9421,
+      "sha256": "a863b8863562faf8476ab7187b0a5f25f778d8c9d462040e5ce97c712b722ed9"
+    },
+    {
+      "path": "docs/render-runtime-operations.md",
+      "bytes": 13090,
+      "sha256": "284e148662253f307f6433b968099894841affc76875318a75f09ff7ca6c64b0"
+    },
+    {
+      "path": "docs/render-dashboard-api.md",
+      "bytes": 11372,
+      "sha256": "0bbb4d2894b6a3cf36c73d265325f9af09fcee4db244c4019b55b7588a625bd0"
+    },
+    {
+      "path": "docs/phase8-test-evidence.md",
+      "bytes": 20564,
+      "sha256": "566908ecc8196c82df42aa53f72118d1de95639d86c10e254393d3f54571ab11"
+    }
+  ],
+  "reportSections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "documentationLinks": {
+    "passed": true,
+    "checks": [
+      {
+        "document": "README.md",
+        "target": "docs/release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/thresholds.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-assurance.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-freshness.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-independent-validation.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-assurance.md#configuration-continuity-and-persistent-alerts",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/monitoring-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/alerting.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/notification-setup.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/operations-runbook.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/rollback-and-recovery.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "config/production.example.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": ".env.example",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/environment-variables.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-investigation.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/phase5-report.md#12-tests-and-exact-verification-results",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/testing.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/risk/live/risk-report.txt",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/risk/live/risk-result.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/operations-smoke.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/stability-results.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/release-manifest.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/release-manifest-check.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/oracle-smoke.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/oracle-evidence-verification.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/monitoring-smoke.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/prior-phases-integrity.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase5/historical-regression.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase4/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase3/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase2/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase2/phase1-evidence-integrity.json",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "evidence/phase1/cli-report.txt",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/evidence.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/phase5-report.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/production-readiness-gaps.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/phase5-files.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/production-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/deployment.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/environment-variables.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/operations-runbook.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/reliability-testing.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/production-security.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/rollback-and-recovery.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/phase4-report.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/phase4-files.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-assurance.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-freshness.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-independent-validation.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/phase3-report.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/phase3-files.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/phase2-report.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/risk-engine.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/thresholds.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/recommendation-math.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/architecture.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/accounting.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/oracle-investigation.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/testing.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/evidence.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/security-and-quality.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/reuse.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/phase2-files.md",
+        "exists": true
+      },
+      {
+        "document": "README.md",
+        "target": "docs/created-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/accounting.md",
+        "target": "../evidence/phase1/sources/MorphoBalancesLib.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/accounting.md",
+        "target": "../evidence/phase1/sources/MathLib.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/accounting.md",
+        "target": "../evidence/phase1/sources/SharesMathLib.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/accounting.md",
+        "target": "../evidence/phase1/sources/UtilsLib.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/accounting.md",
+        "target": "../evidence/phase1/sources/Morpho.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/accounting.md",
+        "target": "../evidence/phase1/sources/ConstantsLib.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/accounting.md",
+        "target": "../evidence/phase1/sources/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/alerting.md",
+        "target": "monitoring-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/alerting.md",
+        "target": "notification-setup.md",
+        "exists": true
+      },
+      {
+        "document": "docs/alerting.md",
+        "target": "operations-runbook.md#notification-recovery",
+        "exists": true
+      },
+      {
+        "document": "docs/alerting.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/architecture.md",
+        "target": "risk-engine.md",
+        "exists": true
+      },
+      {
+        "document": "docs/architecture.md",
+        "target": "monitoring-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/database-operations.md",
+        "target": "environment-variables.md",
+        "exists": true
+      },
+      {
+        "document": "docs/database-operations.md",
+        "target": "rollback-and-recovery.md",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "production-readiness-gaps.md",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "phase5-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "../evidence/phase5/release-manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "../evidence/phase5/release-manifest.sha256",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "../config/production.example.json",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "environment-variables.md",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "../deploy/liquidation-watchdog.service.example",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "operations-runbook.md",
+        "exists": true
+      },
+      {
+        "document": "docs/deployment.md",
+        "target": "rollback-and-recovery.md",
+        "exists": true
+      },
+      {
+        "document": "docs/environment-variables.md",
+        "target": "../.env.example",
+        "exists": true
+      },
+      {
+        "document": "docs/environment-variables.md",
+        "target": "../config/monitoring.example.json",
+        "exists": true
+      },
+      {
+        "document": "docs/environment-variables.md",
+        "target": "../config/production.example.json",
+        "exists": true
+      },
+      {
+        "document": "docs/environment-variables.md",
+        "target": "thresholds.md",
+        "exists": true
+      },
+      {
+        "document": "docs/environment-variables.md",
+        "target": "operations-runbook.md#notification-recovery",
+        "exists": true
+      },
+      {
+        "document": "docs/evidence.md",
+        "target": "production-readiness-gaps.md",
+        "exists": true
+      },
+      {
+        "document": "docs/evidence.md",
+        "target": "risk-engine.md",
+        "exists": true
+      },
+      {
+        "document": "docs/evidence.md",
+        "target": "monitoring-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/evidence.md",
+        "target": "oracle-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/evidence.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-checklist.md",
+        "target": "../evidence/phase6/release-identity.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-checklist.md",
+        "target": "deployment.md",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-files.md",
+        "target": "../evidence/phase6/",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-files.md",
+        "target": "../evidence/phase6/evidence-hashes.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-files.md",
+        "target": "../evidence/phase6/evidence-hashes.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "host-acceptance-checklist.md",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "host-acceptance-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "production-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/host-inventory.raw.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/host-environment-observations.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/release-identity.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/health-schema-drift-refusal.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/database-init-schema-drift-refusal.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/config-check-traversal-refusal.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/backup-database-probe.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/database-init-rejected-during-active-cycle.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/health-during-active-cycle.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/health-before-init-STORE_NOT_FOUND.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/restore-verify.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/readiness-probe.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/monitoring-observation-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/monitoring-observation-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/host-inventory.raw.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/host-environment-observations.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/release-identity.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "../evidence/phase6/evidence-hashes.json",
+        "exists": true
+      },
+      {
+        "document": "docs/host-acceptance-report.md",
+        "target": "host-acceptance-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/monitoring-architecture.md",
+        "target": "production-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/monitoring-architecture.md",
+        "target": "environment-variables.md",
+        "exists": true
+      },
+      {
+        "document": "docs/monitoring-architecture.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/monitoring-architecture.md",
+        "target": "operations-runbook.md",
+        "exists": true
+      },
+      {
+        "document": "docs/monitoring-architecture.md",
+        "target": "alerting.md",
+        "exists": true
+      },
+      {
+        "document": "docs/monitoring-architecture.md",
+        "target": "notification-setup.md",
+        "exists": true
+      },
+      {
+        "document": "docs/monitoring-architecture.md",
+        "target": "phase3-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/monitoring-architecture.md",
+        "target": "risk-engine.md",
+        "exists": true
+      },
+      {
+        "document": "docs/notification-setup.md",
+        "target": "../.env.example",
+        "exists": true
+      },
+      {
+        "document": "docs/notification-setup.md",
+        "target": "environment-variables.md",
+        "exists": true
+      },
+      {
+        "document": "docs/notification-setup.md",
+        "target": "alerting.md",
+        "exists": true
+      },
+      {
+        "document": "docs/notification-setup.md",
+        "target": "operations-runbook.md#notification-recovery",
+        "exists": true
+      },
+      {
+        "document": "docs/notification-setup.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/operations-runbook.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/operations-runbook.md",
+        "target": "rollback-and-recovery.md",
+        "exists": true
+      },
+      {
+        "document": "docs/operations-runbook.md",
+        "target": "release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/snapshot.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/independent-recompilation.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "../evidence/phase4/collateral-proof-2026-11-01T17-28-39-523Z-2726e5be-5979-42ba-9fbb-c29342e4be09/collateral-proof.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "../evidence/phase4/oracle-smoke.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "../scripts/check-oracle-evidence.ts",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "../evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "../evidence/phase1/sources/SelfManagedFeedsCache.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "../evidence/phase1/sources/KeystoneForwarder.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "../evidence/phase1/sources/ConfirmedOwnerWithProposal.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "oracle-assurance.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-architecture.md",
+        "target": "oracle-independent-validation.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-assurance.md",
+        "target": "oracle-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-assurance.md",
+        "target": "oracle-freshness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-assurance.md",
+        "target": "oracle-independent-validation.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-assurance.md",
+        "target": "phase4-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-assurance.md",
+        "target": "../evidence/phase4/oracle-evidence-verification.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-assurance.md",
+        "target": "phase4-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-assurance.md",
+        "target": "phase4-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-assurance.md",
+        "target": "../evidence/phase4/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-freshness.md",
+        "target": "../evidence/phase1/sources/SelfManagedFeedsCache.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-freshness.md",
+        "target": "../evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-freshness.md",
+        "target": "../evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-freshness.md",
+        "target": "oracle-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-freshness.md",
+        "target": "../evidence/phase4/oracle-smoke.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-freshness.md",
+        "target": "phase4-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-independent-validation.md",
+        "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/reservoir-addresses.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-independent-validation.md",
+        "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/reservoir-savings.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-independent-validation.md",
+        "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/dexscreener-exact-address.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-independent-validation.md",
+        "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/chainlink-megaeth.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-independent-validation.md",
+        "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/pharos-watch-research.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/market-parameters.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/contract-verification.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/sources/official-registry-excerpts.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/oracle-investigation-live.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/sources/SelfManagedFeedsCache.sol",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/oracle-update-history.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/oracle-investigation-live.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/cli-report.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/oracle-update-history.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/sources/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/oracle-investigation.md",
+        "target": "../evidence/phase1/source-runtime-matches.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase3-report.md",
+        "target": "phase3-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase3-report.md",
+        "target": "monitoring-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase3-report.md",
+        "target": "alerting.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase3-report.md",
+        "target": "notification-setup.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase3-report.md",
+        "target": "monitoring-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase3-report.md",
+        "target": "alerting.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase3-report.md",
+        "target": "notification-setup.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-files.md",
+        "target": "../evidence/phase4/file-changes.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "oracle-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/oracle-smoke.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "oracle-architecture.md#source-and-runtime-identity",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "oracle-freshness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "oracle-independent-validation.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/monitoring-smoke.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "oracle-assurance.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "phase4-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/collateral-proof-2026-11-01T17-28-39-523Z-2726e5be-5979-42ba-9fbb-c29342e4be09/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/oracle-research-2026-11-01T17-18-42-620Z-a3287621-5c9c-4828-b169-638ac3f62f96/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/oracle-audit-2026-11-01T17-31-19-568Z-26fe152a-a99b-4c2b-8f61-8e95a73b58c8/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/oracle-audit-2026-11-01T17-47-35-687Z-5078c30b-6b3f-4325-ad6c-abae354e3d97/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/oracle-audit-2026-11-01T18-32-13-912Z-d26d4dba-dd17-4135-a95f-06fac88f3121/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/oracle-audit-2026-11-01T18-33-24-873Z-98cd1fc4-ca41-4c66-be4b-50a0078f2a50/manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/oracle-smoke.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/oracle-evidence-verification.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/prior-phases-integrity.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/file-changes.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/dependency-audit.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase4-report.md",
+        "target": "../evidence/phase4/secret-scan.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-files.md",
+        "target": "../evidence/phase5/file-changes.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "../evidence/phase5/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "../evidence/phase5/finalization-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "production-readiness-gaps.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "production-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "environment-variables.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "operations-runbook.md#notification-recovery",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "../evidence/phase5/stability-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "production-security.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "deployment.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "rollback-and-recovery.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "../evidence/phase5/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "../evidence/phase5/finalization-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "../evidence/phase5/release-manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "../evidence/phase5/release-manifest-check.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "reliability-testing.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "phase5-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "../evidence/phase5/file-changes.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "../evidence/phase5/prior-phases-integrity.json",
+        "exists": true
+      },
+      {
+        "document": "docs/phase5-report.md",
+        "target": "release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-files.md",
+        "target": "phase7-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "phase2-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "phase3-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "phase4-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "phase5-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "host-acceptance-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "production-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "deployment.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "render-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "render-storage-decision.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "render-security-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "phase7-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "../render.yaml",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "../evidence/phase6/health-during-active-cycle.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "../evidence/phase6/database-init-rejected-during-active-cycle.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "render-storage-decision.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "../render.yaml",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "render-security-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase7-report.md",
+        "target": "host-acceptance-checklist.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-files.md",
+        "target": "phase8-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-files.md",
+        "target": "render-runtime-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-files.md",
+        "target": "render-dashboard-api.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-files.md",
+        "target": "phase8-test-evidence.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "phase8-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "render-runtime-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "render-dashboard-api.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "phase8-test-evidence.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "render-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "render-storage-decision.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "render-security-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "phase7-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "phase7-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "phase8-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "render-runtime-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "render-dashboard-api.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-report.md",
+        "target": "phase8-test-evidence.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-test-evidence.md",
+        "target": "phase8-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-test-evidence.md",
+        "target": "phase8-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-test-evidence.md",
+        "target": "render-runtime-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/phase8-test-evidence.md",
+        "target": "render-dashboard-api.md",
+        "exists": true
+      },
+      {
+        "document": "docs/production-architecture.md",
+        "target": "../deploy/liquidation-watchdog.service.example",
+        "exists": true
+      },
+      {
+        "document": "docs/production-architecture.md",
+        "target": "environment-variables.md#resource-settings",
+        "exists": true
+      },
+      {
+        "document": "docs/production-architecture.md",
+        "target": "reliability-testing.md",
+        "exists": true
+      },
+      {
+        "document": "docs/production-architecture.md",
+        "target": "release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/production-readiness-gaps.md",
+        "target": "../evidence/phase5/prior-phases-baseline.json",
+        "exists": true
+      },
+      {
+        "document": "docs/production-security.md",
+        "target": "release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/release-readiness.md",
+        "target": "../evidence/phase5/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/release-readiness.md",
+        "target": "phase5-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/release-readiness.md",
+        "target": "../evidence/phase5/release-manifest.json",
+        "exists": true
+      },
+      {
+        "document": "docs/release-readiness.md",
+        "target": "../evidence/phase5/release-manifest.sha256",
+        "exists": true
+      },
+      {
+        "document": "docs/release-readiness.md",
+        "target": "../evidence/phase5/release-manifest-check.json",
+        "exists": true
+      },
+      {
+        "document": "docs/reliability-testing.md",
+        "target": "../evidence/phase5/verification-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/reliability-testing.md",
+        "target": "phase5-report.md#12-tests-and-exact-verification-results",
+        "exists": true
+      },
+      {
+        "document": "docs/reliability-testing.md",
+        "target": "../evidence/phase5/stability-results.json",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "render-storage-decision.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "render-security-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "phase7-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "../render.yaml",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "production-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "../evidence/phase6/health-during-active-cycle.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "../evidence/phase6/database-init-rejected-during-active-cycle.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-architecture.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-dashboard-api.md",
+        "target": "render-runtime-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-dashboard-api.md",
+        "target": "phase8-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-dashboard-api.md",
+        "target": "phase8-test-evidence.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-dashboard-api.md",
+        "target": "phase8-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-dashboard-api.md",
+        "target": "render-security-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-dashboard-api.md",
+        "target": "phase8-test-evidence.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "../render.yaml",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "render-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "render-storage-decision.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "render-security-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "phase7-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "../config/production.example.json",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "rollback-and-recovery.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "phase5-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "host-acceptance-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "../render.yaml",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "phase7-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-deployment-plan.md",
+        "target": "host-acceptance-checklist.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "phase8-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "render-dashboard-api.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "phase8-test-evidence.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "phase8-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "phase8-files.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "rollback-and-recovery.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "phase8-test-evidence.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-runtime-operations.md",
+        "target": "phase8-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-security-plan.md",
+        "target": "render-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-security-plan.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-security-plan.md",
+        "target": "render-storage-decision.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-security-plan.md",
+        "target": "production-security.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-security-plan.md",
+        "target": "phase7-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-security-plan.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-storage-decision.md",
+        "target": "render-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-storage-decision.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-storage-decision.md",
+        "target": "render-security-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-storage-decision.md",
+        "target": "phase7-report.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-storage-decision.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-storage-decision.md",
+        "target": "production-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/render-storage-decision.md",
+        "target": "../evidence/phase6/health-during-active-cycle.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/render-storage-decision.md",
+        "target": "../evidence/phase6/database-init-rejected-during-active-cycle.txt",
+        "exists": true
+      },
+      {
+        "document": "docs/render-storage-decision.md",
+        "target": "render-deployment-plan.md",
+        "exists": true
+      },
+      {
+        "document": "docs/risk-engine.md",
+        "target": "recommendation-math.md",
+        "exists": true
+      },
+      {
+        "document": "docs/rollback-and-recovery.md",
+        "target": "database-operations.md",
+        "exists": true
+      },
+      {
+        "document": "docs/rollback-and-recovery.md",
+        "target": "release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/security-and-quality.md",
+        "target": "recommendation-math.md",
+        "exists": true
+      },
+      {
+        "document": "docs/security-and-quality.md",
+        "target": "monitoring-architecture.md",
+        "exists": true
+      },
+      {
+        "document": "docs/security-and-quality.md",
+        "target": "production-security.md",
+        "exists": true
+      },
+      {
+        "document": "docs/security-and-quality.md",
+        "target": "release-readiness.md",
+        "exists": true
+      },
+      {
+        "document": "docs/testing.md",
+        "target": "reliability-testing.md",
+        "exists": true
+      },
+      {
+        "document": "docs/testing.md",
+        "target": "phase5-report.md#12-tests-and-exact-verification-results",
+        "exists": true
+      },
+      {
+        "document": "docs/thresholds.md",
+        "target": "risk-engine.md",
+        "exists": true
+      }
+    ]
+  },
+  "secretScan": {
+    "command": "node --import tsx scripts/check-secrets.ts --read-only",
+    "exitCode": 0,
+    "evidenceKind": "LOCAL_VERIFICATION",
+    "retrievedAt": "2026-11-02T15:16:07.363Z",
+    "scope": "Project-owned files and sanitized evidence; dependencies/build/git/private runtime data/backups excluded; potential key files are named but not opened. The authored .env.example is byte-hash verified.",
+    "filesScanned": 1243,
+    "ruleCount": 9,
+    "fixtureExceptions": 1,
+    "placeholderTemplateVerified": true,
+    "passed": true,
+    "findings": []
+  },
+  "gitDiff": {
+    "command": "git diff --check",
+    "workingDirectory": "C:/liquidation-watchdog",
+    "exitCode": 0,
+    "signal": null,
+    "runnerError": null,
+    "stdout": "",
+    "stderr": ""
+  },
+  "whitespace": {
+    "command": "git -c core.quotePath=false diff --no-index --check -- <exclusive-empty-file> <each-new-or-modified-Phase8-input>",
+    "passed": true,
+    "filesChecked": 265,
+    "checks": [
+      {
+        "path": "config/render.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "scripts/phase8-reliability.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "scripts/release-inputs.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "src/runtime/auth.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "src/runtime/dashboard.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "src/runtime/http.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "src/runtime/read-model.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "src/runtime/service.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "src/runtime/workspace.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "src/service.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "src/storage/store.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "test/fixtures/runtime.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "test/helpers/phase8-import.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "test/helpers/phase8-runtime.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "test/runtime-http.test.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "test/runtime-lifecycle.test.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "test/runtime-process.test.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "test/runtime-read-model.test.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "test/runtime-storage.test.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/auth.d.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/auth.js",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/auth.js.map",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/dashboard.d.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/dashboard.js",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/dashboard.js.map",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/http.d.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/http.js",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/http.js.map",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/read-model.d.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/read-model.js",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/read-model.js.map",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/service.d.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/service.js",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/service.js.map",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/workspace.d.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/workspace.js",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/runtime/workspace.js.map",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/service.d.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/service.js",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/service.js.map",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/storage/store.d.ts",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/storage/store.js",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "dist/storage/store.js.map",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "docs/phase8-report.md",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "docs/phase8-files.md",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "docs/render-runtime-operations.md",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "docs/render-dashboard-api.md",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "docs/phase8-test-evidence.md",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/built-service-smoke.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/002-typecheck.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/003-lint.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/004-runtime-tests.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/005-typecheck.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/006-runtime-tests.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/007-typecheck.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/008-lint.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/009-reliability.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/010-build.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/011-lint.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/012-built-import.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/013-full-verification.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/014-reliability-full-sampling.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/015-historical-interim.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/016-finalization.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/017-release-manifest.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/018-release-check.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/019-collect-evidence.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/020-process-cleanup.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/021-built-service-smoke.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/022-built-service-smoke-corrected.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/023-process-cleanup-post-smoke.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/checks/024-archive-tools.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/implementation-inputs.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/initial-typecheck.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/phase7-file-bindings.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/pre-phase8-baseline.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/process-state-final.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/process-state-post-smoke.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/runtime-reliability-full.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/runtime-reliability.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/runtime-tests-initial.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/runtime-tests.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/tooling/phase8-built-smoke.mjs",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/tooling/phase8-candidate.mjs",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/tooling/phase8-command.mjs",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/tooling/phase8-evidence.mjs",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/tooling/phase8-process.mjs",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/tooling/phase8-safety.mjs",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/tooling/phase8-signal-hook.mjs",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/tooling-provenance.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/docs/phase5-files.md.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/bounded-monitoring-restart-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/bounded-oracle-cli-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/build-artifacts.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/built-cli-historical-risk-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/built-cli-risk-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/cli-inspect-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/documentation-links.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/documentation-links.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/file-changes.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/finalization-results.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/historical-regression.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/accounting.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/block-consistency.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/cli-report.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/contract-verification.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/market-id-verification.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/market-parameters.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/mcp-rpc-comparison.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/network-verification.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/oracle-investigation-live.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/position-snapshot.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/inspect/live/read-trace.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/integration-tests.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/monitor-smoke-alerts.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/monitor-smoke-once.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/monitor-smoke-restart.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/monitor-smoke-status.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/monitoring-smoke.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-as-of-readiness-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-as-of-readiness.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-backup-check-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-backup-check.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-backup-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-backup.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-config-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-diagnostics-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-diagnostics.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-exclusive-backup-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-healthy-empty-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-healthy-empty.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-init-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-invalid-config-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-invalid-init-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-missing-health-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-missing-health.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-missing-readiness-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-missing-readiness.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-probe-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-probe.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-restore-check-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-uninitialized-readiness-stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke-uninitialized-readiness.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-smoke.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/operations-tests.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-57-04-901Z-9cf033ca-32d5-408b-8f18-05860f74c5f8/assurance.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-57-04-901Z-9cf033ca-32d5-408b-8f18-05860f74c5f8/audit-report.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-57-04-901Z-9cf033ca-32d5-408b-8f18-05860f74c5f8/dependency-graph.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-57-04-901Z-9cf033ca-32d5-408b-8f18-05860f74c5f8/manifest.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-57-04-901Z-9cf033ca-32d5-408b-8f18-05860f74c5f8/manifest.sha256",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-57-04-901Z-9cf033ca-32d5-408b-8f18-05860f74c5f8/snapshot.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-57-04-901Z-9cf033ca-32d5-408b-8f18-05860f74c5f8/supplemental.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-58-14-518Z-f4ffaacf-2527-4abb-81d1-32ed730a9887/assurance.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-58-14-518Z-f4ffaacf-2527-4abb-81d1-32ed730a9887/audit-report.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-58-14-518Z-f4ffaacf-2527-4abb-81d1-32ed730a9887/dependency-graph.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-58-14-518Z-f4ffaacf-2527-4abb-81d1-32ed730a9887/manifest.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-58-14-518Z-f4ffaacf-2527-4abb-81d1-32ed730a9887/manifest.sha256",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-58-14-518Z-f4ffaacf-2527-4abb-81d1-32ed730a9887/snapshot.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-audit-2026-11-02T14-58-14-518Z-f4ffaacf-2527-4abb-81d1-32ed730a9887/supplemental.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-evidence-verification.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-evidence-verification.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-default.stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-default.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-historical-status.stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-historical-status.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-saved-historical.stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-saved-historical.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-saved-live.stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-saved-live.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-status-json.stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-status-json.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-status.stderr.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke-status.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/oracle-smoke.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-evidence-integrity.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/accounting.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/block-consistency.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/cli-report.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/contract-verification.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/market-id-verification.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/market-parameters.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/mcp-rpc-comparison.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/network-verification.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/oracle-investigation-live.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/position-snapshot.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase1-regression/read-trace.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase2-exact-replays.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/phase5-inventory.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/prior-phases-integrity.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/project-whitespace-check.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/project-whitespace.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/release-manifest-check.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/release-manifest.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/release-manifest.sha256",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/historical-21853902/collateral-estimate.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/historical-21853902/input-snapshot.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/historical-21853902/manifest.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/historical-21853902/repayment-estimate.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/historical-21853902/risk-report.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/historical-21853902/risk-result.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/live/collateral-estimate.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/live/input-snapshot.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/live/manifest.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/live/repayment-estimate.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/live/risk-report.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk/live/risk-result.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk-integration/collateral-estimate.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk-integration/input-snapshot.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk-integration/manifest.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk-integration/repayment-estimate.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk-integration/risk-report.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/risk-integration/risk-result.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/secret-scan.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/secrets-check.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/source-runtime-matches.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/stability-results.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/test-integration.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/test-operations.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/test-stability.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/test-unit.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/unit-tests.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-inputs.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-results.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/ded7542a-ee8e-4723-80c3-5b71c33a363b/documentation-links.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/ded7542a-ee8e-4723-80c3-5b71c33a363b/finalization-results.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/ded7542a-ee8e-4723-80c3-5b71c33a363b/git-diff-check.txt",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/ded7542a-ee8e-4723-80c3-5b71c33a363b/phase5-inventory.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/ded7542a-ee8e-4723-80c3-5b71c33a363b/project-whitespace-check.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/ded7542a-ee8e-4723-80c3-5b71c33a363b/secrets-check.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/ded7542a-ee8e-4723-80c3-5b71c33a363b/verification-inputs.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/bounded-monitoring-restart-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/bounded-oracle-cli-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/build-artifacts.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/build.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/built-cli-historical-risk-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/built-cli-risk-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/built-cli-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/cli-inspect-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/dependency-audit.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/documentation-links.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/git-diff-check.txt",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/historical-phase2-regression.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/integration-tests.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/lint.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/operational-cli-smoke.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/operations-tests.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/oracle-evidence-verification.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/phase1-evidence-integrity.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/phase2-exact-replays.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/phase5-inventory.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/prior-phases-integrity.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/project-whitespace-check.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/secrets-check.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/source-runtime-links.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/stability-results.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/test-integration.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/test-operations.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/test-stability.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/test-unit.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/typecheck.txt",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/unit-tests.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/verification-inputs.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification/evidence/phase5/verification-runs/e85db01f-c10b-49a5-9e62-106909fb2042/verification-results.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification-candidate.json",
+        "exitCode": 1,
+        "passed": true
+      },
+      {
+        "path": "evidence/phase8/verification-provenance.json",
+        "exitCode": 1,
+        "passed": true
+      }
+    ]
+  }
+}

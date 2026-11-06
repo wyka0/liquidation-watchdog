@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-11-06T01:39:23.248Z",
+  "completedAt": "2026-11-06T01:39:23.971Z",
+  "node": "v24.14.1",
+  "scripts": [
+    {
+      "script": "final-documentary-tools.mjs",
+      "bytes": 6904,
+      "sha256": "601dee4f4fbd1a00db539fd3cd9455d7a93fe51c586278f1a1cb48f17e71c1e7",
+      "sourceCapsule": "final-documentary-tools.mjs",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "--check",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\final-documentary-tools.mjs"
+      ],
+      "startedAt": "2026-11-06T01:39:23.253Z",
+      "completedAt": "2026-11-06T01:39:23.368Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "final-documentary-tools.mjs.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "final-documentary-tools.mjs.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "script": "complete-qualification-report.mjs",
+      "bytes": 53848,
+      "sha256": "adfe7b37c0e83624a1f2a20af6622b00b8875dbd6b5435fda8bca37deda7b031",
+      "sourceCapsule": "complete-qualification-report.mjs",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "--check",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\complete-qualification-report.mjs"
+      ],
+      "startedAt": "2026-11-06T01:39:23.370Z",
+      "completedAt": "2026-11-06T01:39:23.472Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "complete-qualification-report.mjs.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "complete-qualification-report.mjs.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "script": "validate-final-qualification.mjs",
+      "bytes": 63393,
+      "sha256": "bd7a98f6d026df9180a9eb508535081ff908c9827d1d9c5fadc0da9d8c12aaab",
+      "sourceCapsule": "validate-final-qualification.mjs",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "--check",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\validate-final-qualification.mjs"
+      ],
+      "startedAt": "2026-11-06T01:39:23.473Z",
+      "completedAt": "2026-11-06T01:39:23.575Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "validate-final-qualification.mjs.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "validate-final-qualification.mjs.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "script": "capture-final-seal-verification.mjs",
+      "bytes": 3018,
+      "sha256": "e536243b82f349e89b4f1ebd3206533bd5726d2c1a7dd4e149c67dc095d5a275",
+      "sourceCapsule": "capture-final-seal-verification.mjs",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "--check",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\capture-final-seal-verification.mjs"
+      ],
+      "startedAt": "2026-11-06T01:39:23.576Z",
+      "completedAt": "2026-11-06T01:39:23.670Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "capture-final-seal-verification.mjs.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "capture-final-seal-verification.mjs.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "script": "collect-final-documentary-syntax.mjs",
+      "bytes": 3080,
+      "sha256": "4c601016ed0bf38b4576a5b266b6a6668580a48d878a8e23e280a09a98555768",
+      "sourceCapsule": "collect-final-documentary-syntax.mjs",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "--check",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\collect-final-documentary-syntax.mjs"
+      ],
+      "startedAt": "2026-11-06T01:39:23.673Z",
+      "completedAt": "2026-11-06T01:39:23.774Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "collect-final-documentary-syntax.mjs.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "collect-final-documentary-syntax.mjs.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "script": "inspect-final-documentary-inputs.mjs",
+      "bytes": 3166,
+      "sha256": "611993bd46a198f8255517af48eae80c9bffbe0217a72c4ac2b396004f80ecc0",
+      "sourceCapsule": "inspect-final-documentary-inputs.mjs",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "--check",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\inspect-final-documentary-inputs.mjs"
+      ],
+      "startedAt": "2026-11-06T01:39:23.775Z",
+      "completedAt": "2026-11-06T01:39:23.875Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "inspect-final-documentary-inputs.mjs.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "inspect-final-documentary-inputs.mjs.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "script": "retain-documentary-input-review-failure.mjs",
+      "bytes": 2426,
+      "sha256": "d6333206dc71d11887b0df6d329045d13e9836e2230ba3eaa1f4b6305457d57e",
+      "sourceCapsule": "retain-documentary-input-review-failure.mjs",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "--check",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\retain-documentary-input-review-failure.mjs"
+      ],
+      "startedAt": "2026-11-06T01:39:23.876Z",
+      "completedAt": "2026-11-06T01:39:23.970Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "retain-documentary-input-review-failure.mjs.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "retain-documentary-input-review-failure.mjs.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "safety": {
+    "nodeCheckOnly": true,
+    "actionModesNotInvoked": true,
+    "applicationImports": 0,
+    "databaseOpens": 0,
+    "networkRequests": 0,
+    "qualificationTestsRestarted": false,
+    "monitor": "STOPPED",
+    "noRepositoryWrite": true,
+    "exclusiveSourceCapsulesAndOutputWrites": true
+  }
+}

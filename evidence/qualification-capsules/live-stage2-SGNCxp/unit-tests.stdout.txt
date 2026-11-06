@@ -1,0 +1,280 @@
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+ ✓ test/recovery-eligibility.test.ts (17 tests) 5583ms
+   ✓ FIXTURE: strict recovery-estimate eligibility gate (7)
+     ✓ calculates both estimates only when every condition passes, with exact BigInt amounts and non-actionability 971ms
+     ✓ never invokes a recovery solver when any single condition fails, and always reports the reason 2023ms
+ ✓ test/notifications.test.ts (41 tests) 31467ms
+   ✓ FIXTURE: console and mocked external notification adapters (28)
+     ✓ uses Telegram plain text without formatting interpretation and validates acknowledgment 531ms
+   ✓ FIXTURE: durable delivery attempts, bounded retries and rate limits (13)
+     ✓ persists a retry, exhausts the budget, and never changes accepted mathematics 891ms
+     ✓ holds all queued provider messages after a 429, including across a process restart 3181ms
+     ✓ persists a channel-wide fallback for a metadata-free 429 with an attempt budget of 1 3700ms
+     ✓ persists a channel-wide fallback for a metadata-free 429 with an attempt budget of 5 2489ms
+     ✓ persistently blocks excessive body 429 delays without preventing other channels 3529ms
+     ✓ persistently blocks excessive header 429 delays without preventing other channels 3212ms
+     ✓ persistently blocks excessive numeric-overflow 429 delays without preventing other channels 2921ms
+     ✓ resumes pending deliveries without regenerating known delivered ones 3777ms
+     ✓ terminalizes an ambiguous provider timeout and logs UNKNOWN without retry 350ms
+     ✓ does not persist arbitrary adapter exception details or provider credentials 1807ms
+ ✓ test/chain-progression.test.ts (28 tests) 29303ms
+   ✓ FIXTURE: progression integrated into the monitoring lifecycle (9)
+     ✓ persists FIRST_OBSERVATION progression atomically with the accepted observation and its alerts 2706ms
+     ✓ treats same-block rereads as UNCHANGED for 3 observations and STALLED beyond 5881ms
+     ✓ records ADVANCING on a strictly higher cross-checked block while estimates stay absent 2598ms
+     ✓ rejects a same-height hash conflict, keeps the diagnosis bounded and preserves the accepted baseline 2333ms
+     ✓ rejects a timestamp regression with BLOCK_TIMESTAMP_REGRESSION and preserves the baseline 1753ms
+     ✓ rejects a backwards selected block as REGRESSED while keeping the last accepted data 2421ms
+     ✓ marks failed reads as UNKNOWN progression without touching the accepted baseline 1404ms
+     ✓ treats a missing provider head as UNKNOWN rather than inferring any change 1486ms
+     ✓ resumes the same-block streak from persisted progression after a restart 6062ms
+   ✓ FIXTURE: real progression states keep the 12B recovery gate fail-closed (3)
+     ✓ blocks recovery estimates on a same-block reread with the unchanged reason only 1359ms
+ ✓ test/runtime-config.test.ts (31 tests) 10556ms
+   ✓ PHASE12A FIXTURE: one resolved runtime configuration (31)
+     ✓ injects resolved thresholds into the SQLite runtime: served stream, classification and scope separation 6974ms
+     ✓ keeps SQLite read models on exactly the injected threshold stream and rejects tampered injection 1977ms
+ ✓ test/risk-engine.test.ts (41 tests) 3279ms
+   ✓ FIXTURE: snapshot-bound, non-actionable base risk engine (41)
+     ✓ adds base data and identity reasons when base inputs are invalid 426ms
+     ✓ reports equality as a mathematical boundary, with Morpho equality semantics retained 371ms
+ ✓ test/oracle-continuity.test.ts (20 tests) 9435ms
+   ✓ FIXTURE: configuration continuity, persistent oracle alerts and restart safety (20)
+     ✓ invalidates established assurance on proxyOwner changes and never self-restores 576ms
+     ✓ invalidates established assurance on feedId changes and never self-restores 367ms
+     ✓ invalidates established assurance on description changes and never self-restores 463ms
+     ✓ retains the old separately bound baseline through missing data and catches changes after recovery 315ms
+     ✓ invalidates when signer/implementation observability or history coverage is lost 387ms
+     ✓ rejects backwards/conflicting blocks and retains the known baseline 323ms
+     ✓ deduplicates configuration alerts through a SQLite restart and persists the invalidation latch 1871ms
+     ✓ persists timestamp deterioration and improvement alerts while preserving unknown freshness 506ms
+     ✓ refuses a cleared invalidation latch, missing baseline and reversed evaluation clock at the persistence boundary 411ms
+     ✓ fails closed when a persisted assurance hash is corrupted 616ms
+     ✓ seeds shared assurance across changed threshold streams after restart 1106ms
+     ✓ retains latest continuity and immutable audit references during pruning 489ms
+ ✓ test/operations-storage.test.ts (27 tests) 73985ms
+   ✓ FIXTURE: storage durability, ownership, migration and capacity faults (18)
+     ✓ refuses an oversized snapshot artifact before creating a capture directory 309ms
+     ✓ rolls back all migration steps after an injected mid-migration I/O failure 6704ms
+     ✓ does not migrate legacy storage during read-only inspection 5889ms
+     ✓ takes maintenance ownership before writable open while permitting read-only diagnostics 2928ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE extra(value TEXT) 4200ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX unreviewed ON cycles(status) 3653ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER unreviewed AFTER INSERT ON cycles BEGIN SELECT 1; END 3045ms
+     ✓ rejects schema-layout drift before state changes: DROP INDEX deliveries_alert_id 3484ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE sqliteextra(value TEXT) 3065ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX sqliteindex ON cycles(status) 2956ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER sqlitetrigger AFTER INSERT ON cycles BEGIN SELECT 1; END 2713ms
+     ✓ refuses initialization over an unversioned user table with a sqlite-like name 321ms
+     ✓ rolls back a real SQLITE_FULL page-limit failure without partial observation/outbox writes 1070ms
+     ✓ rejects corrupt alert-binding records during full recovery/backup validation 716ms
+     ✓ rejects corrupt attempt-count records during full recovery/backup validation 650ms
+     ✓ rejects corrupt attempt-completion records during full recovery/backup validation 582ms
+     ✓ fails closed on disk reserve, memory, database, WAL and evidence budgets without deleting records 730ms
+   ✓ FIXTURE: consistent SQLite backups and isolated restoration (9)
+     ✓ captures a live WAL database, all bound evidence and known-delivered/in-flight work while another connection writes 16475ms
+     ✓ restores schema 2 in isolation, migrates forward and preserves terminal/pending/cooldown history 2442ms
+     ✓ restores schema 4 in isolation, migrates forward and preserves terminal/pending/cooldown history 2676ms
+     ✓ rejects a manifest backup integrity failure without restoring 1016ms
+     ✓ rejects a database backup integrity failure without restoring 1122ms
+     ✓ rejects a extra-nested-file backup integrity failure without restoring 1076ms
+     ✓ rejects a missing-file backup integrity failure without restoring 1053ms
+     ✓ refuses existing destinations, insufficient reserve and restore paths inside the immutable backup 1432ms
+     ✓ rejects missing required reviewed evidence and retains an explicitly incomplete capture 968ms
+ ✓ test/position-config.test.ts (28 tests) 3102ms
+   ✓ STAGE3C FIXTURE: canonical position identity and configuration (28)
+     ✓ reads and validates the explicitly configured account without inferring it from RPC data 905ms
+     ✓ keeps configured history isolated and retains original identity and thresholds 1506ms
+ ✓ test/monitoring-service.test.ts (24 tests) 12877ms
+   ✓ FIXTURE: pinned monitoring lifecycle and conservative failures (24)
+     ✓ constructs without reading, then persists a complete Phase 2 calculation before dispatch 989ms
+     ✓ rejects malformed, partial or inconsistent reader snapshot 0 598ms
+     ✓ rejects malformed, partial or inconsistent reader snapshot 1 552ms
+     ✓ rejects malformed, partial or inconsistent reader snapshot 3 472ms
+     ✓ rejects malformed, partial or inconsistent reader snapshot 4 583ms
+     ✓ does not replace a prior accepted risk snapshot when a later partial read claims acceptance 709ms
+     ✓ records genuine zero-debt data as NO_DEBT, without treating a missing position as zero 482ms
+     ✓ rejects a backwards selected block instead of replacing the accepted live-stream snapshot 875ms
+     ✓ requires opt-in for continuous mode and stops scheduling during a signal 337ms
+     ✓ isolates an explicit historical stream and rejects accidental historical data in live monitoring 510ms
+     ✓ recovers an interrupted cycle and then resumes reads without losing alert history 1401ms
+     ✓ keeps notification failures separate from accepted mathematics 337ms
+     ✓ stops on an acknowledgment-write failure and recovers that in-flight delivery after reopening 1923ms
+     ✓ stops continuous scheduling on an idle persistence failure and rejects reuse 305ms
+ ✓ test/oracle-audit-rpc.test.ts (27 tests) 4021ms
+   ✓ ARCHIVED INPUT / FIXTURE REPLAY: logs, calldata, signatures and signer storage (17)
+     ✓ re-extracts both public reports, four distinct signatures each, the workflow and ten current signers 951ms
+     ✓ refuses unbounded or inactive count signer storage 353ms
+ ✓ test/a4-neon-qualification.test.ts (27 tests) 948ms
+ ✓ test/operations-config.test.ts (35 tests) 26873ms
+   ✓ FIXTURE: production configuration, redaction and local path boundaries (22)
+     ✓ rejects every missing fixed deployment field and chain/endpoint substitution 3369ms
+   ✓ FIXTURE: local operational health/readiness and CLI inspection (13)
+     ✓ reports a valid empty database as healthy but uninitialized and unready 3683ms
+     ✓ keeps fixture observations unready even when a mocked probe reports both providers reachable 2013ms
+     ✓ separates RUNNING worker/chain operational status from financial safety 1613ms
+     ✓ separates STALE worker/chain operational status from financial safety 1828ms
+     ✓ separates UNFINISHED worker/chain operational status from financial safety 1810ms
+     ✓ separates FAILED worker/chain operational status from financial safety 1432ms
+     ✓ separates UNCLEAN worker/chain operational status from financial safety 1608ms
+     ✓ separates STALLED worker/chain operational status from financial safety 1681ms
+     ✓ separates UNKNOWN_OWNER worker/chain operational status from financial safety 1379ms
+     ✓ separates OTHER_SCOPE worker/chain operational status from financial safety 2213ms
+     ✓ refuses a connectivity probe when an enabled provider configuration is invalid 552ms
+     ✓ routes read-only CLI commands without creating a database and rejects ambiguous operational flags 1956ms
+ ✓ test/suggested-actions.test.ts (40 tests) 3497ms
+   ✓ FIXTURE: mandatory typed suggested actions (40)
+     ✓ persists generated actions across a SQLite restart 952ms
+     ✓ reads a legacy SQLite alert without rewriting its original bytes 729ms
+ ✓ test/monitoring-storage.test.ts (25 tests) 18406ms
+   ✓ FIXTURE: transactional SQLite persistence and restarts (25)
+     ✓ initializes a new database and reads the same accepted state and outbox after reopening 1384ms
+     ✓ migrates v1 to v5 while preserving accepted data, alerts, pending deliveries and cooldowns 751ms
+     ✓ migrates v2 to v5 while preserving accepted data, alerts, pending deliveries and cooldowns 996ms
+     ✓ migrates v3 to v5 while preserving accepted data, alerts, pending deliveries and cooldowns 981ms
+     ✓ migrates v4 to v5 while preserving accepted data, alerts, pending deliveries and cooldowns 883ms
+     ✓ rejects unexpected schema objects before migration and retains the original schema version and data 510ms
+     ✓ fails closed on incompatible or malformed newer database 586ms
+     ✓ fails closed on incompatible or malformed foreign database 351ms
+     ✓ fails closed on incompatible or malformed checksum database 646ms
+     ✓ fails closed on incompatible or malformed state database 483ms
+     ✓ rejects semantically inconsistent stored unaccepted-baseline without resetting it 1704ms
+     ✓ rejects semantically inconsistent stored missing-baseline without resetting it 1162ms
+     ✓ rejects semantically inconsistent stored missing-latest without resetting it 1269ms
+     ✓ rejects semantically inconsistent stored failure-counter without resetting it 911ms
+     ✓ rejects semantically inconsistent stored detached-estimate without resetting it 665ms
+     ✓ rejects corrupt persisted provider cooldown metadata before dispatch 634ms
+     ✓ excludes a second process owner while allowing status readers, and releases the OS lock 872ms
+     ✓ recovers an interrupted in-flight attempt as ambiguous without resetting its attempt budget 1267ms
+ ✓ test/operations-transports.test.ts (27 tests) 4770ms
+   ✓ FIXTURE: bounded streaming reads and endpoint isolation (17)
+     ✓ uses exactly three same-endpoint read attempts after 5xx exhaustion and retains no partial result 3239ms
+ ✓ test/operations-lifecycle.test.ts (10 tests) 73720ms
+   ✓ FIXTURE: bounded lifecycle and late continuation safety (6)
+     ✓ settles an active delivery on graceful shutdown, starts no new send and closes exactly once 1870ms
+     ✓ bounds a hung read at shutdown, records the first failure and ignores its late result 1101ms
+     ✓ enforces the whole-cycle budget during a non-cooperative read 659ms
+     ✓ enforces the whole-cycle budget during a non-cooperative supplemental 678ms
+     ✓ includes notification dispatch in the cycle budget and preserves an interrupted acknowledgment as ambiguous 1109ms
+     ✓ wires CLI signal cleanup through the same settling service 1845ms
+   ✓ FIXTURE: actual child-process ownership and termination (4)
+     ✓ settles an idle worker via SIGINT handlers (Windows: explicit handler simulation) 20235ms
+     ✓ settles an idle worker via SIGTERM handlers (Windows: explicit handler simulation) 15841ms
+     ✓ settles an active child read through shutdown and releases its OS ownership lock 13792ms
+     ✓ recovers after forced termination, preserves known-delivered alerts and sends only definitely pending work 15989ms
+ ✓ test/runtime-lifecycle.test.ts (14 tests) 79734ms
+   ✓ PHASE8 FIXTURE: explicit single-process runtime lifecycle (14)
+     ✓ starts disabled without creating the database, rejects a duplicate process runtime, and closes cleanly 5313ms
+     ✓ fails closed without authentication, on missing enabled DB, enabled providers, invalid path, and oversized shutdown budget 4732ms
+     ✓ cancels startup on an immediate stop and releases the process owner without creating a database 6550ms
+     ✓ refuses an occupied HTTP port before starting monitoring and releases all acquired ownership 7617ms
+     ✓ serves API during an in-flight read, prevents overlap, settles the read on shutdown and preserves the database 8136ms
+     ✓ wires SIGINT to the same bounded shutdown and removes listeners (explicit Windows handler simulation) 4489ms
+     ✓ wires SIGTERM to the same bounded shutdown and removes listeners (explicit Windows handler simulation) 5815ms
+     ✓ bounds a non-cooperative read, preserves interrupted state and discards its late result 6694ms
+     ✓ does not hide terminal worker failure behind a healthy listener 4855ms
+     ✓ recovers interrupted cycles/outbox and preserves known-delivered records and dedup across restarts 12927ms
+     ✓ preserves an existing database byte-for-byte through repeated disabled starts and shutdowns 12235ms
+ ✓ test/postgres-config.test.ts (41 tests) 897ms
+   ✓ PHASE10 FIXTURE: explicit configuration and exact codecs (41)
+     ✓ starts and serves health without a database query or monitoring job 537ms
+ ✓ test/scheduler-http.test.ts (31 tests) 7122ms
+   ✓ PHASE10 FIXTURE: authenticated, finite scheduler HTTP capability (31)
+     ✓ separates read and trigger credentials and authenticates before any work 690ms
+     ✓ uses the longer socket budget only after a complete authenticated body 5235ms
+ ✓ test/runtime-http.test.ts (10 tests) 6401ms
+   ✓ PHASE8 FIXTURE: authenticated read-only HTTP boundaries (10)
+     ✓ serves tiny in-memory public health, including disabled and terminal status, without read-model calls 431ms
+     ✓ bounds concurrent/API-rate work while health remains available; forwarded headers cannot bypass it 2667ms
+     ✓ rejects oversized headers and destroys idle partial requests within bounded HTTP shutdown 2032ms
+ ✓ test/transport.test.ts (14 tests) 644ms
+ ✓ test/risk-repayment.test.ts (12 tests) 375ms
+ ✓ test/runtime-storage.test.ts (13 tests) 28070ms
+   ✓ PHASE8 FIXTURE: existing-only storage and persistent workspace (13)
+     ✓ preserves an empty or corrupt existing file and refuses implicit initialization 533ms
+     ✓ requires explicit migration and preserves a legacy database byte for byte 2489ms
+     ✓ preserves current schema/content on existing-only opens and retains the writer fence 2691ms
+     ✓ exclusively seeds pinned evidence, checks existing bytes, and fences a second service 8493ms
+     ✓ refuses a changed runtime evidence copy without replacing it or touching its release source 4656ms
+     ✓ checks persisted evidence references and fails on a missing local artifact 5626ms
+     ✓ refuses missing mount roots, relative paths, mismatched DB paths and disk-reserve exhaustion 499ms
+     ✓ refuses symlink/junction directories and hardlinked databases 563ms
+     ✓ bounds a real SQLite competing-write lock and rolls back without partial state 1764ms
+ ✓ test/postgres-connection.test.ts (9 tests) 342ms
+ ✓ test/runtime-read-model.test.ts (7 tests) 10713ms
+   ✓ PHASE8 FIXTURE: coherent, sanitized persisted read projections (7)
+     ✓ preserves exact risk/estimate provenance and omits internal assurance/configuration/path fields 1992ms
+     ✓ keeps rejected latest data distinct from lastAccepted and reports stale/not-ready reasons 1633ms
+     ✓ projects retrieval age, block age, progression and oracle evidence as separate readiness fields 1415ms
+     ✓ paginates deterministically across new commits without repeating rows and retains delivery ambiguity 2145ms
+     ✓ reads only committed WAL snapshots during a competing transaction and never mutates tables 1756ms
+     ✓ rejects invalid pages and oversized persisted JSON without silently omitting safety fields 1727ms
+ ✓ test/oracle-assurance.test.ts (21 tests) 3464ms
+   ✓ FIXTURE: evidence-based oracle assurance and unchanged mathematics (21)
+     ✓ verifies only runtime identity and keeps missing economics, heartbeat and independence explicit 344ms
+ ✓ test/risk-cli.test.ts (22 tests) 2002ms
+   ✓ FIXTURE: Phase 2 CLI with Phase 1 regression behavior (22)
+     ✓ renders all three layers, blocked recovery reasons and the oracle limitation 379ms
+ ✓ test/monitoring-transitions.test.ts (82 tests) 1746ms
+ ✓ test/cloudflare-worker.test.ts (14 tests) 262ms
+ ✓ test/accounting.test.ts (26 tests) 80ms
+ ✓ test/oracle-cli.test.ts (16 tests) 7200ms
+   ✓ FIXTURE: bounded oracle audit/status CLI (16)
+     ✓ executes one audit, persists it and serves text/JSON status across process-style reopen without new reads 1587ms
+     ✓ labels explicit historical audits and never mistakes one for current status 894ms
+     ✓ saves the complete assurance, snapshot, graph and supplemental artifacts and binds the returned manifest to SQLite 1105ms
+     ✓ reports local age rejection as invalid without inventing an upstream heartbeat 943ms
+     ✓ persists unavailable supplemental evidence as unavailable and exits nonzero 853ms
+     ✓ rejects a requested historical block/mode mismatch and releases the database lock 1023ms
+ ✓ test/scheduler-runner.test.ts (9 tests) 137ms
+ ✓ test/snapshot.test.ts (18 tests) 3687ms
+   ✓ FIXTURE: complete block-pinned read path (18)
+     ✓ pins code, metadata, market, position, price and rate on both endpoints 526ms
+     ✓ rejects MCP/RPC value and per-subcall success disagreement 441ms
+ ✓ test/oracle.test.ts (13 tests) 57ms
+ ✓ test/oracle-independent.test.ts (26 tests) 1283ms
+   ✓ FIXTURE: qualified independent validation and exact price units (26)
+     ✓ cannot promote the production oracle using self-asserted candidate documents or fixture independence 791ms
+ ✓ test/risk-thresholds.test.ts (40 tests) 200ms
+ ✓ test/risk-collateral.test.ts (11 tests) 228ms
+ ✓ test/postgres-fixture-cleanup.test.ts (11 tests) 90ms
+ ✓ test/postgres-notifications.test.ts (4 tests) 468ms
+ ✓ test/oracle-evidence.test.ts (12 tests) 1714ms
+   ✓ FIXTURE: immutable oracle evidence and redaction (12)
+     ✓ exclusively creates different directories at the same timestamp and hashes every exact artifact byte 407ms
+ ✓ test/oracle-freshness.test.ts (16 tests) 120ms
+ ✓ test/monitoring-config.test.ts (43 tests) 313ms
+ ✓ test/validation.test.ts (7 tests) 127ms
+ ✓ test/risk-evidence.test.ts (3 tests) 1874ms
+   ✓ FIXTURE: risk evidence binding (3)
+     ✓ saves a self-contained result/estimate set with matching byte hashes on the eligible path 953ms
+ ✓ test/monitoring-cli.test.ts (4 tests) 5219ms
+   ✓ FIXTURE: monitoring CLI and side-effect boundaries (4)
+     ✓ executes a bounded one-cycle command and reads persisted history/status after reopening 3032ms
+     ✓ returns exit 2 for unavailable current data and never prints a safety claim 1297ms
+ ✓ test/a3-deployment-config.test.ts (4 tests) 62ms
+ ✓ test/submission-demo.test.ts (1 test) 5695ms
+   ✓ SUBMISSION FIXTURE: reproducible single-position demo (1)
+     ✓ qualifies the synthetic warning/critical, outbox, rendering, restart and strict-gate scenarios 5685ms
+ ✓ test/monitoring-safety.test.ts (1 test) 446ms
+   ✓ LOCAL SOURCE CHECK: read-only monitoring boundary (1)
+     ✓ does not add an execution wallet, signing or chain-write call path 433ms
+ ❯ test/runtime-process.test.ts (4 tests | 1 failed) 98861ms
+   ❯ PHASE8 FIXTURE: actual runtime processes (4)
+     ✓ guards source imports against HTTP construction, SQLite opens and provider requests 13449ms
+     ✓ shuts down a child runtime through SIGINT (Windows: IPC handler simulation) 22382ms
+     ✓ shuts down a child runtime through SIGTERM (Windows: IPC handler simulation) 22867ms
+     × fences a second process and recovers after actual forced OS termination with an unfinished cycle 40153ms
+
+ Test Files  1 failed | 48 passed (49)
+      Tests  1 failed | 1006 passed (1007)
+   Start at  05:19:38
+   Duration  525.86s (tests 60%, import 37%, transform 3%)
+
+     Import  168 modules were evaluated 370 times · 356.23s total, 37% of tracked time
+             ~55.84s faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+             learn more: https://vitest.dev/guide/improving-performance#test-isolation
+
+JSON report written to [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/unit-tests.json

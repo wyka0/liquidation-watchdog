@@ -1,0 +1,22 @@
+{
+  "monitoring": { "enabled": false, "intervalSeconds": 60 },
+  "storage": { "path": "/var/data/watchdog/storage/watchdog.sqlite", "cycleRetentionDays": 30, "alertRetentionDays": 180 },
+  "notifications": { "telegram": false, "discord": false, "maxAttempts": 5, "timeoutSeconds": 15, "maxPerDrain": 10 },
+  "operations": {
+    "profile": "production",
+    "shutdownTimeoutSeconds": 20,
+    "cycleTimeoutSeconds": 240,
+    "connectivityTimeoutSeconds": 30,
+    "chainStatusMaxAgeSeconds": 600,
+    "failureBackoffMaxSeconds": 900
+  },
+  "resources": {
+    "databaseBytes": 4294967296,
+    "walBytes": 268435456,
+    "minFreeBytes": 536870912,
+    "pendingDeliveries": 10000,
+    "rssBytes": 536870912,
+    "evidenceBytes": 2147483648,
+    "evidenceFiles": 50000
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "recordedAt": "2026-11-02T14:15:51.933Z",
+  "files": [
+    {
+      "path": "docs/phase7-files.md",
+      "bytes": 3892,
+      "sha256": "aeb1616cab83bec411bf2632f42c2b304039fba284d4d4c28dcbe38a8478a34d"
+    },
+    {
+      "path": "docs/phase7-report.md",
+      "bytes": 27349,
+      "sha256": "9e53d8db371e95d83d97593b89ab93c605c17ebc76720a9ec98b1aadacd19b75"
+    },
+    {
+      "path": "docs/render-architecture.md",
+      "bytes": 15183,
+      "sha256": "847d0cf046a6e4e9d6032ce67bac0e381cc61c53930a82e24a068d931717d6cc"
+    },
+    {
+      "path": "docs/render-deployment-plan.md",
+      "bytes": 20324,
+      "sha256": "624ed370d411ddd3d729551a4f238b66c9ad08111061b6d2019383de8068cf09"
+    },
+    {
+      "path": "docs/render-security-plan.md",
+      "bytes": 12571,
+      "sha256": "154d111058d11ff87ce840b451ed210c607bd36cd553a441e171ab65e28776a2"
+    },
+    {
+      "path": "docs/render-storage-decision.md",
+      "bytes": 12097,
+      "sha256": "c098116140519c53dae346425d7c9d32d62a2ae3055336daccf462536625c887"
+    },
+    {
+      "path": "render.yaml",
+      "bytes": 2033,
+      "sha256": "766eb55f0a0f215155853a77fad09da243cd575eb93b22260288d49ce24628ef"
+    }
+  ]
+}

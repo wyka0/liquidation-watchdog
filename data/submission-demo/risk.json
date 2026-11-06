@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "positionId": "de1bc4853c7c9bbe58a06dfa67d35119a3c04b96e1e31864bfb28eeb821fbd5c",
+    "mode": "CONFIGURED",
+    "enabled": true,
+    "chainId": 1672,
+    "account": "0x1111111111111111111111111111111111111111",
+    "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+    "protocol": "MORPHO_BLUE",
+    "protocolAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+    "accountRole": "EXPLICITLY_CONFIGURED_PUBLIC_ACCOUNT_NOT_USER_WALLET",
+    "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+    "collateralToken": "0x4809010926aec940b550D34a46A52739f996D75D",
+    "loanDecimals": 6,
+    "collateralDecimals": 18
+  },
+  "meta": {
+    "asOf": "2026-11-01T14:05:00.000Z",
+    "cacheExpiresAt": "2026-11-01T14:05:01.000Z",
+    "history": false,
+    "stale": false,
+    "lastAcceptedAgeSeconds": 0,
+    "safety": {
+      "oracleAssurance": "UNVERIFIED",
+      "freshness": "UNKNOWN",
+      "actionable": false,
+      "estimates": "INDICATIVE_ONLY",
+      "providerIndependence": "RPC_MCP_SHARED_UPSTREAM_NOT_INDEPENDENT"
+    }
+  },
+  "latest": {
+    "cycleId": "demo_critical",
+    "observedAt": "2026-11-01T14:05:00.000Z",
+    "accepted": true,
+    "risk": {
+      "mathematicalRiskState": "CRITICAL",
+      "effectiveRiskState": "DATA_UNVERIFIED",
+      "dataQuality": "UNVERIFIED",
+      "oracleQuality": "UNVERIFIED",
+      "actionability": "INDICATIVE_ONLY",
+      "actionable": false,
+      "safetyRatio": "1065437411328470030",
+      "ltv": "858802206744830059",
+      "ratioScale": "1000000000000000000",
+      "debtAmount": "300989406597",
+      "collateralAmount": "316838566331327720653953",
+      "evidenceKind": "FIXTURE",
+      "temporalContext": "FIXTURE",
+      "blockNumber": "21848635",
+      "blockHash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+      "blockTimestamp": "1793535695",
+      "snapshotIdentifier": "sha256:d85a13c2c83615f7d2ed8b924762034757cf03775511c0995e808f8ee6eee269",
+      "snapshotRetrievedAt": "2026-11-01T14:05:00.000Z",
+      "calculatedAt": "2026-11-01T14:05:00.000Z",
+      "calculationVersion": "1.0.0",
+      "thresholds": {
+        "warningRatio": "1.30",
+        "criticalRatio": "1.10",
+        "targetRatio": "1.25",
+        "liquidationBoundary": "1.00"
+      },
+      "repayment": null,
+      "additionalCollateral": null
+    },
+    "diagnostics": [
+      "ORACLE_UNVERIFIED",
+      "ORACLE_FRESHNESS_UNKNOWN"
+    ],
+    "assurance": {
+      "overall": "UNVERIFIED",
+      "gate": "DATA_UNVERIFIED",
+      "dimensions": {
+        "CONTRACT_IDENTITY": "VERIFIED",
+        "SOURCE_PROVENANCE": "UNVERIFIED",
+        "OPERATOR_PROVENANCE": "UNVERIFIED",
+        "PRICE_SEMANTICS": "PARTIALLY_VERIFIED",
+        "FRESHNESS": "UNKNOWN",
+        "INDEPENDENT_VALIDATION": "UNKNOWN",
+        "CONFIGURATION_CONTROL": "PARTIALLY_VERIFIED"
+      },
+      "changes": [],
+      "timestampAnomalies": [],
+      "evidenceInvalidated": false
+    }
+  },
+  "lastAccepted": {
+    "cycleId": "demo_critical",
+    "observedAt": "2026-11-01T14:05:00.000Z",
+    "accepted": true,
+    "risk": {
+      "mathematicalRiskState": "CRITICAL",
+      "effectiveRiskState": "DATA_UNVERIFIED",
+      "dataQuality": "UNVERIFIED",
+      "oracleQuality": "UNVERIFIED",
+      "actionability": "INDICATIVE_ONLY",
+      "actionable": false,
+      "safetyRatio": "1065437411328470030",
+      "ltv": "858802206744830059",
+      "ratioScale": "1000000000000000000",
+      "debtAmount": "300989406597",
+      "collateralAmount": "316838566331327720653953",
+      "evidenceKind": "FIXTURE",
+      "temporalContext": "FIXTURE",
+      "blockNumber": "21848635",
+      "blockHash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+      "blockTimestamp": "1793535695",
+      "snapshotIdentifier": "sha256:d85a13c2c83615f7d2ed8b924762034757cf03775511c0995e808f8ee6eee269",
+      "snapshotRetrievedAt": "2026-11-01T14:05:00.000Z",
+      "calculatedAt": "2026-11-01T14:05:00.000Z",
+      "calculationVersion": "1.0.0",
+      "thresholds": {
+        "warningRatio": "1.30",
+        "criticalRatio": "1.10",
+        "targetRatio": "1.25",
+        "liquidationBoundary": "1.00"
+      },
+      "repayment": null,
+      "additionalCollateral": null
+    },
+    "diagnostics": [
+      "ORACLE_UNVERIFIED",
+      "ORACLE_FRESHNESS_UNKNOWN"
+    ],
+    "assurance": {
+      "overall": "UNVERIFIED",
+      "gate": "DATA_UNVERIFIED",
+      "dimensions": {
+        "CONTRACT_IDENTITY": "VERIFIED",
+        "SOURCE_PROVENANCE": "UNVERIFIED",
+        "OPERATOR_PROVENANCE": "UNVERIFIED",
+        "PRICE_SEMANTICS": "PARTIALLY_VERIFIED",
+        "FRESHNESS": "UNKNOWN",
+        "INDEPENDENT_VALIDATION": "UNKNOWN",
+        "CONFIGURATION_CONTROL": "PARTIALLY_VERIFIED"
+      },
+      "changes": [],
+      "timestampAnomalies": [],
+      "evidenceInvalidated": false
+    }
+  }
+}

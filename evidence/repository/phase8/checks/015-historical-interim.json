@@ -1,0 +1,12 @@
+{
+  "command": "node [REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-safety.mjs check",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T14:54:27.884Z",
+  "finishedAt": "2026-11-02T14:54:30.266Z",
+  "durationMs": 2380,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "{\n  \"checkedAt\": \"2026-11-02T14:54:30.231Z\",\n  \"passed\": true,\n  \"immutableOriginalFilesMatched\": 1236,\n  \"expectedSourceOrBuildChanges\": [\n    {\n      \"path\": \"dist/storage/store.d.ts\",\n      \"bytes\": 194371,\n      \"sha256\": \"dfedde000b6d9a4b58693be48cab8a21d7395a5efd2f5c30d0805959a2eaae7b\"\n    },\n    {\n      \"path\": \"dist/storage/store.js\",\n      \"bytes\": 42006,\n      \"sha256\": \"a87fb24ac16a710f37089585e17f0df79cf177759bd05755b2b6d4f4665031b3\"\n    },\n    {\n      \"path\": \"dist/storage/store.js.map\",\n      \"bytes\": 36246,\n      \"sha256\": \"1556816be8becb665955023bd2c58d074a3e2c2ad79f5c4660d558473aff0be5\"\n    },\n    {\n      \"path\": \"scripts/release-inputs.ts\",\n      \"bytes\": 5169,\n      \"sha256\": \"d58940e8fe7d76d38d18252f8f0f00ae8ff6018dd333fa033743df4b6b819324\"\n    },\n    {\n      \"path\": \"src/storage/store.ts\",\n      \"bytes\": 39310,\n      \"sha256\": \"86f5292bb04c2147dc71e02d6d7b1b3f81c6136dcc8838ad2b74acc8284332d9\"\n    }\n  ],\n  \"originalSnapshotFilesMatched\": 1241,\n  \"phase7BindingsMatched\": 7,\n  \"gitIndexUnchanged\": true,\n  \"gitIndexSha256\": \"99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689\"\n}\n",
+  "stderr": ""
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "inspectedAt": "2026-11-06T00:45:21.593Z",
+  "sourceBeforeSha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846",
+  "sourceAfterSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+  "originalAssertionChainsPreserved": [
+    "expect(code).toBe(0)",
+    "expect(JSON.parse(output) as unknown).toMatchObject({ passed: true, databaseOpens: 0, providerRequests: 0 })",
+    "expect(await running.closed).toBe(0)",
+    "expect(performance.now() - started).toBeLessThan(3_000)",
+    "expect(check.runtime()?.status).toBe(\"STOPPED\")",
+    "expect(duplicate.start()).rejects.toMatchObject({ code: \"RUNTIME_STARTUP\" })",
+    "expect(() => new MonitorStore(h.options.database)).toThrow(\"exclusive monitor lock\")",
+    "expect(running.process.kill(\"SIGKILL\")).toBe(true)",
+    "expect(interrupted.unfinishedCycles(MONITOR_SCOPE)).toHaveLength(1)",
+    "expect(await resumed.closed).toBe(0)",
+    "expect(check.unfinishedCycles(MONITOR_SCOPE)).toEqual([])",
+    "expect(check.state(MONITOR_SCOPE).revision).toBe(2)"
+  ],
+  "addedCleanupAssertion": [
+    "expect(existsSync(directory)).toBe(false)"
+  ],
+  "unchangedTestTitleTemplates": [
+    "guards source imports against HTTP construction, SQLite opens and provider requests",
+    "shuts down a child runtime through %s (Windows: IPC handler simulation)",
+    "fences a second process and recovers after actual forced OS termination with an unfinished cycle"
+  ],
+  "expandedTests": 4,
+  "unchangedPerChildSpawnTimeoutsMs": [
+    30000,
+    20000
+  ],
+  "aggregateRecoveryDeadline": {
+    "beforeMs": 40000,
+    "afterMs": 70000,
+    "formula": "2 * unchanged 30000ms child horizons + existing normal 10000ms assertion budget"
+  },
+  "unchangedOtherExplicitTestDeadlinesMs": [
+    30000,
+    40000,
+    40000
+  ],
+  "unchangedGracefulShutdownAssertionMs": 3000,
+  "noSkippedDeletedExclusiveOrTodoTests": true,
+  "sharedSpawnTimeClosePromiseUsedByStop": true,
+  "lateSpawnDirectoryFencePresent": true,
+  "afterEachIndependentlyReapsAllTrackedChildren": true,
+  "preserved": [
+    {
+      "path": "test/helpers/phase8-runtime.ts",
+      "bytes": 2335,
+      "sha256": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796",
+      "baselineMatches": true
+    },
+    {
+      "path": "vitest.config.ts",
+      "bytes": 212,
+      "sha256": "2255dfc6f2b5066c47e8d0a0f7af6c137421b9c8bd82f64becf02c2d9f5d7b8b",
+      "baselineMatches": true
+    },
+    {
+      "path": "src/runtime/service.ts",
+      "bytes": 8810,
+      "sha256": "1e9bba6bc48fb62d3d5f306dc03a13f871a0082797c424c4659f6c7a793a4b27",
+      "baselineMatches": true
+    },
+    {
+      "path": "src/runtime/workspace.ts",
+      "bytes": 9047,
+      "sha256": "88d51e1801f0f5c33acf49db595964bb4ef76e578d310e74b9739855f7719ca8",
+      "baselineMatches": true
+    },
+    {
+      "path": "src/oracle-assurance/evaluate.ts",
+      "bytes": 20165,
+      "sha256": "8fa1e42dc229649f3164ab823fd53c4db6e4c6fc06990422a75910d722cbb8d2",
+      "baselineMatches": true
+    },
+    {
+      "path": "src/oracle-assurance/freshness.ts",
+      "bytes": 3792,
+      "sha256": "739c985be6ba03f07a65c41025ade8b9dff73455f18c0f1091f894789ca50540",
+      "baselineMatches": true
+    },
+    {
+      "path": "src/oracle-assurance/independent.ts",
+      "bytes": 7142,
+      "sha256": "e843a37ab4e9416cfbf15a0b2c082ba3aa0a2ae85777fd3da21970a6d3722aa1",
+      "baselineMatches": true
+    },
+    {
+      "path": "src/risk/eligibility.ts",
+      "bytes": 6330,
+      "sha256": "23fdf62647fb3eb264fc25bf61e61bccbef6bbbec8697b208c3299751a2ec2e7",
+      "baselineMatches": true
+    }
+  ],
+  "limitations": [
+    "This is static structural verification; real process/IPC/SQLite/directory behavior is qualified separately by retained control and test executions."
+  ]
+}

@@ -1,0 +1,131 @@
+{
+ "generatedAtUtc": "2026-11-02T10:41:13.555Z",
+ "algorithm": "sha256",
+ "files": [
+  {
+   "path": "evidence/phase6/alerts-output.txt",
+   "sha256": "91f91a39d67b90f80acc9b12659efc4bb9088aa0f0c467e6618f5f2c7e80bc3e",
+   "bytes": 3889
+  },
+  {
+   "path": "evidence/phase6/backup-1-stdout.txt",
+   "sha256": "8743f68cdac5d598cadcb1e5ffeba1a9740e97d16b7fcf6468e58d809e0beaa0",
+   "bytes": 683
+  },
+  {
+   "path": "evidence/phase6/backup-database-probe.json",
+   "sha256": "387e68fbebe9285f3793645b54ef099ce8d15d68c9bb8785e0c9e4a6d2b4ea7b",
+   "bytes": 787
+  },
+  {
+   "path": "evidence/phase6/backup-verify.json",
+   "sha256": "7a4fd9cd70b4a6cb9fc08a37505f9633c1d50385bfbf0c40a05d7b4fbeefda3d",
+   "bytes": 621
+  },
+  {
+   "path": "evidence/phase6/config-check-production-profile.json",
+   "sha256": "6a315edc5ae9a2d6eff6970c927fa2ba360104193eeb1ca38a915ffd4dd03916",
+   "bytes": 765
+  },
+  {
+   "path": "evidence/phase6/config-check-traversal-refusal.json",
+   "sha256": "15c0229f2b59f9e68954dcea5a4f0ab8b8979edda84780f452cf2136782bcd82",
+   "bytes": 564
+  },
+  {
+   "path": "evidence/phase6/database-init-rejected-during-active-cycle.txt",
+   "sha256": "32732820a54a0bfea1e9d452780c8162ae984695214efeec7d5bf84e5cab2be7",
+   "bytes": 566
+  },
+  {
+   "path": "evidence/phase6/database-init-schema-drift-refusal.txt",
+   "sha256": "b39f32755a1b3ec23dfcecf621b5f69ba6271851d9d31b08bd01db60a3b70c25",
+   "bytes": 562
+  },
+  {
+   "path": "evidence/phase6/diagnostics.json",
+   "sha256": "c643ed633c366ae559b16d00b5d16823b5ac48eae4ec7a6e3072437a73a66e8a",
+   "bytes": 4382
+  },
+  {
+   "path": "evidence/phase6/env-example-hash-check.txt",
+   "sha256": "bd9cb8b5f193bf8a7da4d0b70b71fa7b5570a8da63ac78882d2192656dc6277c",
+   "bytes": 221
+  },
+  {
+   "path": "evidence/phase6/health-after-init.txt",
+   "sha256": "d8dd9c69ca634ab4ccdf5893e30c0f639aea95cb4b6fd808aa9bab2ccd717fab",
+   "bytes": 3447
+  },
+  {
+   "path": "evidence/phase6/health-before-init-STORE_NOT_FOUND.txt",
+   "sha256": "b3916efbabf9b57ec29c16a4f3b53da349301384d748acf7cdf288129c346c35",
+   "bytes": 1730
+  },
+  {
+   "path": "evidence/phase6/health-during-active-cycle.txt",
+   "sha256": "4761aee029310ec6577a8d3b3eec3072d627d627b6fd45cabd481e8ba3bcd67b",
+   "bytes": 4350
+  },
+  {
+   "path": "evidence/phase6/health-schema-drift-refusal.txt",
+   "sha256": "18b14c9c41869275739bb2d8570477a434c8c6a83690a2136096e4c1bc820635",
+   "bytes": 1734
+  },
+  {
+   "path": "evidence/phase6/host-environment-observations.json",
+   "sha256": "fb58ac4fd3b1804d67488b9f0212a7ac1767f4ff3adc2871258cbe3f85e2a402",
+   "bytes": 3280
+  },
+  {
+   "path": "evidence/phase6/host-inventory.raw.json",
+   "sha256": "32c621e4d9242bdd90a6f4b026cfb999d23076e07b78dfec9c0b44c1fa4a453c",
+   "bytes": 1485
+  },
+  {
+   "path": "evidence/phase6/monitor-once-invalid-threshold-rejected.txt",
+   "sha256": "680e528eb51a4c3bb142fa691b0d262097ec433971ef1c42d166767f2876e79d",
+   "bytes": 622
+  },
+  {
+   "path": "evidence/phase6/monitor-once-invalid-threshold-retry-context.txt",
+   "sha256": "aa54d8ee7762524a1214b1f83745dfc8cd3a3d7f6413b127e6de1a6438247748",
+   "bytes": 623
+  },
+  {
+   "path": "evidence/phase6/monitoring-observation-results.json",
+   "sha256": "4d80839233f72c6cd03f5f25f4b93c4b7f88f869a966b7e05165547a2da6a6ba",
+   "bytes": 7563
+  },
+  {
+   "path": "evidence/phase6/oracle-status.json",
+   "sha256": "a1621f8d46dd120007aa09a041d22d88eb585881373b11d927e7ec887e4710ff",
+   "bytes": 78
+  },
+  {
+   "path": "evidence/phase6/readiness-probe.json",
+   "sha256": "6deb5ec635340c7fd3dbd4c97bbb0dc35f8fc3dd6de068c9f7d2a4f6042bf90f",
+   "bytes": 4334
+  },
+  {
+   "path": "evidence/phase6/readiness.json",
+   "sha256": "01b2a8e6f09551c2f3c42ef78b4dc12967958880bb6cb30679dbef5ad39b6f01",
+   "bytes": 4382
+  },
+  {
+   "path": "evidence/phase6/release-identity.json",
+   "sha256": "4e8efb50435217bae0e7a7effeb1a606f81914ae32688f3ba6aa1652a0fc4ea4",
+   "bytes": 1460
+  },
+  {
+   "path": "evidence/phase6/restore-verify.json",
+   "sha256": "af3171412555034a3de3fea94434804042d2ddbda1609a2a31c634b294667d81",
+   "bytes": 272
+  },
+  {
+   "path": "evidence/phase6/status.json",
+   "sha256": "366e67d1c8c2342f920ce441c4775204fd995d2af671c88a26c9b4d840a0a6de",
+   "bytes": 159249
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+  "requestedAt": "2026-11-06T14:57:39.437Z",
+  "endpoint": "https://rpc.pharos.xyz",
+  "requestCount": 310,
+  "requestBudget": 460,
+  "headBlock": "22287883",
+  "scanFromBlock": "22137883",
+  "extendedBlocks": "150000",
+  "windowSize": "1000",
+  "scanNulls": 0,
+  "splitCount": 0,
+  "windowNotes": [],
+  "idEnumerationSource": "Borrow/SupplyCollateral logs + Stage2 anchor id",
+  "distinctIds": 3,
+  "paramsDecoded": 3,
+  "newlyFoundFeeds": {},
+  "ranked": [
+    {
+      "id": "0xd834016ed49b76ffcbeb8402733e2d69b1f77d30b28d6f21c826931214ae5aea",
+      "score": "22255355",
+      "borrowCount": 0,
+      "supplyCollateralCount": 1,
+      "borrowerSamples": [],
+      "supplierSamples": [
+        "0x000000000000000000000000966b9dce3d091c0214ada42cedf51400df4fb257"
+      ],
+      "lastBorrow": "0",
+      "lastSupply": "22255355"
+    },
+    {
+      "id": "0xc79579a002dbc8c535d3a87198fcbbece1a664ad82a356b0447c5bff9e16fd86",
+      "score": "22169935",
+      "borrowCount": 2,
+      "supplyCollateralCount": 2,
+      "borrowerSamples": [
+        "0x00000000000000000000000096b7d14d867cfe460eedd903394f748e78c537b6",
+        "0x000000000000000000000000e6a4771284342462f4d2bfbfb86db12c8f19fe7c"
+      ],
+      "supplierSamples": [
+        "0x00000000000000000000000096b7d14d867cfe460eedd903394f748e78c537b6",
+        "0x000000000000000000000000e6a4771284342462f4d2bfbfb86db12c8f19fe7c"
+      ],
+      "lastBorrow": "22169935",
+      "lastSupply": "22169884"
+    },
+    {
+      "id": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+      "score": "0",
+      "borrowCount": 0,
+      "supplyCollateralCount": 0,
+      "borrowerSamples": [],
+      "supplierSamples": [],
+      "lastBorrow": "0",
+      "lastSupply": "0"
+    }
+  ],
+  "candidates": [
+    {
+      "marketId": "0xd834016ed49b76ffcbeb8402733e2d69b1f77d30b28d6f21c826931214ae5aea",
+      "isStage2Market": false,
+      "idVerified": true,
+      "borrowCount": 0,
+      "supplyCollateralCount": 1,
+      "lastBorrowBlock": "0",
+      "lastSupplyBlock": "22255355",
+      "recentPositions": {
+        "0x966B9dCE3d091c0214Ada42CEDF51400df4fB257": {
+          "supplyShares": "0",
+          "borrowShares": "69977888099148965",
+          "collateral": "153191350907341290319666"
+        }
+      },
+      "params": {
+        "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "collateralToken": "0x13282289b8B241Cf16eB5B8Bad401C7c2fdAb0F8",
+        "oracle": "0xd7E33079D91c5fA12798C1e7b28A7877045aa7C3",
+        "irm": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+        "lltv": "860000000000000000",
+        "derivedIdMatches": true
+      },
+      "loan": {
+        "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "symbol": null,
+        "decimals": null,
+        "name": null
+      },
+      "collateral": {
+        "address": "0x13282289b8B241Cf16eB5B8Bad401C7c2fdAb0F8",
+        "symbol": null,
+        "decimals": null,
+        "name": null,
+        "morphoBalance": null
+      },
+      "oracle": {
+        "address": "0xd7E33079D91c5fA12798C1e7b28A7877045aa7C3"
+      },
+      "state": {
+        "totalSupplyAssets": "1086626597382",
+        "totalSupplyShares": "1083191776071881351",
+        "totalBorrowAssets": "975971621190",
+        "totalBorrowShares": "972707225409444410",
+        "lastUpdate": "1793701870",
+        "fee": "0"
+      }
+    },
+    {
+      "marketId": "0xc79579a002dbc8c535d3a87198fcbbece1a664ad82a356b0447c5bff9e16fd86",
+      "isStage2Market": false,
+      "idVerified": true,
+      "borrowCount": 2,
+      "supplyCollateralCount": 2,
+      "lastBorrowBlock": "22169935",
+      "lastSupplyBlock": "22169884",
+      "recentPositions": {
+        "0x96B7d14D867CFE460EEdd903394f748E78C537b6": {
+          "supplyShares": "0",
+          "borrowShares": "166468109432766137",
+          "collateral": "169490800000366812738681"
+        },
+        "0xE6a4771284342462f4d2BfbFB86DB12c8f19fe7C": {
+          "supplyShares": "0",
+          "borrowShares": "1515367357434141280",
+          "collateral": "1542766604406571443904879"
+        }
+      },
+      "params": {
+        "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "collateralToken": "0x54dF79D8EDf36D15cd83fbeDbdd90807fC828934",
+        "oracle": "0x4eEfC4C6e7216Aedd5E809e4fC74fb8859B3FA46",
+        "irm": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+        "lltv": "915000000000000000",
+        "derivedIdMatches": true
+      },
+      "loan": {
+        "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "symbol": null,
+        "decimals": null,
+        "name": null
+      },
+      "collateral": {
+        "address": "0x54dF79D8EDf36D15cd83fbeDbdd90807fC828934",
+        "symbol": null,
+        "decimals": null,
+        "name": null,
+        "morphoBalance": null
+      },
+      "oracle": {
+        "address": "0x4eEfC4C6e7216Aedd5E809e4fC74fb8859B3FA46"
+      },
+      "state": {
+        "totalSupplyAssets": "4174556553004",
+        "totalSupplyShares": "4125543269631411782",
+        "totalBorrowAssets": "3757512743969",
+        "totalBorrowShares": "3708640604432138734",
+        "lastUpdate": "1793952693",
+        "fee": "0"
+      }
+    },
+    {
+      "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+      "isStage2Market": true,
+      "idVerified": true,
+      "borrowCount": 0,
+      "supplyCollateralCount": 0,
+      "lastBorrowBlock": "0",
+      "lastSupplyBlock": "0",
+      "recentPositions": {},
+      "params": {
+        "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "collateralToken": "0x4809010926aec940b550D34a46A52739f996D75D",
+        "oracle": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+        "irm": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+        "lltv": "915000000000000000",
+        "derivedIdMatches": true
+      },
+      "loan": {
+        "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "symbol": null,
+        "decimals": null,
+        "name": null
+      },
+      "collateral": {
+        "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+        "symbol": null,
+        "decimals": null,
+        "name": null,
+        "morphoBalance": null
+      },
+      "oracle": {
+        "address": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b"
+      },
+      "state": {
+        "totalSupplyAssets": "20601276549623",
+        "totalSupplyShares": "20361451642877459961",
+        "totalBorrowAssets": "18002831585896",
+        "totalBorrowShares": "17768614015958479961",
+        "lastUpdate": "1793952693",
+        "fee": "0"
+      }
+    }
+  ]
+}

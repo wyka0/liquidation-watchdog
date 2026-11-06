@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "status": "REPORT_COMPLETE_FINITE_LOCAL_RUN_PASSED_WITH_EXPLICIT_LIMITATIONS",
+  "completedAt": "2026-11-06T00:14:34.066Z",
+  "report": {
+    "file": "LIVE-STAGE-2-MONITORING-REPORT.md",
+    "bytes": 40649,
+    "sha256": "acdfe3b107fa723c5d87ff990de66aaa7a2e3246e38b0f01b43b299efd66c60e"
+  },
+  "validation": {
+    "file": "report-validation-results.json",
+    "bytes": 7705,
+    "sha256": "25e98d9b1a6dacbd5cfce7b57c01552e89e285b051b3a25923899867ecd09643"
+  },
+  "manifest": {
+    "file": "artifact-manifest.json",
+    "bytes": 65613,
+    "sha256": "1ccbe5add2bd7029d4972a2db526314ccc035eed8534e6c3e39f231d633f66b0"
+  },
+  "manifestHashSidecar": {
+    "file": "artifact-manifest.sha256",
+    "bytes": 89,
+    "sha256": "e3eec6f58f6a8dba194151b550c51419e7a498f3f5036d9b4958a7c12b0828bd"
+  },
+  "evidence": {
+    "file": "live-stage2-evidence.json",
+    "bytes": 59328,
+    "sha256": "f94ec2761c77d2ddb219c8215dd3b6ac0ee9836ced59798c36740fe19f6b2124"
+  },
+  "testAccounting": {
+    "file": "test-accounting.json",
+    "bytes": 13150,
+    "sha256": "122d8b218638f2accd423c97d87076a222f191d745ac7f4b8e0f6f83b311b43e"
+  },
+  "preservation": {
+    "file": "preservation-report.json",
+    "bytes": 1996,
+    "sha256": "570cb6a638add010e0d459a3d28c8967dde796de0a974b86db512265b184f284"
+  },
+  "manifestFilesRehashed": 387,
+  "manifestBytesRehashed": 10157722,
+  "originalRequirements": [
+    {
+      "requirement": "Read collateral, debt and health factor (or equivalent) from chain",
+      "verdict": "PASS",
+      "scope": "EXACT_FINITE_LOCAL_RUN_ONLY"
+    },
+    {
+      "requirement": "Support configurable warning and critical thresholds, with default examples 1.3 and 1.1",
+      "verdict": "PASS",
+      "scope": "EXACT_FINITE_LOCAL_RUN_ONLY"
+    },
+    {
+      "requirement": "Send timestamped alerts through at least one supported channel",
+      "verdict": "PASS",
+      "scope": "EXACT_FINITE_LOCAL_RUN_ONLY"
+    },
+    {
+      "requirement": "Include a concrete suggested action in each alert",
+      "verdict": "PASS",
+      "scope": "EXACT_FINITE_LOCAL_RUN_ONLY"
+    }
+  ],
+  "execution": {
+    "capturedAuthorizedLiveCycles": 1,
+    "liveCyclesDuringFinalReportWork": 0,
+    "consoleAlerts": 3,
+    "delivered": 3,
+    "actionsPerAlert": 1,
+    "financialOptionsPerAlert": 0,
+    "pendingDeliveries": 0,
+    "runtime": "STOPPED",
+    "restartObservations": 0,
+    "restartResends": 0
+  },
+  "software": {
+    "fullUnit": {
+      "files": 49,
+      "total": 1007,
+      "passed": 1006,
+      "failed": 1,
+      "pending": 0,
+      "todo": 0
+    },
+    "fullUnitVerdict": "FAIL",
+    "fullUnitExitCode": 1,
+    "focusedUnit": {
+      "files": 1,
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "pending": 0,
+      "todo": 0
+    },
+    "focusedVerdict": "PASS",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "externalBuild": "PASS",
+    "freshAllGreenFullSuiteQualified": false,
+    "originalFailureRetained": true,
+    "conclusiveTimeoutCauseEstablished": false
+  },
+  "oracle": {
+    "overall": "UNVERIFIED",
+    "freshness": "UNKNOWN",
+    "independentComparator": "NOT_CONFIGURED",
+    "selectedUpstreamId": null,
+    "qualifiedTimingConfigurationFingerprint": null,
+    "recoveryEligibility": "BLOCKED",
+    "actionable": false,
+    "financialAmountsSuggested": 0
+  },
+  "finalReportWork": {
+    "fetchAttempts": 0,
+    "socketAttempts": 0,
+    "productionImports": 0,
+    "databaseOpens": 0,
+    "subprocesses": 0,
+    "repositoryFilesWritten": 0
+  },
+  "productionAcceptance": "NOT_ACCEPTED_NO_GO",
+  "furtherAuthorizationGranted": false,
+  "stop": "Task stopped after the finite-run report. Further live reads/cycles, activation, external notifications, implementation, deployment or migrations require separately scoped approval."
+}

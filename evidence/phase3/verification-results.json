@@ -1,0 +1,176 @@
+{
+  "evidenceKind": "PHASE3_LOCAL_VERIFICATION_WITH_LIVE_READS",
+  "startedAt": "2026-11-01T15:54:26.718Z",
+  "finishedAt": "2026-11-01T15:59:16.792Z",
+  "passed": true,
+  "nodeVersion": "v24.14.1",
+  "platform": "win32",
+  "results": [
+    {
+      "check": "typecheck",
+      "command": "node npm-cli.js run typecheck",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:54:26.721Z",
+      "finishedAt": "2026-11-01T15:54:38.023Z",
+      "outputFile": "typecheck.txt"
+    },
+    {
+      "check": "lint",
+      "command": "node npm-cli.js run lint",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:54:38.023Z",
+      "finishedAt": "2026-11-01T15:54:44.083Z",
+      "outputFile": "lint.txt"
+    },
+    {
+      "check": "test-unit",
+      "command": "node npm-cli.js run test:unit",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:54:44.083Z",
+      "finishedAt": "2026-11-01T15:55:19.378Z",
+      "outputFile": "test-unit.txt"
+    },
+    {
+      "check": "test-integration",
+      "command": "node npm-cli.js run test:integration",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:55:19.378Z",
+      "finishedAt": "2026-11-01T15:55:55.325Z",
+      "outputFile": "test-integration.txt"
+    },
+    {
+      "check": "build",
+      "command": "node npm-cli.js run build",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:55:55.325Z",
+      "finishedAt": "2026-11-01T15:56:05.195Z",
+      "outputFile": "build.txt"
+    },
+    {
+      "check": "built-cli-smoke",
+      "command": "node dist/cli.js --help",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:56:05.195Z",
+      "finishedAt": "2026-11-01T15:56:07.432Z",
+      "outputFile": "built-cli-smoke.txt"
+    },
+    {
+      "check": "cli-inspect-smoke",
+      "command": "node --import tsx src/cli.ts inspect --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:56:07.432Z",
+      "finishedAt": "2026-11-01T15:56:42.932Z",
+      "outputFile": "cli-inspect-smoke.txt"
+    },
+    {
+      "check": "built-cli-risk-smoke",
+      "command": "node dist/cli.js risk --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:56:42.932Z",
+      "finishedAt": "2026-11-01T15:57:15.855Z",
+      "outputFile": "built-cli-risk-smoke.txt"
+    },
+    {
+      "check": "built-cli-historical-risk-smoke",
+      "command": "node dist/cli.js risk --block 21853902 --warning 1.30 --critical 1.10 --target 1.25 --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:57:15.855Z",
+      "finishedAt": "2026-11-01T15:57:48.859Z",
+      "outputFile": "built-cli-historical-risk-smoke.txt"
+    },
+    {
+      "check": "historical-phase2-regression",
+      "command": "node --import tsx scripts/phase3-live-regression.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:57:48.859Z",
+      "finishedAt": "2026-11-01T15:57:49.539Z",
+      "outputFile": "historical-phase2-regression.txt"
+    },
+    {
+      "check": "bounded-monitoring-restart-smoke",
+      "command": "node --import tsx scripts/monitoring-smoke.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:57:49.539Z",
+      "finishedAt": "2026-11-01T15:59:04.886Z",
+      "outputFile": "bounded-monitoring-restart-smoke.txt"
+    },
+    {
+      "check": "source-runtime-links",
+      "command": "node --import tsx scripts/link-source-evidence.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:59:04.886Z",
+      "finishedAt": "2026-11-01T15:59:05.561Z",
+      "outputFile": "source-runtime-links.txt"
+    },
+    {
+      "check": "dependency-audit",
+      "command": "node npm-cli.js audit --json",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:59:05.561Z",
+      "finishedAt": "2026-11-01T15:59:07.969Z",
+      "outputFile": "dependency-audit.txt"
+    },
+    {
+      "check": "phase1-evidence-integrity",
+      "command": "node --import tsx scripts/phase1-integrity.ts --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:59:07.975Z",
+      "finishedAt": "2026-11-01T15:59:08.912Z",
+      "outputFile": "phase1-evidence-integrity.txt"
+    },
+    {
+      "check": "prior-phases-integrity",
+      "command": "node --import tsx scripts/phase3-preservation.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:59:08.912Z",
+      "finishedAt": "2026-11-01T15:59:12.396Z",
+      "outputFile": "prior-phases-integrity.txt"
+    },
+    {
+      "check": "phase3-inventory",
+      "command": "node --import tsx scripts/phase3-inventory.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:59:12.396Z",
+      "finishedAt": "2026-11-01T15:59:13.261Z",
+      "outputFile": "phase3-inventory.txt"
+    },
+    {
+      "check": "documentation-links",
+      "command": "node --import tsx scripts/check-doc-links.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:59:13.261Z",
+      "finishedAt": "2026-11-01T15:59:14.078Z",
+      "outputFile": "documentation-links.txt"
+    },
+    {
+      "check": "secrets-check",
+      "command": "node npm-cli.js run secrets:check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:59:14.078Z",
+      "finishedAt": "2026-11-01T15:59:15.909Z",
+      "outputFile": "secrets-check.txt"
+    },
+    {
+      "check": "git-intent-to-add",
+      "command": "git add --intent-to-add -- .",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:59:15.909Z",
+      "finishedAt": "2026-11-01T15:59:16.294Z",
+      "outputFile": "git-intent-to-add.txt"
+    },
+    {
+      "check": "git-diff-check",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:59:16.294Z",
+      "finishedAt": "2026-11-01T15:59:16.792Z",
+      "outputFile": "git-diff-check.txt"
+    }
+  ],
+  "testEvidence": {
+    "unit": "unit-tests.json (FIXTURE)",
+    "integration": "integration-tests.json (LIVE_CHAIN_READ)"
+  },
+  "gitNote": "The local repository uses intent-to-add entries so git diff --check includes newly created files. No commit or push was performed.",
+  "archiveNote": "Both prior evidence archives are checked against their exclusive baselines; every new capture is under evidence/phase3."
+}

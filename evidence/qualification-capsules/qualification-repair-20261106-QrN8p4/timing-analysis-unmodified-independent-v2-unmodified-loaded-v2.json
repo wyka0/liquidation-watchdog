@@ -1,0 +1,288 @@
+{
+  "generatedAt": "2026-11-06T00:31:06.289Z",
+  "originalForcedTestStartApproximation": "2026-11-05T23:57:43.394Z",
+  "timingCaveat": "Original assertion start is reconstructed by summing reported durations; small inter-test/hook gaps are not included. Original logs do not record individual child lifecycle times.",
+  "originalRuntimeFileEnd": "2026-11-05T23:58:23.549Z",
+  "originalOverlap": [
+    {
+      "file": "C:/liquidation-watchdog/test/a3-deployment-config.test.ts",
+      "start": "2026-11-05T23:57:49.668Z",
+      "end": "2026-11-05T23:57:49.720Z",
+      "tests": 4,
+      "durationMs": 52.955810546875
+    },
+    {
+      "file": "C:/liquidation-watchdog/test/monitoring-cli.test.ts",
+      "start": "2026-11-05T23:57:43.525Z",
+      "end": "2026-11-05T23:57:48.149Z",
+      "tests": 4,
+      "durationMs": 4624.5634765625
+    },
+    {
+      "file": "C:/liquidation-watchdog/test/monitoring-safety.test.ts",
+      "start": "2026-11-05T23:58:12.192Z",
+      "end": "2026-11-05T23:58:12.625Z",
+      "tests": 1,
+      "durationMs": 433.177001953125
+    },
+    {
+      "file": "C:/liquidation-watchdog/test/submission-demo.test.ts",
+      "start": "2026-11-05T23:57:58.912Z",
+      "end": "2026-11-05T23:58:04.597Z",
+      "tests": 1,
+      "durationMs": 5685.228515625
+    }
+  ],
+  "runs": [
+    {
+      "name": "unmodified-independent-v2",
+      "success": true,
+      "assertions": [
+        {
+          "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+          "status": "skipped"
+        },
+        {
+          "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+          "status": "skipped"
+        },
+        {
+          "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+          "status": "skipped"
+        },
+        {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "passed",
+          "durationMs": 11553.098100000001
+        }
+      ],
+      "children": [
+        {
+          "pid": 13772,
+          "spawnAt": "2026-11-06T00:27:22.299Z",
+          "firstWorkspaceProbeAt": "2026-11-06T00:27:26.998Z",
+          "readingAt": "2026-11-06T00:27:28.395Z",
+          "idleAt": null,
+          "closedAt": "2026-11-06T00:27:29.055Z",
+          "spawnToWorkspaceMs": 4707.1589,
+          "spawnToReadingMs": 6095.7177,
+          "spawnToIdleMs": null,
+          "signalToCloseMs": null,
+          "stateAtClose": {
+            "at": "2026-11-06T00:27:29.055Z",
+            "hrNs": "36697735988100",
+            "pid": 14244,
+            "ppid": 7912,
+            "sequence": 130,
+            "event": "child_close",
+            "childPid": 13772,
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false,
+            "stdoutDestroyed": true,
+            "stderrDestroyed": true,
+            "code": null,
+            "signal": "SIGKILL",
+            "handles": {
+              "Pipe": 1,
+              "Socket": 2,
+              "ChildProcess": 1
+            }
+          },
+          "databaseOpens": 5,
+          "explicitDatabaseCloses": 1,
+          "forcedOSDeath": true,
+          "stderrBytes": 338
+        },
+        {
+          "pid": 12388,
+          "spawnAt": "2026-11-06T00:27:29.091Z",
+          "firstWorkspaceProbeAt": "2026-11-06T00:27:32.340Z",
+          "readingAt": null,
+          "idleAt": "2026-11-06T00:27:33.505Z",
+          "closedAt": "2026-11-06T00:27:33.545Z",
+          "spawnToWorkspaceMs": 3249.2133,
+          "spawnToReadingMs": null,
+          "spawnToIdleMs": 4413.604,
+          "signalToCloseMs": 40.0243,
+          "stateAtClose": {
+            "at": "2026-11-06T00:27:33.545Z",
+            "hrNs": "36702225981700",
+            "pid": 14244,
+            "ppid": 7912,
+            "sequence": 144,
+            "event": "child_close",
+            "childPid": 12388,
+            "exitCode": 0,
+            "signalCode": null,
+            "connected": false,
+            "stdoutDestroyed": true,
+            "stderrDestroyed": true,
+            "code": 0,
+            "signal": null,
+            "handles": {
+              "Pipe": 1,
+              "Socket": 2,
+              "ChildProcess": 1
+            }
+          },
+          "databaseOpens": 5,
+          "explicitDatabaseCloses": 5,
+          "forcedOSDeath": false,
+          "stderrBytes": 169
+        }
+      ],
+      "cleanupTimeline": [
+        {
+          "at": "2026-11-06T00:27:33.702Z",
+          "hrNs": "36702382982000",
+          "pid": 14244,
+          "ppid": 7912,
+          "sequence": 158,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-TrWfkJ",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:27:33.720Z",
+          "hrNs": "36702400825200",
+          "pid": 14244,
+          "ppid": 7912,
+          "sequence": 159,
+          "event": "fixture_remove_done",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-TrWfkJ",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "name": "unmodified-loaded-v2",
+      "success": true,
+      "assertions": [
+        {
+          "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+          "status": "skipped"
+        },
+        {
+          "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+          "status": "skipped"
+        },
+        {
+          "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+          "status": "skipped"
+        },
+        {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "passed",
+          "durationMs": 21694.020399999998
+        }
+      ],
+      "children": [
+        {
+          "pid": 11636,
+          "spawnAt": "2026-11-06T00:29:17.544Z",
+          "firstWorkspaceProbeAt": "2026-11-06T00:29:30.945Z",
+          "readingAt": "2026-11-06T00:29:33.155Z",
+          "idleAt": null,
+          "closedAt": "2026-11-06T00:29:34.228Z",
+          "spawnToWorkspaceMs": 13401.8157,
+          "spawnToReadingMs": 15611.1448,
+          "spawnToIdleMs": null,
+          "signalToCloseMs": null,
+          "stateAtClose": {
+            "at": "2026-11-06T00:29:34.228Z",
+            "hrNs": "36822905815600",
+            "pid": 15520,
+            "ppid": 6660,
+            "sequence": 37,
+            "event": "child_close",
+            "childPid": 11636,
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false,
+            "stdoutDestroyed": true,
+            "stderrDestroyed": true,
+            "code": null,
+            "signal": "SIGKILL",
+            "handles": {
+              "Pipe": 1,
+              "Socket": 2,
+              "ChildProcess": 1
+            }
+          },
+          "databaseOpens": 5,
+          "explicitDatabaseCloses": 1,
+          "forcedOSDeath": true,
+          "stderrBytes": 338
+        },
+        {
+          "pid": 11348,
+          "spawnAt": "2026-11-06T00:29:34.275Z",
+          "firstWorkspaceProbeAt": "2026-11-06T00:29:37.661Z",
+          "readingAt": null,
+          "idleAt": "2026-11-06T00:29:38.798Z",
+          "closedAt": "2026-11-06T00:29:38.839Z",
+          "spawnToWorkspaceMs": 3388.8048,
+          "spawnToReadingMs": null,
+          "spawnToIdleMs": 4523.1301,
+          "signalToCloseMs": 39.6736,
+          "stateAtClose": {
+            "at": "2026-11-06T00:29:38.839Z",
+            "hrNs": "36827516623700",
+            "pid": 15520,
+            "ppid": 6660,
+            "sequence": 51,
+            "event": "child_close",
+            "childPid": 11348,
+            "exitCode": 0,
+            "signalCode": null,
+            "connected": false,
+            "stdoutDestroyed": true,
+            "stderrDestroyed": true,
+            "code": 0,
+            "signal": null,
+            "handles": {
+              "Pipe": 1,
+              "Socket": 2,
+              "ChildProcess": 1
+            }
+          },
+          "databaseOpens": 5,
+          "explicitDatabaseCloses": 5,
+          "forcedOSDeath": false,
+          "stderrBytes": 169
+        }
+      ],
+      "cleanupTimeline": [
+        {
+          "at": "2026-11-06T00:29:39.004Z",
+          "hrNs": "36827681928600",
+          "pid": 15520,
+          "ppid": 6660,
+          "sequence": 64,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\temp\\opencode\\watchdog-phase3-fixture-8dX62F",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:29:39.022Z",
+          "hrNs": "36827699992400",
+          "pid": 15520,
+          "ppid": 6660,
+          "sequence": 65,
+          "event": "fixture_remove_done",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\temp\\opencode\\watchdog-phase3-fixture-8dX62F",
+          "exists": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "kind": "PHASE5_PRIVATE_PUBLICATION_PROTECTED_INPUT_PRESERVATION",
+  "checkedAt": "2026-11-06T18:32:55.001Z",
+  "publicationRoot": "C:/liquidation-watchdog-github",
+  "method": "Read-only whole-tree path/size/SHA-256 comparisons against the protected delivered baselines; original raw Git snapshots compared with optional locks disabled. Publication checks use explicit publication paths. Timestamps are the inspection host's recorded clock values.",
+  "protectedDelivery": {
+    "root": "C:/liquidation-watchdog-submission",
+    "files": 5150,
+    "subdirectories": 348,
+    "bytes": 215559068,
+    "all5148InventoryEntriesMatch": true,
+    "exactFileAndDirectorySets": true,
+    "checksumEnvelopeUnchanged": true,
+    "inventory": {
+      "path": "COMPLETE-SHA256SUMS.txt",
+      "bytes": 858903,
+      "sha256": "f2d3f524096916f7431b48aa748191684a487f3e3e2312a803f7745a99689bbf"
+    },
+    "zip": {
+      "path": "liquidation-watchdog-submission-2026-11-06.zip",
+      "bytes": 25324806,
+      "sha256": "6acf2787d00741d3f69916df8e7e82e4e03c44fdd06397a3f62ff7fb2e026beb"
+    },
+    "originalCompletionReport": {
+      "path": "COMPLETION-REPORT.md",
+      "bytes": 12631,
+      "sha256": "3ca6501ba78ec12ba1ccc7ec6b0a8c874066b839dc5eecb210ab7dfd56db4783"
+    },
+    "pass": true
+  },
+  "sourcePackage": {
+    "root": "C:/liquidation-watchdog-submission/package",
+    "files": 5096,
+    "subdirectories": 346,
+    "bytes": 163521629,
+    "delta": {
+      "addedFiles": [],
+      "missingFiles": [],
+      "changedFiles": [],
+      "addedDirectories": [],
+      "missingDirectories": []
+    },
+    "originalChecksum": {
+      "path": "SHA256SUMS.txt",
+      "bytes": 812835,
+      "sha256": "0c90f7e32d5d7169fec84d318835d04f875561de77aaf9507e057400d8c266a8"
+    },
+    "pass": true
+  },
+  "originalRepository": {
+    "checkedAt": "2026-11-06T18:32:42.893Z",
+    "fileCount": 22032,
+    "directoryCount": 1909,
+    "bytes": 273814522,
+    "delta": {
+      "addedFiles": [],
+      "missingFiles": [],
+      "changedFiles": [],
+      "addedDirectories": [],
+      "missingDirectories": []
+    },
+    "gitIdentical": true,
+    "git": {
+      "index": {
+        "bytes": 65736,
+        "sha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689"
+      },
+      "unbornHead": true,
+      "symbolicHead": "refs/heads/master",
+      "stagedDiffEmpty": true,
+      "intentToAdd": 550,
+      "untracked": 793,
+      "ignored": 20669
+    },
+    "pass": true
+  },
+  "externalEvidence": {
+    "baseline": {
+      "path": "C:/liquidation-watchdog-submission/audit/external-inputs-after.json",
+      "bytes": 520902,
+      "sha256": "8a61a5b4150cb0771bc43c0f2b616bd7677cd70d5dabcbb3be63fe595039116e"
+    },
+    "trees": [
+      {
+        "root": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp",
+        "files": 561,
+        "subdirectories": 28,
+        "bytes": 12341392,
+        "delta": { "addedFiles": [], "missingFiles": [], "changedFiles": [], "addedDirectories": [], "missingDirectories": [] },
+        "pass": true
+      },
+      {
+        "root": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4",
+        "files": 1782,
+        "subdirectories": 92,
+        "bytes": 24465407,
+        "delta": { "addedFiles": [], "missingFiles": [], "changedFiles": [], "addedDirectories": [], "missingDirectories": [] },
+        "pass": true
+      },
+      {
+        "root": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/stage4-oracle-reads",
+        "files": 6,
+        "subdirectories": 0,
+        "bytes": 16976010,
+        "delta": { "addedFiles": [], "missingFiles": [], "changedFiles": [], "addedDirectories": [], "missingDirectories": [] },
+        "pass": true
+      },
+      {
+        "root": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/stage5a-discovery",
+        "files": 29,
+        "subdirectories": 0,
+        "bytes": 387339,
+        "delta": { "addedFiles": [], "missingFiles": [], "changedFiles": [], "addedDirectories": [], "missingDirectories": [] },
+        "pass": true
+      },
+      {
+        "root": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/liquidation-watchdog-phase2-doc-originals-2026-11-06T16-23-41-816Z-wtP1mw",
+        "files": 14,
+        "subdirectories": 2,
+        "bytes": 5897660,
+        "delta": { "addedFiles": [], "missingFiles": [], "changedFiles": [], "addedDirectories": [], "missingDirectories": [] },
+        "pass": true
+      }
+    ],
+    "detachedReceipt": {
+      "file": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/final-qualification-seal-verification-QrN8p4.json",
+      "bytes": 12951,
+      "sha256": "1d65b0d7d0b1e84b74a4d56d42c3ad1d6aa85c8c0b7a42721b236aeffd1e5ec7",
+      "unchanged": true
+    },
+    "pass": true
+  },
+  "publicationOriginalPayload": {
+    "originalPaths": 5096,
+    "unchangedFiles": 5089,
+    "modifiedFiles": 7,
+    "modifiedPaths": [
+      ".env.example",
+      ".gitattributes",
+      ".gitignore",
+      "PACKAGE-INVENTORY.md",
+      "PACKAGE-PROVENANCE.md",
+      "README.md",
+      "render.yaml"
+    ],
+    "allOriginalPathsPresent": true,
+    "allRecordedOriginalAndPublicationHashesMatch": true,
+    "originalDirectoriesRetained": 346,
+    "emptyLeafDirectoriesRetained": 13,
+    "directoriesWithoutFileDescendantsRetained": 14,
+    "originalChecksumUnchanged": true,
+    "preservedGroups": [
+      { "path": "evidence", "files": 4437, "subdirectories": 294, "bytes": 156362904, "pass": true },
+      { "path": "dist", "files": 321, "subdirectories": 18, "bytes": 2230254, "pass": true },
+      { "path": "data/submission-demo", "files": 13, "subdirectories": 0, "bytes": 1084585, "pass": true },
+      { "path": "evidence/qualification-capsules/live-stage2-SGNCxp", "files": 561, "subdirectories": 28, "bytes": 12341392, "pass": true },
+      { "path": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4", "files": 1782, "subdirectories": 92, "bytes": 24465407, "pass": true },
+      { "path": "evidence/qualification-capsules/stage4-oracle-reads", "files": 6, "subdirectories": 0, "bytes": 16976010, "pass": true },
+      { "path": "evidence/qualification-capsules/stage5a-discovery", "files": 29, "subdirectories": 0, "bytes": 387339, "pass": true }
+    ],
+    "databaseArtifacts": 28,
+    "databaseArtifactBytes": 4804144,
+    "pass": true
+  },
+  "historicalCapsuleBindings": {
+    "location": "publication-copy",
+    "groups": [
+      { "name": "final-two-root-manifest", "bindings": 2337, "bytes": 36165531 },
+      { "name": "original-stage2-manifest", "bindings": 387, "bytes": 10157722 },
+      { "name": "final-seal", "bindings": 9 },
+      { "name": "stage2-report-completion", "bindings": 7 },
+      { "name": "final-completion", "bindings": 13 },
+      { "name": "stage4-oracle-reads-recorded-web-body-bindings", "bindings": 3 },
+      { "name": "stage5a-discovery-recorded-web-body-bindings", "bindings": 4 }
+    ],
+    "detached": [
+      {
+        "capsule": "qualification-repair-20261106-QrN8p4",
+        "file": "final-artifact-manifest.sha256",
+        "target": "final-artifact-manifest.json",
+        "sha256": "860e103cc7dd7fdb5083d19dc059e0d65ffb81fc55dcb1fb1f343a5fa9f18969"
+      },
+      {
+        "capsule": "qualification-repair-20261106-QrN8p4",
+        "file": "final-seal.sha256",
+        "target": "final-seal.json",
+        "sha256": "d5e8e4ce877230cdfd058dae83e063e84c2e34d0c50332a6ee4ab6f3abb3463b"
+      },
+      {
+        "capsule": "live-stage2-SGNCxp",
+        "file": "artifact-manifest.sha256",
+        "target": "artifact-manifest.json",
+        "sha256": "1ccbe5add2bd7029d4972a2db526314ccc035eed8534e6c3e39f231d633f66b0"
+      },
+      {
+        "capsule": "live-stage2-SGNCxp",
+        "file": "report-completion.sha256",
+        "target": "report-completion.json",
+        "sha256": "9516370adb97c53ecdfe0041cd79bb20af64378470553d1864ef939eeef06ef3"
+      }
+    ],
+    "totalBindings": 2760,
+    "limitations": [
+      "Stage 4 and Stage 5A have no historical whole-directory manifest or detached seal. Available per-body summary bindings are checked; publication hashes cover the other bytes without inventing historical certification."
+    ],
+    "failures": [],
+    "pass": true
+  },
+  "repositoryEvidenceBindings": {
+    "artifactManifestsChecked": 34,
+    "artifactBindings": 224,
+    "detachedChecksumsChecked": 21,
+    "phase8OriginalDocumentBinding": {
+      "recordedRepositoryPath": "docs/render-runtime-operations.md",
+      "packagedArchivedOriginal": "evidence/documentation-provenance/phase2-originals/originals/docs/render-runtime-operations.md.original",
+      "sha256": "284e148662253f307f6433b968099894841affc76875318a75f09ff7ca6c64b0",
+      "currentEditedDocumentCertifiedByOldSeal": false
+    },
+    "scope": "All canonical repository artifact-bundle manifest bindings and retained detached checksums were checked using publication-root mappings. The complete canonical and legacy trees also match the source package. Historical whole-release seals retain their older source/build/document scope.",
+    "errors": [],
+    "pass": true
+  },
+  "scope": {
+    "gitMetadataCreated": false,
+    "gitObjectsWritten": false,
+    "stagingPerformed": false,
+    "projectModulesExecuted": false,
+    "projectWorkflowsExecuted": false,
+    "databaseEngineOpened": false,
+    "githubContacted": false,
+    "networkAccess": false
+  },
+  "pass": true
+}

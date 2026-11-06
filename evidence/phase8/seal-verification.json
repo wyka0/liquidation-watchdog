@@ -1,0 +1,62 @@
+{
+  "kind": "PHASE8_DETACHED_SEAL_VERIFICATION",
+  "verifiedAt": "2026-11-02T15:18:40.744Z",
+  "passed": true,
+  "command": "node --import tsx [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-evidence.mjs seal",
+  "sealSha256": "44c5d1f4a588a41cb93024575234cce8806f9c9da40463765e9f77da6c64b094",
+  "boundFilesMatched": 665,
+  "finalIntegrity": {
+    "checkedAt": "2026-11-02T15:18:22.269Z",
+    "passed": true,
+    "immutableOriginalFilesMatched": 1236,
+    "expectedSourceOrBuildChanges": [
+      {
+        "path": "dist/storage/store.d.ts",
+        "bytes": 194371,
+        "sha256": "dfedde000b6d9a4b58693be48cab8a21d7395a5efd2f5c30d0805959a2eaae7b"
+      },
+      {
+        "path": "dist/storage/store.js",
+        "bytes": 42006,
+        "sha256": "a87fb24ac16a710f37089585e17f0df79cf177759bd05755b2b6d4f4665031b3"
+      },
+      {
+        "path": "dist/storage/store.js.map",
+        "bytes": 36246,
+        "sha256": "1556816be8becb665955023bd2c58d074a3e2c2ad79f5c4660d558473aff0be5"
+      },
+      {
+        "path": "scripts/release-inputs.ts",
+        "bytes": 5169,
+        "sha256": "d58940e8fe7d76d38d18252f8f0f00ae8ff6018dd333fa033743df4b6b819324"
+      },
+      {
+        "path": "src/storage/store.ts",
+        "bytes": 39310,
+        "sha256": "86f5292bb04c2147dc71e02d6d7b1b3f81c6136dcc8838ad2b74acc8284332d9"
+      }
+    ],
+    "originalSnapshotFilesMatched": 1241,
+    "phase7BindingsMatched": 7,
+    "gitIndexUnchanged": true,
+    "gitIndexSha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689",
+    "command": "node [REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-safety.mjs check"
+  },
+  "secretScan": {
+    "command": "node --import tsx scripts/check-secrets.ts --read-only",
+    "exitCode": 0,
+    "evidenceKind": "LOCAL_VERIFICATION",
+    "retrievedAt": "2026-11-02T15:18:40.678Z",
+    "scope": "Project-owned files and sanitized evidence; dependencies/build/git/private runtime data/backups excluded; potential key files are named but not opened. The authored .env.example is byte-hash verified.",
+    "filesScanned": 1250,
+    "ruleCount": 9,
+    "fixtureExceptions": 1,
+    "placeholderTemplateVerified": true,
+    "passed": true,
+    "findings": []
+  },
+  "selfExcluded": "This post-seal result and the detached checksum are not recursively bound by the seal.",
+  "productionApproval": false,
+  "deploymentPerformed": false,
+  "actionable": false
+}

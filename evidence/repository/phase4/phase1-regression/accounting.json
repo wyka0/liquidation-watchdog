@@ -1,0 +1,37 @@
+{
+  "evidenceKind": "LIVE_CHAIN_READ",
+  "retrievedAt": "2026-11-01T18:25:36.638Z",
+  "chainId": 1672,
+  "block": {
+    "number": "21868667",
+    "hash": "0xb2bb69cfb611616f87caa4b7b2774eea918d4248ace3f53387012d38e2a6f386",
+    "parentHash": "0xfce1947342a7705b65ad21925a1698f5c3a79f615393bc7ec9adb76dc489b7af",
+    "timestamp": "1793557505"
+  },
+  "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+  "accounting": {
+    "elapsedSeconds": "22577",
+    "ratePerSecondWad": "1838814428",
+    "firstTerm": "41514913340956",
+    "secondTerm": "861744014",
+    "thirdTerm": "11925",
+    "interest": "223790113",
+    "accruedBorrowAssets": "5390707608882",
+    "accruedSupplyAssets": "5952297772608",
+    "accruedSupplyShares": "5886569627533310138",
+    "totalBorrowShares": "5324169446054473402",
+    "feeAmount": "0",
+    "feeShares": "0",
+    "debt": "273637707542"
+  },
+  "valuation": {
+    "collateralValue": "350492797781",
+    "maxBorrow": "320700909969",
+    "ltvWad": "780722768839827306",
+    "safetyRatioWad": "1171990924970661732",
+    "debtState": "OUTSTANDING_DEBT",
+    "indicative": true,
+    "actionable": false
+  },
+  "actionable": false
+}

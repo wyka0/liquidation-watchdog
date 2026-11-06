@@ -1,0 +1,22 @@
+{
+  "name": "pharos-chainlink-push-engine",
+  "sourceUrl": "https://docs.pharos.xyz/tooling-and-infrastructure/oracles/chainlink-pe.md",
+  "finalUrl": "https://docs.pharos.xyz/tooling-and-infrastructure/oracles/chainlink-pe.md",
+  "method": "GET",
+  "beganAt": "2026-11-06T00:31:59.391Z",
+  "retrievedAt": "2026-11-06T00:31:59.706Z",
+  "status": 200,
+  "headers": {
+    "content-type": "text/markdown; charset=utf-8",
+    "date": "Fri, 06 Nov 2026 00:32:00 GMT",
+    "etag": null,
+    "last-modified": null
+  },
+  "redirects": [],
+  "block": null,
+  "bytes": 8722,
+  "responseSha256": "5d2c0bab0cb7a190ab7f37e327662427a2709fdb6e4905e74e57ae530e110b42",
+  "bodyPath": "pharos-chainlink-push-engine.body.txt",
+  "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+  "ignoredRemoteAgentInstructionAppendix": true
+}

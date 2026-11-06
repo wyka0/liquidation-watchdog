@@ -1,0 +1,12 @@
+{
+  "command": "npm run release:manifest",
+  "workingDirectory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7",
+  "startedAt": "2026-11-02T15:03:24.208Z",
+  "finishedAt": "2026-11-02T15:03:29.737Z",
+  "durationMs": 5527,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "\n> liquidation-watchdog@0.1.0 release:manifest\n> tsx scripts/release-manifest.ts\n\nLocal release manifest generated; 26 verified checks; production approval absent.\n",
+  "stderr": "(node:7644) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+}

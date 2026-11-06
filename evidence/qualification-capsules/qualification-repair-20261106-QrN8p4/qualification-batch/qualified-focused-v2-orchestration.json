@@ -1,0 +1,37 @@
+{
+  "name": "qualified-focused-v2",
+  "mode": "focused",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\run-tests.mjs",
+    "qualified-focused-v2",
+    "focused",
+    "v2"
+  ],
+  "startedAt": "2026-11-06T00:49:33.054Z",
+  "completedAt": "2026-11-06T00:50:14.094Z",
+  "exitCode": 0,
+  "signal": null,
+  "pid": 2360,
+  "status": "PASS",
+  "summarySha256": "2594096d1da195657058940d8eb696ba8ff759311e6e51207a65464217c51ac7",
+  "tests": {
+    "success": true,
+    "files": 3,
+    "total": 31,
+    "passed": 31,
+    "failed": 0,
+    "pending": 0,
+    "todo": 0
+  },
+  "checks": [
+    {
+      "label": "tests",
+      "exitCode": 0,
+      "durationMs": 39851.254
+    }
+  ],
+  "sourceUnchangedDuringQualification": true,
+  "stdoutSha256": "1227ee32c784056fb683b1e7c190400e7e6d1e34a55e62aa58662e898d635bba",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

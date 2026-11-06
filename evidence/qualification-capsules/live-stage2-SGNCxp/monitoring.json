@@ -1,0 +1,15 @@
+{
+  "monitoring": {
+    "enabled": false
+  },
+  "storage": {
+    "path": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/watchdog.sqlite"
+  },
+  "notifications": {
+    "telegram": false,
+    "discord": false
+  },
+  "operations": {
+    "profile": "local"
+  }
+}

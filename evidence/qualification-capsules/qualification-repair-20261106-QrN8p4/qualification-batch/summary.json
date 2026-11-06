@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-11-06T00:48:48.136Z",
+  "completedAt": "2026-11-06T00:53:10.383Z",
+  "sequentialNoConcurrentTestOrCompilerWorkloads": true,
+  "sourceAfterSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+  "defaultMaxWorkers": 2,
+  "assertionsAndChildDeadlinesUnmodifiedByDiagnosticPreloader": true,
+  "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+  "results": [
+    {
+      "name": "qualified-independent-v2",
+      "mode": "independent",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\run-tests.mjs",
+        "qualified-independent-v2",
+        "independent",
+        "v2"
+      ],
+      "startedAt": "2026-11-06T00:48:48.142Z",
+      "completedAt": "2026-11-06T00:49:04.041Z",
+      "exitCode": 0,
+      "signal": null,
+      "pid": 5284,
+      "status": "PASS",
+      "summarySha256": "83554bb3fc3572d14c6d13416fb717eb9bcdbc14d935d83397403cb3c2dd2b70",
+      "tests": {
+        "success": true,
+        "files": 1,
+        "total": 4,
+        "passed": 1,
+        "failed": 0,
+        "pending": 3,
+        "todo": 0
+      },
+      "checks": [
+        {
+          "label": "tests",
+          "exitCode": 0,
+          "durationMs": 14819.0527
+        }
+      ],
+      "sourceUnchangedDuringQualification": true,
+      "stdoutSha256": "3c63a35d886743c75b9e96674d6d2fc67229b3523f1b58f3ba137f141ff221f5",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "qualified-runtime-process-v2",
+      "mode": "runtime-process",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\run-tests.mjs",
+        "qualified-runtime-process-v2",
+        "runtime-process",
+        "v2"
+      ],
+      "startedAt": "2026-11-06T00:49:04.047Z",
+      "completedAt": "2026-11-06T00:49:33.052Z",
+      "exitCode": 0,
+      "signal": null,
+      "pid": 13512,
+      "status": "PASS",
+      "summarySha256": "920fc1fc4807dfaec44fe233c6f6de7ec25e1022e6748441641e487f2c6aba29",
+      "tests": {
+        "success": true,
+        "files": 1,
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "todo": 0
+      },
+      "checks": [
+        {
+          "label": "tests",
+          "exitCode": 0,
+          "durationMs": 28276.037399999997
+        }
+      ],
+      "sourceUnchangedDuringQualification": true,
+      "stdoutSha256": "5bfc0b2ce5169e05a4676c822f768119b54d6fabf1e0ab281e72ed534435587c",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "qualified-focused-v2",
+      "mode": "focused",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\run-tests.mjs",
+        "qualified-focused-v2",
+        "focused",
+        "v2"
+      ],
+      "startedAt": "2026-11-06T00:49:33.054Z",
+      "completedAt": "2026-11-06T00:50:14.094Z",
+      "exitCode": 0,
+      "signal": null,
+      "pid": 2360,
+      "status": "PASS",
+      "summarySha256": "2594096d1da195657058940d8eb696ba8ff759311e6e51207a65464217c51ac7",
+      "tests": {
+        "success": true,
+        "files": 3,
+        "total": 31,
+        "passed": 31,
+        "failed": 0,
+        "pending": 0,
+        "todo": 0
+      },
+      "checks": [
+        {
+          "label": "tests",
+          "exitCode": 0,
+          "durationMs": 39851.254
+        }
+      ],
+      "sourceUnchangedDuringQualification": true,
+      "stdoutSha256": "1227ee32c784056fb683b1e7c190400e7e6d1e34a55e62aa58662e898d635bba",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "qualified-full-v2",
+      "mode": "full",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\run-tests.mjs",
+        "qualified-full-v2",
+        "full",
+        "v2"
+      ],
+      "startedAt": "2026-11-06T00:50:14.097Z",
+      "completedAt": "2026-11-06T00:52:38.587Z",
+      "exitCode": 0,
+      "signal": null,
+      "pid": 12708,
+      "status": "PASS",
+      "summarySha256": "f8436aa5748ec9972816dda97152f97dfce4e0b2d9cc143615beda28ec93f8b9",
+      "tests": {
+        "success": true,
+        "files": 49,
+        "total": 1007,
+        "passed": 1007,
+        "failed": 0,
+        "pending": 0,
+        "todo": 0
+      },
+      "checks": [
+        {
+          "label": "tests",
+          "exitCode": 0,
+          "durationMs": 143303.03530000002
+        }
+      ],
+      "sourceUnchangedDuringQualification": true,
+      "stdoutSha256": "be1720c27e75e90aa7fe34d264579109140bad4907ee2264bae1e165dbee35e4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "qualified-checks-v2",
+      "mode": "checks",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\run-tests.mjs",
+        "qualified-checks-v2",
+        "checks",
+        "v2"
+      ],
+      "startedAt": "2026-11-06T00:52:38.591Z",
+      "completedAt": "2026-11-06T00:53:10.381Z",
+      "exitCode": 0,
+      "signal": null,
+      "pid": 7216,
+      "status": "PASS",
+      "summarySha256": "1ea45d046abc6a58be5b5a597c94df8fcfe49de8528ae118139b9bc49dbf084d",
+      "tests": null,
+      "checks": [
+        {
+          "label": "typecheck",
+          "exitCode": 0,
+          "durationMs": 12599.5684
+        },
+        {
+          "label": "lint",
+          "exitCode": 0,
+          "durationMs": 7227.3121999999985
+        },
+        {
+          "label": "build",
+          "exitCode": 0,
+          "durationMs": 11043.71
+        }
+      ],
+      "sourceUnchangedDuringQualification": true,
+      "stdoutSha256": "2a361c3296ef0cd6f68e1034b5ba44c65d331608b68a09478f7c6bf2c944ba9e",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "realMonitor": "STOPPED",
+  "noNewRealMonitoringCycle": true,
+  "allFailedAttemptsRetained": true,
+  "controlsNotCountedAsQualification": true
+}

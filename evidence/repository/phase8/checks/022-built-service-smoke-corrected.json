@@ -1,0 +1,12 @@
+{
+  "command": "node [REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-built-smoke.mjs",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T15:08:56.181Z",
+  "finishedAt": "2026-11-02T15:09:03.162Z",
+  "durationMs": 6979,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "{\"passed\":true,\"cases\":2,\"startupMs\":3211.4948,\"shutdownMs\":27.391099999999824,\"applicationDatabaseCreated\":false,\"platform\":\"win32\"}\n",
+  "stderr": ""
+}

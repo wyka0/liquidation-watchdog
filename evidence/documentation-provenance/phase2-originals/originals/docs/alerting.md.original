@@ -1,0 +1,71 @@
+# Alerts, deduplication and delivery
+
+**Oracle verification remains UNVERIFIED; every alert and recovery amount is non-actionable.** Mathematical states and data quality are separate. Missing current data is not a recovery.
+
+## Transition rules
+
+Mathematical dimensions: `ABOVE_WARNING`, `WARNING`, `CRITICAL`, `LIQUIDATION_BOUNDARY`, `NO_DEBT`. Effective output also retains `DATA_UNVERIFIED`, `DATA_UNAVAILABLE`, `DATA_INVALID`; quality and oracle-quality fields preserve their independent values. These are classifications, not a generic `SAFE` state.
+
+| Event | Alert behavior |
+| --- | --- |
+| First accepted observation | Initial mathematical assessment plus applicable data/oracle-quality notices |
+| Worsening mathematical band | `RISK_WORSENED`; warning, critical or boundary severity |
+| Mathematical improvement | `RISK_IMPROVED`; controlled by `alertOnRecovery` |
+| Return to `ABOVE_WARNING` | `RISK_RECOVERY`; indicative recovery only |
+| Complete validated zero debt | `NO_DEBT_OBSERVED`, never inferred from a failed/missing position |
+| Debt after `NO_DEBT` | `DEBT_OBSERVED`, with the resulting mathematical severity |
+| Effective quality change | Independent `DATA_QUALITY_CHANGED`; bad/unknown quality cannot be hidden by unchanged mathematics |
+| Unavailable/invalid data restored | `DATA_RESTORED` only after an accepted observation; actual oracle status is retained |
+| Oracle data-quality change | Independent `ORACLE_QUALITY_CHANGED`; never promotes economic-source verification |
+| Consecutive failure threshold | One `PERSISTENT_READ_FAILURE` per uninterrupted failure episode |
+
+The mathematical comparison uses the last accepted snapshot. Quality comparisons use the latest observation, including failures. Simultaneous changes produce independent alerts. No mathematical recovery or `NO_DEBT` alert is created from an unaccepted read. An accepted read resets the consecutive-failure count. A later failure episode can escalate again.
+
+`alertOnDataQualityChanges=false` suppresses only optional non-warning restoration. Transitions into bad or unknown quality still alert, including `INVALID -> UNAVAILABLE`; logs/status retain all observations. Initial oracle unverified/heartbeat-unknown diagnostics are always visible.
+
+## Persistent fingerprints
+
+Each fingerprint is SHA-256 over a versioned encoding of stream identity, dimension, persisted episode counter and alert code. Stream identity includes deployment, exact threshold configuration and live/historical mode. A deterministic alert ID derives from the fingerprint.
+
+Episode counters advance only with committed state transitions. Identical accepted conditions do not create new fingerprints or unlimited duplicate alerts. More-severe mathematical states and independent quality changes use separate episodes/dimensions, so one cannot suppress another. A genuine recurrence after improvement/recovery is a new episode and can alert again. SQLite uniqueness constraints plus transactional state updates make restarts resume the same baseline.
+
+Critical/boundary repeats are off by default. `alertOnEveryCriticalCheck=true` explicitly creates one repeat per subsequent accepted critical/boundary cycle. Alternatively, `criticalReminderSeconds` uses persisted last-alert time to limit reminders. Repeat fingerprints include the unique cycle ID. Rejected observations cannot generate mathematical reminders.
+
+## Console representation
+
+`renderAlert` includes UTC timestamp, unique alert ID, severity/category explanation, account and market, previous/current mathematical state, exact formatted safety ratio (when available), effective state/quality, oracle quality and verification, actionability, block/hash/snapshot ID and temporal context. Recovery amounts retain their token address, target and bound provenance in storage; console amounts are explicitly indicative and non-actionable. Historical and fixture observations are labeled. No fabricated live output is included in this guide.
+
+## Durable outbox
+
+Alerts are committed **before** delivery. Only channels enabled when an alert is created receive outbox entries. Enabling a new channel does not backfill old alerts. Disabling a provider holds its pending entries without sending them; re-enabling resumes them. Pending external entries use the current environment's destination for that channel, so keep the intended destination consistent across restarts and credential rotation.
+
+The durable outbox is database-wide. An explicit monitor run can resume queued deliveries from other threshold/historical streams in that database; every message retains its original snapshot and temporal label. Risk-transition state remains isolated per stream. `alerts` and `status` do not dispatch deliveries.
+
+States/events:
+
+- `PENDING`: queued durably.
+- `IN_FLIGHT`: attempt number and start time committed before calling the provider.
+- `DELIVERED`: provider acknowledgment or successful console write recorded.
+- `FAILED`: failure outcome recorded in attempt history and the delivery event journal.
+- `RETRY_SCHEDULED`: retryable failure with a durable next-at time.
+- `PERMANENTLY_FAILED`: non-retryable failure or exhausted budget; retained for inspection.
+
+Defaults: maximum 5 attempts, exponential delay from 5 seconds to 900 seconds, ±20% jitter within the cap, and a 15-second provider timeout. Configuration allows at most 10 attempts and a 60-second timeout. A provider Retry-After delay may exceed the local exponential cap; it is not shortened. Telegram JSON `parameters.retry_after`, Discord JSON `retry_after` and HTTP seconds/date headers are supported. The longest supplied valid delay wins.
+
+A 429 persists a **channel-wide** cooldown so other queued alerts cannot immediately hit the same provider. Missing, malformed or zero delay metadata falls back to the configured exponential delay, including on the final allowed attempt. Cooldowns survive restarts. Queue selection prioritizes boundary/critical alerts. Each dispatch batch attempts at most `maxPerDrain` deliveries (default 10, configurable 1–50), rechecking the queue/cooldown after every result.
+
+An excessive or unrepresentable rate-limit delay (over 365 days, including numeric overflow) permanently fails that delivery and persistently blocks the affected provider in this database. `status.providerLimits` exposes `blocked: 1`; other channels and risk monitoring continue. Pending messages remain stored and the block is not automatically reset. This avoids silently shortening a provider restriction into an early send.
+
+HTTP 408/5xx, network failures and malformed success acknowledgments may be retried and can be ambiguous. Other non-success responses normally fail permanently. Unknown adapter exceptions become fixed error codes; response bodies, credentials and raw exceptions are not stored or logged. Notification failure never changes the accepted risk result.
+
+## Guarantees and limitations
+
+Known successful delivery is not retried. Exact-once external delivery is **not** claimed: a provider may accept a message before a timeout, connection loss, process termination, or a failed local acknowledgment write. Such outcomes are explicitly ambiguous and the pending attempt may be retried—**at-least-once delivery can duplicate a message**. The prior attempt budget is retained; restarts do not reset it. A permanently failed entry is not automatically replayed.
+
+Graceful shutdown stops new sends, allows active acknowledgment settlement within its budget, and cancels overdue work. A hard-cancelled attempt remains recoverably ambiguous; late results cannot update a closed store. Restoration from an older backup can remove knowledge of later successful delivery, so known-delivered preservation applies to the restored point-in-time state. Reconcile later events before enabling external channels.
+
+The pending queue has a transactional capacity guard (default 10,000 nonterminal deliveries). Exceeding it fails the whole observation/state/alert/outbox transaction and stops the worker; it does not drop alerts. Retention preserves pending work and deduplication fingerprints. Delivery is not guaranteed after a terminal error or retry exhaustion.
+
+Console success means the write callback completed, not that a human read it. Telegram/Discord acknowledgment does not guarantee a human saw a notification. Long reads/deliveries can delay subsequent polling; monitoring intervals and alert delivery are not oracle freshness guarantees.
+
+See [architecture](monitoring-architecture.md), [local notification configuration](notification-setup.md), [manual notification recovery](operations-runbook.md#notification-recovery) and [backup/recovery semantics](database-operations.md).

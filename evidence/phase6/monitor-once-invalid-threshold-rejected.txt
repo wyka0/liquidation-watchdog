@@ -1,0 +1,10 @@
+node : (node:10380) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+At line:2 char:1
++ node dist/cli.js monitor --once --config "$ws/config/monitoring.json" ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:10380) Ex...nge at any time:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+INVALID_THRESHOLDS: Operation failed; consult the documented code and sanitized diagnostics. No failed result was
+accepted.

@@ -1,0 +1,259 @@
+{
+  "kind": "PHASE8_IMPLEMENTATION_AND_DOCUMENT_DELTA",
+  "recordedAt": "2026-11-02T15:18:12.519Z",
+  "baseline": "evidence/phase8/pre-phase8-baseline.json",
+  "modified": [
+    {
+      "path": "scripts/release-inputs.ts",
+      "bytes": 5169,
+      "sha256": "d58940e8fe7d76d38d18252f8f0f00ae8ff6018dd333fa033743df4b6b819324",
+      "beforeSha256": "ad313f242093b402cee148c808f877c634c8fcaa148f02706a77035e6bf23b4a"
+    },
+    {
+      "path": "src/storage/store.ts",
+      "bytes": 39310,
+      "sha256": "86f5292bb04c2147dc71e02d6d7b1b3f81c6136dcc8838ad2b74acc8284332d9",
+      "beforeSha256": "3690ff32cbe0d121582fa4735f0fd59a63f861d28fea92130d3a3ab46036e0f4"
+    },
+    {
+      "path": "dist/storage/store.d.ts",
+      "bytes": 194371,
+      "sha256": "dfedde000b6d9a4b58693be48cab8a21d7395a5efd2f5c30d0805959a2eaae7b",
+      "beforeSha256": "d6aeb041aeb87c7c9909ff12887a26b777de074a05749730044cbf3dd0901528"
+    },
+    {
+      "path": "dist/storage/store.js",
+      "bytes": 42006,
+      "sha256": "a87fb24ac16a710f37089585e17f0df79cf177759bd05755b2b6d4f4665031b3",
+      "beforeSha256": "d041f07b5ce6bfe3ad3a88466a72e68b3a4677b48609004ce56b1e6c9ec11b4f"
+    },
+    {
+      "path": "dist/storage/store.js.map",
+      "bytes": 36246,
+      "sha256": "1556816be8becb665955023bd2c58d074a3e2c2ad79f5c4660d558473aff0be5",
+      "beforeSha256": "3cbe5d9466216321ddf2e5a548c5c43e9404933e12cd6fa3e7264db80481689a"
+    }
+  ],
+  "added": [
+    {
+      "path": "config/render.json",
+      "bytes": 768,
+      "sha256": "0aa013048c992349c54244f75e6d39109e233fca6632a6a5a13ff0b2c5dac907"
+    },
+    {
+      "path": "scripts/phase8-reliability.ts",
+      "bytes": 6800,
+      "sha256": "b87d456c761c129a6b4f4f7912584f5ddbc3b5785eb627a96fe8f20c54f05aa7"
+    },
+    {
+      "path": "src/runtime/auth.ts",
+      "bytes": 1235,
+      "sha256": "c6fce58e0bcdfbb4e762f334f17096132e717ef45093dfdf9b2861f151abec50"
+    },
+    {
+      "path": "src/runtime/dashboard.ts",
+      "bytes": 4815,
+      "sha256": "333d3e28ba3c154361f191003c0a8f54756f1f0b2f7b4c0479a826c8a91a9b45"
+    },
+    {
+      "path": "src/runtime/http.ts",
+      "bytes": 11410,
+      "sha256": "f02cb95d5e5da2fd405da4d466b2d035ae785df7516abbe3eeefef51b6606b99"
+    },
+    {
+      "path": "src/runtime/read-model.ts",
+      "bytes": 13277,
+      "sha256": "2741e16ad200b41e2775b7851c0b32de4b62d0009935a02b247d4bd360e7a0c6"
+    },
+    {
+      "path": "src/runtime/service.ts",
+      "bytes": 8008,
+      "sha256": "500d461535b86bfc18ce9e6ceeb0831215637efcbda45597e69883c8512dbf85"
+    },
+    {
+      "path": "src/runtime/workspace.ts",
+      "bytes": 9047,
+      "sha256": "88d51e1801f0f5c33acf49db595964bb4ef76e578d310e74b9739855f7719ca8"
+    },
+    {
+      "path": "src/service.ts",
+      "bytes": 2826,
+      "sha256": "5bf2cf57fc71bf9c06604561dabc4d35a006ac04877336dea488d559a6f1a997"
+    },
+    {
+      "path": "test/fixtures/runtime.ts",
+      "bytes": 1578,
+      "sha256": "1806990e5b4ee6ca6249385b8576a244a400dc1ab00853b5931f0dea6f718bc1"
+    },
+    {
+      "path": "test/helpers/phase8-import.ts",
+      "bytes": 1064,
+      "sha256": "a4d9e7f4a9402ee145a1170756c19f117d73c2f544a78275c04714f757d2784e"
+    },
+    {
+      "path": "test/helpers/phase8-runtime.ts",
+      "bytes": 2100,
+      "sha256": "c2933d535ce835c97535f47e19641917a1d3ba510c727019f149e92f1b7e205d"
+    },
+    {
+      "path": "test/runtime-http.test.ts",
+      "bytes": 9196,
+      "sha256": "b2009999cda4e34642988f8cb5891fb4739bd05917f291e1502e9c1999d850d2"
+    },
+    {
+      "path": "test/runtime-lifecycle.test.ts",
+      "bytes": 12120,
+      "sha256": "a5105e4e394abf61fac45b6160fa56aca01113e5c4aa095c9bb0a1642eb8eb12"
+    },
+    {
+      "path": "test/runtime-process.test.ts",
+      "bytes": 4776,
+      "sha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846"
+    },
+    {
+      "path": "test/runtime-read-model.test.ts",
+      "bytes": 7067,
+      "sha256": "bc4dbcefbc931429ac5f5e16f153ad9eeba08110fa48ce89c294efc7c9597df2"
+    },
+    {
+      "path": "test/runtime-storage.test.ts",
+      "bytes": 9139,
+      "sha256": "32bffa04e5eea9bb17c07e68793fefafe1db9fea940ba4f5645fff0359597cee"
+    },
+    {
+      "path": "dist/runtime/auth.d.ts",
+      "bytes": 211,
+      "sha256": "e50a8039e8ef6ee811c822ff5d329557776c9eb97fea9df1b6dc866bef603181"
+    },
+    {
+      "path": "dist/runtime/auth.js",
+      "bytes": 1360,
+      "sha256": "4ca3d979c26db9091dbf155fd5f06cad0093c357b957efafcf9aa9e5ec686a6c"
+    },
+    {
+      "path": "dist/runtime/auth.js.map",
+      "bytes": 1361,
+      "sha256": "26ccfa9159d27d34d2f604494a6eb95d836ce33c3cb5142ce23490175f0da1df"
+    },
+    {
+      "path": "dist/runtime/dashboard.d.ts",
+      "bytes": 5012,
+      "sha256": "dce0d7037d6d6757d4097c948063ab251dafbf90e46a53baf41d36a705e82922"
+    },
+    {
+      "path": "dist/runtime/dashboard.js",
+      "bytes": 4850,
+      "sha256": "1f9f9ae73f3ef8716b63f64dec11006c633ccda68e38c3c86b15dd1f28b14d70"
+    },
+    {
+      "path": "dist/runtime/dashboard.js.map",
+      "bytes": 301,
+      "sha256": "b6fc65750d5851ffab3156ee508c99202cc567313098c2659e82897300ab9e69"
+    },
+    {
+      "path": "dist/runtime/http.d.ts",
+      "bytes": 1281,
+      "sha256": "519e5c04ba480c7cdf965a039939d34186a5f4fdcba5bbbc51307f4e91a308e8"
+    },
+    {
+      "path": "dist/runtime/http.js",
+      "bytes": 11971,
+      "sha256": "64122356cb7115ea432165e2360e2d71160739ed06251bafed09c42a262afc93"
+    },
+    {
+      "path": "dist/runtime/http.js.map",
+      "bytes": 12747,
+      "sha256": "770dd675a053044906d147c4e8d49cd50a60671f7b2f091a6cad1c11d26bfa81"
+    },
+    {
+      "path": "dist/runtime/read-model.d.ts",
+      "bytes": 1379,
+      "sha256": "dc829bd30b9a8dfbb18640c7085932af70d9924c87162165cfd5d1f24c25fdde"
+    },
+    {
+      "path": "dist/runtime/read-model.js",
+      "bytes": 13188,
+      "sha256": "626497f96b986ea1e05c859be8da69b69c17a79eff86dc28a55820514e5ba03c"
+    },
+    {
+      "path": "dist/runtime/read-model.js.map",
+      "bytes": 13646,
+      "sha256": "e22d7a8ca666505847a5b8e4b0355a62c79e1a005914c2e016ab667840305b70"
+    },
+    {
+      "path": "dist/runtime/service.d.ts",
+      "bytes": 1605,
+      "sha256": "9a06d9493fcc0d928046457c4df968cbd4c668dc0121067057e34b2f8efc4e05"
+    },
+    {
+      "path": "dist/runtime/service.js",
+      "bytes": 7842,
+      "sha256": "48de911c3c78f5c19cd038e397e5eb8cbc632df10392d1a369cb1a822d77e985"
+    },
+    {
+      "path": "dist/runtime/service.js.map",
+      "bytes": 7585,
+      "sha256": "321c6502be65528152277ffefe79df5ae221349cd489347975b44b2ef3fad5ae"
+    },
+    {
+      "path": "dist/runtime/workspace.d.ts",
+      "bytes": 1346,
+      "sha256": "066769662444818cb6024152bdc75dc48eee85233f8cfdb17475bd5f02e08595"
+    },
+    {
+      "path": "dist/runtime/workspace.js",
+      "bytes": 9298,
+      "sha256": "8ec5b1196223fa4cc245b530345d6d14c2ed8630f2165ab9bf595a2f76af5eeb"
+    },
+    {
+      "path": "dist/runtime/workspace.js.map",
+      "bytes": 10057,
+      "sha256": "d5f2331005e2dde48fbab210e79232a5715c8623a7e0c445b785854d57e4efda"
+    },
+    {
+      "path": "dist/service.d.ts",
+      "bytes": 460,
+      "sha256": "ee9c6d7285fef7142fdbf4cb846a486fce13afa2b95ebeecedbac75287730d6c"
+    },
+    {
+      "path": "dist/service.js",
+      "bytes": 2723,
+      "sha256": "ad1637b28c735787674f584aab7e8655b05d333b4f9979d0798d300e7acfd24b"
+    },
+    {
+      "path": "dist/service.js.map",
+      "bytes": 2761,
+      "sha256": "1f49105b0ceb748b1be6ca08b1f8b22e81562547a000aaed14c4cf98ba0849b2"
+    },
+    {
+      "path": "docs/phase8-report.md",
+      "bytes": 17991,
+      "sha256": "f6b6d3bfe0969827f89a9207c2ad8da6c365ac6033373cc8f50957ee297ea702"
+    },
+    {
+      "path": "docs/phase8-files.md",
+      "bytes": 9421,
+      "sha256": "a863b8863562faf8476ab7187b0a5f25f778d8c9d462040e5ce97c712b722ed9"
+    },
+    {
+      "path": "docs/render-runtime-operations.md",
+      "bytes": 13090,
+      "sha256": "284e148662253f307f6433b968099894841affc76875318a75f09ff7ca6c64b0"
+    },
+    {
+      "path": "docs/render-dashboard-api.md",
+      "bytes": 11372,
+      "sha256": "0bbb4d2894b6a3cf36c73d265325f9af09fcee4db244c4019b55b7588a625bd0"
+    },
+    {
+      "path": "docs/phase8-test-evidence.md",
+      "bytes": 20564,
+      "sha256": "566908ecc8196c82df42aa53f72118d1de95639d86c10e254393d3f54571ab11"
+    }
+  ],
+  "missingOriginalFiles": 0,
+  "originalFilesPreserved": 1236,
+  "originalSnapshotFilesPreserved": 1241,
+  "evidenceInventory": "evidence/phase8/evidence-index.json",
+  "gitIndexUnchanged": true
+}

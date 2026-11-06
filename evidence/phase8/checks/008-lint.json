@@ -1,0 +1,12 @@
+{
+  "command": "npm run lint",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T14:39:58.358Z",
+  "finishedAt": "2026-11-02T14:40:12.122Z",
+  "durationMs": 13758,
+  "exitCode": 1,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "\n> liquidation-watchdog@0.1.0 lint\n> eslint src test scripts *.config.*\n\n\nC:\\liquidation-watchdog\\test\\runtime-storage.test.ts\n  15:48  error  `import()` type annotations are forbidden  @typescript-eslint/consistent-type-imports\n\n✖ 1 problem (1 error, 0 warnings)\n\n",
+  "stderr": ""
+}

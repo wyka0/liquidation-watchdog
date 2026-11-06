@@ -1,0 +1,28 @@
+{
+  "evidenceKind": "LIVE_CHAIN_READ",
+  "retrievedAt": "2026-11-01T18:25:36.638Z",
+  "chainId": 1672,
+  "block": {
+    "number": "21868667",
+    "hash": "0xb2bb69cfb611616f87caa4b7b2774eea918d4248ace3f53387012d38e2a6f386",
+    "parentHash": "0xfce1947342a7705b65ad21925a1698f5c3a79f615393bc7ec9adb76dc489b7af",
+    "timestamp": "1793557505"
+  },
+  "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+  "network": {
+    "name": "Pharos Pacific Mainnet",
+    "chainId": 1672,
+    "rpc": "https://rpc.pharos.xyz",
+    "mcp": "https://mcp.pharos.xyz/mcp",
+    "explorer": "https://www.pharosscan.xyz"
+  },
+  "observedChainIds": {
+    "rpc": "1672",
+    "mcp": "1672"
+  },
+  "heads": {
+    "rpc": "21868672",
+    "mcp": "21868673",
+    "selectionLagBlocks": "5"
+  }
+}

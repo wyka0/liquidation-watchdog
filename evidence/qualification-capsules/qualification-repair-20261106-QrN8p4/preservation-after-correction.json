@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-11-06T00:45:20.974Z",
+  "completedAt": "2026-11-06T00:45:57.902Z",
+  "baselineSha256": "86ccdb010f82135a54cf18cc941239e6ad40cd8c5045d3dbfdd542d5c6812700",
+  "baselineEntries": 22029,
+  "currentEntries": 22029,
+  "baselineBytes": 273681577,
+  "currentBytes": 273682606,
+  "changes": [
+    {
+      "path": "test/runtime-process.test.ts",
+      "before": {
+        "path": "test/runtime-process.test.ts",
+        "type": "FILE",
+        "mode": 33206,
+        "bytes": 4776,
+        "sha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846"
+      },
+      "after": {
+        "path": "test/runtime-process.test.ts",
+        "type": "FILE",
+        "mode": 33206,
+        "bytes": 5805,
+        "sha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+      }
+    }
+  ],
+  "unexpected": [],
+  "missing": [],
+  "protectedGitUnchanged": true,
+  "priorStage2Unchanged": true,
+  "git": {
+    "index": {
+      "bytes": 65736,
+      "sha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689"
+    },
+    "status": {
+      "exitCode": 0,
+      "stdoutBytes": 145929,
+      "stdoutSha256": "9abc13be3ff117a1b0d06a8cfd5ff6ca7e17f782fee7a3f25f95da7cfc8e0b8c",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stagedDiff": {
+      "exitCode": 0,
+      "stdoutBytes": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "worktreeDiff": {
+      "exitCode": 0,
+      "stdoutBytes": 29694918,
+      "stdoutSha256": "557575cc35f0368f8ccb6f25a338f17f0329f5b630c3a69d3c9a6c9a2378ac30",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "head": {
+      "exitCode": 128,
+      "stdoutBytes": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrBytes": 32,
+      "stderrSha256": "9b3fab22fc89a33cf7f4e9d08072e43f29c2999ed2af63b6e8417b2ce9d534b4"
+    },
+    "symbolicHead": {
+      "exitCode": 0,
+      "stdoutBytes": 18,
+      "stdoutSha256": "48583181859e65c7656874783518080ae7cc67c0b1a8116fef61d317f02982ad",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "statusUnchanged": true,
+  "worktreeDiffUnchanged": true,
+  "preservationMeaning": "Every repository regular file/symlink outside the explicit before/after SHA-256 allowlist is unchanged, including .git and ignored artifacts. Index/staged diff/HEAD are unchanged. Existing unrelated user modifications remain preserved."
+}

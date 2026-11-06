@@ -1,0 +1,177 @@
+{
+  "evidenceKind": "LIVE_CHAIN_READ_WITH_ARCHIVED_SOURCE_MATERIAL",
+  "block": {
+    "number": "21923881",
+    "hash": "0x073446c13f8bb9ea01311317b5c7bbfc9700f3a522e213874e441ee938a34428",
+    "parentHash": "0xfd7c22b0e5576f03bf0efc3f85e4aff700894b724d68c5a3a806e8be927b1276",
+    "timestamp": "1793614671"
+  },
+  "retrievedAt": "2026-11-02T10:18:25.203Z",
+  "sourceArchive": "evidence/phase1/sources",
+  "contractEvidence": "evidence/phase5/phase1-regression/contract-verification.json",
+  "matches": [
+    {
+      "label": "proxy",
+      "address": "0xb5779919e2f183e59a34140331f7779cbff1d1bc",
+      "contractName": "SelfManagedFeedsCacheProxy",
+      "sourceMetadataUrl": "https://api.socialscan.io/pharos-mainnet/v1/explorer/contract/0xb5779919e2f183e59a34140331f7779cbff1d1bc/code",
+      "sourceMetadataRetrievedAt": "2026-11-01T13:50:10.367Z",
+      "explorerDeployedCodeHash": "95027d40e661cafffa6a90129991f47fd63b59bd0435481f53cc5a0b2414a9fa",
+      "onchainRuntimeSha256": "95027d40e661cafffa6a90129991f47fd63b59bd0435481f53cc5a0b2414a9fa",
+      "onchainRuntimeKeccak256": "0xace6df7e3159128786ca24c6ad172b38b0d69ae20f4fa8edae07ea0d39f93c9d",
+      "chainIdMatches": true,
+      "sha256Matches": true,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "cache",
+      "address": "0xd9f00c86ced2de92f6b7152b0492cb28edc4b5a8",
+      "contractName": "SelfManagedFeedsCache",
+      "sourceMetadataUrl": "https://api.socialscan.io/pharos-mainnet/v1/explorer/contract/0xd9f00c86ced2de92f6b7152b0492cb28edc4b5a8/code",
+      "sourceMetadataRetrievedAt": "2026-11-01T13:50:10.767Z",
+      "explorerDeployedCodeHash": "8bb736091d9032c49a1b279f51406f653b3fbf7c0880d7b917c93b2ce9086103",
+      "onchainRuntimeSha256": "8bb736091d9032c49a1b279f51406f653b3fbf7c0880d7b917c93b2ce9086103",
+      "onchainRuntimeKeccak256": "0xa408ee37af0e83e6c4fab1f1a3c7927c8253b02ea28dbe14e9eaec9d123e9869",
+      "chainIdMatches": true,
+      "sha256Matches": true,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "oracle",
+      "address": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "contractName": "MorphoChainlinkOracleV2",
+      "sourceMetadataUrl": "https://api.socialscan.io/pharos-mainnet/v1/explorer/contract/0x9416f861970c2a39c02ab7696ef0496383d4e81b/code",
+      "sourceMetadataRetrievedAt": "2026-11-01T13:50:11.170Z",
+      "explorerDeployedCodeHash": "178a10129f94627df4d95f019df5eb7875a4d1049364fe28ff69c06dd456c794",
+      "onchainRuntimeSha256": "178a10129f94627df4d95f019df5eb7875a4d1049364fe28ff69c06dd456c794",
+      "onchainRuntimeKeccak256": "0x2b4b39be4acacf49ae05c056a0debbe9bf8fff8e47c9ff6b67f101dbad34de9b",
+      "chainIdMatches": true,
+      "sha256Matches": true,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "forwarder",
+      "address": "0x76c9cf548b4179f8901cda1f8623568b58215e62",
+      "contractName": "KeystoneForwarder",
+      "sourceMetadataUrl": "https://api.socialscan.io/pharos-mainnet/v1/explorer/contract/0x76c9cf548b4179f8901cda1f8623568b58215e62/code",
+      "sourceMetadataRetrievedAt": "2026-11-01T13:50:11.601Z",
+      "explorerDeployedCodeHash": "f9c0c886360e5fd0b5837b83a0d307cea7aab6a43ad05d2c6ebf2f023e04edd0",
+      "onchainRuntimeSha256": "f9c0c886360e5fd0b5837b83a0d307cea7aab6a43ad05d2c6ebf2f023e04edd0",
+      "onchainRuntimeKeccak256": "0x2b21870eb5ea9013a781ed3db7d5fab742b612b2ac8de0990ac9d95b22f795fc",
+      "chainIdMatches": true,
+      "sha256Matches": true,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "multicall",
+      "address": "0xca11bde05977b3631167028862be2a173976ca11",
+      "contractName": "Multicall3",
+      "sourceMetadataUrl": "https://api.socialscan.io/pharos-mainnet/v1/explorer/contract/0xca11bde05977b3631167028862be2a173976ca11/code",
+      "sourceMetadataRetrievedAt": "2026-11-01T13:50:11.996Z",
+      "explorerDeployedCodeHash": "2756d7c52baee85cacb504f6ee1df7aad6809ac8d94a4a111d76991f90d36d6e",
+      "onchainRuntimeSha256": "2756d7c52baee85cacb504f6ee1df7aad6809ac8d94a4a111d76991f90d36d6e",
+      "onchainRuntimeKeccak256": "0xd5c15df687b16f2ff992fc8d767b4216323184a2bbc6ee2f9c398c318e770891",
+      "chainIdMatches": true,
+      "sha256Matches": true,
+      "mcpMatchesRpc": true
+    }
+  ],
+  "allMatch": true,
+  "sourceFileHashes": [
+    {
+      "file": "IMorpho.sol",
+      "matches": true
+    },
+    {
+      "file": "Morpho.sol",
+      "matches": true
+    },
+    {
+      "file": "MorphoBalancesLib.sol",
+      "matches": true
+    },
+    {
+      "file": "MathLib.sol",
+      "matches": true
+    },
+    {
+      "file": "UtilsLib.sol",
+      "matches": true
+    },
+    {
+      "file": "SharesMathLib.sol",
+      "matches": true
+    },
+    {
+      "file": "MarketParamsLib.sol",
+      "matches": true
+    },
+    {
+      "file": "ConstantsLib.sol",
+      "matches": true
+    },
+    {
+      "file": "MorphoChainlinkOracleV2.sol",
+      "matches": true
+    },
+    {
+      "file": "ChainlinkDataFeedLib.sol",
+      "matches": true
+    },
+    {
+      "file": "MorphoChainlinkOracleV2Factory.sol",
+      "matches": true
+    },
+    {
+      "file": "SelfManagedFeedsCacheProxy.sol",
+      "matches": true
+    },
+    {
+      "file": "SelfManagedFeedsCache.sol",
+      "matches": true
+    },
+    {
+      "file": "Multicall3.sol",
+      "matches": true
+    },
+    {
+      "file": "ConfirmedOwnerWithProposal.sol",
+      "matches": true
+    },
+    {
+      "file": "ISelfManagedFeedsCache.sol",
+      "matches": true
+    },
+    {
+      "file": "KeystoneForwarder.sol",
+      "matches": true
+    },
+    {
+      "file": "verified-ChainlinkDataFeedLib.sol",
+      "matches": true
+    },
+    {
+      "file": "proxy-verified-metadata.json",
+      "matches": true
+    },
+    {
+      "file": "cache-verified-metadata.json",
+      "matches": true
+    },
+    {
+      "file": "oracle-verified-metadata.json",
+      "matches": true
+    },
+    {
+      "file": "forwarder-verified-metadata.json",
+      "matches": true
+    },
+    {
+      "file": "multicall-verified-metadata.json",
+      "matches": true
+    }
+  ],
+  "oracleLibraryExactTextMatch": true,
+  "conclusion": "For the listed contracts, the explorer's deployed_code_hash equals SHA-256 of the bytecode read at the pinned block. This hash-link check does not recompile source; Phase 4's separate oracle-evidence-verification.json checks the archived six-contract runtime reproduction.",
+  "independentReproductionEvidence": "evidence/phase5/oracle-evidence-verification.json"
+}

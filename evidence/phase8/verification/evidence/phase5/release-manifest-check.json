@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-02T15:03:55.246Z",
+  "passed": true,
+  "manifestSha256": "d5c6a91c12880f67ef9ffeda822eb010b78c3fa9a296932f0d8ac0ca53847125",
+  "sourceInputsSha256": "e9c758240dcfcd06e7691e51a8bb48194e5f7f38cd616ec3ec547c9c7fff3004",
+  "buildSha256": "84830d46176759e16458ce285adc310cd49c3810321724c017e3a5a214f3072b",
+  "documentationSha256": "18e1bd45c398ab83356dd5c9fef285910fff6ee0f3b9d86df474d2cd8b3f46f0",
+  "evidenceSha256": "273e9d14774df6cdc5332806defc87c175cc8b29c7795f5743606959983ea4f3",
+  "boundEvidenceFiles": 429,
+  "requiredDocuments": 10,
+  "finalSecretScan": {
+    "command": "node --import tsx scripts/check-secrets.ts --read-only",
+    "passed": true,
+    "filesScanned": 1092,
+    "ruleCount": 9,
+    "placeholderTemplateVerified": true,
+    "findings": []
+  },
+  "productionApproval": false,
+  "productionReleaseReady": false,
+  "actionable": false
+}

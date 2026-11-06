@@ -1,0 +1,2 @@
+New-file Git whitespace: FAIL; 372 files; real index unchanged.
+[{"path":"evidence/phase6/monitor-once-invalid-threshold-rejected.txt","code":3},{"path":"evidence/phase6/monitor-once-invalid-threshold-retry-context.txt","code":3}]

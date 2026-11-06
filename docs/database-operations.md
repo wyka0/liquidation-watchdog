@@ -1,0 +1,80 @@
+# SQLite durability, backups and restoration
+
+## Storage contract
+
+Phase 5 uses built-in `node:sqlite` at the verified **SQLite 3.51.2 / Node 24.14.1** runtime. The current schema is **5**, application ID `0x4c575033`. Migrations 1–4 retain their original SQL/checksums; migration 5 adds `worker_runtime`, bounded operational-failure records and query indexes.
+
+- Writable initialization/migration acquires a separate exclusive maintenance lock before opening the main database. Worker mutations require explicit ownership. Status/history/diagnostics use read-only connections; missing storage is reported without initialization.
+- Startup validates application ID, supported version, migration checksums, exact schema layout, SQLite `quick_check`, foreign keys and critical stored JSON. Full backup/recovery validation adds `integrity_check`, all stored record schemas, alert bindings, delivery attempt continuity/completion and oracle record hashes/references.
+- Unexpected tables, indexes or triggers cause refusal before writes. Newer schemas are rejected; no downgrade, repair, rename-to-empty or silent reset is attempted.
+- All missing forward migrations execute in one transaction. Observation/state/episode/fingerprint/alert/outbox creation is one transaction. Failed migration or observation writes roll back together.
+- Writable settings are WAL, `synchronous=FULL`, foreign keys on, `trusted_schema=OFF`, 1-second busy timeout, 1,000-page auto-checkpoint, 16 MiB journal-size hint, 8 MiB cache target and mmap disabled. The database ceiling uses `max_page_count` rounded down to full pages.
+
+`FULL` requests durability from SQLite and the OS; it cannot validate the host's power-loss behavior, controller cache or networked filesystem. The WAL hint is not a hard live WAL limit. Long-lived readers can delay checkpoints. The current defaults and remaining native-I/O limits are in [configuration](environment-variables.md).
+
+## Database and sidecar ownership
+
+Keep the main file and its `-wal`, `-shm`, `-journal` and `-monitor-lock` sidecars in one private local directory. Permissions must permit directory writes. The lock is an OS-held SQLite transaction, not a PID marker. An existing lock file does not prove a process is running; the lock can become available while the file remains. Never remove a lock or WAL to bypass a live owner.
+
+Local path validation rejects network/UNC/URI paths, parent traversal, reserved Windows names, stream aliases, control characters, links and hardlink aliases. This does not defend against a privileged operator changing directories during an operation; private parent directories and ACLs remain a host requirement.
+
+## Failure handling
+
+| Condition | Application behavior | Operator action |
+| --- | --- | --- |
+| Another writer/maintenance owner | Explicit lock failure before migration | Identify/fence owner; inspect through read-only CLI |
+| Corrupt/schema-drift/newer database | Refusal; original files retained | Preserve files, compare release/schema, verify an isolated backup |
+| SQLite busy, I/O failure or full disk | Transaction fails, worker stops; no rolled-back alerts are sent | Stop restart loop, restore capacity/permissions and inspect integrity |
+| Page/backlog/RSS/WAL/free-space safeguard | New work stops; required records retained | Investigate and resize deliberately; do not delete pending work |
+| Failed local acknowledgment write after send | Durable attempt may remain `IN_FLIGHT`; recovery records `ATTEMPT_INTERRUPTED` and terminalizes it as `PERMANENTLY_FAILED` with `ambiguous=1` (logical `UNKNOWN`) | Preserve and investigate; terminal unknown is excluded from `due()` and never automatically resent |
+
+If free space is inadequate, even the failure record may be unwritable. Supervisor exit status and sanitized stderr are then the evidence. A failed persistence operation does not justify creating a replacement empty database.
+
+## Retention
+
+Pruning defaults to 30 days for cycles and 180 days for terminal alerts. It preserves unfinished cycles, latest/last-accepted cycles, cycles referenced by retained alerts, nonterminal deliveries, stream baselines, deduplication fingerprints and episode counters. Terminal alert deletion cascades its delivery/attempt/event payloads. The latest oracle record per continuity context and all explicitly saved bundle bindings are retained. Only the most recent 100 operational-failure records are retained (20 shown in diagnostics).
+
+Fingerprint tombstones intentionally grow indefinitely. SQLite reuses free pages and need not shrink after pruning. No automatic VACUUM, tombstone purge or evidence deletion runs. Budget exhaustion is an operator maintenance event. Terminal history may expire; a backup predating a delivery acknowledgment can still cause a duplicate after restore even though the active database once knew it was delivered.
+
+## Consistent backup
+
+Run from the release root so persisted relative evidence references resolve. Use a **new**, private destination each time:
+
+```powershell
+node dist/cli.js backup --database C:/watchdog-data/watchdog.sqlite --output C:/watchdog-backups/capture-unique
+node dist/cli.js backup-verify --backup C:/watchdog-backups/capture-unique
+```
+
+The command opens the source read-only and uses SQLite's online backup API, including committed WAL state. A concurrently writing worker is supported. The isolated destination is converted to DELETE journal mode so `database.sqlite` is standalone. Never substitute a raw copy of a live main file.
+
+The backup contains:
+
+1. `database.sqlite`, full integrity/schema/content checks, per-table counts and incremental deterministic hashes;
+2. every explicitly saved oracle bundle referenced by the database;
+3. every persisted local reviewed-source artifact reference, with expected SHA-256; a reference inside a Phase 4/5 bundle brings the whole verified bundle;
+4. `manifest.json` with runtime/schema/time, inventory/byte hashes and point-in-time delivery semantics;
+5. `manifest.sha256`, written last, followed by a complete verification pass.
+
+Destinations are exclusive; files are created privately and linked/aliased paths are refused. Missing or altered referenced evidence fails the backup rather than producing a database-only success. Incomplete exclusive directories are retained for diagnosis and are unusable unless `backup-verify` succeeds. Existing backup directories are never overwritten. Hashes detect accidental change relative to the manifest; they are not a signature against an adversary who can replace both manifest and data. Protect an independently retained manifest digest.
+
+The online API has a two-minute **progress-callback** budget. This is not a hard deadline for blocked native I/O, total evidence copying or full integrity scans. Preflight free-space checks cannot prevent races with other writers. Host supervision, filesystem faults, backup duration and larger-database performance require acceptance testing.
+
+## Isolated restore verification
+
+```powershell
+node dist/cli.js restore-verify --backup C:/watchdog-backups/capture-unique --restore-root C:/watchdog-recovery/verification
+```
+
+`--config` can supply the intended retry budget. There is deliberately no `--database` replacement option.
+
+1. Verify the complete backup and refuse a scratch root inside it.
+2. Create a unique scratch directory; restore the database using SQLite's backup API.
+3. Compare all table hashes **before migration**. Migrate supported older schemas forward, then check preserved tables. Migration 3 adds `blocked=0`, so only that known provider-limit layout change is exempted from post-migration exact hashing for schema <3.
+4. Validate restored state; recover in-flight attempts as terminal `PERMANENTLY_FAILED` with `ambiguous=1` (logical `UNKNOWN`), retaining their prior attempt count and recording `ATTEMPT_INTERRUPTED`. They remain excluded from `due()` and are not replayed. Confirm known-delivered rows are identical and stream/cycle/alert/fingerprint hashes stay unchanged.
+5. Re-verify the source backup. Close and remove only the uniquely created scratch directory.
+
+This command sends no notifications, performs no chain reads and never replaces a live database. The final result reports source immutability and delivery continuity. A real replacement uses the separately approved [rollback/recovery procedure](rollback-and-recovery.md), including reconciliation for events after the backup timestamp. The [Stage 3B terminal-unknown rule](STAGE-3B-RUNTIME-NOTIFICATIONS.md#5-delivery-lifecycle) governs current delivery recovery; no operator resend workflow for unknown outcomes is implemented.
+
+## Backup schedule proposal and recovery targets
+
+For host acceptance, start with an hourly consistent backup, a pre-upgrade backup and daily off-host transfer; retain at least 48 hourly and 14 daily verified sets if storage permits. Proposed RPO is one hour and proposed RTO 30 minutes. **Neither target is measured or guaranteed by this phase.** Measure at the expected database/evidence size, protect private backups/metadata, and test loss of the primary host. Automated deletion/transfer/scheduling is not installed by this project.

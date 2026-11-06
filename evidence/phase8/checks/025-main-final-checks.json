@@ -1,0 +1,12 @@
+{
+  "command": "node --import tsx [REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-evidence.mjs checks",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T15:15:36.421Z",
+  "finishedAt": "2026-11-02T15:17:30.928Z",
+  "durationMs": 114498,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "{\n  \"passed\": true,\n  \"links\": 368,\n  \"whitespaceFiles\": 265,\n  \"secretScanFiles\": 1243,\n  \"secretFindings\": 0,\n  \"reportSections\": 12\n}\n",
+  "stderr": ""
+}

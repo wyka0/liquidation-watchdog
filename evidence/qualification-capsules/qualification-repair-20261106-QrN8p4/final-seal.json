@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "kind": "DETACHED_LOCAL_FINAL_QUALIFICATION_INTEGRITY_SEAL",
+  "sealedAt": "2026-11-06T01:42:31.447Z",
+  "artifacts": [
+    {
+      "root": "REPAIR",
+      "file": "FINAL-QUALIFICATION-REPAIR-REPORT.md",
+      "bytes": 51682,
+      "sha256": "02b6cb0943243b1115d17f2f50ebee41af3f951c53adb652045f8823b3986812"
+    },
+    {
+      "root": "REPAIR",
+      "file": "final-qualification-evidence.json",
+      "bytes": 54195,
+      "sha256": "d78f2a358e988c194a87141ae3dc55316f29762a0097c60313ee36934aace058"
+    },
+    {
+      "root": "REPAIR",
+      "file": "final-report-validation.json",
+      "bytes": 11376,
+      "sha256": "6bda8f5a64902447743d81ff99c48e073998dbf2fd41cca0ac4ac3a0b7762805"
+    },
+    {
+      "root": "REPAIR",
+      "file": "preservation-seal.json",
+      "bytes": 2824,
+      "sha256": "2bd4fb6646f89efe8934d5bf72bcce8884957bb4629d00817d5e095397495783"
+    },
+    {
+      "root": "REPAIR",
+      "file": "finalization-baseline.json",
+      "bytes": 590852,
+      "sha256": "3bb8df423b9b37f688e6da2c09aaed1212c1b072322ca2f2062b0bd1aca62fa0"
+    },
+    {
+      "root": "REPAIR",
+      "file": "final-artifact-manifest.json",
+      "bytes": 627165,
+      "sha256": "860e103cc7dd7fdb5083d19dc059e0d65ffb81fc55dcb1fb1f343a5fa9f18969"
+    },
+    {
+      "root": "REPAIR",
+      "file": "final-artifact-manifest.sha256",
+      "bytes": 95,
+      "sha256": "e7f8e56c929a130b7963ed7f834013f51a43bcb6790b824fbc4ab3b9e0862818"
+    },
+    {
+      "root": "REPAIR",
+      "file": "final-manifest-verification.json",
+      "bytes": 4040,
+      "sha256": "01ee3227b2024cbefc2b406b5fe67ec9579ba124ce1db5cc50d895358fccf6c3"
+    },
+    {
+      "root": "REPAIR",
+      "file": "final-completion.json",
+      "bytes": 6887,
+      "sha256": "f3fa0b2464414089eb7b7425ee83536c102cf0ddd7409fee34a481fd323ee632"
+    }
+  ],
+  "manifestFileCount": 2337,
+  "manifestBytes": 36165531,
+  "roots": [
+    {
+      "root": "REPAIR",
+      "fileCount": 1776,
+      "totalBytes": 23824139
+    },
+    {
+      "root": "STAGE2",
+      "fileCount": 561,
+      "totalBytes": 12341392
+    }
+  ],
+  "explicitlyExcludedManifestFiles": [
+    "final-artifact-manifest.json",
+    "final-artifact-manifest.sha256",
+    "final-manifest-verification.json",
+    "final-completion.json",
+    "final-seal.json",
+    "final-seal.sha256"
+  ],
+  "selfReference": {
+    "seal": "final-seal.json",
+    "checksumSidecar": "final-seal.sha256",
+    "noSelfHashClaim": true
+  },
+  "trustLimit": "Local captured-byte integrity only; not independent custody/notarization or a defense against an administrator-compromised host.",
+  "decision": {
+    "originalRequirements": "PASS_EXACT_FINITE_LOCAL_STAGE2_RUN_ONLY",
+    "software": "PASS",
+    "production": "NOT_ACCEPTED_NO_GO",
+    "oracleOverall": "UNVERIFIED",
+    "freshness": "UNKNOWN",
+    "independentValidation": "UNKNOWN_INELIGIBLE",
+    "financialRecovery": "BLOCKED",
+    "monitor": "STOPPED"
+  },
+  "monitor": "STOPPED",
+  "noFurtherAuthorization": true
+}

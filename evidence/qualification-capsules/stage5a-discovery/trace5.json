@@ -1,0 +1,22 @@
+[
+  {
+    "method": "eth_call",
+    "began": "2026-11-06T15:06:51.641Z",
+    "responseBytes": 9476
+  },
+  {
+    "method": "eth_call",
+    "began": "2026-11-06T15:06:53.041Z",
+    "responseBytes": 1924
+  },
+  {
+    "method": "eth_call",
+    "began": "2026-11-06T15:06:54.009Z",
+    "responseBytes": 9220
+  },
+  {
+    "method": "eth_call",
+    "began": "2026-11-06T15:06:54.836Z",
+    "responseBytes": 196
+  }
+]

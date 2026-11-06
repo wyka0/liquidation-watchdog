@@ -1,0 +1,125 @@
+{
+  "evidenceKind": "LIVE_CHAIN_READ",
+  "retrievedAt": "2026-11-01T14:57:24.622Z",
+  "chainId": 1672,
+  "block": {
+    "number": "21856704",
+    "hash": "0xff0f04f0613674b76270c0ad69122c7fdeb735d74d65ebe6be7e3b2372f30336",
+    "parentHash": "0x3dde40171bf417aea6b23a0aa1b2428e60e80f7346c40c347cb4aa3208597527",
+    "timestamp": "1793545013"
+  },
+  "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+  "contracts": [
+    {
+      "label": "Multicall3",
+      "address": "0xcA11bde05977b3631167028862bE2a173976CA11",
+      "blockNumber": "21856704",
+      "byteLength": 3808,
+      "keccak256": "0xd5c15df687b16f2ff992fc8d767b4216323184a2bbc6ee2f9c398c318e770891",
+      "sha256": "2756d7c52baee85cacb504f6ee1df7aad6809ac8d94a4a111d76991f90d36d6e",
+      "expectedRuntimeHash": "0xd5c15df687b16f2ff992fc8d767b4216323184a2bbc6ee2f9c398c318e770891",
+      "runtimeHashMatches": true,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "Morpho Blue",
+      "address": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "blockNumber": "21856704",
+      "byteLength": 15582,
+      "keccak256": "0xc7e89967df297eebdb2642ade6225f6a9f72a61862c83de181dd707ff2e2c744",
+      "sha256": "5b1b9424a6dc46c6a041f8eb1d69239342e89f3726ea31dc409cae9dd333a55f",
+      "expectedRuntimeHash": null,
+      "runtimeHashMatches": null,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "Adaptive Curve IRM",
+      "address": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+      "blockNumber": "21856704",
+      "byteLength": 2282,
+      "keccak256": "0xb6c5655b5ca85ed8a977c8b85ecc1c5fdabd5b386766b4fe4e37808ecef0eaff",
+      "sha256": "ac00433541e6d67ad3da7f9b52e79e0df7738f1683b0ec3e202d07efc429cb3f",
+      "expectedRuntimeHash": null,
+      "runtimeHashMatches": null,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "Oracle factory",
+      "address": "0xb8118256d8Aa950ec0B26a0b8Be7C6c1a858f6a3",
+      "blockNumber": "21856704",
+      "byteLength": 4464,
+      "keccak256": "0x535cbea6cb733b4afdb01e5c88ed057b16bea4a28c0adc5b4f02de09694ecfd2",
+      "sha256": "f60ac812ec13588f10e805f90bc419fe1639e95d56050bab0deb1b1f56a21fbb",
+      "expectedRuntimeHash": null,
+      "runtimeHashMatches": null,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "Market oracle",
+      "address": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+      "blockNumber": "21856704",
+      "byteLength": 2557,
+      "keccak256": "0x2b4b39be4acacf49ae05c056a0debbe9bf8fff8e47c9ff6b67f101dbad34de9b",
+      "sha256": "178a10129f94627df4d95f019df5eb7875a4d1049364fe28ff69c06dd456c794",
+      "expectedRuntimeHash": null,
+      "runtimeHashMatches": null,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "Loan token",
+      "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "blockNumber": "21856704",
+      "byteLength": 1798,
+      "keccak256": "0x7d286c44b1d29b82c9ee21a65f8f40a7ebe493340bd0bdf7b6cbff481007f589",
+      "sha256": "600d512ff1ac7f513cd3054121ad640769a68076e8b85df10a48c1babee2ba76",
+      "expectedRuntimeHash": null,
+      "runtimeHashMatches": null,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "Collateral token",
+      "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+      "blockNumber": "21856704",
+      "byteLength": 12275,
+      "keccak256": "0xea07c1acd0d5f6c9680be00d12a2b9f296b4ce3f2a7b38682bdd4c47eee40d5d",
+      "sha256": "494f468eef50ffd3c8b6debdec66583cb02c433bdb1ae8bd12f5927dc417e8e8",
+      "expectedRuntimeHash": null,
+      "runtimeHashMatches": null,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "Feed proxy",
+      "address": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+      "blockNumber": "21856704",
+      "byteLength": 2043,
+      "keccak256": "0xace6df7e3159128786ca24c6ad172b38b0d69ae20f4fa8edae07ea0d39f93c9d",
+      "sha256": "95027d40e661cafffa6a90129991f47fd63b59bd0435481f53cc5a0b2414a9fa",
+      "expectedRuntimeHash": "0xace6df7e3159128786ca24c6ad172b38b0d69ae20f4fa8edae07ea0d39f93c9d",
+      "runtimeHashMatches": true,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "Feed cache",
+      "address": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "blockNumber": "21856704",
+      "byteLength": 3874,
+      "keccak256": "0xa408ee37af0e83e6c4fab1f1a3c7927c8253b02ea28dbe14e9eaec9d123e9869",
+      "sha256": "8bb736091d9032c49a1b279f51406f653b3fbf7c0880d7b917c93b2ce9086103",
+      "expectedRuntimeHash": "0xa408ee37af0e83e6c4fab1f1a3c7927c8253b02ea28dbe14e9eaec9d123e9869",
+      "runtimeHashMatches": true,
+      "mcpMatchesRpc": true
+    },
+    {
+      "label": "Report forwarder",
+      "address": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+      "blockNumber": "21856704",
+      "byteLength": 8591,
+      "keccak256": "0x2b21870eb5ea9013a781ed3db7d5fab742b612b2ac8de0990ac9d95b22f795fc",
+      "sha256": "f9c0c886360e5fd0b5837b83a0d307cea7aab6a43ad05d2c6ebf2f023e04edd0",
+      "expectedRuntimeHash": null,
+      "runtimeHashMatches": null,
+      "mcpMatchesRpc": true
+    }
+  ],
+  "basis": "Code presence and same-block runtime hash agreement; explorer source attribution is captured separately."
+}

@@ -1,0 +1,33 @@
+{
+  "name": "AFFECTED_EXISTING_UNIT_FILE_RERUN",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "test/runtime-process.test.ts",
+    "--configLoader=native",
+    "--no-cache",
+    "--no-fsModuleCache",
+    "--maxWorkers=1",
+    "--reporter=default",
+    "--reporter=json",
+    "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\runtime-rerun-tests.json"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "startedAt": "2026-11-06T00:00:51.311Z",
+  "completedAt": "2026-11-06T00:02:40.395Z",
+  "exitCode": 0,
+  "signal": null,
+  "guardFile": "test-network-guard-v2.cjs",
+  "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+  "stdout": {
+    "file": "runtime-rerun.stdout.txt",
+    "bytes": 789,
+    "sha256": "79d2ae29b5b9c864993d7638f9b8702b34e2a576bf8349caa8f6dd0938baa14d"
+  },
+  "stderr": {
+    "file": "runtime-rerun.stderr.txt",
+    "bytes": 169,
+    "sha256": "e58ac92e9f3cdb1abba44a01cedfef328e7290ca351837a34b2d3b45711276e1"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "method": "eth_blockNumber",
+    "began": "2026-11-06T15:00:35.118Z",
+    "responseBytes": 11
+  },
+  {
+    "method": "eth_call",
+    "began": "2026-11-06T15:00:35.625Z",
+    "responseBytes": 2052
+  },
+  {
+    "method": "eth_call",
+    "began": "2026-11-06T15:00:36.789Z",
+    "responseBytes": 6276
+  },
+  {
+    "method": "eth_call",
+    "began": "2026-11-06T15:00:37.643Z",
+    "responseBytes": 7876
+  },
+  {
+    "method": "eth_call",
+    "began": "2026-11-06T15:00:38.639Z",
+    "responseBytes": 7876
+  },
+  {
+    "method": "eth_call",
+    "began": "2026-11-06T15:00:39.455Z",
+    "responseBytes": 964
+  }
+]

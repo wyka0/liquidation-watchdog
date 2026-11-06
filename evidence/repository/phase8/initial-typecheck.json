@@ -1,0 +1,8 @@
+{
+  "kind": "LOCAL_VERIFICATION_INITIAL_FAILURE",
+  "command": "npm run typecheck",
+  "workingDirectory": "C:/liquidation-watchdog",
+  "exitCode": 1,
+  "stdout": "src/runtime/workspace.ts(4,57): error TS6133: 'resolve' is declared but its value is never read.",
+  "resolution": "Removed the unused import before implementing the runtime. Subsequent check results are recorded separately."
+}

@@ -1,0 +1,22 @@
+{
+  "name": "pharos-doc-index",
+  "sourceUrl": "https://docs.pharos.xyz/llms.txt",
+  "finalUrl": "https://docs.pharos.xyz/llms.txt",
+  "method": "GET",
+  "beganAt": "2026-11-06T00:31:59.451Z",
+  "retrievedAt": "2026-11-06T00:32:00.310Z",
+  "status": 200,
+  "headers": {
+    "content-type": "text/markdown; charset=utf-8",
+    "date": "Fri, 06 Nov 2026 00:32:00 GMT",
+    "etag": null,
+    "last-modified": null
+  },
+  "redirects": [],
+  "block": null,
+  "bytes": 8743,
+  "responseSha256": "8a4f4f01d525b36ffb8377e64f370c52d9b2e53bfcb555b7e736d82efc18a37c",
+  "bodyPath": "pharos-doc-index.body.txt",
+  "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+  "ignoredRemoteAgentInstructionAppendix": true
+}

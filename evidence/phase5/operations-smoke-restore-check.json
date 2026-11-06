@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "isolated": true,
+  "sourceUnchanged": true,
+  "preservedStateAlertsAndDedup": true,
+  "knownDeliveredNotResent": true,
+  "recoveredAmbiguous": 0,
+  "priorSchemaVersion": 5,
+  "restoredSchemaVersion": 5,
+  "externalCalls": 0,
+  "actionable": false
+}

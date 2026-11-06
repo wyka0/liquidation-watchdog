@@ -1,0 +1,839 @@
+{
+  "evidenceKind": "PHASE1_2_3_ARCHIVE_INTEGRITY",
+  "checkedAt": "2026-11-01T18:33:33.795Z",
+  "baselineSha256": "eff105e08d795d592671c1426685b79361dd76098cabe78daf9ca8fae7c74a3c",
+  "passed": true,
+  "counts": [
+    {
+      "phase": 1,
+      "files": 54
+    },
+    {
+      "phase": 2,
+      "files": 73
+    },
+    {
+      "phase": 3,
+      "files": 77
+    }
+  ],
+  "checks": [
+    {
+      "path": "evidence/phase1/accounting.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/block-consistency.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/build.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/built-cli-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/cli-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/contract-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/dependency-audit.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/dependency-audit.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/git-diff-check.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/git-intent-to-add.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/integration-tests.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/lint.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/market-id-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/market-parameters.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/mcp-rpc-comparison.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/network-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/oracle-investigation-live.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/oracle-update-history.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/position-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/read-trace.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/secret-scan.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/secrets-check.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/source-runtime-links.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/source-runtime-matches.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/ChainlinkDataFeedLib.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/ConfirmedOwnerWithProposal.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/ConstantsLib.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/IMorpho.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/ISelfManagedFeedsCache.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/KeystoneForwarder.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MarketParamsLib.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MathLib.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/Morpho.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MorphoBalancesLib.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MorphoChainlinkOracleV2.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MorphoChainlinkOracleV2Factory.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/Multicall3.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/SharesMathLib.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/UtilsLib.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/cache-verified-metadata.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/forwarder-verified-metadata.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/multicall-verified-metadata.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/official-registry-excerpts.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/oracle-verified-metadata.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/proxy-verified-metadata.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/test-integration.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/test-unit.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/typecheck.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/unit-tests.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/verification-results.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/build.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/built-cli-historical-risk-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/built-cli-risk-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/built-cli-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/cli-inspect-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/dependency-audit.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/dependency-audit.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/documentation-links.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/evidence-consistency.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/file-changes.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/final-git-diff-check.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/final-git-intent-to-add.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/final-inventory.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/final-phase1-integrity.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/final-security-scan.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/finalization-results.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/git-diff-check.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/git-intent-to-add.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/accounting.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/block-consistency.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/cli-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/contract-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/market-id-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/market-parameters.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/mcp-rpc-comparison.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/network-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/oracle-investigation-live.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/position-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/inspect/live/read-trace.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/integration-tests.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/lint.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-evidence-baseline.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-evidence-integrity.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-evidence-integrity.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/accounting.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/block-consistency.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/cli-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/contract-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/market-id-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/market-parameters.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/mcp-rpc-comparison.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/network-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/oracle-investigation-live.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/position-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase1-regression/read-trace.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/phase2-inventory.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk-integration/collateral-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk-integration/input-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk-integration/manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk-integration/repayment-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk-integration/risk-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk-integration/risk-result.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/historical-21853902/collateral-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/historical-21853902/input-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/historical-21853902/manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/historical-21853902/repayment-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/historical-21853902/risk-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/historical-21853902/risk-result.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/live/collateral-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/live/input-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/live/manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/live/repayment-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/live/risk-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/risk/live/risk-result.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/secret-scan.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/secrets-check.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/source-runtime-links.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/source-runtime-matches.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/test-integration.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/test-unit.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/typecheck.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/unit-tests.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase2/verification-results.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/bounded-monitoring-restart-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/build.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/built-cli-historical-risk-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/built-cli-risk-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/built-cli-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/cli-inspect-smoke.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/dependency-audit.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/dependency-audit.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/documentation-links.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/documentation-links.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/file-changes.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/git-diff-check.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/git-intent-to-add.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/historical-phase2-regression.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/historical-regression.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/accounting.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/block-consistency.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/cli-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/contract-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/market-id-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/market-parameters.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/mcp-rpc-comparison.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/network-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/oracle-investigation-live.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/position-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/inspect/live/read-trace.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/integration-tests.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/lint.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/monitor-smoke-alerts.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/monitor-smoke-once.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/monitor-smoke-restart.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/monitor-smoke-status.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/monitoring-smoke.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-evidence-integrity.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-evidence-integrity.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/accounting.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/block-consistency.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/cli-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/contract-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/market-id-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/market-parameters.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/mcp-rpc-comparison.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/network-verification.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/oracle-investigation-live.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/position-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase1-regression/read-trace.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/phase3-inventory.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/prior-phases-baseline.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/prior-phases-integrity.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/prior-phases-integrity.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk-integration/collateral-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk-integration/input-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk-integration/manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk-integration/repayment-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk-integration/risk-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk-integration/risk-result.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/historical-21853902/collateral-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/historical-21853902/input-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/historical-21853902/manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/historical-21853902/repayment-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/historical-21853902/risk-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/historical-21853902/risk-result.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/live/collateral-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/live/input-snapshot.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/live/manifest.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/live/repayment-estimate.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/live/risk-report.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/risk/live/risk-result.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/secret-scan.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/secrets-check.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/source-runtime-links.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/source-runtime-matches.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/test-integration.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/test-unit.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/typecheck.txt",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/unit-tests.json",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase3/verification-results.json",
+      "unchanged": true
+    }
+  ],
+  "unexpected": []
+}

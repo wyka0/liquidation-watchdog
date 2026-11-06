@@ -1,0 +1,12 @@
+{
+  "command": "npm run verify -- --finalize",
+  "workingDirectory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7",
+  "startedAt": "2026-11-02T15:02:15.376Z",
+  "finishedAt": "2026-11-02T15:03:13.103Z",
+  "durationMs": 57723,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "\n> liquidation-watchdog@0.1.0 verify\n> tsx scripts/verify.ts --finalize\n\n\n[phase5-inventory]\nPhase 5 inventory: PASS; 506 unchanged, 44 modified, 542 added, 0 missing; protected core unchanged.\n\n[documentation-links]\nLocal documentation targets: 330/330 exist.\n\n[secrets-check]\n\n> liquidation-watchdog@0.1.0 secrets:check\n> tsx scripts/check-secrets.ts\n\nSecret scan: PASS; 1092 files, 0 findings (paths/rules only).\n\n[project-whitespace-check]\nNew-file Git whitespace: PASS; 542 files; real index unchanged.\n\n[git-diff-check]\n\nPhase 5 finalization: PASS; 5/5 checks.\n",
+  "stderr": ""
+}

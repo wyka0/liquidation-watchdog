@@ -1,0 +1,234 @@
+{
+ "testKind": "PHASE6_BOUNDED_ONCE_OBSERVATION_SERIES",
+ "label": "LOCAL_DEVELOPMENT_MACHINE_ONLY — not target-host acceptance (intended host not specified)",
+ "startedAtUtc": "2026-11-02T09:23:17.201Z",
+ "finishedAtUtc": "2026-11-02T09:44:15.583Z",
+ "design": "Each observation was an individual bounded `monitor --once` CLI process. Continuous monitoring remained disabled; no indefinite scheduling was started. Both external notification channels were disabled; the console channel only delivered.",
+ "maxCyclesSpec": ">=10 bounded cycles, <=30 minutes total (task spec suggestion)",
+ "cyclesExecuted": 12,
+ "allAccepted": true,
+ "maxCycleDurationMs": 64833,
+ "cycleBudgetMs": 240000,
+ "totalObservedWallSecondsApprox": 770,
+ "blockedOrRejectedAttempts": [
+  {
+   "fileName": "monitor-once-first.txt",
+   "outcome": "REJECTED_ATTEMPT: INVALID_THRESHOLDS (operator passed a monitoring JSON as --risk-config). No observation accepted; last accepted state untouched. Subsequent run with the documented threshold schema succeeded."
+  }
+ ],
+ "monotonicBlocks": true,
+ "dataQualityEveryCycle": [
+  "UNVERIFIED"
+ ],
+ "oracleAssuranceEveryCycle": [
+  "UNVERIFIED"
+ ],
+ "mathStateEveryCycle": [
+  "WARNING"
+ ],
+ "actionableEveryCycle": [
+  "false"
+ ],
+ "databaseCounts": {
+  "alerts": 3,
+  "deliveries": 3,
+  "attempts": 3,
+  "events": 9,
+  "cycles": 12,
+  "fingerprints": 3,
+  "workerRuntime": 1,
+  "operationalEvents": 0
+ },
+ "consoleDeliveredDeliveries": 3,
+ "databaseAfter": {
+  "bytes": 1310720,
+  "walBytes": 0
+ },
+ "limitations": [
+  "12 sequential single-cycle processes; the production scheduler path (interval pacing, backoff) is verified by the Phase 5 144-cycle bounded stability harness and unit tests, not by this series.",
+  "A ~15-minute bounded series does not establish long-term reliability or soak evidence.",
+  "Oracle assurance remained UNVERIFIED and freshness UNKNOWN in every cycle; all estimates remain indicative and non-actionable."
+ ],
+ "cycles": [
+  {
+   "sequence": 1,
+   "block": "21920617",
+   "blockHash": "0x63696a799ce4ca53b8e32d95cb70feee72a77f4d451b57c3c96081f9eb7164cc",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:23:17.201Z",
+   "completedAt": "2026-11-02T09:24:21.614Z",
+   "durationMs": 64413,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "OUTPUT_FILE_OVERWRITTEN_BY_REPEAT_RUN (original run still present in DB)"
+  },
+  {
+   "sequence": 2,
+   "block": "21920677",
+   "blockHash": "0x70e1e8bb9fe249e3693ab12210ea794fbda960f9092e05a297a58fd2ca94a745",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:24:48.999Z",
+   "completedAt": "2026-11-02T09:25:53.282Z",
+   "durationMs": 64283,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "OUTPUT_FILE_OVERWRITTEN_BY_REPEAT_RUN (original run still present in DB)"
+  },
+  {
+   "sequence": 3,
+   "block": "21920778",
+   "blockHash": "0x9694e882765fa41820e95447d8ada274dfa13687f926fcb304d55448fd332530",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:26:14.905Z",
+   "completedAt": "2026-11-02T09:27:18.681Z",
+   "durationMs": 63776,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-3.txt"
+  },
+  {
+   "sequence": 4,
+   "block": "21920883",
+   "blockHash": "0x46145ad0fa32fbb4cbce363cbc282b0a98abc361b8e13398235d44e9ef88e80e",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:27:53.935Z",
+   "completedAt": "2026-11-02T09:28:57.966Z",
+   "durationMs": 64031,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-4.txt"
+  },
+  {
+   "sequence": 5,
+   "block": "21920946",
+   "blockHash": "0x2c2ff6c4eb0ad00f37fdfb81ff96478c922a7df48609e2eb55fb8f95d4356155",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:29:04.618Z",
+   "completedAt": "2026-11-02T09:30:08.226Z",
+   "durationMs": 63608,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-5.txt"
+  },
+  {
+   "sequence": 6,
+   "block": "21921010",
+   "blockHash": "0xa89c6dc9f54c2739377c686c031f789141ccae20232a6c5818092f03d157d592",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:30:11.735Z",
+   "completedAt": "2026-11-02T09:31:15.763Z",
+   "durationMs": 64028,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-6.txt"
+  },
+  {
+   "sequence": 7,
+   "block": "21921073",
+   "blockHash": "0xb135b015da6e5b0605d8179fb75f2c1a4f5feb8e5d27c738b4510572cc953698",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:31:19.043Z",
+   "completedAt": "2026-11-02T09:32:22.729Z",
+   "durationMs": 63686,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-7.txt"
+  },
+  {
+   "sequence": 8,
+   "block": "21921121",
+   "blockHash": "0xd3c25fea44b89aca1922561541c7d48caeb80b65d5bdedba656308e6d30928a3",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:32:26.671Z",
+   "completedAt": "2026-11-02T09:33:31.431Z",
+   "durationMs": 64760,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-8.txt"
+  },
+  {
+   "sequence": 9,
+   "block": "21921200",
+   "blockHash": "0x4c0e0e0587479252ab1ee0bc7a6b1179f0272833326a1608853d20fcc0e6ad4b",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:33:39.607Z",
+   "completedAt": "2026-11-02T09:34:44.440Z",
+   "durationMs": 64833,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-9.txt"
+  },
+  {
+   "sequence": 10,
+   "block": "21921261",
+   "blockHash": "0x13ab93f812e5faf201984b5fde2de49d45db1c08aa24a8b905dad7b860c2216f",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:34:49.789Z",
+   "completedAt": "2026-11-02T09:35:53.797Z",
+   "durationMs": 64008,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-10.txt"
+  },
+  {
+   "sequence": 11,
+   "block": "21921342",
+   "blockHash": "0xe31130bc3f3d125c962a2f020999545aff2f5e28525a2b7fc63e9d8131ead30c",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:36:22.340Z",
+   "completedAt": "2026-11-02T09:37:26.714Z",
+   "durationMs": 64374,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-1.txt"
+  },
+  {
+   "sequence": 12,
+   "block": "21921409",
+   "blockHash": "0xead25be3be3869759a22668607b2d6ed00183fbeddd0161ae9f4826ec2f96af8",
+   "status": "COMPLETED",
+   "accepted": true,
+   "startedAt": "2026-11-02T09:37:31.565Z",
+   "completedAt": "2026-11-02T09:38:35.989Z",
+   "durationMs": 64424,
+   "mathState": "WARNING",
+   "dataQuality": "UNVERIFIED",
+   "oracleQuality": "UNVERIFIED",
+   "actionable": false,
+   "rawOutputFile": "monitor-once-2.txt"
+  }
+ ]
+}

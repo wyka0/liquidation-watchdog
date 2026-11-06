@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "kind": "IMMUTABLE_ORACLE_EVIDENCE",
+  "createdAt": "2026-11-02T10:29:16.555Z",
+  "files": [
+    {
+      "file": "assurance.json",
+      "bytes": 45212,
+      "sha256": "1ec5bf5883fea58e9ba5f3babc4a9eff448e4d0ceff094a8c887b8ef8376e851"
+    },
+    {
+      "file": "audit-report.txt",
+      "bytes": 1173,
+      "sha256": "dbce0c45ac759c641165f6ac19000e1ad72701a1a4a883297478bdd2c7ab5c40"
+    },
+    {
+      "file": "dependency-graph.json",
+      "bytes": 2842,
+      "sha256": "987cc7566996b336e264ecd7c041702ea35458c68687b838eae2436c0634f457"
+    },
+    {
+      "file": "snapshot.json",
+      "bytes": 350105,
+      "sha256": "ae8e0bac62602e085779db1b61fba8c8c49c66c148c2b4fb25e3e7ea58e5c670"
+    },
+    {
+      "file": "supplemental.json",
+      "bytes": 42200,
+      "sha256": "dd45cfe72b66a5f1b9d02e1e41095b983845d6b86381b66e719f2ac13b295b71"
+    }
+  ]
+}

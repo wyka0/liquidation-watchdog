@@ -1,0 +1,35 @@
+{
+  "label": "tests",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "test/runtime-process.test.ts",
+    "-t",
+    "fences a second process",
+    "--configLoader=native",
+    "--no-cache",
+    "--no-fsModuleCache",
+    "--reporter=default",
+    "--reporter=json",
+    "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\tests.json"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "pid": 16352,
+  "startedAt": "2026-11-06T00:43:01.503Z",
+  "completedAt": "2026-11-06T00:43:48.348Z",
+  "durationMs": 46841.4377,
+  "exitCode": 0,
+  "signal": null,
+  "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+  "stdout": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\tests.stdout.txt",
+    "bytes": 561,
+    "sha256": "7453546113f54272b2596ecb72b7e8a7287f7658308342b5bded497ed991ab55"
+  },
+  "stderr": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\tests.stderr.txt",
+    "bytes": 338,
+    "sha256": "e6b9c66c50911a0d3779539c70d83e52ec4d9d2bafc52dce90d53c294d09ec4e"
+  }
+}

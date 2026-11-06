@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "processId": 11628,
+  "startedAt": "2026-11-05T23:50:23.302Z",
+  "completedAt": "2026-11-05T23:50:29.607Z",
+  "scope": "1d9d31ed07649d3c00247bb62b508432ece0d26c3f29ab74b8ff82fa7325eb61",
+  "liveRunOnceCalls": 0,
+  "newObservations": 0,
+  "recoveredInFlight": 0,
+  "outboxDrainAttempts": 0,
+  "knownDeliveredResends": 0,
+  "stateUnchanged": true,
+  "logicalDatabaseHashesUnchanged": true,
+  "deliveredHashUnchanged": true,
+  "knownDeliveredHash": "2591037f212ad493e664d536bb960f1423aba1cfaadcaaf02b827d9b9bc0d160",
+  "statistics": {
+    "schemaVersion": 5,
+    "sqliteVersion": "3.51.2",
+    "pageSize": 4096,
+    "pageCount": 115,
+    "freePages": 9,
+    "journalMode": "wal",
+    "foreignKeys": true,
+    "connectionReadOnly": false,
+    "connectionSynchronous": 2,
+    "pendingDeliveries": 0,
+    "counts": {
+      "schema_migrations": 5,
+      "streams": 1,
+      "cycles": 1,
+      "fingerprints": 3,
+      "alerts": 3,
+      "deliveries": 3,
+      "delivery_attempts": 3,
+      "delivery_events": 9,
+      "provider_limits": 0,
+      "oracle_assurance": 1,
+      "worker_runtime": 1,
+      "operational_events": 0
+    }
+  },
+  "runtime": {
+    "runId": "542aaeec-a02e-42e1-9fe9-791fb128a602",
+    "scope": "1d9d31ed07649d3c00247bb62b508432ece0d26c3f29ab74b8ff82fa7325eb61",
+    "pid": 68,
+    "startedAt": "2026-11-05T23:46:49.177Z",
+    "updatedAt": "2026-11-05T23:48:20.578Z",
+    "rssBytes": 130019328,
+    "status": "STOPPED",
+    "error": null
+  },
+  "logs": [],
+  "limitation": "This proves clean store/outbox recovery in a new process. A second full MonitoringService worker cycle and crash-in-flight live delivery were not executed.",
+  "cli": [
+    {
+      "command": [
+        "status",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\monitoring.json",
+        "--position-config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\position.json"
+      ],
+      "exitCode": 0,
+      "outputFile": "restart-cli-status.txt",
+      "bytes": 158560,
+      "sha256": "0d6eb451e7925fdcfa089b4d2ea929623ac1c935906a23e31e2e13b3726b2c78",
+      "networkAttempted": false,
+      "deliveryAdapterInvoked": false,
+      "evidenceMeaning": "READ_ONLY_PERSISTED_HISTORY_NOT_A_CURRENT_CHAIN_READ_OR_NOTIFICATION_RESEND"
+    },
+    {
+      "command": [
+        "alerts",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\monitoring.json",
+        "--position-config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\position.json"
+      ],
+      "exitCode": 0,
+      "outputFile": "restart-cli-alerts.txt",
+      "bytes": 3787,
+      "sha256": "3f368d47036ad795bc81bf2c881371c8072265d3fa20d461efe56369baadc3a7",
+      "networkAttempted": false,
+      "deliveryAdapterInvoked": false,
+      "evidenceMeaning": "READ_ONLY_PERSISTED_HISTORY_NOT_A_CURRENT_CHAIN_READ_OR_NOTIFICATION_RESEND"
+    }
+  ],
+  "fetchAttempts": 0
+}

@@ -1,0 +1,94 @@
+{
+  "monitoring": {
+    "monitoring": {
+      "enabled": false,
+      "intervalSeconds": 60,
+      "maxConsecutiveFailures": 3,
+      "alertOnRecovery": true,
+      "alertOnDataQualityChanges": true,
+      "alertOnEveryCriticalCheck": false,
+      "criticalReminderSeconds": null
+    },
+    "storage": {
+      "path": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/watchdog.sqlite",
+      "cycleRetentionDays": 30,
+      "alertRetentionDays": 180
+    },
+    "notifications": {
+      "telegram": false,
+      "discord": false,
+      "maxAttempts": 5,
+      "baseDelaySeconds": 5,
+      "maxDelaySeconds": 900,
+      "jitterRatio": 0.2,
+      "timeoutSeconds": 15,
+      "maxPerDrain": 10
+    },
+    "operations": {
+      "profile": "local",
+      "shutdownTimeoutSeconds": 30,
+      "cycleTimeoutSeconds": 240,
+      "connectivityTimeoutSeconds": 30,
+      "chainStatusMaxAgeSeconds": 600,
+      "failureBackoffMaxSeconds": 900
+    },
+    "resources": {
+      "databaseBytes": 4294967296,
+      "walBytes": 268435456,
+      "minFreeBytes": 536870912,
+      "pendingDeliveries": 10000,
+      "rssBytes": 536870912,
+      "evidenceBytes": 2147483648,
+      "evidenceFiles": 50000
+    }
+  },
+  "thresholds": {
+    "scale": "1000000000000000000",
+    "decimal": {
+      "warningRatio": "1.30",
+      "criticalRatio": "1.10",
+      "targetRatio": "1.25",
+      "liquidationBoundary": "1.00"
+    },
+    "wad": {
+      "warningRatio": "1300000000000000000",
+      "criticalRatio": "1100000000000000000",
+      "targetRatio": "1250000000000000000",
+      "liquidationBoundary": "1000000000000000000"
+    }
+  },
+  "position": {
+    "schemaVersion": 1,
+    "enabled": true,
+    "mode": "CONFIGURED",
+    "accountRole": "EXPLICITLY_CONFIGURED_PUBLIC_ACCOUNT_NOT_USER_WALLET",
+    "identity": {
+      "positionId": "2868fdc6591f5ec9674c9a33febfd27023f136783e11c24cb6dbd5f82994a06f",
+      "chainId": 1672,
+      "protocol": "MORPHO_BLUE",
+      "protocolAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+      "account": "0x086eb9C2B14dD657ae77D07dF9115A2F946CE327",
+      "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+      "irmAddress": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+      "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "collateralToken": "0x4809010926aec940b550D34a46A52739f996D75D"
+    },
+    "thresholds": {
+      "scale": "1000000000000000000",
+      "decimal": {
+        "warningRatio": "1.30",
+        "criticalRatio": "1.10",
+        "targetRatio": "1.25",
+        "liquidationBoundary": "1.00"
+      },
+      "wad": {
+        "warningRatio": "1300000000000000000",
+        "criticalRatio": "1100000000000000000",
+        "targetRatio": "1250000000000000000",
+        "liquidationBoundary": "1000000000000000000"
+      }
+    }
+  },
+  "configurationFingerprint": "59fb22e09b2b886afe8dbbb1f1c98fe693d93adeaf5d1ddcf8bbb606659b8fe1"
+}

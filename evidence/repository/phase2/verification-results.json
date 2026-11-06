@@ -1,0 +1,144 @@
+{
+  "evidenceKind": "PHASE2_LOCAL_VERIFICATION_WITH_LIVE_READS",
+  "startedAt": "2026-11-01T14:55:08.492Z",
+  "finishedAt": "2026-11-01T15:00:33.493Z",
+  "passed": true,
+  "nodeVersion": "v24.14.1",
+  "platform": "win32",
+  "results": [
+    {
+      "check": "typecheck",
+      "command": "node npm-cli.js run typecheck",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:55:08.505Z",
+      "finishedAt": "2026-11-01T14:55:37.661Z",
+      "outputFile": "typecheck.txt"
+    },
+    {
+      "check": "lint",
+      "command": "node npm-cli.js run lint",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:55:37.661Z",
+      "finishedAt": "2026-11-01T14:55:53.236Z",
+      "outputFile": "lint.txt"
+    },
+    {
+      "check": "test-unit",
+      "command": "node npm-cli.js run test:unit",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:55:53.236Z",
+      "finishedAt": "2026-11-01T14:56:42.172Z",
+      "outputFile": "test-unit.txt"
+    },
+    {
+      "check": "test-integration",
+      "command": "node npm-cli.js run test:integration",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:56:42.172Z",
+      "finishedAt": "2026-11-01T14:57:25.225Z",
+      "outputFile": "test-integration.txt"
+    },
+    {
+      "check": "build",
+      "command": "node npm-cli.js run build",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:57:25.225Z",
+      "finishedAt": "2026-11-01T14:58:29.736Z",
+      "outputFile": "build.txt"
+    },
+    {
+      "check": "built-cli-smoke",
+      "command": "node dist/cli.js --help",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:58:29.736Z",
+      "finishedAt": "2026-11-01T14:58:36.354Z",
+      "outputFile": "built-cli-smoke.txt"
+    },
+    {
+      "check": "cli-inspect-smoke",
+      "command": "node --import tsx src/cli.ts inspect --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:58:36.354Z",
+      "finishedAt": "2026-11-01T14:59:17.844Z",
+      "outputFile": "cli-inspect-smoke.txt"
+    },
+    {
+      "check": "built-cli-risk-smoke",
+      "command": "node dist/cli.js risk --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:59:17.844Z",
+      "finishedAt": "2026-11-01T14:59:55.440Z",
+      "outputFile": "built-cli-risk-smoke.txt"
+    },
+    {
+      "check": "built-cli-historical-risk-smoke",
+      "command": "node dist/cli.js risk --block 21853902 --warning 1.30 --critical 1.10 --target 1.25 --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:59:55.440Z",
+      "finishedAt": "2026-11-01T15:00:28.256Z",
+      "outputFile": "built-cli-historical-risk-smoke.txt"
+    },
+    {
+      "check": "source-runtime-links",
+      "command": "node --import tsx scripts/link-source-evidence.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:00:28.256Z",
+      "finishedAt": "2026-11-01T15:00:28.822Z",
+      "outputFile": "source-runtime-links.txt"
+    },
+    {
+      "check": "dependency-audit",
+      "command": "node npm-cli.js audit --json",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:00:28.822Z",
+      "finishedAt": "2026-11-01T15:00:30.695Z",
+      "outputFile": "dependency-audit.txt"
+    },
+    {
+      "check": "phase1-evidence-integrity",
+      "command": "node --import tsx scripts/phase1-integrity.ts --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:00:30.698Z",
+      "finishedAt": "2026-11-01T15:00:31.296Z",
+      "outputFile": "phase1-evidence-integrity.txt"
+    },
+    {
+      "check": "phase2-inventory",
+      "command": "node --import tsx scripts/phase2-inventory.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:00:31.296Z",
+      "finishedAt": "2026-11-01T15:00:31.931Z",
+      "outputFile": "phase2-inventory.txt"
+    },
+    {
+      "check": "secrets-check",
+      "command": "node npm-cli.js run secrets:check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:00:31.931Z",
+      "finishedAt": "2026-11-01T15:00:33.069Z",
+      "outputFile": "secrets-check.txt"
+    },
+    {
+      "check": "git-intent-to-add",
+      "command": "git add --intent-to-add -- .",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:00:33.069Z",
+      "finishedAt": "2026-11-01T15:00:33.252Z",
+      "outputFile": "git-intent-to-add.txt"
+    },
+    {
+      "check": "git-diff-check",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T15:00:33.252Z",
+      "finishedAt": "2026-11-01T15:00:33.493Z",
+      "outputFile": "git-diff-check.txt"
+    }
+  ],
+  "testEvidence": {
+    "unit": "unit-tests.json (FIXTURE)",
+    "integration": "integration-tests.json (LIVE_CHAIN_READ)"
+  },
+  "gitNote": "The local repository uses intent-to-add entries so git diff --check includes newly created files. No commit or push was performed.",
+  "archiveNote": "Phase 1 evidence is checked against its exclusive pre-Phase-2 SHA-256 baseline; every new capture is under evidence/phase2."
+}

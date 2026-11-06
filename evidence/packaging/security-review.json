@@ -1,0 +1,273 @@
+{
+  "kind": "PHASE3_PRE_COPY_CANDIDATE_SECURITY_AND_EXCLUSIONS",
+  "scope": "Every candidate byte, including preserved SQLite evidence, decoded as UTF-8 and additionally UTF-16LE when NUL bytes occur; credential filenames and ten credential/private-key/token pattern families. Values are never emitted.",
+  "filesScanned": 3748,
+  "bytesScanned": 110891401,
+  "ruleCount": 10,
+  "fixtureExceptions": [
+    {
+      "path": "test/transport.test.ts",
+      "encoding": "utf8",
+      "line": 66,
+      "rule": "credential-in-url",
+      "fingerprint": "fa7d5ca2028460b4ecbdf97858ee64abc8fad7516eebe978b6b3ed1f724823c4",
+      "reason": "Exact inert example.test transport-rejection fixture; also explicitly excepted by the repository scanner. No usable provider credential."
+    }
+  ],
+  "credentialFilenameFindings": [],
+  "findings": [],
+  "valuesPrinted": false,
+  "pass": true,
+  "databaseExceptionAuthorization": "User selected Allow evidence-only exception (Recommended) for the required demo and named evidence capsules. Exactly 28 retained files; no other runtime databases permitted.",
+  "databaseEvidenceExceptions": [
+    {
+      "source": "C:/liquidation-watchdog/data/submission-demo/qualified-fixture.sqlite",
+      "destination": "data/submission-demo/qualified-fixture.sqlite",
+      "bytes": 327680,
+      "sha256": "4253ae4acea8f98d255c1697321424f26e26f53c16c734ceed9d8f62e869e606",
+      "group": "submission-demo"
+    },
+    {
+      "source": "C:/liquidation-watchdog/data/submission-demo/qualified-fixture.sqlite-monitor-lock",
+      "destination": "data/submission-demo/qualified-fixture.sqlite-monitor-lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "submission-demo"
+    },
+    {
+      "source": "C:/liquidation-watchdog/data/submission-demo/watchdog.sqlite",
+      "destination": "data/submission-demo/watchdog.sqlite",
+      "bytes": 684032,
+      "sha256": "208ef171f3b852d04b63cedf7c481838839cff5bacb460c7e4e0616b2a719041",
+      "group": "submission-demo"
+    },
+    {
+      "source": "C:/liquidation-watchdog/data/submission-demo/watchdog.sqlite-monitor-lock",
+      "destination": "data/submission-demo/watchdog.sqlite-monitor-lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "submission-demo"
+    },
+    {
+      "source": "C:/liquidation-watchdog/data/submission-demo/watchdog.sqlite-shm",
+      "destination": "data/submission-demo/watchdog.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "group": "submission-demo"
+    },
+    {
+      "source": "C:/liquidation-watchdog/data/submission-demo/watchdog.sqlite-wal",
+      "destination": "data/submission-demo/watchdog.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "submission-demo"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/unit-tmp/opencode/watchdog-phase3-fixture-aKX2ke/storage/runtime-owner.sqlite",
+      "destination": "evidence/qualification-capsules/live-stage2-SGNCxp/unit-tmp/opencode/watchdog-phase3-fixture-aKX2ke/storage/runtime-owner.sqlite",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-live-stage2-SGNCxp"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/unit-tmp/opencode/watchdog-phase3-fixture-aKX2ke/storage/watchdog.sqlite",
+      "destination": "evidence/qualification-capsules/live-stage2-SGNCxp/unit-tmp/opencode/watchdog-phase3-fixture-aKX2ke/storage/watchdog.sqlite",
+      "bytes": 704512,
+      "sha256": "ab165ab7f6467564b373216fe71bfb80daa0ab9df1363839620d23e24a4813d2",
+      "group": "capsule-live-stage2-SGNCxp"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/unit-tmp/opencode/watchdog-phase3-fixture-aKX2ke/storage/watchdog.sqlite-monitor-lock",
+      "destination": "evidence/qualification-capsules/live-stage2-SGNCxp/unit-tmp/opencode/watchdog-phase3-fixture-aKX2ke/storage/watchdog.sqlite-monitor-lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-live-stage2-SGNCxp"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/watchdog.sqlite",
+      "destination": "evidence/qualification-capsules/live-stage2-SGNCxp/watchdog.sqlite",
+      "bytes": 471040,
+      "sha256": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6",
+      "group": "capsule-live-stage2-SGNCxp"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/watchdog.sqlite-monitor-lock",
+      "destination": "evidence/qualification-capsules/live-stage2-SGNCxp/watchdog.sqlite-monitor-lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-live-stage2-SGNCxp"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/watchdog.sqlite-shm",
+      "destination": "evidence/qualification-capsules/live-stage2-SGNCxp/watchdog.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "group": "capsule-live-stage2-SGNCxp"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-stage2-SGNCxp/watchdog.sqlite-wal",
+      "destination": "evidence/qualification-capsules/live-stage2-SGNCxp/watchdog.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-live-stage2-SGNCxp"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/final-read-only-store-copies/stage2-watchdog.sqlite",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/final-read-only-store-copies/stage2-watchdog.sqlite",
+      "bytes": 471040,
+      "sha256": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/final-read-only-store-copies/stage2-watchdog.sqlite-shm",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/final-read-only-store-copies/stage2-watchdog.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/final-read-only-store-copies/stage2-watchdog.sqlite-wal",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/final-read-only-store-copies/stage2-watchdog.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/runtime-owner.sqlite",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/runtime-owner.sqlite",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/runtime-owner.sqlite-journal",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/runtime-owner.sqlite-journal",
+      "bytes": 512,
+      "sha256": "eb2a12cf03105e83715c85d87b29becac6d8116f17f8f0fca7687288fa5d34ca",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite",
+      "bytes": 131072,
+      "sha256": "ec0772cd73a9073ebe75e2f9665a490dbc56d37212884471d8e7e89b3dd61f91",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite-monitor-lock",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite-monitor-lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite-monitor-lock-journal",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite-monitor-lock-journal",
+      "bytes": 512,
+      "sha256": "3e2b41f500ce16aa2bc464e759b097c1e272d5c2f4429a02d60557a1146af71f",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite-shm",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "26f2a2f5190818dfa4915022ed96a41ba7e0d232304fdf392fc4bda39ba85ca4",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite-wal",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-budget-latency-negative-control/temp/opencode/watchdog-phase3-fixture-6YWCia/storage/watchdog.sqlite-wal",
+      "bytes": 1145392,
+      "sha256": "83ecec86a320b49f4ec6b17e763f3eb0f70d5203040de9a4e97fe616b5a89679",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-failure-database-copies/runtime-owner.sqlite",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-failure-database-copies/runtime-owner.sqlite",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-failure-database-copies/watchdog.sqlite",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-failure-database-copies/watchdog.sqlite",
+      "bytes": 704512,
+      "sha256": "ab165ab7f6467564b373216fe71bfb80daa0ab9df1363839620d23e24a4813d2",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-failure-database-copies/watchdog.sqlite-monitor-lock",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-failure-database-copies/watchdog.sqlite-monitor-lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-failure-database-copies/watchdog.sqlite-shm",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-failure-database-copies/watchdog.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    },
+    {
+      "source": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/original-failure-database-copies/watchdog.sqlite-wal",
+      "destination": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/original-failure-database-copies/watchdog.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group": "capsule-qualification-repair-20261106-QrN8p4"
+    }
+  ],
+  "excludedRepositoryCategories": [
+    {
+      "reason": "Git metadata excluded",
+      "files": 20,
+      "bytes": 92026,
+      "paths": [
+        ".git/HEAD",
+        ".git/config",
+        ".git/description",
+        ".git/hooks/applypatch-msg.sample",
+        ".git/hooks/commit-msg.sample",
+        ".git/hooks/fsmonitor-watchman.sample",
+        ".git/hooks/post-update.sample",
+        ".git/hooks/pre-applypatch.sample",
+        ".git/hooks/pre-commit.sample",
+        ".git/hooks/pre-merge-commit.sample",
+        ".git/hooks/pre-push.sample",
+        ".git/hooks/pre-rebase.sample",
+        ".git/hooks/pre-receive.sample",
+        ".git/hooks/prepare-commit-msg.sample",
+        ".git/hooks/push-to-checkout.sample",
+        ".git/hooks/sendemail-validate.sample",
+        ".git/hooks/update.sample",
+        ".git/index",
+        ".git/info/exclude",
+        ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      ]
+    },
+    {
+      "reason": "Unrelated runtime data outside the authorized 13-file demo excluded",
+      "files": 264,
+      "bytes": 55022800
+    },
+    {
+      "reason": "Current repository build candidate omitted; exact preserved qualified build selected",
+      "files": 321,
+      "bytes": 2225439
+    },
+    {
+      "reason": "Installed dependency tree excluded; package lock retained",
+      "files": 20071,
+      "bytes": 165663351
+    },
+    {
+      "reason": "Local agent configuration excluded",
+      "files": 1,
+      "bytes": 264,
+      "paths": [
+        "opencode.jsonc"
+      ]
+    }
+  ],
+  "scopeLimit": "A scoped content/filename scan and explicit inclusion plan, not a proof against every possible secret encoding. Full copied payload is scanned again before archiving; that result is in the enclosing audit/staging-verification.json."
+}

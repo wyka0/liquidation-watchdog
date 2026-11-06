@@ -1,0 +1,22 @@
+{
+  "name": "chainlink-avalanche-wsrusd-rusd",
+  "sourceUrl": "https://data.chain.link/feeds/avalanche/mainnet/wsrusd-rusd-exchange-rate",
+  "finalUrl": "https://data.chain.link/feeds/avalanche/mainnet/wsrusd-rusd-exchange-rate",
+  "method": "GET",
+  "beganAt": "2026-11-06T00:32:00.919Z",
+  "retrievedAt": "2026-11-06T00:32:01.093Z",
+  "status": 429,
+  "headers": {
+    "content-type": "text/html; charset=utf-8",
+    "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+    "etag": null,
+    "last-modified": null
+  },
+  "redirects": [],
+  "block": null,
+  "bytes": 24732,
+  "responseSha256": "b2e4141563a2eb03f6d0fea7f152b530d27d38d40eee42c581715c8524d20800",
+  "bodyPath": "chainlink-avalanche-wsrusd-rusd.body.txt",
+  "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+  "ignoredRemoteAgentInstructionAppendix": false
+}

@@ -1,0 +1,1111 @@
+{
+  "schemaVersion": 1,
+  "status": "FINAL_QUALIFICATION_REPAIR_SOFTWARE_PASS_PRODUCTION_NOT_ACCEPTED_NO_GO",
+  "generatedAt": "2026-11-06T01:40:34.171Z",
+  "report": {
+    "root": "REPAIR",
+    "file": "FINAL-QUALIFICATION-REPAIR-REPORT.md",
+    "bytes": 51682,
+    "sha256": "02b6cb0943243b1115d17f2f50ebee41af3f951c53adb652045f8823b3986812"
+  },
+  "evidenceClass": "CONSOLIDATION_OF_IMMUTABLE_STAGE2_HISTORY_FRESH_OFFLINE_QUALIFICATION_AND_BOUNDED_READ_ONLY_RESEARCH",
+  "originalRequirements": [
+    {
+      "requirement": "Read collateral, debt and health factor (or equivalent) from chain",
+      "verdict": "PASS",
+      "scope": "EXACT_FINITE_LOCAL_RUN_ONLY",
+      "evidence": "Stage 2's pinned collateral/borrow shares/market/IRM inputs, 58 matched access-path comparisons, 10 separate direct-getter comparisons and 17 independent BigInt matches establish the read/derivation. The ratio is a Morpho equivalent, not a direct health-factor getter; oracle economic accuracy is unverified."
+    },
+    {
+      "requirement": "Support configurable warning and critical thresholds, with default examples 1.3 and 1.1",
+      "verdict": "PASS",
+      "scope": "EXACT_FINITE_LOCAL_RUN_ONLY",
+      "evidence": "Stage 2 loaded warning 1.30 and critical 1.10 from the supported configuration into the actual reader/risk/transition scope. Decisions use exact integer cross-products. The original defaults/configuration and mathematical 1.00 boundary were not changed by this repair."
+    },
+    {
+      "requirement": "Send timestamped alerts through at least one supported channel",
+      "verdict": "PASS",
+      "scope": "EXACT_FINITE_LOCAL_RUN_ONLY",
+      "evidence": "Three actual Stage 2 alerts were timestamped and delivered through the supported local console adapter, each DELIVERED with one attempt and no ambiguity. External channels, deployed alerts and external exactly-once behavior were not qualified."
+    },
+    {
+      "requirement": "Include a concrete suggested action in each alert",
+      "verdict": "PASS",
+      "scope": "EXACT_FINITE_LOCAL_RUN_ONLY",
+      "evidence": "Each actual Stage 2 alert contains one typed, concrete NON_FINANCIAL instruction with snapshot-bound evidence. All remain actionable:false, evidence NOT_QUALIFIED and financialOptions:[]. This is a messaging PASS, not permission to transact."
+    }
+  ],
+  "qualifiedSoftware": {
+    "status": "PASS",
+    "startedAt": "2026-11-06T00:48:48.136Z",
+    "completedAt": "2026-11-06T00:53:10.383Z",
+    "batch": {
+      "root": "REPAIR",
+      "file": "qualification-batch/summary.json",
+      "bytes": 6450,
+      "sha256": "3439b0cf31a13c1f9b3210889d504688c3a1b4b8c218613294b917cbcc8ecf17"
+    },
+    "defaultMaxWorkers": 2,
+    "sequentialTestAndCompilerPhases": true,
+    "phases": [
+      {
+        "name": "qualified-independent-v2",
+        "mode": "independent",
+        "status": "PASS",
+        "counts": {
+          "success": true,
+          "files": 1,
+          "total": 4,
+          "passed": 1,
+          "failed": 0,
+          "pending": 3,
+          "todo": 0
+        },
+        "summary": {
+          "root": "REPAIR",
+          "file": "qualified-independent-v2/summary.json",
+          "bytes": 7041,
+          "sha256": "83554bb3fc3572d14c6d13416fb717eb9bcdbc14d935d83397403cb3c2dd2b70"
+        },
+        "tests": {
+          "root": "REPAIR",
+          "file": "qualified-independent-v2/tests.json",
+          "bytes": 2157,
+          "sha256": "490057837fa171d08eb2c8eb700094a87d4e005fa9cf6be2ffb9c95e1c736c68"
+        },
+        "commands": [
+          {
+            "label": "tests",
+            "exitCode": 0,
+            "durationMs": 14819.0527,
+            "commandRecord": {
+              "root": "REPAIR",
+              "file": "qualified-independent-v2/tests-command.json",
+              "bytes": 1298,
+              "sha256": "fb0277fbe4714e2cbb54a7783a7f2a93503b861b139415903f4bbdbf193eae49"
+            }
+          }
+        ],
+        "sourceSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+        "network": {
+          "version": "v2",
+          "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+          "records": 4,
+          "blockedRecords": 0,
+          "blockedLocalIPC": 0,
+          "demonstratedRemoteAttempts": 0,
+          "allowedLocalNamedPipes": 4,
+          "caveat": null
+        },
+        "readinessOrDeadlineControlUsed": false
+      },
+      {
+        "name": "qualified-runtime-process-v2",
+        "mode": "runtime-process",
+        "status": "PASS",
+        "counts": {
+          "success": true,
+          "files": 1,
+          "total": 4,
+          "passed": 4,
+          "failed": 0,
+          "pending": 0,
+          "todo": 0
+        },
+        "summary": {
+          "root": "REPAIR",
+          "file": "qualified-runtime-process-v2/summary.json",
+          "bytes": 9221,
+          "sha256": "920fc1fc4807dfaec44fe233c6f6de7ec25e1022e6748441641e487f2c6aba29"
+        },
+        "tests": {
+          "root": "REPAIR",
+          "file": "qualified-runtime-process-v2/tests.json",
+          "bytes": 2232,
+          "sha256": "b63b8e76ec1c7f14536f6fe8acda78f793b3ec22834fd31a0af27805143ad8c3"
+        },
+        "commands": [
+          {
+            "label": "tests",
+            "exitCode": 0,
+            "durationMs": 28276.037399999997,
+            "commandRecord": {
+              "root": "REPAIR",
+              "file": "qualified-runtime-process-v2/tests-command.json",
+              "bytes": 1278,
+              "sha256": "a3440dc59c861e82988e8d577f6e7cffc1ce765d300ffe7cc1781204d7342ee8"
+            }
+          }
+        ],
+        "sourceSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+        "network": {
+          "version": "v2",
+          "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+          "records": 10,
+          "blockedRecords": 0,
+          "blockedLocalIPC": 0,
+          "demonstratedRemoteAttempts": 0,
+          "allowedLocalNamedPipes": 10,
+          "caveat": null
+        },
+        "readinessOrDeadlineControlUsed": false
+      },
+      {
+        "name": "qualified-focused-v2",
+        "mode": "focused",
+        "status": "PASS",
+        "counts": {
+          "success": true,
+          "files": 3,
+          "total": 31,
+          "passed": 31,
+          "failed": 0,
+          "pending": 0,
+          "todo": 0
+        },
+        "summary": {
+          "root": "REPAIR",
+          "file": "qualified-focused-v2/summary.json",
+          "bytes": 17161,
+          "sha256": "2594096d1da195657058940d8eb696ba8ff759311e6e51207a65464217c51ac7"
+        },
+        "tests": {
+          "root": "REPAIR",
+          "file": "qualified-focused-v2/tests.json",
+          "bytes": 14514,
+          "sha256": "a2fa30be47d5415e1a63a69ac315573bfe4c253afc1e6f018196a0201f920f27"
+        },
+        "commands": [
+          {
+            "label": "tests",
+            "exitCode": 0,
+            "durationMs": 39851.254,
+            "commandRecord": {
+              "root": "REPAIR",
+              "file": "qualified-focused-v2/tests-command.json",
+              "bytes": 1320,
+              "sha256": "4e96ebbe90e5184e2eb28c2f91b3ff55ca61f819d53232fffbe24436635d4599"
+            }
+          }
+        ],
+        "sourceSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+        "network": {
+          "version": "v2",
+          "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+          "records": 34,
+          "blockedRecords": 0,
+          "blockedLocalIPC": 0,
+          "demonstratedRemoteAttempts": 0,
+          "allowedLocalNamedPipes": 10,
+          "caveat": null
+        },
+        "readinessOrDeadlineControlUsed": false
+      },
+      {
+        "name": "qualified-full-v2",
+        "mode": "full",
+        "status": "PASS",
+        "counts": {
+          "success": true,
+          "files": 49,
+          "total": 1007,
+          "passed": 1007,
+          "failed": 0,
+          "pending": 0,
+          "todo": 0
+        },
+        "summary": {
+          "root": "REPAIR",
+          "file": "qualified-full-v2/summary.json",
+          "bytes": 286139,
+          "sha256": "f8436aa5748ec9972816dda97152f97dfce4e0b2d9cc143615beda28ec93f8b9"
+        },
+        "tests": {
+          "root": "REPAIR",
+          "file": "qualified-full-v2/tests.json",
+          "bytes": 406579,
+          "sha256": "802eff0e3a1859745ffabb8d6ecf0eac024312f0447c8e1f72c98bf9dd77008d"
+        },
+        "commands": [
+          {
+            "label": "tests",
+            "exitCode": 0,
+            "durationMs": 143303.03530000002,
+            "commandRecord": {
+              "root": "REPAIR",
+              "file": "qualified-full-v2/tests-command.json",
+              "bytes": 1211,
+              "sha256": "0301339405b68a57a6016a24a125f6ea3e1c964ffafe7c143ae5a9322ff0cd86"
+            }
+          }
+        ],
+        "sourceSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+        "network": {
+          "version": "v2",
+          "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+          "records": 556,
+          "blockedRecords": 0,
+          "blockedLocalIPC": 0,
+          "demonstratedRemoteAttempts": 0,
+          "allowedLocalNamedPipes": 18,
+          "caveat": null
+        },
+        "readinessOrDeadlineControlUsed": false
+      },
+      {
+        "name": "qualified-checks-v2",
+        "mode": "checks",
+        "status": "PASS",
+        "counts": null,
+        "summary": {
+          "root": "REPAIR",
+          "file": "qualified-checks-v2/summary.json",
+          "bytes": 6374,
+          "sha256": "1ea45d046abc6a58be5b5a597c94df8fcfe49de8528ae118139b9bc49dbf084d"
+        },
+        "commands": [
+          {
+            "label": "typecheck",
+            "exitCode": 0,
+            "durationMs": 12599.5684,
+            "commandRecord": {
+              "root": "REPAIR",
+              "file": "qualified-checks-v2/typecheck-command.json",
+              "bytes": 953,
+              "sha256": "9cd1e4be84dd50ef9cfea26981fedc435d38f1119ce6c8cda6333446789a9759"
+            }
+          },
+          {
+            "label": "lint",
+            "exitCode": 0,
+            "durationMs": 7227.3121999999985,
+            "commandRecord": {
+              "root": "REPAIR",
+              "file": "qualified-checks-v2/lint-command.json",
+              "bytes": 1008,
+              "sha256": "02f917e8640c823058a8761ac47e52ecbab611c82180fa5c8b67c2e640cedcc9"
+            }
+          },
+          {
+            "label": "build",
+            "exitCode": 0,
+            "durationMs": 11043.71,
+            "commandRecord": {
+              "root": "REPAIR",
+              "file": "qualified-checks-v2/build-command.json",
+              "bytes": 1098,
+              "sha256": "6fd22c1a8b84f57ec9ad9955ae838a9c79a8784be04cd626d25463f67d3d1fa1"
+            }
+          }
+        ],
+        "sourceSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+        "network": {
+          "version": "v2",
+          "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+          "records": 0,
+          "blockedRecords": 0,
+          "blockedLocalIPC": 0,
+          "demonstratedRemoteAttempts": 0,
+          "allowedLocalNamedPipes": 0,
+          "caveat": null
+        },
+        "readinessOrDeadlineControlUsed": false
+      }
+    ],
+    "fullInventoryPreserved": true
+  },
+  "correction": {
+    "allowlist": {
+      "root": "REPAIR",
+      "file": "authorized-changes.json",
+      "bytes": 1360,
+      "sha256": "29e6f0dc494ca7c1a458f5286eaa577e6d88c1cdea0f9bf7b5bbcd80211fc893"
+    },
+    "assertionContract": {
+      "root": "REPAIR",
+      "file": "test-contract-preservation.json",
+      "bytes": 3839,
+      "sha256": "7bd0263247a3536e792884fad36d715302f1b2bc8dda82348aab7170e6a73024"
+    },
+    "onlyRepositoryFile": "test/runtime-process.test.ts",
+    "beforeSha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846",
+    "afterSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+    "beforeBytes": 4776,
+    "afterBytes": 5805,
+    "aggregateBudgetMs": 70000,
+    "runtimeChildBoundMs": 30000,
+    "importChildBoundMs": 20000,
+    "gracefulShutdownAssertionMs": 3000,
+    "helperPostImportLimitMs": 25000,
+    "originalAssertionChains": 12,
+    "addedCleanupAssertions": 1,
+    "sourceBefore": {
+      "root": "REPAIR",
+      "file": "source-before/runtime-process.test.ts",
+      "bytes": 4776,
+      "sha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846"
+    },
+    "sourceAfter": {
+      "root": "REPAIR",
+      "file": "source-after/runtime-process.test.ts",
+      "bytes": 5805,
+      "sha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    "v2Guard": {
+      "root": "REPAIR",
+      "file": "test-network-guard-v2.cjs",
+      "bytes": 2208,
+      "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6"
+    },
+    "applicationRuntimeHelperAssuranceCodeUnchanged": true
+  },
+  "causalEvidence": {
+    "analysis": {
+      "root": "REPAIR",
+      "file": "causal-analysis.json",
+      "bytes": 53193,
+      "sha256": "0779288a29a178007dbf37bbd129e5bb755141529ca46176fe9e02c61181bfec"
+    },
+    "controlsNotQualification": true,
+    "historicalLimits": [
+      "Original full-run logs have no parent child-lifecycle timestamps or exact host scheduling metrics. The original per-child timeline, precise resource-handle inventory and quantitative V1 IPC effect cannot be reconstructed.",
+      "Controlled compiler/load runs demonstrate startup sensitivity, not the exact original host load. Their later green selected result does not replace the original failed full suite.",
+      "The negative-control worker lost later resumed-child exit/close events. Their absence is not invented; independent CIM observation proves recorded PIDs absent afterward, without assigning the lost exit reason/time.",
+      "Windows file ownership is inferred from observed cwd, open SQLite connections, live connected child, removal timing and paired cleanup controls; no exhaustive OS handle debugger was used."
+    ],
+    "controls": [
+      {
+        "name": "ipc-v1-negative-control",
+        "status": "FAIL",
+        "selectedAssertion": {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "passed",
+          "durationMs": 11364.1644,
+          "failureMessages": []
+        },
+        "sourceSha256": null,
+        "sourceCapsuleRecorded": false,
+        "summary": {
+          "root": "REPAIR",
+          "file": "ipc-v1-negative-control/summary.json",
+          "bytes": 5176,
+          "sha256": "be764d08c843b92e4642828dfc93c2df7689abc141fee73435e8eb5b53c8baa0"
+        }
+      },
+      {
+        "name": "unmodified-independent-v2",
+        "status": "PASS",
+        "selectedAssertion": {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "passed",
+          "durationMs": 11553.098100000001,
+          "failureMessages": []
+        },
+        "sourceSha256": null,
+        "sourceCapsuleRecorded": false,
+        "summary": {
+          "root": "REPAIR",
+          "file": "unmodified-independent-v2/summary.json",
+          "bytes": 4495,
+          "sha256": "16f207902bc784b511b891c15bda523bdd653576a070eb41b24c5a16481ed75d"
+        }
+      },
+      {
+        "name": "unmodified-loaded-v2",
+        "status": "PASS",
+        "selectedAssertion": {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "passed",
+          "durationMs": 21694.020399999998,
+          "failureMessages": []
+        },
+        "sourceSha256": null,
+        "sourceCapsuleRecorded": false,
+        "summary": {
+          "root": "REPAIR",
+          "file": "unmodified-loaded-v2/summary.json",
+          "bytes": 8459,
+          "sha256": "661e6b83d83b1665f22db0d4f875c169c8c5972c8a830cb8d8e3e98acf54466c"
+        }
+      },
+      {
+        "name": "original-budget-latency-negative-control",
+        "status": "FAIL",
+        "selectedAssertion": {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "failed",
+          "durationMs": 40228.678400000004,
+          "failureMessages": [
+            "Error: Test timed out in 40000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:47:3\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+            "Error: EPERM, Permission denied: \\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia '\\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia'\n    at rmSync (node:fs:1221:18)\n    at fs.rmSync ([REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\process-diagnostics.cjs:60:32)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:11:66\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1632:35\n    at wrapper (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2019:37)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3318:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3276:10)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3602:52\n    at run (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1352:20)"
+          ]
+        },
+        "sourceSha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846",
+        "sourceCapsuleRecorded": true,
+        "summary": {
+          "root": "REPAIR",
+          "file": "original-budget-latency-negative-control/summary.json",
+          "bytes": 9947,
+          "sha256": "191b56938b7083d6c38fd05281a7f50c70fc50470967337ff0e37a21527b49db"
+        }
+      },
+      {
+        "name": "corrected-budget-latency-control",
+        "status": "PASS",
+        "selectedAssertion": {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "passed",
+          "durationMs": 41617.6824,
+          "failureMessages": []
+        },
+        "sourceSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+        "sourceCapsuleRecorded": true,
+        "summary": {
+          "root": "REPAIR",
+          "file": "corrected-budget-latency-control/summary.json",
+          "bytes": 7432,
+          "sha256": "42998ab7836b5b133fddac3311733978bb00d4dc347e8aff0ed9b8e8a3e58e24"
+        }
+      },
+      {
+        "name": "corrected-teardown-deadline-negative-control",
+        "status": "FAIL",
+        "selectedAssertion": {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "failed",
+          "durationMs": 40226.619999999995,
+          "failureMessages": [
+            "Error: Test timed out in 40000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:68:3\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+          ]
+        },
+        "sourceSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+        "sourceCapsuleRecorded": true,
+        "summary": {
+          "root": "REPAIR",
+          "file": "corrected-teardown-deadline-negative-control/summary.json",
+          "bytes": 9609,
+          "sha256": "a7b5afa329b748c833c2339c80b1211b0b9fde6c6de1e19b8806ef3602c8a172"
+        }
+      }
+    ],
+    "retainedHelperFailure": {
+      "root": "REPAIR",
+      "file": "causal-consolidation-attempt-1.json",
+      "bytes": 1174,
+      "sha256": "43d62003b3d1c948f94fba98ac391858f094a74c17ea1dcd40546e702542eed3"
+    },
+    "failedHelperCapsule": {
+      "root": "REPAIR",
+      "file": "causal-consolidation-attempt-1-tool.mjs",
+      "bytes": 10944,
+      "sha256": "0584611b9cd312ef08fc26b5718e83ac034a378c0e4216d3a17f16b1d114df52"
+    },
+    "failedHelperStderrExcerpt": {
+      "root": "REPAIR",
+      "file": "causal-consolidation-attempt-1.stderr.txt",
+      "bytes": 122,
+      "sha256": "8eb382956cdf9d8011f1fdd427ff19f9bc5becb5f2863165f21b55b6cfbc478c"
+    },
+    "retainedReadOnlyInputReviewFailure": {
+      "root": "REPAIR",
+      "file": "documentary-input-review-attempt-1.json",
+      "bytes": 2107,
+      "sha256": "42b34b4a9930cdfbc826810cc863fb942bfe5f619e78899bbea3c7fbc31a5251"
+    }
+  },
+  "historicalStage2": {
+    "report": {
+      "root": "STAGE2",
+      "file": "LIVE-STAGE-2-MONITORING-REPORT.md",
+      "bytes": 40649,
+      "sha256": "acdfe3b107fa723c5d87ff990de66aaa7a2e3246e38b0f01b43b299efd66c60e"
+    },
+    "evidence": {
+      "root": "STAGE2",
+      "file": "live-stage2-evidence.json",
+      "bytes": 59328,
+      "sha256": "f94ec2761c77d2ddb219c8215dd3b6ac0ee9836ced59798c36740fe19f6b2124"
+    },
+    "completion": {
+      "root": "STAGE2",
+      "file": "report-completion.json",
+      "bytes": 3790,
+      "sha256": "9516370adb97c53ecdfe0041cd79bb20af64378470553d1864ef939eeef06ef3"
+    },
+    "originalFull": {
+      "status": "FAIL",
+      "files": 49,
+      "total": 1007,
+      "passed": 1006,
+      "failed": 1,
+      "artifact": {
+        "root": "STAGE2",
+        "file": "unit-tests.json",
+        "bytes": 408810,
+        "sha256": "bd1aba2cdbcd8f6bbbefda19ad7a7d175ee6748b1f570d9958b724d53a62711d"
+      }
+    },
+    "originalFocused": {
+      "status": "PASS",
+      "files": 1,
+      "total": 4,
+      "passed": 4,
+      "artifact": {
+        "root": "STAGE2",
+        "file": "runtime-rerun-tests.json",
+        "bytes": 2244,
+        "sha256": "87e5e86170466bf9ef4a20193a1905d98b1f9272a185fad293b83a3631b2a47a"
+      }
+    },
+    "originalManifest": {
+      "root": "STAGE2",
+      "file": "artifact-manifest.json",
+      "bytes": 65613,
+      "sha256": "1ccbe5add2bd7029d4972a2db526314ccc035eed8534e6c3e39f231d633f66b0"
+    },
+    "originalManifestFileCount": 387,
+    "originalManifestBytes": 10157722,
+    "target": {
+      "positionId": "2868fdc6591f5ec9674c9a33febfd27023f136783e11c24cb6dbd5f82994a06f",
+      "chainId": 1672,
+      "protocol": "MORPHO_BLUE",
+      "protocolAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+      "account": "0x086eb9C2B14dD657ae77D07dF9115A2F946CE327",
+      "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+      "irmAddress": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+      "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "collateralToken": "0x4809010926aec940b550D34a46A52739f996D75D"
+    },
+    "block": {
+      "number": "22225454",
+      "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+      "parentHash": "0x165dc5d790fcea58ab8af01a6a83332032dd5655c4db4b5315f7b974cff796e1",
+      "timestamp": "1793922408",
+      "timestampUtc": "2026-11-05T23:46:48.000Z"
+    },
+    "observations": 1,
+    "actualConsoleDeliveries": 3,
+    "originalFailuresRetained": true,
+    "noNewRealCycleOrDelivery": true
+  },
+  "lifecycle": {
+    "verification": {
+      "root": "REPAIR",
+      "file": "final-lifecycle-verification.json",
+      "bytes": 77795,
+      "sha256": "9aa32732106c7d50b0ce6b137363578329b9543e89db032a3afd01bc9eda63bc"
+    },
+    "checks": 97,
+    "observedChildren": 17,
+    "runtimeWithIPC": 14,
+    "importWithoutIPC": 3,
+    "gracefulSignalToCloseMs": {
+      "minimum": 39.3036,
+      "maximum": 68.3595
+    },
+    "osObservedAt": "2026-11-06T00:57:30.3030948Z",
+    "sourceStoreSha256": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6",
+    "originalStoreNeverOpened": true,
+    "separateReadOnlyCopyClosed": true,
+    "qualifiedFixtureRemnants": 0,
+    "exhaustiveOSHandleInventoryClaimed": false
+  },
+  "oracle": {
+    "gaps": {
+      "root": "REPAIR",
+      "file": "oracle-qualification-gaps.json",
+      "bytes": 25207,
+      "sha256": "03178712dbe468ee3bbad8c87a4badb11c0e7a55adfa23d5391fd98ff33e6fd5"
+    },
+    "audit": {
+      "root": "REPAIR",
+      "file": "oracle-rpc-audit/summary.json",
+      "bytes": 67836,
+      "sha256": "be1fdcfc02f9ecfa8125bd75e52ef119738ab12d7be4cc6cfddfc926a35b8b09"
+    },
+    "publicResearch": {
+      "root": "REPAIR",
+      "file": "public-oracle-research/summary.json",
+      "bytes": 29441,
+      "sha256": "928e7668558d9699c616f18fbc5d238bb5591580eca409bd36e91f74e6473ee4"
+    },
+    "auditBlock": {
+      "number": "22229239",
+      "hash": "0x3623b544e2c84d5e5d7358234a010b446bc74fccafcbac00ed67046381906d4c",
+      "timestamp": "1793925778",
+      "parentHash": "0x87b67cd46d4a4d3788099246135a22b85c08c92c1e1e654fcaaf65138058c810",
+      "time": "2026-11-06T00:42:58.000Z"
+    },
+    "requestCount": 62,
+    "auditIsNotMonitoredObservation": true,
+    "publishedProduct": "WSRUSD/RUSD",
+    "publishedHeartbeatSeconds": 3600,
+    "publishedHeartbeatQualifiedForActiveConfiguration": false,
+    "upstreamMaximumAgeGuaranteeQualified": false,
+    "selectedLoanQuoteEquivalenceVerified": false,
+    "newEvaluatedAssurance": null,
+    "historicalEvaluatedResult": {
+      "block": {
+        "number": "22225454",
+        "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+        "timestamp": "1793922408"
+      },
+      "overall": "UNVERIFIED",
+      "gate": "DATA_UNVERIFIED",
+      "configurationFingerprint": "c5fdcac715408818794eff1d8c0bb518404d51a8df63b4fcd210128e9d818fb0",
+      "verifiedHeartbeatSeconds": null,
+      "upstreamFreshnessGuaranteeSeconds": null,
+      "timingConfigurationFingerprint": null,
+      "independent": {
+        "state": "UNKNOWN",
+        "eligible": false,
+        "selectedUpstreamId": null
+      }
+    },
+    "dimensions": {
+      "CONTRACT_IDENTITY": {
+        "historicalEvaluatedState": "VERIFIED",
+        "historicalSatisfied": [
+          "CHAIN_AND_MARKET",
+          "PINNED_RUNTIME_HASHES",
+          "REPRODUCED_SOURCE"
+        ],
+        "historicalMissing": [],
+        "requiredForVerified": [
+          "CHAIN_AND_MARKET",
+          "PINNED_RUNTIME_HASHES",
+          "REPRODUCED_SOURCE"
+        ],
+        "retainedAndNewResearchFacts": [
+          "Stage 2's evaluated dependency identity is VERIFIED. The separate current audit matches all five reviewed dependency runtime SHA-256/Keccak hashes, re-derives the exact market ID, confirms the facade/cache/forwarder path and stable before/after header, and rechecks Stage 2's anchor.",
+          "The collateral runtime also matches its historical bound hash. Loan runtime bytes are captured, but no prior reproduced loan-runtime identity pin was asserted."
+        ],
+        "exactPromotionPrerequisites": [
+          "Retain chain ID 1672, exact five market parameters and re-derived market ID, pinned number/hash/timestamp and stable before/after header.",
+          "For all five pricing dependencies, retain full nonempty runtime bytes with both SHA-256 and Keccak matching verified-source/compiler-reproduction artifacts for those exact addresses and immutable settings.",
+          "Any runtime, dependency, address, block or proxy-interpretation mismatch must invalidate rather than inherit prior identity. This gate proves code identity only, not economic correctness."
+        ],
+        "implementationGapOrScope": "Existing identity gate is implemented; current separate oracle audit corroborates facts but is not a new evaluated monitor assurance object."
+      },
+      "SOURCE_PROVENANCE": {
+        "historicalEvaluatedState": "UNVERIFIED",
+        "historicalSatisfied": [],
+        "historicalMissing": [
+          "EXACT_FEED_PRODUCT",
+          "WORKFLOW_SOURCE",
+          "ECONOMIC_INPUTS"
+        ],
+        "requiredForVerified": [
+          "EXACT_FEED_PRODUCT",
+          "WORKFLOW_SOURCE",
+          "ECONOMIC_INPUTS"
+        ],
+        "retainedAndNewResearchFacts": [
+          "Official Pharos Pacific documentation explicitly maps the exact feed ID and facade to WSRUSD/RUSD and the cache address, and describes CRE periodically fetching Chainlink Data Streams reports.",
+          "One previously sampled workflow ID remains allowed in current getters; a workflow identifier/allowlist entry is not its binary/source, upstream feed configuration or a complete enumeration."
+        ],
+        "exactPromotionPrerequisites": [
+          "Bind the exact chain-1672 feed ID/proxy/cache/product registry row to the active workflow/configuration at the qualified block with dated, full, hashed official deployment evidence.",
+          "Obtain reviewed workflow program/source, immutable build/compiler information, deployed executable/configuration hash, and authenticated binding from that executable to the allowed workflow ID and DON/version/receiver.",
+          "Obtain the exact Data Streams product/report schema and economic input sources, aggregation/normalization rules, wrapper/share/redemption semantics and handling of unavailable or old input data. Bind these to the active configuration, not generic CRE documentation.",
+          "Resolve whether this is a redemption/share exchange rate or an executable market price, and the exact base/quote economic assets; do not infer either from a feed-ID prefix, matching token symbols or a near-1 answer."
+        ],
+        "implementationGapOrScope": "evaluateAssurance() SOURCE_V1 currently passes an empty satisfied list and a fixed UNKNOWN finding. Evidence ingestion and configuration-binding support are not implemented; new documents cannot automatically promote this gate."
+      },
+      "OPERATOR_PROVENANCE": {
+        "historicalEvaluatedState": "UNVERIFIED",
+        "historicalSatisfied": [],
+        "historicalMissing": [
+          "SOURCE_OPERATOR",
+          "SIGNER_OPERATORS",
+          "CONTROLLER_IDENTITIES"
+        ],
+        "requiredForVerified": [
+          "SOURCE_OPERATOR",
+          "SIGNER_OPERATORS",
+          "CONTROLLER_IDENTITIES"
+        ],
+        "retainedAndNewResearchFacts": [
+          "Current facade/cache/forwarder owner addresses match Stage 2, and a known stored DON/version has f=3 with ten distinct signer addresses.",
+          "Stage 2's matched historical report had four recovered signatures. Cryptographic distinctness does not prove distinct legal/operational organizations or independent economic sources."
+        ],
+        "exactPromotionPrerequisites": [
+          "Obtain dated authoritative identities and operating responsibilities for the economic input publisher, CRE/workflow executor and report/price publisher, explicitly tied to the chosen product and configuration.",
+          "Bind every active signer key to its real-world operator and establish organizational/control independence rather than counting addresses. Bind rotation/version history to the pinned current configuration.",
+          "Identify facade, cache, forwarder, workflow-owner and authorized-forwarder controllers, including contract/multisig/delegation ownership and operational/change controls. Do not treat on-chain owner addresses as identities or trust attestations."
+        ],
+        "implementationGapOrScope": "evaluateAssurance() OPERATOR_V1 currently has no qualified source/operator evidence ingestion and passes an empty satisfied list."
+      },
+      "PRICE_SEMANTICS": {
+        "historicalEvaluatedState": "PARTIALLY_VERIFIED",
+        "historicalSatisfied": [
+          "MECHANICAL_SCALING"
+        ],
+        "historicalMissing": [
+          "ECONOMIC_BASE_QUOTE",
+          "FEED_DENOMINATION"
+        ],
+        "requiredForVerified": [
+          "MECHANICAL_SCALING",
+          "ECONOMIC_BASE_QUOTE",
+          "FEED_DENOMINATION"
+        ],
+        "retainedAndNewResearchFacts": [
+          "Current getters bind collateral wsrUSD to 18 decimals, selected loan USDC to 6 decimals, the feed to 18 decimals and SCALE_FACTOR to 1000000. Oracle price equals feed answer times 1000000.",
+          "Both vaults, second base feed and both quote feeds are zero. No active quote feed converts the publicly declared rUSD quote to the selected USDC loan.",
+          "The issuer registry maps the exact chain-1672 collateral to wsrUSD. Issuer savings/redemption descriptions do not establish a wsrUSD/USDC market price or rUSD/USDC economic equivalence."
+        ],
+        "exactPromotionPrerequisites": [
+          "Retain exact chain/address/decimal identities and reproduced mechanical formula for all active vault/feed components, including the direction and whole-token versus base-unit denomination.",
+          "Obtain authoritative exact-product base/quote denomination and wrapper/redemption/market semantics, bound to the active workflow/source/report schema.",
+          "Resolve rUSD versus the selected USDC loan with explicit independently defensible conversion/valuation and exact chain/token provenance, or establish a separately authorized correctly denominated oracle/market design. A peg, ticker or assumed 1:1 relationship is not proof; no conversion or replacement was made in this task.",
+          "Document that Morpho uses price * collateralBaseUnits / 10^36 to obtain loan base units. Numerically applying the 1000000 scale is not sufficient to qualify the published rUSD answer as a USDC price."
+        ],
+        "implementationGapOrScope": "evaluateAssurance() only satisfies MECHANICAL_SCALING. configurationSchema.denomination is literally ECONOMIC_QUOTE_UNVERIFIED; no configuration-bound qualified denomination can currently be represented."
+      },
+      "FRESHNESS": {
+        "historicalEvaluatedState": "UNKNOWN",
+        "historicalSatisfied": [
+          "TIMESTAMP_SEMANTICS"
+        ],
+        "historicalMissing": [
+          "VERIFIED_HEARTBEAT",
+          "UPSTREAM_FRESHNESS_GUARANTEE"
+        ],
+        "requiredForVerified": [
+          "TIMESTAMP_SEMANTICS",
+          "VERIFIED_HEARTBEAT",
+          "UPSTREAM_FRESHNESS_GUARANTEE"
+        ],
+        "retainedAndNewResearchFacts": [
+          "Official documentation declares a common heartbeat of 3600 seconds, 18 decimals and deviation threshold 0.5. These are published facts, not a source/active-config-bound end-to-end guarantee.",
+          "Current facade startedAt/updatedAt and cache timestamp agree; roundId/answeredInRound are zero. The timestamp is workflow-supplied observation time, not publication/inclusion time.",
+          "Stage 2's observation age was 1333 seconds and its bounded sample interval was 3601 seconds. The current separate audit measures age 1103 seconds. None is a maximum-age or heartbeat guarantee.",
+          "Reviewed cache ignores validFromTimestamp, skips non-increasing timestamps, allows future timestamps and does not expire readable answers. Morpho's feed consumer has no observation-age enforcement; local invalid timestamp/zero/negative checks remain unchanged."
+        ],
+        "exactPromotionPrerequisites": [
+          "For verified heartbeat H and upstream freshness maximum G, obtain two positive bounded parameters from full, dated, hashed verified-source/official artifacts that actually support each claim for the exact chain-1672 feed and active configuration.",
+          "Bind H and G to the complete qualified configurationFingerprint, including active feed/workflow/DON/operator/input settings. A common settings table alone does not supply this binding or G.",
+          "Document and verify input-observation timestamp semantics, maximum upstream input age, fetching/aggregation behavior, heartbeat/deviation triggers, publication delay/failure handling, and stale-report rejection. Do not label transaction inclusion time or local retrieval age as economic observation age.",
+          "Each VerifiedTiming EvidenceRef must be confidence=PROVEN, artifactSha256 non-null, sourceKind VERIFIED_SOURCE or OFFICIAL_DOCUMENT, chainId 1672, subjectAddress the exact facade, with provenance and a valid 64-hex configuration fingerprint equal to the evaluator's active fingerprint.",
+          "At evaluation, require nonzero observation time, nonnegative age <= G, startedAt/cache timestamp agreement and no future/regression/mismatch anomaly. Any explicit local age limit is only an additional rejection policy, not H or G. Preserve failure on expired/anomalous observations and explicit consumer non-expiry disclosure."
+        ],
+        "implementationGapOrScope": "analyzeFreshness() accepts VerifiedTiming, but evaluateAssurance() supplies neither verifiedHeartbeat, upstreamGuarantee nor configurationFingerprint and its FRESHNESS dimension retains fixed missing timing requirements. AssuranceOptions lacks qualified timing ingestion. This must be explicitly implemented and tested before promotion; this repair does not alter it."
+      },
+      "INDEPENDENT_VALIDATION": {
+        "historicalEvaluatedState": "UNKNOWN",
+        "historicalSatisfied": [],
+        "historicalMissing": [
+          "NO_QUALIFIED_INDEPENDENT_SOURCE"
+        ],
+        "requiredForVerified": [
+          "ASSET",
+          "QUOTE",
+          "DENOMINATION",
+          "TIMESTAMP",
+          "FREQUENCY",
+          "OPERATOR",
+          "PROVENANCE",
+          "INDEPENDENCE",
+          "EXPLICIT_TEMPORAL_POLICY",
+          "EXPLICIT_TOLERANCE"
+        ],
+        "retainedAndNewResearchFacts": [
+          "No eligible comparator is configured; selectedUpstreamId is null. RPC/MCP are shared-upstream access paths, not independent economic sources.",
+          "Official issuer redemption descriptions are not MARKET_PRICE. A differently denominated or cross-chain WSRUSD/RUSD feed cannot by itself match this exact Pharos wsrUSD/USDC market or establish independent inputs.",
+          "Retained Chainlink research URLs returned 404; the Avalanche candidate returned 429. DexScreener exact-address responses returned no pairs. These are bounded research outcomes, not proof that no comparator exists anywhere."
+        ],
+        "exactPromotionPrerequisites": [
+          "Obtain an available MARKET_PRICE candidate for exact base chain1672/address0x4809010926aec940b550D34a46A52739f996D75D/18 decimals and quote chain1672/address0xC879C018dB60520F4355C26eD1a6D572cdAC1815/6 decimals, with strictly positive bounded price and exact normalization/denomination.",
+          "Supply all eight hashed, subject/chain-bound PROVEN EvidenceRef claims: ASSET, QUOTE, DENOMINATION, TIMESTAMP, FREQUENCY, OPERATOR, PROVENANCE, INDEPENDENCE. The last four require verified-source/official-document evidence in production, never a fixture or arbitrary identifier.",
+          "Establish both selected and comparator upstream/operator identities and actual source independence; distinct IDs, URLs, RPCs or signers are insufficient. Use a genuinely separate economic input path.",
+          "Supply positive documented candidate update frequency, positive non-future candidate and selected observation times, explicit bounded maxAge/maxSkew policies and an explicit integer tolerance 0..10000 basis points. Both observations must pass age/alignment policy at the same block context.",
+          "Retain original Morpho and independent raw prices separately. Normalize with exact rational arithmetic, compare within tolerance and preserve FAILED on disagreement; never substitute the comparator into the original snapshot."
+        ],
+        "implementationGapOrScope": "compareIndependent() enforces these conditions, but evaluateAssurance() deliberately supplies no selectedUpstreamId because the selected source identity is unresolved. Caller-supplied comparator labels cannot make this gate eligible."
+      },
+      "CONFIGURATION_CONTROL": {
+        "historicalEvaluatedState": "PARTIALLY_VERIFIED",
+        "historicalSatisfied": [
+          "PERMISSION_BOUNDARIES",
+          "CURRENT_CONTROLLERS"
+        ],
+        "historicalMissing": [
+          "COMPLETE_SIGNER_CONFIGURATION",
+          "CONTROLLER_IDENTITIES"
+        ],
+        "requiredForVerified": [
+          "PERMISSION_BOUNDARIES",
+          "CURRENT_CONTROLLERS",
+          "COMPLETE_SIGNER_CONFIGURATION",
+          "CONTROLLER_IDENTITIES"
+        ],
+        "retainedAndNewResearchFacts": [
+          "Current getters match the three observed owners; optional allowedWorkflowOwner is zero and the known workflow ID remains allowed.",
+          "Three EIP-1967 slots are zero; their interpretation uses full reproduced runtime/source evidence, not zero-slot inference alone.",
+          "Current audit reads only one known stored signer config and workflow permission. It does not enumerate every active DON/version, workflow ID or separately owner-authorized route entry."
+        ],
+        "exactPromotionPrerequisites": [
+          "Bind reproduced permission boundaries and all exact current owner/controller/proxy/forwarder/workflow getters to the pinned block and runtime hashes.",
+          "Obtain complete, provenance-bound active signer configurations, authorized forwarder routes and workflow permissions, including creation/removal/rotation history or an authoritative complete registry at the block. A bounded sample is not COMPLETE coverage.",
+          "Bind these addresses to verified controller/operator identities and their administrative/multisig/change-management responsibilities.",
+          "Retain a complete active configuration fingerprint and continuity baseline. Requalify after relevant owner/feed/runtime/workflow/signer/denomination change or observability gap; do not clear sticky invalidation merely because a later sample looks unchanged."
+        ],
+        "implementationGapOrScope": "Current gate proves permission boundaries/current addresses only; complete coverage and real-world controller identities remain missing. Configuration fingerprints presently include sampled rather than complete signer/workflow evidence."
+      }
+    },
+    "missingProductionCapabilities": [
+      "Configuration-bound workflow/source/operator evidence ingestion for SOURCE_V1 and OPERATOR_V1.",
+      "A schema capable of representing verified exact economic base/quote denomination, rather than the literal ECONOMIC_QUOTE_UNVERIFIED.",
+      "Validated VerifiedTiming ingestion and active-fingerprint binding through evaluateAssurance(), with dynamically fulfilled FRESHNESS requirements.",
+      "Selected upstream identity established from verified evidence and supplied to independent validation only after actual source independence is qualified.",
+      "Complete current signer/workflow/authorized-route/controller evidence and post-change invalidation/requalification lifecycle."
+    ],
+    "recoveryBlockers": [
+      "RECOVERY_CHAIN_PROGRESSION_UNKNOWN",
+      "RECOVERY_ORACLE_ASSURANCE_NOT_VERIFIED",
+      "RECOVERY_ASSURANCE_GATE_NOT_MET",
+      "RECOVERY_ORACLE_FRESHNESS_NOT_VERIFIED",
+      "RECOVERY_INDEPENDENT_VALIDATION_NOT_VERIFIED",
+      "RECOVERY_CONFIGURATION_MISMATCH"
+    ],
+    "recoveryPromotionPrerequisites": [
+      "All seven assurance dimensions VERIFIED with referenced PROVEN hashed evidence; gate ASSURANCE_REQUIREMENTS_MET and no invalidation or observation anomaly.",
+      "Freshness timingConfigurationFingerprint exactly equals the complete active assurance configurationFingerprint; independent comparison VERIFIED and eligible.",
+      "A separately authorized real position observation/progression sequence establishes ADVANCING for the exact identity and complete valid snapshot, without reusing oracle-only reads or old Stage 2 data as a new baseline.",
+      "Qualified deployment/host/channel/operational acceptance and explicit authorization before real continuous monitoring or any financial workflow. No future operation is authorized by this report."
+    ],
+    "noGatePromotionOrIndependentPriceSubstitution": true,
+    "researchUrlCount": 10
+  },
+  "preservation": {
+    "latest": {
+      "root": "REPAIR",
+      "file": "preservation-seal.json",
+      "bytes": 2824,
+      "sha256": "2bd4fb6646f89efe8934d5bf72bcce8884957bb4629d00817d5e095397495783"
+    },
+    "earlier": {
+      "root": "REPAIR",
+      "file": "preservation-final.json",
+      "bytes": 2824,
+      "sha256": "b77b935bc63234372dbbeb3486e512c5c397c87abdee77eb5eef2aaf76ee3179"
+    },
+    "preFinalizationArtifacts": {
+      "status": "PASS",
+      "baseline": {
+        "root": "REPAIR",
+        "file": "finalization-baseline.json",
+        "bytes": 590852,
+        "sha256": "3bb8df423b9b37f688e6da2c09aaed1212c1b072322ca2f2062b0bd1aca62fa0"
+      },
+      "repairArtifactsRehashed": 1771,
+      "repairBytesRehashed": 23113210,
+      "changedExistingRepairArtifacts": [],
+      "stage2FilesRehashed": 561,
+      "stage2BytesRehashed": 12341392,
+      "stage2Changes": [],
+      "newlyAddedRepairArtifacts": [
+        "finalization-baseline.json",
+        "preservation-seal.json"
+      ]
+    },
+    "repositoryEntries": 22029,
+    "repositoryBytes": 273682606,
+    "stage2FilesUnchanged": 561,
+    "gitIndexSha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689",
+    "gitIndexBytes": 65736,
+    "noStagingCommitPushResetCheckoutDiscard": true,
+    "unrelatedUserWorkPreserved": true
+  },
+  "anchors": [
+    {
+      "label": "Original Stage 2 report",
+      "root": "STAGE2",
+      "file": "LIVE-STAGE-2-MONITORING-REPORT.md",
+      "bytes": 40649,
+      "sha256": "acdfe3b107fa723c5d87ff990de66aaa7a2e3246e38b0f01b43b299efd66c60e"
+    },
+    {
+      "label": "Original live evidence",
+      "root": "STAGE2",
+      "file": "live-stage2-evidence.json",
+      "bytes": 59328,
+      "sha256": "f94ec2761c77d2ddb219c8215dd3b6ac0ee9836ced59798c36740fe19f6b2124"
+    },
+    {
+      "label": "Original failed full suite",
+      "root": "STAGE2",
+      "file": "unit-tests.json",
+      "bytes": 408810,
+      "sha256": "bd1aba2cdbcd8f6bbbefda19ad7a7d175ee6748b1f570d9958b724d53a62711d"
+    },
+    {
+      "label": "Original focused pass",
+      "root": "STAGE2",
+      "file": "runtime-rerun-tests.json",
+      "bytes": 2244,
+      "sha256": "87e5e86170466bf9ef4a20193a1905d98b1f9272a185fad293b83a3631b2a47a"
+    },
+    {
+      "label": "Original Stage 2 manifest",
+      "root": "STAGE2",
+      "file": "artifact-manifest.json",
+      "bytes": 65613,
+      "sha256": "1ccbe5add2bd7029d4972a2db526314ccc035eed8534e6c3e39f231d633f66b0"
+    },
+    {
+      "label": "Final qualification batch",
+      "root": "REPAIR",
+      "file": "qualification-batch/summary.json",
+      "bytes": 6450,
+      "sha256": "3439b0cf31a13c1f9b3210889d504688c3a1b4b8c218613294b917cbcc8ecf17"
+    },
+    {
+      "label": "Causal analysis",
+      "root": "REPAIR",
+      "file": "causal-analysis.json",
+      "bytes": 53193,
+      "sha256": "0779288a29a178007dbf37bbd129e5bb755141529ca46176fe9e02c61181bfec"
+    },
+    {
+      "label": "Lifecycle verification",
+      "root": "REPAIR",
+      "file": "final-lifecycle-verification.json",
+      "bytes": 77795,
+      "sha256": "9aa32732106c7d50b0ce6b137363578329b9543e89db032a3afd01bc9eda63bc"
+    },
+    {
+      "label": "Latest Git/repository/Stage 2 preservation",
+      "root": "REPAIR",
+      "file": "preservation-seal.json",
+      "bytes": 2824,
+      "sha256": "2bd4fb6646f89efe8934d5bf72bcce8884957bb4629d00817d5e095397495783"
+    },
+    {
+      "label": "Seven-gate qualification gaps",
+      "root": "REPAIR",
+      "file": "oracle-qualification-gaps.json",
+      "bytes": 25207,
+      "sha256": "03178712dbe468ee3bbad8c87a4badb11c0e7a55adfa23d5391fd98ff33e6fd5"
+    },
+    {
+      "label": "Bounded oracle configuration audit",
+      "root": "REPAIR",
+      "file": "oracle-rpc-audit/summary.json",
+      "bytes": 67836,
+      "sha256": "be1fdcfc02f9ecfa8125bd75e52ef119738ab12d7be4cc6cfddfc926a35b8b09"
+    },
+    {
+      "label": "Full public research provenance",
+      "root": "REPAIR",
+      "file": "public-oracle-research/summary.json",
+      "bytes": 29441,
+      "sha256": "928e7668558d9699c616f18fbc5d238bb5591580eca409bd36e91f74e6473ee4"
+    },
+    {
+      "label": "Retained documentary-helper failure",
+      "root": "REPAIR",
+      "file": "causal-consolidation-attempt-1.json",
+      "bytes": 1174,
+      "sha256": "43d62003b3d1c948f94fba98ac391858f094a74c17ea1dcd40546e702542eed3"
+    },
+    {
+      "label": "Exact failed helper capsule",
+      "root": "REPAIR",
+      "file": "causal-consolidation-attempt-1-tool.mjs",
+      "bytes": 10944,
+      "sha256": "0584611b9cd312ef08fc26b5718e83ac034a378c0e4216d3a17f16b1d114df52"
+    },
+    {
+      "label": "Test contract preservation",
+      "root": "REPAIR",
+      "file": "test-contract-preservation.json",
+      "bytes": 3839,
+      "sha256": "7bd0263247a3536e792884fad36d715302f1b2bc8dda82348aab7170e6a73024"
+    },
+    {
+      "label": "One-file repair allowlist",
+      "root": "REPAIR",
+      "file": "authorized-changes.json",
+      "bytes": 1360,
+      "sha256": "29e6f0dc494ca7c1a458f5286eaa577e6d88c1cdea0f9bf7b5bbcd80211fc893"
+    },
+    {
+      "label": "Final documentary-tool syntax checks",
+      "root": "REPAIR",
+      "file": "final-documentary-syntax-checks/summary.json",
+      "bytes": 7450,
+      "sha256": "48185242bc844d4f6d65632411c7b7c2a53c7a9f496339fa1d0f9b17bf2e94cb"
+    },
+    {
+      "label": "Separate documentary validator source",
+      "root": "REPAIR",
+      "file": "validate-final-qualification.mjs",
+      "bytes": 63393,
+      "sha256": "bd7a98f6d026df9180a9eb508535081ff908c9827d1d9c5fadc0da9d8c12aaab"
+    },
+    {
+      "label": "Retained read-only input-review failure",
+      "root": "REPAIR",
+      "file": "documentary-input-review-attempt-1.json",
+      "bytes": 2107,
+      "sha256": "42b34b4a9930cdfbc826810cc863fb942bfe5f619e78899bbea3c7fbc31a5251"
+    }
+  ],
+  "generator": {
+    "tool": {
+      "root": "REPAIR",
+      "file": "complete-qualification-report.mjs",
+      "bytes": 53848,
+      "sha256": "adfe7b37c0e83624a1f2a20af6622b00b8875dbd6b5435fda8bca37deda7b031"
+    },
+    "helpers": {
+      "root": "REPAIR",
+      "file": "final-documentary-tools.mjs",
+      "bytes": 6904,
+      "sha256": "601dee4f4fbd1a00db539fd3cd9455d7a93fe51c586278f1a1cb48f17e71c1e7"
+    },
+    "separateValidator": {
+      "root": "REPAIR",
+      "file": "validate-final-qualification.mjs",
+      "bytes": 63393,
+      "sha256": "bd7a98f6d026df9180a9eb508535081ff908c9827d1d9c5fadc0da9d8c12aaab"
+    },
+    "syntaxChecks": {
+      "root": "REPAIR",
+      "file": "final-documentary-syntax-checks/summary.json",
+      "bytes": 7450,
+      "sha256": "48185242bc844d4f6d65632411c7b7c2a53c7a9f496339fa1d0f9b17bf2e94cb"
+    },
+    "sealReceiptTool": {
+      "root": "REPAIR",
+      "file": "capture-final-seal-verification.mjs",
+      "bytes": 3018,
+      "sha256": "e536243b82f349e89b4f1ebd3206533bd5726d2c1a7dd4e149c67dc095d5a275"
+    }
+  },
+  "decision": {
+    "originalRequirements": "PASS_EXACT_FINITE_LOCAL_STAGE2_RUN_ONLY",
+    "software": "PASS",
+    "production": "NOT_ACCEPTED_NO_GO",
+    "oracleOverall": "UNVERIFIED",
+    "freshness": "UNKNOWN",
+    "independentValidation": "UNKNOWN_INELIGIBLE",
+    "financialRecovery": "BLOCKED",
+    "monitor": "STOPPED"
+  },
+  "safety": {
+    "finalizationNetworkRequests": 0,
+    "finalizationApplicationImports": 0,
+    "finalizationDatabaseOpens": 0,
+    "finalizationTestsRun": 0,
+    "noAdditionalRealMonitoringCycle": true,
+    "noContinuousMonitoringExternalNotificationTransactionWalletOwnerContactOrFinancialRecoveryAmounts": true,
+    "noNeonPaidServiceDeploymentSchedulerProductionMigrationOrMultiPositionWork": true,
+    "noRepositoryWriteDuringFinalization": true,
+    "furtherAuthorizationGranted": false,
+    "stopAfterDelivery": true
+  }
+}

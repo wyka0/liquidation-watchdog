@@ -1,0 +1,49 @@
+{
+  "kind": "PHASE8_EXTERNAL_HELPER_SOURCE_CAPTURE",
+  "capturedAt": "2026-11-02T15:10:10.102Z",
+  "files": [
+    {
+      "path": "evidence/phase8/tooling/phase8-safety.mjs",
+      "bytes": 5714,
+      "sha256": "5882ee9543e814f8e43f5a23bfc5f1298181bba2e8c9e84490e707040a42d9e4",
+      "source": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-safety.mjs"
+    },
+    {
+      "path": "evidence/phase8/tooling/phase8-command.mjs",
+      "bytes": 1475,
+      "sha256": "9e8962d3fff39acd15557f626f384fa49bc63e8941add34dec65daa4add34b8b",
+      "source": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-command.mjs"
+    },
+    {
+      "path": "evidence/phase8/tooling/phase8-candidate.mjs",
+      "bytes": 3015,
+      "sha256": "3ed09ca53722a63398caee7af5c8ddf1768057cd45af9d97f5ac8522cbcfd9e1",
+      "source": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-candidate.mjs"
+    },
+    {
+      "path": "evidence/phase8/tooling/phase8-evidence.mjs",
+      "bytes": 19078,
+      "sha256": "ba3b19466058f57843f5cfbe322c985eefca627b129d5258b9db0f871316b4ac",
+      "source": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-evidence.mjs"
+    },
+    {
+      "path": "evidence/phase8/tooling/phase8-process.mjs",
+      "bytes": 2160,
+      "sha256": "7806ae099f9cfd348277796f2552f2bc2c7342f925537cb69f7ccf742e65d322",
+      "source": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-process.mjs"
+    },
+    {
+      "path": "evidence/phase8/tooling/phase8-built-smoke.mjs",
+      "bytes": 6529,
+      "sha256": "02cd10141030a5a30b95f0f118b37642e77e05197a07eda476c4ad666a632f5a",
+      "source": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-built-smoke.mjs"
+    },
+    {
+      "path": "evidence/phase8/tooling/phase8-signal-hook.mjs",
+      "bytes": 341,
+      "sha256": "f8653b90ed1ebebff57ecbb99136a819de0c16c524ab2a79ff71e6f796871e0c",
+      "source": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-signal-hook.mjs"
+    }
+  ],
+  "note": "Exact final helper source. Earlier failed command attempts and their corrections are retained separately. Helpers never restore historical files."
+}

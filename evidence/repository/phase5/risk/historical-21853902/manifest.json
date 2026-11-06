@@ -1,0 +1,37 @@
+{
+  "evidenceKind": "HISTORICAL_SNAPSHOT",
+  "temporalContext": "HISTORICAL",
+  "inputSnapshotIdentifier": "sha256:3f62081e7d97b986feabebefe53d894d7918e43a8f5f74a4d12279a23f5bf9ab",
+  "chainId": 1672,
+  "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+  "account": "0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7",
+  "blockNumber": "21853902",
+  "blockHash": "0xfe044ec9c464d3899f431b23efc307e9ccb619a71d42fdfe4c0b7a2e346c88d3",
+  "blockTimestamp": "1793541780",
+  "calculatedAt": "2026-11-02T10:21:57.009Z",
+  "dataQuality": "UNVERIFIED",
+  "oracleQuality": "UNVERIFIED",
+  "actionable": false,
+  "files": [
+    {
+      "file": "input-snapshot.json",
+      "sha256": "ca64b0d684328897782091e45993c9af000426853da928698a9213f1746bce75"
+    },
+    {
+      "file": "risk-result.json",
+      "sha256": "07da755a7422b3b47d693485127841704c9074affad8ff549dcba1d34929b2ef"
+    },
+    {
+      "file": "risk-report.txt",
+      "sha256": "fc8386f8bf1fbcca62514a9203a6940780610feed471aa234c4ef941a0f216ba"
+    },
+    {
+      "file": "repayment-estimate.json",
+      "sha256": "1c52609f4be0391d1187037287b85722dc8ae9ebdadfd28829ae3eb72efe0aa7"
+    },
+    {
+      "file": "collateral-estimate.json",
+      "sha256": "b5e5cc22056b4c476e59972e73bc7fb64a7b39c9ba799fe15b7e3d1343652a5a"
+    }
+  ]
+}

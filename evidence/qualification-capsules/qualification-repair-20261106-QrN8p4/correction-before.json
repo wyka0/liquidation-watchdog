@@ -1,0 +1,11 @@
+{
+  "path": "test/runtime-process.test.ts",
+  "capturedAt": "2026-11-06T00:40:14.844Z",
+  "bytes": 4776,
+  "sha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846",
+  "baselineMatches": true,
+  "unchangedGitIndex": {
+    "bytes": 65736,
+    "sha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689"
+  }
+}

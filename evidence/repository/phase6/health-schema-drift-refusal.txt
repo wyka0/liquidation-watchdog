@@ -1,0 +1,70 @@
+{
+  "commandScope": "LOCAL_OPERATIONAL_DIAGNOSTICS",
+  "checkedAt": "2026-11-02T09:21:29.294Z",
+  "runtime": {
+    "node": "v24.14.1",
+    "sqlite": "3.51.2",
+    "platform": "win32",
+    "architecture": "x64",
+    "verified": {
+      "node": "v24.14.1",
+      "sqlite": "3.51.2"
+    },
+    "checkerUptimeSeconds": 2,
+    "checkerRssBytes": 92024832
+  },
+  "configuration": {
+    "valid": true,
+    "profile": "production",
+    "errors": [],
+    "runtimeVerified": true,
+    "notifications": {
+      "console": "ENABLED",
+      "telegram": "DISABLED",
+      "discord": "DISABLED"
+    },
+    "chain": {
+      "status": "FIXED_CONFIGURATION_VALID",
+      "chainId": 1672
+    },
+    "secretValues": "OMITTED",
+    "endpointOverrides": "UNSUPPORTED"
+  },
+  "processHealth": {
+    "checker": "HEALTHY",
+    "healthy": false,
+    "workerStatus": "UNKNOWN",
+    "ownership": "UNKNOWN",
+    "worker": null
+  },
+  "database": {
+    "available": false,
+    "schemaCurrent": false,
+    "error": "STORE_SCHEMA_LAYOUT"
+  },
+  "connectivity": {
+    "rpc": "UNKNOWN",
+    "mcp": "UNKNOWN",
+    "checkedAt": null,
+    "mode": "PERSISTED_AS_OF_SNAPSHOT"
+  },
+  "lastCycle": null,
+  "lastSuccessfulChainRead": null,
+  "pendingDeliveryCount": null,
+  "operationalReadiness": {
+    "readyForObservation": false,
+    "currentChainSnapshotRequired": true,
+    "monitorRunning": false
+  },
+  "oracleAssurance": "UNVERIFIED",
+  "freshness": "UNKNOWN",
+  "financialActionability": false,
+  "estimates": "INDICATIVE_ONLY",
+  "productionReleaseReady": false,
+  "blockers": [
+    "ORACLE_ECONOMICS_AND_OPERATORS_UNVERIFIED",
+    "UPSTREAM_FRESHNESS_UNKNOWN",
+    "INDEPENDENT_COMPARATOR_UNQUALIFIED",
+    "PRODUCTION_HOST_ACCEPTANCE_AND_APPROVAL_REQUIRED"
+  ]
+}

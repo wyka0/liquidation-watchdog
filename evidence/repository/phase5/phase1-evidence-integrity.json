@@ -1,0 +1,335 @@
+{
+  "evidenceKind": "LOCAL_ARCHIVE_INTEGRITY_CHECK",
+  "checkedAt": "2026-11-02T10:29:32.364Z",
+  "baselineSha256": "ef022814cbb20021571ea51d411de9f82837a39eba347e726e900147c75ddf75",
+  "baselineCapturedAt": "2026-11-01T14:18:08.405Z",
+  "originalFileCount": 54,
+  "currentFileCount": 54,
+  "passed": true,
+  "checks": [
+    {
+      "path": "evidence/phase1/accounting.json",
+      "expectedSha256": "e46dee9d04dc562e5d572770c721da7807d7c43ae63bb1ab371913ef18af3ba2",
+      "actualSha256": "e46dee9d04dc562e5d572770c721da7807d7c43ae63bb1ab371913ef18af3ba2",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/block-consistency.json",
+      "expectedSha256": "1790e12d8889b358eeb2d47997cd0618d891b56f09aa043c7d44232503f58192",
+      "actualSha256": "1790e12d8889b358eeb2d47997cd0618d891b56f09aa043c7d44232503f58192",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/build.txt",
+      "expectedSha256": "9e2bcace2829b400efc3e4f51f810f41e77639b047a4a7dad19c8895691be69a",
+      "actualSha256": "9e2bcace2829b400efc3e4f51f810f41e77639b047a4a7dad19c8895691be69a",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/built-cli-smoke.txt",
+      "expectedSha256": "4d53491912ef891a6258d99f4d779e7a6d17d44fefc9c3dc45a95e099c332601",
+      "actualSha256": "4d53491912ef891a6258d99f4d779e7a6d17d44fefc9c3dc45a95e099c332601",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/cli-report.txt",
+      "expectedSha256": "c7d35d6899ed5b3aa66316d4b0bd854c1d88c0712647103b6b1a4d33a50c067f",
+      "actualSha256": "c7d35d6899ed5b3aa66316d4b0bd854c1d88c0712647103b6b1a4d33a50c067f",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/contract-verification.json",
+      "expectedSha256": "fba3f6ce69dba306e5d5731a8bbc0fff3cb5680277b18eea69e84e0fd67402e7",
+      "actualSha256": "fba3f6ce69dba306e5d5731a8bbc0fff3cb5680277b18eea69e84e0fd67402e7",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/dependency-audit.json",
+      "expectedSha256": "655563792d1b7234e091769e2f0d8d50a9afc556a72993cd8d6f92fa632a2062",
+      "actualSha256": "655563792d1b7234e091769e2f0d8d50a9afc556a72993cd8d6f92fa632a2062",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/dependency-audit.txt",
+      "expectedSha256": "655563792d1b7234e091769e2f0d8d50a9afc556a72993cd8d6f92fa632a2062",
+      "actualSha256": "655563792d1b7234e091769e2f0d8d50a9afc556a72993cd8d6f92fa632a2062",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/git-diff-check.txt",
+      "expectedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actualSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/git-intent-to-add.txt",
+      "expectedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actualSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/integration-tests.json",
+      "expectedSha256": "20edf82da24d662e00903f76447fc70313df2969ae69992708c976dfac6534c7",
+      "actualSha256": "20edf82da24d662e00903f76447fc70313df2969ae69992708c976dfac6534c7",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/lint.txt",
+      "expectedSha256": "ff2b2e0ec311c49f7aae8ff873ce08d58e0e426432812926c9ea59d755c522fa",
+      "actualSha256": "ff2b2e0ec311c49f7aae8ff873ce08d58e0e426432812926c9ea59d755c522fa",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/market-id-verification.json",
+      "expectedSha256": "75dd8e01d75f944c8e7c9dd3894d51ccea7d5eedb639f3abdf3c7bb6ba404925",
+      "actualSha256": "75dd8e01d75f944c8e7c9dd3894d51ccea7d5eedb639f3abdf3c7bb6ba404925",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/market-parameters.json",
+      "expectedSha256": "2f64a005f34f656a3d2a4cf9bb55bda3dd26a6f4526006ddecf6302477cfecf0",
+      "actualSha256": "2f64a005f34f656a3d2a4cf9bb55bda3dd26a6f4526006ddecf6302477cfecf0",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/mcp-rpc-comparison.json",
+      "expectedSha256": "da6722a020d65567fe109121f305f0c91cc272d509634b8d7bae325979cd79ef",
+      "actualSha256": "da6722a020d65567fe109121f305f0c91cc272d509634b8d7bae325979cd79ef",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/network-verification.json",
+      "expectedSha256": "6af7b7ff64ec58fde86544da9a0a8d21d0931aeb358ee4e0b21a657f3229c545",
+      "actualSha256": "6af7b7ff64ec58fde86544da9a0a8d21d0931aeb358ee4e0b21a657f3229c545",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/oracle-investigation-live.json",
+      "expectedSha256": "a1d5be47f6eebbd57271c02867fb1cc3039c7c5fb0ec7d0418d9978c3f751c2f",
+      "actualSha256": "a1d5be47f6eebbd57271c02867fb1cc3039c7c5fb0ec7d0418d9978c3f751c2f",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/oracle-update-history.json",
+      "expectedSha256": "6ca83c12ceb4a7e25c20f026f1386dd7889412846615bc3cf3612192335254e1",
+      "actualSha256": "6ca83c12ceb4a7e25c20f026f1386dd7889412846615bc3cf3612192335254e1",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/position-snapshot.json",
+      "expectedSha256": "c319f5b2da2af921873276ecf22a75aa807a6498af8f104edbc2ef339b553ccc",
+      "actualSha256": "c319f5b2da2af921873276ecf22a75aa807a6498af8f104edbc2ef339b553ccc",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/read-trace.json",
+      "expectedSha256": "a4afa006275e1c88a09f3bc53fa47a479139d4f5bd0e9ea7345eb9c5dbda1ee1",
+      "actualSha256": "a4afa006275e1c88a09f3bc53fa47a479139d4f5bd0e9ea7345eb9c5dbda1ee1",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/secret-scan.json",
+      "expectedSha256": "5d54d75defcdd2b571729dd1309a9ccc2bf0dee0ef0945d1388a5ce114735e62",
+      "actualSha256": "5d54d75defcdd2b571729dd1309a9ccc2bf0dee0ef0945d1388a5ce114735e62",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/secrets-check.txt",
+      "expectedSha256": "5aeceebc1b924dbf27647474c571b897efdcf8482b29b75785d78575cb3d1707",
+      "actualSha256": "5aeceebc1b924dbf27647474c571b897efdcf8482b29b75785d78575cb3d1707",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/source-runtime-links.txt",
+      "expectedSha256": "b53b6640bb06eae38012d6db3c9d303008b462ab76bb31265859d8f9fa04dc55",
+      "actualSha256": "b53b6640bb06eae38012d6db3c9d303008b462ab76bb31265859d8f9fa04dc55",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/source-runtime-matches.json",
+      "expectedSha256": "f10cbc7a8da6b3fe33bce46acff47338fb1665cd0927ecf09c45c32966078e4d",
+      "actualSha256": "f10cbc7a8da6b3fe33bce46acff47338fb1665cd0927ecf09c45c32966078e4d",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/ChainlinkDataFeedLib.sol",
+      "expectedSha256": "82b18d00ba9c278686f5483df5ca3881f3bc2200d7532500c80b7ea81359ae06",
+      "actualSha256": "82b18d00ba9c278686f5483df5ca3881f3bc2200d7532500c80b7ea81359ae06",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/ConfirmedOwnerWithProposal.sol",
+      "expectedSha256": "f012acfbe80c352bc3bff2c5547717b2794970770cfbcf64ee3b905647f0ff55",
+      "actualSha256": "f012acfbe80c352bc3bff2c5547717b2794970770cfbcf64ee3b905647f0ff55",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/ConstantsLib.sol",
+      "expectedSha256": "d450cc5f56d70f6460ed81c5e2e7a294f5b7644307a4c742754e0d41a8789567",
+      "actualSha256": "d450cc5f56d70f6460ed81c5e2e7a294f5b7644307a4c742754e0d41a8789567",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/IMorpho.sol",
+      "expectedSha256": "24f96c2860c42cd5834c56cdb159c56435acaee0716d34d54ca18bd755edc97c",
+      "actualSha256": "24f96c2860c42cd5834c56cdb159c56435acaee0716d34d54ca18bd755edc97c",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/ISelfManagedFeedsCache.sol",
+      "expectedSha256": "bf47f0229a570cc12ac3a42ca98dbbbe6e1bd3b4a8e0439d18637a0116589ae4",
+      "actualSha256": "bf47f0229a570cc12ac3a42ca98dbbbe6e1bd3b4a8e0439d18637a0116589ae4",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/KeystoneForwarder.sol",
+      "expectedSha256": "edae1208bfe3f3f311382e05470e8954067324ff7bfdcee7772f2e8d20e0542c",
+      "actualSha256": "edae1208bfe3f3f311382e05470e8954067324ff7bfdcee7772f2e8d20e0542c",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MarketParamsLib.sol",
+      "expectedSha256": "94af290e2a2094b8547b925449484d247bce87cce4fed8902ecf82dd2b49242e",
+      "actualSha256": "94af290e2a2094b8547b925449484d247bce87cce4fed8902ecf82dd2b49242e",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MathLib.sol",
+      "expectedSha256": "2c6728d1bc8f5db81f2a7946f226c3c4a8cffe4134c55450ca445b05727011bc",
+      "actualSha256": "2c6728d1bc8f5db81f2a7946f226c3c4a8cffe4134c55450ca445b05727011bc",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/Morpho.sol",
+      "expectedSha256": "7f66c064ad0bdc046382fa65f449bb5a0b9181d5d03b65e3c8438226d437b9ce",
+      "actualSha256": "7f66c064ad0bdc046382fa65f449bb5a0b9181d5d03b65e3c8438226d437b9ce",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MorphoBalancesLib.sol",
+      "expectedSha256": "dc5015f71b5cb2bf52876ed2c2b47ba37f4d7ab5970c42aa5a719ffba4f9e4a8",
+      "actualSha256": "dc5015f71b5cb2bf52876ed2c2b47ba37f4d7ab5970c42aa5a719ffba4f9e4a8",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MorphoChainlinkOracleV2.sol",
+      "expectedSha256": "c8b4ca1b94aec573fb14a7b1de76f3890c7e08b6b2b38d96afbd722c59b85321",
+      "actualSha256": "c8b4ca1b94aec573fb14a7b1de76f3890c7e08b6b2b38d96afbd722c59b85321",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/MorphoChainlinkOracleV2Factory.sol",
+      "expectedSha256": "8fb3c674895d6690d70a584e034c465000ac60829ff035799f4980e7910d3bf0",
+      "actualSha256": "8fb3c674895d6690d70a584e034c465000ac60829ff035799f4980e7910d3bf0",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/Multicall3.sol",
+      "expectedSha256": "3f05fc95b3bfd3d41e96fa281e00a71302e35b8fff59f81f399a419cdb9f577e",
+      "actualSha256": "3f05fc95b3bfd3d41e96fa281e00a71302e35b8fff59f81f399a419cdb9f577e",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "expectedSha256": "602a035ebd7ec5d258715dcb0e5c61d679f072b89ae774824668e4a13dcbd461",
+      "actualSha256": "602a035ebd7ec5d258715dcb0e5c61d679f072b89ae774824668e4a13dcbd461",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+      "expectedSha256": "cc61c1da8e2c5b6c25ed1c10db8851226b36a120616aefda8e978d8280b4cefe",
+      "actualSha256": "cc61c1da8e2c5b6c25ed1c10db8851226b36a120616aefda8e978d8280b4cefe",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/SharesMathLib.sol",
+      "expectedSha256": "4580deb1b1a3f2ea0b60f2305708428975613d1e94d404d647bcc573a7b2a2f0",
+      "actualSha256": "4580deb1b1a3f2ea0b60f2305708428975613d1e94d404d647bcc573a7b2a2f0",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/UtilsLib.sol",
+      "expectedSha256": "9d0c8a0855b2f9e9f92111cdf32bdbbd1ff97b7584f0f958b695f2c4cb0d1b34",
+      "actualSha256": "9d0c8a0855b2f9e9f92111cdf32bdbbd1ff97b7584f0f958b695f2c4cb0d1b34",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/cache-verified-metadata.json",
+      "expectedSha256": "be897b15cc955e0aba97c410bd86933e78359965c67c9311307e8cd300077705",
+      "actualSha256": "be897b15cc955e0aba97c410bd86933e78359965c67c9311307e8cd300077705",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/forwarder-verified-metadata.json",
+      "expectedSha256": "273dfba8bf8aa1982de53754d8bc771af7292bf6d7e2f38b6d797825b44d7657",
+      "actualSha256": "273dfba8bf8aa1982de53754d8bc771af7292bf6d7e2f38b6d797825b44d7657",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/manifest.json",
+      "expectedSha256": "c6eb093e6b1a4fc08cbaade43aab17f14eaf35bcfeafd405c7ea4c2cf2a07f1e",
+      "actualSha256": "c6eb093e6b1a4fc08cbaade43aab17f14eaf35bcfeafd405c7ea4c2cf2a07f1e",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/multicall-verified-metadata.json",
+      "expectedSha256": "346b79ee5e13c35bd537f34b0c6659d4d6917ff22d80a8018761ff9dfc0f6051",
+      "actualSha256": "346b79ee5e13c35bd537f34b0c6659d4d6917ff22d80a8018761ff9dfc0f6051",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/official-registry-excerpts.json",
+      "expectedSha256": "d7728506639d913575aca0b15e8ef922b8cd4df3a313db5291dc2ffe6501b4b3",
+      "actualSha256": "d7728506639d913575aca0b15e8ef922b8cd4df3a313db5291dc2ffe6501b4b3",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/oracle-verified-metadata.json",
+      "expectedSha256": "ea2ddd7eb2906b0ac81fd194f9f9add6566902154e3b8c294e8ed9dfd81fddc5",
+      "actualSha256": "ea2ddd7eb2906b0ac81fd194f9f9add6566902154e3b8c294e8ed9dfd81fddc5",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/proxy-verified-metadata.json",
+      "expectedSha256": "c6f74ceca33aa035d9123a5bed800c77f4a467133a8ee00ffa5568ecf018f8a9",
+      "actualSha256": "c6f74ceca33aa035d9123a5bed800c77f4a467133a8ee00ffa5568ecf018f8a9",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+      "expectedSha256": "82b18d00ba9c278686f5483df5ca3881f3bc2200d7532500c80b7ea81359ae06",
+      "actualSha256": "82b18d00ba9c278686f5483df5ca3881f3bc2200d7532500c80b7ea81359ae06",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/test-integration.txt",
+      "expectedSha256": "eeaf3e12fcd99b69909fe959c86caf358423df909094acdf828badf56396881d",
+      "actualSha256": "eeaf3e12fcd99b69909fe959c86caf358423df909094acdf828badf56396881d",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/test-unit.txt",
+      "expectedSha256": "2e1b1c3f5a2df0363c59a3d20b8c4825b786e9425f9d4abcbdcbd28624f6001e",
+      "actualSha256": "2e1b1c3f5a2df0363c59a3d20b8c4825b786e9425f9d4abcbdcbd28624f6001e",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/typecheck.txt",
+      "expectedSha256": "2b2163a0308d4cf2da0154f192c492a95db4995150020b25af7a1c86c29c6fc0",
+      "actualSha256": "2b2163a0308d4cf2da0154f192c492a95db4995150020b25af7a1c86c29c6fc0",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/unit-tests.json",
+      "expectedSha256": "5cdf04003f2cf7532e8ce99ebc7bdef45efd235013abaa88ebe3c8a53d65eff8",
+      "actualSha256": "5cdf04003f2cf7532e8ce99ebc7bdef45efd235013abaa88ebe3c8a53d65eff8",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/phase1/verification-results.json",
+      "expectedSha256": "1cb5c61c307332755c33189a102c93d217a91417a2a2ff9f2cda2279aec6a38e",
+      "actualSha256": "1cb5c61c307332755c33189a102c93d217a91417a2a2ff9f2cda2279aec6a38e",
+      "unchanged": true
+    }
+  ]
+}

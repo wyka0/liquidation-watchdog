@@ -1,0 +1,2 @@
+New-file Git whitespace: FAIL; 426 files; real index unchanged.
+[{"path":"evidence/phase5/oracle-audit-2026-11-02T09-04-47-499Z-3602f654-a96a-4d2a-a6fa-17ad98f83397/audit-report.txt","code":2}]

@@ -1,0 +1,10 @@
+node : (node:10940) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+At line:1 char:12
++  param($w) node C:\liquidation-watchdog\dist\cli.js monitor --once -- ...
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:10940) Ex...nge at any time:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+INVALID_THRESHOLDS: Operation failed; consult the documented code and sanitized diagnostics. No failed result was
+accepted.

@@ -1,0 +1,88 @@
+{
+  "chainId": 1672,
+  "subjectAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+  "block": {
+    "number": "21864844",
+    "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+    "timestamp": "1793553649"
+  },
+  "retrievedAt": "2026-11-01T17:28:39.502Z",
+  "method": "Independent native compiler output from the referenced immutable bundle, completed with the two public immutable getters. No runtime bytes were copied as immutable values.",
+  "sourceBundle": "evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f",
+  "compilerInputSha256": "592856b6fec0a6154fb660c02cc1f7cebf314662fb1e729c768463bbce9f02e0",
+  "compilerOutputSha256": "51e537d8dd038f5d477ea1c0f534c8f666b464f3605214cf6d7264d76719cf19",
+  "bindings": [
+    {
+      "id": "1386",
+      "name": "endpoint",
+      "raw": "0x0000000000000000000000006f475642a6e85809b1c36fa62763669b1b48dd5b",
+      "value": "635288842807626455387668018079122845007729974619",
+      "positions": [
+        {
+          "start": 1245,
+          "length": 32
+        },
+        {
+          "start": 2445,
+          "length": 32
+        },
+        {
+          "start": 4061,
+          "length": 32
+        },
+        {
+          "start": 4692,
+          "length": 32
+        },
+        {
+          "start": 5566,
+          "length": 32
+        },
+        {
+          "start": 7505,
+          "length": 32
+        },
+        {
+          "start": 7873,
+          "length": 32
+        },
+        {
+          "start": 8056,
+          "length": 32
+        }
+      ],
+      "method": "PUBLIC_GETTER_MATCHED_TO_COMPILER_AST"
+    },
+    {
+      "id": "2906",
+      "name": "decimalConversionRate",
+      "raw": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+      "value": "1000000000000",
+      "positions": [
+        {
+          "start": 1566,
+          "length": 32
+        },
+        {
+          "start": 6624,
+          "length": 32
+        },
+        {
+          "start": 6741,
+          "length": 32
+        },
+        {
+          "start": 7257,
+          "length": 32
+        }
+      ],
+      "method": "PUBLIC_GETTER_MATCHED_TO_COMPILER_AST"
+    }
+  ],
+  "fullRuntimeMatch": true,
+  "runtimeSha256": "494f468eef50ffd3c8b6debdec66583cb02c433bdb1ae8bd12f5927dc417e8e8",
+  "classification": "PROVEN",
+  "unresolved": [
+    "Cross-chain OFT identity does not prove redemption value, market-price quote or selected-feed provenance."
+  ]
+}

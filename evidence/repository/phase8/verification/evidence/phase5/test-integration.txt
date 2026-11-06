@@ -1,0 +1,15 @@
+
+> liquidation-watchdog@0.1.0 test:integration
+> vitest run --config vitest.integration.config.ts --reporter=default --reporter=json --outputFile.json=evidence/phase5/integration-tests.json
+
+
+ RUN  v5.0.5 [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-verification-B1B2r7
+
+ ✓ test/integration/live.test.ts (2 tests) 31127ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  20:19:13
+   Duration  33.66s (tests 93%, import 5%, transform 2%)
+
+JSON report written to [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-verification-B1B2r7/evidence/phase5/integration-tests.json

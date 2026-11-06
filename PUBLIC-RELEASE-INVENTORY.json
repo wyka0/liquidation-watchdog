@@ -1,0 +1,94 @@
+{
+  "kind": "PHASE_8B_PUBLIC_RELEASE_SANITIZED_SNAPSHOT_INVENTORY",
+  "generatedAtUtc": "2026-11-06T23:12:29Z",
+  "supersedes": "The historical publication snapshot bound by PUBLICATION-SHA256SUMS.txt (committed snapshot 968c33569caef31910f393bb2e33e49476ea1bbf, prepared for a private repository).",
+  "scope": "This inventory describes the sanitized PUBLIC tree of this repository only. The original project, submission package and pre-sanitization snapshot are preserved off-repository by the maintainer and are not redistributed here.",
+  "publicTree": {
+    "fileCount": 3977,
+    "directoryCount": 270,
+    "totalBytes": 113610762,
+    "note": "Counts include this inventory, the checksum file and its detached digest."
+  },
+  "checksums": {
+    "inventoryFile": "PUBLIC-RELEASE-SHA256SUMS.txt",
+    "covers": "Every file in this sanitized public tree except PUBLIC-RELEASE-SHA256SUMS.txt itself and its detached digest file PUBLIC-RELEASE-SHA256SUMS.sha256 (the same two-file envelope pattern used by the historical publication checksums).",
+    "format": "<sha256>  <relative-path> per line",
+    "detachedDigestFile": "PUBLIC-RELEASE-SHA256SUMS.sha256",
+    "detachedDigest": "SHA-256 of PUBLIC-RELEASE-SHA256SUMS.txt itself; the checksum inventory cannot contain its own digest."
+  },
+  "excludedCategories": {
+    "thirdPartySoliditySources": {
+      "files": 50,
+      "directories": [
+        "evidence/phase1/sources/",
+        "evidence/repository/phase1/sources/"
+      ],
+      "reason": "Captured third-party Solidity sources (BUSL-1.1, GPL-2.0-or-later, MIT headers, plus UNLICENSED deployment contracts in compiler inputs). Redistribution rights and license obligations could not be verified, so the copies and every compiler input/output embedding them were excluded."
+    },
+    "compilerEvidenceEmbeddingSources": {
+      "files": 86,
+      "directories": [
+        "evidence/phase4/oracle-research-2026-11-01T17-18-42-620Z-a3287621-5c9c-4828-b169-638ac3f62f96/",
+        "evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/",
+        "evidence/repository/phase4/oracle-research-2026-11-01T17-18-42-620Z-a3287621-5c9c-4828-b169-638ac3f62f96/",
+        "evidence/repository/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/"
+      ],
+      "reason": "Compiler input/output JSON artifacts embedding the same third-party sources.",
+      "note": "86 compiler input/output and derived research files excluded. 22 project-authored chain-data records from the same directories were retained: 20 *-runtime.json bytecode records (public on-chain bytecode, block metadata, retrieval timestamps; same category as test/fixtures/runtime.json) and 2 independent-recompilation.json compiler-verification records (metadata only, personal paths redacted). The redacted recompilation records no longer match the hash pinned in src/oracle-assurance/reviewed.ts; the runtime correctly fails closed on such mismatches."
+    },
+    "historicalEnvironmentCaches": {
+      "files": 977,
+      "directories": [
+        "12 tsx cache directories under evidence/qualification-capsules/{live-stage2-SGNCxp,qualification-repair-20261106-QrN8p4}/?/tsx-?/"
+      ],
+      "reason": "Reproducible historical TypeScript cache directories whose file paths embedded the maintainer username; not required to understand or run the project."
+    },
+    "capturedWebsiteBodies": {
+      "files": 19,
+      "directories": [
+        "evidence/qualification-capsules/stage4-oracle-reads/",
+        "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/public-oracle-research/",
+        "evidence/qualification-capsules/stage5a-discovery/"
+      ],
+      "reason": "Captured third-party website page bodies and extracted page text (Chainlink, Reservoir, Pharos, DexScreener). Redistribution permission not established."
+    }
+  },
+  "sanitization": {
+    "applied": "Phase 8B content redaction",
+    "rules": [
+      {
+        "home-directory-path-prefix": "[REDACTED_LOCAL_PATH]"
+      },
+      {
+        "historical-cache-directory-name": "tsx-[REDACTED_USER]"
+      },
+      {
+        "standalone-username": "[REDACTED_USER]"
+      },
+      {
+        "machine-hostname": "[REDACTED_HOSTNAME]"
+      },
+      {
+        "host-model": "[REDACTED_HOST_MODEL]"
+      },
+      {
+        "cpu-model": "[REDACTED_CPU_MODEL]"
+      },
+      {
+        "os-edition-and-hardware-values": "[REDACTED_*] placeholders in host evidence files"
+      }
+    ],
+    "contentModifiedFiles": 254,
+    "excerptEntriesRemoved": 213
+  },
+  "historicalRecordsNote": "SHA256SUMS.txt, PUBLICATION-INVENTORY.json, PUBLICATION-SHA256SUMS.txt and PUBLICATION-SHA256SUMS.sha256 are historical records of earlier snapshots. They are retained for provenance; PUBLICATION-SHA256SUMS.sha256 pins the pre-redaction bytes of PUBLICATION-SHA256SUMS.txt and therefore no longer matches the redacted historical file in this copy. The authoritative checksums for THIS tree are PUBLIC-RELEASE-SHA256SUMS.txt and its detached digest.",
+  "documentationChanges": [
+    "README.md ? public-release status, no-license position, third-party notice, sanitized-snapshot binding",
+    "docs/render-deployment-plan.md ? deployment-plan reconciliation with committed dist/service.js and config/render.json",
+    "docs/testing.md ? dist/ inclusion statement corrected (321 committed build files; not a fresh build)",
+    "docs/host-acceptance-files.md ? host-evidence identity disclosures explained; values redacted in public copy"
+  ],
+  "integrity": {
+    "sourceCodeUnchanged": "src/, test/, scripts/ and cloudflare/ source files were not modified by this remediation except path/username redaction inside historical evidence; application behavior, thresholds (1.30/1.10/1.25/1.00), oracle-assurance gates and fail-closed controls are unchanged."
+  }
+}

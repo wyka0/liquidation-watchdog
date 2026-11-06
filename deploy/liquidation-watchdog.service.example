@@ -1,0 +1,43 @@
+# Reference only: adapt and validate on the approved Linux host before installation.
+# The packaged production JSON keeps continuous monitoring disabled.
+[Unit]
+Description=Read-only Liquidation Watchdog
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=600
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=liquidation-watchdog
+Group=liquidation-watchdog
+WorkingDirectory=/opt/liquidation-watchdog/releases/phase5-candidate
+EnvironmentFile=-/etc/liquidation-watchdog/notifications.env
+ExecStartPre=/opt/node-v24.14.1/bin/node dist/cli.js config-check --config /etc/liquidation-watchdog/monitoring.json
+ExecStart=/opt/node-v24.14.1/bin/node dist/cli.js monitor --config /etc/liquidation-watchdog/monitoring.json --risk-config /etc/liquidation-watchdog/risk.json
+KillSignal=SIGTERM
+KillMode=mixed
+TimeoutStopSec=45
+Restart=on-failure
+RestartSec=30
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+ReadWritePaths=/var/lib/liquidation-watchdog
+MemoryHigh=640M
+MemoryMax=768M
+CPUQuota=100%
+TasksMax=64
+LimitNOFILE=1024
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=liquidation-watchdog
+
+[Install]
+WantedBy=multi-user.target

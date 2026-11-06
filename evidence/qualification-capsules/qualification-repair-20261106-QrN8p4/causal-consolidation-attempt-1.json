@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "FAIL_DOCUMENTARY_HELPER_NOT_TEST_QUALIFICATION",
+  "recordedAt": "2026-11-06T01:00:29.457Z",
+  "failedInvocationTimestamp": "NOT_CAPTURED",
+  "exitCode": 1,
+  "node": "v24.14.1",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\consolidate-causality.mjs"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "generatedCausalAnalysis": false,
+  "error": {
+    "name": "TypeError",
+    "message": "Cannot read properties of undefined (reading 'sha256')",
+    "location": "consolidate-causality.mjs:35:46"
+  },
+  "toolCapsule": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\causal-consolidation-attempt-1-tool.mjs",
+  "toolSha256": "0584611b9cd312ef08fc26b5718e83ac034a378c0e4216d3a17f16b1d114df52",
+  "cause": "Earlier diagnostic summaries did not capture tooling.testSource. Consolidation must preserve missing capsule provenance as null, not assume a later schema or manufacture a hash.",
+  "noTestApplicationGuardOrHistoricalEvidenceChanged": true,
+  "originalFullSuiteAndAllControlsRetained": true
+}

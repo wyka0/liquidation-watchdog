@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "manifestSha256": "dce606fef369e11ec80b7571d49754f4a79fd35169ec28f493b9627651d6a0f9",
+  "schemaVersion": 5,
+  "databaseSha256": "8d08c167d9d2823bb720ba62e0a1717a84183aa4dbdcea6d0f3372c52b0886ec",
+  "counts": {
+    "schema_migrations": 5,
+    "streams": 1,
+    "cycles": 2,
+    "fingerprints": 3,
+    "alerts": 3,
+    "deliveries": 3,
+    "delivery_attempts": 3,
+    "delivery_events": 9,
+    "provider_limits": 0,
+    "oracle_assurance": 2,
+    "worker_runtime": 1,
+    "operational_events": 0
+  },
+  "evidenceBundles": 2,
+  "evidenceFiles": 46,
+  "reviewedReferences": 6,
+  "actionable": false
+}

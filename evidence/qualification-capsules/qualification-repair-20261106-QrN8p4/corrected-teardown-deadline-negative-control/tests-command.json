@@ -1,0 +1,37 @@
+{
+  "label": "tests",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "test/runtime-process.test.ts",
+    "-t",
+    "fences a second process",
+    "--config",
+    "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\deadline-control.config.mjs",
+    "--configLoader=native",
+    "--no-cache",
+    "--no-fsModuleCache",
+    "--reporter=default",
+    "--reporter=json",
+    "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\tests.json"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "pid": 1120,
+  "startedAt": "2026-11-06T00:45:21.194Z",
+  "completedAt": "2026-11-06T00:46:06.444Z",
+  "durationMs": 45246.5847,
+  "exitCode": 1,
+  "signal": null,
+  "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+  "stdout": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\tests.stdout.txt",
+    "bytes": 847,
+    "sha256": "7a5580bf64e78edc11c794be906ff46a62cad0036692fe77c94ad545df6789ba"
+  },
+  "stderr": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\tests.stderr.txt",
+    "bytes": 1154,
+    "sha256": "df0cf85c2c7d643850f12b40e89deb6f34b43bc2ae87a9c2d5d30470ff6ccf8c"
+  }
+}

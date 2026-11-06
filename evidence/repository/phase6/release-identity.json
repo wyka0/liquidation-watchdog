@@ -1,0 +1,34 @@
+{
+ "recordedAtUtc": "2026-11-02T09:56:13.684Z",
+ "manifestKind": "LOCAL_PHASE5_RELEASE_CANDIDATE",
+ "applicationVersion": "0.1.0",
+ "packageVersion": "0.1.0",
+ "recordedManifestSha256": "20064f02071ef019855c1386e0713cb2c548efd1d7656bd1f6f6ecafdee2f795",
+ "recomputedManifestSha256": "20064f02071ef019855c1386e0713cb2c548efd1d7656bd1f6f6ecafdee2f795",
+ "manifestDigestMatch": true,
+ "git": {
+  "revision": null,
+  "status": "UNAVAILABLE_NO_VERIFIED_HEAD",
+  "workingCopy": "LOCAL_UNCOMMITTED"
+ },
+ "verifiedRuntime": {
+  "node": "v24.14.1",
+  "sqlite": "3.51.2"
+ },
+ "schemaVersion": 5,
+ "migrationChecksumCount": 5,
+ "boundEvidenceFiles": 253,
+ "requiredDocuments": 10,
+ "productionApproval": false,
+ "actionable": false,
+ "oracleAssurance": "UNVERIFIED",
+ "freshness": "UNKNOWN",
+ "releaseCheckAtPhase6Start": "npm run release:check => PASS (2026-11-02, before Phase 6 testing)",
+ "note": "Intended deployment host not specified; release identity binding is host-independent.",
+ "phase6CloseBinding": {
+  "finalManifestSha256AfterPhase6Docs": "90b07ad905768b76ef7a49b78dfd348b3396c0792dcf6bd293c05cc86ac8895f",
+  "finalBoundEvidenceFiles": 368,
+  "finalReleaseCheck": "npm run release:check => PASS (2026-11-02 after Phase 6 documentation and evidence)",
+  "note": "The original recorded digest belongs to the Phase 5 pre-Phase-6 manifest binding; the final digest includes Phase 6 documents/evidence added by the documented finalize/manifest procedure."
+ }
+}

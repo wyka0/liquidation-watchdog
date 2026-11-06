@@ -1,0 +1,10 @@
+# DRAFT-UNAPPROVED-NOT-DEPLOYED — never deploy without separate A6 approval.
+# WATCHDOG_SCHEDULER_URL is a non-secret text binding configured manually.
+# WATCHDOG_SCHEDULER_SECRET is added only with Worker secret storage; never put it here.
+name = "liquidation-watchdog-monitor-scheduler-draft"
+main = "src/worker.ts"
+compatibility_date = "2026-11-04"
+workers_dev = false
+
+[triggers]
+crons = ["*/5 * * * *"]

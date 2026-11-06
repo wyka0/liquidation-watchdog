@@ -1,0 +1,30 @@
+{
+  "label": "lint",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/eslint/bin/eslint.js",
+    "src",
+    "test",
+    "scripts",
+    "*.config.*",
+    "--no-cache"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "pid": 14408,
+  "startedAt": "2026-11-06T00:29:08.514Z",
+  "completedAt": "2026-11-06T00:29:24.774Z",
+  "durationMs": 16260.273400000002,
+  "exitCode": 0,
+  "signal": null,
+  "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+  "stdout": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\lint.stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\lint.stderr.txt",
+    "bytes": 169,
+    "sha256": "b2706e6db91e59914684b3672ddd702e1bef893b16c1c653d7428f5087c40169"
+  }
+}

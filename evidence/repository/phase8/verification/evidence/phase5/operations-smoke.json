@@ -1,0 +1,215 @@
+{
+  "evidenceKind": "BOUNDED_OPERATIONAL_CLI_WITH_EXPLICIT_READ_ONLY_PROBE",
+  "recordedAt": "2026-11-02T14:54:50.983Z",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "config-check",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\production.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "outputFile": "operations-smoke-config.json",
+      "errorFile": "operations-smoke-config-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "health",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\production.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "outputFile": "operations-smoke-missing-health.json",
+      "errorFile": "operations-smoke-missing-health-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "readiness",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\production.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "outputFile": "operations-smoke-missing-readiness.json",
+      "errorFile": "operations-smoke-missing-readiness-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "database-init",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\production.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "outputFile": "operations-smoke-init.json",
+      "errorFile": "operations-smoke-init-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "health",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\production.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "outputFile": "operations-smoke-healthy-empty.json",
+      "errorFile": "operations-smoke-healthy-empty-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "readiness",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\production.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "outputFile": "operations-smoke-uninitialized-readiness.json",
+      "errorFile": "operations-smoke-uninitialized-readiness-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "readiness",
+        "--probe",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\production.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "outputFile": "operations-smoke-probe.json",
+      "errorFile": "operations-smoke-probe-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "diagnostics",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\production.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "outputFile": "operations-smoke-diagnostics.json",
+      "errorFile": "operations-smoke-diagnostics-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "config-check",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\invalid.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "outputFile": "operations-smoke-invalid-config.json",
+      "errorFile": "operations-smoke-invalid-config-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "database-init",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\invalid.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "outputFile": "operations-smoke-invalid-init.json",
+      "errorFile": "operations-smoke-invalid-init-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "readiness",
+        "--database",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-monitor-smoke-abb3270c-962b-4e12-ac5d-3dca5f7ba84e\\watchdog.sqlite"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "outputFile": "operations-smoke-as-of-readiness.json",
+      "errorFile": "operations-smoke-as-of-readiness-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "backup",
+        "--database",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-monitor-smoke-abb3270c-962b-4e12-ac5d-3dca5f7ba84e\\watchdog.sqlite",
+        "--output",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\verified-backup"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "outputFile": "operations-smoke-backup.json",
+      "errorFile": "operations-smoke-backup-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "backup-verify",
+        "--backup",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\verified-backup"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "outputFile": "operations-smoke-backup-check.json",
+      "errorFile": "operations-smoke-backup-check-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "restore-verify",
+        "--backup",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\verified-backup",
+        "--restore-root",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\scratch"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "outputFile": "operations-smoke-restore-check.json",
+      "errorFile": "operations-smoke-restore-check-stderr.txt"
+    },
+    {
+      "command": [
+        "node",
+        "dist/cli.js",
+        "backup",
+        "--database",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-monitor-smoke-abb3270c-962b-4e12-ac5d-3dca5f7ba84e\\watchdog.sqlite",
+        "--output",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-verification-B1B2r7\\data\\phase5-operations-smoke-13de1c79-f5c5-4cfb-a43f-474fe6403148\\verified-backup"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "outputFile": "operations-smoke-exclusive-backup.json",
+      "errorFile": "operations-smoke-exclusive-backup-stderr.txt"
+    }
+  ],
+  "commandCount": 15,
+  "realExternalNotifications": 0,
+  "transactions": 0,
+  "continuousMonitoring": false,
+  "productionReleaseReady": false,
+  "actionable": false
+}

@@ -1,0 +1,7 @@
+
+> liquidation-watchdog@0.1.0 test:stability
+> tsx scripts/phase5-stability.ts
+
+(node:12980) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Bounded stability: PASS; 144/144 cycles, 2 restarts, 15496ms real time; 0 external calls.

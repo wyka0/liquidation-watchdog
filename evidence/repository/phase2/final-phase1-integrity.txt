@@ -1,0 +1,5 @@
+
+> liquidation-watchdog@0.1.0 evidence:check-phase1
+> tsx scripts/phase1-integrity.ts --check
+
+Phase 1 evidence preservation: PASS; 54/54 byte-for-byte unchanged.

@@ -1,0 +1,18 @@
+{
+  "subjectAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+  "subjectChainId": 1672,
+  "url": "https://docs.reservoir.xyz/products/savings-srusd-and-wsrusd.md",
+  "block": null,
+  "independentComparatorEligible": false,
+  "classification": "RESEARCH_NOT_QUALIFIED_PRICE_EVIDENCE",
+  "retrievedAt": "2026-11-01T17:30:37.868Z",
+  "status": 200,
+  "responseSha256": "f2263323aeba5917bd6ff63764f10d1e222e9a19156510c1b4630538631e5866",
+  "retainedText": "> For the complete documentation index, see [llms.txt](https://docs.reservoir.xyz/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.reservoir.xyz/products/savings-srusd-and-wsrusd.md).\n\n# Savings - srUSD & wsrUSD\n\nReservoir's yield bearing token, **srUSD & wsrUSD** are available to non-U.S. users and users in non-sanctioned countries. **srUSD** accrues interest daily and users can mint and/or redeem at any time. **wsrUSD** accrues interest each block and users can mint and/or redeem at any time. The interest rate for **srUSD** and **wsrUSD** will be the same and will be actively maintained by governance and set based on the state of the protocol balance sheet.\n\nKey features:\n\n* Reservoir’s yield bearing token minted via rUSD\n* Liquid savings product with no lock-up​&#x20;\n* Redemptions will be fulfilled immediately when the PSM has available liquidity\n* srUSD carries a micro burn fee that represents one day's worth of interest on the principal position\n* wsrUSD carries no fees\n",
+  "exactRelevantRows": [],
+  "transformation": "Public document retained in full within byte bound; URL userinfo, queries and fragments removed. Original response SHA-256 retained.",
+  "unresolved": [
+    "No exact temporally aligned collateral/loan quote with proved independent operator and upstream is adopted.",
+    "Issuer redemption rates, API display prices and differently denominated cross-chain feeds require separate qualification."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "label": "tests",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "test/runtime-process.test.ts",
+    "-t",
+    "fences a second process",
+    "--configLoader=native",
+    "--no-cache",
+    "--no-fsModuleCache",
+    "--reporter=default",
+    "--reporter=json",
+    "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\tests.json"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "pid": 13368,
+  "startedAt": "2026-11-06T00:32:09.938Z",
+  "completedAt": "2026-11-06T00:32:25.423Z",
+  "durationMs": 15482.686399999999,
+  "exitCode": 0,
+  "signal": null,
+  "guardSha256": "486a717e1742b81f647c3df4e737ede4b73fdd3d6f72cc91d6e65a4c0010c846",
+  "stdout": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\tests.stdout.txt",
+    "bytes": 553,
+    "sha256": "f5d056c9a00679c8be00b53b1f81fd0d77372a57683d6a4cbddac6621b3ffad3"
+  },
+  "stderr": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\tests.stderr.txt",
+    "bytes": 337,
+    "sha256": "c65a01f7d38096091f3e88f884594d57078b77b77edb5fd77f659e68c40e6e5e"
+  }
+}

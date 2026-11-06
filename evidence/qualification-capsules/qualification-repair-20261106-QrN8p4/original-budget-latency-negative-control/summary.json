@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "name": "original-budget-latency-negative-control",
+  "mode": "latency-independent",
+  "status": "FAIL",
+  "completedAt": "2026-11-06T00:34:48.901Z",
+  "results": [
+    {
+      "label": "tests",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/runtime-process.test.ts",
+        "-t",
+        "fences a second process",
+        "--configLoader=native",
+        "--no-cache",
+        "--no-fsModuleCache",
+        "--reporter=default",
+        "--reporter=json",
+        "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\tests.json"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 12876,
+      "startedAt": "2026-11-06T00:34:03.569Z",
+      "completedAt": "2026-11-06T00:34:47.987Z",
+      "durationMs": 44415.64,
+      "exitCode": 1,
+      "signal": null,
+      "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\tests.stdout.txt",
+        "bytes": 843,
+        "sha256": "a43ab32de90b5b98e622e08444e68eb13be11d89c459e48f0b43919571f2ca49"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\tests.stderr.txt",
+        "bytes": 2282,
+        "sha256": "914729fac781d419e1134e39cad2bd411831915197d324496ee3037a23b9aa8a"
+      }
+    }
+  ],
+  "evidenceClass": "EXPLICIT_DIAGNOSTIC_CONTROL_NOT_QUALIFICATION",
+  "tooling": {
+    "diagnostics": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\diagnostic-preloader-used.cjs",
+      "bytes": 6150,
+      "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    "runner": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\test-runner-used.mjs",
+      "bytes": 9938,
+      "sha256": "f753a75364839640739fe835ebdc130169be971eb272816b4971d5c9e627c5e8"
+    },
+    "testSource": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\runtime-process-test-used.ts",
+      "bytes": 4776,
+      "sha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846"
+    },
+    "runtimeHelper": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\runtime-helper-used.ts",
+      "bytes": 2335,
+      "sha256": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    },
+    "boundedLatencyControl": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\latency-preloader-used.cjs",
+      "bytes": 1465,
+      "sha256": "9b255b87037b338dc8a8bd7875eeecd3dae7f1fb5a772906e5c6b241a2d75910"
+    }
+  },
+  "tests": {
+    "success": false,
+    "files": 1,
+    "total": 4,
+    "passed": 0,
+    "failed": 1,
+    "pending": 3,
+    "todo": 0,
+    "assertions": [
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "failed",
+        "durationMs": 40228.678400000004,
+        "failureMessages": [
+          "Error: Test timed out in 40000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:47:3\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+          "Error: EPERM, Permission denied: \\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia '\\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia'\n    at rmSync (node:fs:1221:18)\n    at fs.rmSync ([REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\process-diagnostics.cjs:60:32)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:11:66\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1632:35\n    at wrapper (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2019:37)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3318:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3276:10)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3602:52\n    at run (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1352:20)"
+        ]
+      }
+    ]
+  },
+  "networkGuard": {
+    "version": "v2",
+    "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "records": 4,
+    "blockedRecords": 0,
+    "blockedLocalIPC": 0,
+    "demonstratedRemoteAttempts": 0,
+    "allowedLocalNamedPipes": 4,
+    "caveat": null
+  },
+  "cleanup": {
+    "remainingFixtureDirectories": [
+      "watchdog-phase3-fixture-6YWCia"
+    ],
+    "removalAttempts": 1,
+    "removalErrors": [
+      {
+        "at": "2026-11-06T00:34:47.760Z",
+        "hrNs": "37136444707200",
+        "pid": 3884,
+        "ppid": 12876,
+        "sequence": 48,
+        "event": "fixture_remove_error",
+        "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia",
+        "code": "EPERM",
+        "message": "EPERM, Permission denied: \\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia '\\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia'",
+        "handles": {
+          "Pipe": 2,
+          "Socket": 4,
+          "ChildProcess": 1
+        }
+      }
+    ],
+    "pathsStillExist": [
+      "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia"
+    ],
+    "children": [
+      {
+        "pid": 13028,
+        "exited": true,
+        "closed": true,
+        "disconnected": true
+      },
+      {
+        "pid": 15676,
+        "exited": false,
+        "closed": false,
+        "disconnected": false
+      }
+    ],
+    "relevantFixtureProcessesAfterRun": [],
+    "noObservedOrphanProcesses": true
+  },
+  "logs": {
+    "network": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\network-guard.jsonl",
+      "bytes": 1340,
+      "sha256": "d2cccdff3567556b160019ccd7be51d2d5affd58e3216a449c2094864d7e6ae9"
+    },
+    "lifecycle": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\process-lifecycle.jsonl",
+      "bytes": 33646,
+      "sha256": "e2a64b818a86c1458edba66dfd5d87c332b5de16b012952962515b4064d7ba55"
+    }
+  },
+  "safety": {
+    "realMonitorStopped": true,
+    "syntheticRuntimeFixturesOnly": true,
+    "externalNotifications": false,
+    "transactionsOrWalletOperations": false,
+    "noIntegrationTests": true,
+    "timeoutsOrAssertionsChangedByDiagnosticPreloader": false,
+    "readinessMessagesIntentionallyDelayedForControl": true,
+    "externalOutputsAndTemporaryFilesOnly": true
+  }
+}

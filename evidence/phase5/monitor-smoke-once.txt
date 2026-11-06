@@ -1,0 +1,59 @@
+{"timestamp":"2026-11-02T10:22:08.931Z","event":"startup_validated"}
+{"timestamp":"2026-11-02T10:22:08.990Z","event":"restart_recovery"}
+{"timestamp":"2026-11-02T10:22:09.037Z","event":"cycle_started","cycleId":"8f888eb3-06fb-4027-a71e-fe274aacd1f2"}
+(node:8412) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"timestamp":"2026-11-02T10:23:12.360Z","event":"cycle_observed","cycleId":"8f888eb3-06fb-4027-a71e-fe274aacd1f2","blockNumber":"21924130","blockHash":"0xb91a7ff32f157fe3f7257ed6b88307c5aaa9608ef546336a076007186b47bf80","accepted":true,"mathematicalRiskState":"WARNING","dataQuality":"UNVERIFIED","oracleQuality":"UNVERIFIED","diagnostics":["ORACLE_UNVERIFIED","ORACLE_FRESHNESS_UNKNOWN"]}
+{"timestamp":"2026-11-02T10:23:12.360Z","event":"alert_created","cycleId":"8f888eb3-06fb-4027-a71e-fe274aacd1f2","alertId":"alert_78acf189664f209fe55ab81c86bd9a50111682facdf95d5a31f8a6efc9e0f3c8"}
+{"timestamp":"2026-11-02T10:23:12.360Z","event":"alert_created","cycleId":"8f888eb3-06fb-4027-a71e-fe274aacd1f2","alertId":"alert_5eb0bbbbbb0a4eb328c7f78d8db413ec748451f80604a840ce766beae0b22b4f"}
+{"timestamp":"2026-11-02T10:23:12.360Z","event":"alert_created","cycleId":"8f888eb3-06fb-4027-a71e-fe274aacd1f2","alertId":"alert_d21fed996bf8b5d6623028ab059913d04fec99afb1f97cc5bb1dc0b88596580d"}
+[2026-11-02T10:23:12.360Z] WARNING | alert_78acf189664f209fe55ab81c86bd9a50111682facdf95d5a31f8a6efc9e0f3c8
+Position: 0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+State: UNKNOWN -> WARNING
+Safety ratio: 1.171988368502120772
+Data quality: UNKNOWN -> UNVERIFIED; effective state: DATA_UNVERIFIED
+Oracle data: UNVERIFIED; oracle verification: UNVERIFIED; heartbeat: UNKNOWN
+Actionability: false (INDICATIVE_ONLY)
+Snapshot: block 21924130; hash 0xb91a7ff32f157fe3f7257ed6b88307c5aaa9608ef546336a076007186b47bf80
+Snapshot ID: sha256:66a0a6b81ca4c7ee081e996c5dd61879797e666cb18c82a29856faddf03c73ce; context: LIVE_AS_OF_BLOCK
+Reason: Initial indicative mathematical assessment at the identified block.
+Oracle assurance: UNVERIFIED; freshness: UNKNOWN; evidence invalidated: false.
+Indicative repayment: 17079.348965 (token 0xC879C018dB60520F4355C26eD1a6D572cdAC1815); target 1.25; actionable: false.
+Indicative additional collateral: 21089.879512058320334306 (token 0x4809010926aec940b550D34a46A52739f996D75D); target 1.25; actionable: false.
+Recovery estimates are snapshot-bound, indicative and non-actionable. RPC/MCP share an upstream; agreement is not independent consensus.
+{"timestamp":"2026-11-02T10:23:12.840Z","event":"notification_delivery","alertId":"alert_78acf189664f209fe55ab81c86bd9a50111682facdf95d5a31f8a6efc9e0f3c8","channel":"console","deliveryStatus":"DELIVERED"}
+[2026-11-02T10:23:12.360Z] WARNING | alert_5eb0bbbbbb0a4eb328c7f78d8db413ec748451f80604a840ce766beae0b22b4f
+Position: 0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+State: UNKNOWN -> WARNING
+Safety ratio: 1.171988368502120772
+Data quality: UNKNOWN -> UNVERIFIED; effective state: DATA_UNVERIFIED
+Oracle data: UNVERIFIED; oracle verification: UNVERIFIED; heartbeat: UNKNOWN
+Actionability: false (INDICATIVE_ONLY)
+Snapshot: block 21924130; hash 0xb91a7ff32f157fe3f7257ed6b88307c5aaa9608ef546336a076007186b47bf80
+Snapshot ID: sha256:66a0a6b81ca4c7ee081e996c5dd61879797e666cb18c82a29856faddf03c73ce; context: LIVE_AS_OF_BLOCK
+Reason: Effective data quality changed independently of mathematical risk.
+Oracle assurance: UNVERIFIED; freshness: UNKNOWN; evidence invalidated: false.
+Indicative repayment: 17079.348965 (token 0xC879C018dB60520F4355C26eD1a6D572cdAC1815); target 1.25; actionable: false.
+Indicative additional collateral: 21089.879512058320334306 (token 0x4809010926aec940b550D34a46A52739f996D75D); target 1.25; actionable: false.
+Recovery estimates are snapshot-bound, indicative and non-actionable. RPC/MCP share an upstream; agreement is not independent consensus.
+{"timestamp":"2026-11-02T10:23:12.860Z","event":"notification_delivery","alertId":"alert_5eb0bbbbbb0a4eb328c7f78d8db413ec748451f80604a840ce766beae0b22b4f","channel":"console","deliveryStatus":"DELIVERED"}
+[2026-11-02T10:23:12.360Z] WARNING | alert_d21fed996bf8b5d6623028ab059913d04fec99afb1f97cc5bb1dc0b88596580d
+Position: 0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+State: UNKNOWN -> WARNING
+Safety ratio: 1.171988368502120772
+Data quality: UNKNOWN -> UNVERIFIED; effective state: DATA_UNVERIFIED
+Oracle data: UNVERIFIED; oracle verification: UNVERIFIED; heartbeat: UNKNOWN
+Actionability: false (INDICATIVE_ONLY)
+Snapshot: block 21924130; hash 0xb91a7ff32f157fe3f7257ed6b88307c5aaa9608ef546336a076007186b47bf80
+Snapshot ID: sha256:66a0a6b81ca4c7ee081e996c5dd61879797e666cb18c82a29856faddf03c73ce; context: LIVE_AS_OF_BLOCK
+Reason: Oracle data quality changed; successful reads do not verify its economic source or heartbeat.
+Oracle assurance: UNVERIFIED; freshness: UNKNOWN; evidence invalidated: false.
+Indicative repayment: 17079.348965 (token 0xC879C018dB60520F4355C26eD1a6D572cdAC1815); target 1.25; actionable: false.
+Indicative additional collateral: 21089.879512058320334306 (token 0x4809010926aec940b550D34a46A52739f996D75D); target 1.25; actionable: false.
+Recovery estimates are snapshot-bound, indicative and non-actionable. RPC/MCP share an upstream; agreement is not independent consensus.
+{"timestamp":"2026-11-02T10:23:12.874Z","event":"notification_delivery","alertId":"alert_d21fed996bf8b5d6623028ab059913d04fec99afb1f97cc5bb1dc0b88596580d","channel":"console","deliveryStatus":"DELIVERED"}
+{"timestamp":"2026-11-02T10:23:12.878Z","event":"cycle_completed","cycleId":"8f888eb3-06fb-4027-a71e-fe274aacd1f2","durationMs":63841,"accepted":true}
+{"timestamp":"2026-11-02T10:23:12.910Z","event":"shutdown"}

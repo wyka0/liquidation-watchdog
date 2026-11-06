@@ -1,0 +1,55 @@
+
+> liquidation-watchdog@0.1.0 test:operations
+> vitest run test/operations-config.test.ts test/operations-storage.test.ts test/operations-lifecycle.test.ts test/operations-transports.test.ts --reporter=default --reporter=json --outputFile.json=evidence/phase5/operations-tests.json
+
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+(node:18184) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7960) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/operations-storage.test.ts (27 tests) 15037ms
+   ✓ FIXTURE: storage durability, ownership, migration and capacity faults (18)
+     ✓ rolls back all migration steps after an injected mid-migration I/O failure 618ms
+     ✓ does not migrate legacy storage during read-only inspection 644ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE extra(value TEXT) 720ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX unreviewed ON cycles(status) 768ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER unreviewed AFTER INSERT ON cycles BEGIN SELECT 1; END 766ms
+     ✓ rejects schema-layout drift before state changes: DROP INDEX deliveries_alert_id 728ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE sqliteextra(value TEXT) 768ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX sqliteindex ON cycles(status) 729ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER sqlitetrigger AFTER INSERT ON cycles BEGIN SELECT 1; END 631ms
+     ✓ rolls back a real SQLITE_FULL page-limit failure without partial observation/outbox writes 351ms
+   ✓ FIXTURE: consistent SQLite backups and isolated restoration (9)
+     ✓ captures a live WAL database, all bound evidence and known-delivered/in-flight work while another connection writes 4005ms
+     ✓ restores schema 2 in isolation, migrates forward and preserves terminal/pending/cooldown history 680ms
+     ✓ restores schema 4 in isolation, migrates forward and preserves terminal/pending/cooldown history 609ms
+(node:13488) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/operations-lifecycle.test.ts (10 tests) 18952ms
+   ✓ FIXTURE: bounded lifecycle and late continuation safety (6)
+     ✓ settles an active delivery on graceful shutdown, starts no new send and closes exactly once 309ms
+     ✓ wires CLI signal cleanup through the same settling service 336ms
+   ✓ FIXTURE: actual child-process ownership and termination (4)
+     ✓ settles an idle worker via SIGINT handlers (Windows: explicit handler simulation) 3841ms
+     ✓ settles an idle worker via SIGTERM handlers (Windows: explicit handler simulation) 4366ms
+     ✓ settles an active child read through shutdown and releases its OS ownership lock 4645ms
+     ✓ recovers after actual forced OS termination, preserves known-delivered alerts and retries only ambiguous/pending work 4679ms
+ ✓ test/operations-config.test.ts (35 tests) 4705ms
+   ✓ FIXTURE: production configuration, redaction and local path boundaries (22)
+     ✓ rejects every missing fixed deployment field and chain/endpoint substitution 633ms
+   ✓ FIXTURE: local operational health/readiness and CLI inspection (13)
+     ✓ reports a valid empty database as healthy but uninitialized and unready 914ms
+     ✓ keeps fixture observations unready even when a mocked probe reports both providers reachable 351ms
+     ✓ separates RUNNING worker/chain operational status from financial safety 301ms
+ ✓ test/operations-transports.test.ts (27 tests) 3142ms
+   ✓ FIXTURE: bounded streaming reads and endpoint isolation (17)
+     ✓ uses exactly three same-endpoint read attempts after 5xx exhaustion and retains no partial result 2679ms
+
+ Test Files  4 passed (4)
+      Tests  99 passed (99)
+   Start at  14:25:19
+   Duration  27.45s (tests 82%, import 17%, transform 1%)
+
+JSON report written to C:/liquidation-watchdog/evidence/phase5/operations-tests.json

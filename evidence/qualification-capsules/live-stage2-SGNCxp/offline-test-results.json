@@ -1,0 +1,161 @@
+{
+  "status": "FAIL",
+  "completedAt": "2026-11-05T23:58:24.861Z",
+  "checks": [
+    {
+      "name": "unit-tests",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "--configLoader=native",
+        "--no-cache",
+        "--no-fsModuleCache",
+        "--reporter=default",
+        "--reporter=json",
+        "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tests.json"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "startedAt": "2026-11-05T23:49:31.565Z",
+      "completedAt": "2026-11-05T23:58:24.821Z",
+      "exitCode": 1,
+      "signal": null,
+      "stdout": {
+        "file": "unit-tests.stdout.txt",
+        "bytes": 23611,
+        "sha256": "eaea77f020dc0015f3ee3072802b985ddfeefaf4e3d75ab9000ab3a915a94d4c"
+      },
+      "stderr": {
+        "file": "unit-tests.stderr.txt",
+        "bytes": 5584,
+        "sha256": "a5d68e3eb1d618a05132e177a25c372ee2f7b3ac6ef21c49b8a703287c1c34d8"
+      },
+      "safeguards": {
+        "noCache": true,
+        "externalOutputsOnly": true,
+        "network": "LOOPBACK_FIXTURES_ONLY",
+        "temporaryDirectory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp",
+        "noIntegrationTests": true
+      }
+    },
+    {
+      "name": "typecheck",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "startedAt": "2026-11-05T23:49:31.638Z",
+      "completedAt": "2026-11-05T23:51:28.620Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "typecheck.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "typecheck.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "safeguards": {
+        "noCache": true,
+        "externalOutputsOnly": true,
+        "network": "LOOPBACK_FIXTURES_ONLY",
+        "temporaryDirectory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp",
+        "noIntegrationTests": true
+      }
+    },
+    {
+      "name": "lint",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/eslint/bin/eslint.js",
+        "src",
+        "test",
+        "scripts",
+        "*.config.*",
+        "--no-cache"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "startedAt": "2026-11-05T23:49:31.669Z",
+      "completedAt": "2026-11-05T23:50:46.021Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "lint.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "lint.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "safeguards": {
+        "noCache": true,
+        "externalOutputsOnly": true,
+        "network": "LOOPBACK_FIXTURES_ONLY",
+        "temporaryDirectory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp",
+        "noIntegrationTests": true
+      }
+    },
+    {
+      "name": "build",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "-p",
+        "tsconfig.build.json",
+        "--outDir",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\build"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "startedAt": "2026-11-05T23:49:31.705Z",
+      "completedAt": "2026-11-05T23:51:17.854Z",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": {
+        "file": "build.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "build.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "safeguards": {
+        "noCache": true,
+        "externalOutputsOnly": true,
+        "network": "LOOPBACK_FIXTURES_ONLY",
+        "temporaryDirectory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp",
+        "noIntegrationTests": true
+      }
+    }
+  ],
+  "unit": {
+    "files": 49,
+    "total": 1007,
+    "passed": 1006,
+    "failed": 1,
+    "pending": 0,
+    "todo": 0
+  },
+  "networkGuard": {
+    "records": 556,
+    "actualExternalAttempts": 18,
+    "remoteNetworkPermitted": false,
+    "loopbackFixtureTrafficPermitted": true
+  },
+  "notRun": [
+    "Native PostgreSQL integration",
+    "Live integration suites",
+    "Neon qualification",
+    "Deployment",
+    "Scheduler activation"
+  ],
+  "evidenceClass": "UNIT_FIXTURES_MOCKS_AND_LOCAL_LOOPBACK_ONLY_NOT_LIVE_CHAIN_EVIDENCE"
+}

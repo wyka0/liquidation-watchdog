@@ -1,0 +1,12 @@
+{
+  "command": "node --import tsx [REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-evidence.mjs collect",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T15:05:38.838Z",
+  "finishedAt": "2026-11-02T15:05:43.948Z",
+  "durationMs": 5104,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "{\n  \"passed\": true,\n  \"copiedEvidenceFiles\": 173,\n  \"sourceFiles\": 180,\n  \"buildFiles\": 258,\n  \"sourceSha256\": \"e9c758240dcfcd06e7691e51a8bb48194e5f7f38cd616ec3ec547c9c7fff3004\",\n  \"buildSha256\": \"84830d46176759e16458ce285adc310cd49c3810321724c017e3a5a214f3072b\",\n  \"tests\": {\n    \"unit\": {\n      \"total\": 709,\n      \"passed\": 709,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"todo\": 0,\n      \"files\": 34\n    },\n    \"phase8Runtime\": [\n      {\n        \"file\": \"runtime-http.test.ts\",\n        \"passed\": 10,\n        \"failed\": 0,\n        \"tests\": 10\n      },\n      {\n        \"file\": \"runtime-lifecycle.test.ts\",\n        \"passed\": 14,\n        \"failed\": 0,\n        \"tests\": 14\n      },\n      {\n        \"file\": \"runtime-process.test.ts\",\n        \"passed\": 4,\n        \"failed\": 0,\n        \"tests\": 4\n      },\n      {\n        \"file\": \"runtime-read-model.test.ts\",\n        \"passed\": 6,\n        \"failed\": 0,\n        \"tests\": 6\n      },\n      {\n        \"file\": \"runtime-storage.test.ts\",\n        \"passed\": 13,\n        \"failed\": 0,\n        \"tests\": 13\n      }\n    ],\n    \"operations\": {\n      \"total\": 99,\n      \"passed\": 99,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"todo\": 0,\n      \"files\": 4\n    },\n    \"integration\": {\n      \"total\": 2,\n      \"passed\": 2,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"todo\": 0,\n      \"files\": 1\n    }\n  }\n}\n",
+  "stderr": ""
+}

@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "name": "unmodified-independent-v2",
+  "mode": "independent",
+  "status": "PASS",
+  "completedAt": "2026-11-06T00:27:34.435Z",
+  "results": [
+    {
+      "label": "tests",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/runtime-process.test.ts",
+        "-t",
+        "fences a second process",
+        "--configLoader=native",
+        "--no-cache",
+        "--no-fsModuleCache",
+        "--reporter=default",
+        "--reporter=json",
+        "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\tests.json"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 7912,
+      "startedAt": "2026-11-06T00:27:17.642Z",
+      "completedAt": "2026-11-06T00:27:33.808Z",
+      "durationMs": 16162.603299999999,
+      "exitCode": 0,
+      "signal": null,
+      "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\tests.stdout.txt",
+        "bytes": 556,
+        "sha256": "1e973689a6e52aa8b3baccad03902ef16231362f7ddf9d53f4f8a1393da06053"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\tests.stderr.txt",
+        "bytes": 337,
+        "sha256": "6854b417b3380eec9758ed6000f542b2c4fbf25aabb91a05236a44574889f105"
+      }
+    }
+  ],
+  "tests": {
+    "success": true,
+    "files": 1,
+    "total": 4,
+    "passed": 1,
+    "failed": 0,
+    "pending": 3,
+    "todo": 0,
+    "assertions": [
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "passed",
+        "durationMs": 11553.098100000001,
+        "failureMessages": []
+      }
+    ]
+  },
+  "networkGuard": {
+    "version": "v2",
+    "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "records": 4,
+    "blockedRecords": 0,
+    "blockedLocalIPC": 0,
+    "demonstratedRemoteAttempts": 0,
+    "allowedLocalNamedPipes": 4,
+    "caveat": null
+  },
+  "cleanup": {
+    "remainingFixtureDirectories": [],
+    "removalAttempts": 1,
+    "removalErrors": [],
+    "pathsStillExist": [],
+    "children": [
+      {
+        "pid": 13772,
+        "exited": true,
+        "closed": true,
+        "disconnected": true
+      },
+      {
+        "pid": 12388,
+        "exited": true,
+        "closed": true,
+        "disconnected": true
+      }
+    ],
+    "relevantFixtureProcessesAfterRun": [],
+    "noObservedOrphanProcesses": true
+  },
+  "logs": {
+    "network": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\network-guard.jsonl",
+      "bytes": 1284,
+      "sha256": "e6eb8dd76a4ec1e58994163997b0d293e294bc2bc178b19da942a450eb2794bb"
+    },
+    "lifecycle": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\process-lifecycle.jsonl",
+      "bytes": 54026,
+      "sha256": "5ec03e4380610134e581724e9c05baec6ea84af3cbbee9ca3a38e0e44e0b7908"
+    }
+  },
+  "safety": {
+    "realMonitorStopped": true,
+    "syntheticRuntimeFixturesOnly": true,
+    "externalNotifications": false,
+    "transactionsOrWalletOperations": false,
+    "noIntegrationTests": true,
+    "timeoutsOrAssertionsChangedByDiagnosticPreloader": false,
+    "externalOutputsAndTemporaryFilesOnly": true
+  }
+}

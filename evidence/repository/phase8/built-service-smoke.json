@@ -1,0 +1,67 @@
+{
+  "kind": "PHASE8_BOUNDED_BUILT_EXECUTABLE_SMOKE",
+  "startedAt": "2026-11-02T15:08:56.530Z",
+  "finishedAt": "2026-11-02T15:09:03.086Z",
+  "passed": true,
+  "command": "node [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-built-smoke.mjs",
+  "childEntrypoint": "dist/service.js",
+  "platform": "win32",
+  "profile": "local",
+  "cases": [
+    {
+      "name": "BUILT_EXECUTABLE_DISABLED_START_AUTH_HTTP_AND_SIGNAL_SHUTDOWN",
+      "passed": true,
+      "startupMs": 3211.4948,
+      "shutdownMs": 27.391099999999824,
+      "statuses": {
+        "health": 200,
+        "refused": 401,
+        "status": 200,
+        "missingData": 503,
+        "dashboard": 200
+      },
+      "signalMode": "TEST_PRELOAD_IPC_DISPATCH_TO_REAL_SIGTERM_HANDLER",
+      "logs": [
+        {
+          "event": "runtime_started",
+          "lifecycle": "DISABLED"
+        },
+        {
+          "event": "runtime_stopping",
+          "lifecycle": "STOPPING"
+        },
+        {
+          "event": "runtime_stopped",
+          "lifecycle": "STOPPED"
+        }
+      ]
+    },
+    {
+      "name": "BUILT_EXECUTABLE_ENABLED_MISSING_DATABASE_REFUSAL",
+      "passed": true,
+      "elapsedMs": 3115.4741,
+      "exitCode": 1,
+      "logs": [
+        {
+          "event": "runtime_failed",
+          "lifecycle": "FAILED"
+        },
+        {
+          "event": "runtime_failed",
+          "error": "RUNTIME_STARTUP_OR_SHUTDOWN"
+        }
+      ]
+    }
+  ],
+  "preloadFormatCheck": {
+    "nativeWindowsPathExitCode": 1,
+    "nodeErrorCode": "ERR_UNSUPPORTED_ESM_URL_SCHEME",
+    "resolution": "FILE_URL_FOR_ESM_PRELOAD"
+  },
+  "syntheticCredentials": "IN_MEMORY_ONLY_NOT_SAVED_OR_PRINTED",
+  "applicationDatabaseCreated": false,
+  "chainRequests": 0,
+  "externalProviderRequests": 0,
+  "transactions": 0,
+  "productionAcceptance": false
+}

@@ -1,0 +1,33 @@
+{
+  "name": "build",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/typescript/bin/tsc",
+    "-p",
+    "tsconfig.build.json",
+    "--outDir",
+    "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\build"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "startedAt": "2026-11-05T23:49:31.705Z",
+  "completedAt": "2026-11-05T23:51:17.854Z",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": {
+    "file": "build.stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "file": "build.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "safeguards": {
+    "noCache": true,
+    "externalOutputsOnly": true,
+    "network": "LOOPBACK_FIXTURES_ONLY",
+    "temporaryDirectory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp",
+    "noIntegrationTests": true
+  }
+}

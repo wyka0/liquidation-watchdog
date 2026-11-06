@@ -1,0 +1,67 @@
+{
+  "evidenceKind": "PHASE5_LOCAL_FINALIZATION",
+  "startedAt": "2026-11-02T10:39:02.269Z",
+  "finishedAt": "2026-11-02T10:40:28.955Z",
+  "passed": true,
+  "nodeVersion": "v24.14.1",
+  "sqliteVersion": "3.51.2",
+  "platform": "win32",
+  "plannedChecks": 5,
+  "results": [
+    {
+      "check": "phase5-inventory",
+      "command": "node --import tsx scripts/phase5-inventory.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T10:39:02.931Z",
+      "finishedAt": "2026-11-02T10:39:05.042Z",
+      "outputFile": "verification-runs/3a512bcc-0e50-4ad2-ab28-83561e28e187/phase5-inventory.txt"
+    },
+    {
+      "check": "documentation-links",
+      "command": "node --import tsx scripts/check-doc-links.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T10:39:05.283Z",
+      "finishedAt": "2026-11-02T10:39:06.112Z",
+      "outputFile": "verification-runs/3a512bcc-0e50-4ad2-ab28-83561e28e187/documentation-links.txt"
+    },
+    {
+      "check": "secrets-check",
+      "command": "node npm-cli.js run secrets:check",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T10:39:06.112Z",
+      "finishedAt": "2026-11-02T10:39:19.466Z",
+      "outputFile": "verification-runs/3a512bcc-0e50-4ad2-ab28-83561e28e187/secrets-check.txt"
+    },
+    {
+      "check": "project-whitespace-check",
+      "command": "node --import tsx scripts/check-whitespace.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T10:39:19.466Z",
+      "finishedAt": "2026-11-02T10:40:27.292Z",
+      "outputFile": "verification-runs/3a512bcc-0e50-4ad2-ab28-83561e28e187/project-whitespace-check.txt"
+    },
+    {
+      "check": "git-diff-check",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-02T10:40:27.292Z",
+      "finishedAt": "2026-11-02T10:40:28.361Z",
+      "outputFile": "verification-runs/3a512bcc-0e50-4ad2-ab28-83561e28e187/git-diff-check.txt"
+    }
+  ],
+  "sourceInputsUnchanged": true,
+  "documentationInputsUnchanged": true,
+  "documentationInputsSha256": "324fab8b65bad4c8bc4946b6b62c2cded033a32569454602816af1ec6ca1331e",
+  "testEvidence": {
+    "unit": "unit-tests.json (FIXTURE including local OS/SQLite faults)",
+    "operations": "operations-tests.json (repeated operational subset)",
+    "integration": "integration-tests.json (LIVE_CHAIN_READ)",
+    "stability": "stability-results.json (SYNTHETIC_TIME_FIXTURE)"
+  },
+  "gitNote": "Existing Phase 1-4 intent-to-add entries were retained. Read-only Git checks include separate no-index checks for new files. No index modification, commit, push or tag was performed.",
+  "archiveNote": "All 391 Phase 1-4 evidence files and the pre-implementation gap register are sealed. New captures are under evidence/phase5.",
+  "realExternalNotifications": 0,
+  "transactions": 0,
+  "productionMonitoringStarted": false,
+  "productionReleaseReady": false
+}

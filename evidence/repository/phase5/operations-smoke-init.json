@@ -1,0 +1,40 @@
+{
+  "initialized": true,
+  "database": {
+    "schemaVersion": 5,
+    "sqliteVersion": "3.51.2",
+    "pageSize": 4096,
+    "pageCount": 32,
+    "freePages": 0,
+    "journalMode": "wal",
+    "foreignKeys": true,
+    "connectionReadOnly": false,
+    "connectionSynchronous": 2,
+    "pendingDeliveries": 0,
+    "counts": {
+      "schema_migrations": 5,
+      "streams": 0,
+      "cycles": 0,
+      "fingerprints": 0,
+      "alerts": 0,
+      "deliveries": 0,
+      "delivery_attempts": 0,
+      "delivery_events": 0,
+      "provider_limits": 0,
+      "oracle_assurance": 0,
+      "worker_runtime": 0,
+      "operational_events": 0
+    }
+  },
+  "oracleAssurance": "UNVERIFIED",
+  "freshness": "UNKNOWN",
+  "financialActionability": false,
+  "estimates": "INDICATIVE_ONLY",
+  "productionReleaseReady": false,
+  "blockers": [
+    "ORACLE_ECONOMICS_AND_OPERATORS_UNVERIFIED",
+    "UPSTREAM_FRESHNESS_UNKNOWN",
+    "INDEPENDENT_COMPARATOR_UNQUALIFIED",
+    "PRODUCTION_HOST_ACCEPTANCE_AND_APPROVAL_REQUIRED"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "evidenceKind": "OFFLINE_PHASE4_EVIDENCE_INTEGRITY_AND_RECONSTRUCTION",
+  "checkedAt": "2026-11-01T18:33:37.343Z",
+  "passed": true,
+  "failedAt": null,
+  "bundles": [
+    {
+      "path": "evidence/phase4/collateral-proof-2026-11-01T17-28-39-523Z-2726e5be-5979-42ba-9fbb-c29342e4be09",
+      "passed": true,
+      "artifactCount": 2,
+      "manifestSha256": "c932baf8113819948c531fd51e31214ae017978d1c4e5aa8fc62615d1d289acb",
+      "disposition": "CURRENT_EVIDENCE"
+    },
+    {
+      "path": "evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15",
+      "passed": true,
+      "artifactCount": 4,
+      "manifestSha256": "9aa625a5e3896777d91762abc3a4a48ca346cbfa67aad2c5eb24525521e98a97",
+      "disposition": "CURRENT_EVIDENCE"
+    },
+    {
+      "path": "evidence/phase4/oracle-audit-2026-11-01T17-31-19-568Z-26fe152a-a99b-4c2b-8f61-8e95a73b58c8",
+      "passed": true,
+      "artifactCount": 5,
+      "manifestSha256": "48a1cf5229f4a30a5a7ef813ab233a1136c613ab73f15bbb9d899022612acd50",
+      "disposition": "SUPERSEDED_SCHEMA_AND_SNAPSHOT_SERIALIZATION"
+    },
+    {
+      "path": "evidence/phase4/oracle-audit-2026-11-01T17-47-35-687Z-5078c30b-6b3f-4325-ad6c-abae354e3d97",
+      "passed": true,
+      "artifactCount": 5,
+      "manifestSha256": "108ab27c33230e3acd2de403dca2c413a02d7d8bead7470106acb27470927488",
+      "disposition": "SUPERSEDED_SNAPSHOT_SERIALIZATION_RETAINED_FOR_OFFLINE_REPLAY"
+    },
+    {
+      "path": "evidence/phase4/oracle-audit-2026-11-01T18-32-13-912Z-d26d4dba-dd17-4135-a95f-06fac88f3121",
+      "passed": true,
+      "artifactCount": 5,
+      "manifestSha256": "9da99fa2bac844709344868c32095f42cfde2e3592322d6aa3057e5a002ec2a9",
+      "disposition": "CURRENT_EVIDENCE"
+    },
+    {
+      "path": "evidence/phase4/oracle-audit-2026-11-01T18-33-24-873Z-98cd1fc4-ca41-4c66-be4b-50a0078f2a50",
+      "passed": true,
+      "artifactCount": 5,
+      "manifestSha256": "2a986307c44acbaedf6365990b84305418602e21559e67413cd5db32ca77576b",
+      "disposition": "CURRENT_EVIDENCE"
+    },
+    {
+      "path": "evidence/phase4/oracle-research-2026-11-01T17-18-42-620Z-a3287621-5c9c-4828-b169-638ac3f62f96",
+      "passed": true,
+      "artifactCount": 16,
+      "manifestSha256": "ba4e97894abe48abf8a2c233fe7513067e8a40c743a4f637d523809834f448bf",
+      "disposition": "RETAINED_INCOMPLETE_RESEARCH"
+    },
+    {
+      "path": "evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f",
+      "passed": true,
+      "artifactCount": 34,
+      "manifestSha256": "8f435f593e1ba6d24eb287c1459eb20d944f6b27ecca6796d26e3e1abff87521",
+      "disposition": "CURRENT_EVIDENCE"
+    }
+  ],
+  "reviewedReferenceCount": 10,
+  "reproductions": [
+    {
+      "label": "oracle",
+      "address": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+      "block": {
+        "number": "21864844",
+        "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+        "timestamp": "1793553649",
+        "parentHash": "0x9a37a1c7fcd1ac848c8d7a1ab65b0637e8bf6a168dce6912bcf12bf0f5f92979"
+      },
+      "compilerVersion": "v0.8.21+commit.d9974bed",
+      "sourceCount": 9,
+      "emittedMetadataSourceCount": 9,
+      "compilerInputSha256": "f2e507ecf96ecaaa76e2efc51e519f792283fe0769004425f91b1cbbba92b975",
+      "compilerOutputSha256": "c06e4817197650664fb56bccf30f4ad1e8d06bc8fb6798e107baea19ac0d5c46",
+      "runtimeSha256": "178a10129f94627df4d95f019df5eb7875a4d1049364fe28ff69c06dd456c794",
+      "runtimeKeccak256": "0x2b4b39be4acacf49ae05c056a0debbe9bf8fff8e47c9ff6b67f101dbad34de9b",
+      "immutableBindings": 9,
+      "fullRuntimeMatch": true
+    },
+    {
+      "label": "proxy",
+      "address": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+      "block": {
+        "number": "21864844",
+        "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+        "timestamp": "1793553649",
+        "parentHash": "0x9a37a1c7fcd1ac848c8d7a1ab65b0637e8bf6a168dce6912bcf12bf0f5f92979"
+      },
+      "compilerVersion": "v0.8.26+commit.8a97fa7a",
+      "sourceCount": 10,
+      "emittedMetadataSourceCount": 10,
+      "compilerInputSha256": "b84e7479044010a6fcd5c80417d9ed0215e1d40c3bcc2949a1a47c236d43104d",
+      "compilerOutputSha256": "21ec6e06fd2d426b9862bde9b6cd4930f253932e54578fdeb12a0e6d4dba5301",
+      "runtimeSha256": "95027d40e661cafffa6a90129991f47fd63b59bd0435481f53cc5a0b2414a9fa",
+      "runtimeKeccak256": "0xace6df7e3159128786ca24c6ad172b38b0d69ae20f4fa8edae07ea0d39f93c9d",
+      "immutableBindings": 0,
+      "fullRuntimeMatch": true
+    },
+    {
+      "label": "cache",
+      "address": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "block": {
+        "number": "21864844",
+        "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+        "timestamp": "1793553649",
+        "parentHash": "0x9a37a1c7fcd1ac848c8d7a1ab65b0637e8bf6a168dce6912bcf12bf0f5f92979"
+      },
+      "compilerVersion": "v0.8.26+commit.8a97fa7a",
+      "sourceCount": 14,
+      "emittedMetadataSourceCount": 14,
+      "compilerInputSha256": "03d767db45e1f4caed4306ee719b2caf3671dc84fde18a9f17b8d1eb8ff00c64",
+      "compilerOutputSha256": "11bde8bf9a9eefd9e6e353ec63b8cabc07fdad88a490330eb2ea1111d6e2c82a",
+      "runtimeSha256": "8bb736091d9032c49a1b279f51406f653b3fbf7c0880d7b917c93b2ce9086103",
+      "runtimeKeccak256": "0xa408ee37af0e83e6c4fab1f1a3c7927c8253b02ea28dbe14e9eaec9d123e9869",
+      "immutableBindings": 0,
+      "fullRuntimeMatch": true
+    },
+    {
+      "label": "forwarder",
+      "address": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+      "block": {
+        "number": "21864844",
+        "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+        "timestamp": "1793553649",
+        "parentHash": "0x9a37a1c7fcd1ac848c8d7a1ab65b0637e8bf6a168dce6912bcf12bf0f5f92979"
+      },
+      "compilerVersion": "v0.8.24+commit.e11b9ed9",
+      "sourceCount": 11,
+      "emittedMetadataSourceCount": 11,
+      "compilerInputSha256": "097d16e73e4bea99ebd7defb846c5c4438a48d4cd16d8de1e615d602e7600c73",
+      "compilerOutputSha256": "83f0179f9b435552e60e3615561478b4c6ec71ba50809069a6c5887d33b36f96",
+      "runtimeSha256": "f9c0c886360e5fd0b5837b83a0d307cea7aab6a43ad05d2c6ebf2f023e04edd0",
+      "runtimeKeccak256": "0x2b21870eb5ea9013a781ed3db7d5fab742b612b2ac8de0990ac9d95b22f795fc",
+      "immutableBindings": 0,
+      "fullRuntimeMatch": true
+    },
+    {
+      "label": "morpho",
+      "address": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "block": {
+        "number": "21864844",
+        "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+        "timestamp": "1793553649",
+        "parentHash": "0x9a37a1c7fcd1ac848c8d7a1ab65b0637e8bf6a168dce6912bcf12bf0f5f92979"
+      },
+      "compilerVersion": "v0.8.19+commit.7dd6d404",
+      "sourceCount": 14,
+      "emittedMetadataSourceCount": 14,
+      "compilerInputSha256": "61be16145d6b3793e9ddc205f1756cb367726c08357b715ab8127a3b49e3b677",
+      "compilerOutputSha256": "e5b64fe16881a980bbac9e0ec374e78ef0bde47eafc16f332ddcb5b05bef3f18",
+      "runtimeSha256": "5b1b9424a6dc46c6a041f8eb1d69239342e89f3726ea31dc409cae9dd333a55f",
+      "runtimeKeccak256": "0xc7e89967df297eebdb2642ade6225f6a9f72a61862c83de181dd707ff2e2c744",
+      "immutableBindings": 1,
+      "fullRuntimeMatch": true
+    },
+    {
+      "label": "collateral",
+      "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+      "block": {
+        "number": "21864844",
+        "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+        "timestamp": "1793553649",
+        "parentHash": "0x9a37a1c7fcd1ac848c8d7a1ab65b0637e8bf6a168dce6912bcf12bf0f5f92979"
+      },
+      "compilerVersion": "v0.8.22+commit.4fc1097e",
+      "sourceCount": 44,
+      "emittedMetadataSourceCount": 42,
+      "compilerInputSha256": "592856b6fec0a6154fb660c02cc1f7cebf314662fb1e729c768463bbce9f02e0",
+      "compilerOutputSha256": "51e537d8dd038f5d477ea1c0f534c8f666b464f3605214cf6d7264d76719cf19",
+      "runtimeSha256": "494f468eef50ffd3c8b6debdec66583cb02c433bdb1ae8bd12f5927dc417e8e8",
+      "runtimeKeccak256": "0xea07c1acd0d5f6c9680be00d12a2b9f296b4ce3f2a7b38682bdd4c47eee40d5d",
+      "immutableBindings": 2,
+      "fullRuntimeMatch": true
+    }
+  ],
+  "audits": [
+    {
+      "path": "evidence/phase4/oracle-audit-2026-11-01T17-31-19-568Z-26fe152a-a99b-4c2b-8f61-8e95a73b58c8",
+      "usableAsCurrentAudit": false,
+      "disposition": "SUPERSEDED_SCHEMA_AND_SNAPSHOT_SERIALIZATION"
+    },
+    {
+      "path": "evidence/phase4/oracle-audit-2026-11-01T17-47-35-687Z-5078c30b-6b3f-4325-ad6c-abae354e3d97",
+      "usableAsCurrentAudit": false,
+      "disposition": "SUPERSEDED_SNAPSHOT_SERIALIZATION_RETAINED_FOR_OFFLINE_REPLAY"
+    },
+    {
+      "path": "evidence/phase4/oracle-audit-2026-11-01T18-32-13-912Z-d26d4dba-dd17-4135-a95f-06fac88f3121",
+      "usableAsCurrentAudit": true,
+      "block": {
+        "number": "21869021",
+        "hash": "0x0c0768c1098843b0e88a57a62e1ece5e55b1766c4e11ffb372d334e49169f884",
+        "timestamp": "1793557869"
+      },
+      "retrievedAt": "2026-11-01T18:31:40.933Z",
+      "evidenceKind": "LIVE_CHAIN_READ",
+      "snapshotIdentifier": "sha256:e069f97697156354dc305cfab21ef2e16c594ed9f3cf40c35699d999837e4889",
+      "snapshotArtifactSha256": "fd2b3683c0ef449a0e29b1adc3c829b121d2ddebb0d25b6d29928849faf96aa9",
+      "supplementalArtifactSha256": "b46d7db8059a7c888b51c5c548362db8c1fddc7f79720f6ba5c94f5ab395748a",
+      "overall": "UNVERIFIED",
+      "gate": "DATA_UNVERIFIED",
+      "supplementalStatus": "BOUNDED_READ_COMPLETE",
+      "fixtureReplayOfArchivedReads": true
+    },
+    {
+      "path": "evidence/phase4/oracle-audit-2026-11-01T18-33-24-873Z-98cd1fc4-ca41-4c66-be4b-50a0078f2a50",
+      "usableAsCurrentAudit": true,
+      "block": {
+        "number": "21864844",
+        "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+        "timestamp": "1793553649"
+      },
+      "retrievedAt": "2026-11-01T18:32:52.011Z",
+      "evidenceKind": "HISTORICAL_SNAPSHOT",
+      "snapshotIdentifier": "sha256:49cea3e6fbf7fe25b6bc915a453ed6a3b34c7ec849e3c16c1ab061e2c9457267",
+      "snapshotArtifactSha256": "950036b1a6699447dc5d2b9d0fe7dc4a7f051f32c8224a863c7a33a12cec56f8",
+      "supplementalArtifactSha256": "098edcbf00734ef9962c9022d0fb3172e1561c902288e97e3461df23ad8c147e",
+      "overall": "UNVERIFIED",
+      "gate": "DATA_UNVERIFIED",
+      "supplementalStatus": "BOUNDED_READ_COMPLETE",
+      "fixtureReplayOfArchivedReads": true
+    }
+  ],
+  "method": "Exact artifact/manifest hashes; source-input and emitted-source hashes; release-manifest links; reconstruct recorded compiler outputs using only AST-bound pinned getter reads; audit schema, artifact references and offline RPC replay.",
+  "limitations": [
+    "No new compiler execution or chain read occurs in this checker. Native compiler execution and binary SHA-256/Keccak validation were performed by the archived research capture.",
+    "Successful integrity verification does not establish source economics, heartbeat, operator identities or provider independence.",
+    "Superseded audits retain their original bytes, including their historical schema/serialization limitations, and are not counted as current audit evidence."
+  ]
+}

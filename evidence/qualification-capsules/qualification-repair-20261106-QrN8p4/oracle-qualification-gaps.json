@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "status": "EVIDENCE_GAPS_IDENTIFIED_NO_GATE_PROMOTION",
+  "analyzedAt": "2026-11-06T00:48:39.997Z",
+  "decision": "NO-GO",
+  "monitor": "STOPPED",
+  "noNewEvaluatedMonitorAssurance": true,
+  "pinnedOracleOnlyAudit": {
+    "block": {
+      "number": "22229239",
+      "hash": "0x3623b544e2c84d5e5d7358234a010b446bc74fccafcbac00ed67046381906d4c",
+      "timestamp": "1793925778",
+      "parentHash": "0x87b67cd46d4a4d3788099246135a22b85c08c92c1e1e654fcaaf65138058c810",
+      "time": "2026-11-06T00:42:58.000Z"
+    },
+    "startedAt": "2026-11-06T00:43:03.045Z",
+    "completedAt": "2026-11-06T00:43:17.469Z",
+    "requestCount": 62,
+    "summarySha256": "be1fdcfc02f9ecfa8125bd75e52ef119738ab12d7be4cc6cfddfc926a35b8b09",
+    "stage2AnchorRechecked": {
+      "number": "22225454",
+      "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+      "timestamp": "1793922408",
+      "parentHash": "0x165dc5d790fcea58ab8af01a6a83332032dd5655c4db4b5315f7b974cff796e1",
+      "time": "2026-11-05T23:46:48.000Z"
+    },
+    "scope": "Fixed oracle/market configuration, token metadata, runtime and known configuration reads only; no borrower, balances, accrued debt or health-factor cycle."
+  },
+  "publishedFacts": {
+    "feedRow": "| WSRUSD/RUSD           | 0x0007c129e624689953a2636c014531b2f0bd0c15f9a22211f53023354f309fa6 | 0xb5779919e2F183e59A34140331F7779cbFF1d1BC |",
+    "document": {
+      "name": "pharos-chainlink-push-engine",
+      "sourceUrl": "https://docs.pharos.xyz/tooling-and-infrastructure/oracles/chainlink-pe.md",
+      "finalUrl": "https://docs.pharos.xyz/tooling-and-infrastructure/oracles/chainlink-pe.md",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:31:59.391Z",
+      "retrievedAt": "2026-11-06T00:31:59.706Z",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 00:32:00 GMT",
+        "etag": null,
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 8722,
+      "responseSha256": "5d2c0bab0cb7a190ab7f37e327662427a2709fdb6e4905e74e57ae530e110b42",
+      "bodyPath": "pharos-chainlink-push-engine.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": true
+    },
+    "pharosCollateralRegistryRow": [
+      "wsrUSD",
+      "0x4809010926aec940b550D34a46A52739f996D75D",
+      "Pharos"
+    ],
+    "heartbeatSeconds": 3600,
+    "feedDecimals": 18,
+    "declaredDeviationThreshold": "0.5",
+    "heartbeatIsNotUpstreamMaximumAge": true,
+    "productQuote": "rUSD",
+    "selectedMarketLoan": {
+      "chainId": 1672,
+      "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "decimals": 6,
+      "symbol": "USDC",
+      "name": "USDC"
+    },
+    "noActiveQuoteConversion": true
+  },
+  "historicalEvaluatedResult": {
+    "block": {
+      "number": "22225454",
+      "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+      "timestamp": "1793922408"
+    },
+    "overall": "UNVERIFIED",
+    "gate": "DATA_UNVERIFIED",
+    "configurationFingerprint": "c5fdcac715408818794eff1d8c0bb518404d51a8df63b4fcd210128e9d818fb0",
+    "verifiedHeartbeatSeconds": null,
+    "upstreamFreshnessGuaranteeSeconds": null,
+    "timingConfigurationFingerprint": null,
+    "independent": {
+      "state": "UNKNOWN",
+      "eligible": false,
+      "selectedUpstreamId": null
+    }
+  },
+  "dimensions": {
+    "CONTRACT_IDENTITY": {
+      "historicalEvaluatedState": "VERIFIED",
+      "historicalSatisfied": [
+        "CHAIN_AND_MARKET",
+        "PINNED_RUNTIME_HASHES",
+        "REPRODUCED_SOURCE"
+      ],
+      "historicalMissing": [],
+      "requiredForVerified": [
+        "CHAIN_AND_MARKET",
+        "PINNED_RUNTIME_HASHES",
+        "REPRODUCED_SOURCE"
+      ],
+      "retainedAndNewResearchFacts": [
+        "Stage 2's evaluated dependency identity is VERIFIED. The separate current audit matches all five reviewed dependency runtime SHA-256/Keccak hashes, re-derives the exact market ID, confirms the facade/cache/forwarder path and stable before/after header, and rechecks Stage 2's anchor.",
+        "The collateral runtime also matches its historical bound hash. Loan runtime bytes are captured, but no prior reproduced loan-runtime identity pin was asserted."
+      ],
+      "exactPromotionPrerequisites": [
+        "Retain chain ID 1672, exact five market parameters and re-derived market ID, pinned number/hash/timestamp and stable before/after header.",
+        "For all five pricing dependencies, retain full nonempty runtime bytes with both SHA-256 and Keccak matching verified-source/compiler-reproduction artifacts for those exact addresses and immutable settings.",
+        "Any runtime, dependency, address, block or proxy-interpretation mismatch must invalidate rather than inherit prior identity. This gate proves code identity only, not economic correctness."
+      ],
+      "implementationGapOrScope": "Existing identity gate is implemented; current separate oracle audit corroborates facts but is not a new evaluated monitor assurance object."
+    },
+    "SOURCE_PROVENANCE": {
+      "historicalEvaluatedState": "UNVERIFIED",
+      "historicalSatisfied": [],
+      "historicalMissing": [
+        "EXACT_FEED_PRODUCT",
+        "WORKFLOW_SOURCE",
+        "ECONOMIC_INPUTS"
+      ],
+      "requiredForVerified": [
+        "EXACT_FEED_PRODUCT",
+        "WORKFLOW_SOURCE",
+        "ECONOMIC_INPUTS"
+      ],
+      "retainedAndNewResearchFacts": [
+        "Official Pharos Pacific documentation explicitly maps the exact feed ID and facade to WSRUSD/RUSD and the cache address, and describes CRE periodically fetching Chainlink Data Streams reports.",
+        "One previously sampled workflow ID remains allowed in current getters; a workflow identifier/allowlist entry is not its binary/source, upstream feed configuration or a complete enumeration."
+      ],
+      "exactPromotionPrerequisites": [
+        "Bind the exact chain-1672 feed ID/proxy/cache/product registry row to the active workflow/configuration at the qualified block with dated, full, hashed official deployment evidence.",
+        "Obtain reviewed workflow program/source, immutable build/compiler information, deployed executable/configuration hash, and authenticated binding from that executable to the allowed workflow ID and DON/version/receiver.",
+        "Obtain the exact Data Streams product/report schema and economic input sources, aggregation/normalization rules, wrapper/share/redemption semantics and handling of unavailable or old input data. Bind these to the active configuration, not generic CRE documentation.",
+        "Resolve whether this is a redemption/share exchange rate or an executable market price, and the exact base/quote economic assets; do not infer either from a feed-ID prefix, matching token symbols or a near-1 answer."
+      ],
+      "implementationGapOrScope": "evaluateAssurance() SOURCE_V1 currently passes an empty satisfied list and a fixed UNKNOWN finding. Evidence ingestion and configuration-binding support are not implemented; new documents cannot automatically promote this gate."
+    },
+    "OPERATOR_PROVENANCE": {
+      "historicalEvaluatedState": "UNVERIFIED",
+      "historicalSatisfied": [],
+      "historicalMissing": [
+        "SOURCE_OPERATOR",
+        "SIGNER_OPERATORS",
+        "CONTROLLER_IDENTITIES"
+      ],
+      "requiredForVerified": [
+        "SOURCE_OPERATOR",
+        "SIGNER_OPERATORS",
+        "CONTROLLER_IDENTITIES"
+      ],
+      "retainedAndNewResearchFacts": [
+        "Current facade/cache/forwarder owner addresses match Stage 2, and a known stored DON/version has f=3 with ten distinct signer addresses.",
+        "Stage 2's matched historical report had four recovered signatures. Cryptographic distinctness does not prove distinct legal/operational organizations or independent economic sources."
+      ],
+      "exactPromotionPrerequisites": [
+        "Obtain dated authoritative identities and operating responsibilities for the economic input publisher, CRE/workflow executor and report/price publisher, explicitly tied to the chosen product and configuration.",
+        "Bind every active signer key to its real-world operator and establish organizational/control independence rather than counting addresses. Bind rotation/version history to the pinned current configuration.",
+        "Identify facade, cache, forwarder, workflow-owner and authorized-forwarder controllers, including contract/multisig/delegation ownership and operational/change controls. Do not treat on-chain owner addresses as identities or trust attestations."
+      ],
+      "implementationGapOrScope": "evaluateAssurance() OPERATOR_V1 currently has no qualified source/operator evidence ingestion and passes an empty satisfied list."
+    },
+    "PRICE_SEMANTICS": {
+      "historicalEvaluatedState": "PARTIALLY_VERIFIED",
+      "historicalSatisfied": [
+        "MECHANICAL_SCALING"
+      ],
+      "historicalMissing": [
+        "ECONOMIC_BASE_QUOTE",
+        "FEED_DENOMINATION"
+      ],
+      "requiredForVerified": [
+        "MECHANICAL_SCALING",
+        "ECONOMIC_BASE_QUOTE",
+        "FEED_DENOMINATION"
+      ],
+      "retainedAndNewResearchFacts": [
+        "Current getters bind collateral wsrUSD to 18 decimals, selected loan USDC to 6 decimals, the feed to 18 decimals and SCALE_FACTOR to 1000000. Oracle price equals feed answer times 1000000.",
+        "Both vaults, second base feed and both quote feeds are zero. No active quote feed converts the publicly declared rUSD quote to the selected USDC loan.",
+        "The issuer registry maps the exact chain-1672 collateral to wsrUSD. Issuer savings/redemption descriptions do not establish a wsrUSD/USDC market price or rUSD/USDC economic equivalence."
+      ],
+      "exactPromotionPrerequisites": [
+        "Retain exact chain/address/decimal identities and reproduced mechanical formula for all active vault/feed components, including the direction and whole-token versus base-unit denomination.",
+        "Obtain authoritative exact-product base/quote denomination and wrapper/redemption/market semantics, bound to the active workflow/source/report schema.",
+        "Resolve rUSD versus the selected USDC loan with explicit independently defensible conversion/valuation and exact chain/token provenance, or establish a separately authorized correctly denominated oracle/market design. A peg, ticker or assumed 1:1 relationship is not proof; no conversion or replacement was made in this task.",
+        "Document that Morpho uses price * collateralBaseUnits / 10^36 to obtain loan base units. Numerically applying the 1000000 scale is not sufficient to qualify the published rUSD answer as a USDC price."
+      ],
+      "implementationGapOrScope": "evaluateAssurance() only satisfies MECHANICAL_SCALING. configurationSchema.denomination is literally ECONOMIC_QUOTE_UNVERIFIED; no configuration-bound qualified denomination can currently be represented."
+    },
+    "FRESHNESS": {
+      "historicalEvaluatedState": "UNKNOWN",
+      "historicalSatisfied": [
+        "TIMESTAMP_SEMANTICS"
+      ],
+      "historicalMissing": [
+        "VERIFIED_HEARTBEAT",
+        "UPSTREAM_FRESHNESS_GUARANTEE"
+      ],
+      "requiredForVerified": [
+        "TIMESTAMP_SEMANTICS",
+        "VERIFIED_HEARTBEAT",
+        "UPSTREAM_FRESHNESS_GUARANTEE"
+      ],
+      "retainedAndNewResearchFacts": [
+        "Official documentation declares a common heartbeat of 3600 seconds, 18 decimals and deviation threshold 0.5. These are published facts, not a source/active-config-bound end-to-end guarantee.",
+        "Current facade startedAt/updatedAt and cache timestamp agree; roundId/answeredInRound are zero. The timestamp is workflow-supplied observation time, not publication/inclusion time.",
+        "Stage 2's observation age was 1333 seconds and its bounded sample interval was 3601 seconds. The current separate audit measures age 1103 seconds. None is a maximum-age or heartbeat guarantee.",
+        "Reviewed cache ignores validFromTimestamp, skips non-increasing timestamps, allows future timestamps and does not expire readable answers. Morpho's feed consumer has no observation-age enforcement; local invalid timestamp/zero/negative checks remain unchanged."
+      ],
+      "exactPromotionPrerequisites": [
+        "For verified heartbeat H and upstream freshness maximum G, obtain two positive bounded parameters from full, dated, hashed verified-source/official artifacts that actually support each claim for the exact chain-1672 feed and active configuration.",
+        "Bind H and G to the complete qualified configurationFingerprint, including active feed/workflow/DON/operator/input settings. A common settings table alone does not supply this binding or G.",
+        "Document and verify input-observation timestamp semantics, maximum upstream input age, fetching/aggregation behavior, heartbeat/deviation triggers, publication delay/failure handling, and stale-report rejection. Do not label transaction inclusion time or local retrieval age as economic observation age.",
+        "Each VerifiedTiming EvidenceRef must be confidence=PROVEN, artifactSha256 non-null, sourceKind VERIFIED_SOURCE or OFFICIAL_DOCUMENT, chainId 1672, subjectAddress the exact facade, with provenance and a valid 64-hex configuration fingerprint equal to the evaluator's active fingerprint.",
+        "At evaluation, require nonzero observation time, nonnegative age <= G, startedAt/cache timestamp agreement and no future/regression/mismatch anomaly. Any explicit local age limit is only an additional rejection policy, not H or G. Preserve failure on expired/anomalous observations and explicit consumer non-expiry disclosure."
+      ],
+      "implementationGapOrScope": "analyzeFreshness() accepts VerifiedTiming, but evaluateAssurance() supplies neither verifiedHeartbeat, upstreamGuarantee nor configurationFingerprint and its FRESHNESS dimension retains fixed missing timing requirements. AssuranceOptions lacks qualified timing ingestion. This must be explicitly implemented and tested before promotion; this repair does not alter it."
+    },
+    "INDEPENDENT_VALIDATION": {
+      "historicalEvaluatedState": "UNKNOWN",
+      "historicalSatisfied": [],
+      "historicalMissing": [
+        "NO_QUALIFIED_INDEPENDENT_SOURCE"
+      ],
+      "requiredForVerified": [
+        "ASSET",
+        "QUOTE",
+        "DENOMINATION",
+        "TIMESTAMP",
+        "FREQUENCY",
+        "OPERATOR",
+        "PROVENANCE",
+        "INDEPENDENCE",
+        "EXPLICIT_TEMPORAL_POLICY",
+        "EXPLICIT_TOLERANCE"
+      ],
+      "retainedAndNewResearchFacts": [
+        "No eligible comparator is configured; selectedUpstreamId is null. RPC/MCP are shared-upstream access paths, not independent economic sources.",
+        "Official issuer redemption descriptions are not MARKET_PRICE. A differently denominated or cross-chain WSRUSD/RUSD feed cannot by itself match this exact Pharos wsrUSD/USDC market or establish independent inputs.",
+        "Retained Chainlink research URLs returned 404; the Avalanche candidate returned 429. DexScreener exact-address responses returned no pairs. These are bounded research outcomes, not proof that no comparator exists anywhere."
+      ],
+      "exactPromotionPrerequisites": [
+        "Obtain an available MARKET_PRICE candidate for exact base chain1672/address0x4809010926aec940b550D34a46A52739f996D75D/18 decimals and quote chain1672/address0xC879C018dB60520F4355C26eD1a6D572cdAC1815/6 decimals, with strictly positive bounded price and exact normalization/denomination.",
+        "Supply all eight hashed, subject/chain-bound PROVEN EvidenceRef claims: ASSET, QUOTE, DENOMINATION, TIMESTAMP, FREQUENCY, OPERATOR, PROVENANCE, INDEPENDENCE. The last four require verified-source/official-document evidence in production, never a fixture or arbitrary identifier.",
+        "Establish both selected and comparator upstream/operator identities and actual source independence; distinct IDs, URLs, RPCs or signers are insufficient. Use a genuinely separate economic input path.",
+        "Supply positive documented candidate update frequency, positive non-future candidate and selected observation times, explicit bounded maxAge/maxSkew policies and an explicit integer tolerance 0..10000 basis points. Both observations must pass age/alignment policy at the same block context.",
+        "Retain original Morpho and independent raw prices separately. Normalize with exact rational arithmetic, compare within tolerance and preserve FAILED on disagreement; never substitute the comparator into the original snapshot."
+      ],
+      "implementationGapOrScope": "compareIndependent() enforces these conditions, but evaluateAssurance() deliberately supplies no selectedUpstreamId because the selected source identity is unresolved. Caller-supplied comparator labels cannot make this gate eligible."
+    },
+    "CONFIGURATION_CONTROL": {
+      "historicalEvaluatedState": "PARTIALLY_VERIFIED",
+      "historicalSatisfied": [
+        "PERMISSION_BOUNDARIES",
+        "CURRENT_CONTROLLERS"
+      ],
+      "historicalMissing": [
+        "COMPLETE_SIGNER_CONFIGURATION",
+        "CONTROLLER_IDENTITIES"
+      ],
+      "requiredForVerified": [
+        "PERMISSION_BOUNDARIES",
+        "CURRENT_CONTROLLERS",
+        "COMPLETE_SIGNER_CONFIGURATION",
+        "CONTROLLER_IDENTITIES"
+      ],
+      "retainedAndNewResearchFacts": [
+        "Current getters match the three observed owners; optional allowedWorkflowOwner is zero and the known workflow ID remains allowed.",
+        "Three EIP-1967 slots are zero; their interpretation uses full reproduced runtime/source evidence, not zero-slot inference alone.",
+        "Current audit reads only one known stored signer config and workflow permission. It does not enumerate every active DON/version, workflow ID or separately owner-authorized route entry."
+      ],
+      "exactPromotionPrerequisites": [
+        "Bind reproduced permission boundaries and all exact current owner/controller/proxy/forwarder/workflow getters to the pinned block and runtime hashes.",
+        "Obtain complete, provenance-bound active signer configurations, authorized forwarder routes and workflow permissions, including creation/removal/rotation history or an authoritative complete registry at the block. A bounded sample is not COMPLETE coverage.",
+        "Bind these addresses to verified controller/operator identities and their administrative/multisig/change-management responsibilities.",
+        "Retain a complete active configuration fingerprint and continuity baseline. Requalify after relevant owner/feed/runtime/workflow/signer/denomination change or observability gap; do not clear sticky invalidation merely because a later sample looks unchanged."
+      ],
+      "implementationGapOrScope": "Current gate proves permission boundaries/current addresses only; complete coverage and real-world controller identities remain missing. Configuration fingerprints presently include sampled rather than complete signer/workflow evidence."
+    }
+  },
+  "sourceReferences": [
+    {
+      "path": "src/oracle-assurance/evaluate.ts",
+      "bytes": 20165,
+      "sha256": "8fa1e42dc229649f3164ab823fd53c4db6e4c6fc06990422a75910d722cbb8d2"
+    },
+    {
+      "path": "src/oracle-assurance/model.ts",
+      "bytes": 21639,
+      "sha256": "1f64753a537d67943b83dba77037da6088451f2f0a991b51b7b0f2478d5626f5"
+    },
+    {
+      "path": "src/oracle-assurance/freshness.ts",
+      "bytes": 3792,
+      "sha256": "739c985be6ba03f07a65c41025ade8b9dff73455f18c0f1091f894789ca50540"
+    },
+    {
+      "path": "src/oracle-assurance/independent.ts",
+      "bytes": 7142,
+      "sha256": "e843a37ab4e9416cfbf15a0b2c082ba3aa0a2ae85777fd3da21970a6d3722aa1"
+    },
+    {
+      "path": "src/oracle-assurance/configuration.ts",
+      "bytes": 6462,
+      "sha256": "36de762a8547a6955ef5ceaa3fe253382d2911aaf4c90449c97fc6084d9a8c6a"
+    },
+    {
+      "path": "src/risk/eligibility.ts",
+      "bytes": 6330,
+      "sha256": "23fdf62647fb3eb264fc25bf61e61bccbef6bbbec8697b208c3299751a2ec2e7"
+    },
+    {
+      "path": "evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "bytes": 13650,
+      "sha256": "602a035ebd7ec5d258715dcb0e5c61d679f072b89ae774824668e4a13dcbd461"
+    },
+    {
+      "path": "evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+      "bytes": 7177,
+      "sha256": "cc61c1da8e2c5b6c25ed1c10db8851226b36a120616aefda8e978d8280b4cefe"
+    },
+    {
+      "path": "evidence/phase1/sources/KeystoneForwarder.sol",
+      "bytes": 14107,
+      "sha256": "edae1208bfe3f3f311382e05470e8954067324ff7bfdcee7772f2e8d20e0542c"
+    }
+  ],
+  "productionCapabilitiesMissing": [
+    "Configuration-bound workflow/source/operator evidence ingestion for SOURCE_V1 and OPERATOR_V1.",
+    "A schema capable of representing verified exact economic base/quote denomination, rather than the literal ECONOMIC_QUOTE_UNVERIFIED.",
+    "Validated VerifiedTiming ingestion and active-fingerprint binding through evaluateAssurance(), with dynamically fulfilled FRESHNESS requirements.",
+    "Selected upstream identity established from verified evidence and supplied to independent validation only after actual source independence is qualified.",
+    "Complete current signer/workflow/authorized-route/controller evidence and post-change invalidation/requalification lifecycle."
+  ],
+  "recoveryBlockedReasonsRetained": [
+    "RECOVERY_CHAIN_PROGRESSION_UNKNOWN",
+    "RECOVERY_ORACLE_ASSURANCE_NOT_VERIFIED",
+    "RECOVERY_ASSURANCE_GATE_NOT_MET",
+    "RECOVERY_ORACLE_FRESHNESS_NOT_VERIFIED",
+    "RECOVERY_INDEPENDENT_VALIDATION_NOT_VERIFIED",
+    "RECOVERY_CONFIGURATION_MISMATCH"
+  ],
+  "recoveryPromotionPrerequisites": [
+    "All seven assurance dimensions VERIFIED with referenced PROVEN hashed evidence; gate ASSURANCE_REQUIREMENTS_MET and no invalidation or observation anomaly.",
+    "Freshness timingConfigurationFingerprint exactly equals the complete active assurance configurationFingerprint; independent comparison VERIFIED and eligible.",
+    "A separately authorized real position observation/progression sequence establishes ADVANCING for the exact identity and complete valid snapshot, without reusing oracle-only reads or old Stage 2 data as a new baseline.",
+    "Qualified deployment/host/channel/operational acceptance and explicit authorization before real continuous monitoring or any financial workflow. No future operation is authorized by this report."
+  ],
+  "safety": {
+    "readExistingEvidenceOnly": true,
+    "noGateOrApplicationCodeChange": true,
+    "realMonitorStopped": true,
+    "financialRecoveryAmountsProduced": false,
+    "independentPriceSubstitution": false,
+    "noOwnerContact": true,
+    "noTransactionsOrWalletOperations": true,
+    "noPaidServices": true
+  }
+}

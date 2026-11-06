@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "name": "qualified-checks-v2",
+  "mode": "checks",
+  "status": "PASS",
+  "completedAt": "2026-11-06T00:53:10.362Z",
+  "results": [
+    {
+      "label": "typecheck",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 9540,
+      "startedAt": "2026-11-06T00:52:38.715Z",
+      "completedAt": "2026-11-06T00:52:51.317Z",
+      "durationMs": 12599.5684,
+      "exitCode": 0,
+      "signal": null,
+      "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\typecheck.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\typecheck.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "label": "lint",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/eslint/bin/eslint.js",
+        "src",
+        "test",
+        "scripts",
+        "*.config.*",
+        "--no-cache"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 3564,
+      "startedAt": "2026-11-06T00:52:51.320Z",
+      "completedAt": "2026-11-06T00:52:58.547Z",
+      "durationMs": 7227.3121999999985,
+      "exitCode": 0,
+      "signal": null,
+      "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\lint.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\lint.stderr.txt",
+        "bytes": 168,
+        "sha256": "e4011ffd490ca039c5470dd1d76c475d0f64e59ef16fc4f2f58f1ed82b8d4dea"
+      }
+    },
+    {
+      "label": "build",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "-p",
+        "tsconfig.build.json",
+        "--outDir",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\build"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 2220,
+      "startedAt": "2026-11-06T00:52:58.550Z",
+      "completedAt": "2026-11-06T00:53:09.594Z",
+      "durationMs": 11043.71,
+      "exitCode": 0,
+      "signal": null,
+      "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\build.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\build.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "expectedSelectedTestAndFileCountsMet": true,
+  "evidenceClass": "OFFLINE_FIXTURE_QUALIFICATION_OR_UNMODIFIED_DIAGNOSTIC",
+  "tooling": {
+    "diagnostics": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\diagnostic-preloader-used.cjs",
+      "bytes": 6150,
+      "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    "runner": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\test-runner-used.mjs",
+      "bytes": 11853,
+      "sha256": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+    },
+    "testSource": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\runtime-process-test-used.ts",
+      "bytes": 5805,
+      "sha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    "runtimeHelper": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\runtime-helper-used.ts",
+      "bytes": 2335,
+      "sha256": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    }
+  },
+  "networkGuard": {
+    "version": "v2",
+    "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "records": 0,
+    "blockedRecords": 0,
+    "blockedLocalIPC": 0,
+    "demonstratedRemoteAttempts": 0,
+    "allowedLocalNamedPipes": 0,
+    "caveat": null
+  },
+  "cleanup": {
+    "remainingFixtureDirectories": [],
+    "removalAttempts": 0,
+    "removalErrors": [],
+    "pathsStillExist": [],
+    "children": [],
+    "relevantFixtureProcessesAfterRun": [],
+    "noObservedOrphanProcesses": true
+  },
+  "logs": {
+    "network": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\network-guard.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "lifecycle": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\process-lifecycle.jsonl",
+      "bytes": 1159,
+      "sha256": "5b069692552ce589bc1cd83864afb3348326569324feeef7f919f5ab256f8142"
+    }
+  },
+  "safety": {
+    "realMonitorStopped": true,
+    "syntheticRuntimeFixturesOnly": true,
+    "externalNotifications": false,
+    "transactionsOrWalletOperations": false,
+    "noIntegrationTests": true,
+    "timeoutsOrAssertionsChangedByDiagnosticPreloader": false,
+    "readinessMessagesIntentionallyDelayedForControl": false,
+    "aggregateDeadlineIntentionallyLoweredForControl": false,
+    "externalOutputsAndTemporaryFilesOnly": true
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "checkedAt": "2026-11-05T23:45:35.012Z",
+  "target": {
+    "positionId": "2868fdc6591f5ec9674c9a33febfd27023f136783e11c24cb6dbd5f82994a06f",
+    "chainId": 1672,
+    "protocol": "MORPHO_BLUE",
+    "protocolAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+    "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+    "account": "0x086eb9C2B14dD657ae77D07dF9115A2F946CE327",
+    "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+    "irmAddress": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+    "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+    "collateralToken": "0x4809010926aec940b550D34a46A52739f996D75D"
+  },
+  "accountRole": "EXPLICITLY_CONFIGURED_PUBLIC_ACCOUNT_NOT_USER_WALLET",
+  "thresholds": {
+    "warningRatio": "1.30",
+    "criticalRatio": "1.10",
+    "targetRatio": "1.25",
+    "liquidationBoundary": "1.00"
+  },
+  "scope": "1d9d31ed07649d3c00247bb62b508432ece0d26c3f29ab74b8ff82fa7325eb61",
+  "configurationFingerprint": "59fb22e09b2b886afe8dbbb1f1c98fe693d93adeaf5d1ddcf8bbb606659b8fe1",
+  "configurationHashes": {
+    "position.json": "99f1e601d5301aad96ee1b05e91c47379380adc923f0c2d36116480e1d6e4c84",
+    "monitoring.json": "395ff3dcd8b3404d0ddd5780faa156c933ed1350cf4eded339a6c2adc3d2c2ce"
+  },
+  "startup": {
+    "valid": true,
+    "profile": "local",
+    "errors": [],
+    "runtimeVerified": true,
+    "notifications": {
+      "console": "ENABLED",
+      "telegram": "DISABLED",
+      "discord": "DISABLED"
+    },
+    "chain": {
+      "status": "FIXED_CONFIGURATION_VALID",
+      "chainId": 1672
+    },
+    "secretValues": "OMITTED",
+    "endpointOverrides": "UNSUPPORTED"
+  },
+  "sourceChecks": [
+    {
+      "source": "evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+      "bytes": 7177,
+      "sha256": "cc61c1da8e2c5b6c25ed1c10db8851226b36a120616aefda8e978d8280b4cefe",
+      "matches": true,
+      "evidenceClass": "VERIFIED_SOURCE"
+    },
+    {
+      "source": "evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "bytes": 13650,
+      "sha256": "602a035ebd7ec5d258715dcb0e5c61d679f072b89ae774824668e4a13dcbd461",
+      "matches": true,
+      "evidenceClass": "VERIFIED_SOURCE"
+    },
+    {
+      "source": "evidence/phase1/sources/KeystoneForwarder.sol",
+      "bytes": 14107,
+      "sha256": "edae1208bfe3f3f311382e05470e8954067324ff7bfdcee7772f2e8d20e0542c",
+      "matches": true,
+      "evidenceClass": "VERIFIED_SOURCE"
+    },
+    {
+      "source": "evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+      "bytes": 1443,
+      "sha256": "82b18d00ba9c278686f5483df5ca3881f3bc2200d7532500c80b7ea81359ae06",
+      "matches": true,
+      "evidenceClass": "VERIFIED_SOURCE"
+    },
+    {
+      "source": "evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/independent-recompilation.json",
+      "bytes": 12834,
+      "sha256": "1d8626de9a4b8136a84e3dd625e00891fc05302879bd1c1525fce7e17d0bffcb",
+      "matches": true,
+      "evidenceClass": "COMPILER"
+    },
+    {
+      "source": "evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/reservoir-addresses.json",
+      "bytes": 18072,
+      "sha256": "9d5055471d0c44d2a7dbb46b1e212fe26896feec6c13ea6cd170d49596f52a2c",
+      "matches": true,
+      "evidenceClass": "OFFICIAL_DOCUMENT"
+    }
+  ],
+  "historicalEvidence": {
+    "directory": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/live-disc-ebf0249a",
+    "discoverySha256": "a54df5eb17ca03376b815ce99a5bf6a3c3100fb9676e9e1df81c70bcd54a5ded",
+    "borrowProvenanceSha256": "c2e80b1c3dacceef625e77d8db003c982c87c8b7dd79cbb1830a812b3d6eda06",
+    "previousBlock": {
+      "number": "22223031",
+      "hash": "0xc16b090a6ddeb30732768c3fdb3a3fb0a31e03ed465fa85286cb38885379f8d1",
+      "parentHash": "0x48d0196f78488faac6e878c9d0328fc022289817a9762e99f2c44455f132fb99",
+      "timestamp": "1793920275",
+      "timestampUtc": "2026-11-05T23:11:15.000Z"
+    },
+    "use": "IDENTITY_AND_HISTORICAL_PROVENANCE_ONLY_NOT_CURRENT_INPUT"
+  },
+  "monitoringEnabled": false,
+  "notifications": [
+    "console"
+  ],
+  "fixturePermission": false,
+  "expectedLiveCalls": "Exactly one MonitoringService.runOnce(); existing live reader plus bounded supplemental audit and separate pinned direct getters."
+}

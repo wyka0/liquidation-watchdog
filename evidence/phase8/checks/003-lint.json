@@ -1,0 +1,12 @@
+{
+  "command": "npm run lint",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T14:32:14.194Z",
+  "finishedAt": "2026-11-02T14:32:26.512Z",
+  "durationMs": 12314,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "\n> liquidation-watchdog@0.1.0 lint\n> eslint src test scripts *.config.*\n\n",
+  "stderr": ""
+}

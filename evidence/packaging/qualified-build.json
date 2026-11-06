@@ -1,0 +1,1559 @@
+{
+  "sourceDirectory": "[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/qualified-checks-v2/build",
+  "packagedDirectory": "dist",
+  "files": 321,
+  "bytes": 2230254,
+  "qualification": {
+    "batch": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/qualification-batch/summary.json",
+    "summary": "evidence/qualification-capsules/qualification-repair-20261106-QrN8p4/qualified-checks-v2/summary.json",
+    "command": {
+      "label": "build",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "-p",
+        "tsconfig.build.json",
+        "--outDir",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\build"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 2220,
+      "startedAt": "2026-11-06T00:52:58.550Z",
+      "completedAt": "2026-11-06T00:53:09.594Z",
+      "durationMs": 11043.71,
+      "exitCode": 0,
+      "signal": null,
+      "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\build.stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-checks-v2\\build.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "summaryBoundToBatch": true,
+    "buildFilesBoundToFinalManifest": true,
+    "freshBuildPerformed": false
+  },
+  "qualifiedSourceInputs": {
+    "checkedFiles": 111,
+    "changed": []
+  },
+  "repositoryDistComparison": {
+    "identical": 214,
+    "changed": [
+      {
+        "path": "actions/derive.js.map",
+        "qualifiedSha256": "8665c24a61a797ea0810c5d1d72f7fbb9be99bc468e44f3c25058f03498cc6c9",
+        "repositorySha256": "f351a8055725edb76f7f950efb88b18cdbae764dc924fd81e2bfd39a7c708c7f"
+      },
+      {
+        "path": "actions/model.js.map",
+        "qualifiedSha256": "7fbdf3ebabdda45e3dfcdad7268285e86adf4714325dada3f8a3a6f92c5f7bb4",
+        "repositorySha256": "9c1111d1d5a984fbcb8013268184abef9da8ef6d1b2286389b9ff9850a61c430"
+      },
+      {
+        "path": "chain/client.js.map",
+        "qualifiedSha256": "6edac4b26e3fd6c447cac4a8029f013418177c4de09602d996aae0a59636441c",
+        "repositorySha256": "3dc63d4cb14bbbf963812f8cec84fc720ca6bf78378870d6e77af8d4a2f8e507"
+      },
+      {
+        "path": "chain/live.js.map",
+        "qualifiedSha256": "38731d9951edc7f4f50278e2db1809f79ffaae809200e0d6f76c8bb0231f5c97",
+        "repositorySha256": "da9dc3deff20c9a6b3e64b0626f551b072f5a0f540ee886c700a2e6019242668"
+      },
+      {
+        "path": "chain/multicall.js.map",
+        "qualifiedSha256": "1969088a54877941bd1f204660c343a2cfac290d9880466c8d3f8d3ca7fe931c",
+        "repositorySha256": "8e8edbb76e52020fda03974049bcc1d7de0ba02e4b66fac2bddb9373f547d0a4"
+      },
+      {
+        "path": "chain/progression.js.map",
+        "qualifiedSha256": "9569c058747c8ef48f242815461f7fe645d669070f500c35e0751260ded105e4",
+        "repositorySha256": "40d4bbb5daecd3499c6496998d57af864a94d5c047fcb11b700e643726667cdd"
+      },
+      {
+        "path": "chain/rpc.js.map",
+        "qualifiedSha256": "8298990a9374268a117158ad79757c646d4fb8eda1a24ed2c4206b2905626ec6",
+        "repositorySha256": "63d243d90078ef79186b4d8f26a40e2cfea485040e05c9b5cf9ae4ad98cfefb6"
+      },
+      {
+        "path": "chain/snapshot.js.map",
+        "qualifiedSha256": "edfc69ddaf5e875c562e4b24d092b5a4bd76cacbc279436c6f8b323d611ccfa1",
+        "repositorySha256": "4d3f9032636cd70e6d9fa827b9cf426e1d01e0fe2e6cba7413b568e7c9e05a49"
+      },
+      {
+        "path": "chain/transport.js.map",
+        "qualifiedSha256": "f07b8901edcfec43aad3ca04ca205773f85b09b0854b3be454d95758cf770e98",
+        "repositorySha256": "8a4bf6013da89f341ad3ce4e9798a772749f86c8156920a9760ae97e4e6d5588"
+      },
+      {
+        "path": "cli.js.map",
+        "qualifiedSha256": "e86d19720326c4fcfd4274dd2cc5201e2ffa7787216fa7bc010b67b78361a4e5",
+        "repositorySha256": "fdb75cf97b7ee8b234c0ed484b8838ebb7e4b9b2b16acc1115ff07caca40f838"
+      },
+      {
+        "path": "cli/monitor-options.js.map",
+        "qualifiedSha256": "fd04791927422e57b8d1ea6f7d62b49545c040e3d81075005207b820f57bea80",
+        "repositorySha256": "8ed2612c379546775ff68ce6bd6d7016419d5c17b4ae13b2355d22ce4e455018"
+      },
+      {
+        "path": "cli/monitor.js.map",
+        "qualifiedSha256": "aedfe6ee22ef076fc5b5ffec71318fb077386f07495b8782771f7535288b9a57",
+        "repositorySha256": "42e1762e58b7caa9826bb6ac3a1fd44bd0df7c6f5c1d2005be947a4ee99b5298"
+      },
+      {
+        "path": "cli/operations-options.js.map",
+        "qualifiedSha256": "4041e0cafe9f98b87248a04b7277fbb8248a47bc08b2c324f9640ed5638b19a0",
+        "repositorySha256": "2632dc54635f621ae53a224151b67a6f9cf8c243fa5894ecbb3fed4065df8bc0"
+      },
+      {
+        "path": "cli/operations.js.map",
+        "qualifiedSha256": "d5aa4c73b50e2289d883b66e24215cd2424adfa4e049e96a1bfd1dc1622be829",
+        "repositorySha256": "720190fd22ab7df9077d5d04cb1a9e40c50ce4ca437b6b83372f38b302d8ece0"
+      },
+      {
+        "path": "cli/options.js.map",
+        "qualifiedSha256": "8e46322a031d475d9f96c2d0a5d8632c2cdd31f5371cdb8fa099616bd8ed0ab8",
+        "repositorySha256": "0ed5f9032dd4ab8c92d042ee5f46f045370fbe84b3d1d9b79b19b525e36a3dff"
+      },
+      {
+        "path": "cli/oracle-options.js.map",
+        "qualifiedSha256": "184ec83a6fcb1139fafafcc6af780dc6f1237c801d8654b7f1de6f8d9e535d47",
+        "repositorySha256": "88632103ae55071d6f16f7b7273f1f0bec25090cd84cc2043804f7ac60c9be03"
+      },
+      {
+        "path": "cli/oracle.js.map",
+        "qualifiedSha256": "5b3efa765febee886ab48c553c9edcf0a28406f2b55b166397aff107d181ce41",
+        "repositorySha256": "39a9d2c4ddf8b80e87d92a2b3f0bfb773e9936bab8f4873867dc1a9af4e37442"
+      },
+      {
+        "path": "cli/run.js.map",
+        "qualifiedSha256": "b3a4310dfe65e4ed8674d34ab8a898d20373dbe849efa01a515fc2f4e9465cb0",
+        "repositorySha256": "00f3a9563597467fc6213ee68e1963fee1434330d7ecd816c3d6ed7f5073960b"
+      },
+      {
+        "path": "config/deployment.js.map",
+        "qualifiedSha256": "ae54b2d85b6060c52895407f036811558ff5963dee74117245aceb7f82208cca",
+        "repositorySha256": "854fc1ee4a011a89faea5db283f48bd4dfd364d158528841556b9396a41517f5"
+      },
+      {
+        "path": "config/evidence.js.map",
+        "qualifiedSha256": "4a46f2686ca3feeeac422e7c8e5e9b1fdf615f00cceff0cc51a41f4af60c8049",
+        "repositorySha256": "bb27c7702b2a1ef65f900c0b83cca6bf4da65c338105689511dd0d911dcfb97a"
+      },
+      {
+        "path": "config/monitoring.js.map",
+        "qualifiedSha256": "e60f193b2205dd03351b897f0732ddcd09cd8ad1e5741e729929aa005285e5bc",
+        "repositorySha256": "6de53b828c777c44ff6283bba2df0d16a128aa5294ac55bc5bafdae7792462bf"
+      },
+      {
+        "path": "config/position.js.map",
+        "qualifiedSha256": "254a19a610d75a1719f887d5391d70679c4a2a578504c77bbe8337d24c5de4c5",
+        "repositorySha256": "0e436cfab0386b510db6a19eb4039600c2192571696c652bf96841fd7e55cab2"
+      },
+      {
+        "path": "config/postgres.js.map",
+        "qualifiedSha256": "91a17af2b786a303ec3a758ded61eda5eba1e6a222d39b7a7355a579e1dad108",
+        "repositorySha256": "c2f4465dc1ad6228783962aa59181628894b2738afe54d39b687f3e6685fdf7f"
+      },
+      {
+        "path": "config/production.js.map",
+        "qualifiedSha256": "9d0754d5546bcc79e25d7e74114d2750efa0658967d348f562ecfee954f9ab2c",
+        "repositorySha256": "a9dfec15be77961f7620d038d373d5fd43af76832c5a9cf0224fbd2e1cc93fe0"
+      },
+      {
+        "path": "config/risk.js.map",
+        "qualifiedSha256": "33ccbe138e64379263db39756d1817a5b4428bcdb9e65bc98a09fc2fca7fd816",
+        "repositorySha256": "c7364955b604e7941c03245c5c470f26b01834dd4de2ffa5ed40ac0586a75d4c"
+      },
+      {
+        "path": "config/runtime.js.map",
+        "qualifiedSha256": "14f729eac970ddc9eca73d2ef3972a6103e98aec37bcb9cf87ab981608e847d3",
+        "repositorySha256": "e3a8a536f2a51b1a04897046b63ce89d407a14b4c849cbb88f04ee2afb5f2a02"
+      },
+      {
+        "path": "domain/errors.js.map",
+        "qualifiedSha256": "ce2fade010a7fb15f2c74e32fe38733a847ba1ee688f2f3924aaac3923183458",
+        "repositorySha256": "b959471fbd9858549d67e8027432c155fc1f4cb8228a062a3a98a92688d018f1"
+      },
+      {
+        "path": "domain/evidence.js.map",
+        "qualifiedSha256": "eb36a028a0b201da5033b37117764793fa3384946a8953e0dbb44f00f0728365",
+        "repositorySha256": "ed3d5c54657b5d47d6823008e9a75eeb88de441fbd0af644b0249c55777da31e"
+      },
+      {
+        "path": "domain/report.js.map",
+        "qualifiedSha256": "2b1e8d0b2e8675a30201f54f612d91cc94698871a4ed69bdeec8b339dde5bafe",
+        "repositorySha256": "fb063318d3e2e580a21e3941e41a958fc24c9b79f50c25d3f6d5c9a81d1daa31"
+      },
+      {
+        "path": "domain/serialize.js.map",
+        "qualifiedSha256": "39fb50f280fa9b8a4e33d2e23dc5a1d8aaff326475f1488e4e4d2b70f39d13f6",
+        "repositorySha256": "5ad64ce0f76788bdf1601f5ad19369ff59aa9ee8839d4a30214def15b3acfc41"
+      },
+      {
+        "path": "domain/types.js.map",
+        "qualifiedSha256": "a2b9f5243ebd461f550115cf5f178d64ce56f899549db3c8e30fad2e1d3f189e",
+        "repositorySha256": "13f670a038cd2a2fbe8327669ad9a9a17273ce59a0529793f525856608257143"
+      },
+      {
+        "path": "mcp/client.js.map",
+        "qualifiedSha256": "6a3ac90d54572d93ef5843843cbbed2c8663a89dc35cd61e5243877db4461f8c",
+        "repositorySha256": "5ae1585f8546ecea26e82a358a9c8d12aa70b8fd3b2304bb49a9bc666085afb2"
+      },
+      {
+        "path": "monitoring/logs.js.map",
+        "qualifiedSha256": "9c8fffcb5f1760864fa16f1b29bf5c8e945c606de8bc36f8eb1dda4ab137bc0f",
+        "repositorySha256": "7fe535ab674ea6d4dccf7b78f072eaf7fdca5db718471e9777ad19edf1190255"
+      },
+      {
+        "path": "monitoring/model.js.map",
+        "qualifiedSha256": "92e4907a7ada83be3929980e1b19c4f14994fd2cc5fde9d52bf9dc89d89a3d86",
+        "repositorySha256": "e9d9cbef9d2b0b66af85c9adf7f41a82e6bd5d391e2e429e79951a4ad8920717"
+      },
+      {
+        "path": "monitoring/observation.js.map",
+        "qualifiedSha256": "fcdd017b61f904fd64c7816a410e2e7b8b429570db378da26d199305a0f11915",
+        "repositorySha256": "2c8005829e54c4696454edbc23b183270f89b37d1a890d3104dbba0a2962760a"
+      },
+      {
+        "path": "monitoring/reader.js.map",
+        "qualifiedSha256": "4c6bc3eb90a894705462a8c843163aa5b9a44934af34add1271931d642f485af",
+        "repositorySha256": "19e996a330e18d2874fb3e5ae1081c7e2367fdea9b38cb7c1e821226e014a229"
+      },
+      {
+        "path": "monitoring/service.js.map",
+        "qualifiedSha256": "5dcd68f8e25b221e2c181170306ab82e3ab418f75012be6597c6a662d9ed410f",
+        "repositorySha256": "3eab70b80ad2f9ce66c8633f2397b3d12f3b095493273cee7d849cf2e1135725"
+      },
+      {
+        "path": "monitoring/transitions.js.map",
+        "qualifiedSha256": "0c773d8d69637df74d9609623b1ccdbe4904722ba7d27a7dfe4a2bfd4912f2b1",
+        "repositorySha256": "696cd65abc84baaeffb0458ad363fe5130dec1c6034701ebdcb01a9a9b1ffbfb"
+      },
+      {
+        "path": "morpho/abi.js.map",
+        "qualifiedSha256": "4f26ee86d1db72406e26eaa9d7c819198f68f72f2b95cbcb56a814b07af42adc",
+        "repositorySha256": "90d81d7279312c19ab979d0067cd69352ec380add164585260d360b719f153cb"
+      },
+      {
+        "path": "morpho/accounting.js.map",
+        "qualifiedSha256": "814b2ba6f23744a7812f4c489e7d11a83a0e28463bef3b8937f7cdb62574f7c5",
+        "repositorySha256": "415fa636d27548a9ba0164d6665345cd80db9556d3ccb36d6d563f44d6443814"
+      },
+      {
+        "path": "morpho/math.js.map",
+        "qualifiedSha256": "ef6f08e7619baa41685836e0bb373bfd6e5c3561961b1d7dbb3daf0b12dc1a60",
+        "repositorySha256": "19dc778fb6a2b375cf254c5b4f0cf2b2741f531392d4dc8c267ed5b5b964e911"
+      },
+      {
+        "path": "notifications/adapters.js.map",
+        "qualifiedSha256": "31453839090d2d8ae380e3513efe017ceeae7efab2f5534b7946334d997bb45d",
+        "repositorySha256": "d20ce873aa4b55e1c6bd0b7643c3ec677f45453b7716e4ca47b72c2c476ddffc"
+      },
+      {
+        "path": "notifications/dispatcher.js.map",
+        "qualifiedSha256": "c58384068ef46cc8d976a9455bc6c89b17dba07675b7a8dd533e22229d0d70ce",
+        "repositorySha256": "35e6d5fae3b7b49b789a5938ee9a2f2040a3f189ca808b53d09a18d31ee0068e"
+      },
+      {
+        "path": "notifications/format.js.map",
+        "qualifiedSha256": "9d54b5796c1c25c1c857f178e5d97b2b203243127bfe995d8893045109056cc2",
+        "repositorySha256": "78513a37e1a0e6b74c27009191d3f2f4001caf8cc9757ecbd5ec4292a0de77b4"
+      },
+      {
+        "path": "notifications/types.js.map",
+        "qualifiedSha256": "569d951924fb1dd38e9c8bee696810c74729be286a419bdf8c0a668f1bcca92a",
+        "repositorySha256": "e57f54a2c90d97befbb0c0eb53abb9afbcc6050575529e412f6315cb97a3c902"
+      },
+      {
+        "path": "operations/connectivity.js.map",
+        "qualifiedSha256": "5da7e7487d0b70551d97205af70d69fcbdbbb1497128548a8bfe11dca27d8e8d",
+        "repositorySha256": "ef2d56c413908cb3bd24e4178594a67075ff59f90e29012da07d4729e4ea3705"
+      },
+      {
+        "path": "operations/deadline.js.map",
+        "qualifiedSha256": "f2000703e4e43ee221579d5ee660ae48d739d192988a95863600829e44fdf648",
+        "repositorySha256": "85256665c44715d640672620789a8b74b767cd75b4d65d0c5576e73f8d74b3fc"
+      },
+      {
+        "path": "operations/diagnostics.js.map",
+        "qualifiedSha256": "dff4b339ffe7c364212ba8c9e7bff6a9e80bc33dd5d950a3de80a161bcbfa7a5",
+        "repositorySha256": "9ed4465c14771ff7a03a52b685925f4f6898154a22cda2d365ea9bed5d135fc8"
+      },
+      {
+        "path": "operations/model.js.map",
+        "qualifiedSha256": "e37aa0580e14f90dd1360786e77eb5359a2e306448a638678f3b6876be054780",
+        "repositorySha256": "d6cbf611b62998665323bf58f8e51e27b4fc0053eaff89e33dcd2b03db7b61f8"
+      },
+      {
+        "path": "operations/redaction.js.map",
+        "qualifiedSha256": "62e5d19b6aeb3303b73211d2578352666efa9120b7ee2f4f15dc1e38ab918558",
+        "repositorySha256": "11e29edcbe9222db903315cedeefee4898c0eb87ba6e2256f685252c3bb954ee"
+      },
+      {
+        "path": "operations/resources.js.map",
+        "qualifiedSha256": "383337f6d32a19948984748a24f211e85c5b74e2883f686e057cbb2bf0f1a92d",
+        "repositorySha256": "348f1f809a28884ab2bd9bb01586278eabcf35327a75479732d4a1bc976e9173"
+      },
+      {
+        "path": "oracle-assurance/audit-rpc.js.map",
+        "qualifiedSha256": "5f7fa06a46a1fddba7cae7b75f9828464fce67387d612377e2da8470d3853135",
+        "repositorySha256": "62fdccea11c48f76f3a91be1dc00fdc8ead695323b525e0c330179572e11287a"
+      },
+      {
+        "path": "oracle-assurance/configuration.js.map",
+        "qualifiedSha256": "ebcf16838b64d7530a3bee8019fefd47fcdbefae10fd221e86885b6f60157efc",
+        "repositorySha256": "38622aa520fb1a92aa5aeda93e92d8ea63e78884f99a0980392938a16fda7c29"
+      },
+      {
+        "path": "oracle-assurance/evaluate.js.map",
+        "qualifiedSha256": "ef040a7f80098cc429bc43cb2377aea66f04767bddf5485647e79f8847aa066a",
+        "repositorySha256": "b78951de9cbdc5e2b1d5b63ae0d70f90a5b15d39b44e1948dc037d7a99e3f90c"
+      },
+      {
+        "path": "oracle-assurance/evidence.js.map",
+        "qualifiedSha256": "c826cf9f8b732997d9808d3eb5dc648b9c0d5f0413b758deefdbe76bb3a8648a",
+        "repositorySha256": "0a8044d999a85585944056dff2f2a9897f971a7f2137fb760b6a2188b281979f"
+      },
+      {
+        "path": "oracle-assurance/freshness.js.map",
+        "qualifiedSha256": "494eb7289a362426fa94c4b50935596492f1d7258c035ddbef767fa3e651f1f7",
+        "repositorySha256": "725adf142105ce1c41a24204672f3a7eec205184c22efc15344429debee659c6"
+      },
+      {
+        "path": "oracle-assurance/independent.js.map",
+        "qualifiedSha256": "a7d78366b41e9a6d956291d2c93d9bf599b3612915383e063ac49a33b30ec42b",
+        "repositorySha256": "c2d0a345a99e59a00cf3c604ac6263cf90b68210980983b13ae7d699a6dc26fa"
+      },
+      {
+        "path": "oracle-assurance/model.js.map",
+        "qualifiedSha256": "d63173d0972f8ab1c7e1cb4a1e803015398a611f02908b13c7be9d472c7f9b6a",
+        "repositorySha256": "131bb89fc9cbef536cde983db528b984f41abb1ffb3a1e91b982a77f63356110"
+      },
+      {
+        "path": "oracle-assurance/report.js.map",
+        "qualifiedSha256": "5abb018b979a71aa3ab5b77dd6ede6979bf3039be120f57b992490599da17f03",
+        "repositorySha256": "d4537b085927e9f1ba2b0d0cd5230ba935fff165e092c832535bfa1b14440e17"
+      },
+      {
+        "path": "oracle-assurance/reviewed.js.map",
+        "qualifiedSha256": "5424b0a8da23b1f46e3ef2335663d9b788ac7d8077d28a44c950b43b1db3fa94",
+        "repositorySha256": "52e68600902b22e0ce668cb5628c402dea4fad56579f56fb32c27c29a6c22870"
+      },
+      {
+        "path": "oracle-assurance/supplemental.js.map",
+        "qualifiedSha256": "02ba7986f8f6d60a19828a68a719803e0998462c13f9df77d51b10f90586d5d1",
+        "repositorySha256": "139a39bd84a49eda82153dcef50efeb78ef589f9f11d3e6f90edaac1148eb032"
+      },
+      {
+        "path": "oracle-assurance/units.js.map",
+        "qualifiedSha256": "a00a65e333f69deb6bdf083f4e967fac9f15b5b15538e37c9699d9fd572d43db",
+        "repositorySha256": "2cccf5163b8a72ed429399b2774a50ba63f148810851a9662dcd55c74aa50c3b"
+      },
+      {
+        "path": "oracle/abi.js.map",
+        "qualifiedSha256": "99465618ca03c37ad35e15a77626446fa637b19545a4c061869517025904e35a",
+        "repositorySha256": "2394928a620f90536f48843b5f0e3fd17528429dadc57bf4afdd814ce6191543"
+      },
+      {
+        "path": "oracle/policy.js.map",
+        "qualifiedSha256": "9b857d73d5383e61d32787708cfeecb787175799d541679d05da15a9e7dc82b3",
+        "repositorySha256": "b8ec0891e2c042316990b0f3e22a79d4aa10eef1cb2cc285e36be99c0bd119c4"
+      },
+      {
+        "path": "oracle/validate.js.map",
+        "qualifiedSha256": "4aafeab6198c478868fe8913f05c44f2d38f746957493ea7ae203685c458f7b2",
+        "repositorySha256": "7ca37455bba9e3f2eeac147579ecd2d1faf35a7c9d3b029e18ef5f4256093af9"
+      },
+      {
+        "path": "positions/model.js.map",
+        "qualifiedSha256": "008fd6f4d2369fca81349136ca5627afce3de0aa7a1a710082d7cff21f5b0b69",
+        "repositorySha256": "763824a2702c2e805256c296c2899c1bde1f0416b62181735de90fd4ece5eba1"
+      },
+      {
+        "path": "postgres-service.js.map",
+        "qualifiedSha256": "ec6aae904dbc3259fa00134bf31e1c7828561e1a7b480377dcf80a66f37ddc55",
+        "repositorySha256": "e8a782b79e0a3ddf0e73a6d615d6ec4a08a816be668078963391ee640dabd083"
+      },
+      {
+        "path": "risk/assured.js.map",
+        "qualifiedSha256": "681cfca81d4ad988f6834c2b476a66c12feabf51aa5f6ef065dc5864143d244f",
+        "repositorySha256": "7902efe55a5c81d9330767368f214569738e97387bad1f6c8b42a5ac23b7130d"
+      },
+      {
+        "path": "risk/collateral.js.map",
+        "qualifiedSha256": "5cb58bc770380e757115bae1e531d3256a5635dea6a18221426f346185237415",
+        "repositorySha256": "c6f87ff8e4ce3a377f41269d0d4e601cde2a7b1ff40ce6de9142818697c5a2bd"
+      },
+      {
+        "path": "risk/eligibility.js.map",
+        "qualifiedSha256": "1976913c4b2cd598fb1c1551a69c3d3dff3f1c343988e0af058663783cabeb57",
+        "repositorySha256": "db22f0c164e23080d8e49f4d53d7d36e8df79dc6f7dfe00eb471c1c81841b33f"
+      },
+      {
+        "path": "risk/engine.js.map",
+        "qualifiedSha256": "837c58db6f1baff3f728418291dbc6a244f89d84501ad7df3b7df0efa97ace48",
+        "repositorySha256": "2878e92017d7f22434ca2b884fedcefdbdb8a6c07cd6745b9ed118e58282d135"
+      },
+      {
+        "path": "risk/evidence.js.map",
+        "qualifiedSha256": "8ba1e854cf7571ccf4446313d09a89ddf1cf32a987a2eb9183678de4844e061f",
+        "repositorySha256": "3ec51a50d65b4a28a3abe072a0720cdab74d621d5e7b3176ff90a9815db68e4d"
+      },
+      {
+        "path": "risk/provenance.js.map",
+        "qualifiedSha256": "4557acc7773452615b26f9cb60207c09d95b34d9f41c1d866904088328a0b2bf",
+        "repositorySha256": "5123f92163ee68797ea443f2f7a029351bfd858cf601cfd2e75062787e65d503"
+      },
+      {
+        "path": "risk/recovery.js.map",
+        "qualifiedSha256": "5c65e19102f8a641f2a433b8669fd57f59be02e82e72d1475dfd23e94687e456",
+        "repositorySha256": "dce929ff19bd1b5a9a268f2efd7ac947e9f0c0f938b4cd4d27fffc5e48d2134d"
+      },
+      {
+        "path": "risk/repayment.js.map",
+        "qualifiedSha256": "eca95a8c409445a9f03c049329d0588cf7ab7ac93a5ee7448ee12288d50073bf",
+        "repositorySha256": "436ce5adecfadd54956de622359cf6e518827c2168be9823c368fa12a44a3a4f"
+      },
+      {
+        "path": "risk/report.js.map",
+        "qualifiedSha256": "3f4bb844f7f69b19ba8f5a91ab0b02eb0fc35749051f3fb57aababe3e1973231",
+        "repositorySha256": "d23aab427442f204dede313d8dde76ceb831e7958b75ed8d48bc841488244d66"
+      },
+      {
+        "path": "risk/snapshot-schema.js.map",
+        "qualifiedSha256": "27953e16954c93ef17c10ef0067afca736226e4a187c3a21dfc85c3e735d7f51",
+        "repositorySha256": "a5f6d618429669f592159c2e8c805676fc92496ca9f47ffa2e54a206e9405f46"
+      },
+      {
+        "path": "risk/thresholds.js.map",
+        "qualifiedSha256": "832f6af2aadcbcfa8338cedf9feba9045ac313cb202ffffd830f293b5e14afb1",
+        "repositorySha256": "3722db74dc449d95efff2d2faf7f67bff0f029afed1f29158fe834df95a3d9eb"
+      },
+      {
+        "path": "risk/types.js.map",
+        "qualifiedSha256": "cbd8fac822adfb5189ea9914c2e3ae46d90eb7aece1409b03b325b51db124607",
+        "repositorySha256": "fdd7c482a9bfc4398a33d9024d62153221904ab5575770b7da7f1ade9aa46c77"
+      },
+      {
+        "path": "risk/validate.js.map",
+        "qualifiedSha256": "f598cf1abf7cdcad2fcda687ec5b19a2284d08ad520b564edc36af0a964805bb",
+        "repositorySha256": "722c985ba360146a4c456032e10da8d59c7811ce74b3e7a1f4ac4c6fa2e3f4a1"
+      },
+      {
+        "path": "runtime/auth.js.map",
+        "qualifiedSha256": "719e520ba5ff5da3afd259cfcdc6350edce9e2d6da0b58858d13aa581a11ace1",
+        "repositorySha256": "26ccfa9159d27d34d2f604494a6eb95d836ce33c3cb5142ce23490175f0da1df"
+      },
+      {
+        "path": "runtime/dashboard.js.map",
+        "qualifiedSha256": "4274cadb741efb2caf305f31ffed8a71c45c862d6a71bc8ed59e72c3b55942c7",
+        "repositorySha256": "b6fc65750d5851ffab3156ee508c99202cc567313098c2659e82897300ab9e69"
+      },
+      {
+        "path": "runtime/http.js.map",
+        "qualifiedSha256": "150e174408a2119837f6ac23075e0dab45076f8807be2e879d9398ee1d343309",
+        "repositorySha256": "fe7495800b6fa721dcc0873a7aa0d4e221a81cab0e277afcea186479b162b7e9"
+      },
+      {
+        "path": "runtime/postgres-runtime.js.map",
+        "qualifiedSha256": "8bba1270e9627fd28fe232799a71e8701bace7a27f9170aa1cc4cb5f44329966",
+        "repositorySha256": "6f3b2f4e0c34ecbc5f6f4e9b850100cdd19fac24b4ee014939723d38b9b0427e"
+      },
+      {
+        "path": "runtime/read-model.js.map",
+        "qualifiedSha256": "ee705f1be2acd2cd680c1b80042fbc0ba7c0664926bfb056f1b842c5f5aa77ae",
+        "repositorySha256": "acf7797ef8f9eb47bdd981078fe50dea3144e6dd788e1a4b70f556418d56b387"
+      },
+      {
+        "path": "runtime/scheduler-contract.js.map",
+        "qualifiedSha256": "0d1d609681dcd775ba845d4000d81ee0a1af55f7be6d2a51823e163d8904c33c",
+        "repositorySha256": "d908c0aabcbdb40b27cdc7f300d90b83673666d39f8ac2f296b80cab64913b3c"
+      },
+      {
+        "path": "runtime/scheduler.js.map",
+        "qualifiedSha256": "f252bddfdf26f8ae19235e8fbce04f16f2bb7a39da069c065ff4de36fa75e08b",
+        "repositorySha256": "877726dc13a70927c487c69f9ea70ba12bd13cbe86a0460396760ad0178124d8"
+      },
+      {
+        "path": "runtime/service.js.map",
+        "qualifiedSha256": "e759ec7df9b97edcb4203895ed1df4d1b79361e2dcdd6f06c7925c07b608f731",
+        "repositorySha256": "ab7ff4a850f4813d8e8da4fda5569c17f3953694df1621b140e79c1911611ea7"
+      },
+      {
+        "path": "runtime/workspace.js.map",
+        "qualifiedSha256": "971551336cfba86e34b4534a0997cc1477108997a7131208c5f34a537b3e135e",
+        "repositorySha256": "d5f2331005e2dde48fbab210e79232a5715c8623a7e0c445b785854d57e4efda"
+      },
+      {
+        "path": "service.js.map",
+        "qualifiedSha256": "90ca23090f4cf627edd4bef2703758310748f9f5806eb82d116c6f7e46c21d64",
+        "repositorySha256": "5a093458dd0cfbe1e00bd015cf77cc8a50f98e82dcba33466d9291eca41d32e5"
+      },
+      {
+        "path": "storage/backup.js.map",
+        "qualifiedSha256": "c5e77669db511286bde689a4a054d58fd9c85a2d73ca9f16bac4b5bf43a78131",
+        "repositorySha256": "71dbc392bcec66d8b31c9ce1128d5a04669114722c93d3188504ab7eab6cc789"
+      },
+      {
+        "path": "storage/migrations.js.map",
+        "qualifiedSha256": "738520f2311f728dd4dc33a53de53f8f0af16d20de3fdeb7acbbb75dcc508e3a",
+        "repositorySha256": "174dbb93f6a86f47b5377189f280cac665dce323b2efde1103d361ffaa58c02b"
+      },
+      {
+        "path": "storage/paths.js.map",
+        "qualifiedSha256": "6ba9eeff960ad0edf7af5b9803ee1481df9986417a2225770e172c328543d83b",
+        "repositorySha256": "69125fdf8d16bfd45661d0e007adaa16705e9271f26ee4b15434ba4fec0393d0"
+      },
+      {
+        "path": "storage/persistence.js.map",
+        "qualifiedSha256": "7651116d30248e8628b02fd99b408b4ce666ec6c386da2e14a52b1d9ae0a9fdf",
+        "repositorySha256": "222941b16caecbee1fe150877abcefd818cb807e2cb7f0185077261e10658cd1"
+      },
+      {
+        "path": "storage/postgres/catalog.js.map",
+        "qualifiedSha256": "7dda2be1d53517febb7aa88eb580b1579a57749e858c129cabb2c2a8620ce841",
+        "repositorySha256": "86459130bbc549cfc9a57b19b5f027efdd9fd10943d845a23ec3c3b02db4cf9b"
+      },
+      {
+        "path": "storage/postgres/codec.js.map",
+        "qualifiedSha256": "26f8e7341a789f23f464efc1d20083fb73e1c31929d705371029465e6175d91f",
+        "repositorySha256": "d050d2219d47f54d33507d733546c6fc49dfdef867115a28567af7d79dcb76d9"
+      },
+      {
+        "path": "storage/postgres/connection.js.map",
+        "qualifiedSha256": "720c145ea94254a994fdcc2db8379af52b87578473cc239d01f9697f860d7627",
+        "repositorySha256": "af018108a392ac2592a14e6ad0e0a40ea6eb47df89ce0a6be563e08a841bb4b4"
+      },
+      {
+        "path": "storage/postgres/database.js.map",
+        "qualifiedSha256": "319b145c630c74671832b88c262d684fbacf742593b97440ae1299abe38279a4",
+        "repositorySha256": "a7080ffca0210448e380c0317704ca888859ceb1321988a8da270048521ffb39"
+      },
+      {
+        "path": "storage/postgres/migrations.js.map",
+        "qualifiedSha256": "e5dd3129500eef928dea09d3272c21f126bd6940159c436f90146081b45462e5",
+        "repositorySha256": "20cfa9d54a2b55a092aaa231950bbef42d7799c0b9f3c023bf54c9fb9344e70e"
+      },
+      {
+        "path": "storage/postgres/scheduler-store.js.map",
+        "qualifiedSha256": "5d6bee7bf6b15d163e7ae169f8b6e7aeb7a615243abd7f5793ed6b3129761d6c",
+        "repositorySha256": "c063300c3bfbca801b2eb23bfaa887521de2e921f5fc6f0a62909c6b8b626acf"
+      },
+      {
+        "path": "storage/postgres/store.js.map",
+        "qualifiedSha256": "dec2f65c191e5bc2a04821f406ebb570fc2bb3dfb2e8927d01a90c46497ae2a5",
+        "repositorySha256": "ce07af970f880f193a87e907344854c6daf121d3c95997a815795e4b42e711c7"
+      },
+      {
+        "path": "storage/store.js.map",
+        "qualifiedSha256": "cc27c5369d6938c0f41dfd52bb0939b5a8a112c52c5e984193614af37da51e9d",
+        "repositorySha256": "0078c07d8d0beb4737227dc98aa9995c707e320746f1622c003b36908812596b"
+      },
+      {
+        "path": "storage/validation.js.map",
+        "qualifiedSha256": "4a1f426e28e296bf1756ab0678321f66e73f468dfa8c6d122dde7b84952eedfa",
+        "repositorySha256": "8d7ce1d39555b8a327a364d1865c774c6072faa6f3adff07bd2e9c8b921e7417"
+      },
+      {
+        "path": "validation/decimals.js.map",
+        "qualifiedSha256": "ad0987d402708bfa6663422c36630f16fd6cc79421b7174c4031a313a1db69a3",
+        "repositorySha256": "e7b53caaf00184485073460e96c26e0d393ecf98c0147c1d64d8b5e776feda52"
+      },
+      {
+        "path": "validation/market.js.map",
+        "qualifiedSha256": "80091e72e3a0387ccecfcb80640d49647a610ba72760d012613bd8667b59c5d9",
+        "repositorySha256": "4fc028859968997fefeb1bd49c8496873fe34dc02e3337c0a0763b884a83a980"
+      },
+      {
+        "path": "validation/quality.js.map",
+        "qualifiedSha256": "3ea06e0101ffdc68ab6019885219b9e39e7e1862e423ec57f77ccdd6532f0d14",
+        "repositorySha256": "c53cd5546874356e6a5bce41cd0b89c97123c36ef5ce882b81ec642ffa45e4f1"
+      },
+      {
+        "path": "validation/schemas.js.map",
+        "qualifiedSha256": "687dbeeaa90fd49a54e854460fda14cf5fe6bf3b2e78129b5ed7f3be254c5ccd",
+        "repositorySha256": "112a0e58f80a4aa3df5d08f3be48c2e10a2d56ee704ea6c33f62983536297520"
+      }
+    ],
+    "javascriptDifferences": 0,
+    "declarationDifferences": 0,
+    "sourceMapDifferences": 107,
+    "nonPathSourceMapDifferences": [],
+    "missing": [],
+    "extra": []
+  },
+  "sourceMapMappings": [
+    {
+      "map": "dist/actions/derive.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/actions/derive.ts"
+      ],
+      "packagedSources": [
+        "src/actions/derive.ts"
+      ]
+    },
+    {
+      "map": "dist/actions/model.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/actions/model.ts"
+      ],
+      "packagedSources": [
+        "src/actions/model.ts"
+      ]
+    },
+    {
+      "map": "dist/chain/client.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/chain/client.ts"
+      ],
+      "packagedSources": [
+        "src/chain/client.ts"
+      ]
+    },
+    {
+      "map": "dist/chain/live.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/chain/live.ts"
+      ],
+      "packagedSources": [
+        "src/chain/live.ts"
+      ]
+    },
+    {
+      "map": "dist/chain/multicall.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/chain/multicall.ts"
+      ],
+      "packagedSources": [
+        "src/chain/multicall.ts"
+      ]
+    },
+    {
+      "map": "dist/chain/progression.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/chain/progression.ts"
+      ],
+      "packagedSources": [
+        "src/chain/progression.ts"
+      ]
+    },
+    {
+      "map": "dist/chain/rpc.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/chain/rpc.ts"
+      ],
+      "packagedSources": [
+        "src/chain/rpc.ts"
+      ]
+    },
+    {
+      "map": "dist/chain/snapshot.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/chain/snapshot.ts"
+      ],
+      "packagedSources": [
+        "src/chain/snapshot.ts"
+      ]
+    },
+    {
+      "map": "dist/chain/transport.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/chain/transport.ts"
+      ],
+      "packagedSources": [
+        "src/chain/transport.ts"
+      ]
+    },
+    {
+      "map": "dist/cli.js.map",
+      "recordedSources": [
+        "../../../../../../../../../liquidation-watchdog/src/cli.ts"
+      ],
+      "packagedSources": [
+        "src/cli.ts"
+      ]
+    },
+    {
+      "map": "dist/cli/monitor-options.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/cli/monitor-options.ts"
+      ],
+      "packagedSources": [
+        "src/cli/monitor-options.ts"
+      ]
+    },
+    {
+      "map": "dist/cli/monitor.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/cli/monitor.ts"
+      ],
+      "packagedSources": [
+        "src/cli/monitor.ts"
+      ]
+    },
+    {
+      "map": "dist/cli/operations-options.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/cli/operations-options.ts"
+      ],
+      "packagedSources": [
+        "src/cli/operations-options.ts"
+      ]
+    },
+    {
+      "map": "dist/cli/operations.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/cli/operations.ts"
+      ],
+      "packagedSources": [
+        "src/cli/operations.ts"
+      ]
+    },
+    {
+      "map": "dist/cli/options.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/cli/options.ts"
+      ],
+      "packagedSources": [
+        "src/cli/options.ts"
+      ]
+    },
+    {
+      "map": "dist/cli/oracle-options.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/cli/oracle-options.ts"
+      ],
+      "packagedSources": [
+        "src/cli/oracle-options.ts"
+      ]
+    },
+    {
+      "map": "dist/cli/oracle.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/cli/oracle.ts"
+      ],
+      "packagedSources": [
+        "src/cli/oracle.ts"
+      ]
+    },
+    {
+      "map": "dist/cli/run.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/cli/run.ts"
+      ],
+      "packagedSources": [
+        "src/cli/run.ts"
+      ]
+    },
+    {
+      "map": "dist/config/deployment.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/config/deployment.ts"
+      ],
+      "packagedSources": [
+        "src/config/deployment.ts"
+      ]
+    },
+    {
+      "map": "dist/config/evidence.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/config/evidence.ts"
+      ],
+      "packagedSources": [
+        "src/config/evidence.ts"
+      ]
+    },
+    {
+      "map": "dist/config/monitoring.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/config/monitoring.ts"
+      ],
+      "packagedSources": [
+        "src/config/monitoring.ts"
+      ]
+    },
+    {
+      "map": "dist/config/position.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/config/position.ts"
+      ],
+      "packagedSources": [
+        "src/config/position.ts"
+      ]
+    },
+    {
+      "map": "dist/config/postgres.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/config/postgres.ts"
+      ],
+      "packagedSources": [
+        "src/config/postgres.ts"
+      ]
+    },
+    {
+      "map": "dist/config/production.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/config/production.ts"
+      ],
+      "packagedSources": [
+        "src/config/production.ts"
+      ]
+    },
+    {
+      "map": "dist/config/risk.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/config/risk.ts"
+      ],
+      "packagedSources": [
+        "src/config/risk.ts"
+      ]
+    },
+    {
+      "map": "dist/config/runtime.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/config/runtime.ts"
+      ],
+      "packagedSources": [
+        "src/config/runtime.ts"
+      ]
+    },
+    {
+      "map": "dist/domain/errors.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/domain/errors.ts"
+      ],
+      "packagedSources": [
+        "src/domain/errors.ts"
+      ]
+    },
+    {
+      "map": "dist/domain/evidence.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/domain/evidence.ts"
+      ],
+      "packagedSources": [
+        "src/domain/evidence.ts"
+      ]
+    },
+    {
+      "map": "dist/domain/report.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/domain/report.ts"
+      ],
+      "packagedSources": [
+        "src/domain/report.ts"
+      ]
+    },
+    {
+      "map": "dist/domain/serialize.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/domain/serialize.ts"
+      ],
+      "packagedSources": [
+        "src/domain/serialize.ts"
+      ]
+    },
+    {
+      "map": "dist/domain/types.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/domain/types.ts"
+      ],
+      "packagedSources": [
+        "src/domain/types.ts"
+      ]
+    },
+    {
+      "map": "dist/mcp/client.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/mcp/client.ts"
+      ],
+      "packagedSources": [
+        "src/mcp/client.ts"
+      ]
+    },
+    {
+      "map": "dist/monitoring/logs.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/monitoring/logs.ts"
+      ],
+      "packagedSources": [
+        "src/monitoring/logs.ts"
+      ]
+    },
+    {
+      "map": "dist/monitoring/model.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/monitoring/model.ts"
+      ],
+      "packagedSources": [
+        "src/monitoring/model.ts"
+      ]
+    },
+    {
+      "map": "dist/monitoring/observation.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/monitoring/observation.ts"
+      ],
+      "packagedSources": [
+        "src/monitoring/observation.ts"
+      ]
+    },
+    {
+      "map": "dist/monitoring/reader.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/monitoring/reader.ts"
+      ],
+      "packagedSources": [
+        "src/monitoring/reader.ts"
+      ]
+    },
+    {
+      "map": "dist/monitoring/service.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/monitoring/service.ts"
+      ],
+      "packagedSources": [
+        "src/monitoring/service.ts"
+      ]
+    },
+    {
+      "map": "dist/monitoring/transitions.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/monitoring/transitions.ts"
+      ],
+      "packagedSources": [
+        "src/monitoring/transitions.ts"
+      ]
+    },
+    {
+      "map": "dist/morpho/abi.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/morpho/abi.ts"
+      ],
+      "packagedSources": [
+        "src/morpho/abi.ts"
+      ]
+    },
+    {
+      "map": "dist/morpho/accounting.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/morpho/accounting.ts"
+      ],
+      "packagedSources": [
+        "src/morpho/accounting.ts"
+      ]
+    },
+    {
+      "map": "dist/morpho/math.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/morpho/math.ts"
+      ],
+      "packagedSources": [
+        "src/morpho/math.ts"
+      ]
+    },
+    {
+      "map": "dist/notifications/adapters.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/notifications/adapters.ts"
+      ],
+      "packagedSources": [
+        "src/notifications/adapters.ts"
+      ]
+    },
+    {
+      "map": "dist/notifications/dispatcher.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/notifications/dispatcher.ts"
+      ],
+      "packagedSources": [
+        "src/notifications/dispatcher.ts"
+      ]
+    },
+    {
+      "map": "dist/notifications/format.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/notifications/format.ts"
+      ],
+      "packagedSources": [
+        "src/notifications/format.ts"
+      ]
+    },
+    {
+      "map": "dist/notifications/types.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/notifications/types.ts"
+      ],
+      "packagedSources": [
+        "src/notifications/types.ts"
+      ]
+    },
+    {
+      "map": "dist/operations/connectivity.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/operations/connectivity.ts"
+      ],
+      "packagedSources": [
+        "src/operations/connectivity.ts"
+      ]
+    },
+    {
+      "map": "dist/operations/deadline.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/operations/deadline.ts"
+      ],
+      "packagedSources": [
+        "src/operations/deadline.ts"
+      ]
+    },
+    {
+      "map": "dist/operations/diagnostics.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/operations/diagnostics.ts"
+      ],
+      "packagedSources": [
+        "src/operations/diagnostics.ts"
+      ]
+    },
+    {
+      "map": "dist/operations/model.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/operations/model.ts"
+      ],
+      "packagedSources": [
+        "src/operations/model.ts"
+      ]
+    },
+    {
+      "map": "dist/operations/redaction.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/operations/redaction.ts"
+      ],
+      "packagedSources": [
+        "src/operations/redaction.ts"
+      ]
+    },
+    {
+      "map": "dist/operations/resources.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/operations/resources.ts"
+      ],
+      "packagedSources": [
+        "src/operations/resources.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/audit-rpc.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/audit-rpc.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/audit-rpc.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/configuration.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/configuration.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/configuration.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/evaluate.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/evaluate.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/evaluate.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/evidence.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/evidence.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/evidence.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/freshness.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/freshness.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/freshness.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/independent.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/independent.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/independent.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/model.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/model.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/model.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/report.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/report.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/report.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/reviewed.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/reviewed.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/reviewed.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/supplemental.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/supplemental.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/supplemental.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle-assurance/units.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle-assurance/units.ts"
+      ],
+      "packagedSources": [
+        "src/oracle-assurance/units.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle/abi.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle/abi.ts"
+      ],
+      "packagedSources": [
+        "src/oracle/abi.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle/policy.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle/policy.ts"
+      ],
+      "packagedSources": [
+        "src/oracle/policy.ts"
+      ]
+    },
+    {
+      "map": "dist/oracle/validate.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/oracle/validate.ts"
+      ],
+      "packagedSources": [
+        "src/oracle/validate.ts"
+      ]
+    },
+    {
+      "map": "dist/positions/model.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/positions/model.ts"
+      ],
+      "packagedSources": [
+        "src/positions/model.ts"
+      ]
+    },
+    {
+      "map": "dist/postgres-service.js.map",
+      "recordedSources": [
+        "../../../../../../../../../liquidation-watchdog/src/postgres-service.ts"
+      ],
+      "packagedSources": [
+        "src/postgres-service.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/assured.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/assured.ts"
+      ],
+      "packagedSources": [
+        "src/risk/assured.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/collateral.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/collateral.ts"
+      ],
+      "packagedSources": [
+        "src/risk/collateral.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/eligibility.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/eligibility.ts"
+      ],
+      "packagedSources": [
+        "src/risk/eligibility.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/engine.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/engine.ts"
+      ],
+      "packagedSources": [
+        "src/risk/engine.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/evidence.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/evidence.ts"
+      ],
+      "packagedSources": [
+        "src/risk/evidence.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/provenance.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/provenance.ts"
+      ],
+      "packagedSources": [
+        "src/risk/provenance.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/recovery.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/recovery.ts"
+      ],
+      "packagedSources": [
+        "src/risk/recovery.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/repayment.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/repayment.ts"
+      ],
+      "packagedSources": [
+        "src/risk/repayment.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/report.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/report.ts"
+      ],
+      "packagedSources": [
+        "src/risk/report.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/snapshot-schema.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/snapshot-schema.ts"
+      ],
+      "packagedSources": [
+        "src/risk/snapshot-schema.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/thresholds.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/thresholds.ts"
+      ],
+      "packagedSources": [
+        "src/risk/thresholds.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/types.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/types.ts"
+      ],
+      "packagedSources": [
+        "src/risk/types.ts"
+      ]
+    },
+    {
+      "map": "dist/risk/validate.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/risk/validate.ts"
+      ],
+      "packagedSources": [
+        "src/risk/validate.ts"
+      ]
+    },
+    {
+      "map": "dist/runtime/auth.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/runtime/auth.ts"
+      ],
+      "packagedSources": [
+        "src/runtime/auth.ts"
+      ]
+    },
+    {
+      "map": "dist/runtime/dashboard.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/runtime/dashboard.ts"
+      ],
+      "packagedSources": [
+        "src/runtime/dashboard.ts"
+      ]
+    },
+    {
+      "map": "dist/runtime/http.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/runtime/http.ts"
+      ],
+      "packagedSources": [
+        "src/runtime/http.ts"
+      ]
+    },
+    {
+      "map": "dist/runtime/postgres-runtime.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/runtime/postgres-runtime.ts"
+      ],
+      "packagedSources": [
+        "src/runtime/postgres-runtime.ts"
+      ]
+    },
+    {
+      "map": "dist/runtime/read-model.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/runtime/read-model.ts"
+      ],
+      "packagedSources": [
+        "src/runtime/read-model.ts"
+      ]
+    },
+    {
+      "map": "dist/runtime/scheduler-contract.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/runtime/scheduler-contract.ts"
+      ],
+      "packagedSources": [
+        "src/runtime/scheduler-contract.ts"
+      ]
+    },
+    {
+      "map": "dist/runtime/scheduler.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/runtime/scheduler.ts"
+      ],
+      "packagedSources": [
+        "src/runtime/scheduler.ts"
+      ]
+    },
+    {
+      "map": "dist/runtime/service.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/runtime/service.ts"
+      ],
+      "packagedSources": [
+        "src/runtime/service.ts"
+      ]
+    },
+    {
+      "map": "dist/runtime/workspace.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/runtime/workspace.ts"
+      ],
+      "packagedSources": [
+        "src/runtime/workspace.ts"
+      ]
+    },
+    {
+      "map": "dist/service.js.map",
+      "recordedSources": [
+        "../../../../../../../../../liquidation-watchdog/src/service.ts"
+      ],
+      "packagedSources": [
+        "src/service.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/backup.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/storage/backup.ts"
+      ],
+      "packagedSources": [
+        "src/storage/backup.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/migrations.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/storage/migrations.ts"
+      ],
+      "packagedSources": [
+        "src/storage/migrations.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/paths.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/storage/paths.ts"
+      ],
+      "packagedSources": [
+        "src/storage/paths.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/persistence.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/storage/persistence.ts"
+      ],
+      "packagedSources": [
+        "src/storage/persistence.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/postgres/catalog.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../../liquidation-watchdog/src/storage/postgres/catalog.ts"
+      ],
+      "packagedSources": [
+        "src/storage/postgres/catalog.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/postgres/codec.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../../liquidation-watchdog/src/storage/postgres/codec.ts"
+      ],
+      "packagedSources": [
+        "src/storage/postgres/codec.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/postgres/connection.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../../liquidation-watchdog/src/storage/postgres/connection.ts"
+      ],
+      "packagedSources": [
+        "src/storage/postgres/connection.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/postgres/database.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../../liquidation-watchdog/src/storage/postgres/database.ts"
+      ],
+      "packagedSources": [
+        "src/storage/postgres/database.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/postgres/migrations.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../../liquidation-watchdog/src/storage/postgres/migrations.ts"
+      ],
+      "packagedSources": [
+        "src/storage/postgres/migrations.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/postgres/scheduler-store.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../../liquidation-watchdog/src/storage/postgres/scheduler-store.ts"
+      ],
+      "packagedSources": [
+        "src/storage/postgres/scheduler-store.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/postgres/store.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../../liquidation-watchdog/src/storage/postgres/store.ts"
+      ],
+      "packagedSources": [
+        "src/storage/postgres/store.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/store.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/storage/store.ts"
+      ],
+      "packagedSources": [
+        "src/storage/store.ts"
+      ]
+    },
+    {
+      "map": "dist/storage/validation.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/storage/validation.ts"
+      ],
+      "packagedSources": [
+        "src/storage/validation.ts"
+      ]
+    },
+    {
+      "map": "dist/validation/decimals.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/validation/decimals.ts"
+      ],
+      "packagedSources": [
+        "src/validation/decimals.ts"
+      ]
+    },
+    {
+      "map": "dist/validation/market.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/validation/market.ts"
+      ],
+      "packagedSources": [
+        "src/validation/market.ts"
+      ]
+    },
+    {
+      "map": "dist/validation/quality.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/validation/quality.ts"
+      ],
+      "packagedSources": [
+        "src/validation/quality.ts"
+      ]
+    },
+    {
+      "map": "dist/validation/schemas.js.map",
+      "recordedSources": [
+        "../../../../../../../../../../liquidation-watchdog/src/validation/schemas.ts"
+      ],
+      "packagedSources": [
+        "src/validation/schemas.ts"
+      ]
+    }
+  ],
+  "limitation": "Qualified source-map bytes retain their historical external-build relative source paths. Use the separate packagedSources mapping to find the included source; debugger source-map path rewriting was not performed.",
+  "pass": true
+}

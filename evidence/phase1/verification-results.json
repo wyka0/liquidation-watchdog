@@ -1,0 +1,103 @@
+{
+  "evidenceKind": "LOCAL_VERIFICATION_WITH_LIVE_INTEGRATION",
+  "startedAt": "2026-11-01T14:01:46.585Z",
+  "finishedAt": "2026-11-01T14:04:13.560Z",
+  "passed": true,
+  "nodeVersion": "v24.14.1",
+  "platform": "win32",
+  "results": [
+    {
+      "check": "typecheck",
+      "command": "node npm-cli.js run typecheck",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:01:46.601Z",
+      "finishedAt": "2026-11-01T14:02:13.175Z",
+      "outputFile": "typecheck.txt"
+    },
+    {
+      "check": "lint",
+      "command": "node npm-cli.js run lint",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:02:13.175Z",
+      "finishedAt": "2026-11-01T14:02:26.126Z",
+      "outputFile": "lint.txt"
+    },
+    {
+      "check": "test-unit",
+      "command": "node npm-cli.js run test:unit",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:02:26.126Z",
+      "finishedAt": "2026-11-01T14:02:50.091Z",
+      "outputFile": "test-unit.txt"
+    },
+    {
+      "check": "test-integration",
+      "command": "node npm-cli.js run test:integration",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:02:50.091Z",
+      "finishedAt": "2026-11-01T14:03:32.520Z",
+      "outputFile": "test-integration.txt"
+    },
+    {
+      "check": "build",
+      "command": "node npm-cli.js run build",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:03:32.520Z",
+      "finishedAt": "2026-11-01T14:03:54.813Z",
+      "outputFile": "build.txt"
+    },
+    {
+      "check": "built-cli-smoke",
+      "command": "node dist/cli.js --help",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:03:54.813Z",
+      "finishedAt": "2026-11-01T14:04:00.773Z",
+      "outputFile": "built-cli-smoke.txt"
+    },
+    {
+      "check": "source-runtime-links",
+      "command": "node --import tsx scripts/link-source-evidence.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:04:00.773Z",
+      "finishedAt": "2026-11-01T14:04:02.599Z",
+      "outputFile": "source-runtime-links.txt"
+    },
+    {
+      "check": "dependency-audit",
+      "command": "node npm-cli.js audit --json",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:04:02.599Z",
+      "finishedAt": "2026-11-01T14:04:08.699Z",
+      "outputFile": "dependency-audit.txt"
+    },
+    {
+      "check": "secrets-check",
+      "command": "node npm-cli.js run secrets:check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:04:08.753Z",
+      "finishedAt": "2026-11-01T14:04:12.399Z",
+      "outputFile": "secrets-check.txt"
+    },
+    {
+      "check": "git-intent-to-add",
+      "command": "git add --intent-to-add -- .",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:04:12.399Z",
+      "finishedAt": "2026-11-01T14:04:12.966Z",
+      "outputFile": "git-intent-to-add.txt"
+    },
+    {
+      "check": "git-diff-check",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T14:04:12.966Z",
+      "finishedAt": "2026-11-01T14:04:13.560Z",
+      "outputFile": "git-diff-check.txt"
+    }
+  ],
+  "testEvidence": {
+    "unit": "unit-tests.json (FIXTURE)",
+    "integration": "integration-tests.json (LIVE_CHAIN_READ)"
+  },
+  "gitNote": "A new local repository uses intent-to-add entries so git diff --check includes newly created files. No commit or push was performed."
+}

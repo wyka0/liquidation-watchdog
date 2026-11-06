@@ -1,0 +1,36 @@
+{
+  "name": "unit-tests",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "--configLoader=native",
+    "--no-cache",
+    "--no-fsModuleCache",
+    "--reporter=default",
+    "--reporter=json",
+    "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tests.json"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "startedAt": "2026-11-05T23:49:31.565Z",
+  "completedAt": "2026-11-05T23:58:24.821Z",
+  "exitCode": 1,
+  "signal": null,
+  "stdout": {
+    "file": "unit-tests.stdout.txt",
+    "bytes": 23611,
+    "sha256": "eaea77f020dc0015f3ee3072802b985ddfeefaf4e3d75ab9000ab3a915a94d4c"
+  },
+  "stderr": {
+    "file": "unit-tests.stderr.txt",
+    "bytes": 5584,
+    "sha256": "a5d68e3eb1d618a05132e177a25c372ee2f7b3ac6ef21c49b8a703287c1c34d8"
+  },
+  "safeguards": {
+    "noCache": true,
+    "externalOutputsOnly": true,
+    "network": "LOOPBACK_FIXTURES_ONLY",
+    "temporaryDirectory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp",
+    "noIntegrationTests": true
+  }
+}

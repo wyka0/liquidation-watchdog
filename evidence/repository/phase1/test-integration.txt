@@ -1,0 +1,17 @@
+
+> liquidation-watchdog@0.1.0 test:integration
+> vitest run --config vitest.integration.config.ts --reporter=default --reporter=json --outputFile.json=evidence/phase1/integration-tests.json
+
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+ ✓ test/integration/live.test.ts (1 test) 30766ms
+   ✓ LIVE_CHAIN_READ: real Pharos RPC + official Chain MCP (1)
+     ✓ retrieves the public demonstration borrow position at one consistent block 30757ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  19:32:54
+   Duration  37.96s (tests 83%, import 16%, transform 1%)
+
+JSON report written to C:/liquidation-watchdog/evidence/phase1/integration-tests.json

@@ -1,0 +1,89 @@
+# Environment and configuration reference
+
+The application uses strict non-secret JSON configuration plus **three optional notification environment variables**. It does not automatically load `.env` files, enumerate the environment, or support endpoint/chain/wallet environment overrides. [`.env.example`](../.env.example) contains placeholders only; copying it does not enable or configure a provider.
+
+## Environment variables
+
+| Name | Required when | Validation / reporting |
+| --- | --- | --- |
+| `WATCHDOG_TELEGRAM_BOT_TOKEN` | `notifications.telegram=true` | Bot credential syntax; output is only CONFIGURED/MISSING/INVALID |
+| `WATCHDOG_TELEGRAM_CHAT_ID` | `notifications.telegram=true` | Numeric ID, optionally negative, or `@channel_username`; never persisted or printed |
+| `WATCHDOG_DISCORD_WEBHOOK_URL` | `notifications.discord=true` | Exact HTTPS `discord.com/api[/vN]/webhooks/<id>/<credential>` destination; no user-info, custom port, query or fragment |
+
+Disabled providers do not read their variables. Existing Phase 3/4 names remain compatible. Set values privately using the host's secret manager or service environment; keep credentials out of command arguments, monitoring JSON, logs, evidence and Git. The systemd example references an external administrator-owned environment file, not an application `.env` loader. On Windows, validate ACLs and the service-account environment explicitly. Rotate credentials through the same channel/destination; queued deliveries use the current environment destination at send time.
+
+`config-check` validates enabled providers before opening a writable monitor database. Syntactic validity does not test delivery permissions, provider availability or destination ownership. `status`/`alerts` inspect stored data without provider credential access. `health`/`readiness`/`diagnostics` include configuration status and thus read values only for enabled channels, then omit them from output.
+
+## Configuration files and precedence
+
+- [monitoring.example.json](../config/monitoring.example.json) shows all operational/resource defaults for local use. [production.example.json](../config/production.example.json) chooses the production profile and keeps monitoring/notifications disabled.
+- `--config` on monitor/operational commands selects a non-secret monitoring JSON, at most 32 KiB. Unknown fields, links/aliases, traversal and potential secret-file names are rejected. There is no implicit `watchdog.config.json` loader.
+- Monitor `--enable`, `--interval` and `--database` override the corresponding JSON fields. `--risk-config` selects the separate threshold file. Risk threshold CLI flags override that file. On the `risk` command itself, `--config` retains its existing threshold-file meaning.
+- Operational diagnostics accept `--risk-config` so their stream scope matches the worker. They do not accept per-field threshold flags or historical block selection. Use the same threshold file; inspect historical streams through `status --block`.
+- Relative paths resolve against the working directory. Production requires an absolute local `.sqlite`/`.db` path. The database must be outside evidence archives. In-memory stores are test APIs only, not CLI configuration.
+- Chain, endpoints, deployment addresses and runtime identity pins remain compiled and fixed. No `RPC_URL`, `MCP_URL`, chain-ID, private-key or wallet field is supported.
+
+## Monitoring and retention
+
+| Setting | Default | Bounds / meaning |
+| --- | --- | --- |
+| `monitoring.enabled` | `false` | Continuous scheduling opt-in; `--once` requests one cycle |
+| `monitoring.intervalSeconds` | `60` | Integer 5–86400; measured after completed cycle |
+| `monitoring.maxConsecutiveFailures` | `3` | Integer 1–1000; failure episode escalation/backoff threshold |
+| `monitoring.alertOnRecovery` | `true` | Indicative mathematical improvement alerts |
+| `monitoring.alertOnDataQualityChanges` | `true` | Optional restoration notices; bad/unknown quality stays visible |
+| `monitoring.alertOnEveryCriticalCheck` | `false` | Explicit per-cycle repeats; otherwise deduplicated |
+| `monitoring.criticalReminderSeconds` | `null` | Optional 5–604800, at least the cycle interval |
+| `monitoring.oracleLocalMaxAgeSeconds` | Absent | Optional 1–31536000 local rejection policy; cannot establish a heartbeat |
+| `storage.path` | `data/watchdog.sqlite` | Local regular path; absolute in production |
+| `storage.cycleRetentionDays` | `30` | Integer 1–3650; protects latest/accepted/referenced/unfinished cycles |
+| `storage.alertRetentionDays` | `180` | Integer 7–3650; protects nonterminal deliveries; fingerprints remain |
+
+Risk defaults remain exact decimal strings: warning `1.30`, critical `1.10`, target `1.25`, mathematical boundary `1.00`. See [thresholds](thresholds.md).
+
+## Notification settings
+
+| Setting | Default | Bounds / meaning |
+| --- | --- | --- |
+| `notifications.telegram`, `notifications.discord` | `false` | Independently opt-in; console remains enabled |
+| `notifications.maxAttempts` | `5` | Integer 1–10; preserved across restarts |
+| `notifications.baseDelaySeconds` | `5` | Integer 1–300 |
+| `notifications.maxDelaySeconds` | `900` | Integer 1–86400 and at least base delay |
+| `notifications.jitterRatio` | `0.2` | 0–0.5; local delay remains within local cap |
+| `notifications.timeoutSeconds` | `15` | Integer 1–60; headers and body share this budget |
+| `notifications.maxPerDrain` | `10` | Integer 1–50; priority query repeats after each outcome |
+
+Valid server Retry-After can exceed the local retry cap and is never shortened. Excessive/unrepresentable restrictions block the provider persistently. Disabling holds pending work; it does not delete it. Details: [notification operations](operations-runbook.md#notification-recovery).
+
+## Operational settings
+
+| Setting | Default | Bounds / meaning |
+| --- | --- | --- |
+| `operations.profile` | `local` | `local` or `production` |
+| `operations.shutdownTimeoutSeconds` | `30` | Integer 1–300; settling budget after stop request |
+| `operations.cycleTimeoutSeconds` | `240` | Integer 1–900; total initialization/read/supplemental/persist/dispatch cycle |
+| `operations.connectivityTimeoutSeconds` | `30` | Integer 1–120; explicit two-path probe |
+| `operations.chainStatusMaxAgeSeconds` | `600` | Integer 5–86400; local accepted-snapshot age for readiness, not oracle freshness |
+| `operations.failureBackoffMaxSeconds` | `900` | Integer 5–86400; scheduler ceiling, never shorter than base interval |
+
+Production validation requires **Node v24.14.1 / SQLite 3.51.2**, an absolute database path, shutdown timeout strictly longer than provider timeout, and cycle timeout at least 120 seconds. These minimum relationships do not guarantee all worst-case retries and sends fit; exceeding the total-cycle budget fails the worker closed. Tune only from measured host/provider behavior.
+
+## Resource settings
+
+| Setting | Default | Enforcement |
+| --- | --- | --- |
+| `resources.databaseBytes` | 4 GiB (`4294967296`) | SQLite page ceiling plus cycle/diagnostic size checks |
+| `resources.walBytes` | 256 MiB (`268435456`) | Fail closed at cycle checks; checkpointing is not a hard byte cap |
+| `resources.minFreeBytes` | 512 MiB (`536870912`) | Disk reserve before work/backup/evidence capture |
+| `resources.pendingDeliveries` | `10000` | Nonterminal backlog; transactional admission and cycle checks; max configurable 1000000 |
+| `resources.rssBytes` | 512 MiB (`536870912`) | RSS sampled at cycle/runtime boundaries; independent host limit needed |
+| `resources.evidenceBytes` | 2 GiB (`2147483648`) | Bounded evidence inventory/backup; no automatic evidence deletion |
+| `resources.evidenceFiles` | `50000` | Evidence file/directory walk and backup limits; max configurable 1000000 |
+
+Byte settings are positive safe integers. Diagnostics and backup honor the selected monitoring configuration. Standalone inspect/risk/oracle CLI captures use their default capture budgets; they do not load the monitoring JSON. The oracle evidence API also accepts explicitly supplied limits. Verification tools write bounded test/capture outputs but are not a production evidence-rotation service.
+
+Other fixed bounds: read bodies 2,000,000 bytes; notification bodies 65,536 bytes; individual evidence artifacts 32 MiB; oracle manifests 1 MiB / 1,000 artifacts; backup manifests 32 MiB; backup reference/bundle inventories at most 1,000 each. Synchronous filesystem/SQLite calls cannot be interrupted by JavaScript timers; host hard-stop, disk and filesystem acceptance remain required.
+
+## Sanitized validation codes
+
+`MANDATORY_CHAIN_CONFIG_INVALID`, `ENABLED_NOTIFICATION_CONFIG_INVALID`, `PRODUCTION_RUNTIME_MISMATCH`, `PRODUCTION_DATABASE_ABSOLUTE_PATH_REQUIRED`, `PRODUCTION_SHUTDOWN_BUDGET_INVALID` and `PRODUCTION_CYCLE_BUDGET_INVALID` appear in `configuration.errors`. Malformed files use `MONITOR_CONFIG_FILE`, `CONFIG_FILE` or path-validation codes. No validation response prints a secret or turns the oracle into a verified source.

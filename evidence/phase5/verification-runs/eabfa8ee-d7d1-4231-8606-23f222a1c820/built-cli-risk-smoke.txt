@@ -1,0 +1,89 @@
+Liquidation Watchdog — Phase 2 risk calculation
+Evidence: LIVE_AS_OF_BLOCK | source LIVE_CHAIN_READ
+Network: chain 1672 | Morpho Blue | Morpho 0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+Account: 0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7 (public demonstration account; NOT the user's wallet)
+Block: 21919252 | 2026-11-02T08:57:19.000Z
+Block hash: 0xbfdf7eb27f4e8c4fdf8d67afe3edc54f12a48b0c51a892985d35a70b2b9f7946
+Input snapshot: sha256:e65a92f4b4a4ef7acbb9494192f67002fd0e48c7575a13d8504f4fd6105a9431
+Retrieved: 2026-11-02T08:57:50.784Z | calculated: 2026-11-02T08:57:50.817Z
+Collateral: 316838.566331327720653953 wsrUSD
+Accrued debt: 273664.130184 USDC
+Indicative collateral value: 350526.758207 USDC
+Indicative liquidation capacity: 320731.983759 USDC
+Indicative LTV: 78.0722509128362864%
+Indicative Morpho safety ratio (capacity/debt): 1.171991314840397965
+Thresholds: warning 1.30 | critical 1.10 | target 1.25 | boundary 1.00
+Mathematical risk state: WARNING
+Quality-gated risk state: DATA_UNVERIFIED
+Data quality: UNVERIFIED | oracle: UNVERIFIED
+Actionability: INDICATIVE_ONLY; actionable=false
+Oracle: 0x9416F861970C2a39c02ab7696Ef0496383d4E81b | price (1e36 base-unit scale): 1106326045676376233000000
+Oracle observation time: 2026-11-02T08:24:37.000Z
+Boundary semantics: threshold comparisons use exact integers; equality is included in the boundary band, while Morpho's capacity >= debt check includes equality.
+NON-ACTIONABLE: these hypothetical calculations do not establish current liquidation eligibility or protection.
+
+Indicative repayment calculation:
+  Amount: 17078543177 raw loan units | 17078.543177 USDC
+  Token: 0xC879C018dB60520F4355C26eD1a6D572cdAC1815 | decimals 6
+  Target ratio: 1.25 | allowed debt: 256585.587007 USDC
+  Initial debt-minus-allowed estimate: 17078543177 raw loan units
+  Mode: ASSETS | shares burned: 16866112028171555 | remaining borrower shares: 253394051847102118
+  Modeled post-repayment debt: 256585587007 raw | 256585.587007 USDC
+  Modeled resulting ratio: 1.250000000000974333
+  Rounding margin: 0 raw above initial estimate | debt headroom 0 raw
+  Proof: target satisfied; minimum amount proved | one-unit-less post-debt 256585587008
+  Method: morpho-v1.0.0/minimum-assets-binary-search/full-share-endpoint | version 1.0.0
+  Snapshot: block 21919252 | 0xbfdf7eb27f4e8c4fdf8d67afe3edc54f12a48b0c51a892985d35a70b2b9f7946 | sha256:e65a92f4b4a4ef7acbb9494192f67002fd0e48c7575a13d8504f4fd6105a9431
+  Data: UNVERIFIED; oracle UNVERIFIED; actionable=false
+
+Indicative additional collateral calculation:
+  Amount: 21089029973642036597401 raw collateral units | 21089.029973642036597401 wsrUSD
+  Token: 0x4809010926aec940b550D34a46A52739f996D75D | decimals 18
+  Target ratio: 1.25 | required capacity: 342080.16273 USDC
+  Modeled new collateral: 337927.596304969757251354 wsrUSD
+  Modeled capacity: 342080.16273 USDC | post-addition ratio: 1.25
+  Rounding margin: 0 raw loan capacity | correction 0 raw collateral units
+  Proof: target satisfied; minimum additional collateral proved | one-unit-less capacity 342080162729
+  Method: morpho-v1.0.0/nested-ceilings/forward-minimality-proof | version 1.0.0
+  Snapshot: block 21919252 | 0xbfdf7eb27f4e8c4fdf8d67afe3edc54f12a48b0c51a892985d35a70b2b9f7946 | sha256:e65a92f4b4a4ef7acbb9494192f67002fd0e48c7575a13d8504f4fd6105a9431
+  Data: UNVERIFIED; oracle UNVERIFIED; actionable=false
+
+Assumptions:
+Each estimate is a separate hypothetical operation at the identified snapshot block and hash.
+Oracle price, LLTV and token units are held constant throughout each modeled operation.
+The starting debt is accrued to the snapshot; no later interest, other market activity or bad-debt changes are modeled.
+Repayment changes market borrow assets/shares exactly as Morpho v1.0.0; collateral addition holds that accrued debt fixed.
+Amounts describe protocol accounting with fully credited token transfers; gas, wallet funding and execution availability are outside the model.
+A real transaction at a later state is not guaranteed to reproduce these numbers.
+
+Limitations:
+- The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.
+- ORACLE_SOURCE_UNVERIFIED: The upstream workflow and exact feed identity are not independently established.
+- ORACLE_OPERATOR_UNVERIFIED: On-chain controller addresses are observable; their operator identities are unverified.
+- HEARTBEAT_UNVERIFIED: No verified heartbeat or maximum acceptable price age exists for this feed.
+- SOURCE_SCOPE_QUALITY: The Phase 1 oracle scope reports UNVERIFIED.
+- SOURCE_SNAPSHOT_QUALITY: The source snapshot reports UNVERIFIED.
+- SOURCE_ORACLE_QUALITY: The source oracle reports UNVERIFIED.
+- Phase 4 assurance gates the original Morpho price; independent prices never replace it.
+Oracle assurance — Phase 4
+Overall: UNVERIFIED | gate: DATA_UNVERIFIED | actionable: false
+Evidence: LIVE_CHAIN_READ | evaluated: 2026-11-02T08:57:50.817Z | retrieved: 2026-11-02T08:57:50.784Z
+Block: 21919252 | hash: 0xbfdf7eb27f4e8c4fdf8d67afe3edc54f12a48b0c51a892985d35a70b2b9f7946 | block timestamp: 1793609839
+Snapshot ID: sha256:e65a92f4b4a4ef7acbb9494192f67002fd0e48c7575a13d8504f4fd6105a9431
+CONTRACT_IDENTITY: VERIFIED
+SOURCE_PROVENANCE: UNVERIFIED
+OPERATOR_PROVENANCE: UNVERIFIED
+PRICE_SEMANTICS: PARTIALLY_VERIFIED
+FRESHNESS: UNKNOWN
+INDEPENDENT_VALIDATION: UNKNOWN
+CONFIGURATION_CONTROL: PARTIALLY_VERIFIED
+OBSERVATION_AGE: 1962 seconds
+POLICY_MAX_AGE: NONE (NONE); rejected: false
+VERIFIED_HEARTBEAT: UNKNOWN
+UPSTREAM_FRESHNESS_GUARANTEE: UNKNOWN
+Independent validation: UNKNOWN; eligible: false; no price substitution
+Configuration fingerprint: f74504606ae423c13e70f6bf265abc96a715eac196c80cfc68e056ec752341d2; evidence invalidated: false
+RPC/MCP share an upstream. Successful reads do not prove economic correctness or independence.
+All recovery estimates remain indicative and non-actionable.
+Sanitized risk evidence saved under evidence/phase5/risk/live/.

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "name": "corrected-budget-latency-control",
+  "mode": "latency-independent",
+  "status": "PASS",
+  "completedAt": "2026-11-06T00:43:49.120Z",
+  "results": [
+    {
+      "label": "tests",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/runtime-process.test.ts",
+        "-t",
+        "fences a second process",
+        "--configLoader=native",
+        "--no-cache",
+        "--no-fsModuleCache",
+        "--reporter=default",
+        "--reporter=json",
+        "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\tests.json"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 16352,
+      "startedAt": "2026-11-06T00:43:01.503Z",
+      "completedAt": "2026-11-06T00:43:48.348Z",
+      "durationMs": 46841.4377,
+      "exitCode": 0,
+      "signal": null,
+      "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\tests.stdout.txt",
+        "bytes": 561,
+        "sha256": "7453546113f54272b2596ecb72b7e8a7287f7658308342b5bded497ed991ab55"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\tests.stderr.txt",
+        "bytes": 338,
+        "sha256": "e6b9c66c50911a0d3779539c70d83e52ec4d9d2bafc52dce90d53c294d09ec4e"
+      }
+    }
+  ],
+  "expectedSelectedTestAndFileCountsMet": true,
+  "evidenceClass": "EXPLICIT_DIAGNOSTIC_CONTROL_NOT_QUALIFICATION",
+  "tooling": {
+    "diagnostics": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\diagnostic-preloader-used.cjs",
+      "bytes": 6150,
+      "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    "runner": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\test-runner-used.mjs",
+      "bytes": 11853,
+      "sha256": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+    },
+    "testSource": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\runtime-process-test-used.ts",
+      "bytes": 5805,
+      "sha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    "runtimeHelper": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\runtime-helper-used.ts",
+      "bytes": 2335,
+      "sha256": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    },
+    "boundedLatencyControl": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\latency-preloader-used.cjs",
+      "bytes": 1465,
+      "sha256": "9b255b87037b338dc8a8bd7875eeecd3dae7f1fb5a772906e5c6b241a2d75910"
+    }
+  },
+  "tests": {
+    "success": true,
+    "files": 1,
+    "total": 4,
+    "passed": 1,
+    "failed": 0,
+    "pending": 3,
+    "todo": 0,
+    "assertions": [
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "passed",
+        "durationMs": 41617.6824,
+        "failureMessages": []
+      }
+    ]
+  },
+  "networkGuard": {
+    "version": "v2",
+    "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "records": 4,
+    "blockedRecords": 0,
+    "blockedLocalIPC": 0,
+    "demonstratedRemoteAttempts": 0,
+    "allowedLocalNamedPipes": 4,
+    "caveat": null
+  },
+  "cleanup": {
+    "remainingFixtureDirectories": [],
+    "removalAttempts": 1,
+    "removalErrors": [],
+    "pathsStillExist": [],
+    "children": [
+      {
+        "pid": 2456,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:43:27.733Z",
+          "hrNs": "37656418518800",
+          "pid": 12784,
+          "ppid": 16352,
+          "sequence": 37,
+          "event": "child_close",
+          "childPid": 2456,
+          "exitCode": null,
+          "signalCode": "SIGKILL",
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": null,
+          "signal": "SIGKILL",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 2816,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:43:48.090Z",
+          "hrNs": "37676775891600",
+          "pid": 12784,
+          "ppid": 16352,
+          "sequence": 51,
+          "event": "child_close",
+          "childPid": 2816,
+          "exitCode": 0,
+          "signalCode": null,
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": 0,
+          "signal": null,
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      }
+    ],
+    "relevantFixtureProcessesAfterRun": [],
+    "noObservedOrphanProcesses": true
+  },
+  "logs": {
+    "network": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\network-guard.jsonl",
+      "bytes": 1308,
+      "sha256": "279a3f59103155352e5df4d76b763308a421324efe39dccf979f88ea69a63552"
+    },
+    "lifecycle": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\process-lifecycle.jsonl",
+      "bytes": 41584,
+      "sha256": "3ef232467e9ba344119efd69d0247d0118442b2c66d7b5e91bea222d84e56812"
+    }
+  },
+  "safety": {
+    "realMonitorStopped": true,
+    "syntheticRuntimeFixturesOnly": true,
+    "externalNotifications": false,
+    "transactionsOrWalletOperations": false,
+    "noIntegrationTests": true,
+    "timeoutsOrAssertionsChangedByDiagnosticPreloader": false,
+    "readinessMessagesIntentionallyDelayedForControl": true,
+    "aggregateDeadlineIntentionallyLoweredForControl": false,
+    "externalOutputsAndTemporaryFilesOnly": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "dexscreener-pharos-exact-address",
+  "sourceUrl": "https://api.dexscreener.com/token-pairs/v1/pharos/0x4809010926aec940b550D34a46A52739f996D75D",
+  "finalUrl": "https://api.dexscreener.com/token-pairs/v1/pharos/0x4809010926aec940b550D34a46A52739f996D75D",
+  "method": "GET",
+  "beganAt": "2026-11-06T00:32:01.381Z",
+  "retrievedAt": "2026-11-06T00:32:01.681Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 06 Nov 2026 00:32:02 GMT",
+    "etag": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\"",
+    "last-modified": null
+  },
+  "redirects": [],
+  "block": null,
+  "bytes": 2,
+  "responseSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "bodyPath": "dexscreener-pharos-exact-address.body.txt",
+  "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+  "ignoredRemoteAgentInstructionAppendix": false
+}

@@ -1,0 +1,5 @@
+
+> liquidation-watchdog@0.1.0 evidence:inventory
+> tsx scripts/phase2-inventory.ts
+
+Phase 2 inventory: 15 changed, 102 added, 96 original files unchanged; Phase 1 core PASS.

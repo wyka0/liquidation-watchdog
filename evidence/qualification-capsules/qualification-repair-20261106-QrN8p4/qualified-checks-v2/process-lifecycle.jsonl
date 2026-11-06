@@ -1,0 +1,7 @@
+{"at":"2026-11-06T00:52:38.820Z","hrNs":"38207498376000","pid":9540,"ppid":7216,"sequence":1,"event":"preloader_loaded","role":"test_or_orchestrator","handles":{}}
+{"at":"2026-11-06T00:52:51.231Z","hrNs":"38219908914500","pid":9540,"ppid":7216,"sequence":2,"event":"process_exit","code":0,"handles":{"Socket":1},"evidenceOpens":0}
+{"at":"2026-11-06T00:52:51.431Z","hrNs":"38220110330600","pid":3564,"ppid":7216,"sequence":1,"event":"preloader_loaded","role":"test_or_orchestrator","handles":{}}
+{"at":"2026-11-06T00:52:58.480Z","hrNs":"38227158135800","pid":3564,"ppid":7216,"sequence":2,"event":"before_exit","code":0,"handles":{"Socket":2},"evidenceOpens":0}
+{"at":"2026-11-06T00:52:58.481Z","hrNs":"38227159170400","pid":3564,"ppid":7216,"sequence":3,"event":"process_exit","code":0,"handles":{"Socket":2},"evidenceOpens":0}
+{"at":"2026-11-06T00:52:58.646Z","hrNs":"38227329085500","pid":2220,"ppid":7216,"sequence":1,"event":"preloader_loaded","role":"test_or_orchestrator","handles":{}}
+{"at":"2026-11-06T00:53:09.497Z","hrNs":"38238179313000","pid":2220,"ppid":7216,"sequence":2,"event":"process_exit","code":0,"handles":{"Socket":1},"evidenceOpens":0}

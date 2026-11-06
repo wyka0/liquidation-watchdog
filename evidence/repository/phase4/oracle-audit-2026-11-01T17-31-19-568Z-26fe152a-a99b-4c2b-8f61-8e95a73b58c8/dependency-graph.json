@@ -1,0 +1,81 @@
+{
+  "chainId": 1672,
+  "block": {
+    "number": "21864844",
+    "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+    "timestamp": "1793553649"
+  },
+  "retrievedAt": "2026-11-01T17:31:11.601Z",
+  "snapshotIdentifier": "sha256:d00f229f529233b680ae7b1b6c60ba51f8201466ab749476de9b4995dca94983",
+  "edges": [
+    {
+      "subjectAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "from": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+      "to": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+      "relationship": "MARKET_ORACLE",
+      "findingIds": [
+        "DEPENDENCY_GRAPH",
+        "RUNTIME_0"
+      ]
+    },
+    {
+      "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+      "from": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+      "to": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+      "relationship": "BASE_FEED_1",
+      "findingIds": [
+        "DEPENDENCY_GRAPH",
+        "RUNTIME_1"
+      ]
+    },
+    {
+      "subjectAddress": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+      "from": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+      "to": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "relationship": "OWNER_CONFIGURABLE_CACHE_FACADE",
+      "findingIds": [
+        "DEPENDENCY_GRAPH",
+        "RUNTIME_2"
+      ]
+    },
+    {
+      "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "from": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "to": "0x0007c129e624689953a2636c014531b2f0bd0c15f9a22211f53023354f309fa6",
+      "relationship": "SELECTED_CACHE_KEY",
+      "findingIds": [
+        "SOURCE_PROVENANCE"
+      ]
+    },
+    {
+      "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "from": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "to": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+      "relationship": "AUTHORIZED_REPORT_FORWARDER",
+      "findingIds": [
+        "CONFIGURATION_CONTROL"
+      ]
+    },
+    {
+      "subjectAddress": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+      "from": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+      "to": null,
+      "relationship": "SAMPLED_SIGNER_CONFIGURATION_NOT_FULL_ENUMERATION",
+      "findingIds": [
+        "CONFIGURATION_CONTROL",
+        "OPERATOR_PROVENANCE"
+      ]
+    },
+    {
+      "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "from": "0x0007c129e624689953a2636c014531b2f0bd0c15f9a22211f53023354f309fa6",
+      "to": null,
+      "relationship": "ECONOMIC_SOURCE_UNRESOLVED",
+      "findingIds": [
+        "SOURCE_PROVENANCE",
+        "PRICE_SEMANTICS"
+      ]
+    }
+  ],
+  "confidence": "Edges are observations or runtime-bound interpretations as classified by their referenced findings; unresolved endpoints remain null."
+}

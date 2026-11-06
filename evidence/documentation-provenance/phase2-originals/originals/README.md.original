@@ -1,0 +1,194 @@
+# Liquidation Watchdog — Phase 5
+
+A read-only TypeScript CLI and opt-in monitor for one real Morpho Blue borrow position on **Pharos Pacific Mainnet, chain 1672**. It combines pinned chain reads, indicative risk calculations, durable SQLite monitoring/alerts, evidence-based oracle assurance, and bounded operational diagnostics, backup and recovery verification.
+
+**Overall oracle assurance: `UNVERIFIED`; freshness: `UNKNOWN`.** Six deployed runtimes were independently reproduced, but the exact upstream economic source/quote, real-world operators and heartbeat remain unverified. No independent comparator qualified. All recovery estimates are indicative and `actionable: false`.
+
+**Local release candidate; production deployment is not approved.** Phase 5 adds single-worker hardening and deployment runbooks. Actual host/supervisor acceptance, off-host recovery, real notification delivery and a production-duration soak remain separate gates in [release readiness](docs/release-readiness.md).
+
+## Run
+
+Verified runtime: **Node.js 24.14.1 / SQLite 3.51.2** on Windows. The production profile requires those exact versions; the package's broader Node `>=22.18.0` range is not a verified production matrix. Chain reads use public endpoints without a wallet or credentials. Optional notification providers use privately supplied environment values; they default off. Node may emit an experimental `node:sqlite` warning.
+
+```powershell
+cd C:\liquidation-watchdog
+npm ci
+npm run watchdog -- inspect
+npm run watchdog -- risk
+```
+
+Capture a new current-block report and its evidence:
+
+```powershell
+npm run watchdog -- inspect --save-evidence
+npm run watchdog -- risk --save-evidence
+```
+
+Inspect an explicitly historical block:
+
+```powershell
+npm run watchdog -- inspect --block 21852148 --save-evidence
+npm run watchdog -- risk --block 21853902 --save-evidence
+```
+
+New inspection/risk reports go to `evidence/phase5/{inspect|risk}/{live|historical-<block>}/`. Oracle audits use new immutable UUID bundles under `evidence/phase5/`. All **391 Phase 1–4 evidence files** are preserved against the exclusive **550-file** pre-Phase-5 baseline. A current inspection selects `min(RPC head, MCP head) - 5`; its result is current **as of that block**. Explicit historical calculations are labeled `HISTORICAL`.
+
+Configure exact decimal-string thresholds without changing source:
+
+```powershell
+npm run watchdog -- risk --warning 1.30 --critical 1.10 --target 1.25
+npm run watchdog -- risk --config config/risk-thresholds.example.json --target 1.40
+```
+
+Defaults are warning `1.30`, critical `1.10`, target `1.25`, boundary `1.00`. The report separates mathematical state, data quality, and actionability. With the selected oracle, a provisional `ABOVE_WARNING` still produces `DATA_UNVERIFIED`, never SAFE. See [thresholds](docs/thresholds.md).
+
+After building, the equivalent executable is:
+
+```powershell
+npm run build
+npm start -- inspect
+npm start -- risk
+```
+
+Exit codes: `0` means an indicative snapshot/calculation completed (including `UNVERIFIED`); `2` means data or a required recovery calculation was suppressed; `1` means a CLI/configuration/execution error. `risk` requires both estimates to complete for exit 0. No exit code establishes actionability. `--help` prints usage.
+
+## Oracle audit and assurance
+
+```powershell
+npm run watchdog -- oracle-audit
+npm run watchdog -- oracle-audit --save-evidence
+npm run watchdog -- oracle-audit --block 21864844 --save-evidence --json
+npm run watchdog -- oracle-status
+npm run watchdog -- oracle-status --json
+```
+
+An audit performs one bounded read-only investigation and persists its result in SQLite; `--save-evidence` adds a fully hashed immutable evidence bundle. `--database` selects the local database. Status shows persisted as-of evidence and performs no fresh chain read. A historical result keeps its historical label.
+
+Seven dimensions distinguish contract identity, source/operator provenance, price semantics, freshness, independent validation and configuration control. `OBSERVATION_AGE`, local `POLICY_MAX_AGE`, `VERIFIED_HEARTBEAT` and `UPSTREAM_FRESHNESS_GUARANTEE` are separate. There is no default age threshold; `oracle-audit --local-max-age-seconds <seconds>` is only an explicit local rejection policy. Passing it cannot establish freshness.
+
+Configuration changes and observability gaps persistently invalidate assurance. Invalid prices/timestamps/conflicts fail closed; source failures become unavailable. Independent prices never replace the Morpho answer. See [assurance rules and CLI](docs/oracle-assurance.md), [architecture/source verification](docs/oracle-architecture.md), [freshness](docs/oracle-freshness.md) and [independent-source research](docs/oracle-independent-validation.md).
+
+## Monitoring and alerts
+
+```powershell
+npm run watchdog -- monitor --once
+npm run watchdog -- monitor --enable --interval 60
+npm run watchdog -- alerts --limit 20
+npm run watchdog -- status
+```
+
+Continuous scheduling defaults off; `--enable` or `monitoring.enabled=true` explicitly enables it. `--once` requests one bounded cycle. Copy `config/monitoring.example.json` to an ignored local `watchdog.config.json` for `monitor --config ./watchdog.config.json`. Keep threshold settings separate with `--risk-config`; threshold CLI overrides remain available. The default database is `data/watchdog.sqlite`.
+
+The monitor preserves the latest failed read separately from the last accepted mathematical result and the last complete block-bound oracle configuration. Oracle assurance, invalidation, alerts and pending deliveries persist through restart using SQLite schema **5**. Missing data never becomes a recovery or zero debt. Ctrl+C/SIGTERM stops new work, permits bounded active settlement (30 seconds by default), then cancels overdue work and closes the database. The whole-cycle limit defaults to 240 seconds. Intervals do not guarantee oracle freshness. See [oracle integration](docs/oracle-assurance.md#configuration-continuity-and-persistent-alerts), [monitoring architecture](docs/monitoring-architecture.md), [alerting](docs/alerting.md) and [optional notification setup](docs/notification-setup.md).
+
+## Operational diagnostics and recovery
+
+```powershell
+npm run watchdog -- config-check --config config/monitoring.example.json
+npm run watchdog -- health
+npm run watchdog -- readiness
+npm run watchdog -- diagnostics
+```
+
+These diagnostics do not initialize a missing database. Operational commands return 0 when their condition passes and 2 when degraded/unavailable; `readiness --probe` explicitly performs bounded RPC/MCP connectivity reads. A recent accepted live snapshot and settled cycle are required for readiness. Operational readiness never changes `productionReleaseReady: false` or financial actionability.
+
+Use explicit `database-init` for a new store or a reviewed forward migration. Consistent backups use SQLite's online API and include all referenced evidence; `backup-verify` checks the complete bundle and `restore-verify` uses a disposable isolated copy. See [database operations](docs/database-operations.md), [operations runbook](docs/operations-runbook.md) and [rollback/recovery](docs/rollback-and-recovery.md) for exact commands and delivery-reconciliation requirements.
+
+[Production configuration](config/production.example.json) requires an absolute local database path and keeps continuous monitoring and external channels disabled. [`.env.example`](.env.example) contains placeholders only and is not automatically loaded. All settings are documented in [environment and configuration](docs/environment-variables.md).
+
+## Selected deployment
+
+| Item | Chain-bound identifier |
+| --- | --- |
+| Morpho Blue | `0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb` |
+| Market | `0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73` |
+| Public demonstration account | `0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7` |
+| Loan | USDC, `0xC879C018dB60520F4355C26eD1a6D572cdAC1815`, 6 decimals |
+| Collateral | wsrUSD, `0x4809010926aec940b550D34a46A52739f996D75D`, 18 decimals |
+| LLTV | 91.5% |
+
+The demonstration account is a public on-chain example, **not the user's wallet**. Address and chain identify the tokens; symbols are display metadata. Full contract and controller addresses are in [the oracle investigation](docs/oracle-investigation.md).
+
+## Reproducible single-position demo (synthetic fixtures)
+
+```powershell
+cd C:\liquidation-watchdog
+npm ci
+npm run build
+npm run demo:submission
+```
+
+This runs one configured position through the real monitoring pipeline with deterministic local fixtures (never live chain data): warning then critical threshold states, non-financial actions while evidence is unverified, a separately labeled synthetic strict-gate scenario that is the only place a financial option can appear, SQLite alert/outbox persistence, console delivery, restart without resending known deliveries, and read-model output. Artifacts are written to `data/submission-demo/`. See [the demo guide](docs/SUBMISSION-SINGLE-POSITION-DEMO.md). All evidence remains `actionable: false`; oracle assurance stays `UNVERIFIED`/`UNKNOWN` outside the explicitly synthetic qualified scenario.
+
+## Verification
+
+```powershell
+npm run verify
+# After final documentation is complete against the tested inputs:
+npm run verify -- --finalize
+npm run release:manifest
+npm run release:check
+```
+
+The full sequence has **26 checks**: strict typechecking, ESLint, the complete unit suite, a repeated operational subset, real RPC + MCP integration, deterministic bounded stability, build, live/historical CLI smokes, two one-cycle monitor processes, 15 operational CLI invocations, three bounded oracle audits and three persisted-status processes, source/runtime/evidence checks, exact Phase 2 replays, audit, secret scan, Phase 1–4 preservation, links, inventory and read-only Git whitespace checks. External notification tests use mocks only. Results and unique per-attempt transcripts are written under `evidence/phase5/`.
+
+Finalization performs five local checks and rejects changes to tested source/configuration/scripts. The release manifest binds the tested inputs, build, documentation and evidence. New captures or later edits require re-verification/finalization and manifest regeneration as appropriate. Verification does not stage or commit files. See [Phase 5 results](docs/phase5-report.md#12-tests-and-exact-verification-results) and [testing](docs/testing.md).
+
+The latest saved results are:
+
+- [Indicative risk report from the latest capture](evidence/phase5/risk/live/risk-report.txt)
+- [Full risk result and assurance](evidence/phase5/risk/live/risk-result.json)
+- [Phase 5 verification results](evidence/phase5/verification-results.json)
+- [Operational CLI smoke](evidence/phase5/operations-smoke.json)
+- [Bounded stability measurements](evidence/phase5/stability-results.json)
+- [Release manifest](evidence/phase5/release-manifest.json)
+- [Release manifest check](evidence/phase5/release-manifest-check.json)
+- [Bounded oracle audits, manifests and status smoke](evidence/phase5/oracle-smoke.json)
+- [Oracle evidence integrity and offline reconstruction](evidence/phase5/oracle-evidence-verification.json)
+- [Bounded monitoring/restart smoke](evidence/phase5/monitoring-smoke.json)
+- [All four archives preserved](evidence/phase5/prior-phases-integrity.json)
+- [Exact Phase 2 historical reread](evidence/phase5/historical-regression.json)
+- [Phase 4 verification results](evidence/phase4/verification-results.json)
+- [Phase 3 verification results](evidence/phase3/verification-results.json)
+- [Phase 2 verification results](evidence/phase2/verification-results.json)
+- [Phase 1 evidence preservation](evidence/phase2/phase1-evidence-integrity.json)
+- [Preserved Phase 1 report](evidence/phase1/cli-report.txt)
+- [Evidence guide](docs/evidence.md)
+
+## Documentation
+
+- [Phase 5 completion report](docs/phase5-report.md)
+- [Pre-implementation readiness gap register](docs/production-readiness-gaps.md)
+- [Phase 5 file inventory](docs/phase5-files.md)
+- [Production architecture](docs/production-architecture.md)
+- [Deployment procedure](docs/deployment.md)
+- [Environment and configuration](docs/environment-variables.md)
+- [Database operations](docs/database-operations.md)
+- [Operations runbook](docs/operations-runbook.md)
+- [Reliability testing](docs/reliability-testing.md)
+- [Production security](docs/production-security.md)
+- [Rollback and recovery](docs/rollback-and-recovery.md)
+- [Release readiness](docs/release-readiness.md)
+- [Phase 4 completion report](docs/phase4-report.md)
+- [Phase 4 file inventory](docs/phase4-files.md)
+- [Oracle assurance rules and integration](docs/oracle-assurance.md)
+- [Oracle architecture and source reproduction](docs/oracle-architecture.md)
+- [Oracle freshness](docs/oracle-freshness.md)
+- [Independent oracle validation](docs/oracle-independent-validation.md)
+- [Phase 3 completion report](docs/phase3-report.md)
+- [Phase 3 file inventory](docs/phase3-files.md)
+- [Phase 2 completion report](docs/phase2-report.md)
+- [Risk engine, quality and provenance](docs/risk-engine.md)
+- [Threshold configuration](docs/thresholds.md)
+- [Repayment/collateral mathematics and proofs](docs/recommendation-math.md)
+- [Architecture and validation](docs/architecture.md)
+- [Official accounting and rounding](docs/accounting.md)
+- [Oracle investigation: ten questions](docs/oracle-investigation.md)
+- [Testing and verification](docs/testing.md)
+- [Evidence and provenance](docs/evidence.md)
+- [Security, quality, and read-only boundaries](docs/security-and-quality.md)
+- [Prior-project pattern reuse](docs/reuse.md)
+- [Phase 2 file inventory](docs/phase2-files.md)
+- [Original Phase 1 file inventory](docs/created-files.md)
+
+Phase 5 completes local hardening and deployment preparation. Production deployment and monitoring require separate approval.

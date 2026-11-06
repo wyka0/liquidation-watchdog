@@ -1,0 +1,22 @@
+{
+  "name": "dexscreener-exact-address",
+  "sourceUrl": "https://api.dexscreener.com/latest/dex/tokens/0x4809010926aec940b550D34a46A52739f996D75D",
+  "finalUrl": "https://api.dexscreener.com/latest/dex/tokens/0x4809010926aec940b550D34a46A52739f996D75D",
+  "method": "GET",
+  "beganAt": "2026-11-06T00:32:00.925Z",
+  "retrievedAt": "2026-11-06T00:32:01.379Z",
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+    "etag": "W/\"26-7mwYuLXLx12A5Iw2GRHUJ6cXxlk\"",
+    "last-modified": null
+  },
+  "redirects": [],
+  "block": null,
+  "bytes": 38,
+  "responseSha256": "3ed91fc5d32dde18de933f252927edabd035d03668a2fd13a17c6c17c2c58e0d",
+  "bodyPath": "dexscreener-exact-address.body.txt",
+  "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+  "ignoredRemoteAgentInstructionAppendix": false
+}

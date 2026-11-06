@@ -1,0 +1,20 @@
+Oracle assurance — Phase 4
+Overall: UNVERIFIED | gate: DATA_UNVERIFIED | actionable: false
+Evidence: LIVE_CHAIN_READ | evaluated: 2026-11-01T18:31:06.922Z | retrieved: 2026-11-01T18:30:34.112Z
+Block: 21868944 | hash: 0xd866269789dbb1ff4fb2227ef95921bf1e95ce737ceb388e5ea8aab8c601490f | block timestamp: 1793557802
+Snapshot ID: sha256:c6d7cbac6fc6fda1c1f9564f5eca2920ae39edda4da4619e559236703f86a227
+CONTRACT_IDENTITY: VERIFIED
+SOURCE_PROVENANCE: UNVERIFIED
+OPERATOR_PROVENANCE: UNVERIFIED
+PRICE_SEMANTICS: PARTIALLY_VERIFIED
+FRESHNESS: UNKNOWN
+INDEPENDENT_VALIDATION: UNKNOWN
+CONFIGURATION_CONTROL: PARTIALLY_VERIFIED
+OBSERVATION_AGE: 326 seconds
+POLICY_MAX_AGE: NONE (NONE); rejected: false
+VERIFIED_HEARTBEAT: UNKNOWN
+UPSTREAM_FRESHNESS_GUARANTEE: UNKNOWN
+Independent validation: UNKNOWN; eligible: false; no price substitution
+Configuration fingerprint: c5fdcac715408818794eff1d8c0bb518404d51a8df63b4fcd210128e9d818fb0; evidence invalidated: false
+RPC/MCP share an upstream. Successful reads do not prove economic correctness or independence.
+All recovery estimates remain indicative and non-actionable.

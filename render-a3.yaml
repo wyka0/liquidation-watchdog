@@ -1,0 +1,35 @@
+# DRAFT-UNAPPROVED-NOT-DEPLOYED
+# Local Blueprint preparation only. Applying this file creates a cloud resource and is not authorized.
+# Automatic deploys and monitoring are disabled. No database, disk, migration or paid resource is declared.
+previews:
+  generation: 'off'
+services:
+  - type: web
+    runtime: node
+    name: liquidation-watchdog-a3-draft
+    plan: free
+    numInstances: 1
+    autoDeployTrigger: 'off'
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start:postgres
+    healthCheckPath: /api/health
+    maxShutdownDelaySeconds: 30
+    envVars:
+      - key: NODE_VERSION
+        value: '24.14.1'
+      - key: WATCHDOG_STORAGE_BACKEND
+        value: postgres
+      - key: WATCHDOG_POSTGRES_NAMESPACE
+        value: watchdog_free
+      - key: WATCHDOG_SCHEDULER_ENABLED
+        value: 'false'
+      - key: WATCHDOG_SCHEDULER_SLOT_SECONDS
+        value: '300'
+      - key: WATCHDOG_POSTGRES_WRITER_URL
+        sync: false
+      - key: WATCHDOG_POSTGRES_READER_URL
+        sync: false
+      - key: WATCHDOG_READ_API_TOKEN
+        sync: false
+      - key: WATCHDOG_SCHEDULER_SECRET
+        sync: false

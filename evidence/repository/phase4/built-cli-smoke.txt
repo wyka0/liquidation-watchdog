@@ -1,0 +1,15 @@
+Usage: npm run watchdog -- inspect [--block <decimal block>] [--save-evidence]
+       npm run watchdog -- risk [--warning <ratio>] [--critical <ratio>] [--target <ratio>]
+                              [--config <thresholds.json>] [--block <decimal block>] [--save-evidence]
+       npm run watchdog -- monitor [--once | --enable] [--interval <5..86400>] [--config <monitoring.json>]
+                                 [--database <local.sqlite>] [--risk-config <thresholds.json>] [--warning <ratio>] [--critical <ratio>] [--target <ratio>]
+                                 [--once --block <historical block>]
+       npm run watchdog -- alerts [--limit <1..1000>] [--database <local.sqlite>] [--config <monitoring.json>]
+       npm run watchdog -- status [--database <local.sqlite>] [--config <monitoring.json>] [--risk-config <thresholds.json>] [--block <historical block>]
+       npm run watchdog -- oracle-audit [--save-evidence] [--block <historical block>] [--database <local.sqlite>]
+                                      [--local-max-age-seconds <positive integer>] [--json]
+       npm run watchdog -- oracle-status [--json] [--database <local.sqlite>]
+Continuous monitoring is disabled by default. --once is a bounded opt-in read. Intervals do not guarantee oracle freshness.
+Default: a current block-pinned public demonstration position, checked by RPC and Chain MCP.
+An explicit --block produces HISTORICAL evidence. Thresholds are exact decimal strings.
+Risk estimates remain indicative and non-actionable; the selected oracle is UNVERIFIED.

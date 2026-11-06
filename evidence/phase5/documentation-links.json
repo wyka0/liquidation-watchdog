@@ -1,0 +1,2741 @@
+{
+  "checkedAt": "2026-11-05T20:59:20.042Z",
+  "passed": true,
+  "checks": [
+    {
+      "document": "docs/a3-cloudflare-setup.md",
+      "target": "../cloudflare/monitor-scheduler/",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-files.md",
+      "target": "a3-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-files.md",
+      "target": "a3-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-files.md",
+      "target": "a3-neon-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-files.md",
+      "target": "a3-neon-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-files.md",
+      "target": "a3-render-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-files.md",
+      "target": "a3-render-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-files.md",
+      "target": "a3-cloudflare-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-files.md",
+      "target": "a3-cloudflare-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-neon-operations.md",
+      "target": "a3-neon-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-neon-setup.md",
+      "target": "a3-render-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-render-setup.md",
+      "target": "../render-a3.yaml",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-report.md",
+      "target": "a3-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-report.md",
+      "target": "a3-neon-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-report.md",
+      "target": "a3-neon-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-report.md",
+      "target": "a3-render-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-report.md",
+      "target": "a3-render-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-report.md",
+      "target": "a3-cloudflare-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-report.md",
+      "target": "a3-cloudflare-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-report.md",
+      "target": "../render-a3.yaml",
+      "exists": true
+    },
+    {
+      "document": "docs/a3-report.md",
+      "target": "a3-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/MorphoBalancesLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/MathLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/SharesMathLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/UtilsLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/Morpho.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/ConstantsLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/alerting.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/alerting.md",
+      "target": "notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/alerting.md",
+      "target": "operations-runbook.md#notification-recovery",
+      "exists": true
+    },
+    {
+      "document": "docs/alerting.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/architecture.md",
+      "target": "risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "docs/architecture.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/database-operations.md",
+      "target": "environment-variables.md",
+      "exists": true
+    },
+    {
+      "document": "docs/database-operations.md",
+      "target": "rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "production-readiness-gaps.md",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "phase5-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "../evidence/phase5/release-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "../evidence/phase5/release-manifest.sha256",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "../config/production.example.json",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "environment-variables.md",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "../deploy/liquidation-watchdog.service.example",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "operations-runbook.md",
+      "exists": true
+    },
+    {
+      "document": "docs/deployment.md",
+      "target": "rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "docs/environment-variables.md",
+      "target": "../.env.example",
+      "exists": true
+    },
+    {
+      "document": "docs/environment-variables.md",
+      "target": "../config/monitoring.example.json",
+      "exists": true
+    },
+    {
+      "document": "docs/environment-variables.md",
+      "target": "../config/production.example.json",
+      "exists": true
+    },
+    {
+      "document": "docs/environment-variables.md",
+      "target": "thresholds.md",
+      "exists": true
+    },
+    {
+      "document": "docs/environment-variables.md",
+      "target": "operations-runbook.md#notification-recovery",
+      "exists": true
+    },
+    {
+      "document": "docs/evidence.md",
+      "target": "production-readiness-gaps.md",
+      "exists": true
+    },
+    {
+      "document": "docs/evidence.md",
+      "target": "risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "docs/evidence.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/evidence.md",
+      "target": "oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/evidence.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-checklist.md",
+      "target": "../evidence/phase6/release-identity.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-checklist.md",
+      "target": "deployment.md",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-files.md",
+      "target": "../evidence/phase6/",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-files.md",
+      "target": "../evidence/phase6/evidence-hashes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-files.md",
+      "target": "../evidence/phase6/evidence-hashes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "host-acceptance-checklist.md",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "host-acceptance-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "production-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/host-inventory.raw.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/host-environment-observations.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/release-identity.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/health-schema-drift-refusal.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/database-init-schema-drift-refusal.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/config-check-traversal-refusal.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/backup-database-probe.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/database-init-rejected-during-active-cycle.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/health-during-active-cycle.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/health-before-init-STORE_NOT_FOUND.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/restore-verify.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/readiness-probe.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/monitoring-observation-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/monitoring-observation-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/host-inventory.raw.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/host-environment-observations.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/release-identity.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "../evidence/phase6/evidence-hashes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/host-acceptance-report.md",
+      "target": "host-acceptance-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "production-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "environment-variables.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "operations-runbook.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "phase3-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "docs/neon-postgres-architecture.md",
+      "target": "render-free-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/neon-postgres-architecture.md",
+      "target": "sqlite-postgres-migration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/neon-postgres-architecture.md",
+      "target": "phase9-security-review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/neon-postgres-architecture.md",
+      "target": "render-free-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/neon-postgres-architecture.md",
+      "target": "phase9-report.md#10-implementation-sequence-and-acceptance-gates",
+      "exists": true
+    },
+    {
+      "document": "docs/notification-setup.md",
+      "target": "../.env.example",
+      "exists": true
+    },
+    {
+      "document": "docs/notification-setup.md",
+      "target": "environment-variables.md",
+      "exists": true
+    },
+    {
+      "document": "docs/notification-setup.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/notification-setup.md",
+      "target": "operations-runbook.md#notification-recovery",
+      "exists": true
+    },
+    {
+      "document": "docs/notification-setup.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/operations-runbook.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/operations-runbook.md",
+      "target": "rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "docs/operations-runbook.md",
+      "target": "release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/snapshot.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/independent-recompilation.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase4/collateral-proof-2026-11-01T17-28-39-523Z-2726e5be-5979-42ba-9fbb-c29342e4be09/collateral-proof.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase4/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../scripts/check-oracle-evidence.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase1/sources/KeystoneForwarder.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase1/sources/ConfirmedOwnerWithProposal.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "oracle-freshness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "../evidence/phase4/oracle-evidence-verification.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "phase4-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "../evidence/phase4/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "../evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "../evidence/phase4/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/reservoir-addresses.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/reservoir-savings.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/dexscreener-exact-address.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/chainlink-megaeth.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/pharos-watch-research.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/market-parameters.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/contract-verification.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/sources/official-registry-excerpts.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/oracle-investigation-live.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/oracle-update-history.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/oracle-investigation-live.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/cli-report.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/oracle-update-history.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/sources/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/source-runtime-matches.json",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../evidence/phase5/inspect/live/position-snapshot.json",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../evidence/phase5/monitor-smoke-once.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "phase10-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../render-a3.yaml",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../cloudflare/monitor-scheduler/wrangler.toml",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/config/deployment.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/chain/live.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/chain/snapshot.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/morpho/accounting.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/morpho/accounting.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/risk/engine.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/risk/assured.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/morpho/math.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/risk/thresholds.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/runtime/read-model.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/oracle-assurance/freshness.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/config/risk.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/cli/options.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/cli/monitor.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/runtime/postgres-runtime.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/runtime/service.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/runtime/read-model.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/monitoring/transitions.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/notifications/format.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/notifications/adapters.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/notifications/dispatcher.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/runtime/postgres-runtime.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/runtime/service.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/monitoring/model.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/notifications/format.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/config/postgres.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/storage/postgres/scheduler-store.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../src/runtime/scheduler.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "../cloudflare/monitor-scheduler/src/worker.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/PHASE-11-PRODUCT-ACCEPTANCE-AUDIT.md",
+      "target": "A4.5-PROVIDER-ARCHITECTURE-EVALUATION.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-files.md",
+      "target": "phase10-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-files.md",
+      "target": "phase10-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-files.md",
+      "target": "postgres-schema-reference.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-files.md",
+      "target": "postgres-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-files.md",
+      "target": "scheduler-endpoint-contract.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-files.md",
+      "target": "phase10-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-files.md",
+      "target": "phase10-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "postgres-schema-reference.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "scheduler-endpoint-contract.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "postgres-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "phase10-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "phase10-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "phase10-files.md#1-modified-originals-6-exactly-the-authorized-set",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "postgres-schema-reference.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "postgres-operations.md#2-pools-and-bounded-capacity",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "scheduler-endpoint-contract.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "phase9-report.md#7-scheduling-comparison-and-recommendation",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "postgres-operations.md#6-authenticated-read-apis",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "phase10-files.md#1-modified-originals-6-exactly-the-authorized-set",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "phase10-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "phase9-report.md#10-implementation-sequence-and-acceptance-gates",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "phase9-report.md#11-blockers-risks-and-required-approvals",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-report.md",
+      "target": "phase10-files.md#6-final-bindings",
+      "exists": true
+    },
+    {
+      "document": "docs/phase10-test-evidence.md",
+      "target": "phase10-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "phase3-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-files.md",
+      "target": "../evidence/phase4/file-changes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-architecture.md#source-and-runtime-identity",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-freshness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/monitoring-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "phase4-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/collateral-proof-2026-11-01T17-28-39-523Z-2726e5be-5979-42ba-9fbb-c29342e4be09/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-18-42-620Z-a3287621-5c9c-4828-b169-638ac3f62f96/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-audit-2026-11-01T17-31-19-568Z-26fe152a-a99b-4c2b-8f61-8e95a73b58c8/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-audit-2026-11-01T17-47-35-687Z-5078c30b-6b3f-4325-ad6c-abae354e3d97/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-audit-2026-11-01T18-32-13-912Z-d26d4dba-dd17-4135-a95f-06fac88f3121/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-audit-2026-11-01T18-33-24-873Z-98cd1fc4-ca41-4c66-be4b-50a0078f2a50/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-evidence-verification.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/prior-phases-integrity.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/file-changes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/dependency-audit.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/secret-scan.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-files.md",
+      "target": "../evidence/phase5/file-changes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "../evidence/phase5/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "../evidence/phase5/finalization-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "production-readiness-gaps.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "production-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "environment-variables.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "operations-runbook.md#notification-recovery",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "../evidence/phase5/stability-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "production-security.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "deployment.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "../evidence/phase5/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "../evidence/phase5/finalization-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "../evidence/phase5/release-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "../evidence/phase5/release-manifest-check.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "reliability-testing.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "phase5-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "../evidence/phase5/file-changes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "../evidence/phase5/prior-phases-integrity.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase5-report.md",
+      "target": "release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-files.md",
+      "target": "phase7-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "phase2-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "phase3-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "phase5-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "host-acceptance-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "production-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "deployment.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "render-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "render-storage-decision.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "render-security-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "phase7-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "../render.yaml",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "../evidence/phase6/health-during-active-cycle.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "../evidence/phase6/database-init-rejected-during-active-cycle.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "render-storage-decision.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "../render.yaml",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "render-security-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase7-report.md",
+      "target": "host-acceptance-checklist.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-files.md",
+      "target": "phase8-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-files.md",
+      "target": "render-runtime-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-files.md",
+      "target": "render-dashboard-api.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-files.md",
+      "target": "phase8-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "phase8-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "render-runtime-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "render-dashboard-api.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "phase8-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "render-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "render-storage-decision.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "render-security-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "phase7-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "phase7-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "phase8-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "render-runtime-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "render-dashboard-api.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-report.md",
+      "target": "phase8-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-test-evidence.md",
+      "target": "phase8-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-test-evidence.md",
+      "target": "phase8-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-test-evidence.md",
+      "target": "render-runtime-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase8-test-evidence.md",
+      "target": "render-dashboard-api.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase9-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "neon-postgres-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "sqlite-postgres-migration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "render-free-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase9-security-review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase8-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase8-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "render-runtime-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "render-dashboard-api.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase8-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "accounting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "oracle-investigation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "security-and-quality.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "thresholds.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase2-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase3-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "oracle-freshness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "production-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "deployment.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "environment-variables.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "operations-runbook.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "production-security.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "reliability-testing.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "production-readiness-gaps.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase5-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "host-acceptance-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "host-acceptance-checklist.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "host-acceptance-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "render-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "render-storage-decision.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "render-security-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase7-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase7-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-files.md",
+      "target": "phase9-report.md#11-blockers-risks-and-required-approvals",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "neon-postgres-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "sqlite-postgres-migration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "render-free-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "phase9-security-review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "phase9-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "phase9-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "neon-postgres-architecture.md#1-current-persistence-inventory",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "neon-postgres-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "sqlite-postgres-migration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "render-free-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "render-free-architecture.md#7-compute-capacity-model",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "phase9-security-review.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "sqlite-postgres-migration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-report.md",
+      "target": "phase9-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-security-review.md",
+      "target": "neon-postgres-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-security-review.md",
+      "target": "render-free-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-security-review.md",
+      "target": "sqlite-postgres-migration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-security-review.md",
+      "target": "phase9-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-security-review.md",
+      "target": "production-security.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-security-review.md",
+      "target": "render-security-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-security-review.md",
+      "target": "oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase9-security-review.md",
+      "target": "phase8-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-operations.md",
+      "target": "phase9-report.md#11-blockers-risks-and-required-approvals",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-operations.md",
+      "target": "../src/runtime/postgres-runtime.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-operations.md",
+      "target": "../src/monitoring/service.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-operations.md",
+      "target": "../src/runtime/http.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-operations.md",
+      "target": "scheduler-endpoint-contract.md",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-operations.md",
+      "target": "postgres-schema-reference.md",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-operations.md",
+      "target": "phase10-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-operations.md",
+      "target": "phase10-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-schema-reference.md",
+      "target": "postgres-operations.md#5-migrations",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-schema-reference.md",
+      "target": "../package.json",
+      "exists": true
+    },
+    {
+      "document": "docs/postgres-schema-reference.md",
+      "target": "postgres-operations.md#4-fencing-and-ownership",
+      "exists": true
+    },
+    {
+      "document": "docs/production-architecture.md",
+      "target": "../deploy/liquidation-watchdog.service.example",
+      "exists": true
+    },
+    {
+      "document": "docs/production-architecture.md",
+      "target": "environment-variables.md#resource-settings",
+      "exists": true
+    },
+    {
+      "document": "docs/production-architecture.md",
+      "target": "reliability-testing.md",
+      "exists": true
+    },
+    {
+      "document": "docs/production-architecture.md",
+      "target": "release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/production-readiness-gaps.md",
+      "target": "../evidence/phase5/prior-phases-baseline.json",
+      "exists": true
+    },
+    {
+      "document": "docs/production-security.md",
+      "target": "release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/release-readiness.md",
+      "target": "../evidence/phase5/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/release-readiness.md",
+      "target": "phase5-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/release-readiness.md",
+      "target": "../evidence/phase5/release-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/release-readiness.md",
+      "target": "../evidence/phase5/release-manifest.sha256",
+      "exists": true
+    },
+    {
+      "document": "docs/release-readiness.md",
+      "target": "../evidence/phase5/release-manifest-check.json",
+      "exists": true
+    },
+    {
+      "document": "docs/reliability-testing.md",
+      "target": "../evidence/phase5/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/reliability-testing.md",
+      "target": "phase5-report.md#12-tests-and-exact-verification-results",
+      "exists": true
+    },
+    {
+      "document": "docs/reliability-testing.md",
+      "target": "../evidence/phase5/stability-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "render-storage-decision.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "render-security-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "phase7-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "../render.yaml",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "production-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "../evidence/phase6/health-during-active-cycle.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "../evidence/phase6/database-init-rejected-during-active-cycle.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-architecture.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-dashboard-api.md",
+      "target": "render-runtime-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-dashboard-api.md",
+      "target": "phase8-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-dashboard-api.md",
+      "target": "phase8-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-dashboard-api.md",
+      "target": "phase8-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-dashboard-api.md",
+      "target": "render-security-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-dashboard-api.md",
+      "target": "phase8-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "../render.yaml",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "render-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "render-storage-decision.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "render-security-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "phase7-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "../config/production.example.json",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "phase5-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "host-acceptance-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "../render.yaml",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "phase7-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-deployment-plan.md",
+      "target": "host-acceptance-checklist.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-free-architecture.md",
+      "target": "neon-postgres-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-free-architecture.md",
+      "target": "sqlite-postgres-migration-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-free-architecture.md",
+      "target": "phase9-report.md#11-blockers-risks-and-required-approvals",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "phase8-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "render-dashboard-api.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "phase8-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "phase8-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "phase8-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "phase8-test-evidence.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-runtime-operations.md",
+      "target": "phase8-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-security-plan.md",
+      "target": "render-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-security-plan.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-security-plan.md",
+      "target": "render-storage-decision.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-security-plan.md",
+      "target": "production-security.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-security-plan.md",
+      "target": "phase7-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-security-plan.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-storage-decision.md",
+      "target": "render-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-storage-decision.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-storage-decision.md",
+      "target": "render-security-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-storage-decision.md",
+      "target": "phase7-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-storage-decision.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-storage-decision.md",
+      "target": "production-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/render-storage-decision.md",
+      "target": "../evidence/phase6/health-during-active-cycle.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/render-storage-decision.md",
+      "target": "../evidence/phase6/database-init-rejected-during-active-cycle.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/render-storage-decision.md",
+      "target": "render-deployment-plan.md",
+      "exists": true
+    },
+    {
+      "document": "docs/risk-engine.md",
+      "target": "recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "docs/rollback-and-recovery.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/rollback-and-recovery.md",
+      "target": "release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/security-and-quality.md",
+      "target": "recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "docs/security-and-quality.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/security-and-quality.md",
+      "target": "production-security.md",
+      "exists": true
+    },
+    {
+      "document": "docs/security-and-quality.md",
+      "target": "release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/sqlite-postgres-migration-plan.md",
+      "target": "../evidence/phase8/phase8-seal.json",
+      "exists": true
+    },
+    {
+      "document": "docs/sqlite-postgres-migration-plan.md",
+      "target": "neon-postgres-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/sqlite-postgres-migration-plan.md",
+      "target": "render-free-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/sqlite-postgres-migration-plan.md",
+      "target": "neon-postgres-architecture.md#2-tables-identities-and-ordering",
+      "exists": true
+    },
+    {
+      "document": "docs/sqlite-postgres-migration-plan.md",
+      "target": "phase9-report.md#12-final-preservation-check-and-handoff",
+      "exists": true
+    },
+    {
+      "document": "docs/sqlite-postgres-migration-plan.md",
+      "target": "database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/sqlite-postgres-migration-plan.md",
+      "target": "rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "docs/sqlite-postgres-migration-plan.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/sqlite-postgres-migration-plan.md",
+      "target": "render-runtime-operations.md",
+      "exists": true
+    },
+    {
+      "document": "docs/testing.md",
+      "target": "reliability-testing.md",
+      "exists": true
+    },
+    {
+      "document": "docs/testing.md",
+      "target": "phase5-report.md#12-tests-and-exact-verification-results",
+      "exists": true
+    },
+    {
+      "document": "docs/thresholds.md",
+      "target": "risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/thresholds.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-freshness.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-assurance.md#configuration-continuity-and-persistent-alerts",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/alerting.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/operations-runbook.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "config/production.example.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": ".env.example",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/environment-variables.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-investigation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/SUBMISSION-SINGLE-POSITION-DEMO.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase5-report.md#12-tests-and-exact-verification-results",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/testing.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/risk/live/risk-report.txt",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/risk/live/risk-result.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/operations-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/stability-results.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/release-manifest.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/release-manifest-check.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/oracle-evidence-verification.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/monitoring-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/prior-phases-integrity.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase5/historical-regression.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase4/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase3/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase2/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase2/phase1-evidence-integrity.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase1/cli-report.txt",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/evidence.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase5-report.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/production-readiness-gaps.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase5-files.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/production-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/deployment.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/environment-variables.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/database-operations.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/operations-runbook.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/reliability-testing.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/production-security.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/rollback-and-recovery.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/release-readiness.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase4-files.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-freshness.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase3-report.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase3-files.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase2-report.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/thresholds.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/accounting.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-investigation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/testing.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/evidence.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/security-and-quality.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/reuse.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase2-files.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/created-files.md",
+      "exists": true
+    }
+  ]
+}

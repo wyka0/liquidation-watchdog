@@ -1,0 +1,34 @@
+
+> liquidation-watchdog@0.1.0 test:unit
+> vitest run --reporter=default --reporter=json --outputFile.json=evidence/phase2/unit-tests.json
+
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+ ✓ test/risk-engine.test.ts (40 tests) 2846ms
+   ✓ FIXTURE: snapshot-bound, non-actionable risk engine (40)
+     ✓ does not invent staleness from old age without a verified heartbeat 312ms
+ ✓ test/snapshot.test.ts (18 tests) 3917ms
+   ✓ FIXTURE: complete block-pinned read path (18)
+     ✓ pins code, metadata, market, position, price and rate on both endpoints 675ms
+     ✓ rejects MCP/RPC value and per-subcall success disagreement 550ms
+     ✓ shows no debt only after a successful, cross-checked zero-share read 320ms
+ ✓ test/risk-evidence.test.ts (3 tests) 950ms
+ ✓ test/risk-cli.test.ts (21 tests) 965ms
+ ✓ test/transport.test.ts (14 tests) 341ms
+ ✓ test/risk-repayment.test.ts (12 tests) 383ms
+ ✓ test/risk-collateral.test.ts (11 tests) 207ms
+ ✓ test/validation.test.ts (7 tests) 125ms
+ ✓ test/risk-thresholds.test.ts (40 tests) 146ms
+ ✓ test/accounting.test.ts (26 tests) 127ms
+ ✓ test/oracle.test.ts (13 tests) 45ms
+
+ Test Files  11 passed (11)
+      Tests  205 passed (205)
+   Start at  20:25:57
+   Duration  44.19s (import 84%, tests 14%, transform 2%, worker 1%)
+
+    Isolate  11 workers spawned · ~1.05s startup each (spawn + environment, per file)
+             at least ~4.72s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to C:/liquidation-watchdog/evidence/phase2/unit-tests.json

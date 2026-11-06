@@ -1,0 +1,22 @@
+{
+  "name": "reservoir-addresses",
+  "sourceUrl": "https://docs.reservoir.xyz/security-and-compliance/smart-contract-addresses.md",
+  "finalUrl": "https://docs.reservoir.xyz/security-and-compliance/smart-contract-addresses.md",
+  "method": "GET",
+  "beganAt": "2026-11-06T00:31:59.452Z",
+  "retrievedAt": "2026-11-06T00:31:59.993Z",
+  "status": 200,
+  "headers": {
+    "content-type": "text/markdown; charset=utf-8",
+    "date": "Fri, 06 Nov 2026 00:32:00 GMT",
+    "etag": null,
+    "last-modified": null
+  },
+  "redirects": [],
+  "block": null,
+  "bytes": 16097,
+  "responseSha256": "d0c14a1df60ebb37c221ddae0f0415067b6a40fb953108223eb76efcb12bb0d4",
+  "bodyPath": "reservoir-addresses.body.txt",
+  "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+  "ignoredRemoteAgentInstructionAppendix": false
+}

@@ -1,0 +1,20 @@
+(node:1120) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:4248) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  test/runtime-process.test.ts > PHASE8 FIXTURE: actual runtime processes > fences a second process and recovers after actual forced OS termination with an unfinished cycle
+Error: Test timed out in 40000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ test/runtime-process.test.ts:68:3
+     66|   }, 40_000);
+     67|   // Two sequential unchanged 30s child bounds, plus the normal 10s fe…
+     68|   it("fences a second process and recovers after actual forced OS term…
+       |   ^
+     69|     const h = runtimeFixture(true, true); directories.push(h.directory…
+     70|     try {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+

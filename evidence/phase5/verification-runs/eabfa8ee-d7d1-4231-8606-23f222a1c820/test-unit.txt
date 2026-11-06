@@ -1,0 +1,109 @@
+
+> liquidation-watchdog@0.1.0 test:unit
+> vitest run --reporter=default --reporter=json --outputFile.json=evidence/phase5/unit-tests.json
+
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+(node:7240) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:11040) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/operations-storage.test.ts (27 tests) 15407ms
+   ✓ FIXTURE: storage durability, ownership, migration and capacity faults (18)
+     ✓ rolls back all migration steps after an injected mid-migration I/O failure 647ms
+     ✓ does not migrate legacy storage during read-only inspection 589ms
+     ✓ takes maintenance ownership before writable open while permitting read-only diagnostics 323ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE extra(value TEXT) 713ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX unreviewed ON cycles(status) 588ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER unreviewed AFTER INSERT ON cycles BEGIN SELECT 1; END 689ms
+     ✓ rejects schema-layout drift before state changes: DROP INDEX deliveries_alert_id 709ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE sqliteextra(value TEXT) 625ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX sqliteindex ON cycles(status) 651ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER sqlitetrigger AFTER INSERT ON cycles BEGIN SELECT 1; END 627ms
+   ✓ FIXTURE: consistent SQLite backups and isolated restoration (9)
+     ✓ captures a live WAL database, all bound evidence and known-delivered/in-flight work while another connection writes 4359ms
+     ✓ restores schema 2 in isolation, migrates forward and preserves terminal/pending/cooldown history 682ms
+     ✓ restores schema 4 in isolation, migrates forward and preserves terminal/pending/cooldown history 628ms
+     ✓ rejects a manifest backup integrity failure without restoring 340ms
+     ✓ rejects a database backup integrity failure without restoring 317ms
+     ✓ refuses existing destinations, insufficient reserve and restore paths inside the immutable backup 521ms
+     ✓ rejects missing required reviewed evidence and retains an explicitly incomplete capture 508ms
+(node:17912) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/operations-lifecycle.test.ts (10 tests) 21040ms
+   ✓ FIXTURE: bounded lifecycle and late continuation safety (6)
+     ✓ settles an active delivery on graceful shutdown, starts no new send and closes exactly once 362ms
+   ✓ FIXTURE: actual child-process ownership and termination (4)
+     ✓ settles an idle worker via SIGINT handlers (Windows: explicit handler simulation) 4783ms
+     ✓ settles an idle worker via SIGTERM handlers (Windows: explicit handler simulation) 4464ms
+     ✓ settles an active child read through shutdown and releases its OS ownership lock 5665ms
+     ✓ recovers after actual forced OS termination, preserves known-delivered alerts and retries only ambiguous/pending work 4705ms
+(node:11044) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/operations-config.test.ts (35 tests) 4185ms
+   ✓ FIXTURE: production configuration, redaction and local path boundaries (22)
+     ✓ rejects every missing fixed deployment field and chain/endpoint substitution 467ms
+   ✓ FIXTURE: local operational health/readiness and CLI inspection (13)
+     ✓ reports a valid empty database as healthy but uninitialized and unready 901ms
+     ✓ keeps fixture observations unready even when a mocked probe reports both providers reachable 415ms
+(node:18284) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/monitoring-storage.test.ts (25 tests) 3051ms
+   ✓ FIXTURE: transactional SQLite persistence and restarts (25)
+     ✓ initializes a new database and reads the same accepted state and outbox after reopening 364ms
+(node:12156) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/monitoring-service.test.ts (24 tests) 2884ms
+   ✓ FIXTURE: pinned monitoring lifecycle and conservative failures (24)
+     ✓ recovers an interrupted cycle and then resumes reads without losing alert history 350ms
+     ✓ stops on an acknowledgment-write failure and recovers that in-flight delivery after reopening 331ms
+(node:6076) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/oracle-continuity.test.ts (20 tests) 2565ms
+   ✓ FIXTURE: configuration continuity, persistent oracle alerts and restart safety (20)
+     ✓ deduplicates configuration alerts through a SQLite restart and persists the invalidation latch 545ms
+     ✓ fails closed when a persisted assurance hash is corrupted 313ms
+ ✓ test/notifications.test.ts (40 tests) 2007ms
+   ✓ FIXTURE: durable delivery attempts, bounded retries and rate limits (12)
+     ✓ resumes pending deliveries without regenerating known delivered ones 372ms
+(node:5192) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/oracle-cli.test.ts (16 tests) 942ms
+ ✓ test/operations-transports.test.ts (27 tests) 3767ms
+   ✓ FIXTURE: bounded streaming reads and endpoint isolation (17)
+     ✓ uses exactly three same-endpoint read attempts after 5xx exhaustion and retains no partial result 3400ms
+ ✓ test/oracle-assurance.test.ts (21 tests) 916ms
+ ✓ test/oracle-audit-rpc.test.ts (27 tests) 911ms
+ ✓ test/snapshot.test.ts (18 tests) 886ms
+(node:17280) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/monitoring-cli.test.ts (4 tests) 787ms
+   ✓ FIXTURE: monitoring CLI and side-effect boundaries (4)
+     ✓ executes a bounded one-cycle command and reads persisted history/status after reopening 445ms
+ ✓ test/risk-engine.test.ts (40 tests) 746ms
+ ✓ test/risk-cli.test.ts (22 tests) 580ms
+ ✓ test/monitoring-transitions.test.ts (82 tests) 348ms
+ ✓ test/oracle-evidence.test.ts (12 tests) 275ms
+ ✓ test/oracle-independent.test.ts (26 tests) 227ms
+ ✓ test/risk-evidence.test.ts (3 tests) 267ms
+ ✓ test/transport.test.ts (14 tests) 102ms
+ ✓ test/monitoring-config.test.ts (43 tests) 75ms
+ ✓ test/risk-repayment.test.ts (12 tests) 87ms
+ ✓ test/monitoring-safety.test.ts (1 test) 79ms
+ ✓ test/risk-collateral.test.ts (11 tests) 47ms
+ ✓ test/risk-thresholds.test.ts (40 tests) 44ms
+ ✓ test/oracle-freshness.test.ts (16 tests) 29ms
+ ✓ test/validation.test.ts (7 tests) 30ms
+ ✓ test/accounting.test.ts (26 tests) 27ms
+ ✓ test/oracle.test.ts (13 tests) 8ms
+
+ Test Files  29 passed (29)
+      Tests  662 passed (662)
+   Start at  14:24:13
+   Duration  64.42s (tests 53%, import 44%, transform 3%)
+
+    Isolate  29 workers spawned · ~296ms startup each (spawn + environment, per file)
+             at least ~3.99s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to C:/liquidation-watchdog/evidence/phase5/unit-tests.json

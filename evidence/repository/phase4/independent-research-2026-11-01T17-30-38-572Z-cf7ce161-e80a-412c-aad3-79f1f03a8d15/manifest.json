@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "kind": "IMMUTABLE_ORACLE_EVIDENCE",
+  "createdAt": "2026-11-01T17:30:38.572Z",
+  "files": [
+    {
+      "file": "chainlink-megaeth.json",
+      "bytes": 858,
+      "sha256": "013e103f93ac3d9cf6acb822d3576ae8060e2397c8170469414e6402822435ab"
+    },
+    {
+      "file": "dexscreener-exact-address.json",
+      "bytes": 943,
+      "sha256": "6e31020e6065ba38ed9ee1c6394db84845a5039d30cb37ff0668f989ab9f8f6f"
+    },
+    {
+      "file": "reservoir-addresses.json",
+      "bytes": 18072,
+      "sha256": "9d5055471d0c44d2a7dbb46b1e212fe26896feec6c13ea6cd170d49596f52a2c"
+    },
+    {
+      "file": "reservoir-savings.json",
+      "bytes": 2020,
+      "sha256": "67f72f76b923f8e4f7fea0b225ff3751af1e4aef1430550bbc34f97575d65482"
+    }
+  ]
+}

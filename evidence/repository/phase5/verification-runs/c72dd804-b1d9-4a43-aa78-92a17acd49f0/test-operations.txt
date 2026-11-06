@@ -1,0 +1,68 @@
+
+> liquidation-watchdog@0.1.0 test:operations
+> vitest run test/operations-config.test.ts test/operations-storage.test.ts test/operations-lifecycle.test.ts test/operations-transports.test.ts --reporter=default --reporter=json --outputFile.json=evidence/phase5/operations-tests.json
+
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+(node:7888) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5744) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/operations-storage.test.ts (27 tests) 19481ms
+   ✓ FIXTURE: storage durability, ownership, migration and capacity faults (18)
+     ✓ rolls back all migration steps after an injected mid-migration I/O failure 992ms
+     ✓ does not migrate legacy storage during read-only inspection 607ms
+     ✓ takes maintenance ownership before writable open while permitting read-only diagnostics 357ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE extra(value TEXT) 814ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX unreviewed ON cycles(status) 902ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER unreviewed AFTER INSERT ON cycles BEGIN SELECT 1; END 837ms
+     ✓ rejects schema-layout drift before state changes: DROP INDEX deliveries_alert_id 794ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE sqliteextra(value TEXT) 866ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX sqliteindex ON cycles(status) 1016ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER sqlitetrigger AFTER INSERT ON cycles BEGIN SELECT 1; END 764ms
+     ✓ rolls back a real SQLITE_FULL page-limit failure without partial observation/outbox writes 303ms
+     ✓ fails closed on disk reserve, memory, database, WAL and evidence budgets without deleting records 316ms
+   ✓ FIXTURE: consistent SQLite backups and isolated restoration (9)
+     ✓ captures a live WAL database, all bound evidence and known-delivered/in-flight work while another connection writes 5370ms
+     ✓ restores schema 2 in isolation, migrates forward and preserves terminal/pending/cooldown history 846ms
+     ✓ restores schema 4 in isolation, migrates forward and preserves terminal/pending/cooldown history 794ms
+     ✓ rejects a database backup integrity failure without restoring 456ms
+     ✓ rejects a extra-nested-file backup integrity failure without restoring 471ms
+     ✓ rejects a missing-file backup integrity failure without restoring 472ms
+     ✓ refuses existing destinations, insufficient reserve and restore paths inside the immutable backup 601ms
+     ✓ rejects missing required reviewed evidence and retains an explicitly incomplete capture 434ms
+(node:18028) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/operations-lifecycle.test.ts (10 tests) 24100ms
+   ✓ FIXTURE: bounded lifecycle and late continuation safety (6)
+     ✓ settles an active delivery on graceful shutdown, starts no new send and closes exactly once 610ms
+     ✓ wires CLI signal cleanup through the same settling service 306ms
+   ✓ FIXTURE: actual child-process ownership and termination (4)
+     ✓ settles an idle worker via SIGINT handlers (Windows: explicit handler simulation) 5534ms
+     ✓ settles an idle worker via SIGTERM handlers (Windows: explicit handler simulation) 5875ms
+     ✓ settles an active child read through shutdown and releases its OS ownership lock 5200ms
+     ✓ recovers after actual forced OS termination, preserves known-delivered alerts and retries only ambiguous/pending work 5683ms
+ ✓ test/operations-config.test.ts (35 tests) 7584ms
+   ✓ FIXTURE: production configuration, redaction and local path boundaries (22)
+     ✓ rejects every missing fixed deployment field and chain/endpoint substitution 618ms
+   ✓ FIXTURE: local operational health/readiness and CLI inspection (13)
+     ✓ reports a valid empty database as healthy but uninitialized and unready 1099ms
+     ✓ keeps fixture observations unready even when a mocked probe reports both providers reachable 557ms
+     ✓ separates RUNNING worker/chain operational status from financial safety 487ms
+     ✓ separates STALE worker/chain operational status from financial safety 487ms
+     ✓ separates UNFINISHED worker/chain operational status from financial safety 501ms
+     ✓ separates UNCLEAN worker/chain operational status from financial safety 470ms
+     ✓ separates STALLED worker/chain operational status from financial safety 667ms
+     ✓ separates UNKNOWN_OWNER worker/chain operational status from financial safety 829ms
+     ✓ separates OTHER_SCOPE worker/chain operational status from financial safety 523ms
+ ✓ test/operations-transports.test.ts (27 tests) 3273ms
+   ✓ FIXTURE: bounded streaming reads and endpoint isolation (17)
+     ✓ uses exactly three same-endpoint read attempts after 5xx exhaustion and retains no partial result 2684ms
+
+ Test Files  4 passed (4)
+      Tests  99 passed (99)
+   Start at  15:30:05
+   Duration  34.16s (tests 82%, import 17%, transform 1%)
+
+JSON report written to C:/liquidation-watchdog/evidence/phase5/operations-tests.json

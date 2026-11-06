@@ -1,0 +1,12 @@
+{
+  "command": "npm run typecheck",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T14:39:58.198Z",
+  "finishedAt": "2026-11-02T14:40:20.412Z",
+  "durationMs": 22211,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "\n> liquidation-watchdog@0.1.0 typecheck\n> tsc --noEmit\n\n",
+  "stderr": ""
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "FAIL_DOCUMENTARY_INPUT_REVIEW_NOT_SOFTWARE_QUALIFICATION",
+  "recordedAt": "2026-11-06T01:30:05.447Z",
+  "failedInvocationTimestamp": "NOT_CAPTURED",
+  "exitCode": 1,
+  "node": "v24.14.1",
+  "cwd": "C:/liquidation-watchdog",
+  "requestedShellCapsule": {
+    "root": "REPAIR",
+    "file": "documentary-input-review-attempt-1.ps1",
+    "bytes": 3202,
+    "sha256": "9f31324c27a8165c7b3145b49bc26e855cb61d73828b347b3125563147c7d357"
+  },
+  "toolReturnedOutput": {
+    "root": "REPAIR",
+    "file": "documentary-input-review-attempt-1.tool-output.txt",
+    "bytes": 752,
+    "sha256": "9d4b12a0f85271cf930f66282a133c977725f17ceeb532a15c756f6f17ede0d6"
+  },
+  "error": {
+    "name": "SyntaxError",
+    "message": "Unexpected identifier 'node'",
+    "location": "file:///C:/liquidation-watchdog/[eval1]:1"
+  },
+  "observedFirstEvalLine": "import { readFileSync, existsSync } from node:fs;",
+  "actualNativeEvalArgumentFullyCaptured": false,
+  "streamSeparationCaptured": false,
+  "outputMeaning": "Full visible tool-returned combined output copied into a new text artifact, including its exit annotation; not a separately captured raw stdout/stderr transcript. The requested shell capsule is not asserted to be the exact post-PowerShell native eval argument.",
+  "cause": "The quoted requested module specifier appears unquoted in Node's parser error, demonstrating the Windows PowerShell native --eval argument quoting boundary. Parsing failed before imports or evidence reads.",
+  "correction": "Use a reviewed file-based local documentary input helper instead of inline native --eval. Do not change the repository, test assertions, qualification evidence or failure classification.",
+  "noCapturedEvidenceRead": true,
+  "noSoftwareTestOrApplicationOrDatabaseOrNetworkOrMonitoringOperation": true,
+  "originalEvidenceAndResultsUnchanged": true,
+  "monitor": "STOPPED",
+  "retainedBy": {
+    "root": "REPAIR",
+    "file": "retain-documentary-input-review-failure.mjs",
+    "bytes": 2426,
+    "sha256": "d6333206dc71d11887b0df6d329045d13e9836e2230ba3eaa1f4b6305457d57e"
+  }
+}

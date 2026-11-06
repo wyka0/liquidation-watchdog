@@ -1,0 +1,39 @@
+{
+  "capturedAtUtc": "2026-11-02T08:00Z-2026-11-02T09:00Z interval (individual commands timestamped in transcript)",
+  "scope": "Read-only host discovery of the LOCAL DEVELOPMENT MACHINE. The intended deployment host has not been specified; these observations are NOT target-host acceptance results.",
+  "timeSynchronization": {
+    "service": "W32Time running, StartType Automatic",
+    "reportedStatus": {
+      "leapIndicator": "3 (not synchronized)",
+      "stratum": 0,
+      "lastSuccessfulSyncTime": "2026-11-01T22:47:48 local",
+      "source": "time.windows.com,0x9"
+    },
+    "assessment": "Time service is running with a configured source, but at capture time Windows reported 'not synchronized' (leap indicator 3) since the 18:29 boot. Host clock skew of caught-up sync state cannot be demonstrated on this machine; target-host clock discipline remains a required target-host test. Application reads carry chain timestamps; no local wall-clock trust is asserted by the application."
+  },
+  "supervisorAvailability": {
+    "watchdogServices": 0,
+    "watchdogScheduledTasks": 0,
+    "systemdOrEquivalent": "not installed (Windows); nssm, pm2, winsw, servy not found on PATH",
+    "assessment": "No process supervisor is installed. The production architecture requires an external supervisor; on the unspecified target host this remains a required acceptance gate. Deliberately nothing was installed."
+  },
+  "permissionsAndOwnership": {
+    "currentUser": "[REDACTED_HOSTNAME]\\[REDACTED_USER]",
+    "privilegeState": "Non-elevated user token (Administrators group membership is deny-only; no elevation used at any time)",
+    "tempWorkspaceACL": "Standard inherited ACLs; Administrator-level changes to existing production-scope directories were not needed and none were made",
+    "dataTempDirectory": "Created under [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase6-acceptance (temporary test location); inclusive of database,-wal,-shm,-journal-free sidecars and ownership sidecar files created by the application"
+  },
+  "networkReachability": {
+    "dnsRpc": "rpc.pharos.xyz -> CNAME alb-jg1s9ishccbkqxst98.ap-southeast-1.alb.aliyuncs.com (A records 8.219.97.231, 8.222.235.176, 47.245.119.150)",
+    "dnsMcp": "mcp.pharos.xyz -> CNAME k8s-pharosmc-pharosmc-0c5ea8f6cd-1909101300.ap-southeast-1.elb.amazonaws.com (A records 52.76.58.149, 54.179.32.191, 54.251.75.28)",
+    "applicationProbe": "readiness --probe reported RPC REACHABLE and MCP REACHABLE (evidence/phase6/readiness-probe.json)",
+    "tlsInterceptionNote": "TLS trust chain, egress proxy behavior and corporate interception were not tested; they require target-host controls.",
+    "restriction": "Endpoints are fixed by compiled configuration; no endpoint, chain or network substitution occurred."
+  },
+  "diskAndMemory": {
+    "osDisk": "C: NTFS [REDACTED_DISK_OBSERVATION] (NTFS is a journaled local filesystem; sidecar/fsync power-loss semantics remain untested per documented limits)",
+    "installedMemoryBytes": "[REDACTED_MACHINE_SPECIFIC]",
+    "peakCheckerRssObservedBytes": 100921344,
+    "configuredResourceCeilings": "databaseBytes 4294967296, walBytes 268435456, minFreeBytes 536870912, rssBytes 536870912, pendingDeliveries 10000, evidenceBytes 2147483648, evidenceFiles 50000"
+  }
+}

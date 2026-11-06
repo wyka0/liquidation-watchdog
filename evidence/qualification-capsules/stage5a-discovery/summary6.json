@@ -1,0 +1,41 @@
+{
+  "requestedAt": "2026-11-06T15:09:18.368Z",
+  "requestCount": 1,
+  "vault": {
+    "asset": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+    "totalAssets": "12896611072925",
+    "totalSupply": "12762075525995995990910966",
+    "convertToAssets(1e18)": "1010541",
+    "convertToShares(1e6)": "989568147308758035"
+  },
+  "problems": [
+    {
+      "note": "VAULT_RAW_NULL",
+      "fn": "symbol"
+    },
+    {
+      "note": "VAULT_RAW_NULL",
+      "fn": "name"
+    },
+    {
+      "note": "VAULT_RAW_NULL",
+      "fn": "decimals"
+    },
+    {
+      "note": "VAULT_RAW_NULL",
+      "fn": "typeAndVersion"
+    },
+    {
+      "note": "VAULT_RAW_NULL",
+      "fn": "description"
+    },
+    {
+      "note": "VAULT_RAW_NULL",
+      "fn": "owner"
+    },
+    {
+      "note": "VAULT_RAW_NULL",
+      "fn": "redeemFee"
+    }
+  ]
+}

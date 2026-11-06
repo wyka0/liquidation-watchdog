@@ -1,0 +1,75 @@
+# PostgreSQL operations reference (Phase 10)
+
+**Status: local implementation only.** Everything below describes the qualified local implementation and its constraints. Neon provisioning, data import/cutover, Render deployment, external scheduling and production operation are **not** authorized by Phase 10 (approvals A2–A8 from [the Phase 9 report](phase9-report.md#11-blockers-risks-and-required-approvals) remain open). The preserved disk-backed Phase 8 SQLite service remains the only locally verified running implementation until a separately approved cutover.
+
+## 1. Entry point and configuration
+
+New entrypoint `npm run start:postgres` (`node dist/postgres-service.js`) starts the PostgreSQL runtime. Configuration is consumed only at explicit invocation; imports are inert (no pool, migration, SQLite open or cycle at startup). Required environment variables (**names only; values are injected privately on approved infrastructure, never in files, logs or manifests**):
+
+| Variable | Meaning |
+| --- | --- |
+| `WATCHDOG_STORAGE_BACKEND` | Must be the literal `postgres` (otherwise the Phase 8 SQLite service starts unchanged). |
+| `WATCHDOG_POSTGRES_NAMESPACE` | Deployment namespace `^[a-z0-9][a-z0-9_-]{0,63}$` persisted into `database_identity`. |
+| `WATCHDOG_POSTGRES_WRITER_URL` | PostgreSQL URL for the writer role. |
+| `WATCHDOG_POSTGRES_READER_URL` | PostgreSQL URL for a **distinct reader role** on the same host/port/database (writer and reader usernames must differ; equality is refused). |
+| `WATCHDOG_SCHEDULER_ENABLED` | `true` → lifecycle `RUNNING` (server accepts scheduler jobs); `false`/absent → `DISABLED` (reads and health only). |
+| `WATCHDOG_READ_API_TOKEN` | Dashboard read credential (Basic). Optional at startup: reads refuse until provided; health/readiness stay available. |
+| `WATCHDOG_SCHEDULER_SECRET` | Scheduler bearer credential (≥256 generated bits, distinct from the read token). Optional at startup: the scheduler route refuses until provided. |
+| `PORT` | HTTP port 1–65,535. |
+
+URL grammar enforced by `connectionConfiguration`: `postgres:`/`postgresql:`, hostname `^[A-Za-z0-9.-]+$` (localhost/127.0.0.1 refused), path `^/[A-Za-z0-9_-]{1,63}$`, only `sslmode=require|verify-full` allowed once, no hash/fragment, ≤4,096 bytes. The driver is constructed with `rejectUnauthorized: true`, `sslnegotiation: "postgres"`, `search_path=pg_catalog` and a fixed `application_name`; no permissive SSL options and no `PG*` environment discovery are consulted. Any config mismatch is `POSTGRES_CONFIG` before any connection is made.
+
+On SIGINT/SIGTERM the runtime performs the same bounded stop as the SQLite service (**10 s shutdown deadline**): scheduler stop, HTTP close, pool close; deadline overrun writes the redacted `PROCESS_SHUTDOWN_DEADLINE` event and exits 1.
+
+## 2. Pools and bounded capacity
+
+Everything is bounded by `PG_LIMITS` in `src/config/postgres.ts`:
+
+| Limit | Value / meaning |
+| --- | --- |
+| `connectionsPerRole` | **1** connection per role (writer pool and reader pool, independent lazy pools). |
+| `queuedPerRole` | 3 waiters; the 4th concurrent operation is refused (`READ_BUSY`) instead of stacking connections. |
+| `connectMs / idleMs / closeMs` | 5,000 / 5,000 / 5,000 — idle pools stay empty; outbound connections never live between cycles. |
+| `queryMs / transactionMs / readTransactionMs` | 6,000 / 10,000 / 4,000 hard client bounds; writer statement 5,000 ms, reader statement 1,000 ms (server-side statement timeouts terminate long reads so the pooled connection is reusable), lock wait 1,000 ms. |
+| `cycleMs / jobMs / leaseSeconds / httpMs` | 240,000 / 300,000 / 360 / 420,000 — the receive/cycle/job/lease/HTTP budget ladder (verified by unit tests). |
+| `bodyBytes` | 1,024 scheduler request cap. |
+| `storageStopBytes / pendingDeliveries` | 800,000,000 / 10,000 admission stops (`RESOURCE_DATABASE_LIMIT` / `RESOURCE_BACKLOG_LIMIT`), replacing SQLite disk probing with database-space (`pg_database_size`) and pending-count checks. |
+| `synchronous_commit=on` durability | Writer transactions issue `SET LOCAL synchronous_commit=on` so stuck-at-commit outcomes resolve to the durable record; lost COMMIT/verify results reconcile through stable identity instead of replays. |
+
+Connection acquisition serializes across callers so outages cannot create reconnect storms; transient-class failures (`08*`, `57P01-3`, socket errors) get exactly two attempts each with capped jittered backoff; every surface error is sanitized (`POSTGRES_UNAVAILABLE`, `POSTGRES_COMMIT_UNKNOWN`, ...) — raw driver text, URLs and credentials never appear in any error.
+
+Disconnect cancellation: every transaction honors its caller's `AbortSignal` (scheduler job cancellation, shutdown, closed store), ending in-flight statements server-side (`READ_CANCELLED`), while queued admissions are cancelled before touching the database — proven by the immediately-abort and queued-persistence-cancel tests.
+
+## 3. Runtime wiring
+
+`PostgresRuntime` ([postgres-runtime.ts](../src/runtime/postgres-runtime.ts)) offers the same lifecycle states as the Phase 8 service (`STARTING/RUNNING/DISABLED/STOPPING/STOPPED/FAILED`) with `AsyncServiceOptions`-wired monitoring: the monitoring service, dispatcher and read models now await every store call (shared [MonitoringService](../src/monitoring/service.ts) code, async `commitObservation` boundaries, dispatcher async sends) — the exact decisions, thresholds, BigInt math, `actionable:false`, UNVERIFIED/UNKNOWN labels and 600-second age rule are unchanged. The HTTP server (modified [http.ts](../src/runtime/http.ts)) keeps the Phase 8 protections and adds the [scheduler route](scheduler-endpoint-contract.md); the [read model](#6-authenticated-read-apis) gains exact bigint cursors and the server-side byte budget.
+
+## 4. Fencing and ownership
+
+- `database_identity.incarnation` rotates **only** by explicit maintenance; every runtime writer pins its admitted incarnation and refuses old-incarnation writes after rotations (isolated-restore-style tests).
+- One **global lease** row (`worker_lease`) grants exactly one owner a fenced execution window: `(owner, fence, incarnation, deadline_at ≤ expires_at, current_execution → scheduled_executions)`. Late writes/acknowledgments from expired, superseded or new-incarnation owners are refused with stable codes; claims (`deliveries.claim_*`) check `owner+fence+incarnation+claim_deadline` (20 s acknowledgment headroom).
+- `high_water_slot` never regresses and blocks replay of admitted/pruned slots even across database-clock rollback.
+- `restart`-safe: after an immediate server restart the identity, lease high-water, durable `IN_FLIGHT` attempts and receipts survive; daily operations do not reset any of them.
+
+## 5. Migrations
+
+Two checksummed migrations (independent SQLite lineage, `user_version` untouched) build the complete [schema](postgres-schema-reference.md). They run **explicitly** — `applyPostgresMigrations` is a maintenance API (never invoked by startup, reads or scheduled work) executed under `pg_advisory_xact_lock(1672,10001)`, idempotent, checksum-verified each open, refusing checksum/gap/future lineage corruption without repair. Local runs used the pinned native fixture (`@embedded-postgres/windows-x64@17.11.0-beta.19`, PostgreSQL **17.11** binaries); initialization of a real deployment still awaits A3/A4 provisioning authority and an approved operator runner.
+
+## 6. Authenticated read APIs
+
+Same routes as Phase 8: `/api/readiness`, `/api/monitoring/status`, `/api/positions`, `/api/risk`, `/api/observations`, `/api/alerts`, `/api/health` (unauthenticated), dashboard assets credential-free, Basic auth on the rest. PostgreSQL specifics:
+
+- Independent single-reader snapshots: `readSnapshot` uses a bounded REPEATABLE READ / READ ONLY transaction so multi-endpoint reads stay coherent across concurrent writer commits.
+- History pages paginate on **exact bigint cursors** (`stable_seq`), transported as canonical decimal strings; cursors are exclusively ordered (no misses/repeats at steady state).
+- The **server** prices each page's JSON payload against a 1,048,576-byte budget and raises `READ_LIMIT` (HTTP 413) before rows cross the wire; the extra serialized key never travels.
+- Projections are shared field-safe schemas (identical to SQLite): exact amount strings, strict `schemaVersion: 1` envelopes, no internal assurance/config/path fields, no `SAFE` wording, `actionable:false` structural, UNVERIFIED/UNKNOWN labels preserved, and `safety.schedule = {"mode":"EXTERNAL_UTC_SLOTS","periodSeconds":1800,"utcMinutes":[7,37]}` when scheduler-enabled.
+
+## 7. Retention, recovery and boundaries
+
+- `prune(now, cycleDays, alertDays)` deletes only terminal, unprotected history: alerts older than `alertDays` without non-terminal deliveries (≥7-day guard is a hard failure, `STORE_CORRUPT`), cycles older than `cycleDays` (≥1) not referenced by streams (latest/last-accepted) or the lease's current execution, and superseded non-baseline oracle assurance. Fingerprints (dedup tombstones) are never pruned; delivered-with-cascade alert deletion does not remove other rows' protections.
+- Delivery recovery (`recoverDeliveries`) only claims stale/foreign `IN_FLIGHT` rows, records `ATTEMPT_INTERRUPTED` with sticky ambiguity, and returns count; at-least-once provider ambiguity is redacted as explicit `ambiguous` state, never hidden.
+- No automatic restore/repair pathway exists against any database (SQLite or PostgreSQL), matching the standing data-preservation rule.
+
+## 8. What this phase did not do
+
+No Neon account/connection, no real-data import or cutover, no Render deployment, no run of the external scheduler, no real notification send, no financial signing authority, no commit/push/tag/Git-index mutation, and no rerun of `phase9-audit.mjs` against the modified tree. Full test/preservation evidence is in [the test-evidence record](phase10-test-evidence.md) and the final [Phase 10 report](phase10-report.md).

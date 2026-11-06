@@ -1,0 +1,12 @@
+{
+  "command": "node --import tsx test/helpers/phase8-import.ts dist/service.js",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T14:44:04.928Z",
+  "finishedAt": "2026-11-02T14:44:08.740Z",
+  "durationMs": 3810,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "{\"passed\":true,\"databaseOpens\":0,\"serverConstructions\":0,\"providerRequests\":0,\"signalHandlersAdded\":0,\"cwdChanged\":false}\n",
+  "stderr": "(node:8612) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+}

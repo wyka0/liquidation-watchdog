@@ -1,0 +1,165 @@
+{
+  "commandScope": "LOCAL_OPERATIONAL_DIAGNOSTICS",
+  "checkedAt": "2026-11-02T09:26:24.643Z",
+  "processHealth": {
+    "checker": "HEALTHY",
+    "healthy": true,
+    "workerStatus": "RUNNING",
+    "ownership": "HELD",
+    "worker": {
+      "runId": "93d7326e-582e-49d5-8666-a3ba9c3635e2",
+      "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+      "pid": 15768,
+      "startedAt": "2026-11-02T09:26:14.890Z",
+      "updatedAt": "2026-11-02T09:26:14.908Z",
+      "rssBytes": 98430976,
+      "status": "READING",
+      "error": null
+    }
+  },
+  "database": {
+    "available": true,
+    "schemaCurrent": true,
+    "schemaVersion": 5,
+    "sqliteVersion": "3.51.2",
+    "pageSize": 4096,
+    "pageCount": 142,
+    "freePages": 15,
+    "journalMode": "wal",
+    "foreignKeys": true,
+    "connectionReadOnly": true,
+    "connectionSynchronous": 2,
+    "pendingDeliveries": 0,
+    "counts": {
+      "schema_migrations": 5,
+      "streams": 1,
+      "cycles": 3,
+      "fingerprints": 3,
+      "alerts": 3,
+      "deliveries": 3,
+      "delivery_attempts": 3,
+      "delivery_events": 9,
+      "provider_limits": 0,
+      "oracle_assurance": 2,
+      "worker_runtime": 1,
+      "operational_events": 0
+    }
+  },
+  "configuration": {
+    "valid": true,
+    "profile": "production",
+    "errors": [],
+    "runtimeVerified": true,
+    "notifications": {
+      "console": "ENABLED",
+      "telegram": "DISABLED",
+      "discord": "DISABLED"
+    },
+    "chain": {
+      "status": "FIXED_CONFIGURATION_VALID",
+      "chainId": 1672
+    },
+    "secretValues": "OMITTED",
+    "endpointOverrides": "UNSUPPORTED"
+  },
+  "runtime": {
+    "node": "v24.14.1",
+    "sqlite": "3.51.2",
+    "platform": "win32",
+    "architecture": "x64",
+    "verified": {
+      "node": "v24.14.1",
+      "sqlite": "3.51.2"
+    },
+    "checkerUptimeSeconds": 2,
+    "checkerRssBytes": 92569600
+  },
+  "lastCycle": {
+    "id": "8ad5d50e-23b3-45f0-83f0-ae8eb1bfe42a",
+    "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+    "started_at": "2026-11-02T09:26:14.905Z",
+    "status": "RUNNING",
+    "completed_at": null
+  },
+  "lastSuccessfulChainRead": {
+    "retrievedAt": "2026-11-02T09:25:19.604Z",
+    "blockNumber": "21920677",
+    "blockHash": "0x70e1e8bb9fe249e3693ab12210ea794fbda960f9092e05a297a58fd2ca94a745",
+    "evidenceKind": "LIVE_CHAIN_READ"
+  },
+  "pendingDeliveryCount": 0,
+  "deliveryCounts": {
+    "PENDING": 0,
+    "IN_FLIGHT": 0,
+    "DELIVERED": 3,
+    "FAILED": 0,
+    "RETRY_SCHEDULED": 0,
+    "PERMANENTLY_FAILED": 0
+  },
+  "providerLimits": [],
+  "monitoring": {
+    "initialized": true,
+    "currentAcceptedRead": true,
+    "latestAccepted": true,
+    "consecutiveFailures": 0
+  },
+  "connectivity": {
+    "rpc": "REACHABLE_AS_OF_ACCEPTED_SNAPSHOT",
+    "mcp": "REACHABLE_AS_OF_ACCEPTED_SNAPSHOT",
+    "checkedAt": "2026-11-02T09:25:19.604Z",
+    "mode": "PERSISTED_AS_OF_SNAPSHOT"
+  },
+  "resources": {
+    "ok": true,
+    "issues": [],
+    "disk": {
+      "databaseBytes": 581632,
+      "walBytes": 45352,
+      "shmBytes": 32768,
+      "freeBytes": 204562509824,
+      "volumeBytes": 510476152832
+    },
+    "rssBytes": 98430976,
+    "pendingDeliveries": 0,
+    "limits": {
+      "databaseBytes": 4294967296,
+      "walBytes": 268435456,
+      "minFreeBytes": 536870912,
+      "pendingDeliveries": 10000,
+      "rssBytes": 536870912,
+      "evidenceBytes": 2147483648,
+      "evidenceFiles": 50000
+    },
+    "memoryMeasurement": "WORKER_AS_OF_RUNTIME_RECORD",
+    "memoryMeasuredAt": "2026-11-02T09:26:14.908Z"
+  },
+  "evidence": {
+    "available": true,
+    "bytes": 8174866,
+    "files": 256,
+    "directories": 17
+  },
+  "recentFailures": [],
+  "latestReadDiagnostics": [
+    "ORACLE_UNVERIFIED",
+    "ORACLE_FRESHNESS_UNKNOWN"
+  ],
+  "operationalReadiness": {
+    "readyForObservation": false,
+    "currentChainSnapshotRequired": true,
+    "latestCycleSettled": false,
+    "workerCoherent": true,
+    "monitorRunning": true
+  },
+  "oracleAssurance": "UNVERIFIED",
+  "freshness": "UNKNOWN",
+  "financialActionability": false,
+  "estimates": "INDICATIVE_ONLY",
+  "productionReleaseReady": false,
+  "blockers": [
+    "ORACLE_ECONOMICS_AND_OPERATORS_UNVERIFIED",
+    "UPSTREAM_FRESHNESS_UNKNOWN",
+    "INDEPENDENT_COMPARATOR_UNQUALIFIED",
+    "PRODUCTION_HOST_ACCEPTANCE_AND_APPROVAL_REQUIRED"
+  ]
+}

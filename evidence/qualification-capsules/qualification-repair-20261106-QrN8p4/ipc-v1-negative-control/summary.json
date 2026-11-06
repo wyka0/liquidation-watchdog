@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "name": "ipc-v1-negative-control",
+  "mode": "independent",
+  "status": "FAIL",
+  "completedAt": "2026-11-06T00:32:26.265Z",
+  "results": [
+    {
+      "label": "tests",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/runtime-process.test.ts",
+        "-t",
+        "fences a second process",
+        "--configLoader=native",
+        "--no-cache",
+        "--no-fsModuleCache",
+        "--reporter=default",
+        "--reporter=json",
+        "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\tests.json"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 13368,
+      "startedAt": "2026-11-06T00:32:09.938Z",
+      "completedAt": "2026-11-06T00:32:25.423Z",
+      "durationMs": 15482.686399999999,
+      "exitCode": 0,
+      "signal": null,
+      "guardSha256": "486a717e1742b81f647c3df4e737ede4b73fdd3d6f72cc91d6e65a4c0010c846",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\tests.stdout.txt",
+        "bytes": 553,
+        "sha256": "f5d056c9a00679c8be00b53b1f81fd0d77372a57683d6a4cbddac6621b3ffad3"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\tests.stderr.txt",
+        "bytes": 337,
+        "sha256": "c65a01f7d38096091f3e88f884594d57078b77b77edb5fd77f659e68c40e6e5e"
+      }
+    }
+  ],
+  "tooling": {
+    "diagnostics": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\diagnostic-preloader-used.cjs",
+      "bytes": 6150,
+      "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    "runner": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\test-runner-used.mjs",
+      "bytes": 8784,
+      "sha256": "92d5463e366f1127eb8e39894f5ac2f57bf6a08e702ebb25f066dcc520e9acd8"
+    }
+  },
+  "tests": {
+    "success": true,
+    "files": 1,
+    "total": 4,
+    "passed": 1,
+    "failed": 0,
+    "pending": 3,
+    "todo": 0,
+    "assertions": [
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "passed",
+        "durationMs": 11364.1644,
+        "failureMessages": []
+      }
+    ]
+  },
+  "networkGuard": {
+    "version": "v1",
+    "sha256": "486a717e1742b81f647c3df4e737ede4b73fdd3d6f72cc91d6e65a4c0010c846",
+    "records": 4,
+    "blockedRecords": 4,
+    "blockedLocalIPC": 4,
+    "demonstratedRemoteAttempts": 0,
+    "allowedLocalNamedPipes": 0,
+    "caveat": "Explicit v1 negative control; false LOCAL_IPC rejections are not remote requests. This run cannot qualify with v1."
+  },
+  "cleanup": {
+    "remainingFixtureDirectories": [],
+    "removalAttempts": 1,
+    "removalErrors": [],
+    "pathsStillExist": [],
+    "children": [
+      {
+        "pid": 13360,
+        "exited": true,
+        "closed": true,
+        "disconnected": true
+      },
+      {
+        "pid": 15880,
+        "exited": true,
+        "closed": true,
+        "disconnected": true
+      }
+    ],
+    "relevantFixtureProcessesAfterRun": [],
+    "noObservedOrphanProcesses": true
+  },
+  "logs": {
+    "network": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\network-guard.jsonl",
+      "bytes": 360,
+      "sha256": "bbeae66ec7ae6ddf56b3a4f55784168ed5a1a91fdcb512ef9602da6440c4eb18"
+    },
+    "lifecycle": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\process-lifecycle.jsonl",
+      "bytes": 40279,
+      "sha256": "8e6fec7a1dabfd10740e73a2215be99471cbcd85b0967f1e10e3be5c9c2e0737"
+    }
+  },
+  "safety": {
+    "realMonitorStopped": true,
+    "syntheticRuntimeFixturesOnly": true,
+    "externalNotifications": false,
+    "transactionsOrWalletOperations": false,
+    "noIntegrationTests": true,
+    "timeoutsOrAssertionsChangedByDiagnosticPreloader": false,
+    "externalOutputsAndTemporaryFilesOnly": true
+  }
+}

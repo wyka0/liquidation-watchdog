@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "positions": [
+    {
+      "enabled": true,
+      "mode": "CONFIGURED",
+      "identity": {
+        "chainId": 1672,
+        "protocol": "MORPHO_BLUE",
+        "protocolAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+        "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+        "account": "0x1111111111111111111111111111111111111111",
+        "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+        "irmAddress": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+        "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "collateralToken": "0x4809010926aec940b550D34a46A52739f996D75D"
+      },
+      "thresholds": {
+        "warningRatio": "1.30",
+        "criticalRatio": "1.10",
+        "targetRatio": "1.25",
+        "liquidationBoundary": "1.00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "operation": "report",
+  "evidenceClass": "SEPARATE_OFFLINE_DOCUMENTARY_REHASH_NOT_A_NEW_TEST_OR_MONITOR_CYCLE",
+  "startedAt": "2026-11-06T01:40:51.243Z",
+  "completedAt": "2026-11-06T01:41:15.478Z",
+  "checkGroupsPassed": 31,
+  "checkGroupsFailed": 0,
+  "checks": [
+    {
+      "name": "REPORT_METADATA_REFERENCES_AND_NO_RENDERER_PLACEHOLDERS",
+      "status": "PASS",
+      "detail": {
+        "referencesRehashed": 71,
+        "report": {
+          "root": "REPAIR",
+          "file": "FINAL-QUALIFICATION-REPAIR-REPORT.md",
+          "bytes": 51682,
+          "sha256": "02b6cb0943243b1115d17f2f50ebee41af3f951c53adb652045f8823b3986812"
+        },
+        "evidence": {
+          "root": "REPAIR",
+          "file": "final-qualification-evidence.json",
+          "bytes": 54195,
+          "sha256": "d78f2a358e988c194a87141ae3dc55316f29762a0097c60313ee36934aace058"
+        }
+      }
+    },
+    {
+      "name": "FOUR_EXACT_REQUIREMENTS_PASS_WITH_FINITE_LOCAL_SCOPE_ONLY",
+      "status": "PASS",
+      "detail": {
+        "originalRequirements": 4,
+        "productionAcceptanceImplied": false
+      }
+    },
+    {
+      "name": "RETAINED_CHAIN_READ_DERIVATION_AND_THRESHOLD_EVIDENCE",
+      "status": "PASS",
+      "detail": {
+        "priorAccessPathComparisons": 58,
+        "priorDirectGetters": 10,
+        "priorBigIntMatches": 17,
+        "newPositionReads": 0
+      }
+    },
+    {
+      "name": "SEPARATE_BIGINT_RECHECK_FROM_RETAINED_RAW_ABI_BYTES",
+      "status": "PASS",
+      "detail": {
+        "rawAbiInputs": 6,
+        "accountingAndValuationFieldsRecomputed": 17,
+        "exactThresholdCrossProducts": 4,
+        "observationIsHistoricalOnly": true,
+        "oracleEconomicAccuracyOrFinancialActionNotInferred": true
+      }
+    },
+    {
+      "name": "THREE_ACTUAL_TIMESTAMPED_CONSOLE_ALERTS_SINGLE_NON_FINANCIAL_ACTIONS",
+      "status": "PASS",
+      "detail": {
+        "actualDeliveries": 3,
+        "perMessageByteHashesAndTimestampActionSnapshotBindings": 3,
+        "actionsPerAlert": 1,
+        "financialOptions": 0,
+        "transcriptChanged": false,
+        "realMonitor": "STOPPED"
+      }
+    },
+    {
+      "name": "ORIGINAL_FULL_FAILURE_AND_ORIGINAL_FOCUSED_PASS_RETAINED",
+      "status": "PASS",
+      "detail": {
+        "originalFull": "FAIL_1006_OF_1007",
+        "originalFocused": "PASS_4_OF_4",
+        "originalDocumentaryFailureRetained": true
+      }
+    },
+    {
+      "name": "ONE_FILE_CORRECTION_ASSERTIONS_CHILD_BOUNDS_AND_V2_GUARD",
+      "status": "PASS",
+      "detail": {
+        "originalAssertions": 12,
+        "addedAssertions": 1,
+        "expandedTests": 4,
+        "onlyAggregateDeadlineChangedToMs": 70000,
+        "criticalFilesUnchanged": 8,
+        "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6"
+      }
+    },
+    {
+      "name": "CAUSAL_DIAGNOSTIC_CONTROLS_AND_MISSING_PROVENANCE_STAY_HONEST",
+      "status": "PASS",
+      "detail": {
+        "controlsKeptDiagnostic": 6,
+        "v1FalseLocalIPCBlocks": 4,
+        "earlyMissingCapsulesKeptNull": 3,
+        "lostHistoricalLifecycleNotInvented": true
+      }
+    },
+    {
+      "name": "RETAINED_CAUSAL_HELPER_FAILURE_HAS_EXACT_CAPSULE_AND_UNKNOWN_INVOCATION_TIME",
+      "status": "PASS",
+      "detail": {
+        "exitCode": 1,
+        "timestamp": "NOT_CAPTURED",
+        "failureSeparateFromSoftwareQualification": true
+      }
+    },
+    {
+      "name": "RETAINED_INPUT_REVIEW_QUOTING_FAILURE_BEFORE_EVIDENCE_READ",
+      "status": "PASS",
+      "detail": {
+        "exitCode": 1,
+        "failedBeforeEvidenceRead": true,
+        "nativeEvalArgumentAndInvocationTimeNotInvented": true,
+        "softwareQualificationUnchanged": true
+      }
+    },
+    {
+      "name": "FIVE_FINAL_PHASES_SEQUENTIAL_AND_ALL_COMMAND_OUTPUT_BYTES",
+      "status": "PASS",
+      "detail": {
+        "sequentialPhases": 5,
+        "childCommandRecordsRehashed": 7,
+        "unchangedMaxWorkers": 2,
+        "qualifiedRemoteAttempts": 0
+      }
+    },
+    {
+      "name": "QUALIFIED_TEST_ACCOUNTING_qualified-independent-v2",
+      "status": "PASS",
+      "detail": {
+        "files": 1,
+        "total": 4,
+        "passed": 1,
+        "failed": 0,
+        "unselected": 3,
+        "todo": 0
+      }
+    },
+    {
+      "name": "QUALIFIED_TEST_ACCOUNTING_qualified-runtime-process-v2",
+      "status": "PASS",
+      "detail": {
+        "files": 1,
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "unselected": 0,
+        "todo": 0
+      }
+    },
+    {
+      "name": "QUALIFIED_TEST_ACCOUNTING_qualified-focused-v2",
+      "status": "PASS",
+      "detail": {
+        "files": 3,
+        "total": 31,
+        "passed": 31,
+        "failed": 0,
+        "unselected": 0,
+        "todo": 0
+      }
+    },
+    {
+      "name": "QUALIFIED_TEST_ACCOUNTING_qualified-full-v2",
+      "status": "PASS",
+      "detail": {
+        "files": 49,
+        "total": 1007,
+        "passed": 1007,
+        "failed": 0,
+        "unselected": 0,
+        "todo": 0
+      }
+    },
+    {
+      "name": "FULL_1007_TEST_49_FILE_INVENTORY_EXACTLY_MATCHES_ORIGINAL",
+      "status": "PASS",
+      "detail": {
+        "files": 49,
+        "tests": 1007,
+        "removedOrRenamedTests": 0
+      }
+    },
+    {
+      "name": "TYPESCRIPT_ESLINT_AND_EXTERNAL_BUILD_EXACT_EXIT_ZERO",
+      "status": "PASS",
+      "detail": {
+        "typecheck": 0,
+        "lint": 0,
+        "externalBuild": 0,
+        "repositoryDistTouched": false
+      }
+    },
+    {
+      "name": "LIFECYCLE_RECORD_97_GROUPS_17_CHILDREN_AND_RAW_TRACES",
+      "status": "PASS",
+      "detail": {
+        "childLifecyclesRechecked": 17,
+        "runtimeFixtureRemovalsRechecked": 10,
+        "qualifiedRemnants": 0,
+        "retainedOSObservation": "2026-11-06T00:57:30.3030948Z"
+      }
+    },
+    {
+      "name": "COPIED_STAGE2_STORE_HASHES_CLOSED_INSPECTION_AND_STOPPED_HISTORY",
+      "status": "PASS",
+      "detail": {
+        "unchangedStoreSha256": "1d1bf776dfcec3dcf13f7a4a146c2ce9b7f201948f1d3af4d044a9f4836b1fa6",
+        "realStoreOpenedByThisValidator": false,
+        "newObservationCycleDelivery": 0
+      }
+    },
+    {
+      "name": "ORACLE_AUDIT_62_READ_ONLY_RESPONSES_PINNED_BLOCK_AND_SCOPE",
+      "status": "PASS",
+      "detail": {
+        "responseBodiesRehashed": 62,
+        "block": {
+          "number": "22229239",
+          "hash": "0x3623b544e2c84d5e5d7358234a010b446bc74fccafcbac00ed67046381906d4c",
+          "timestamp": "1793925778",
+          "parentHash": "0x87b67cd46d4a4d3788099246135a22b85c08c92c1e1e654fcaaf65138058c810",
+          "time": "2026-11-06T00:42:58.000Z"
+        },
+        "newMonitoredPositionObservation": false
+      }
+    },
+    {
+      "name": "ORACLE_EXACT_RUNTIME_DEPENDENCIES_TOKENS_SCALING_AND_SAMPLE_LIMITS",
+      "status": "PASS",
+      "detail": {
+        "runtimesRehashed": 7,
+        "reproducedPricingDependencies": 5,
+        "sampledNotComplete": true,
+        "quoteEquivalenceVerified": false
+      }
+    },
+    {
+      "name": "PUBLIC_RESEARCH_FULL_BODIES_OFFICIAL_PRODUCT_AND_UNSUCCESSFUL_COMPARATORS",
+      "status": "PASS",
+      "detail": {
+        "publicResponseBodiesRehashed": 10,
+        "documentedProduct": "WSRUSD/RUSD",
+        "documentedHeartbeatSeconds": 3600,
+        "eligibleComparatorAdopted": false
+      }
+    },
+    {
+      "name": "ALL_SEVEN_GATES_EXACT_HISTORICAL_STATES_PROOFS_AND_PREREQUISITES",
+      "status": "PASS",
+      "detail": {
+        "gates": 7,
+        "promotedGates": 0,
+        "historicalOverall": "UNVERIFIED",
+        "freshness": "UNKNOWN",
+        "independentEligible": false
+      }
+    },
+    {
+      "name": "SOURCE_TIMING_DENOMINATION_AND_INDEPENDENCE_WIRING_REMAINS_BLOCKED",
+      "status": "PASS",
+      "detail": {
+        "sourceOperatorIngestion": "MISSING",
+        "timingBinding": "MISSING",
+        "denomination": "ECONOMIC_QUOTE_UNVERIFIED",
+        "selectedUpstreamId": null,
+        "sourceBytesUnchanged": true
+      }
+    },
+    {
+      "name": "RECOVERY_SIX_BLOCKERS_FIRST_OBSERVATION_AND_NO_FINANCIAL_PROMOTION",
+      "status": "PASS",
+      "detail": {
+        "recoveryBlockers": 6,
+        "financialAmountsProduced": 0,
+        "newAdvancingProgressionClaimed": false
+      }
+    },
+    {
+      "name": "ALL_LOCAL_REPORT_LINKS_AND_HASH_TABLE_ROWS",
+      "status": "PASS",
+      "detail": {
+        "markdownReferences": 53,
+        "localReferencesChecked": 52,
+        "embeddedByteHashRows": 19,
+        "websitesContacted": 0
+      }
+    },
+    {
+      "name": "DOCUMENTARY_TOOL_SYNTAX_AND_FROZEN_SOURCE_CAPSULES",
+      "status": "PASS",
+      "detail": {
+        "documentaryToolsSyntaxChecked": 7,
+        "actionModesOrSoftwareTestsInvoked": 0
+      }
+    },
+    {
+      "name": "EXHAUSTIVE_REPOSITORY_AND_GIT_PRESERVATION",
+      "status": "PASS",
+      "detail": {
+        "filesRehashed": 22029,
+        "bytesRehashed": 273682606,
+        "onlyDelta": "test/runtime-process.test.ts",
+        "gitIndexSha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689",
+        "savedReadOnlyGitCommandOutcomesMatchBaseline": true,
+        "allDotGitBytesUnchanged": true
+      }
+    },
+    {
+      "name": "EVERY_PREEXISTING_REPAIR_AND_STAGE2_ARTIFACT_UNCHANGED",
+      "status": "PASS",
+      "detail": {
+        "existingRepairFilesRehashed": 1771,
+        "existingRepairBytesRehashed": 23113210,
+        "allStage2FilesRehashed": 561,
+        "allStage2BytesRehashed": 12341392,
+        "existingArtifactChanges": 0
+      }
+    },
+    {
+      "name": "ORIGINAL_STAGE2_MANIFEST_AND_REPORT_REHASHED_UNCHANGED",
+      "status": "PASS",
+      "detail": {
+        "filesRehashed": 387,
+        "bytesRehashed": 10157722,
+        "originalReportSha256": "acdfe3b107fa723c5d87ff990de66aaa7a2e3246e38b0f01b43b299efd66c60e"
+      }
+    },
+    {
+      "name": "FINAL_DECISION_AND_FINITE_STOP_SAFETY",
+      "status": "PASS",
+      "detail": {
+        "originalRequirements": "PASS_EXACT_FINITE_LOCAL_STAGE2_RUN_ONLY",
+        "software": "PASS",
+        "production": "NOT_ACCEPTED_NO_GO",
+        "oracleOverall": "UNVERIFIED",
+        "freshness": "UNKNOWN",
+        "independentValidation": "UNKNOWN_INELIGIBLE",
+        "financialRecovery": "BLOCKED",
+        "monitor": "STOPPED"
+      }
+    }
+  ],
+  "validator": {
+    "root": "REPAIR",
+    "file": "validate-final-qualification.mjs",
+    "bytes": 63393,
+    "sha256": "bd7a98f6d026df9180a9eb508535081ff908c9827d1d9c5fadc0da9d8c12aaab"
+  },
+  "report": {
+    "root": "REPAIR",
+    "file": "FINAL-QUALIFICATION-REPAIR-REPORT.md",
+    "bytes": 51682,
+    "sha256": "02b6cb0943243b1115d17f2f50ebee41af3f951c53adb652045f8823b3986812"
+  },
+  "evidence": {
+    "root": "REPAIR",
+    "file": "final-qualification-evidence.json",
+    "bytes": 54195,
+    "sha256": "d78f2a358e988c194a87141ae3dc55316f29762a0097c60313ee36934aace058"
+  },
+  "safety": {
+    "applicationImports": 0,
+    "databaseOpens": 0,
+    "networkRequests": 0,
+    "subprocesses": 0,
+    "testsRun": 0,
+    "newRealMonitorCycles": 0,
+    "repositoryWrites": 0,
+    "modeIsReadOnly": false,
+    "existingArtifactOverwrites": 0,
+    "production": "NOT_ACCEPTED_NO_GO",
+    "monitor": "STOPPED"
+  },
+  "trustLimit": "Separate validation implementation on the same local host; captured-byte integrity, not independent custody or notarization."
+}

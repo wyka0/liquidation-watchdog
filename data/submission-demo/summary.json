@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "evidenceKind": "SYNTHETIC_FIXTURE_DEMO",
+  "passed": true,
+  "position": {
+    "positionId": "de1bc4853c7c9bbe58a06dfa67d35119a3c04b96e1e31864bfb28eeb821fbd5c",
+    "account": "0x1111111111111111111111111111111111111111",
+    "mode": "CONFIGURED"
+  },
+  "scenarios": {
+    "warning": "WARNING",
+    "critical": "CRITICAL",
+    "insufficientEvidenceAction": "NON_FINANCIAL",
+    "qualifiedFixtureAction": "FINANCIAL_OPTION"
+  },
+  "persistence": {
+    "alerts": 4,
+    "deliveries": 4,
+    "consoleDelivered": true,
+    "restartKnownDeliveriesResent": false,
+    "qualifiedFixtureDeliveries": 3
+  },
+  "readiness": {
+    "status": 503,
+    "ready": false
+  },
+  "safety": {
+    "actionable": false,
+    "liveProviderVerified": false,
+    "oracleAssuranceLiveVerified": false,
+    "realNotificationsSent": 0,
+    "note": "All chain, progression, assurance, freshness, independent-price, position and delivery inputs in this demo are deterministic local fixtures."
+  },
+  "artifacts": [
+    "console-alerts.txt",
+    "qualified-financial-alert.txt",
+    "risk.json",
+    "alerts.json",
+    "readiness.json",
+    "status.json"
+  ]
+}

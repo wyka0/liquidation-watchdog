@@ -1,0 +1,272 @@
+[
+  {
+    "method": "eth_blockNumber",
+    "began": "2026-11-06T14:35:51.002Z",
+    "responseBytes": 11
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0xaa089c"
+    ],
+    "began": "2026-11-06T14:35:52.803Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x55044e"
+    ],
+    "began": "2026-11-06T14:35:53.592Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x2a8227"
+    ],
+    "began": "2026-11-06T14:35:54.181Z",
+    "responseBytes": 4
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x3fc33b"
+    ],
+    "began": "2026-11-06T14:35:54.761Z",
+    "responseBytes": 4
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x4a63c5"
+    ],
+    "began": "2026-11-06T14:35:55.340Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x451380"
+    ],
+    "began": "2026-11-06T14:35:55.923Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x426b5e"
+    ],
+    "began": "2026-11-06T14:35:56.510Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x41174d"
+    ],
+    "began": "2026-11-06T14:35:57.093Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x406d44"
+    ],
+    "began": "2026-11-06T14:35:57.678Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401840"
+    ],
+    "began": "2026-11-06T14:35:58.266Z",
+    "responseBytes": 4
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x4042c2"
+    ],
+    "began": "2026-11-06T14:35:58.840Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x402d81"
+    ],
+    "began": "2026-11-06T14:35:59.424Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x4022e1"
+    ],
+    "began": "2026-11-06T14:36:00.009Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401d91"
+    ],
+    "began": "2026-11-06T14:36:00.591Z",
+    "responseBytes": 4
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x402039"
+    ],
+    "began": "2026-11-06T14:36:01.171Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401ee5"
+    ],
+    "began": "2026-11-06T14:36:01.754Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401e3b"
+    ],
+    "began": "2026-11-06T14:36:02.343Z",
+    "responseBytes": 4
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401e90"
+    ],
+    "began": "2026-11-06T14:36:02.915Z",
+    "responseBytes": 4
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401ebb"
+    ],
+    "began": "2026-11-06T14:36:03.494Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401ea6"
+    ],
+    "began": "2026-11-06T14:36:04.074Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401e9b"
+    ],
+    "began": "2026-11-06T14:36:04.666Z",
+    "responseBytes": 4
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401ea1"
+    ],
+    "began": "2026-11-06T14:36:05.252Z",
+    "responseBytes": 4
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401ea4"
+    ],
+    "began": "2026-11-06T14:36:05.820Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401ea3"
+    ],
+    "began": "2026-11-06T14:36:06.405Z",
+    "responseBytes": 31168
+  },
+  {
+    "method": "eth_getCode",
+    "params": [
+      "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+      "0x401ea2"
+    ],
+    "began": "2026-11-06T14:36:06.986Z",
+    "responseBytes": 4
+  },
+  {
+    "method": "eth_getLogs",
+    "error": "{\"code\":-32602,\"message\":\"param error; The block range is too large. Consider narrowing it down to within 1,000 blocks.\",\"data\":{\"traceId\":\"1a1b149d5b9027d9\"}}",
+    "began": "2026-11-06T14:36:07.576Z"
+  },
+  {
+    "method": "eth_getLogs",
+    "error": "{\"code\":-32602,\"message\":\"param error; The block range is too large. Consider narrowing it down to within 1,000 blocks.\",\"data\":{\"traceId\":\"1a1b149dcc3bbcb1\"}}",
+    "began": "2026-11-06T14:36:09.376Z"
+  },
+  {
+    "method": "eth_getLogs",
+    "error": "{\"code\":-32602,\"message\":\"param error; The block range is too large. Consider narrowing it down to within 1,000 blocks.\",\"data\":{\"traceId\":\"1a1b149e3c08a099\"}}",
+    "began": "2026-11-06T14:36:11.170Z"
+  },
+  {
+    "method": "eth_getLogs",
+    "error": "{\"code\":-32602,\"message\":\"param error; The block range is too large. Consider narrowing it down to within 1,000 blocks.\",\"data\":{\"traceId\":\"1a1b149eac67d7d1\"}}",
+    "began": "2026-11-06T14:36:12.966Z"
+  },
+  {
+    "method": "eth_getLogs",
+    "error": "{\"code\":-32602,\"message\":\"param error; The block range is too large. Consider narrowing it down to within 1,000 blocks.\",\"data\":{\"traceId\":\"1a1b149f1c634775\"}}",
+    "began": "2026-11-06T14:36:14.756Z"
+  },
+  {
+    "method": "eth_getLogs",
+    "error": "{\"code\":-32602,\"message\":\"param error; The block range is too large. Consider narrowing it down to within 1,000 blocks.\",\"data\":{\"traceId\":\"1a1b149f8cd2c241\"}}",
+    "began": "2026-11-06T14:36:16.555Z"
+  },
+  {
+    "method": "eth_getLogs",
+    "error": "{\"code\":-32602,\"message\":\"param error; The block range is too large. Consider narrowing it down to within 1,000 blocks.\",\"data\":{\"traceId\":\"1a1b149ffc9102fd\"}}",
+    "began": "2026-11-06T14:36:18.353Z"
+  },
+  {
+    "method": "eth_getLogs",
+    "error": "{\"code\":-32602,\"message\":\"param error; The block range is too large. Consider narrowing it down to within 1,000 blocks.\",\"data\":{\"traceId\":\"1a1b14a06d21bbc1\"}}",
+    "began": "2026-11-06T14:36:20.150Z"
+  }
+]

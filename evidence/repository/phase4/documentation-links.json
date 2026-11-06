@@ -1,0 +1,701 @@
+{
+  "checkedAt": "2026-11-01T18:38:19.393Z",
+  "passed": true,
+  "checks": [
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/MorphoBalancesLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/MathLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/SharesMathLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/UtilsLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/Morpho.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/ConstantsLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "../evidence/phase1/sources/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/alerting.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/alerting.md",
+      "target": "notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/architecture.md",
+      "target": "risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "docs/architecture.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/evidence.md",
+      "target": "risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "docs/evidence.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "phase3-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/monitoring-architecture.md",
+      "target": "risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "docs/notification-setup.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/snapshot.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/independent-recompilation.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase4/collateral-proof-2026-11-01T17-28-39-523Z-2726e5be-5979-42ba-9fbb-c29342e4be09/collateral-proof.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase4/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../scripts/check-oracle-evidence.ts",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase1/sources/KeystoneForwarder.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "../evidence/phase1/sources/ConfirmedOwnerWithProposal.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-architecture.md",
+      "target": "oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "oracle-freshness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "../evidence/phase4/oracle-evidence-verification.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "phase4-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-assurance.md",
+      "target": "../evidence/phase4/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "../evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "../evidence/phase4/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-freshness.md",
+      "target": "phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/reservoir-addresses.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/reservoir-savings.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/dexscreener-exact-address.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/chainlink-megaeth.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-independent-validation.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/pharos-watch-research.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/market-parameters.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/contract-verification.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/sources/official-registry-excerpts.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/oracle-investigation-live.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/oracle-update-history.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/oracle-investigation-live.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/cli-report.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/oracle-update-history.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/sources/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "../evidence/phase1/source-runtime-matches.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "phase3-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "alerting.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase3-report.md",
+      "target": "notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-files.md",
+      "target": "../evidence/phase4/file-changes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-architecture.md#source-and-runtime-identity",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-freshness.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/monitoring-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "phase4-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/collateral-proof-2026-11-01T17-28-39-523Z-2726e5be-5979-42ba-9fbb-c29342e4be09/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-research-2026-11-01T17-18-42-620Z-a3287621-5c9c-4828-b169-638ac3f62f96/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-audit-2026-11-01T17-31-19-568Z-26fe152a-a99b-4c2b-8f61-8e95a73b58c8/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-audit-2026-11-01T17-47-35-687Z-5078c30b-6b3f-4325-ad6c-abae354e3d97/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-audit-2026-11-01T18-32-13-912Z-d26d4dba-dd17-4135-a95f-06fac88f3121/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-audit-2026-11-01T18-33-24-873Z-98cd1fc4-ca41-4c66-be4b-50a0078f2a50/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/oracle-evidence-verification.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/prior-phases-integrity.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/file-changes.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/dependency-audit.json",
+      "exists": true
+    },
+    {
+      "document": "docs/phase4-report.md",
+      "target": "../evidence/phase4/secret-scan.json",
+      "exists": true
+    },
+    {
+      "document": "docs/risk-engine.md",
+      "target": "recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "docs/security-and-quality.md",
+      "target": "recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "docs/security-and-quality.md",
+      "target": "monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "docs/thresholds.md",
+      "target": "risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/thresholds.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-freshness.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-assurance.md#configuration-continuity-and-persistent-alerts",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/monitoring-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/alerting.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/notification-setup.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-investigation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase4-report.md#10-tests-and-regression-verification",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase4/risk/live/risk-report.txt",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase4/risk/live/risk-result.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase4/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase4/oracle-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase4/oracle-evidence-verification.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase4/monitoring-smoke.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase4/prior-phases-integrity.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase4/historical-regression.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase3/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase2/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase2/phase1-evidence-integrity.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase1/cli-report.txt",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/evidence.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase4-report.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase4-files.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-assurance.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-freshness.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-independent-validation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase3-report.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase3-files.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase2-report.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/thresholds.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/accounting.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-investigation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/testing.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/evidence.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/security-and-quality.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/reuse.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase2-files.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/created-files.md",
+      "exists": true
+    }
+  ]
+}

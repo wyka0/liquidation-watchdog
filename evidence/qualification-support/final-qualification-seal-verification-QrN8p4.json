@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-11-06T01:42:41.161Z",
+  "completedAt": "2026-11-06T01:43:05.645Z",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\validate-final-qualification.mjs",
+    "seal"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "node": "v24.14.1",
+  "validator": {
+    "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\validate-final-qualification.mjs",
+    "bytes": 63393,
+    "sha256": "bd7a98f6d026df9180a9eb508535081ff908c9827d1d9c5fadc0da9d8c12aaab"
+  },
+  "captureTool": {
+    "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\capture-final-seal-verification.mjs",
+    "bytes": 3018,
+    "sha256": "e536243b82f349e89b4f1ebd3206533bd5726d2c1a7dd4e149c67dc095d5a275"
+  },
+  "exitCode": 0,
+  "signal": null,
+  "stdout": {
+    "bytes": 5214,
+    "sha256": "d3e1a92fbd9ede9286722f7203398120b973fcc0242ac426c4d854e4a56848d6",
+    "text": "{\n  \"schemaVersion\": 1,\n  \"status\": \"PASS\",\n  \"operation\": \"seal\",\n  \"evidenceClass\": \"SEPARATE_OFFLINE_DOCUMENTARY_REHASH_NOT_A_NEW_TEST_OR_MONITOR_CYCLE\",\n  \"startedAt\": \"2026-11-06T01:42:41.442Z\",\n  \"completedAt\": \"2026-11-06T01:43:05.623Z\",\n  \"checkGroupsPassed\": 10,\n  \"checkGroupsFailed\": 0,\n  \"checks\": [\n    {\n      \"name\": \"SEALED_CORE_AND_COMPLETION_BYTE_REFERENCES\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"sealedArtifactsRehashed\": 9,\n        \"completionArtifactsRehashed\": 8\n      }\n    },\n    {\n      \"name\": \"SEAL_AND_MANIFEST_SIDECARS_NO_SELF_HASH_CLAIM\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"manifestEnvelopeExclusions\": 6,\n        \"firstFourCoveredBySeal\": true,\n        \"sealCoveredBySeparateSidecar\": true\n      }\n    },\n    {\n      \"name\": \"ALL_MANIFESTED_BYTES_REHASHED_AFTER_COMPLETION_AND_SEAL\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"fileCount\": 2337,\n        \"totalBytes\": 36165531,\n        \"roots\": [\n          {\n            \"root\": \"REPAIR\",\n            \"fileCount\": 1776,\n            \"totalBytes\": 23824139\n          },\n          {\n            \"root\": \"STAGE2\",\n            \"fileCount\": 561,\n            \"totalBytes\": 12341392\n          }\n        ],\n        \"excludedRepairIntegrityEnvelopeFiles\": [\n          \"final-artifact-manifest.json\",\n          \"final-artifact-manifest.sha256\",\n          \"final-manifest-verification.json\",\n          \"final-completion.json\",\n          \"final-seal.json\",\n          \"final-seal.sha256\"\n        ],\n        \"unmanifestedFilesWithinDeclaredCoverage\": 0\n      }\n    },\n    {\n      \"name\": \"FINAL_SOFTWARE_ACCOUNTING_AND_SCOPED_REQUIREMENTS_MATCH_REPORT\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"fullTests\": \"1007/1007\",\n        \"originalRequirements\": \"4_PASS_FINITE_LOCAL_ONLY\",\n        \"production\": \"NOT_ACCEPTED_NO_GO\"\n      }\n    },\n    {\n      \"name\": \"REPORT_REFERENCE_GRAPH_STILL_VALID_AFTER_SEALING\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"referencesRehashed\": 71\n      }\n    },\n    {\n      \"name\": \"ALL_PREEXISTING_REPAIR_AND_STAGE2_BYTES_STILL_PRESERVED\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"existingRepairFilesRehashed\": 1771,\n        \"existingRepairBytesRehashed\": 23113210,\n        \"allStage2FilesRehashed\": 561,\n        \"allStage2BytesRehashed\": 12341392,\n        \"existingArtifactChanges\": 0\n      }\n    },\n    {\n      \"name\": \"ORIGINAL_STAGE2_MANIFEST_AND_REPORT_STILL_PRESERVED\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"filesRehashed\": 387,\n        \"bytesRehashed\": 10157722,\n        \"originalReportSha256\": \"acdfe3b107fa723c5d87ff990de66aaa7a2e3246e38b0f01b43b299efd66c60e\"\n      }\n    },\n    {\n      \"name\": \"ENTIRE_REPOSITORY_AND_GIT_STILL_PRESERVED_EXCEPT_AUTHORIZED_TEST\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"filesRehashed\": 22029,\n        \"bytesRehashed\": 273682606,\n        \"onlyDelta\": \"test/runtime-process.test.ts\",\n        \"gitIndexSha256\": \"99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689\",\n        \"savedReadOnlyGitCommandOutcomesMatchBaseline\": true,\n        \"allDotGitBytesUnchanged\": true\n      }\n    },\n    {\n      \"name\": \"ALL_FINAL_DOCUMENTARY_TOOL_BYTES_MATCH_SYNTAX_CAPSULES\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"documentaryToolsSyntaxChecked\": 7,\n        \"actionModesOrSoftwareTestsInvoked\": 0\n      }\n    },\n    {\n      \"name\": \"POST_SEAL_RECEIPT_IS_EXPLICITLY_DETACHED_AND_SAFETY_UNCHANGED\",\n      \"status\": \"PASS\",\n      \"detail\": {\n        \"receiptOutsideSealedRoots\": true,\n        \"noNewMonitorCycleOrProductionOperation\": true,\n        \"monitor\": \"STOPPED\"\n      }\n    }\n  ],\n  \"validator\": {\n    \"root\": \"REPAIR\",\n    \"file\": \"validate-final-qualification.mjs\",\n    \"bytes\": 63393,\n    \"sha256\": \"bd7a98f6d026df9180a9eb508535081ff908c9827d1d9c5fadc0da9d8c12aaab\"\n  },\n  \"report\": {\n    \"root\": \"REPAIR\",\n    \"file\": \"FINAL-QUALIFICATION-REPAIR-REPORT.md\",\n    \"bytes\": 51682,\n    \"sha256\": \"02b6cb0943243b1115d17f2f50ebee41af3f951c53adb652045f8823b3986812\"\n  },\n  \"evidence\": {\n    \"root\": \"REPAIR\",\n    \"file\": \"final-qualification-evidence.json\",\n    \"bytes\": 54195,\n    \"sha256\": \"d78f2a358e988c194a87141ae3dc55316f29762a0097c60313ee36934aace058\"\n  },\n  \"manifest\": {\n    \"root\": \"REPAIR\",\n    \"file\": \"final-artifact-manifest.json\",\n    \"bytes\": 627165,\n    \"sha256\": \"860e103cc7dd7fdb5083d19dc059e0d65ffb81fc55dcb1fb1f343a5fa9f18969\"\n  },\n  \"seal\": {\n    \"root\": \"REPAIR\",\n    \"file\": \"final-seal.json\",\n    \"bytes\": 2999,\n    \"sha256\": \"d5e8e4ce877230cdfd058dae83e063e84c2e34d0c50332a6ee4ab6f3abb3463b\"\n  },\n  \"checksumSidecar\": {\n    \"root\": \"REPAIR\",\n    \"file\": \"final-seal.sha256\",\n    \"bytes\": 82,\n    \"sha256\": \"22b8ab53ec9c4e7baf1e0c3ef25dd5bfefb69802d022388bd4017c2bbc7c5d43\"\n  },\n  \"safety\": {\n    \"applicationImports\": 0,\n    \"databaseOpens\": 0,\n    \"networkRequests\": 0,\n    \"subprocesses\": 0,\n    \"testsRun\": 0,\n    \"newRealMonitorCycles\": 0,\n    \"repositoryWrites\": 0,\n    \"modeIsReadOnly\": true,\n    \"existingArtifactOverwrites\": 0,\n    \"production\": \"NOT_ACCEPTED_NO_GO\",\n    \"monitor\": \"STOPPED\"\n  },\n  \"trustLimit\": \"Separate validation implementation on the same local host; captured-byte integrity, not independent custody or notarization.\"\n}\n"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+  },
+  "verification": {
+    "schemaVersion": 1,
+    "status": "PASS",
+    "operation": "seal",
+    "evidenceClass": "SEPARATE_OFFLINE_DOCUMENTARY_REHASH_NOT_A_NEW_TEST_OR_MONITOR_CYCLE",
+    "startedAt": "2026-11-06T01:42:41.442Z",
+    "completedAt": "2026-11-06T01:43:05.623Z",
+    "checkGroupsPassed": 10,
+    "checkGroupsFailed": 0,
+    "checks": [
+      {
+        "name": "SEALED_CORE_AND_COMPLETION_BYTE_REFERENCES",
+        "status": "PASS",
+        "detail": {
+          "sealedArtifactsRehashed": 9,
+          "completionArtifactsRehashed": 8
+        }
+      },
+      {
+        "name": "SEAL_AND_MANIFEST_SIDECARS_NO_SELF_HASH_CLAIM",
+        "status": "PASS",
+        "detail": {
+          "manifestEnvelopeExclusions": 6,
+          "firstFourCoveredBySeal": true,
+          "sealCoveredBySeparateSidecar": true
+        }
+      },
+      {
+        "name": "ALL_MANIFESTED_BYTES_REHASHED_AFTER_COMPLETION_AND_SEAL",
+        "status": "PASS",
+        "detail": {
+          "fileCount": 2337,
+          "totalBytes": 36165531,
+          "roots": [
+            {
+              "root": "REPAIR",
+              "fileCount": 1776,
+              "totalBytes": 23824139
+            },
+            {
+              "root": "STAGE2",
+              "fileCount": 561,
+              "totalBytes": 12341392
+            }
+          ],
+          "excludedRepairIntegrityEnvelopeFiles": [
+            "final-artifact-manifest.json",
+            "final-artifact-manifest.sha256",
+            "final-manifest-verification.json",
+            "final-completion.json",
+            "final-seal.json",
+            "final-seal.sha256"
+          ],
+          "unmanifestedFilesWithinDeclaredCoverage": 0
+        }
+      },
+      {
+        "name": "FINAL_SOFTWARE_ACCOUNTING_AND_SCOPED_REQUIREMENTS_MATCH_REPORT",
+        "status": "PASS",
+        "detail": {
+          "fullTests": "1007/1007",
+          "originalRequirements": "4_PASS_FINITE_LOCAL_ONLY",
+          "production": "NOT_ACCEPTED_NO_GO"
+        }
+      },
+      {
+        "name": "REPORT_REFERENCE_GRAPH_STILL_VALID_AFTER_SEALING",
+        "status": "PASS",
+        "detail": {
+          "referencesRehashed": 71
+        }
+      },
+      {
+        "name": "ALL_PREEXISTING_REPAIR_AND_STAGE2_BYTES_STILL_PRESERVED",
+        "status": "PASS",
+        "detail": {
+          "existingRepairFilesRehashed": 1771,
+          "existingRepairBytesRehashed": 23113210,
+          "allStage2FilesRehashed": 561,
+          "allStage2BytesRehashed": 12341392,
+          "existingArtifactChanges": 0
+        }
+      },
+      {
+        "name": "ORIGINAL_STAGE2_MANIFEST_AND_REPORT_STILL_PRESERVED",
+        "status": "PASS",
+        "detail": {
+          "filesRehashed": 387,
+          "bytesRehashed": 10157722,
+          "originalReportSha256": "acdfe3b107fa723c5d87ff990de66aaa7a2e3246e38b0f01b43b299efd66c60e"
+        }
+      },
+      {
+        "name": "ENTIRE_REPOSITORY_AND_GIT_STILL_PRESERVED_EXCEPT_AUTHORIZED_TEST",
+        "status": "PASS",
+        "detail": {
+          "filesRehashed": 22029,
+          "bytesRehashed": 273682606,
+          "onlyDelta": "test/runtime-process.test.ts",
+          "gitIndexSha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689",
+          "savedReadOnlyGitCommandOutcomesMatchBaseline": true,
+          "allDotGitBytesUnchanged": true
+        }
+      },
+      {
+        "name": "ALL_FINAL_DOCUMENTARY_TOOL_BYTES_MATCH_SYNTAX_CAPSULES",
+        "status": "PASS",
+        "detail": {
+          "documentaryToolsSyntaxChecked": 7,
+          "actionModesOrSoftwareTestsInvoked": 0
+        }
+      },
+      {
+        "name": "POST_SEAL_RECEIPT_IS_EXPLICITLY_DETACHED_AND_SAFETY_UNCHANGED",
+        "status": "PASS",
+        "detail": {
+          "receiptOutsideSealedRoots": true,
+          "noNewMonitorCycleOrProductionOperation": true,
+          "monitor": "STOPPED"
+        }
+      }
+    ],
+    "validator": {
+      "root": "REPAIR",
+      "file": "validate-final-qualification.mjs",
+      "bytes": 63393,
+      "sha256": "bd7a98f6d026df9180a9eb508535081ff908c9827d1d9c5fadc0da9d8c12aaab"
+    },
+    "report": {
+      "root": "REPAIR",
+      "file": "FINAL-QUALIFICATION-REPAIR-REPORT.md",
+      "bytes": 51682,
+      "sha256": "02b6cb0943243b1115d17f2f50ebee41af3f951c53adb652045f8823b3986812"
+    },
+    "evidence": {
+      "root": "REPAIR",
+      "file": "final-qualification-evidence.json",
+      "bytes": 54195,
+      "sha256": "d78f2a358e988c194a87141ae3dc55316f29762a0097c60313ee36934aace058"
+    },
+    "manifest": {
+      "root": "REPAIR",
+      "file": "final-artifact-manifest.json",
+      "bytes": 627165,
+      "sha256": "860e103cc7dd7fdb5083d19dc059e0d65ffb81fc55dcb1fb1f343a5fa9f18969"
+    },
+    "seal": {
+      "root": "REPAIR",
+      "file": "final-seal.json",
+      "bytes": 2999,
+      "sha256": "d5e8e4ce877230cdfd058dae83e063e84c2e34d0c50332a6ee4ab6f3abb3463b"
+    },
+    "checksumSidecar": {
+      "root": "REPAIR",
+      "file": "final-seal.sha256",
+      "bytes": 82,
+      "sha256": "22b8ab53ec9c4e7baf1e0c3ef25dd5bfefb69802d022388bd4017c2bbc7c5d43"
+    },
+    "safety": {
+      "applicationImports": 0,
+      "databaseOpens": 0,
+      "networkRequests": 0,
+      "subprocesses": 0,
+      "testsRun": 0,
+      "newRealMonitorCycles": 0,
+      "repositoryWrites": 0,
+      "modeIsReadOnly": true,
+      "existingArtifactOverwrites": 0,
+      "production": "NOT_ACCEPTED_NO_GO",
+      "monitor": "STOPPED"
+    },
+    "trustLimit": "Separate validation implementation on the same local host; captured-byte integrity, not independent custody or notarization."
+  },
+  "coverage": "Post-seal read-only verification receipt outside both manifest roots; not covered by the seal it verifies. No self-reference or independent custody claim.",
+  "safety": {
+    "noApplicationImportDatabaseNetworkTestOrMonitoringCycle": true,
+    "noRepositoryOrSealedRootWrite": true,
+    "receiptIsOnlyNewWrite": true,
+    "noExistingArtifactOverwritten": true,
+    "monitor": "STOPPED"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "evidenceKind": "PHASE5_LOCAL_VERIFICATION_WITH_BOUNDED_LIVE_READS",
+  "startedAt": "2026-11-01T21:04:18.421Z",
+  "finishedAt": "2026-11-01T21:26:21.022Z",
+  "passed": false,
+  "nodeVersion": "v24.14.1",
+  "sqliteVersion": "3.51.2",
+  "platform": "win32",
+  "plannedChecks": 26,
+  "results": [
+    {
+      "check": "typecheck",
+      "command": "node npm-cli.js run typecheck",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:04:19.493Z",
+      "finishedAt": "2026-11-01T21:04:57.375Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/typecheck.txt"
+    },
+    {
+      "check": "lint",
+      "command": "node npm-cli.js run lint",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:04:57.375Z",
+      "finishedAt": "2026-11-01T21:05:17.399Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/lint.txt"
+    },
+    {
+      "check": "test-unit",
+      "command": "node npm-cli.js run test:unit",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:05:17.399Z",
+      "finishedAt": "2026-11-01T21:09:24.009Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/test-unit.txt"
+    },
+    {
+      "check": "test-operations",
+      "command": "node npm-cli.js run test:operations",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:09:24.019Z",
+      "finishedAt": "2026-11-01T21:10:53.069Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/test-operations.txt"
+    },
+    {
+      "check": "test-integration",
+      "command": "node npm-cli.js run test:integration",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:10:53.074Z",
+      "finishedAt": "2026-11-01T21:11:37.662Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/test-integration.txt"
+    },
+    {
+      "check": "test-stability",
+      "command": "node npm-cli.js run test:stability",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:11:37.673Z",
+      "finishedAt": "2026-11-01T21:12:41.303Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/test-stability.txt"
+    },
+    {
+      "check": "build",
+      "command": "node npm-cli.js run build",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:12:41.310Z",
+      "finishedAt": "2026-11-01T21:13:18.574Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/build.txt"
+    },
+    {
+      "check": "built-cli-smoke",
+      "command": "node dist/cli.js --help",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:13:19.591Z",
+      "finishedAt": "2026-11-01T21:13:26.975Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/built-cli-smoke.txt"
+    },
+    {
+      "check": "cli-inspect-smoke",
+      "command": "node --import tsx src/cli.ts inspect --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:13:26.975Z",
+      "finishedAt": "2026-11-01T21:14:09.487Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/cli-inspect-smoke.txt"
+    },
+    {
+      "check": "built-cli-risk-smoke",
+      "command": "node dist/cli.js risk --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:14:09.487Z",
+      "finishedAt": "2026-11-01T21:14:46.078Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/built-cli-risk-smoke.txt"
+    },
+    {
+      "check": "built-cli-historical-risk-smoke",
+      "command": "node dist/cli.js risk --block 21853902 --warning 1.30 --critical 1.10 --target 1.25 --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:14:46.078Z",
+      "finishedAt": "2026-11-01T21:15:24.622Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/built-cli-historical-risk-smoke.txt"
+    },
+    {
+      "check": "historical-phase2-regression",
+      "command": "node --import tsx scripts/phase3-live-regression.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:15:24.622Z",
+      "finishedAt": "2026-11-01T21:15:26.508Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/historical-phase2-regression.txt"
+    },
+    {
+      "check": "bounded-monitoring-restart-smoke",
+      "command": "node --import tsx scripts/monitoring-smoke.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:15:26.508Z",
+      "finishedAt": "2026-11-01T21:18:35.460Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/bounded-monitoring-restart-smoke.txt"
+    },
+    {
+      "check": "operational-cli-smoke",
+      "command": "node npm-cli.js run smoke:operations",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:18:35.460Z",
+      "finishedAt": "2026-11-01T21:20:38.080Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/operational-cli-smoke.txt"
+    },
+    {
+      "check": "bounded-oracle-cli-smoke",
+      "command": "node --import tsx scripts/oracle-smoke.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:20:38.080Z",
+      "finishedAt": "2026-11-01T21:24:30.999Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/bounded-oracle-cli-smoke.txt"
+    },
+    {
+      "check": "source-runtime-links",
+      "command": "node --import tsx scripts/link-source-evidence.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:24:30.999Z",
+      "finishedAt": "2026-11-01T21:24:32.689Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/source-runtime-links.txt"
+    },
+    {
+      "check": "dependency-audit",
+      "command": "node npm-cli.js audit --json",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:24:32.689Z",
+      "finishedAt": "2026-11-01T21:24:38.056Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/dependency-audit.txt"
+    },
+    {
+      "check": "phase1-evidence-integrity",
+      "command": "node --import tsx scripts/phase1-integrity.ts --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:24:38.062Z",
+      "finishedAt": "2026-11-01T21:24:40.082Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/phase1-evidence-integrity.txt"
+    },
+    {
+      "check": "prior-phases-integrity",
+      "command": "node --import tsx scripts/phase5-preservation.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:24:40.082Z",
+      "finishedAt": "2026-11-01T21:24:42.329Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/prior-phases-integrity.txt"
+    },
+    {
+      "check": "phase2-exact-replays",
+      "command": "node --import tsx scripts/phase3-preservation.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:24:42.329Z",
+      "finishedAt": "2026-11-01T21:24:48.997Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/phase2-exact-replays.txt"
+    },
+    {
+      "check": "oracle-evidence-verification",
+      "command": "node --import tsx scripts/check-oracle-evidence.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:24:48.997Z",
+      "finishedAt": "2026-11-01T21:24:58.417Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/oracle-evidence-verification.txt"
+    },
+    {
+      "check": "phase5-inventory",
+      "command": "node --import tsx scripts/phase5-inventory.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:24:58.417Z",
+      "finishedAt": "2026-11-01T21:25:01.779Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/phase5-inventory.txt"
+    },
+    {
+      "check": "documentation-links",
+      "command": "node --import tsx scripts/check-doc-links.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:25:01.779Z",
+      "finishedAt": "2026-11-01T21:25:03.545Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/documentation-links.txt"
+    },
+    {
+      "check": "secrets-check",
+      "command": "node npm-cli.js run secrets:check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:25:03.545Z",
+      "finishedAt": "2026-11-01T21:25:14.971Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/secrets-check.txt"
+    },
+    {
+      "check": "project-whitespace-check",
+      "command": "node --import tsx scripts/check-whitespace.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:25:14.971Z",
+      "finishedAt": "2026-11-01T21:26:17.864Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/project-whitespace-check.txt"
+    },
+    {
+      "check": "git-diff-check",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T21:26:17.864Z",
+      "finishedAt": "2026-11-01T21:26:20.425Z",
+      "outputFile": "verification-runs/0bb9ab3c-bbe2-4e5d-b376-1f1ccbc54dac/git-diff-check.txt"
+    }
+  ],
+  "sourceInputsUnchanged": false,
+  "testEvidence": {
+    "unit": "unit-tests.json (FIXTURE including local OS/SQLite faults)",
+    "operations": "operations-tests.json (repeated operational subset)",
+    "integration": "integration-tests.json (LIVE_CHAIN_READ)",
+    "stability": "stability-results.json (SYNTHETIC_TIME_FIXTURE)"
+  },
+  "gitNote": "Existing Phase 1-4 intent-to-add entries were retained. Read-only Git checks include separate no-index checks for new files. No index modification, commit, push or tag was performed.",
+  "archiveNote": "All 391 Phase 1-4 evidence files and the pre-implementation gap register are sealed. New captures are under evidence/phase5.",
+  "realExternalNotifications": 0,
+  "transactions": 0,
+  "productionMonitoringStarted": false,
+  "productionReleaseReady": false
+}

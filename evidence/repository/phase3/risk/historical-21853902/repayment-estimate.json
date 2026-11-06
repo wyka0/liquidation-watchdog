@@ -1,0 +1,199 @@
+{
+  "chainId": 1672,
+  "protocol": "Morpho Blue",
+  "morphoAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+  "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+  "account": "0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7",
+  "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+  "blockNumber": "21853902",
+  "blockHash": "0xfe044ec9c464d3899f431b23efc307e9ccb619a71d42fdfe4c0b7a2e346c88d3",
+  "blockTimestamp": "1793541780",
+  "evidenceKind": "HISTORICAL_SNAPSHOT",
+  "temporalContext": "HISTORICAL",
+  "snapshotRetrievedAt": "2026-11-01T15:57:48.544Z",
+  "inputSnapshotIdentifier": "sha256:0855a3c26e0b4d96a8f29d25a53540d7c774791a1340fd0b1c66b75e152583e1",
+  "calculatedAt": "2026-11-01T15:57:48.573Z",
+  "calculationMethod": "morpho-v1.0.0/minimum-assets-binary-search/full-share-endpoint",
+  "calculationVersion": "1.0.0",
+  "ratioScale": "1000000000000000000",
+  "targetRatio": "1250000000000000000",
+  "thresholdConfiguration": {
+    "scale": "1000000000000000000",
+    "decimal": {
+      "warningRatio": "1.30",
+      "criticalRatio": "1.10",
+      "targetRatio": "1.25",
+      "liquidationBoundary": "1.00"
+    },
+    "wad": {
+      "warningRatio": "1300000000000000000",
+      "criticalRatio": "1100000000000000000",
+      "targetRatio": "1250000000000000000",
+      "liquidationBoundary": "1000000000000000000"
+    }
+  },
+  "tokens": {
+    "loan": {
+      "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "decimals": 6,
+      "name": "USDC",
+      "symbol": "USDC"
+    },
+    "collateral": {
+      "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+      "decimals": 18,
+      "name": "Wrapped Savings rUSD",
+      "symbol": "wsrUSD"
+    }
+  },
+  "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+  "oraclePrice": "1106180582474598162000000",
+  "oracleTimestamp": "1793539477",
+  "oraclePolicy": {
+    "sourceVerified": false,
+    "operatorIdentityVerified": false,
+    "timestampSemanticsVerified": true,
+    "timestampMeaning": "Report observationsTimestamp supplied by the authorized workflow; not block inclusion or independent price validation time.",
+    "heartbeatSeconds": null,
+    "heartbeatVerified": false,
+    "expectedUpdateFrequency": "UNVERIFIED; sample update intervals do not establish a heartbeat.",
+    "stalenessEnforcedOnchain": false,
+    "references": [
+      "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xb5779919e2f183e59a34140331f7779cbff1d1bc/src/SelfManagedFeedsCacheProxy.sol",
+      "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xd9f00c86ced2de92f6b7152b0492cb28edc4b5a8/src/SelfManagedFeedsCache.sol",
+      "https://github.com/morpho-org/morpho-blue-oracles/tree/v2.0.0"
+    ]
+  },
+  "dataQuality": {
+    "overall": "UNVERIFIED",
+    "oracle": "UNVERIFIED",
+    "sourceSnapshot": "UNVERIFIED",
+    "findings": [
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "ORACLE_SOURCE_UNVERIFIED",
+        "message": "The upstream workflow and exact feed identity are not independently established."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "ORACLE_OPERATOR_UNVERIFIED",
+        "message": "On-chain controller addresses are observable; their operator identities are unverified."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "HEARTBEAT_UNVERIFIED",
+        "message": "No verified heartbeat or maximum acceptable price age exists for this feed."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "SOURCE_SCOPE_QUALITY",
+        "message": "The Phase 1 oracle scope reports UNVERIFIED."
+      },
+      {
+        "scope": "snapshot",
+        "status": "UNVERIFIED",
+        "code": "SOURCE_SNAPSHOT_QUALITY",
+        "message": "The source snapshot reports UNVERIFIED."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "SOURCE_ORACLE_QUALITY",
+        "message": "The source oracle reports UNVERIFIED."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "ORACLE_SOURCE_UNVERIFIED",
+        "message": "The upstream workflow and exact feed identity are not independently established."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "ORACLE_OPERATOR_UNVERIFIED",
+        "message": "On-chain controller addresses are observable; their operator identities are unverified."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "HEARTBEAT_UNVERIFIED",
+        "message": "No verified heartbeat or maximum acceptable price age exists for this feed."
+      }
+    ]
+  },
+  "actionability": {
+    "actionable": false,
+    "status": "INDICATIVE_ONLY",
+    "reasons": [
+      "The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.",
+      "Phase 2 produces snapshot-bound calculations only; mathematical bands do not establish liquidation eligibility or protection."
+    ]
+  },
+  "actionable": false,
+  "indicative": true,
+  "roundingMethod": [
+    "allowedDebt=floor(capacity*WAD/target)",
+    "Partial asset repayment burns floor(assets*(totalShares+1e6)/(totalAssets+1)) shares.",
+    "Full repayment uses all borrower shares and ceil(shares*(totalAssets+1)/(totalShares+1e6)) assets.",
+    "Remaining debt is rounded up using updated market totals; verify the candidate and one loan-base-unit less."
+  ],
+  "assumptions": [
+    "Each estimate is a separate hypothetical operation at the identified snapshot block and hash.",
+    "Oracle price, LLTV and token units are held constant throughout each modeled operation.",
+    "The starting debt is accrued to the snapshot; no later interest, other market activity or bad-debt changes are modeled.",
+    "Repayment changes market borrow assets/shares exactly as Morpho v1.0.0; collateral addition holds that accrued debt fixed.",
+    "Amounts describe protocol accounting with fully credited token transfers; gas, wallet funding and execution availability are outside the model.",
+    "A real transaction at a later state is not guaranteed to reproduce these numbers."
+  ],
+  "warnings": [
+    "The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.",
+    "ORACLE_SOURCE_UNVERIFIED: The upstream workflow and exact feed identity are not independently established.",
+    "ORACLE_OPERATOR_UNVERIFIED: On-chain controller addresses are observable; their operator identities are unverified.",
+    "HEARTBEAT_UNVERIFIED: No verified heartbeat or maximum acceptable price age exists for this feed.",
+    "SOURCE_SCOPE_QUALITY: The Phase 1 oracle scope reports UNVERIFIED.",
+    "SOURCE_SNAPSHOT_QUALITY: The source snapshot reports UNVERIFIED.",
+    "SOURCE_ORACLE_QUALITY: The source oracle reports UNVERIFIED.",
+    "HISTORICAL calculation: this explicitly requested block is not a current position assessment."
+  ],
+  "status": "CALCULATED",
+  "calculation": {
+    "targetRatioWad": "1250000000000000000",
+    "allowedDebt": "256551850332",
+    "initialRepaymentEstimate": "17077942565",
+    "repaymentAmount": "17077942565",
+    "modeledPostRepaymentDebt": "256551850332",
+    "modeledResultingRatioWad": "1250000000003897847",
+    "simulation": {
+      "mode": "ASSETS",
+      "assets": "17077942565",
+      "sharesBurned": "16867635309052011",
+      "remainingBorrowShares": "253392528566221662",
+      "remainingTotalBorrowShares": "5307301810745421391",
+      "remainingTotalBorrowAssets": "5373473746518",
+      "remainingDebt": "256551850332"
+    },
+    "roundingMargin": {
+      "repaymentAboveInitialEstimate": "0",
+      "debtHeadroomBelowAllowed": "0"
+    },
+    "proof": {
+      "targetSatisfied": true,
+      "minimumProven": true,
+      "previousAmount": "17077942564",
+      "previousAmountPostDebt": "256551850333",
+      "searchIterations": 38
+    }
+  },
+  "amount": {
+    "raw": "17077942565",
+    "formatted": "17077.942565",
+    "tokenAddress": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+    "symbol": "USDC",
+    "decimals": 6
+  },
+  "issue": null
+}

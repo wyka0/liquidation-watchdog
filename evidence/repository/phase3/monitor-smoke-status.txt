@@ -1,0 +1,192 @@
+Stored monitoring status (as of recorded snapshots). Oracle verification: UNVERIFIED; heartbeat: UNKNOWN; actionable: false.
+{
+  "schemaVersion": 3,
+  "latestCycle": {
+    "id": "f4dc4893-917d-4e8b-b4d7-b56b00be7334",
+    "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+    "started_at": "2026-11-01T15:58:28.781Z",
+    "status": "COMPLETED",
+    "completed_at": "2026-11-01T15:58:59.903Z"
+  },
+  "lastAcceptedCycle": {
+    "id": "f4dc4893-917d-4e8b-b4d7-b56b00be7334",
+    "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+    "started_at": "2026-11-01T15:58:28.781Z",
+    "status": "COMPLETED",
+    "completed_at": "2026-11-01T15:58:59.903Z"
+  },
+  "state": {
+    "revision": 2,
+    "latest": {
+      "cycleId": "f4dc4893-917d-4e8b-b4d7-b56b00be7334",
+      "observedAt": "2026-11-01T15:58:59.846Z",
+      "accepted": true,
+      "risk": {
+        "chainId": 1672,
+        "account": "0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7",
+        "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+        "protocol": "Morpho Blue",
+        "morphoAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+        "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+        "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+        "calculationVersion": "1.0.0",
+        "evidenceKind": "LIVE_CHAIN_READ",
+        "mathematicalRiskState": "WARNING",
+        "effectiveRiskState": "DATA_UNVERIFIED",
+        "dataQuality": "UNVERIFIED",
+        "phase2DataQuality": "UNVERIFIED",
+        "oracleQuality": "UNVERIFIED",
+        "phase2OracleQuality": "UNVERIFIED",
+        "oracleVerification": "UNVERIFIED",
+        "heartbeat": "UNKNOWN",
+        "actionable": false,
+        "actionability": "INDICATIVE_ONLY",
+        "safetyRatio": "1171985562155706702",
+        "ltv": "780726341300983115",
+        "ratioScale": "1000000000000000000",
+        "debtAmount": "273633278469",
+        "collateralAmount": "316838566331327720653953",
+        "blockNumber": "21860003",
+        "blockHash": "0xf76cfd3fb27172a783e1827fa4758421195afe892a614daa1b9c875084f9b416",
+        "blockTimestamp": "1793548708",
+        "snapshotIdentifier": "sha256:746da1694f6e214eb51effdab45c1edf07ad1708b115198ec4ab42471aaf8e49",
+        "snapshotRetrievedAt": "2026-11-01T15:58:59.824Z",
+        "calculatedAt": "2026-11-01T15:58:59.846Z",
+        "temporalContext": "LIVE_AS_OF_BLOCK",
+        "thresholds": {
+          "warningRatio": "1.30",
+          "criticalRatio": "1.10",
+          "targetRatio": "1.25",
+          "liquidationBoundary": "1.00"
+        },
+        "repayment": {
+          "raw": "17077877117",
+          "formatted": "17077.877117",
+          "tokenAddress": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+          "decimals": 6,
+          "targetRatio": "1250000000000000000",
+          "calculationMethod": "morpho-v1.0.0/minimum-assets-binary-search/full-share-endpoint",
+          "actionable": false,
+          "indicative": true,
+          "inputSnapshotIdentifier": "sha256:746da1694f6e214eb51effdab45c1edf07ad1708b115198ec4ab42471aaf8e49",
+          "blockNumber": "21860003",
+          "blockHash": "0xf76cfd3fb27172a783e1827fa4758421195afe892a614daa1b9c875084f9b416",
+          "calculatedAt": "2026-11-01T15:58:59.846Z"
+        },
+        "additionalCollateral": {
+          "raw": "21090688689383739727063",
+          "formatted": "21090.688689383739727063",
+          "tokenAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+          "decimals": 18,
+          "targetRatio": "1250000000000000000",
+          "calculationMethod": "morpho-v1.0.0/nested-ceilings/forward-minimality-proof",
+          "actionable": false,
+          "indicative": true,
+          "inputSnapshotIdentifier": "sha256:746da1694f6e214eb51effdab45c1edf07ad1708b115198ec4ab42471aaf8e49",
+          "blockNumber": "21860003",
+          "blockHash": "0xf76cfd3fb27172a783e1827fa4758421195afe892a614daa1b9c875084f9b416",
+          "calculatedAt": "2026-11-01T15:58:59.846Z"
+        }
+      },
+      "diagnostics": [
+        "ORACLE_UNVERIFIED",
+        "ORACLE_FRESHNESS_UNKNOWN"
+      ]
+    },
+    "lastAccepted": {
+      "cycleId": "f4dc4893-917d-4e8b-b4d7-b56b00be7334",
+      "observedAt": "2026-11-01T15:58:59.846Z",
+      "accepted": true,
+      "risk": {
+        "chainId": 1672,
+        "account": "0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7",
+        "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+        "protocol": "Morpho Blue",
+        "morphoAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+        "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+        "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+        "calculationVersion": "1.0.0",
+        "evidenceKind": "LIVE_CHAIN_READ",
+        "mathematicalRiskState": "WARNING",
+        "effectiveRiskState": "DATA_UNVERIFIED",
+        "dataQuality": "UNVERIFIED",
+        "phase2DataQuality": "UNVERIFIED",
+        "oracleQuality": "UNVERIFIED",
+        "phase2OracleQuality": "UNVERIFIED",
+        "oracleVerification": "UNVERIFIED",
+        "heartbeat": "UNKNOWN",
+        "actionable": false,
+        "actionability": "INDICATIVE_ONLY",
+        "safetyRatio": "1171985562155706702",
+        "ltv": "780726341300983115",
+        "ratioScale": "1000000000000000000",
+        "debtAmount": "273633278469",
+        "collateralAmount": "316838566331327720653953",
+        "blockNumber": "21860003",
+        "blockHash": "0xf76cfd3fb27172a783e1827fa4758421195afe892a614daa1b9c875084f9b416",
+        "blockTimestamp": "1793548708",
+        "snapshotIdentifier": "sha256:746da1694f6e214eb51effdab45c1edf07ad1708b115198ec4ab42471aaf8e49",
+        "snapshotRetrievedAt": "2026-11-01T15:58:59.824Z",
+        "calculatedAt": "2026-11-01T15:58:59.846Z",
+        "temporalContext": "LIVE_AS_OF_BLOCK",
+        "thresholds": {
+          "warningRatio": "1.30",
+          "criticalRatio": "1.10",
+          "targetRatio": "1.25",
+          "liquidationBoundary": "1.00"
+        },
+        "repayment": {
+          "raw": "17077877117",
+          "formatted": "17077.877117",
+          "tokenAddress": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+          "decimals": 6,
+          "targetRatio": "1250000000000000000",
+          "calculationMethod": "morpho-v1.0.0/minimum-assets-binary-search/full-share-endpoint",
+          "actionable": false,
+          "indicative": true,
+          "inputSnapshotIdentifier": "sha256:746da1694f6e214eb51effdab45c1edf07ad1708b115198ec4ab42471aaf8e49",
+          "blockNumber": "21860003",
+          "blockHash": "0xf76cfd3fb27172a783e1827fa4758421195afe892a614daa1b9c875084f9b416",
+          "calculatedAt": "2026-11-01T15:58:59.846Z"
+        },
+        "additionalCollateral": {
+          "raw": "21090688689383739727063",
+          "formatted": "21090.688689383739727063",
+          "tokenAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+          "decimals": 18,
+          "targetRatio": "1250000000000000000",
+          "calculationMethod": "morpho-v1.0.0/nested-ceilings/forward-minimality-proof",
+          "actionable": false,
+          "indicative": true,
+          "inputSnapshotIdentifier": "sha256:746da1694f6e214eb51effdab45c1edf07ad1708b115198ec4ab42471aaf8e49",
+          "blockNumber": "21860003",
+          "blockHash": "0xf76cfd3fb27172a783e1827fa4758421195afe892a614daa1b9c875084f9b416",
+          "calculatedAt": "2026-11-01T15:58:59.846Z"
+        }
+      },
+      "diagnostics": [
+        "ORACLE_UNVERIFIED",
+        "ORACLE_FRESHNESS_UNKNOWN"
+      ]
+    },
+    "consecutiveFailures": 0,
+    "episodes": {
+      "risk": 1,
+      "data": 1,
+      "oracle": 1,
+      "failures": 0
+    },
+    "lastCriticalAlertAt": null
+  },
+  "providerLimits": [],
+  "deliveryCounts": {
+    "PENDING": 0,
+    "IN_FLIGHT": 0,
+    "DELIVERED": 3,
+    "FAILED": 0,
+    "RETRY_SCHEDULED": 0,
+    "PERMANENTLY_FAILED": 0
+  }
+}
+(node:15836) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

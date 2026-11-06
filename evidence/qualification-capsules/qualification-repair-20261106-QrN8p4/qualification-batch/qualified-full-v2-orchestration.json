@@ -1,0 +1,37 @@
+{
+  "name": "qualified-full-v2",
+  "mode": "full",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\run-tests.mjs",
+    "qualified-full-v2",
+    "full",
+    "v2"
+  ],
+  "startedAt": "2026-11-06T00:50:14.097Z",
+  "completedAt": "2026-11-06T00:52:38.587Z",
+  "exitCode": 0,
+  "signal": null,
+  "pid": 12708,
+  "status": "PASS",
+  "summarySha256": "f8436aa5748ec9972816dda97152f97dfce4e0b2d9cc143615beda28ec93f8b9",
+  "tests": {
+    "success": true,
+    "files": 49,
+    "total": 1007,
+    "passed": 1007,
+    "failed": 0,
+    "pending": 0,
+    "todo": 0
+  },
+  "checks": [
+    {
+      "label": "tests",
+      "exitCode": 0,
+      "durationMs": 143303.03530000002
+    }
+  ],
+  "sourceUnchangedDuringQualification": true,
+  "stdoutSha256": "be1720c27e75e90aa7fe34d264579109140bad4907ee2264bae1e165dbee35e4",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

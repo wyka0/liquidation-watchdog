@@ -1,0 +1,12 @@
+{
+  "command": "npm run build",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T14:43:18.687Z",
+  "finishedAt": "2026-11-02T14:43:33.682Z",
+  "durationMs": 14994,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "\n> liquidation-watchdog@0.1.0 build\n> tsc -p tsconfig.build.json\n\n",
+  "stderr": ""
+}

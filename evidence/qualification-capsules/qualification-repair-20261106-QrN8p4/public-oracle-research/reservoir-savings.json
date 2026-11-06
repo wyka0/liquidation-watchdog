@@ -1,0 +1,22 @@
+{
+  "name": "reservoir-savings",
+  "sourceUrl": "https://docs.reservoir.xyz/products/savings-srusd-and-wsrusd.md",
+  "finalUrl": "https://docs.reservoir.xyz/products/savings-srusd-and-wsrusd.md",
+  "method": "GET",
+  "beganAt": "2026-11-06T00:32:00.311Z",
+  "retrievedAt": "2026-11-06T00:32:00.915Z",
+  "status": 200,
+  "headers": {
+    "content-type": "text/markdown; charset=utf-8",
+    "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+    "etag": null,
+    "last-modified": null
+  },
+  "redirects": [],
+  "block": null,
+  "bytes": 1095,
+  "responseSha256": "f2263323aeba5917bd6ff63764f10d1e222e9a19156510c1b4630538631e5866",
+  "bodyPath": "reservoir-savings.body.txt",
+  "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+  "ignoredRemoteAgentInstructionAppendix": false
+}

@@ -1,0 +1,13 @@
+{
+  "requestedAt": "2026-11-06T14:36:21.940Z",
+  "endpoint": "https://rpc.pharos.xyz",
+  "requestCount": 34,
+  "requestBudget": 130,
+  "headBlock": "22286647",
+  "morphoFirstCodeBlock": "4202147",
+  "scanPartial": true,
+  "createMarketLogCount": 0,
+  "distinctMarkets": 0,
+  "newlyFoundFeeds": {},
+  "candidates": []
+}

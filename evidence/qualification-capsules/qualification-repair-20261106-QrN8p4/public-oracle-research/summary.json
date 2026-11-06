@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-11-06T00:31:59.385Z",
+  "completedAt": "2026-11-06T00:32:01.683Z",
+  "durationMs": 2293.2677999999996,
+  "bounds": {
+    "requestUrls": 10,
+    "concurrentRequests": 3,
+    "timeoutMs": 15000,
+    "totalWallMs": 120000,
+    "maxBytesPerResponse": 2000000,
+    "maximumRedirectsPerUrl": 3
+  },
+  "identity": {
+    "chainId": 1672,
+    "feedId": "0x0007c129e624689953a2636c014531b2f0bd0c15f9a22211f53023354f309fa6",
+    "facade": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+    "collateral": "0x4809010926aec940b550D34a46A52739f996D75D",
+    "loan": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815"
+  },
+  "findings": {
+    "exactFeedRowFound": true,
+    "documentedHeartbeatSeconds": 3600,
+    "declaredProduct": "WSRUSD/RUSD (not WSRUSD/USDC)",
+    "qualificationLimitations": [
+      "A common-setting heartbeat declaration is not a verified maximum upstream observation age or end-to-end publication guarantee.",
+      "The declared settings are not tied to the sampled workflow hash, DON configuration version, signer/operator identities, or complete active configuration fingerprint.",
+      "The selected market mechanically uses a rUSD-denominated product in an 18-decimal collateral / 6-decimal USDC loan valuation without an active quote feed. Exact rUSD/USDC economic equivalence remains unproved.",
+      "Public deployment descriptions identify a CRE / Data Streams architecture, not the exact workflow program, aggregation inputs or independent real-world operators.",
+      "No public document or same-product/cross-chain feed is adopted as an eligible independent market-price comparator."
+    ]
+  },
+  "results": [
+    {
+      "name": "pharos-chainlink-push-engine",
+      "sourceUrl": "https://docs.pharos.xyz/tooling-and-infrastructure/oracles/chainlink-pe.md",
+      "finalUrl": "https://docs.pharos.xyz/tooling-and-infrastructure/oracles/chainlink-pe.md",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:31:59.391Z",
+      "retrievedAt": "2026-11-06T00:31:59.706Z",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 00:32:00 GMT",
+        "etag": null,
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 8722,
+      "responseSha256": "5d2c0bab0cb7a190ab7f37e327662427a2709fdb6e4905e74e57ae530e110b42",
+      "bodyPath": "pharos-chainlink-push-engine.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": true
+    },
+    {
+      "name": "pharos-doc-index",
+      "sourceUrl": "https://docs.pharos.xyz/llms.txt",
+      "finalUrl": "https://docs.pharos.xyz/llms.txt",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:31:59.451Z",
+      "retrievedAt": "2026-11-06T00:32:00.310Z",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 00:32:00 GMT",
+        "etag": null,
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 8743,
+      "responseSha256": "8a4f4f01d525b36ffb8377e64f370c52d9b2e53bfcb555b7e736d82efc18a37c",
+      "bodyPath": "pharos-doc-index.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": true
+    },
+    {
+      "name": "reservoir-addresses",
+      "sourceUrl": "https://docs.reservoir.xyz/security-and-compliance/smart-contract-addresses.md",
+      "finalUrl": "https://docs.reservoir.xyz/security-and-compliance/smart-contract-addresses.md",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:31:59.452Z",
+      "retrievedAt": "2026-11-06T00:31:59.993Z",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 00:32:00 GMT",
+        "etag": null,
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 16097,
+      "responseSha256": "d0c14a1df60ebb37c221ddae0f0415067b6a40fb953108223eb76efcb12bb0d4",
+      "bodyPath": "reservoir-addresses.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": false
+    },
+    {
+      "name": "reservoir-savings",
+      "sourceUrl": "https://docs.reservoir.xyz/products/savings-srusd-and-wsrusd.md",
+      "finalUrl": "https://docs.reservoir.xyz/products/savings-srusd-and-wsrusd.md",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:32:00.311Z",
+      "retrievedAt": "2026-11-06T00:32:00.915Z",
+      "status": 200,
+      "headers": {
+        "content-type": "text/markdown; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+        "etag": null,
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 1095,
+      "responseSha256": "f2263323aeba5917bd6ff63764f10d1e222e9a19156510c1b4630538631e5866",
+      "bodyPath": "reservoir-savings.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": false
+    },
+    {
+      "name": "chainlink-exchange-rate-streams",
+      "sourceUrl": "https://docs.chain.link/data-streams/exchange-rate-streams",
+      "finalUrl": "https://docs.chain.link/data-streams/exchange-rate-streams",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:32:00.313Z",
+      "retrievedAt": "2026-11-06T00:32:00.728Z",
+      "status": 404,
+      "headers": {
+        "content-type": null,
+        "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+        "etag": null,
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 0,
+      "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bodyPath": "chainlink-exchange-rate-streams.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": false
+    },
+    {
+      "name": "chainlink-redemption-schema-v7",
+      "sourceUrl": "https://docs.chain.link/data-streams/reference/report-schema-v7",
+      "finalUrl": "https://docs.chain.link/data-streams/reference/report-schema-v7",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:32:00.315Z",
+      "retrievedAt": "2026-11-06T00:32:00.721Z",
+      "status": 404,
+      "headers": {
+        "content-type": null,
+        "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+        "etag": null,
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 0,
+      "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bodyPath": "chainlink-redemption-schema-v7.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": false
+    },
+    {
+      "name": "chainlink-overview",
+      "sourceUrl": "https://docs.chain.link/data-streams/overview",
+      "finalUrl": "https://docs.chain.link/data-streams/overview",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:32:00.917Z",
+      "retrievedAt": "2026-11-06T00:32:01.186Z",
+      "status": 404,
+      "headers": {
+        "content-type": null,
+        "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+        "etag": null,
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 0,
+      "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bodyPath": "chainlink-overview.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": false
+    },
+    {
+      "name": "chainlink-avalanche-wsrusd-rusd",
+      "sourceUrl": "https://data.chain.link/feeds/avalanche/mainnet/wsrusd-rusd-exchange-rate",
+      "finalUrl": "https://data.chain.link/feeds/avalanche/mainnet/wsrusd-rusd-exchange-rate",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:32:00.919Z",
+      "retrievedAt": "2026-11-06T00:32:01.093Z",
+      "status": 429,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+        "etag": null,
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 24732,
+      "responseSha256": "b2e4141563a2eb03f6d0fea7f152b530d27d38d40eee42c581715c8524d20800",
+      "bodyPath": "chainlink-avalanche-wsrusd-rusd.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": false
+    },
+    {
+      "name": "dexscreener-exact-address",
+      "sourceUrl": "https://api.dexscreener.com/latest/dex/tokens/0x4809010926aec940b550D34a46A52739f996D75D",
+      "finalUrl": "https://api.dexscreener.com/latest/dex/tokens/0x4809010926aec940b550D34a46A52739f996D75D",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:32:00.925Z",
+      "retrievedAt": "2026-11-06T00:32:01.379Z",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+        "etag": "W/\"26-7mwYuLXLx12A5Iw2GRHUJ6cXxlk\"",
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 38,
+      "responseSha256": "3ed91fc5d32dde18de933f252927edabd035d03668a2fd13a17c6c17c2c58e0d",
+      "bodyPath": "dexscreener-exact-address.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": false
+    },
+    {
+      "name": "dexscreener-pharos-exact-address",
+      "sourceUrl": "https://api.dexscreener.com/token-pairs/v1/pharos/0x4809010926aec940b550D34a46A52739f996D75D",
+      "finalUrl": "https://api.dexscreener.com/token-pairs/v1/pharos/0x4809010926aec940b550D34a46A52739f996D75D",
+      "method": "GET",
+      "beganAt": "2026-11-06T00:32:01.381Z",
+      "retrievedAt": "2026-11-06T00:32:01.681Z",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 00:32:02 GMT",
+        "etag": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\"",
+        "last-modified": null
+      },
+      "redirects": [],
+      "block": null,
+      "bytes": 2,
+      "responseSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bodyPath": "dexscreener-pharos-exact-address.body.txt",
+      "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+      "ignoredRemoteAgentInstructionAppendix": false
+    }
+  ],
+  "safety": {
+    "realMonitorStopped": true,
+    "noChainPositionRead": true,
+    "noNotifications": true,
+    "noTransactionsOrWalletOperations": true,
+    "noPaidServiceOrAuthenticatedFeedAccess": true,
+    "noRemoteContentExecuted": true,
+    "noRepositoryWrites": true
+  }
+}

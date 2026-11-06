@@ -1,0 +1,1 @@
+Phase 4 oracle evidence: PASS; 18 immutable bundles; 6/6 reconstructed runtimes; 14 audit dispositions.

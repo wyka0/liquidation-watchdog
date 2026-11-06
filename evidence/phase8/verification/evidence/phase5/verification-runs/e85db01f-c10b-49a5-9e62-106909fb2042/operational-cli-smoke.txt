@@ -1,0 +1,5 @@
+
+> liquidation-watchdog@0.1.0 smoke:operations
+> tsx scripts/operations-smoke.ts
+
+Operational built-CLI smoke: PASS; 15 bounded commands with explicit expected exit codes.

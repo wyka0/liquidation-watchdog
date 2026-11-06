@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "operation": "manifest",
+  "evidenceClass": "SEPARATE_OFFLINE_DOCUMENTARY_REHASH_NOT_A_NEW_TEST_OR_MONITOR_CYCLE",
+  "startedAt": "2026-11-06T01:41:53.602Z",
+  "completedAt": "2026-11-06T01:42:17.947Z",
+  "checkGroupsPassed": 7,
+  "checkGroupsFailed": 0,
+  "checks": [
+    {
+      "name": "MANIFEST_COMPLETE_TWO_ROOT_FILE_BYTES_AND_EXCLUSIONS",
+      "status": "PASS",
+      "detail": {
+        "fileCount": 2337,
+        "totalBytes": 36165531,
+        "roots": [
+          {
+            "root": "REPAIR",
+            "fileCount": 1776,
+            "totalBytes": 23824139
+          },
+          {
+            "root": "STAGE2",
+            "fileCount": 561,
+            "totalBytes": 12341392
+          }
+        ],
+        "excludedRepairIntegrityEnvelopeFiles": [
+          "final-artifact-manifest.json",
+          "final-artifact-manifest.sha256",
+          "final-manifest-verification.json",
+          "final-completion.json",
+          "final-seal.json",
+          "final-seal.sha256"
+        ],
+        "unmanifestedFilesWithinDeclaredCoverage": 0
+      }
+    },
+    {
+      "name": "REPORT_AND_MANIFEST_PREREQUISITE_VALIDATIONS_PASS",
+      "status": "PASS",
+      "detail": {
+        "reportCheckGroups": 31
+      }
+    },
+    {
+      "name": "EVERY_PREEXISTING_REPAIR_AND_STAGE2_ARTIFACT_STILL_UNCHANGED",
+      "status": "PASS",
+      "detail": {
+        "existingRepairFilesRehashed": 1771,
+        "existingRepairBytesRehashed": 23113210,
+        "allStage2FilesRehashed": 561,
+        "allStage2BytesRehashed": 12341392,
+        "existingArtifactChanges": 0
+      }
+    },
+    {
+      "name": "ORIGINAL_STAGE2_MANIFEST_STILL_UNCHANGED",
+      "status": "PASS",
+      "detail": {
+        "filesRehashed": 387,
+        "bytesRehashed": 10157722,
+        "originalReportSha256": "acdfe3b107fa723c5d87ff990de66aaa7a2e3246e38b0f01b43b299efd66c60e"
+      }
+    },
+    {
+      "name": "REPOSITORY_AND_GIT_STILL_HAVE_ONLY_ALLOWLISTED_TEST_DELTA",
+      "status": "PASS",
+      "detail": {
+        "filesRehashed": 22029,
+        "bytesRehashed": 273682606,
+        "onlyDelta": "test/runtime-process.test.ts",
+        "gitIndexSha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689",
+        "savedReadOnlyGitCommandOutcomesMatchBaseline": true,
+        "allDotGitBytesUnchanged": true
+      }
+    },
+    {
+      "name": "DOCUMENTARY_TOOL_SOURCE_CAPSULES_STILL_MATCH",
+      "status": "PASS",
+      "detail": {
+        "documentaryToolsSyntaxChecked": 7,
+        "actionModesOrSoftwareTestsInvoked": 0
+      }
+    },
+    {
+      "name": "MANIFEST_DECISION_AND_MIXED_EVIDENCE_SCOPE",
+      "status": "PASS",
+      "detail": {
+        "independentCustodyClaimed": false,
+        "newOperationalWork": false
+      }
+    }
+  ],
+  "validator": {
+    "root": "REPAIR",
+    "file": "validate-final-qualification.mjs",
+    "bytes": 63393,
+    "sha256": "bd7a98f6d026df9180a9eb508535081ff908c9827d1d9c5fadc0da9d8c12aaab"
+  },
+  "report": {
+    "root": "REPAIR",
+    "file": "FINAL-QUALIFICATION-REPAIR-REPORT.md",
+    "bytes": 51682,
+    "sha256": "02b6cb0943243b1115d17f2f50ebee41af3f951c53adb652045f8823b3986812"
+  },
+  "evidence": {
+    "root": "REPAIR",
+    "file": "final-qualification-evidence.json",
+    "bytes": 54195,
+    "sha256": "d78f2a358e988c194a87141ae3dc55316f29762a0097c60313ee36934aace058"
+  },
+  "manifest": {
+    "root": "REPAIR",
+    "file": "final-artifact-manifest.json",
+    "bytes": 627165,
+    "sha256": "860e103cc7dd7fdb5083d19dc059e0d65ffb81fc55dcb1fb1f343a5fa9f18969"
+  },
+  "safety": {
+    "applicationImports": 0,
+    "databaseOpens": 0,
+    "networkRequests": 0,
+    "subprocesses": 0,
+    "testsRun": 0,
+    "newRealMonitorCycles": 0,
+    "repositoryWrites": 0,
+    "modeIsReadOnly": false,
+    "existingArtifactOverwrites": 0,
+    "production": "NOT_ACCEPTED_NO_GO",
+    "monitor": "STOPPED"
+  },
+  "trustLimit": "Separate validation implementation on the same local host; captured-byte integrity, not independent custody or notarization."
+}

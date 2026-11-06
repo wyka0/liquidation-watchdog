@@ -1,0 +1,61 @@
+
+> liquidation-watchdog@0.1.0 test:operations
+> vitest run test/operations-config.test.ts test/operations-storage.test.ts test/operations-lifecycle.test.ts test/operations-transports.test.ts --reporter=default --reporter=json --outputFile.json=evidence/phase5/operations-tests.json
+
+
+ RUN  v5.0.5 [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-verification-B1B2r7
+
+(node:15632) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:9524) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/operations-storage.test.ts (27 tests) 18386ms
+   ✓ FIXTURE: storage durability, ownership, migration and capacity faults (18)
+     ✓ rolls back all migration steps after an injected mid-migration I/O failure 949ms
+     ✓ does not migrate legacy storage during read-only inspection 831ms
+     ✓ takes maintenance ownership before writable open while permitting read-only diagnostics 400ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE extra(value TEXT) 1020ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX unreviewed ON cycles(status) 958ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER unreviewed AFTER INSERT ON cycles BEGIN SELECT 1; END 883ms
+     ✓ rejects schema-layout drift before state changes: DROP INDEX deliveries_alert_id 882ms
+     ✓ rejects schema-layout drift before state changes: CREATE TABLE sqliteextra(value TEXT) 926ms
+     ✓ rejects schema-layout drift before state changes: CREATE INDEX sqliteindex ON cycles(status) 934ms
+     ✓ rejects schema-layout drift before state changes: CREATE TRIGGER sqlitetrigger AFTER INSERT ON cycles BEGIN SELECT 1; END 911ms
+   ✓ FIXTURE: consistent SQLite backups and isolated restoration (9)
+     ✓ captures a live WAL database, all bound evidence and known-delivered/in-flight work while another connection writes 4715ms
+     ✓ restores schema 2 in isolation, migrates forward and preserves terminal/pending/cooldown history 590ms
+     ✓ restores schema 4 in isolation, migrates forward and preserves terminal/pending/cooldown history 929ms
+     ✓ rejects a manifest backup integrity failure without restoring 332ms
+     ✓ refuses existing destinations, insufficient reserve and restore paths inside the immutable backup 320ms
+(node:3004) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ test/operations-lifecycle.test.ts (10 tests) 21555ms
+   ✓ FIXTURE: bounded lifecycle and late continuation safety (6)
+     ✓ settles an active delivery on graceful shutdown, starts no new send and closes exactly once 399ms
+     ✓ includes notification dispatch in the cycle budget and preserves an interrupted acknowledgment as ambiguous 382ms
+     ✓ wires CLI signal cleanup through the same settling service 351ms
+   ✓ FIXTURE: actual child-process ownership and termination (4)
+     ✓ settles an idle worker via SIGINT handlers (Windows: explicit handler simulation) 4946ms
+     ✓ settles an idle worker via SIGTERM handlers (Windows: explicit handler simulation) 4811ms
+     ✓ settles an active child read through shutdown and releases its OS ownership lock 4949ms
+     ✓ recovers after actual forced OS termination, preserves known-delivered alerts and retries only ambiguous/pending work 5059ms
+ ✓ test/operations-config.test.ts (35 tests) 4963ms
+   ✓ FIXTURE: production configuration, redaction and local path boundaries (22)
+     ✓ rejects every missing fixed deployment field and chain/endpoint substitution 633ms
+   ✓ FIXTURE: local operational health/readiness and CLI inspection (13)
+     ✓ reports a valid empty database as healthy but uninitialized and unready 978ms
+     ✓ keeps fixture observations unready even when a mocked probe reports both providers reachable 386ms
+     ✓ separates RUNNING worker/chain operational status from financial safety 344ms
+     ✓ separates STALE worker/chain operational status from financial safety 347ms
+     ✓ separates UNFINISHED worker/chain operational status from financial safety 354ms
+     ✓ separates FAILED worker/chain operational status from financial safety 329ms
+ ✓ test/operations-transports.test.ts (27 tests) 3816ms
+   ✓ FIXTURE: bounded streaming reads and endpoint isolation (17)
+     ✓ uses exactly three same-endpoint read attempts after 5xx exhaustion and retains no partial result 3369ms
+
+ Test Files  4 passed (4)
+      Tests  99 passed (99)
+   Start at  20:18:40
+   Duration  31.49s (tests 82%, import 17%, transform 1%)
+
+JSON report written to [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-verification-B1B2r7/evidence/phase5/operations-tests.json

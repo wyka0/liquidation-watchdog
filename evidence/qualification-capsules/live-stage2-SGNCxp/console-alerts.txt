@@ -1,0 +1,45 @@
+[2026-11-05T23:48:19.444Z] CRITICAL | alert_b7d6f901fb5242047f34f14fc1c74ae676806d8566740cdca908af36653a367f
+Position: 0x086eb9C2B14dD657ae77D07dF9115A2F946CE327
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+State: UNKNOWN -> CRITICAL
+Safety ratio: 1.052543254080507595
+Data quality: UNKNOWN -> UNVERIFIED; effective state: DATA_UNVERIFIED
+Oracle data: UNVERIFIED; oracle verification: UNVERIFIED; heartbeat: UNKNOWN
+Actionability: false (INDICATIVE_ONLY)
+Snapshot: block 22225454; hash 0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d
+Snapshot ID: sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95; context: LIVE_AS_OF_BLOCK
+Reason: Initial indicative mathematical assessment at the identified block.
+Action: Review this position and independently refresh the current chain and oracle state before making any financial decision.
+Action evidence: NOT_QUALIFIED; rationale: POSITION_REQUIRES_REVIEW; origin: GENERATED; actionable: false
+Oracle assurance: UNVERIFIED; freshness: UNKNOWN; evidence invalidated: false.
+Recovery estimates are snapshot-bound, indicative and non-actionable. RPC/MCP share an upstream; agreement is not independent consensus.
+[2026-11-05T23:48:19.444Z] WARNING | alert_551ef4df81f5a02ea823c00ff0caf6c0b4ea9a3db990637bfc3306dbe3a08a3e
+Position: 0x086eb9C2B14dD657ae77D07dF9115A2F946CE327
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+State: UNKNOWN -> CRITICAL
+Safety ratio: 1.052543254080507595
+Data quality: UNKNOWN -> UNVERIFIED; effective state: DATA_UNVERIFIED
+Oracle data: UNVERIFIED; oracle verification: UNVERIFIED; heartbeat: UNKNOWN
+Actionability: false (INDICATIVE_ONLY)
+Snapshot: block 22225454; hash 0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d
+Snapshot ID: sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95; context: LIVE_AS_OF_BLOCK
+Reason: Effective data quality changed independently of mathematical risk.
+Action: Do not transact from this alert; refresh the position and restore complete valid data before making a decision.
+Action evidence: NOT_QUALIFIED; rationale: DATA_REQUIRES_REFRESH; origin: GENERATED; actionable: false
+Oracle assurance: UNVERIFIED; freshness: UNKNOWN; evidence invalidated: false.
+Recovery estimates are snapshot-bound, indicative and non-actionable. RPC/MCP share an upstream; agreement is not independent consensus.
+[2026-11-05T23:48:19.444Z] WARNING | alert_9c8ef2388a2bd46de1e0c55bce6ccb1aa3ff1a42dac70cd16cae711dacd607a2
+Position: 0x086eb9C2B14dD657ae77D07dF9115A2F946CE327
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+State: UNKNOWN -> CRITICAL
+Safety ratio: 1.052543254080507595
+Data quality: UNKNOWN -> UNVERIFIED; effective state: DATA_UNVERIFIED
+Oracle data: UNVERIFIED; oracle verification: UNVERIFIED; heartbeat: UNKNOWN
+Actionability: false (INDICATIVE_ONLY)
+Snapshot: block 22225454; hash 0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d
+Snapshot ID: sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95; context: LIVE_AS_OF_BLOCK
+Reason: Oracle data quality changed; successful reads do not verify its economic source or heartbeat.
+Action: Do not rely on financial estimates; independently verify the oracle source, freshness and configuration.
+Action evidence: NOT_QUALIFIED; rationale: ORACLE_REQUIRES_VERIFICATION; origin: GENERATED; actionable: false
+Oracle assurance: UNVERIFIED; freshness: UNKNOWN; evidence invalidated: false.
+Recovery estimates are snapshot-bound, indicative and non-actionable. RPC/MCP share an upstream; agreement is not independent consensus.

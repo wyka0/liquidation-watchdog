@@ -1,0 +1,1171 @@
+{
+  "schemaVersion": 1,
+  "status": "REPRODUCED_CAUSAL_MECHANISM_WITH_EXPLICIT_HISTORICAL_LIMITS",
+  "analyzedAt": "2026-11-06T01:00:48.285Z",
+  "rootCause": [
+    "The forced-recovery test budgets one aggregate 40000ms deadline for two sequential child startup/readiness lifecycles, despite each existing child having its own 30000ms bound and substantial import/workspace startup cost.",
+    "Vitest's timeout rejects the test promise without waiting for its asynchronous body/finally to settle. Original synchronous afterEach removes the fixture immediately; it does not independently stop and await every child.",
+    "A live resumed child changes cwd into the fixture workspace and keeps SQLite ownership/database handles. Deleting that Windows child-owned directory before close produces EPERM.",
+    "Original stop() also returns on exitCode/signalCode, although exit can precede stdio/IPC close; this is a structurally unsafe cleanup shortcut, not a separately proven historical trigger."
+  ],
+  "historicalEvidence": {
+    "full": {
+      "path": "unit-tests.json",
+      "bytes": 408810,
+      "sha256": "bd1aba2cdbcd8f6bbbefda19ad7a7d175ee6748b1f570d9958b724d53a62711d",
+      "success": false,
+      "files": 49,
+      "total": 1007,
+      "passed": 1006,
+      "failed": 1,
+      "runtimeProcess": [
+        {
+          "name": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+          "startTime": 1793923004697,
+          "endTime": 1793923103549.113,
+          "status": "failed",
+          "message": "",
+          "assertions": [
+            {
+              "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+              "status": "passed",
+              "durationMs": 13448.871899999998,
+              "failureMessages": []
+            },
+            {
+              "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+              "status": "passed",
+              "durationMs": 22381.945000000003,
+              "failureMessages": []
+            },
+            {
+              "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+              "status": "passed",
+              "durationMs": 22866.783299999996,
+              "failureMessages": []
+            },
+            {
+              "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+              "status": "failed",
+              "durationMs": 40153.113,
+              "failureMessages": [
+                "Error: Test timed out in 40000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:47:3\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+                "Error: EPERM, Permission denied: \\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp\\opencode\\watchdog-phase3-fixture-aKX2ke '\\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp\\opencode\\watchdog-phase3-fixture-aKX2ke'\n    at rmSync (node:fs:1221:18)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:11:66\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1632:35\n    at wrapper (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2019:37)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3318:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3276:10)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3602:52\n    at run (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1352:20)\n    at limiterFn (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1362:59)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "focused": {
+      "path": "runtime-rerun-tests.json",
+      "bytes": 2244,
+      "sha256": "87e5e86170466bf9ef4a20193a1905d98b1f9272a185fad293b83a3631b2a47a",
+      "success": true,
+      "files": 1,
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "runtimeProcess": [
+        {
+          "name": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+          "startTime": 1793923265788,
+          "endTime": 1793923360176.4016,
+          "status": "passed",
+          "message": "",
+          "assertions": [
+            {
+              "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+              "status": "passed",
+              "durationMs": 15881.981399999999,
+              "failureMessages": []
+            },
+            {
+              "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+              "status": "passed",
+              "durationMs": 23739.390399999997,
+              "failureMessages": []
+            },
+            {
+              "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+              "status": "passed",
+              "durationMs": 18135.907900000006,
+              "failureMessages": []
+            },
+            {
+              "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+              "status": "passed",
+              "durationMs": 36628.4016,
+              "failureMessages": []
+            }
+          ]
+        }
+      ]
+    },
+    "originalFailureDatabase": {
+      "sourceSha256": "ab165ab7f6467564b373216fe71bfb80daa0ab9df1363839620d23e24a4813d2",
+      "lastWriteAt": "2026-11-05T23:58:24.374Z",
+      "copiedReadOnlyInspection": {
+        "path": "storage/watchdog.sqlite",
+        "copiedSha256": "ab165ab7f6467564b373216fe71bfb80daa0ab9df1363839620d23e24a4813d2",
+        "quickCheck": [
+          {
+            "quick_check": "ok"
+          }
+        ],
+        "counts": {
+          "alerts": 6,
+          "cycles": 2,
+          "deliveries": 6,
+          "delivery_attempts": 6,
+          "delivery_events": 18,
+          "fingerprints": 6,
+          "operational_events": 0,
+          "oracle_assurance": 2,
+          "provider_limits": 0,
+          "schema_migrations": 5,
+          "streams": 1,
+          "worker_runtime": 1
+        },
+        "streams": [
+          {
+            "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+            "revision": 2
+          }
+        ],
+        "cycles": [
+          {
+            "id": "14a6232a-2bdf-4edc-a7a4-828da9f71f87",
+            "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+            "started_at": "2026-11-01T14:05:00.000Z",
+            "observed_at": "2026-11-01T14:05:00.000Z",
+            "completed_at": "2026-11-01T14:05:00.000Z",
+            "status": "INTERRUPTED"
+          },
+          {
+            "id": "8c97abcf-df3a-475a-a7cd-75b5238eed98",
+            "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+            "started_at": "2026-11-01T14:05:00.000Z",
+            "observed_at": "2026-11-01T14:05:00.000Z",
+            "completed_at": "2026-11-01T14:05:00.000Z",
+            "status": "COMPLETED"
+          }
+        ],
+        "runtime": [
+          {
+            "status": "STOPPED",
+            "startedAt": "2026-11-01T14:05:00.000Z",
+            "updatedAt": "2026-11-01T14:05:00.000Z"
+          }
+        ]
+      },
+      "preserved": true
+    },
+    "originalGuard": {
+      "records": 556,
+      "blockedRecords": 18,
+      "blockedLocalIPC": 18,
+      "demonstratedNonIpcBlocks": 0,
+      "limitation": "The v1 log has no timestamps or IPC paths. Blocked LOCAL_IPC records do not demonstrate remote traffic and cannot assign a timeout phase or resource owner."
+    },
+    "timingAnalysisSha256": "eb69836060a132d8306f4adb62ec68f8e98db2b3a9878c5510787f29384f1dfa"
+  },
+  "measuredUnmodifiedTimingControls": [
+    {
+      "name": "unmodified-independent-v2",
+      "success": true,
+      "assertions": [
+        {
+          "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+          "status": "skipped"
+        },
+        {
+          "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+          "status": "skipped"
+        },
+        {
+          "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+          "status": "skipped"
+        },
+        {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "passed",
+          "durationMs": 11553.098100000001
+        }
+      ],
+      "children": [
+        {
+          "pid": 13772,
+          "spawnAt": "2026-11-06T00:27:22.299Z",
+          "firstWorkspaceProbeAt": "2026-11-06T00:27:26.998Z",
+          "readingAt": "2026-11-06T00:27:28.395Z",
+          "idleAt": null,
+          "closedAt": "2026-11-06T00:27:29.055Z",
+          "spawnToWorkspaceMs": 4707.1589,
+          "spawnToReadingMs": 6095.7177,
+          "spawnToIdleMs": null,
+          "signalToCloseMs": null,
+          "stateAtClose": {
+            "at": "2026-11-06T00:27:29.055Z",
+            "hrNs": "36697735988100",
+            "pid": 14244,
+            "ppid": 7912,
+            "sequence": 130,
+            "event": "child_close",
+            "childPid": 13772,
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false,
+            "stdoutDestroyed": true,
+            "stderrDestroyed": true,
+            "code": null,
+            "signal": "SIGKILL",
+            "handles": {
+              "Pipe": 1,
+              "Socket": 2,
+              "ChildProcess": 1
+            }
+          },
+          "databaseOpens": 5,
+          "explicitDatabaseCloses": 1,
+          "forcedOSDeath": true,
+          "stderrBytes": 338
+        },
+        {
+          "pid": 12388,
+          "spawnAt": "2026-11-06T00:27:29.091Z",
+          "firstWorkspaceProbeAt": "2026-11-06T00:27:32.340Z",
+          "readingAt": null,
+          "idleAt": "2026-11-06T00:27:33.505Z",
+          "closedAt": "2026-11-06T00:27:33.545Z",
+          "spawnToWorkspaceMs": 3249.2133,
+          "spawnToReadingMs": null,
+          "spawnToIdleMs": 4413.604,
+          "signalToCloseMs": 40.0243,
+          "stateAtClose": {
+            "at": "2026-11-06T00:27:33.545Z",
+            "hrNs": "36702225981700",
+            "pid": 14244,
+            "ppid": 7912,
+            "sequence": 144,
+            "event": "child_close",
+            "childPid": 12388,
+            "exitCode": 0,
+            "signalCode": null,
+            "connected": false,
+            "stdoutDestroyed": true,
+            "stderrDestroyed": true,
+            "code": 0,
+            "signal": null,
+            "handles": {
+              "Pipe": 1,
+              "Socket": 2,
+              "ChildProcess": 1
+            }
+          },
+          "databaseOpens": 5,
+          "explicitDatabaseCloses": 5,
+          "forcedOSDeath": false,
+          "stderrBytes": 169
+        }
+      ],
+      "cleanupTimeline": [
+        {
+          "at": "2026-11-06T00:27:33.702Z",
+          "hrNs": "36702382982000",
+          "pid": 14244,
+          "ppid": 7912,
+          "sequence": 158,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-TrWfkJ",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:27:33.720Z",
+          "hrNs": "36702400825200",
+          "pid": 14244,
+          "ppid": 7912,
+          "sequence": 159,
+          "event": "fixture_remove_done",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-TrWfkJ",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "name": "unmodified-loaded-v2",
+      "success": true,
+      "assertions": [
+        {
+          "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+          "status": "skipped"
+        },
+        {
+          "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+          "status": "skipped"
+        },
+        {
+          "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+          "status": "skipped"
+        },
+        {
+          "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+          "status": "passed",
+          "durationMs": 21694.020399999998
+        }
+      ],
+      "children": [
+        {
+          "pid": 11636,
+          "spawnAt": "2026-11-06T00:29:17.544Z",
+          "firstWorkspaceProbeAt": "2026-11-06T00:29:30.945Z",
+          "readingAt": "2026-11-06T00:29:33.155Z",
+          "idleAt": null,
+          "closedAt": "2026-11-06T00:29:34.228Z",
+          "spawnToWorkspaceMs": 13401.8157,
+          "spawnToReadingMs": 15611.1448,
+          "spawnToIdleMs": null,
+          "signalToCloseMs": null,
+          "stateAtClose": {
+            "at": "2026-11-06T00:29:34.228Z",
+            "hrNs": "36822905815600",
+            "pid": 15520,
+            "ppid": 6660,
+            "sequence": 37,
+            "event": "child_close",
+            "childPid": 11636,
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false,
+            "stdoutDestroyed": true,
+            "stderrDestroyed": true,
+            "code": null,
+            "signal": "SIGKILL",
+            "handles": {
+              "Pipe": 1,
+              "Socket": 2,
+              "ChildProcess": 1
+            }
+          },
+          "databaseOpens": 5,
+          "explicitDatabaseCloses": 1,
+          "forcedOSDeath": true,
+          "stderrBytes": 338
+        },
+        {
+          "pid": 11348,
+          "spawnAt": "2026-11-06T00:29:34.275Z",
+          "firstWorkspaceProbeAt": "2026-11-06T00:29:37.661Z",
+          "readingAt": null,
+          "idleAt": "2026-11-06T00:29:38.798Z",
+          "closedAt": "2026-11-06T00:29:38.839Z",
+          "spawnToWorkspaceMs": 3388.8048,
+          "spawnToReadingMs": null,
+          "spawnToIdleMs": 4523.1301,
+          "signalToCloseMs": 39.6736,
+          "stateAtClose": {
+            "at": "2026-11-06T00:29:38.839Z",
+            "hrNs": "36827516623700",
+            "pid": 15520,
+            "ppid": 6660,
+            "sequence": 51,
+            "event": "child_close",
+            "childPid": 11348,
+            "exitCode": 0,
+            "signalCode": null,
+            "connected": false,
+            "stdoutDestroyed": true,
+            "stderrDestroyed": true,
+            "code": 0,
+            "signal": null,
+            "handles": {
+              "Pipe": 1,
+              "Socket": 2,
+              "ChildProcess": 1
+            }
+          },
+          "databaseOpens": 5,
+          "explicitDatabaseCloses": 5,
+          "forcedOSDeath": false,
+          "stderrBytes": 169
+        }
+      ],
+      "cleanupTimeline": [
+        {
+          "at": "2026-11-06T00:29:39.004Z",
+          "hrNs": "36827681928600",
+          "pid": 15520,
+          "ppid": 6660,
+          "sequence": 64,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\temp\\opencode\\watchdog-phase3-fixture-8dX62F",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:29:39.022Z",
+          "hrNs": "36827699992400",
+          "pid": 15520,
+          "ppid": 6660,
+          "sequence": 65,
+          "event": "fixture_remove_done",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\temp\\opencode\\watchdog-phase3-fixture-8dX62F",
+          "exists": false
+        }
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "name": "ipc-v1-negative-control",
+      "role": "DIAGNOSTIC_CONTROL_NOT_FRESH_QUALIFICATION",
+      "status": "FAIL",
+      "selectedAssertion": {
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "passed",
+        "durationMs": 11364.1644,
+        "failureMessages": []
+      },
+      "accounting": {
+        "passed": 1,
+        "failed": 0,
+        "intentionallyUnselected": 3
+      },
+      "guard": {
+        "version": "v1",
+        "sha256": "486a717e1742b81f647c3df4e737ede4b73fdd3d6f72cc91d6e65a4c0010c846",
+        "records": 4,
+        "blockedRecords": 4,
+        "blockedLocalIPC": 4,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 0,
+        "caveat": "Explicit v1 negative control; false LOCAL_IPC rejections are not remote requests. This run cannot qualify with v1."
+      },
+      "children": [
+        {
+          "pid": 13360,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 1,
+          "lastWorkspace": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\temp\\opencode\\watchdog-phase3-fixture-qHmaiy\\runtime",
+          "exitAt": "2026-11-06T00:32:20.316Z",
+          "closeAt": "2026-11-06T00:32:20.317Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:32:20.317Z",
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false
+          }
+        },
+        {
+          "pid": 15880,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 5,
+          "lastWorkspace": "C:\\liquidation-watchdog",
+          "exitAt": "2026-11-06T00:32:25.173Z",
+          "closeAt": "2026-11-06T00:32:25.174Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:32:25.174Z",
+            "exitCode": 0,
+            "signalCode": null,
+            "connected": false
+          }
+        }
+      ],
+      "removalTimeline": [
+        {
+          "at": "2026-11-06T00:32:25.330Z",
+          "hrNs": "36994008960200",
+          "pid": 9572,
+          "ppid": 13368,
+          "sequence": 64,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\temp\\opencode\\watchdog-phase3-fixture-qHmaiy",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:32:25.348Z",
+          "hrNs": "36994027157200",
+          "pid": 9572,
+          "ppid": 13368,
+          "sequence": 65,
+          "event": "fixture_remove_done",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\temp\\opencode\\watchdog-phase3-fixture-qHmaiy",
+          "exists": false
+        }
+      ],
+      "retainedFixtureRemnants": [],
+      "summarySha256": "be764d08c843b92e4642828dfc93c2df7689abc141fee73435e8eb5b53c8baa0",
+      "lifecycleSha256": "8e6fec7a1dabfd10740e73a2215be99471cbcd85b0967f1e10e3be5c9c2e0737",
+      "sourceSha256": null,
+      "tooling": {
+        "diagnostics": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\diagnostic-preloader-used.cjs",
+          "bytes": 6150,
+          "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+        },
+        "runner": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\ipc-v1-negative-control\\test-runner-used.mjs",
+          "bytes": 8784,
+          "sha256": "92d5463e366f1127eb8e39894f5ac2f57bf6a08e702ebb25f066dcc520e9acd8"
+        }
+      },
+      "sourceCapsuleRecorded": false,
+      "sourceCapsuleLimitation": "This early diagnostic runner did not capture a per-run test-source capsule; no later-schema capsule or hash is retrospectively invented.",
+      "controlFlags": {
+        "boundedReadinessLatency": false,
+        "originalAggregateDeadlineRestoredExternally": false
+      },
+      "allFailedArtifactsRetained": true
+    },
+    {
+      "name": "unmodified-independent-v2",
+      "role": "DIAGNOSTIC_CONTROL_NOT_FRESH_QUALIFICATION",
+      "status": "PASS",
+      "selectedAssertion": {
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "passed",
+        "durationMs": 11553.098100000001,
+        "failureMessages": []
+      },
+      "accounting": {
+        "passed": 1,
+        "failed": 0,
+        "intentionallyUnselected": 3
+      },
+      "guard": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 4,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 4,
+        "caveat": null
+      },
+      "children": [
+        {
+          "pid": 13772,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 1,
+          "lastWorkspace": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-TrWfkJ\\runtime",
+          "exitAt": "2026-11-06T00:27:29.054Z",
+          "closeAt": "2026-11-06T00:27:29.055Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:27:29.055Z",
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false
+          }
+        },
+        {
+          "pid": 12388,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 5,
+          "lastWorkspace": "C:\\liquidation-watchdog",
+          "exitAt": "2026-11-06T00:27:33.545Z",
+          "closeAt": "2026-11-06T00:27:33.545Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:27:33.545Z",
+            "exitCode": 0,
+            "signalCode": null,
+            "connected": false
+          }
+        }
+      ],
+      "removalTimeline": [
+        {
+          "at": "2026-11-06T00:27:33.702Z",
+          "hrNs": "36702382982000",
+          "pid": 14244,
+          "ppid": 7912,
+          "sequence": 158,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-TrWfkJ",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:27:33.720Z",
+          "hrNs": "36702400825200",
+          "pid": 14244,
+          "ppid": 7912,
+          "sequence": 159,
+          "event": "fixture_remove_done",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-independent-v2\\temp\\opencode\\watchdog-phase3-fixture-TrWfkJ",
+          "exists": false
+        }
+      ],
+      "retainedFixtureRemnants": [],
+      "summarySha256": "16f207902bc784b511b891c15bda523bdd653576a070eb41b24c5a16481ed75d",
+      "lifecycleSha256": "5ec03e4380610134e581724e9c05baec6ea84af3cbbee9ca3a38e0e44e0b7908",
+      "sourceSha256": null,
+      "tooling": null,
+      "sourceCapsuleRecorded": false,
+      "sourceCapsuleLimitation": "This early diagnostic runner did not capture a per-run test-source capsule; no later-schema capsule or hash is retrospectively invented.",
+      "controlFlags": {
+        "boundedReadinessLatency": false,
+        "originalAggregateDeadlineRestoredExternally": false
+      },
+      "allFailedArtifactsRetained": true
+    },
+    {
+      "name": "unmodified-loaded-v2",
+      "role": "DIAGNOSTIC_CONTROL_NOT_FRESH_QUALIFICATION",
+      "status": "PASS",
+      "selectedAssertion": {
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "passed",
+        "durationMs": 21694.020399999998,
+        "failureMessages": []
+      },
+      "accounting": {
+        "passed": 1,
+        "failed": 0,
+        "intentionallyUnselected": 3
+      },
+      "guard": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 4,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 4,
+        "caveat": null
+      },
+      "children": [
+        {
+          "pid": 11636,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 1,
+          "lastWorkspace": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\temp\\opencode\\watchdog-phase3-fixture-8dX62F\\runtime",
+          "exitAt": "2026-11-06T00:29:34.227Z",
+          "closeAt": "2026-11-06T00:29:34.228Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:29:34.228Z",
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false
+          }
+        },
+        {
+          "pid": 11348,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 5,
+          "lastWorkspace": "C:\\liquidation-watchdog",
+          "exitAt": "2026-11-06T00:29:38.838Z",
+          "closeAt": "2026-11-06T00:29:38.839Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:29:38.839Z",
+            "exitCode": 0,
+            "signalCode": null,
+            "connected": false
+          }
+        }
+      ],
+      "removalTimeline": [
+        {
+          "at": "2026-11-06T00:29:39.004Z",
+          "hrNs": "36827681928600",
+          "pid": 15520,
+          "ppid": 6660,
+          "sequence": 64,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\temp\\opencode\\watchdog-phase3-fixture-8dX62F",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:29:39.022Z",
+          "hrNs": "36827699992400",
+          "pid": 15520,
+          "ppid": 6660,
+          "sequence": 65,
+          "event": "fixture_remove_done",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\temp\\opencode\\watchdog-phase3-fixture-8dX62F",
+          "exists": false
+        }
+      ],
+      "retainedFixtureRemnants": [],
+      "summarySha256": "661e6b83d83b1665f22db0d4f875c169c8c5972c8a830cb8d8e3e98acf54466c",
+      "lifecycleSha256": "3de99088c11cd7a8cd29472fda08ce42d5686f28d8fa03722ac12632f5446c0a",
+      "sourceSha256": null,
+      "tooling": {
+        "diagnostics": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\diagnostic-preloader-used.cjs",
+          "bytes": 6150,
+          "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+        },
+        "runner": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\unmodified-loaded-v2\\test-runner-used.mjs",
+          "bytes": 8784,
+          "sha256": "92d5463e366f1127eb8e39894f5ac2f57bf6a08e702ebb25f066dcc520e9acd8"
+        }
+      },
+      "sourceCapsuleRecorded": false,
+      "sourceCapsuleLimitation": "This early diagnostic runner did not capture a per-run test-source capsule; no later-schema capsule or hash is retrospectively invented.",
+      "controlFlags": {
+        "boundedReadinessLatency": false,
+        "originalAggregateDeadlineRestoredExternally": false
+      },
+      "allFailedArtifactsRetained": true
+    },
+    {
+      "name": "original-budget-latency-negative-control",
+      "role": "DIAGNOSTIC_CONTROL_NOT_FRESH_QUALIFICATION",
+      "status": "FAIL",
+      "selectedAssertion": {
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "failed",
+        "durationMs": 40228.678400000004,
+        "failureMessages": [
+          "Error: Test timed out in 40000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:47:3\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+          "Error: EPERM, Permission denied: \\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia '\\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia'\n    at rmSync (node:fs:1221:18)\n    at fs.rmSync ([REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\process-diagnostics.cjs:60:32)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:11:66\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1632:35\n    at wrapper (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2019:37)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3318:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3276:10)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3602:52\n    at run (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1352:20)"
+        ]
+      },
+      "accounting": {
+        "passed": 0,
+        "failed": 1,
+        "intentionallyUnselected": 3
+      },
+      "guard": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 4,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 4,
+        "caveat": null
+      },
+      "children": [
+        {
+          "pid": 13028,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 1,
+          "lastWorkspace": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia\\runtime",
+          "exitAt": "2026-11-06T00:34:28.784Z",
+          "closeAt": "2026-11-06T00:34:28.786Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:34:28.786Z",
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false
+          }
+        },
+        {
+          "pid": 15676,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 1,
+          "lastWorkspace": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia\\runtime",
+          "exitAt": null,
+          "closeAt": null,
+          "statusAtFirstRemoval": {
+            "event": "parent_ipc_message",
+            "at": "2026-11-06T00:34:33.123Z",
+            "exitCode": null,
+            "signalCode": null,
+            "connected": true
+          }
+        }
+      ],
+      "removalTimeline": [
+        {
+          "at": "2026-11-06T00:34:47.554Z",
+          "hrNs": "37136238312100",
+          "pid": 3884,
+          "ppid": 12876,
+          "sequence": 47,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia",
+          "handles": {
+            "Pipe": 2,
+            "Socket": 4,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:34:47.760Z",
+          "hrNs": "37136444707200",
+          "pid": 3884,
+          "ppid": 12876,
+          "sequence": 48,
+          "event": "fixture_remove_error",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia",
+          "code": "EPERM",
+          "message": "EPERM, Permission denied: \\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia '\\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\temp\\opencode\\watchdog-phase3-fixture-6YWCia'",
+          "handles": {
+            "Pipe": 2,
+            "Socket": 4,
+            "ChildProcess": 1
+          }
+        }
+      ],
+      "retainedFixtureRemnants": [
+        "watchdog-phase3-fixture-6YWCia"
+      ],
+      "summarySha256": "191b56938b7083d6c38fd05281a7f50c70fc50470967337ff0e37a21527b49db",
+      "lifecycleSha256": "e2a64b818a86c1458edba66dfd5d87c332b5de16b012952962515b4064d7ba55",
+      "sourceSha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846",
+      "tooling": {
+        "diagnostics": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\diagnostic-preloader-used.cjs",
+          "bytes": 6150,
+          "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+        },
+        "runner": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\test-runner-used.mjs",
+          "bytes": 9938,
+          "sha256": "f753a75364839640739fe835ebdc130169be971eb272816b4971d5c9e627c5e8"
+        },
+        "testSource": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\runtime-process-test-used.ts",
+          "bytes": 4776,
+          "sha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846"
+        },
+        "runtimeHelper": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\runtime-helper-used.ts",
+          "bytes": 2335,
+          "sha256": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+        },
+        "boundedLatencyControl": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\original-budget-latency-negative-control\\latency-preloader-used.cjs",
+          "bytes": 1465,
+          "sha256": "9b255b87037b338dc8a8bd7875eeecd3dae7f1fb5a772906e5c6b241a2d75910"
+        }
+      },
+      "sourceCapsuleRecorded": true,
+      "sourceCapsuleLimitation": null,
+      "controlFlags": {
+        "boundedReadinessLatency": true,
+        "originalAggregateDeadlineRestoredExternally": false
+      },
+      "allFailedArtifactsRetained": true
+    },
+    {
+      "name": "corrected-budget-latency-control",
+      "role": "DIAGNOSTIC_CONTROL_NOT_FRESH_QUALIFICATION",
+      "status": "PASS",
+      "selectedAssertion": {
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "passed",
+        "durationMs": 41617.6824,
+        "failureMessages": []
+      },
+      "accounting": {
+        "passed": 1,
+        "failed": 0,
+        "intentionallyUnselected": 3
+      },
+      "guard": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 4,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 4,
+        "caveat": null
+      },
+      "children": [
+        {
+          "pid": 2456,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 1,
+          "lastWorkspace": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\temp\\opencode\\watchdog-phase3-fixture-CHMU37\\runtime",
+          "exitAt": "2026-11-06T00:43:27.732Z",
+          "closeAt": "2026-11-06T00:43:27.733Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:43:27.733Z",
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false
+          }
+        },
+        {
+          "pid": 2816,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 5,
+          "lastWorkspace": "C:\\liquidation-watchdog",
+          "exitAt": "2026-11-06T00:43:48.089Z",
+          "closeAt": "2026-11-06T00:43:48.090Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:43:48.090Z",
+            "exitCode": 0,
+            "signalCode": null,
+            "connected": false
+          }
+        }
+      ],
+      "removalTimeline": [
+        {
+          "at": "2026-11-06T00:43:48.254Z",
+          "hrNs": "37676939388800",
+          "pid": 12784,
+          "ppid": 16352,
+          "sequence": 64,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\temp\\opencode\\watchdog-phase3-fixture-CHMU37",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:43:48.271Z",
+          "hrNs": "37676956880600",
+          "pid": 12784,
+          "ppid": 16352,
+          "sequence": 65,
+          "event": "fixture_remove_done",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\temp\\opencode\\watchdog-phase3-fixture-CHMU37",
+          "exists": false
+        }
+      ],
+      "retainedFixtureRemnants": [],
+      "summarySha256": "42998ab7836b5b133fddac3311733978bb00d4dc347e8aff0ed9b8e8a3e58e24",
+      "lifecycleSha256": "3ef232467e9ba344119efd69d0247d0118442b2c66d7b5e91bea222d84e56812",
+      "sourceSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+      "tooling": {
+        "diagnostics": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\diagnostic-preloader-used.cjs",
+          "bytes": 6150,
+          "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+        },
+        "runner": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\test-runner-used.mjs",
+          "bytes": 11853,
+          "sha256": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+        },
+        "testSource": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\runtime-process-test-used.ts",
+          "bytes": 5805,
+          "sha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+        },
+        "runtimeHelper": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\runtime-helper-used.ts",
+          "bytes": 2335,
+          "sha256": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+        },
+        "boundedLatencyControl": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-budget-latency-control\\latency-preloader-used.cjs",
+          "bytes": 1465,
+          "sha256": "9b255b87037b338dc8a8bd7875eeecd3dae7f1fb5a772906e5c6b241a2d75910"
+        }
+      },
+      "sourceCapsuleRecorded": true,
+      "sourceCapsuleLimitation": null,
+      "controlFlags": {
+        "boundedReadinessLatency": true,
+        "originalAggregateDeadlineRestoredExternally": false
+      },
+      "allFailedArtifactsRetained": true
+    },
+    {
+      "name": "corrected-teardown-deadline-negative-control",
+      "role": "DIAGNOSTIC_CONTROL_NOT_FRESH_QUALIFICATION",
+      "status": "FAIL",
+      "selectedAssertion": {
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "failed",
+        "durationMs": 40226.619999999995,
+        "failureMessages": [
+          "Error: Test timed out in 40000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:68:3\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+        ]
+      },
+      "accounting": {
+        "passed": 0,
+        "failed": 1,
+        "intentionallyUnselected": 3
+      },
+      "guard": {
+        "version": "v2",
+        "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+        "records": 4,
+        "blockedRecords": 0,
+        "blockedLocalIPC": 0,
+        "demonstratedRemoteAttempts": 0,
+        "allowedLocalNamedPipes": 4,
+        "caveat": null
+      },
+      "children": [
+        {
+          "pid": 6348,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 1,
+          "lastWorkspace": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\temp\\opencode\\watchdog-phase3-fixture-52ceL2\\runtime",
+          "exitAt": "2026-11-06T00:45:47.105Z",
+          "closeAt": "2026-11-06T00:45:47.105Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:45:47.105Z",
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false
+          }
+        },
+        {
+          "pid": 9284,
+          "openedSqliteConnections": 5,
+          "explicitSqliteCloses": 1,
+          "lastWorkspace": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\temp\\opencode\\watchdog-phase3-fixture-52ceL2\\runtime",
+          "exitAt": "2026-11-06T00:46:06.145Z",
+          "closeAt": "2026-11-06T00:46:06.146Z",
+          "statusAtFirstRemoval": {
+            "event": "child_close",
+            "at": "2026-11-06T00:46:06.146Z",
+            "exitCode": null,
+            "signalCode": "SIGKILL",
+            "connected": false
+          }
+        }
+      ],
+      "removalTimeline": [
+        {
+          "at": "2026-11-06T00:46:06.147Z",
+          "hrNs": "37814827640600",
+          "pid": 4248,
+          "ppid": 1120,
+          "sequence": 52,
+          "event": "fixture_remove_call",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\temp\\opencode\\watchdog-phase3-fixture-52ceL2",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        },
+        {
+          "at": "2026-11-06T00:46:06.313Z",
+          "hrNs": "37814993548300",
+          "pid": 4248,
+          "ppid": 1120,
+          "sequence": 53,
+          "event": "fixture_remove_done",
+          "path": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\temp\\opencode\\watchdog-phase3-fixture-52ceL2",
+          "exists": false
+        }
+      ],
+      "retainedFixtureRemnants": [],
+      "summarySha256": "a7b5afa329b748c833c2339c80b1211b0b9fde6c6de1e19b8806ef3602c8a172",
+      "lifecycleSha256": "6eb97bde105ac2e3f1127f6cd887b6d19647922a8088816cd522ac76b7ee5902",
+      "sourceSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+      "tooling": {
+        "diagnostics": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\diagnostic-preloader-used.cjs",
+          "bytes": 6150,
+          "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+        },
+        "runner": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\test-runner-used.mjs",
+          "bytes": 11853,
+          "sha256": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+        },
+        "testSource": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\runtime-process-test-used.ts",
+          "bytes": 5805,
+          "sha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+        },
+        "runtimeHelper": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\runtime-helper-used.ts",
+          "bytes": 2335,
+          "sha256": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+        },
+        "boundedLatencyControl": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\latency-preloader-used.cjs",
+          "bytes": 1465,
+          "sha256": "9b255b87037b338dc8a8bd7875eeecd3dae7f1fb5a772906e5c6b241a2d75910"
+        },
+        "deadlineControlConfig": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\deadline-control-config-used.mjs",
+          "bytes": 1558,
+          "sha256": "ae992e3a910515096452b37e3adc0b9e72c93b2aa1845b0dc2a80ab66c68ebc4"
+        },
+        "deadlineControlTransformedSource": {
+          "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\explicit-deadline-transformed-test.ts",
+          "bytes": 5782,
+          "sha256": "260332738f4339ab43c37862d75c1c1781045686a775769aa9c2954b7fb6c1d6"
+        }
+      },
+      "sourceCapsuleRecorded": true,
+      "sourceCapsuleLimitation": null,
+      "controlFlags": {
+        "boundedReadinessLatency": true,
+        "originalAggregateDeadlineRestoredExternally": true
+      },
+      "allFailedArtifactsRetained": true
+    }
+  ],
+  "negativeControlIndependentOsObservation": {
+    "status": "PASS",
+    "observedAt": "2026-11-06T00:40:16.041Z",
+    "recordedChildPids": [
+      13028,
+      15676
+    ],
+    "noPhase8FixtureRemains": true
+  },
+  "pairedControlConclusions": {
+    "originalBudgetAndTeardownReproduceTimeoutAndEPERM": true,
+    "sameGuardAndPermittedChildHorizonsWithCorrectedBudgetCompleteAbove40000ms": true,
+    "restored40000msDeadlineStillFailsWithoutEPERMWithCorrectedTeardown": true,
+    "noSuppressedFailureOrCleanupAssertion": true,
+    "readinessControlsDoNotQualifyProductionOrRuntimeSuite": true
+  },
+  "smallestCorrection": {
+    "onlyRepositoryFile": "test/runtime-process.test.ts",
+    "aggregateBudgetMs": 70000,
+    "budgetProof": "2 * unchanged 30000ms child bounds + existing normal 10000ms assertion allowance; supported by original 40153.113ms failure, 36628.4016ms focused pass, startup slowdown under controlled load, and paired bounded-latency control.",
+    "cleanup": "Track spawn-time close promises for every child; await close even after exit; independently reap in afterEach; remove directory registrations before awaiting cleanup to prohibit late child creation; surface child errors after close; assert directory removal.",
+    "unchanged": [
+      "four original tests/titles",
+      "12 original assertion chains",
+      "3000ms graceful signal assertion",
+      "30000ms runtime child limit",
+      "20000ms import child limit",
+      "25000ms helper hard limit after import",
+      "application/helper/assurance code",
+      "V2 local-IPC guard",
+      "default maxWorkers=2"
+    ]
+  },
+  "limits": [
+    "Original full-run logs have no parent child-lifecycle timestamps or exact host scheduling metrics. The original per-child timeline, precise resource-handle inventory and quantitative V1 IPC effect cannot be reconstructed.",
+    "Controlled compiler/load runs demonstrate startup sensitivity, not the exact original host load. Their later green selected result does not replace the original failed full suite.",
+    "The negative-control worker lost later resumed-child exit/close events. Their absence is not invented; independent CIM observation proves recorded PIDs absent afterward, without assigning the lost exit reason/time.",
+    "Windows file ownership is inferred from observed cwd, open SQLite connections, live connected child, removal timing and paired cleanup controls; no exhaustive OS handle debugger was used."
+  ],
+  "decision": {
+    "testMechanismCorrectedAndFreshQualificationReportedSeparately": true,
+    "production": "NOT_ACCEPTED_NO_GO",
+    "realMonitor": "STOPPED",
+    "furtherOperationsAuthorized": false
+  }
+}

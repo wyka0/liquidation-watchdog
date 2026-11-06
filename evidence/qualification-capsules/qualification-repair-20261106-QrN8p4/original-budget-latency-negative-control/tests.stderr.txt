@@ -1,0 +1,33 @@
+(node:12876) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3884) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  test/runtime-process.test.ts > PHASE8 FIXTURE: actual runtime processes > fences a second process and recovers after actual forced OS termination with an unfinished cycle
+Error: Test timed out in 40000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ test/runtime-process.test.ts:47:3
+     45|     } finally { await stop(running.process); }
+     46|   }, 40_000);
+     47|   it("fences a second process and recovers after actual forced OS term…
+       |   ^
+     48|     const h = runtimeFixture(true, true); directories.push(h.directory…
+     49|     try {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  test/runtime-process.test.ts > PHASE8 FIXTURE: actual runtime processes > fences a second process and recovers after actual forced OS termination with an unfinished cycle
+Error: EPERM, Permission denied: \\?\[REDACTED_LOCAL_PATH]\AppData\Local\Temp\opencode\qualification-repair-20261106-QrN8p4\original-budget-latency-negative-control\temp\opencode\watchdog-phase3-fixture-6YWCia '\\?\[REDACTED_LOCAL_PATH]\AppData\Local\Temp\opencode\qualification-repair-20261106-QrN8p4\original-budget-latency-negative-control\temp\opencode\watchdog-phase3-fixture-6YWCia'
+ ❯ fs.rmSync ../Users/[REDACTED_USER]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/process-diagnostics.cjs:60:32
+ ❯ test/runtime-process.test.ts:11:66
+      9|
+     10| const directories: string[] = [];
+     11| afterEach(() => { for (const directory of directories.splice(0)) rmSyn…
+       |                                                                  ^
+     12| function child(directory: string, mode: string) {
+     13|   const process = spawn(globalThis.process.execPath, ["--import", "tsx…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+

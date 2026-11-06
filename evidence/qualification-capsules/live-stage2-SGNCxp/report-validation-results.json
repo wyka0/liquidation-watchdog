@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "evidenceClass": "OFFLINE_DOCUMENTARY_VALIDATION_NOT_A_NEW_LIVE_CYCLE_OR_TEST_RUN",
+  "startedAt": "2026-11-06T00:14:32.117Z",
+  "completedAt": "2026-11-06T00:14:32.543Z",
+  "report": {
+    "file": "LIVE-STAGE-2-MONITORING-REPORT.md",
+    "bytes": 40649,
+    "sha256": "acdfe3b107fa723c5d87ff990de66aaa7a2e3246e38b0f01b43b299efd66c60e"
+  },
+  "checkGroupsPassed": 9,
+  "checkGroupsFailed": 0,
+  "checks": [
+    {
+      "name": "REPORT_BYTES_AND_CAPTURED_EVIDENCE_ANCHORS",
+      "status": "PASS",
+      "detail": {
+        "report": {
+          "file": "LIVE-STAGE-2-MONITORING-REPORT.md",
+          "bytes": 40649,
+          "sha256": "acdfe3b107fa723c5d87ff990de66aaa7a2e3246e38b0f01b43b299efd66c60e"
+        },
+        "liveArtifacts": 12,
+        "reviewedSourceReferences": 6,
+        "authoritativeOfflineAudit": "9/9 check groups, 33 assurance references",
+        "noNewPipelineOrLiveExecution": true
+      }
+    },
+    {
+      "name": "CONFIGURED_IDENTITY_PINNED_VALUES_AND_EXACT_THRESHOLDS",
+      "status": "PASS",
+      "detail": {
+        "block": {
+          "number": "22225454",
+          "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+          "parentHash": "0x165dc5d790fcea58ab8af01a6a83332032dd5655c4db4b5315f7b974cff796e1",
+          "timestamp": "1793922408",
+          "timestampUtc": "2026-11-05T23:46:48.000Z"
+        },
+        "account": "0x086eb9C2B14dD657ae77D07dF9115A2F946CE327",
+        "positionId": "2868fdc6591f5ec9674c9a33febfd27023f136783e11c24cb6dbd5f82994a06f",
+        "collateralDisplay": "18,706,585.513096",
+        "debtDisplay": "18,001,980.562580",
+        "healthFactor": "1.052543254080507595",
+        "thresholds": {
+          "warningRatio": "1.30",
+          "criticalRatio": "1.10",
+          "targetRatio": "1.25",
+          "liquidationBoundary": "1.00"
+        },
+        "liveReadersCalledByThisValidator": 0
+      }
+    },
+    {
+      "name": "FULL_CONSOLE_BYTES_TIMESTAMPS_AND_SINGLE_TYPED_ACTIONS",
+      "status": "PASS",
+      "detail": {
+        "transcript": {
+          "file": "console-alerts.txt",
+          "bytes": 3664,
+          "sha256": "1fa8721cd6de619e98f3ac46837627e02eb7f39bff042d6df0bd7168a938aaa8"
+        },
+        "alerts": [
+          {
+            "id": "alert_b7d6f901fb5242047f34f14fc1c74ae676806d8566740cdca908af36653a367f",
+            "code": "INITIAL_RISK",
+            "type": "NON_FINANCIAL",
+            "rationale": "POSITION_REQUIRES_REVIEW",
+            "instruction": "Review this position and independently refresh the current chain and oracle state before making any financial decision.",
+            "actions": 1,
+            "financialOptions": 0
+          },
+          {
+            "id": "alert_551ef4df81f5a02ea823c00ff0caf6c0b4ea9a3db990637bfc3306dbe3a08a3e",
+            "code": "DATA_QUALITY_CHANGED",
+            "type": "NON_FINANCIAL",
+            "rationale": "DATA_REQUIRES_REFRESH",
+            "instruction": "Do not transact from this alert; refresh the position and restore complete valid data before making a decision.",
+            "actions": 1,
+            "financialOptions": 0
+          },
+          {
+            "id": "alert_9c8ef2388a2bd46de1e0c55bce6ccb1aa3ff1a42dac70cd16cae711dacd607a2",
+            "code": "ORACLE_QUALITY_CHANGED",
+            "type": "NON_FINANCIAL",
+            "rationale": "ORACLE_REQUIRES_VERIFICATION",
+            "instruction": "Do not rely on financial estimates; independently verify the oracle source, freshness and configuration.",
+            "actions": 1,
+            "financialOptions": 0
+          }
+        ],
+        "adaptersInvoked": 0
+      }
+    },
+    {
+      "name": "ONE_CAPTURED_CYCLE_AND_COMPLETED_DELIVERY_RESTART",
+      "status": "PASS",
+      "detail": {
+        "liveRunOnceCalls": 1,
+        "delivered": 3,
+        "attemptsEach": 1,
+        "pending": 0,
+        "runtime": "STOPPED",
+        "restartNewCycles": 0,
+        "restartNewObservations": 0,
+        "restartResends": 0,
+        "databaseOpenedByThisValidator": false
+      }
+    },
+    {
+      "name": "ORACLE_GAPS_NON_ACTIONABILITY_AND_FIRST_OBSERVATION",
+      "status": "PASS",
+      "detail": {
+        "overall": "UNVERIFIED",
+        "freshness": "UNKNOWN",
+        "oracleAgeSeconds": "1333",
+        "independentComparator": "NOT_CONFIGURED",
+        "timingConfigurationFingerprint": null,
+        "recoveryReasons": [
+          "RECOVERY_CHAIN_PROGRESSION_UNKNOWN",
+          "RECOVERY_ORACLE_ASSURANCE_NOT_VERIFIED",
+          "RECOVERY_ASSURANCE_GATE_NOT_MET",
+          "RECOVERY_ORACLE_FRESHNESS_NOT_VERIFIED",
+          "RECOVERY_INDEPENDENT_VALIDATION_NOT_VERIFIED",
+          "RECOVERY_CONFIGURATION_MISMATCH"
+        ],
+        "intervalIsHeartbeatGuarantee": false,
+        "financialEstimatesGenerated": 0
+      }
+    },
+    {
+      "name": "EXACT_CURRENT_TEST_COMMANDS_COUNTS_AND_RETAINED_FAILURES",
+      "status": "PASS",
+      "detail": {
+        "fullUnit": {
+          "files": 49,
+          "total": 1007,
+          "passed": 1006,
+          "failed": 1,
+          "pending": 0,
+          "todo": 0
+        },
+        "originalFullExitCode": 1,
+        "focused": {
+          "files": 1,
+          "total": 4,
+          "passed": 4,
+          "failed": 0,
+          "pending": 0,
+          "todo": 0
+        },
+        "freshAllGreenFullSuiteQualified": false,
+        "commandRecordsAndOutputHashesVerified": 5,
+        "originalBlockedLocalIpc": 18,
+        "originalBlockedNonIpc": 0,
+        "focusedExternalAttempts": 0,
+        "initialVerifierDiagnosticRetained": true
+      }
+    },
+    {
+      "name": "FOUR_ORIGINAL_REQUIREMENTS_WITH_FINITE_LOCAL_SCOPE",
+      "status": "PASS",
+      "detail": {
+        "requirements": [
+          {
+            "requirement": "Read collateral, debt and health factor (or equivalent) from chain",
+            "verdict": "PASS",
+            "scope": "EXACT_FINITE_LOCAL_RUN_ONLY"
+          },
+          {
+            "requirement": "Support configurable warning and critical thresholds, with default examples 1.3 and 1.1",
+            "verdict": "PASS",
+            "scope": "EXACT_FINITE_LOCAL_RUN_ONLY"
+          },
+          {
+            "requirement": "Send timestamped alerts through at least one supported channel",
+            "verdict": "PASS",
+            "scope": "EXACT_FINITE_LOCAL_RUN_ONLY"
+          },
+          {
+            "requirement": "Include a concrete suggested action in each alert",
+            "verdict": "PASS",
+            "scope": "EXACT_FINITE_LOCAL_RUN_ONLY"
+          }
+        ],
+        "productionAcceptance": "NOT_ACCEPTED_NO_GO",
+        "furtherAuthorizationGranted": false
+      }
+    },
+    {
+      "name": "FRESH_FULL_PRESERVATION_RECORD_AND_UNCHANGED_INDEX",
+      "status": "PASS",
+      "detail": {
+        "fullComparisonCompletedAt": "2026-11-06T00:09:12.001Z",
+        "entries": 22029,
+        "bytes": 273681577,
+        "added": 0,
+        "removed": 0,
+        "changed": 0,
+        "gitUnchanged": true,
+        "reportAndValidatorOutsideRepository": true
+      }
+    },
+    {
+      "name": "ALL_REPORT_LINKS_AND_EMBEDDED_HASH_TABLE",
+      "status": "PASS",
+      "detail": {
+        "references": 47,
+        "uniqueLocalFiles": 41,
+        "byteHashRows": 25,
+        "websitesContacted": 0,
+        "transcriptBytes": 3664,
+        "unresolvedRendererPlaceholders": 0
+      }
+    }
+  ],
+  "network": {
+    "fetchAttempts": 0,
+    "socketAttempts": 0,
+    "remoteAccessPermitted": false
+  },
+  "productionImports": 0,
+  "databaseOpens": 0,
+  "subprocesses": 0,
+  "currentAllGreenFullSuiteQualified": false,
+  "productionAcceptance": "NOT_ACCEPTED_NO_GO"
+}

@@ -1,0 +1,15 @@
+
+> liquidation-watchdog@0.1.0 test:integration
+> vitest run --config vitest.integration.config.ts --reporter=default --reporter=json --outputFile.json=evidence/phase3/integration-tests.json
+
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+ ✓ test/integration/live.test.ts (2 tests) 31229ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  21:25:20
+   Duration  34.28s (tests 92%, import 7%, transform 1%)
+
+JSON report written to C:/liquidation-watchdog/evidence/phase3/integration-tests.json

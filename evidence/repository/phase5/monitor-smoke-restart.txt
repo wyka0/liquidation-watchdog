@@ -1,0 +1,8 @@
+{"timestamp":"2026-11-02T10:23:17.748Z","event":"startup_validated"}
+{"timestamp":"2026-11-02T10:23:17.800Z","event":"restart_recovery"}
+{"timestamp":"2026-11-02T10:23:17.830Z","event":"cycle_started","cycleId":"d7146c95-fe8d-4f86-94a4-1a6d2be7bd6f"}
+(node:9304) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"timestamp":"2026-11-02T10:24:21.050Z","event":"cycle_observed","cycleId":"d7146c95-fe8d-4f86-94a4-1a6d2be7bd6f","blockNumber":"21924185","blockHash":"0xf77b91ff8c80a22e2db8c693872a87edaf08ad4f2f7557e93d541bb2997a4898","accepted":true,"mathematicalRiskState":"WARNING","dataQuality":"UNVERIFIED","oracleQuality":"UNVERIFIED","diagnostics":["ORACLE_UNVERIFIED","ORACLE_FRESHNESS_UNKNOWN"]}
+{"timestamp":"2026-11-02T10:24:21.260Z","event":"cycle_completed","cycleId":"d7146c95-fe8d-4f86-94a4-1a6d2be7bd6f","durationMs":63430,"accepted":true}
+{"timestamp":"2026-11-02T10:24:21.277Z","event":"shutdown"}

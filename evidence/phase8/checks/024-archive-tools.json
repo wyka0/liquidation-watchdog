@@ -1,0 +1,12 @@
+{
+  "command": "node --import tsx [REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-evidence.mjs archive-tools",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T15:10:04.420Z",
+  "finishedAt": "2026-11-02T15:10:10.450Z",
+  "durationMs": 6024,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "{\n  \"passed\": true,\n  \"files\": 7,\n  \"gitStatusEntries\": 613,\n  \"gitStatusSha256\": \"8179b4ccaa9f8c0548fb15395f9fb62c072f147fbdf6ff712ee87008ecfdf4ec\",\n  \"sourceSha256\": \"e9c758240dcfcd06e7691e51a8bb48194e5f7f38cd616ec3ec547c9c7fff3004\",\n  \"buildSha256\": \"84830d46176759e16458ce285adc310cd49c3810321724c017e3a5a214f3072b\"\n}\n",
+  "stderr": ""
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "evidenceClass": "EXISTING_UNIT_FIXTURES_WITH_LOCAL_WINDOWS_IPC_ONLY_NOT_LIVE_CHAIN_OR_PRODUCTION_RESTART",
+  "command": {
+    "name": "AFFECTED_EXISTING_UNIT_FILE_RERUN",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "node_modules/vitest/vitest.mjs",
+      "run",
+      "test/runtime-process.test.ts",
+      "--configLoader=native",
+      "--no-cache",
+      "--no-fsModuleCache",
+      "--maxWorkers=1",
+      "--reporter=default",
+      "--reporter=json",
+      "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\runtime-rerun-tests.json"
+    ],
+    "cwd": "C:/liquidation-watchdog",
+    "startedAt": "2026-11-06T00:00:51.311Z",
+    "completedAt": "2026-11-06T00:02:40.395Z",
+    "exitCode": 0,
+    "signal": null,
+    "guardFile": "test-network-guard-v2.cjs",
+    "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "stdout": {
+      "file": "runtime-rerun.stdout.txt",
+      "bytes": 789,
+      "sha256": "79d2ae29b5b9c864993d7638f9b8702b34e2a576bf8349caa8f6dd0938baa14d"
+    },
+    "stderr": {
+      "file": "runtime-rerun.stderr.txt",
+      "bytes": 169,
+      "sha256": "e58ac92e9f3cdb1abba44a01cedfef328e7290ca351837a34b2d3b45711276e1"
+    }
+  },
+  "unit": {
+    "files": 1,
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "todo": 0
+  },
+  "guardCases": [
+    {
+      "options": {
+        "host": "127.0.0.1",
+        "port": 1
+      },
+      "expectedAllowed": true,
+      "result": {
+        "allowed": true,
+        "host": "127.0.0.1",
+        "port": 1,
+        "ipcClass": null
+      },
+      "status": "PASS",
+      "checkIsPureClassificationNotAConnection": true
+    },
+    {
+      "options": {
+        "host": "::1",
+        "port": 1
+      },
+      "expectedAllowed": true,
+      "result": {
+        "allowed": true,
+        "host": "::1",
+        "port": 1,
+        "ipcClass": null
+      },
+      "status": "PASS",
+      "checkIsPureClassificationNotAConnection": true
+    },
+    {
+      "options": {
+        "host": "localhost",
+        "port": 1
+      },
+      "expectedAllowed": true,
+      "result": {
+        "allowed": true,
+        "host": "localhost",
+        "port": 1,
+        "ipcClass": null
+      },
+      "status": "PASS",
+      "checkIsPureClassificationNotAConnection": true
+    },
+    {
+      "options": {
+        "host": "rpc.pharos.xyz",
+        "port": 443
+      },
+      "expectedAllowed": false,
+      "result": {
+        "allowed": false,
+        "host": "rpc.pharos.xyz",
+        "port": 443,
+        "ipcClass": null
+      },
+      "status": "PASS",
+      "checkIsPureClassificationNotAConnection": true
+    },
+    {
+      "options": {
+        "path": "\\\\?\\pipe\\C:\\local\\fixture.pipe"
+      },
+      "expectedAllowed": true,
+      "result": {
+        "allowed": true,
+        "host": "LOCAL_IPC",
+        "port": null,
+        "path": "\\\\?\\pipe\\C:\\local\\fixture.pipe",
+        "ipcClass": "WINDOWS_LOCAL_NAMED_PIPE"
+      },
+      "status": "PASS",
+      "checkIsPureClassificationNotAConnection": true
+    },
+    {
+      "options": {
+        "path": "\\\\.\\pipe\\fixture"
+      },
+      "expectedAllowed": true,
+      "result": {
+        "allowed": true,
+        "host": "LOCAL_IPC",
+        "port": null,
+        "path": "\\\\.\\pipe\\fixture",
+        "ipcClass": "WINDOWS_LOCAL_NAMED_PIPE"
+      },
+      "status": "PASS",
+      "checkIsPureClassificationNotAConnection": true
+    },
+    {
+      "options": {
+        "path": "\\\\remote-host\\pipe\\fixture"
+      },
+      "expectedAllowed": false,
+      "result": {
+        "allowed": false,
+        "host": "LOCAL_IPC",
+        "port": null,
+        "path": "\\\\remote-host\\pipe\\fixture",
+        "ipcClass": "UNC_OR_REMOTE_PATH"
+      },
+      "status": "PASS",
+      "checkIsPureClassificationNotAConnection": true
+    }
+  ],
+  "networkGuard": {
+    "records": 10,
+    "actualExternalAttempts": 0,
+    "localNamedPipeRecords": 10,
+    "remoteNetworkPermitted": false
+  },
+  "qualificationLimitation": "The original full-suite failure and logs are retained. This focused rerun does not replace them or establish a fresh all-green full suite.",
+  "productionCodeChanges": 0,
+  "liveMonitoringCycles": 0
+}

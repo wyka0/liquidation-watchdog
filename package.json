@@ -1,0 +1,51 @@
+{
+  "name": "liquidation-watchdog",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "Read-only Morpho Blue monitoring, persistent alerts and indicative risk calculations on Pharos",
+  "type": "module",
+  "engines": { "node": ">=22.18.0" },
+  "overrides": { "minimatch": "11.0.1" },
+  "scripts": {
+    "watchdog": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "start:postgres": "node dist/postgres-service.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src test scripts *.config.*",
+    "test": "vitest run",
+    "test:unit": "vitest run --reporter=default --reporter=json --outputFile.json=evidence/phase5/unit-tests.json",
+    "test:integration": "vitest run --config vitest.integration.config.ts --reporter=default --reporter=json --outputFile.json=evidence/phase5/integration-tests.json",
+    "test:operations": "vitest run test/operations-config.test.ts test/operations-storage.test.ts test/operations-lifecycle.test.ts test/operations-transports.test.ts --reporter=default --reporter=json --outputFile.json=evidence/phase5/operations-tests.json",
+    "test:stability": "tsx scripts/phase5-stability.ts",
+    "demo:submission": "tsx scripts/submission-demo.ts",
+    "smoke:operations": "tsx scripts/operations-smoke.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "evidence:sources": "tsx scripts/capture-sources.ts",
+    "evidence:oracle-history": "tsx scripts/capture-oracle-history.ts",
+    "secrets:check": "tsx scripts/check-secrets.ts",
+    "evidence:check-phase1": "tsx scripts/phase1-integrity.ts --check",
+    "evidence:check-prior": "tsx scripts/phase5-preservation.ts",
+    "evidence:inventory": "tsx scripts/phase5-inventory.ts",
+    "evidence:check-oracle": "tsx scripts/check-oracle-evidence.ts",
+    "release:manifest": "tsx scripts/release-manifest.ts",
+    "release:check": "tsx scripts/release-manifest.ts --check",
+    "verify": "tsx scripts/verify.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "pg": "8.23.1",
+    "viem": "2.57.11",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "22.20.5",
+    "@types/pg": "8.23.1",
+    "eslint": "10.13.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.0",
+    "vitest": "5.0.5"
+  }
+}

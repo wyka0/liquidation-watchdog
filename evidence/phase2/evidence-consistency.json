@@ -1,0 +1,221 @@
+{
+  "evidenceKind": "LOCAL_FINAL_CAPTURE_CONSISTENCY_CHECK",
+  "checkedAt": "2026-11-01T15:01:37.374Z",
+  "passed": true,
+  "verification": {
+    "startedAt": "2026-11-01T14:55:08.492Z",
+    "finishedAt": "2026-11-01T15:00:33.493Z",
+    "commandCount": 16,
+    "nodeVersion": "v24.14.1"
+  },
+  "unit": {
+    "success": true,
+    "total": 205,
+    "passed": 205,
+    "failed": 0,
+    "pending": 0,
+    "files": [
+      {
+        "file": "accounting.test.ts",
+        "tests": 26,
+        "status": "passed"
+      },
+      {
+        "file": "oracle.test.ts",
+        "tests": 13,
+        "status": "passed"
+      },
+      {
+        "file": "risk-cli.test.ts",
+        "tests": 21,
+        "status": "passed"
+      },
+      {
+        "file": "risk-collateral.test.ts",
+        "tests": 11,
+        "status": "passed"
+      },
+      {
+        "file": "risk-engine.test.ts",
+        "tests": 40,
+        "status": "passed"
+      },
+      {
+        "file": "risk-evidence.test.ts",
+        "tests": 3,
+        "status": "passed"
+      },
+      {
+        "file": "risk-repayment.test.ts",
+        "tests": 12,
+        "status": "passed"
+      },
+      {
+        "file": "risk-thresholds.test.ts",
+        "tests": 40,
+        "status": "passed"
+      },
+      {
+        "file": "snapshot.test.ts",
+        "tests": 18,
+        "status": "passed"
+      },
+      {
+        "file": "transport.test.ts",
+        "tests": 14,
+        "status": "passed"
+      },
+      {
+        "file": "validation.test.ts",
+        "tests": 7,
+        "status": "passed"
+      }
+    ]
+  },
+  "integration": {
+    "success": true,
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "files": [
+      {
+        "file": "live.test.ts",
+        "tests": 2,
+        "status": "passed"
+      }
+    ]
+  },
+  "captures": [
+    {
+      "directory": "risk-integration",
+      "blockNumber": "21856704",
+      "blockHash": "0xff0f04f0613674b76270c0ad69122c7fdeb735d74d65ebe6be7e3b2372f30336",
+      "inputSnapshotIdentifier": "sha256:6ca75e32d467f451047352d7f52c0893eafdd4ef1e61268cd1ce3216e20b5444",
+      "calculatedAt": "2026-11-01T14:57:24.840Z",
+      "temporalContext": "LIVE_AS_OF_BLOCK",
+      "mathematicalRiskState": "WARNING",
+      "riskState": "DATA_UNVERIFIED",
+      "oracleQuality": "UNVERIFIED",
+      "actionable": false,
+      "files": [
+        {
+          "file": "input-snapshot.json",
+          "sha256Matches": true
+        },
+        {
+          "file": "risk-result.json",
+          "sha256Matches": true
+        },
+        {
+          "file": "risk-report.txt",
+          "sha256Matches": true
+        },
+        {
+          "file": "repayment-estimate.json",
+          "sha256Matches": true
+        },
+        {
+          "file": "collateral-estimate.json",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "directory": "risk/live",
+      "blockNumber": "21856848",
+      "blockHash": "0x241f9a8e922f99ea60b5b6f1388b131cb57198a8e51ce1acad23f176c89797be",
+      "inputSnapshotIdentifier": "sha256:ccac512d063daa6646d610523c24440151dff870449e940b9ac3b7ce30b0ca89",
+      "calculatedAt": "2026-11-01T14:59:55.173Z",
+      "temporalContext": "LIVE_AS_OF_BLOCK",
+      "mathematicalRiskState": "WARNING",
+      "riskState": "DATA_UNVERIFIED",
+      "oracleQuality": "UNVERIFIED",
+      "actionable": false,
+      "files": [
+        {
+          "file": "input-snapshot.json",
+          "sha256Matches": true
+        },
+        {
+          "file": "risk-result.json",
+          "sha256Matches": true
+        },
+        {
+          "file": "risk-report.txt",
+          "sha256Matches": true
+        },
+        {
+          "file": "repayment-estimate.json",
+          "sha256Matches": true
+        },
+        {
+          "file": "collateral-estimate.json",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "directory": "risk/historical-21853902",
+      "blockNumber": "21853902",
+      "blockHash": "0xfe044ec9c464d3899f431b23efc307e9ccb619a71d42fdfe4c0b7a2e346c88d3",
+      "inputSnapshotIdentifier": "sha256:0acbb165dbdf770aa69fbe90c81e6fc32b463eed361aecb86e93ac2a7794aa31",
+      "calculatedAt": "2026-11-01T15:00:28.083Z",
+      "temporalContext": "HISTORICAL",
+      "mathematicalRiskState": "WARNING",
+      "riskState": "DATA_UNVERIFIED",
+      "oracleQuality": "UNVERIFIED",
+      "actionable": false,
+      "files": [
+        {
+          "file": "input-snapshot.json",
+          "sha256Matches": true
+        },
+        {
+          "file": "risk-result.json",
+          "sha256Matches": true
+        },
+        {
+          "file": "risk-report.txt",
+          "sha256Matches": true
+        },
+        {
+          "file": "repayment-estimate.json",
+          "sha256Matches": true
+        },
+        {
+          "file": "collateral-estimate.json",
+          "sha256Matches": true
+        }
+      ]
+    }
+  ],
+  "historicalReplay": {
+    "archive": "evidence/phase1/accounting.json",
+    "exactMatch": true,
+    "blockNumber": "21853902",
+    "blockHash": "0xfe044ec9c464d3899f431b23efc307e9ccb619a71d42fdfe4c0b7a2e346c88d3",
+    "values": {
+      "debtAmount": "273629792897",
+      "collateralValue": "350480669854",
+      "liquidationCapacity": "320689812916",
+      "ltv": "780727202475920202",
+      "safetyRatio": "1171984269405613955"
+    }
+  },
+  "archivePreservation": {
+    "unchangedFiles": 54,
+    "originalFiles": 54,
+    "baselineSha256": "ef022814cbb20021571ea51d411de9f82837a39eba347e726e900147c75ddf75"
+  },
+  "sourceLinks": {
+    "runtimeMatches": 5,
+    "sourceHashMatches": 23
+  },
+  "dependencyVulnerabilities": 0,
+  "scan": {
+    "checkedAt": "2026-11-01T15:00:33.021Z",
+    "filesScanned": 205,
+    "findings": 0
+  }
+}

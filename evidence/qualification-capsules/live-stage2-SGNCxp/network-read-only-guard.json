@@ -1,0 +1,1189 @@
+{
+  "allowedEndpoints": [
+    "https://rpc.pharos.xyz",
+    "https://mcp.pharos.xyz/mcp"
+  ],
+  "blockedNetworkAttempts": 0,
+  "requests": [
+    {
+      "startedAt": "2026-11-05T23:46:49.663Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_chainId",
+      "tool": null,
+      "completedAt": "2026-11-05T23:46:50.634Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:50.726Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "initialize",
+      "tool": null,
+      "completedAt": "2026-11-05T23:46:51.236Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:51.475Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "notifications/initialized",
+      "tool": null,
+      "completedAt": "2026-11-05T23:46:51.546Z",
+      "status": 202,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:52.242Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "GET",
+      "method": null,
+      "tool": null,
+      "completedAt": "2026-11-05T23:46:52.296Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:53.003Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/list",
+      "tool": null,
+      "completedAt": "2026-11-05T23:46:53.352Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:53.767Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_chain_info",
+      "completedAt": "2026-11-05T23:46:53.831Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:54.528Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_blockNumber",
+      "tool": null,
+      "completedAt": "2026-11-05T23:46:54.599Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:55.291Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_block_number",
+      "completedAt": "2026-11-05T23:46:55.358Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:56.058Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getBlockByNumber",
+      "tool": null,
+      "completedAt": "2026-11-05T23:46:56.133Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:56.814Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_block",
+      "completedAt": "2026-11-05T23:46:56.876Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:57.578Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:46:57.650Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:58.342Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:46:58.579Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:59.108Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:46:59.178Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:46:59.862Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:46:59.949Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:00.624Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:00.709Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:01.386Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:47:01.451Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:02.147Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:02.211Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:02.908Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:47:03.023Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:03.674Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:03.743Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:04.430Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:47:04.484Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:05.185Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:05.254Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:05.949Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:47:06.007Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:06.711Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:06.780Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:07.474Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:47:07.528Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:08.234Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:08.300Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:08.999Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "GET",
+      "method": null,
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:09.056Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:09.751Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:47:09.809Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:10.515Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:11.059Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:11.276Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:11.333Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:12.041Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:12.117Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:12.803Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:47:12.863Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:13.568Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:13.926Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:14.325Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:14.386Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:15.083Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getCode",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:15.148Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:15.848Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_code",
+      "completedAt": "2026-11-05T23:47:15.907Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:16.617Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:17.045Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:17.369Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:17.430Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:18.150Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getBlockByNumber",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:18.216Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:18.913Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_block",
+      "completedAt": "2026-11-05T23:47:18.970Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:19.664Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_chainId",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:19.724Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:20.425Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_chain_info",
+      "completedAt": "2026-11-05T23:47:20.485Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:20.658Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_chainId",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:20.719Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:21.409Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "initialize",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:21.635Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:22.171Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "notifications/initialized",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:22.241Z",
+      "status": 202,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:22.936Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "GET",
+      "method": null,
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:22.988Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:23.696Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/list",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:23.863Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:24.459Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_chain_info",
+      "completedAt": "2026-11-05T23:47:24.516Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:25.220Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getBlockByNumber",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:25.476Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:25.983Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_block",
+      "completedAt": "2026-11-05T23:47:26.041Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:26.744Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:27.026Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:27.506Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:27.564Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:28.474Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:28.765Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:29.234Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:29.297Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:30.000Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:30.407Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:30.769Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:30.832Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:31.527Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:32.043Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:32.294Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:32.350Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:33.058Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:33.477Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:33.826Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:33.878Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:34.585Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:35.014Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:35.349Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:35.406Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:36.100Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:38.008Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:38.011Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:38.063Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:38.763Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:39.007Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:39.528Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "GET",
+      "method": null,
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:39.583Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:40.292Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:40.345Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:41.052Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:41.566Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:41.816Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:41.870Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:42.571Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:42.892Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:43.325Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "eth_call",
+      "completedAt": "2026-11-05T23:47:43.379Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:44.086Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getBlockByNumber",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:44.147Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:44.849Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_block",
+      "completedAt": "2026-11-05T23:47:44.903Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:45.616Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_chainId",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:45.676Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:46.376Z",
+      "endpoint": "https://mcp.pharos.xyz/mcp",
+      "httpMethod": "POST",
+      "method": "tools/call",
+      "tool": "get_chain_info",
+      "completedAt": "2026-11-05T23:47:46.431Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:46.733Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_chainId",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:46.797Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:47.495Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getBlockByNumber",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:47.567Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:48.249Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:48.317Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:49.011Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:49.079Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:49.762Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:49.829Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:50.526Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:50.782Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:51.287Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:51.602Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:52.037Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:52.319Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:52.794Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:53.137Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:53.561Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:53.858Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:54.320Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:54.571Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:55.083Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:55.392Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:55.836Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:55.915Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:56.588Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:56.928Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:57.351Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:57.644Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:58.114Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:58.463Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:58.877Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:59.179Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:47:59.628Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:47:59.896Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:00.384Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:00.715Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:01.146Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:01.432Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:01.900Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getLogs",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:01.985Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:02.663Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getTransactionByHash",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:02.745Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:03.430Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getTransactionReceipt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:03.506Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:04.182Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getBlockByNumber",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:04.249Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:04.937Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:05.250Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:05.697Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getTransactionByHash",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:05.771Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:06.452Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getTransactionReceipt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:06.527Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:07.210Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getBlockByNumber",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:07.278Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:07.971Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:08.295Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:08.733Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:08.795Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:09.495Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:09.568Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:10.246Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:10.311Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:11.000Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:11.064Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:11.759Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:11.826Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:12.520Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:12.578Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:13.282Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:13.347Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:14.038Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:14.106Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:14.797Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:14.881Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:15.562Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:15.630Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:16.315Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:16.379Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:17.074Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getStorageAt",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:17.140Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:17.836Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_call",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:18.126Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:18.598Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_getBlockByNumber",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:18.663Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    },
+    {
+      "startedAt": "2026-11-05T23:48:19.360Z",
+      "endpoint": "https://rpc.pharos.xyz/",
+      "httpMethod": "POST",
+      "method": "eth_chainId",
+      "tool": null,
+      "completedAt": "2026-11-05T23:48:19.427Z",
+      "status": 200,
+      "outcome": "RESPONSE_RETURNED_UNMODIFIED"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "evidenceKind": "PHASE4_LOCAL_VERIFICATION_WITH_LIVE_READS",
+  "startedAt": "2026-11-01T18:23:50.557Z",
+  "finishedAt": "2026-11-01T18:33:45.320Z",
+  "passed": true,
+  "nodeVersion": "v24.14.1",
+  "platform": "win32",
+  "results": [
+    {
+      "check": "typecheck",
+      "command": "node npm-cli.js run typecheck",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:23:50.573Z",
+      "finishedAt": "2026-11-01T18:24:09.635Z",
+      "outputFile": "typecheck.txt"
+    },
+    {
+      "check": "lint",
+      "command": "node npm-cli.js run lint",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:24:09.635Z",
+      "finishedAt": "2026-11-01T18:24:19.259Z",
+      "outputFile": "lint.txt"
+    },
+    {
+      "check": "test-unit",
+      "command": "node npm-cli.js run test:unit",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:24:19.259Z",
+      "finishedAt": "2026-11-01T18:25:02.270Z",
+      "outputFile": "test-unit.txt"
+    },
+    {
+      "check": "test-integration",
+      "command": "node npm-cli.js run test:integration",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:25:02.270Z",
+      "finishedAt": "2026-11-01T18:25:37.057Z",
+      "outputFile": "test-integration.txt"
+    },
+    {
+      "check": "build",
+      "command": "node npm-cli.js run build",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:25:37.057Z",
+      "finishedAt": "2026-11-01T18:25:54.625Z",
+      "outputFile": "build.txt"
+    },
+    {
+      "check": "built-cli-smoke",
+      "command": "node dist/cli.js --help",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:25:54.625Z",
+      "finishedAt": "2026-11-01T18:25:56.822Z",
+      "outputFile": "built-cli-smoke.txt"
+    },
+    {
+      "check": "cli-inspect-smoke",
+      "command": "node --import tsx src/cli.ts inspect --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:25:56.822Z",
+      "finishedAt": "2026-11-01T18:26:31.969Z",
+      "outputFile": "cli-inspect-smoke.txt"
+    },
+    {
+      "check": "built-cli-risk-smoke",
+      "command": "node dist/cli.js risk --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:26:31.969Z",
+      "finishedAt": "2026-11-01T18:27:04.915Z",
+      "outputFile": "built-cli-risk-smoke.txt"
+    },
+    {
+      "check": "built-cli-historical-risk-smoke",
+      "command": "node dist/cli.js risk --block 21853902 --warning 1.30 --critical 1.10 --target 1.25 --save-evidence",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:27:04.915Z",
+      "finishedAt": "2026-11-01T18:27:37.967Z",
+      "outputFile": "built-cli-historical-risk-smoke.txt"
+    },
+    {
+      "check": "historical-phase2-regression",
+      "command": "node --import tsx scripts/phase3-live-regression.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:27:37.967Z",
+      "finishedAt": "2026-11-01T18:27:39.109Z",
+      "outputFile": "historical-phase2-regression.txt"
+    },
+    {
+      "check": "bounded-monitoring-restart-smoke",
+      "command": "node --import tsx scripts/monitoring-smoke.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:27:39.109Z",
+      "finishedAt": "2026-11-01T18:29:58.515Z",
+      "outputFile": "bounded-monitoring-restart-smoke.txt"
+    },
+    {
+      "check": "bounded-oracle-cli-smoke",
+      "command": "node --import tsx scripts/oracle-smoke.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:29:58.516Z",
+      "finishedAt": "2026-11-01T18:33:27.430Z",
+      "outputFile": "bounded-oracle-cli-smoke.txt"
+    },
+    {
+      "check": "source-runtime-links",
+      "command": "node --import tsx scripts/link-source-evidence.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:27.430Z",
+      "finishedAt": "2026-11-01T18:33:28.350Z",
+      "outputFile": "source-runtime-links.txt"
+    },
+    {
+      "check": "dependency-audit",
+      "command": "node npm-cli.js audit --json",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:28.350Z",
+      "finishedAt": "2026-11-01T18:33:31.818Z",
+      "outputFile": "dependency-audit.txt"
+    },
+    {
+      "check": "phase1-evidence-integrity",
+      "command": "node --import tsx scripts/phase1-integrity.ts --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:31.830Z",
+      "finishedAt": "2026-11-01T18:33:32.849Z",
+      "outputFile": "phase1-evidence-integrity.txt"
+    },
+    {
+      "check": "prior-phases-integrity",
+      "command": "node --import tsx scripts/phase4-preservation.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:32.850Z",
+      "finishedAt": "2026-11-01T18:33:33.863Z",
+      "outputFile": "prior-phases-integrity.txt"
+    },
+    {
+      "check": "oracle-evidence-verification",
+      "command": "node --import tsx scripts/check-oracle-evidence.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:33.863Z",
+      "finishedAt": "2026-11-01T18:33:37.586Z",
+      "outputFile": "oracle-evidence-verification.txt"
+    },
+    {
+      "check": "phase4-inventory",
+      "command": "node --import tsx scripts/phase4-inventory.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:37.586Z",
+      "finishedAt": "2026-11-01T18:33:39.182Z",
+      "outputFile": "phase4-inventory.txt"
+    },
+    {
+      "check": "documentation-links",
+      "command": "node --import tsx scripts/check-doc-links.ts",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:39.182Z",
+      "finishedAt": "2026-11-01T18:33:39.862Z",
+      "outputFile": "documentation-links.txt"
+    },
+    {
+      "check": "secrets-check",
+      "command": "node npm-cli.js run secrets:check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:39.862Z",
+      "finishedAt": "2026-11-01T18:33:43.757Z",
+      "outputFile": "secrets-check.txt"
+    },
+    {
+      "check": "git-intent-to-add",
+      "command": "git add --intent-to-add -- .",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:43.757Z",
+      "finishedAt": "2026-11-01T18:33:44.373Z",
+      "outputFile": "git-intent-to-add.txt"
+    },
+    {
+      "check": "git-diff-check",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "startedAt": "2026-11-01T18:33:44.373Z",
+      "finishedAt": "2026-11-01T18:33:45.320Z",
+      "outputFile": "git-diff-check.txt"
+    }
+  ],
+  "testEvidence": {
+    "unit": "unit-tests.json (FIXTURE)",
+    "integration": "integration-tests.json (LIVE_CHAIN_READ)"
+  },
+  "gitNote": "The local repository uses intent-to-add entries so git diff --check includes newly created files. No commit or push was performed.",
+  "archiveNote": "All three prior evidence archives are checked against the exclusive pre-Phase-4 baseline; new captures are under evidence/phase4. Oracle audit bundles are exclusive and fully hashed."
+}

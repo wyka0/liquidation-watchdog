@@ -1,0 +1,1 @@
+Historical read-only Phase 2 regression: PASS; identity, debt/value/capacity/LTV/ratio and both complete recovery proofs compared.

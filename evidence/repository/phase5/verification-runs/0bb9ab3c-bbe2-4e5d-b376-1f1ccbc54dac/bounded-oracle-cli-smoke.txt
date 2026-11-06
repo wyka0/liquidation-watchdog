@@ -1,0 +1,3 @@
+(node:10300) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Oracle CLI smoke: PASS; 3 bounded audits, 3 persisted-status processes, 2 new immutable evidence bundles; overall UNVERIFIED.

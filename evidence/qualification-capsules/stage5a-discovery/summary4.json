@@ -1,0 +1,372 @@
+{
+  "requestedAt": "2026-11-06T15:00:40.267Z",
+  "requestCount": 6,
+  "headBlock": "22288365",
+  "states": {
+    "0xd834016ed49b76ffcbeb8402733e2d69b1f77d30b28d6f21c826931214ae5aea": [
+      "1086626597382",
+      "1083191776071881351",
+      "975971621190",
+      "972707225409444410",
+      "1793701870",
+      "0"
+    ],
+    "0xc79579a002dbc8c535d3a87198fcbbece1a664ad82a356b0447c5bff9e16fd86": [
+      "4174556553004",
+      "4125543269631411782",
+      "3757512743969",
+      "3708640604432138734",
+      "1793952693",
+      "0"
+    ],
+    "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73": [
+      "20601276549623",
+      "20361451642877459961",
+      "18002831585896",
+      "17768614015958479961",
+      "1793952693",
+      "0"
+    ]
+  },
+  "decodedTokens": {
+    "0xc879c018db60520f4355c26ed1a6d572cdac1815": {
+      "symbol": "USDC",
+      "decimals": 6,
+      "name": "USDC",
+      "balanceOf(morpho)": "3407467682143"
+    },
+    "0x13282289b8b241cf16eb5b8bad401c7c2fdab0f8": {
+      "symbol": "APT",
+      "decimals": 18,
+      "name": "Axil Pot",
+      "balanceOf(morpho)": "2051323817385138182878108"
+    },
+    "0x54df79d8edf36d15cd83fbedbdd90807fc828934": {
+      "symbol": "syzUSD",
+      "decimals": 18,
+      "name": "Staked Yuzu USD",
+      "balanceOf(morpho)": "3843816943090989220100525"
+    },
+    "0x4809010926aec940b550d34a46a52739f996d75d": {
+      "symbol": "wsrUSD",
+      "decimals": 18,
+      "name": "Wrapped Savings rUSD",
+      "balanceOf(morpho)": "18706623519194689713146249"
+    }
+  },
+  "decodedOracles": {
+    "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3": {
+      "price": "1010541000000000000000000"
+    },
+    "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46": {
+      "price": "1093766488368095905000000"
+    },
+    "0x9416f861970c2a39c02ab7696ef0496383d4e81b": {
+      "price": "1107107280438850911000000"
+    }
+  },
+  "newlyFoundFeeds": {},
+  "problems": [
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "typeAndVersion"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "description"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "decimals"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "owner"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "baseVault"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "baseVaultConversionSample"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "baseFeed1"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "baseFeed2"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "quoteVault"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "quoteVaultConversionSample"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "quoteFeed1"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "quoteFeed2"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "scaleFactor"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "baseTokenDecimals"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "quoteTokenDecimals"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "getFeedId"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "aggregator"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "latestAnswer"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "latestTimestamp"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0xd7e33079d91c5fa12798c1e7b28a7877045aa7c3",
+      "fn": "latestRoundData"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "typeAndVersion"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "description"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "decimals"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "owner"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "baseVault"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "baseVaultConversionSample"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "baseFeed1"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "baseFeed2"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "quoteVault"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "quoteVaultConversionSample"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "quoteFeed1"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "quoteFeed2"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "scaleFactor"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "baseTokenDecimals"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "quoteTokenDecimals"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "getFeedId"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "aggregator"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "latestAnswer"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "latestTimestamp"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x4eefc4c6e7216aedd5e809e4fc74fb8859b3fa46",
+      "fn": "latestRoundData"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "typeAndVersion"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "description"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "decimals"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "owner"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "baseVault"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "baseVaultConversionSample"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "baseFeed1"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "baseFeed2"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "quoteVault"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "quoteVaultConversionSample"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "quoteFeed1"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "quoteFeed2"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "scaleFactor"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "baseTokenDecimals"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "quoteTokenDecimals"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "getFeedId"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "aggregator"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "latestAnswer"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "latestTimestamp"
+    },
+    {
+      "note": "ORACLE_RAW_NULL",
+      "subject": "0x9416f861970c2a39c02ab7696ef0496383d4e81b",
+      "fn": "latestRoundData"
+    }
+  ],
+  "traceCount": 6
+}

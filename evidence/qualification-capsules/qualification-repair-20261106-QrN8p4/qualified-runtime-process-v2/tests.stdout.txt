@@ -1,0 +1,16 @@
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+ ✓ test/runtime-process.test.ts (4 tests) 23917ms
+   ✓ PHASE8 FIXTURE: actual runtime processes (4)
+     ✓ guards source imports against HTTP construction, SQLite opens and provider requests 3706ms
+     ✓ shuts down a child runtime through SIGINT (Windows: IPC handler simulation) 5020ms
+     ✓ shuts down a child runtime through SIGTERM (Windows: IPC handler simulation) 5053ms
+     ✓ fences a second process and recovers after actual forced OS termination with an unfinished cycle 10138ms
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  06:19:04
+   Duration  27.55s (tests 88%, import 7%, transform 5%)
+
+JSON report written to [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/qualified-runtime-process-v2/tests.json

@@ -1,0 +1,22 @@
+{
+  "name": "chainlink-overview",
+  "sourceUrl": "https://docs.chain.link/data-streams/overview",
+  "finalUrl": "https://docs.chain.link/data-streams/overview",
+  "method": "GET",
+  "beganAt": "2026-11-06T00:32:00.917Z",
+  "retrievedAt": "2026-11-06T00:32:01.186Z",
+  "status": 404,
+  "headers": {
+    "content-type": null,
+    "date": "Fri, 06 Nov 2026 00:32:01 GMT",
+    "etag": null,
+    "last-modified": null
+  },
+  "redirects": [],
+  "block": null,
+  "bytes": 0,
+  "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bodyPath": "chainlink-overview.body.txt",
+  "evidenceClass": "PUBLIC_DOCUMENT_OR_READ_ONLY_API_RESEARCH_NOT_AUTOMATIC_GATE_QUALIFICATION",
+  "ignoredRemoteAgentInstructionAppendix": false
+}

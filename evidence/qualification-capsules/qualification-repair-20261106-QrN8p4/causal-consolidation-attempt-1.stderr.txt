@@ -1,0 +1,3 @@
+TypeError: Cannot read properties of undefined (reading 'sha256')
+    at consolidate-causality.mjs:35:46
+Node.js v24.14.1

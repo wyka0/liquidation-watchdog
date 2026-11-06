@@ -1,0 +1,87 @@
+{
+  "evidenceKind": "LIVE_CHAIN_READ",
+  "retrievedAt": "2026-11-01T14:57:24.622Z",
+  "chainId": 1672,
+  "block": {
+    "number": "21856704",
+    "hash": "0xff0f04f0613674b76270c0ad69122c7fdeb735d74d65ebe6be7e3b2372f30336",
+    "parentHash": "0x3dde40171bf417aea6b23a0aa1b2428e60e80f7346c40c347cb4aa3208597527",
+    "timestamp": "1793545013"
+  },
+  "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+  "oracle": {
+    "address": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+    "feed": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+    "price": "1106188237955740648000000",
+    "composition": {
+      "baseVault": "0x0000000000000000000000000000000000000000",
+      "quoteVault": "0x0000000000000000000000000000000000000000",
+      "baseFeed1": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+      "baseFeed2": "0x0000000000000000000000000000000000000000",
+      "quoteFeed1": "0x0000000000000000000000000000000000000000",
+      "quoteFeed2": "0x0000000000000000000000000000000000000000",
+      "baseVaultConversionSample": "1",
+      "quoteVaultConversionSample": "1",
+      "scaleFactor": "1000000"
+    },
+    "feedId": "0x0007c129e624689953a2636c014531b2f0bd0c15f9a22211f53023354f309fa6",
+    "decimals": 18,
+    "description": "SelfManagedFeedsCacheProxy",
+    "typeAndVersion": "SelfManagedFeedsCacheProxy 1.0.0",
+    "round": {
+      "roundId": "0",
+      "answer": "1106188237955740648",
+      "startedAt": "1793543078",
+      "updatedAt": "1793543078",
+      "answeredInRound": "0"
+    },
+    "latestTimestamp": "1793543078",
+    "proxyOwner": "0x007DB8D5b32015E34f63Cf5312505ADf03Fcca5d",
+    "cache": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+    "cacheTypeAndVersion": "SelfManagedFeedsCache 1.0.0",
+    "cacheOwner": "0x59538b88DB99635Eb9181AdFBd1F6CF5588DDFf0",
+    "forwarder": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+    "forwarderOwner": "0xB8F1032c6E69ef81DB98CF036133b9CBeAD1B3b0",
+    "forwarderTypeAndVersion": "KeystoneForwarder 1.0.0",
+    "allowedWorkflowOwner": "0x0000000000000000000000000000000000000000",
+    "cacheAnswer": "1106188237955740648",
+    "cacheTimestamp": "1793543078",
+    "ageSeconds": "1935",
+    "quality": "UNVERIFIED",
+    "policy": {
+      "sourceVerified": false,
+      "operatorIdentityVerified": false,
+      "timestampSemanticsVerified": true,
+      "timestampMeaning": "Report observationsTimestamp supplied by the authorized workflow; not block inclusion or independent price validation time.",
+      "heartbeatSeconds": null,
+      "heartbeatVerified": false,
+      "expectedUpdateFrequency": "UNVERIFIED; sample update intervals do not establish a heartbeat.",
+      "stalenessEnforcedOnchain": false,
+      "references": [
+        "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xb5779919e2f183e59a34140331f7779cbff1d1bc/src/SelfManagedFeedsCacheProxy.sol",
+        "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xd9f00c86ced2de92f6b7152b0492cb28edc4b5a8/src/SelfManagedFeedsCache.sol",
+        "https://github.com/morpho-org/morpho-blue-oracles/tree/v2.0.0"
+      ]
+    }
+  },
+  "findings": [
+    {
+      "scope": "oracle",
+      "status": "UNVERIFIED",
+      "code": "ORACLE_SOURCE_UNVERIFIED",
+      "message": "The upstream workflow and exact feed identity are not independently established."
+    },
+    {
+      "scope": "oracle",
+      "status": "UNVERIFIED",
+      "code": "ORACLE_OPERATOR_UNVERIFIED",
+      "message": "On-chain controller addresses are observable; their operator identities are unverified."
+    },
+    {
+      "scope": "oracle",
+      "status": "UNVERIFIED",
+      "code": "HEARTBEAT_UNVERIFIED",
+      "message": "No verified heartbeat or maximum acceptable price age exists for this feed."
+    }
+  ]
+}

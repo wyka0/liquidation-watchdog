@@ -1,0 +1,35 @@
+{
+  "label": "tests",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "test/runtime-process.test.ts",
+    "test/runtime-lifecycle.test.ts",
+    "test/runtime-storage.test.ts",
+    "--configLoader=native",
+    "--no-cache",
+    "--no-fsModuleCache",
+    "--reporter=default",
+    "--reporter=json",
+    "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\tests.json"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "pid": 14028,
+  "startedAt": "2026-11-06T00:49:33.342Z",
+  "completedAt": "2026-11-06T00:50:13.196Z",
+  "durationMs": 39851.254,
+  "exitCode": 0,
+  "signal": null,
+  "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+  "stdout": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\tests.stdout.txt",
+    "bytes": 2899,
+    "sha256": "2f3db5965577eb0c6665344d7b05f5c87923b953bc8fd6c179518834f1edaa17"
+  },
+  "stderr": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\tests.stderr.txt",
+    "bytes": 675,
+    "sha256": "011c098d59862dcb08992ab4d14a86780c21968c71e8de0bb935fc900d732a6f"
+  }
+}

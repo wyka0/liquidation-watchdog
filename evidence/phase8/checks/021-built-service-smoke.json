@@ -1,0 +1,12 @@
+{
+  "command": "node [REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\phase8-built-smoke.mjs",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T15:08:02.800Z",
+  "finishedAt": "2026-11-02T15:08:03.676Z",
+  "durationMs": 874,
+  "exitCode": 1,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "",
+  "stderr": "file:///[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-built-smoke.mjs:22\r\n  return { process, closed, waitForListening: () => Promise.race([listening, closed.then(() => { throw new Error(\"Built service did not reach started state\"); })]), started,\r\n                                                                                                       ^\r\n\r\nError: Built service did not reach started state\r\n    at file:///[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-built-smoke.mjs:22:104\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\r\n    at async file:///[REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-built-smoke.mjs:40:26\r\n\r\nNode.js v24.14.1\r\n"
+}

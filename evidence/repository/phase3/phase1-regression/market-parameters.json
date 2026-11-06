@@ -1,0 +1,42 @@
+{
+  "evidenceKind": "LIVE_CHAIN_READ",
+  "retrievedAt": "2026-11-01T15:55:54.855Z",
+  "chainId": 1672,
+  "block": {
+    "number": "21859852",
+    "hash": "0x1fcab2cf5b32dbce1e1e40650779431956247f177d1daae67eab5aa7e5e40d61",
+    "parentHash": "0x892e3a927bbf1f370057d0312dd36ff906ada5defbeaa4ec773f54b9f8bfad49",
+    "timestamp": "1793548514"
+  },
+  "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+  "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+  "params": {
+    "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+    "collateralToken": "0x4809010926aec940b550D34a46A52739f996D75D",
+    "oracle": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+    "irm": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+    "lltv": "915000000000000000"
+  },
+  "market": {
+    "totalSupplyAssets": "5952073982495",
+    "totalSupplyShares": "5886569627533310138",
+    "totalBorrowAssets": "5390483818769",
+    "totalBorrowShares": "5324169446054473402",
+    "lastUpdate": "1793534928",
+    "fee": "0"
+  },
+  "tokens": {
+    "loan": {
+      "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "decimals": 6,
+      "name": "USDC",
+      "symbol": "USDC"
+    },
+    "collateral": {
+      "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+      "decimals": 18,
+      "name": "Wrapped Savings rUSD",
+      "symbol": "wsrUSD"
+    }
+  }
+}

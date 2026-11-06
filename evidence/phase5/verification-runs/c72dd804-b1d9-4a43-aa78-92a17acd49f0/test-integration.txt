@@ -1,0 +1,17 @@
+
+> liquidation-watchdog@0.1.0 test:integration
+> vitest run --config vitest.integration.config.ts --reporter=default --reporter=json --outputFile.json=evidence/phase5/integration-tests.json
+
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+ ✓ test/integration/live.test.ts (2 tests) 31061ms
+   ✓ LIVE_CHAIN_READ: real Pharos RPC + official Chain MCP (2)
+     ✓ derives non-actionable risk and proves both target estimates on that same real snapshot 354ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  15:30:41
+   Duration  34.67s (tests 91%, import 7%, transform 2%)
+
+JSON report written to C:/liquidation-watchdog/evidence/phase5/integration-tests.json

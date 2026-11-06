@@ -1,0 +1,37 @@
+{
+  "name": "qualified-runtime-process-v2",
+  "mode": "runtime-process",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\run-tests.mjs",
+    "qualified-runtime-process-v2",
+    "runtime-process",
+    "v2"
+  ],
+  "startedAt": "2026-11-06T00:49:04.047Z",
+  "completedAt": "2026-11-06T00:49:33.052Z",
+  "exitCode": 0,
+  "signal": null,
+  "pid": 13512,
+  "status": "PASS",
+  "summarySha256": "920fc1fc4807dfaec44fe233c6f6de7ec25e1022e6748441641e487f2c6aba29",
+  "tests": {
+    "success": true,
+    "files": 1,
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "todo": 0
+  },
+  "checks": [
+    {
+      "label": "tests",
+      "exitCode": 0,
+      "durationMs": 28276.037399999997
+    }
+  ],
+  "sourceUnchangedDuringQualification": true,
+  "stdoutSha256": "5bfc0b2ce5169e05a4676c822f768119b54d6fabf1e0ab281e72ed534435587c",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

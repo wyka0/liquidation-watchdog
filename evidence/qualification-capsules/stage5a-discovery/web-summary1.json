@@ -1,0 +1,47 @@
+﻿{
+    "authenticated":  false,
+    "paidService":  false,
+    "observedAtUtc":  "2026-11-06T15:10:06.6594746Z",
+    "results":  [
+                    {
+                        "beganAt":  "2026-11-06T15:10:02.4175624Z",
+                        "contentType":  "text/markdown; charset=utf-8",
+                        "url":  "https://docs.pharos.xyz/tooling-and-infrastructure/oracles/chainlink-pe.md",
+                        "bodyPath":  "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\stage5a-discovery\\pharos-chainlink-push-engine.body.txt",
+                        "name":  "pharos-chainlink-push-engine",
+                        "status":  200,
+                        "bytes":  8722,
+                        "sha256":  "5d2c0bab0cb7a190ab7f37e327662427a2709fdb6e4905e74e57ae530e110b42"
+                    },
+                    {
+                        "beganAt":  "2026-11-06T15:10:05.2215142Z",
+                        "contentType":  "application/json; charset=utf-8",
+                        "url":  "https://api.dexscreener.com/token-pairs/v1/pharos/0x54dF79D8EDf36D15cd83fbeDbdd90807fC828934",
+                        "bodyPath":  "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\stage5a-discovery\\dexscreener-syzusd.body.txt",
+                        "name":  "dexscreener-syzusd",
+                        "status":  200,
+                        "bytes":  2,
+                        "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                    },
+                    {
+                        "beganAt":  "2026-11-06T15:10:05.8848736Z",
+                        "contentType":  "application/json; charset=utf-8",
+                        "url":  "https://api.dexscreener.com/token-pairs/v1/pharos/0x13282289b8B241Cf16eB5B8Bad401C7c2fdAb0F8",
+                        "bodyPath":  "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\stage5a-discovery\\dexscreener-apt.body.txt",
+                        "name":  "dexscreener-apt",
+                        "status":  200,
+                        "bytes":  2,
+                        "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                    },
+                    {
+                        "beganAt":  "2026-11-06T15:10:06.2893937Z",
+                        "contentType":  "application/json; charset=utf-8",
+                        "url":  "https://api.dexscreener.com/token-pairs/v1/pharos/0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+                        "bodyPath":  "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\stage5a-discovery\\dexscreener-usdc.body.txt",
+                        "name":  "dexscreener-usdc",
+                        "status":  200,
+                        "bytes":  2,
+                        "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                    }
+                ]
+}

@@ -1,0 +1,42 @@
+{
+  "requestedAt": "2026-11-06T14:46:33.566Z",
+  "endpoint": "https://rpc.pharos.xyz",
+  "requestCount": 245,
+  "requestBudget": 400,
+  "headBlock": "22287224",
+  "scanFromBlock": "22227224",
+  "recentBlocks": "60000",
+  "windowSize": "500",
+  "scanNulls": 0,
+  "windowNotes": [],
+  "eventSignaturesSource": "retained compiler-output ABI (event-signatures.json)",
+  "idSource": "idToMarketParams + derived verification",
+  "distinctIds": 1,
+  "paramsDecoded": 0,
+  "newlyFoundFeeds": {},
+  "candidates": [
+    {
+      "index": 1,
+      "marketId": "0xd834016ed49b76ffcbeb8402733e2d69b1f77d30b28d6f21c826931214ae5aea",
+      "idVerified": null,
+      "creationNotScanned": true,
+      "borrowCount": 0,
+      "supplyCollateralCount": 1,
+      "lastBorrowBlock": "22255355",
+      "recentPositions": {},
+      "params": null,
+      "loan": {
+        "address": null
+      },
+      "collateral": {
+        "address": null,
+        "morphoBalance": null
+      },
+      "oracle": {
+        "address": null
+      },
+      "isStage2Market": false,
+      "state": {}
+    }
+  ]
+}

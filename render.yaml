@@ -1,0 +1,35 @@
+# DRAFT-UNAPPROVED-NOT-DEPLOYED — historical Phase 7 architecture proposal.
+# Never applied to Render. No deployment or paid resource creation authorized.
+# dist/service.js and config/render.json are now included in this publication copy.
+# Their implementation does not establish host, deployment or production acceptance.
+# autoDeployTrigger: 'off' does NOT prevent initial deployment on Blueprint apply.
+# Region, repository, branch, release identity and resource sizing need review.
+# See docs/render-deployment-plan.md for the complete implementation/acceptance plan.
+previews:
+  generation: 'off'
+services:
+  - type: web
+    runtime: node
+    name: watchdog-proposal-unapproved
+    plan: 1c-2g # Proposed 1 CPU / 2 GB; not purchased or load-qualified.
+    numInstances: 1
+    autoDeployTrigger: 'off'
+    buildCommand: npm ci --include=dev && npm run build
+    # PROPOSED argument contract. Resolve config before entering runtime-root.
+    # config/render.json must start with monitoring and external channels disabled.
+    startCommand: node dist/service.js --config config/render.json --runtime-root /var/data/watchdog/runtime --database /var/data/watchdog/storage/watchdog.sqlite
+    healthCheckPath: /api/health # Proposed tiny, public, in-memory liveness response.
+    disk:
+      name: watchdog-data-proposal
+      mountPath: /var/data/watchdog
+      sizeGB: 20 # Capacity proposal; bounded backup staging and off-disk restore.
+    envVars:
+      - key: NODE_VERSION
+        value: '24.14.1'
+      - key: WATCHDOG_READ_API_TOKEN # Proposed Phase 8 protected read access.
+        sync: false # No secret value supplied; missing auth must fail closed.
+    # Telegram/Discord disabled: no provider secret is required or supplied here.
+    # No disk access during build/pre-deploy or via separate jobs/services.
+    # No replicas/autoscaling, PostgreSQL, or invented restartPolicy field.
+    # Disk services have a fixed 30-second platform shutdown allowance;
+    # propose a 20-second application budget in config, then measure total exit.

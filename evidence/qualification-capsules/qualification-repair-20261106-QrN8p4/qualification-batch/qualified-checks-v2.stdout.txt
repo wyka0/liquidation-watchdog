@@ -1,0 +1,42 @@
+{
+  "name": "qualified-checks-v2",
+  "mode": "checks",
+  "status": "PASS",
+  "tests": null,
+  "checks": [
+    {
+      "label": "typecheck",
+      "exitCode": 0,
+      "durationMs": 12599.5684
+    },
+    {
+      "label": "lint",
+      "exitCode": 0,
+      "durationMs": 7227.3121999999985
+    },
+    {
+      "label": "build",
+      "exitCode": 0,
+      "durationMs": 11043.71
+    }
+  ],
+  "networkGuard": {
+    "version": "v2",
+    "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "records": 0,
+    "blockedRecords": 0,
+    "blockedLocalIPC": 0,
+    "demonstratedRemoteAttempts": 0,
+    "allowedLocalNamedPipes": 0,
+    "caveat": null
+  },
+  "cleanup": {
+    "remainingFixtureDirectories": [],
+    "removalAttempts": 0,
+    "removalErrors": [],
+    "pathsStillExist": [],
+    "children": [],
+    "relevantFixtureProcessesAfterRun": [],
+    "noObservedOrphanProcesses": true
+  }
+}

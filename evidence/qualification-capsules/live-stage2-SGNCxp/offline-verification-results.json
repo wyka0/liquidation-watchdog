@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "status": "FAIL",
+  "startedAt": "2026-11-05T23:57:47.069Z",
+  "completedAt": "2026-11-05T23:57:49.722Z",
+  "checks": [
+    {
+      "name": "LIVE_ARTIFACT_BYTE_HASHES",
+      "status": "PASS",
+      "detail": {
+        "count": 12,
+        "mainEvidenceSha256": "f94ec2761c77d2ddb219c8215dd3b6ac0ee9836ced59798c36740fe19f6b2124"
+      }
+    },
+    {
+      "name": "IDENTITY_CONFIGURATION_AND_REVIEWED_SOURCE_HASHES",
+      "status": "PASS",
+      "detail": {
+        "sourceReferences": 6,
+        "scope": "1d9d31ed07649d3c00247bb62b508432ece0d26c3f29ab74b8ff82fa7325eb61",
+        "positionId": "2868fdc6591f5ec9674c9a33febfd27023f136783e11c24cb6dbd5f82994a06f",
+        "historicalDataUsedAsCurrentInput": false,
+        "newBlockDelta": "2423"
+      }
+    },
+    {
+      "name": "CANONICAL_SNAPSHOT_AND_ASSURANCE_REFERENCE_BINDINGS",
+      "status": "PASS",
+      "detail": {
+        "canonicalSnapshotIdentifier": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+        "snapshotFileSha256": "c4df894aeb206fa42c808525a47b5ed7524f54d9915b354e8f01e3a5c770938a",
+        "schemaParsedSnapshotSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+        "assuranceReferencesChecked": 33,
+        "supplementalSha256": "ee8b81e3c10b119d7f94688c923d7953b3fd4202965d144b6c23bc41ad3e06f6",
+        "explanation": "Canonical typed identity, captured-file bytes and schema-parsed serialization hashes are deliberately distinct."
+      }
+    },
+    {
+      "name": "PURE_CAPTURED_PIPELINE_REPRODUCTION",
+      "status": "PASS",
+      "detail": {
+        "accepted": true,
+        "alertCodes": [
+          "INITIAL_RISK",
+          "DATA_QUALITY_CHANGED",
+          "ORACLE_QUALITY_CHANGED"
+        ],
+        "newLiveReads": 0,
+        "monitoringServiceInvocations": 0,
+        "progression": "UNKNOWN/FIRST_OBSERVATION",
+        "financialOptionsGenerated": 0
+      }
+    },
+    {
+      "name": "PINNED_GETTER_REDECODING_AND_PRODUCTION_CROSS_CHECKS",
+      "status": "PASS",
+      "detail": {
+        "directGetters": 10,
+        "productionComparisons": 58,
+        "sentinels": 6,
+        "contracts": 10,
+        "mixedBlockProductionReads": 0,
+        "beforeAfterHeaderSets": 2,
+        "providerIndependence": "RPC_MCP_SHARED_UPSTREAM_NOT_INDEPENDENT"
+      }
+    },
+    {
+      "name": "SEPARATE_INTEGER_ACCOUNTING_AND_THRESHOLD_RECHECK",
+      "status": "PASS",
+      "detail": {
+        "fields": 17,
+        "debt": "18001980562580",
+        "collateral": "18706585513096000000000000",
+        "safetyRatioWad": "1052543254080507595",
+        "mathematical": "CRITICAL",
+        "effective": "DATA_UNVERIFIED",
+        "liquidationEligibilityProven": false
+      }
+    },
+    {
+      "name": "ACTUAL_CONSOLE_BYTES_TIMESTAMPS_AND_ONE_TYPED_ACTION",
+      "status": "PASS",
+      "detail": {
+        "alerts": 3,
+        "actionsPerAlert": 1,
+        "generatedNonFinancialActions": 3,
+        "financialOptions": 0,
+        "actualConsoleTranscriptBytes": 3664,
+        "actualConsoleTranscriptSha256": "1fa8721cd6de619e98f3ac46837627e02eb7f39bff042d6df0bd7168a938aaa8"
+      }
+    },
+    {
+      "name": "BOUNDED_ORACLE_AUDIT_REDECODING_AND_GAP_CHECK",
+      "status": "PASS",
+      "detail": {
+        "requests": 44,
+        "configurationEvents": 0,
+        "updateSamples": 2,
+        "signedSamples": [
+          {
+            "transactionHash": "0xf4e5dbc3bca19c58e5c6b5eac7cbad45769a9ead1f7379292599780d2b73fbb4",
+            "recoveredSignatures": 4,
+            "reportAndReceiptMatched": true,
+            "workflowAllowedAtTransactionBlock": true,
+            "historicalSignerOperatorIdentityProven": false
+          },
+          {
+            "transactionHash": "0xd549e17fc2b8ca9170091e9884df6baefca6ee9f6ff1f4de8fb1218438680b09",
+            "recoveredSignatures": 4,
+            "reportAndReceiptMatched": true,
+            "workflowAllowedAtTransactionBlock": true,
+            "historicalSignerOperatorIdentityProven": false
+          }
+        ],
+        "sampledCurrentSigners": 10,
+        "f": 3,
+        "currentAndHistoricalMembershipKeptDistinct": true,
+        "observedIntervalSeconds": "3601",
+        "intervalIsHeartbeatGuarantee": false,
+        "freshness": "UNKNOWN",
+        "independentValidation": "NOT_CONFIGURED",
+        "financialRecoveryEligible": false
+      }
+    }
+  ],
+  "network": {
+    "fetchAttempts": 0,
+    "socketAttempts": 0
+  },
+  "error": {
+    "name": "AssertionError",
+    "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   [Object: null prototype] {\n-   {\n      ambiguous: 0,\n      attempt: 1,\n      completed_at: '2026-11-05T23:48:20.483Z',\n      error_code: null,\n      outcome: 'DELIVERED',\n"
+  }
+}

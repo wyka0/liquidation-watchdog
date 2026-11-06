@@ -1,0 +1,42 @@
+﻿{
+    "monitorStarted":  false,
+    "repositoryWrites":  0,
+    "observedAtUtc":  "2026-11-06T14:19:34.0501951Z",
+    "authenticated":  false,
+    "paidService":  false,
+    "results":  [
+                    {
+                        "url":  "https://docs.pharos.xyz/tooling-and-infrastructure/oracles/chainlink-pe.md",
+                        "contentType":  "text/markdown; charset=utf-8",
+                        "completedAt":  "2026-11-06T14:19:01.6718319Z",
+                        "name":  "pharos-chainlink-push-engine",
+                        "bytes":  8722,
+                        "bodyPath":  "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\stage4-oracle-reads\\pharos-chainlink-push-engine.body.txt",
+                        "status":  200,
+                        "beganAt":  "2026-11-06T14:18:59.2082971Z",
+                        "sha256":  "5d2c0bab0cb7a190ab7f37e327662427a2709fdb6e4905e74e57ae530e110b42"
+                    },
+                    {
+                        "url":  "https://docs.chain.link/data-streams/exchange-rate-streams",
+                        "contentType":  "text/html; charset=utf-8",
+                        "completedAt":  "2026-11-06T14:19:33.3069784Z",
+                        "name":  "chainlink-exchange-rate-streams",
+                        "bytes":  16942643,
+                        "bodyPath":  "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\stage4-oracle-reads\\chainlink-exchange-rate-streams.body.txt",
+                        "status":  200,
+                        "beganAt":  "2026-11-06T14:19:01.9105807Z",
+                        "sha256":  "c235f9a7f951c5e7aae6c7083a4ea540f2459692d743e206551d1ad4d0a8eeb1"
+                    },
+                    {
+                        "url":  "https://api.dexscreener.com/token-pairs/v1/pharos/0x4809010926aec940b550D34a46A52739f996D75D",
+                        "contentType":  "application/json; charset=utf-8",
+                        "completedAt":  "2026-11-06T14:19:34.0469933Z",
+                        "name":  "dexscreener-pharos-collateral",
+                        "bytes":  2,
+                        "bodyPath":  "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\stage4-oracle-reads\\dexscreener-pharos-collateral.body.txt",
+                        "status":  200,
+                        "beganAt":  "2026-11-06T14:19:33.3647593Z",
+                        "sha256":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                    }
+                ]
+}

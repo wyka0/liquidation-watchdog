@@ -1,0 +1,162 @@
+{
+  "requestedAt": "2026-11-06T15:06:55.245Z",
+  "requestCount": 4,
+  "composition": {
+    "A": {
+      "BASE_VAULT": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "BASE_VAULT_CONVERSION_SAMPLE": "1000000000000000000",
+      "BASE_FEED_1": "0x0000000000000000000000000000000000000000",
+      "BASE_FEED_2": "0x0000000000000000000000000000000000000000",
+      "QUOTE_VAULT": "0x0000000000000000000000000000000000000000",
+      "QUOTE_VAULT_CONVERSION_SAMPLE": "1",
+      "QUOTE_FEED_1": "0x0000000000000000000000000000000000000000",
+      "QUOTE_FEED_2": "0x0000000000000000000000000000000000000000",
+      "SCALE_FACTOR": "1000000000000000000",
+      "price": "1010541000000000000000000"
+    },
+    "B": {
+      "BASE_VAULT": "0x0000000000000000000000000000000000000000",
+      "BASE_VAULT_CONVERSION_SAMPLE": "1",
+      "BASE_FEED_1": "0x36Aff5A272c80B3222c0C9138f2D43c7FAE2F372",
+      "BASE_FEED_2": "0x0000000000000000000000000000000000000000",
+      "QUOTE_VAULT": "0x0000000000000000000000000000000000000000",
+      "QUOTE_VAULT_CONVERSION_SAMPLE": "1",
+      "QUOTE_FEED_1": "0x0000000000000000000000000000000000000000",
+      "QUOTE_FEED_2": "0x0000000000000000000000000000000000000000",
+      "SCALE_FACTOR": "1000000",
+      "price": "1093776084463388736000000"
+    },
+    "S2": {
+      "BASE_VAULT": "0x0000000000000000000000000000000000000000",
+      "BASE_VAULT_CONVERSION_SAMPLE": "1",
+      "BASE_FEED_1": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+      "BASE_FEED_2": "0x0000000000000000000000000000000000000000",
+      "QUOTE_VAULT": "0x0000000000000000000000000000000000000000",
+      "QUOTE_VAULT_CONVERSION_SAMPLE": "1",
+      "QUOTE_FEED_1": "0x0000000000000000000000000000000000000000",
+      "QUOTE_FEED_2": "0x0000000000000000000000000000000000000000",
+      "SCALE_FACTOR": "1000000",
+      "price": "1107107280438850911000000"
+    }
+  },
+  "feeds": {
+    "0x36Aff5A272c80B3222c0C9138f2D43c7FAE2F372": {
+      "typeAndVersion": "SelfManagedFeedsCacheProxy 1.0.0",
+      "description": "SelfManagedFeedsCacheProxy",
+      "decimals": 18,
+      "owner": "0x007DB8D5b32015E34f63Cf5312505ADf03Fcca5d",
+      "getFeedId": "0x0007690a1667f3978924aa34b16a46ab12fcaae1b012c2f348905cb8299f58b7",
+      "aggregator": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "latestAnswer": "1093776084463388736",
+      "latestTimestamp": "1793977477",
+      "latestRoundData": [
+        "0",
+        "1093776084463388736",
+        "1793977477",
+        "1793977477",
+        "0"
+      ]
+    },
+    "0xb5779919e2F183e59A34140331F7779cbFF1d1BC": {
+      "typeAndVersion": "SelfManagedFeedsCacheProxy 1.0.0",
+      "description": "SelfManagedFeedsCacheProxy",
+      "decimals": 18,
+      "owner": "0x007DB8D5b32015E34f63Cf5312505ADf03Fcca5d",
+      "getFeedId": "0x0007c129e624689953a2636c014531b2f0bd0c15f9a22211f53023354f309fa6",
+      "aggregator": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "latestAnswer": "1107107280438850911",
+      "latestTimestamp": "1793975075",
+      "latestRoundData": [
+        "0",
+        "1107107280438850911",
+        "1793975075",
+        "1793975075",
+        "0"
+      ]
+    }
+  },
+  "stage2Position": {
+    "0x086eb9C2B14dD657ae77D07dF9115A2F946CE327": {
+      "supplyShares": "0",
+      "borrowShares": "17768613114986061183",
+      "collateral": "18706585513096000000000000"
+    }
+  },
+  "problems": [
+    {
+      "note": "COMP_RAW_NULL",
+      "subject": "A",
+      "fn": "BASE_TOKEN_DECIMALS"
+    },
+    {
+      "note": "COMP_RAW_NULL",
+      "subject": "A",
+      "fn": "QUOTE_TOKEN_DECIMALS"
+    },
+    {
+      "note": "COMP_RAW_NULL",
+      "subject": "B",
+      "fn": "BASE_TOKEN_DECIMALS"
+    },
+    {
+      "note": "COMP_RAW_NULL",
+      "subject": "B",
+      "fn": "QUOTE_TOKEN_DECIMALS"
+    },
+    {
+      "note": "COMP_RAW_NULL",
+      "subject": "S2",
+      "fn": "BASE_TOKEN_DECIMALS"
+    },
+    {
+      "note": "COMP_RAW_NULL",
+      "subject": "S2",
+      "fn": "QUOTE_TOKEN_DECIMALS"
+    },
+    {
+      "note": "FEED_RAW_NULL",
+      "subject": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "fn": "typeAndVersion"
+    },
+    {
+      "note": "FEED_RAW_NULL",
+      "subject": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "fn": "description"
+    },
+    {
+      "note": "FEED_RAW_NULL",
+      "subject": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "fn": "decimals"
+    },
+    {
+      "note": "FEED_RAW_NULL",
+      "subject": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "fn": "owner"
+    },
+    {
+      "note": "FEED_RAW_NULL",
+      "subject": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "fn": "getFeedId"
+    },
+    {
+      "note": "FEED_RAW_NULL",
+      "subject": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "fn": "aggregator"
+    },
+    {
+      "note": "FEED_RAW_NULL",
+      "subject": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "fn": "latestAnswer"
+    },
+    {
+      "note": "FEED_RAW_NULL",
+      "subject": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "fn": "latestTimestamp"
+    },
+    {
+      "note": "FEED_RAW_NULL",
+      "subject": "0x921974d7B1a2dbACcaf5ba893A3A1500638Cea6B",
+      "fn": "latestRoundData"
+    }
+  ]
+}

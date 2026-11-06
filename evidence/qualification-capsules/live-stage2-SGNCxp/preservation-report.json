@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "startedAt": "2026-11-06T00:07:48.264Z",
+  "completedAt": "2026-11-06T00:09:12.001Z",
+  "baselineFile": "baseline.json",
+  "baselineSha256": "1e1af2b6634c7c1c905be7cc28ed0ef8eb3813aac7c0184935b7fdd88fe0f7fb",
+  "baselineEntries": 22029,
+  "currentEntries": 22029,
+  "baselineBytes": 273681577,
+  "currentBytes": 273681577,
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "gitUnchanged": true,
+  "git": {
+    "index": {
+      "bytes": 65736,
+      "sha256": "99b8af3c5aa3985d32e6bf62f4a2e114914f00dacd52fd1f0107fe2ef7a44689"
+    },
+    "status": {
+      "exitCode": 0,
+      "stdoutBytes": 145929,
+      "stdoutSha256": "9abc13be3ff117a1b0d06a8cfd5ff6ca7e17f782fee7a3f25f95da7cfc8e0b8c",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stagedDiff": {
+      "exitCode": 0,
+      "stdoutBytes": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "worktreeDiff": {
+      "exitCode": 0,
+      "stdoutBytes": 29694918,
+      "stdoutSha256": "557575cc35f0368f8ccb6f25a338f17f0329f5b630c3a69d3c9a6c9a2378ac30",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "head": {
+      "exitCode": 128,
+      "stdoutBytes": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrBytes": 32,
+      "stderrSha256": "9b3fab22fc89a33cf7f4e9d08072e43f29c2999ed2af63b6e8417b2ce9d534b4"
+    },
+    "symbolicHead": {
+      "exitCode": 0,
+      "stdoutBytes": 18,
+      "stdoutSha256": "48583181859e65c7656874783518080ae7cc67c0b1a8116fef61d317f02982ad",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "indexUnchanged": true
+}

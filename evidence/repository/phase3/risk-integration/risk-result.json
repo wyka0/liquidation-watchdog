@@ -1,0 +1,541 @@
+{
+  "chainId": 1672,
+  "protocol": "Morpho Blue",
+  "morphoAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+  "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+  "account": "0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7",
+  "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+  "blockNumber": "21859852",
+  "blockHash": "0x1fcab2cf5b32dbce1e1e40650779431956247f177d1daae67eab5aa7e5e40d61",
+  "blockTimestamp": "1793548514",
+  "evidenceKind": "LIVE_CHAIN_READ",
+  "temporalContext": "LIVE_AS_OF_BLOCK",
+  "snapshotRetrievedAt": "2026-11-01T15:55:54.855Z",
+  "inputSnapshotIdentifier": "sha256:d00d4f5cc56683b0665618bf0ad27b4a07c9dca4ba4cb33ceeeb65eb44f4a050",
+  "schemaVersion": 1,
+  "calculationVersion": "1.0.0",
+  "calculatedAt": "2026-11-01T15:55:54.959Z",
+  "ratioScale": "1000000000000000000",
+  "collateralAmount": "316838566331327720653953",
+  "collateralValue": "350485520974",
+  "debtAmount": "273633180835",
+  "liquidationCapacity": "320694251691",
+  "ltv": "780726062733127505",
+  "safetyRatio": "1171985980327355426",
+  "capacityRelation": "ABOVE_DEBT",
+  "mathematicalRiskState": "WARNING",
+  "riskState": "DATA_UNVERIFIED",
+  "dataQuality": {
+    "overall": "UNVERIFIED",
+    "oracle": "UNVERIFIED",
+    "sourceSnapshot": "UNVERIFIED",
+    "findings": [
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "ORACLE_SOURCE_UNVERIFIED",
+        "message": "The upstream workflow and exact feed identity are not independently established."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "ORACLE_OPERATOR_UNVERIFIED",
+        "message": "On-chain controller addresses are observable; their operator identities are unverified."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "HEARTBEAT_UNVERIFIED",
+        "message": "No verified heartbeat or maximum acceptable price age exists for this feed."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "SOURCE_SCOPE_QUALITY",
+        "message": "The Phase 1 oracle scope reports UNVERIFIED."
+      },
+      {
+        "scope": "snapshot",
+        "status": "UNVERIFIED",
+        "code": "SOURCE_SNAPSHOT_QUALITY",
+        "message": "The source snapshot reports UNVERIFIED."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "SOURCE_ORACLE_QUALITY",
+        "message": "The source oracle reports UNVERIFIED."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "ORACLE_SOURCE_UNVERIFIED",
+        "message": "The upstream workflow and exact feed identity are not independently established."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "ORACLE_OPERATOR_UNVERIFIED",
+        "message": "On-chain controller addresses are observable; their operator identities are unverified."
+      },
+      {
+        "scope": "oracle",
+        "status": "UNVERIFIED",
+        "code": "HEARTBEAT_UNVERIFIED",
+        "message": "No verified heartbeat or maximum acceptable price age exists for this feed."
+      }
+    ]
+  },
+  "actionability": {
+    "actionable": false,
+    "status": "INDICATIVE_ONLY",
+    "reasons": [
+      "The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.",
+      "Phase 2 produces snapshot-bound calculations only; mathematical bands do not establish liquidation eligibility or protection."
+    ]
+  },
+  "actionable": false,
+  "indicative": true,
+  "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+  "oraclePrice": "1106195893489863929000000",
+  "oracleTimestamp": "1793546675",
+  "oraclePolicy": {
+    "sourceVerified": false,
+    "operatorIdentityVerified": false,
+    "timestampSemanticsVerified": true,
+    "timestampMeaning": "Report observationsTimestamp supplied by the authorized workflow; not block inclusion or independent price validation time.",
+    "heartbeatSeconds": null,
+    "heartbeatVerified": false,
+    "expectedUpdateFrequency": "UNVERIFIED; sample update intervals do not establish a heartbeat.",
+    "stalenessEnforcedOnchain": false,
+    "references": [
+      "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xb5779919e2f183e59a34140331f7779cbff1d1bc/src/SelfManagedFeedsCacheProxy.sol",
+      "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xd9f00c86ced2de92f6b7152b0492cb28edc4b5a8/src/SelfManagedFeedsCache.sol",
+      "https://github.com/morpho-org/morpho-blue-oracles/tree/v2.0.0"
+    ]
+  },
+  "tokens": {
+    "loan": {
+      "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "decimals": 6,
+      "name": "USDC",
+      "symbol": "USDC"
+    },
+    "collateral": {
+      "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+      "decimals": 18,
+      "name": "Wrapped Savings rUSD",
+      "symbol": "wsrUSD"
+    }
+  },
+  "thresholdConfiguration": {
+    "scale": "1000000000000000000",
+    "decimal": {
+      "warningRatio": "1.30",
+      "criticalRatio": "1.10",
+      "targetRatio": "1.25",
+      "liquidationBoundary": "1.00"
+    },
+    "wad": {
+      "warningRatio": "1300000000000000000",
+      "criticalRatio": "1100000000000000000",
+      "targetRatio": "1250000000000000000",
+      "liquidationBoundary": "1000000000000000000"
+    }
+  },
+  "repayment": {
+    "chainId": 1672,
+    "protocol": "Morpho Blue",
+    "morphoAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+    "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+    "account": "0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7",
+    "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+    "blockNumber": "21859852",
+    "blockHash": "0x1fcab2cf5b32dbce1e1e40650779431956247f177d1daae67eab5aa7e5e40d61",
+    "blockTimestamp": "1793548514",
+    "evidenceKind": "LIVE_CHAIN_READ",
+    "temporalContext": "LIVE_AS_OF_BLOCK",
+    "snapshotRetrievedAt": "2026-11-01T15:55:54.855Z",
+    "inputSnapshotIdentifier": "sha256:d00d4f5cc56683b0665618bf0ad27b4a07c9dca4ba4cb33ceeeb65eb44f4a050",
+    "calculatedAt": "2026-11-01T15:55:54.959Z",
+    "calculationMethod": "morpho-v1.0.0/minimum-assets-binary-search/full-share-endpoint",
+    "calculationVersion": "1.0.0",
+    "ratioScale": "1000000000000000000",
+    "targetRatio": "1250000000000000000",
+    "thresholdConfiguration": {
+      "scale": "1000000000000000000",
+      "decimal": {
+        "warningRatio": "1.30",
+        "criticalRatio": "1.10",
+        "targetRatio": "1.25",
+        "liquidationBoundary": "1.00"
+      },
+      "wad": {
+        "warningRatio": "1300000000000000000",
+        "criticalRatio": "1100000000000000000",
+        "targetRatio": "1250000000000000000",
+        "liquidationBoundary": "1000000000000000000"
+      }
+    },
+    "tokens": {
+      "loan": {
+        "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "decimals": 6,
+        "name": "USDC",
+        "symbol": "USDC"
+      },
+      "collateral": {
+        "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+        "decimals": 18,
+        "name": "Wrapped Savings rUSD",
+        "symbol": "wsrUSD"
+      }
+    },
+    "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+    "oraclePrice": "1106195893489863929000000",
+    "oracleTimestamp": "1793546675",
+    "oraclePolicy": {
+      "sourceVerified": false,
+      "operatorIdentityVerified": false,
+      "timestampSemanticsVerified": true,
+      "timestampMeaning": "Report observationsTimestamp supplied by the authorized workflow; not block inclusion or independent price validation time.",
+      "heartbeatSeconds": null,
+      "heartbeatVerified": false,
+      "expectedUpdateFrequency": "UNVERIFIED; sample update intervals do not establish a heartbeat.",
+      "stalenessEnforcedOnchain": false,
+      "references": [
+        "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xb5779919e2f183e59a34140331f7779cbff1d1bc/src/SelfManagedFeedsCacheProxy.sol",
+        "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xd9f00c86ced2de92f6b7152b0492cb28edc4b5a8/src/SelfManagedFeedsCache.sol",
+        "https://github.com/morpho-org/morpho-blue-oracles/tree/v2.0.0"
+      ]
+    },
+    "dataQuality": {
+      "overall": "UNVERIFIED",
+      "oracle": "UNVERIFIED",
+      "sourceSnapshot": "UNVERIFIED",
+      "findings": [
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "ORACLE_SOURCE_UNVERIFIED",
+          "message": "The upstream workflow and exact feed identity are not independently established."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "ORACLE_OPERATOR_UNVERIFIED",
+          "message": "On-chain controller addresses are observable; their operator identities are unverified."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "HEARTBEAT_UNVERIFIED",
+          "message": "No verified heartbeat or maximum acceptable price age exists for this feed."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "SOURCE_SCOPE_QUALITY",
+          "message": "The Phase 1 oracle scope reports UNVERIFIED."
+        },
+        {
+          "scope": "snapshot",
+          "status": "UNVERIFIED",
+          "code": "SOURCE_SNAPSHOT_QUALITY",
+          "message": "The source snapshot reports UNVERIFIED."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "SOURCE_ORACLE_QUALITY",
+          "message": "The source oracle reports UNVERIFIED."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "ORACLE_SOURCE_UNVERIFIED",
+          "message": "The upstream workflow and exact feed identity are not independently established."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "ORACLE_OPERATOR_UNVERIFIED",
+          "message": "On-chain controller addresses are observable; their operator identities are unverified."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "HEARTBEAT_UNVERIFIED",
+          "message": "No verified heartbeat or maximum acceptable price age exists for this feed."
+        }
+      ]
+    },
+    "actionability": {
+      "actionable": false,
+      "status": "INDICATIVE_ONLY",
+      "reasons": [
+        "The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.",
+        "Phase 2 produces snapshot-bound calculations only; mathematical bands do not establish liquidation eligibility or protection."
+      ]
+    },
+    "actionable": false,
+    "indicative": true,
+    "roundingMethod": [
+      "allowedDebt=floor(capacity*WAD/target)",
+      "Partial asset repayment burns floor(assets*(totalShares+1e6)/(totalAssets+1)) shares.",
+      "Full repayment uses all borrower shares and ceil(shares*(totalAssets+1)/(totalShares+1e6)) assets.",
+      "Remaining debt is rounded up using updated market totals; verify the candidate and one loan-base-unit less."
+    ],
+    "assumptions": [
+      "Each estimate is a separate hypothetical operation at the identified snapshot block and hash.",
+      "Oracle price, LLTV and token units are held constant throughout each modeled operation.",
+      "The starting debt is accrued to the snapshot; no later interest, other market activity or bad-debt changes are modeled.",
+      "Repayment changes market borrow assets/shares exactly as Morpho v1.0.0; collateral addition holds that accrued debt fixed.",
+      "Amounts describe protocol accounting with fully credited token transfers; gas, wallet funding and execution availability are outside the model.",
+      "A real transaction at a later state is not guaranteed to reproduce these numbers."
+    ],
+    "warnings": [
+      "The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.",
+      "ORACLE_SOURCE_UNVERIFIED: The upstream workflow and exact feed identity are not independently established.",
+      "ORACLE_OPERATOR_UNVERIFIED: On-chain controller addresses are observable; their operator identities are unverified.",
+      "HEARTBEAT_UNVERIFIED: No verified heartbeat or maximum acceptable price age exists for this feed.",
+      "SOURCE_SCOPE_QUALITY: The Phase 1 oracle scope reports UNVERIFIED.",
+      "SOURCE_SNAPSHOT_QUALITY: The source snapshot reports UNVERIFIED.",
+      "SOURCE_ORACLE_QUALITY: The source oracle reports UNVERIFIED."
+    ],
+    "status": "CALCULATED",
+    "calculation": {
+      "targetRatioWad": "1250000000000000000",
+      "allowedDebt": "256555401352",
+      "initialRepaymentEstimate": "17077779483",
+      "repaymentAmount": "17077779483",
+      "modeledPostRepaymentDebt": "256555401352",
+      "modeledResultingRatioWad": "1250000000003897793",
+      "simulation": {
+        "mode": "ASSETS",
+        "assets": "17077779483",
+        "sharesBurned": "16867265393881428",
+        "remainingBorrowShares": "253392898481392245",
+        "remainingTotalBorrowShares": "5307302180660591974",
+        "remainingTotalBorrowAssets": "5373540652526",
+        "remainingDebt": "256555401352"
+      },
+      "roundingMargin": {
+        "repaymentAboveInitialEstimate": "0",
+        "debtHeadroomBelowAllowed": "0"
+      },
+      "proof": {
+        "targetSatisfied": true,
+        "minimumProven": true,
+        "previousAmount": "17077779482",
+        "previousAmountPostDebt": "256555401353",
+        "searchIterations": 38
+      }
+    },
+    "amount": {
+      "raw": "17077779483",
+      "formatted": "17077.779483",
+      "tokenAddress": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "symbol": "USDC",
+      "decimals": 6
+    },
+    "issue": null
+  },
+  "additionalCollateral": {
+    "chainId": 1672,
+    "protocol": "Morpho Blue",
+    "morphoAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+    "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+    "account": "0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7",
+    "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+    "blockNumber": "21859852",
+    "blockHash": "0x1fcab2cf5b32dbce1e1e40650779431956247f177d1daae67eab5aa7e5e40d61",
+    "blockTimestamp": "1793548514",
+    "evidenceKind": "LIVE_CHAIN_READ",
+    "temporalContext": "LIVE_AS_OF_BLOCK",
+    "snapshotRetrievedAt": "2026-11-01T15:55:54.855Z",
+    "inputSnapshotIdentifier": "sha256:d00d4f5cc56683b0665618bf0ad27b4a07c9dca4ba4cb33ceeeb65eb44f4a050",
+    "calculatedAt": "2026-11-01T15:55:54.959Z",
+    "calculationMethod": "morpho-v1.0.0/nested-ceilings/forward-minimality-proof",
+    "calculationVersion": "1.0.0",
+    "ratioScale": "1000000000000000000",
+    "targetRatio": "1250000000000000000",
+    "thresholdConfiguration": {
+      "scale": "1000000000000000000",
+      "decimal": {
+        "warningRatio": "1.30",
+        "criticalRatio": "1.10",
+        "targetRatio": "1.25",
+        "liquidationBoundary": "1.00"
+      },
+      "wad": {
+        "warningRatio": "1300000000000000000",
+        "criticalRatio": "1100000000000000000",
+        "targetRatio": "1250000000000000000",
+        "liquidationBoundary": "1000000000000000000"
+      }
+    },
+    "tokens": {
+      "loan": {
+        "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "decimals": 6,
+        "name": "USDC",
+        "symbol": "USDC"
+      },
+      "collateral": {
+        "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+        "decimals": 18,
+        "name": "Wrapped Savings rUSD",
+        "symbol": "wsrUSD"
+      }
+    },
+    "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+    "oraclePrice": "1106195893489863929000000",
+    "oracleTimestamp": "1793546675",
+    "oraclePolicy": {
+      "sourceVerified": false,
+      "operatorIdentityVerified": false,
+      "timestampSemanticsVerified": true,
+      "timestampMeaning": "Report observationsTimestamp supplied by the authorized workflow; not block inclusion or independent price validation time.",
+      "heartbeatSeconds": null,
+      "heartbeatVerified": false,
+      "expectedUpdateFrequency": "UNVERIFIED; sample update intervals do not establish a heartbeat.",
+      "stalenessEnforcedOnchain": false,
+      "references": [
+        "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xb5779919e2f183e59a34140331f7779cbff1d1bc/src/SelfManagedFeedsCacheProxy.sol",
+        "https://smart-contract-verify-service-4lladlc2eq-uc.a.run.app/v1/contract_verify/files/1672/0xd9f00c86ced2de92f6b7152b0492cb28edc4b5a8/src/SelfManagedFeedsCache.sol",
+        "https://github.com/morpho-org/morpho-blue-oracles/tree/v2.0.0"
+      ]
+    },
+    "dataQuality": {
+      "overall": "UNVERIFIED",
+      "oracle": "UNVERIFIED",
+      "sourceSnapshot": "UNVERIFIED",
+      "findings": [
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "ORACLE_SOURCE_UNVERIFIED",
+          "message": "The upstream workflow and exact feed identity are not independently established."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "ORACLE_OPERATOR_UNVERIFIED",
+          "message": "On-chain controller addresses are observable; their operator identities are unverified."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "HEARTBEAT_UNVERIFIED",
+          "message": "No verified heartbeat or maximum acceptable price age exists for this feed."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "SOURCE_SCOPE_QUALITY",
+          "message": "The Phase 1 oracle scope reports UNVERIFIED."
+        },
+        {
+          "scope": "snapshot",
+          "status": "UNVERIFIED",
+          "code": "SOURCE_SNAPSHOT_QUALITY",
+          "message": "The source snapshot reports UNVERIFIED."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "SOURCE_ORACLE_QUALITY",
+          "message": "The source oracle reports UNVERIFIED."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "ORACLE_SOURCE_UNVERIFIED",
+          "message": "The upstream workflow and exact feed identity are not independently established."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "ORACLE_OPERATOR_UNVERIFIED",
+          "message": "On-chain controller addresses are observable; their operator identities are unverified."
+        },
+        {
+          "scope": "oracle",
+          "status": "UNVERIFIED",
+          "code": "HEARTBEAT_UNVERIFIED",
+          "message": "No verified heartbeat or maximum acceptable price age exists for this feed."
+        }
+      ]
+    },
+    "actionability": {
+      "actionable": false,
+      "status": "INDICATIVE_ONLY",
+      "reasons": [
+        "The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.",
+        "Phase 2 produces snapshot-bound calculations only; mathematical bands do not establish liquidation eligibility or protection."
+      ]
+    },
+    "actionable": false,
+    "indicative": true,
+    "roundingMethod": [
+      "Invert capacity, LLTV and oracle scaling with three explicit ceiling divisions.",
+      "Forward-check the two Morpho floor divisions and verify one collateral-base-unit less."
+    ],
+    "assumptions": [
+      "Each estimate is a separate hypothetical operation at the identified snapshot block and hash.",
+      "Oracle price, LLTV and token units are held constant throughout each modeled operation.",
+      "The starting debt is accrued to the snapshot; no later interest, other market activity or bad-debt changes are modeled.",
+      "Repayment changes market borrow assets/shares exactly as Morpho v1.0.0; collateral addition holds that accrued debt fixed.",
+      "Amounts describe protocol accounting with fully credited token transfers; gas, wallet funding and execution availability are outside the model.",
+      "A real transaction at a later state is not guaranteed to reproduce these numbers."
+    ],
+    "warnings": [
+      "The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.",
+      "ORACLE_SOURCE_UNVERIFIED: The upstream workflow and exact feed identity are not independently established.",
+      "ORACLE_OPERATOR_UNVERIFIED: On-chain controller addresses are observable; their operator identities are unverified.",
+      "HEARTBEAT_UNVERIFIED: No verified heartbeat or maximum acceptable price age exists for this feed.",
+      "SOURCE_SCOPE_QUALITY: The Phase 1 oracle scope reports UNVERIFIED.",
+      "SOURCE_SNAPSHOT_QUALITY: The source snapshot reports UNVERIFIED.",
+      "SOURCE_ORACLE_QUALITY: The source oracle reports UNVERIFIED."
+    ],
+    "status": "CALCULATED",
+    "calculation": {
+      "targetRatioWad": "1250000000000000000",
+      "requiredCapacity": "342041476044",
+      "requiredCollateralValue": "373815820814",
+      "requiredCollateral": "337929134445322612020442",
+      "additionalCollateral": "21090568113994891366489",
+      "modeledNewCollateral": "337929134445322612020442",
+      "modeledCollateralValue": "373815820814",
+      "modeledCapacity": "342041476044",
+      "modeledPostAdditionRatioWad": "1250000000000913631",
+      "roundingMargin": {
+        "capacitySurplus": "0",
+        "correctionCollateralUnits": "0"
+      },
+      "proof": {
+        "targetSatisfied": true,
+        "minimumProven": true,
+        "previousCollateralCapacity": "342041476043"
+      }
+    },
+    "amount": {
+      "raw": "21090568113994891366489",
+      "formatted": "21090.568113994891366489",
+      "tokenAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+      "symbol": "wsrUSD",
+      "decimals": 18
+    },
+    "issue": null
+  },
+  "warnings": [
+    "The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.",
+    "ORACLE_SOURCE_UNVERIFIED: The upstream workflow and exact feed identity are not independently established.",
+    "ORACLE_OPERATOR_UNVERIFIED: On-chain controller addresses are observable; their operator identities are unverified.",
+    "HEARTBEAT_UNVERIFIED: No verified heartbeat or maximum acceptable price age exists for this feed.",
+    "SOURCE_SCOPE_QUALITY: The Phase 1 oracle scope reports UNVERIFIED.",
+    "SOURCE_SNAPSHOT_QUALITY: The source snapshot reports UNVERIFIED.",
+    "SOURCE_ORACLE_QUALITY: The source oracle reports UNVERIFIED."
+  ]
+}

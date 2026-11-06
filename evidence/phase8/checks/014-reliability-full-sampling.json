@@ -1,0 +1,12 @@
+{
+  "command": "node --import tsx scripts/phase8-reliability.ts evidence/phase8/runtime-reliability-full.json",
+  "workingDirectory": "C:\\liquidation-watchdog",
+  "startedAt": "2026-11-02T14:46:24.303Z",
+  "finishedAt": "2026-11-02T14:46:40.871Z",
+  "durationMs": 16565,
+  "exitCode": 0,
+  "signal": null,
+  "runnerError": null,
+  "stdout": "{\"passed\":true,\"sessions\":3,\"cycles\":24,\"apiRequests\":72,\"peakRssBytes\":255627264,\"backup\":true,\"restore\":true}\n",
+  "stderr": "(node:1456) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+}

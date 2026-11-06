@@ -1,0 +1,67 @@
+Liquidation Watchdog — Phase 2 risk calculation
+Evidence: LIVE_AS_OF_BLOCK | source LIVE_CHAIN_READ
+Network: chain 1672 | Morpho Blue | Morpho 0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+Account: 0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7 (public demonstration account; NOT the user's wallet)
+Block: 21859852 | 2026-11-01T15:55:14.000Z
+Block hash: 0x1fcab2cf5b32dbce1e1e40650779431956247f177d1daae67eab5aa7e5e40d61
+Input snapshot: sha256:d00d4f5cc56683b0665618bf0ad27b4a07c9dca4ba4cb33ceeeb65eb44f4a050
+Retrieved: 2026-11-01T15:55:54.855Z | calculated: 2026-11-01T15:55:54.959Z
+Collateral: 316838.566331327720653953 wsrUSD
+Accrued debt: 273633.180835 USDC
+Indicative collateral value: 350485.520974 USDC
+Indicative liquidation capacity: 320694.251691 USDC
+Indicative LTV: 78.0726062733127505%
+Indicative Morpho safety ratio (capacity/debt): 1.171985980327355426
+Thresholds: warning 1.30 | critical 1.10 | target 1.25 | boundary 1.00
+Mathematical risk state: WARNING
+Quality-gated risk state: DATA_UNVERIFIED
+Data quality: UNVERIFIED | oracle: UNVERIFIED
+Actionability: INDICATIVE_ONLY; actionable=false
+Oracle: 0x9416F861970C2a39c02ab7696Ef0496383d4E81b | price (1e36 base-unit scale): 1106195893489863929000000
+Oracle observation time: 2026-11-01T15:24:35.000Z
+Boundary semantics: threshold comparisons use exact integers; equality is included in the boundary band, while Morpho's capacity >= debt check includes equality.
+NON-ACTIONABLE: these hypothetical calculations do not establish current liquidation eligibility or protection.
+
+Indicative repayment calculation:
+  Amount: 17077779483 raw loan units | 17077.779483 USDC
+  Token: 0xC879C018dB60520F4355C26eD1a6D572cdAC1815 | decimals 6
+  Target ratio: 1.25 | allowed debt: 256555.401352 USDC
+  Initial debt-minus-allowed estimate: 17077779483 raw loan units
+  Mode: ASSETS | shares burned: 16867265393881428 | remaining borrower shares: 253392898481392245
+  Modeled post-repayment debt: 256555401352 raw | 256555.401352 USDC
+  Modeled resulting ratio: 1.250000000003897793
+  Rounding margin: 0 raw above initial estimate | debt headroom 0 raw
+  Proof: target satisfied; minimum amount proved | one-unit-less post-debt 256555401353
+  Method: morpho-v1.0.0/minimum-assets-binary-search/full-share-endpoint | version 1.0.0
+  Snapshot: block 21859852 | 0x1fcab2cf5b32dbce1e1e40650779431956247f177d1daae67eab5aa7e5e40d61 | sha256:d00d4f5cc56683b0665618bf0ad27b4a07c9dca4ba4cb33ceeeb65eb44f4a050
+  Data: UNVERIFIED; oracle UNVERIFIED; actionable=false
+
+Indicative additional collateral calculation:
+  Amount: 21090568113994891366489 raw collateral units | 21090.568113994891366489 wsrUSD
+  Token: 0x4809010926aec940b550D34a46A52739f996D75D | decimals 18
+  Target ratio: 1.25 | required capacity: 342041.476044 USDC
+  Modeled new collateral: 337929.134445322612020442 wsrUSD
+  Modeled capacity: 342041.476044 USDC | post-addition ratio: 1.250000000000913631
+  Rounding margin: 0 raw loan capacity | correction 0 raw collateral units
+  Proof: target satisfied; minimum additional collateral proved | one-unit-less capacity 342041476043
+  Method: morpho-v1.0.0/nested-ceilings/forward-minimality-proof | version 1.0.0
+  Snapshot: block 21859852 | 0x1fcab2cf5b32dbce1e1e40650779431956247f177d1daae67eab5aa7e5e40d61 | sha256:d00d4f5cc56683b0665618bf0ad27b4a07c9dca4ba4cb33ceeeb65eb44f4a050
+  Data: UNVERIFIED; oracle UNVERIFIED; actionable=false
+
+Assumptions:
+Each estimate is a separate hypothetical operation at the identified snapshot block and hash.
+Oracle price, LLTV and token units are held constant throughout each modeled operation.
+The starting debt is accrued to the snapshot; no later interest, other market activity or bad-debt changes are modeled.
+Repayment changes market borrow assets/shares exactly as Morpho v1.0.0; collateral addition holds that accrued debt fixed.
+Amounts describe protocol accounting with fully credited token transfers; gas, wallet funding and execution availability are outside the model.
+A real transaction at a later state is not guaranteed to reproduce these numbers.
+
+Limitations:
+- The selected oracle's economic source, operator identities and heartbeat remain UNVERIFIED. All derived calculations are indicative and non-actionable.
+- ORACLE_SOURCE_UNVERIFIED: The upstream workflow and exact feed identity are not independently established.
+- ORACLE_OPERATOR_UNVERIFIED: On-chain controller addresses are observable; their operator identities are unverified.
+- HEARTBEAT_UNVERIFIED: No verified heartbeat or maximum acceptable price age exists for this feed.
+- SOURCE_SCOPE_QUALITY: The Phase 1 oracle scope reports UNVERIFIED.
+- SOURCE_SNAPSHOT_QUALITY: The source snapshot reports UNVERIFIED.
+- SOURCE_ORACLE_QUALITY: The source oracle reports UNVERIFIED.

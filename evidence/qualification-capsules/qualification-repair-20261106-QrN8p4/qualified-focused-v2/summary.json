@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "name": "qualified-focused-v2",
+  "mode": "focused",
+  "status": "PASS",
+  "completedAt": "2026-11-06T00:50:13.884Z",
+  "results": [
+    {
+      "label": "tests",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/runtime-process.test.ts",
+        "test/runtime-lifecycle.test.ts",
+        "test/runtime-storage.test.ts",
+        "--configLoader=native",
+        "--no-cache",
+        "--no-fsModuleCache",
+        "--reporter=default",
+        "--reporter=json",
+        "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\tests.json"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 14028,
+      "startedAt": "2026-11-06T00:49:33.342Z",
+      "completedAt": "2026-11-06T00:50:13.196Z",
+      "durationMs": 39851.254,
+      "exitCode": 0,
+      "signal": null,
+      "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\tests.stdout.txt",
+        "bytes": 2899,
+        "sha256": "2f3db5965577eb0c6665344d7b05f5c87923b953bc8fd6c179518834f1edaa17"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\tests.stderr.txt",
+        "bytes": 675,
+        "sha256": "011c098d59862dcb08992ab4d14a86780c21968c71e8de0bb935fc900d732a6f"
+      }
+    }
+  ],
+  "expectedSelectedTestAndFileCountsMet": true,
+  "evidenceClass": "OFFLINE_FIXTURE_QUALIFICATION_OR_UNMODIFIED_DIAGNOSTIC",
+  "tooling": {
+    "diagnostics": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\diagnostic-preloader-used.cjs",
+      "bytes": 6150,
+      "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    "runner": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\test-runner-used.mjs",
+      "bytes": 11853,
+      "sha256": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+    },
+    "testSource": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\runtime-process-test-used.ts",
+      "bytes": 5805,
+      "sha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    "runtimeHelper": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\runtime-helper-used.ts",
+      "bytes": 2335,
+      "sha256": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    }
+  },
+  "tests": {
+    "success": true,
+    "files": 3,
+    "total": 31,
+    "passed": 31,
+    "failed": 0,
+    "pending": 0,
+    "todo": 0,
+    "assertions": [
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "imports and constructs without sockets, signal handlers, monitoring, environment access or cwd changes",
+        "status": "passed",
+        "durationMs": 45.832200000000284,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "accepts only the reviewed explicit startup argument contract",
+        "status": "passed",
+        "durationMs": 2.2356999999997242,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "starts disabled without creating the database, rejects a duplicate process runtime, and closes cleanly",
+        "status": "passed",
+        "durationMs": 1530.8773000000006,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "fails closed without authentication, on missing enabled DB, enabled providers, invalid path, and oversized shutdown budget",
+        "status": "passed",
+        "durationMs": 1304.1779000000006,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "cancels startup on an immediate stop and releases the process owner without creating a database",
+        "status": "passed",
+        "durationMs": 1370.5854,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "refuses an occupied HTTP port before starting monitoring and releases all acquired ownership",
+        "status": "passed",
+        "durationMs": 1489.1249000000007,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "serves API during an in-flight read, prevents overlap, settles the read on shutdown and preserves the database",
+        "status": "passed",
+        "durationMs": 1904.8274000000001,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "wires SIGINT to the same bounded shutdown and removes listeners (explicit Windows handler simulation)",
+        "status": "passed",
+        "durationMs": 1295.871799999999,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "wires SIGTERM to the same bounded shutdown and removes listeners (explicit Windows handler simulation)",
+        "status": "passed",
+        "durationMs": 1260.7993999999999,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "invokes the executable's 25-second fallback if cleanup does not settle",
+        "status": "passed",
+        "durationMs": 12.420100000001185,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "bounds a non-cooperative read, preserves interrupted state and discards its late result",
+        "status": "passed",
+        "durationMs": 2497.693000000001,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "does not hide terminal worker failure behind a healthy listener",
+        "status": "passed",
+        "durationMs": 1423.5619000000006,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "recovers interrupted cycles/outbox and preserves known-delivered records and dedup across restarts",
+        "status": "passed",
+        "durationMs": 3391.2511000000013,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-lifecycle.test.ts",
+        "title": "preserves an existing database byte-for-byte through repeated disabled starts and shutdowns",
+        "status": "passed",
+        "durationMs": 3071.987799999999,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+        "status": "passed",
+        "durationMs": 4060.0775,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+        "status": "passed",
+        "durationMs": 6203.638199999999,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+        "status": "passed",
+        "durationMs": 5065.133099999999,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "passed",
+        "durationMs": 9877.6691,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "does not create a missing runtime database or its parents",
+        "status": "passed",
+        "durationMs": 68.88140000000021,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "preserves an empty or corrupt existing file and refuses implicit initialization",
+        "status": "passed",
+        "durationMs": 160.34370000000035,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "requires explicit migration and preserves a legacy database byte for byte",
+        "status": "passed",
+        "durationMs": 644.5142000000001,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "preserves current schema/content on existing-only opens and retains the writer fence",
+        "status": "passed",
+        "durationMs": 766.0349000000001,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "exclusively seeds pinned evidence, checks existing bytes, and fences a second service",
+        "status": "passed",
+        "durationMs": 2071.8341,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "refuses a changed runtime evidence copy without replacing it or touching its release source",
+        "status": "passed",
+        "durationMs": 1210.4768999999997,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "checks persisted evidence references and fails on a missing local artifact",
+        "status": "passed",
+        "durationMs": 1510.3284999999996,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "refuses missing mount roots, relative paths, mismatched DB paths and disk-reserve exhaustion",
+        "status": "passed",
+        "durationMs": 123.73240000000078,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "fails a permission-denied writable probe before creating a database (injected EACCES)",
+        "status": "passed",
+        "durationMs": 59.61939999999959,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "refuses symlink/junction directories and hardlinked databases",
+        "status": "passed",
+        "durationMs": 103.71110000000044,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "recognizes only an explicit writable non-ephemeral Linux mount",
+        "status": "passed",
+        "durationMs": 0.8113000000012107,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "does not accept a local scratch directory as a production Render disk",
+        "status": "passed",
+        "durationMs": 86.4398000000001,
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-storage.test.ts",
+        "title": "bounds a real SQLite competing-write lock and rolls back without partial state",
+        "status": "passed",
+        "durationMs": 1316.7703999999994,
+        "failureMessages": []
+      }
+    ]
+  },
+  "networkGuard": {
+    "version": "v2",
+    "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "records": 34,
+    "blockedRecords": 0,
+    "blockedLocalIPC": 0,
+    "demonstratedRemoteAttempts": 0,
+    "allowedLocalNamedPipes": 10,
+    "caveat": null
+  },
+  "cleanup": {
+    "remainingFixtureDirectories": [],
+    "removalAttempts": 29,
+    "removalErrors": [],
+    "pathsStillExist": [],
+    "children": [
+      {
+        "pid": 3656,
+        "exited": true,
+        "closed": true,
+        "disconnected": false,
+        "stateAtClose": {
+          "at": "2026-11-06T00:49:51.981Z",
+          "hrNs": "38040658895000",
+          "pid": 9532,
+          "ppid": 14028,
+          "sequence": 8,
+          "event": "child_close",
+          "childPid": 3656,
+          "exitCode": 0,
+          "signalCode": null,
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": 0,
+          "signal": null,
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 3376,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:49:57.755Z",
+          "hrNs": "38046431968000",
+          "pid": 9532,
+          "ppid": 14028,
+          "sequence": 27,
+          "event": "child_close",
+          "childPid": 3376,
+          "exitCode": 0,
+          "signalCode": null,
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": 0,
+          "signal": null,
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 15892,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:50:03.139Z",
+          "hrNs": "38051816625100",
+          "pid": 9532,
+          "ppid": 14028,
+          "sequence": 59,
+          "event": "child_close",
+          "childPid": 15892,
+          "exitCode": 0,
+          "signalCode": null,
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": 0,
+          "signal": null,
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 2916,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:50:08.602Z",
+          "hrNs": "38057279116100",
+          "pid": 9532,
+          "ppid": 14028,
+          "sequence": 108,
+          "event": "child_close",
+          "childPid": 2916,
+          "exitCode": null,
+          "signalCode": "SIGKILL",
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": null,
+          "signal": "SIGKILL",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 12240,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:50:12.987Z",
+          "hrNs": "38061664651400",
+          "pid": 9532,
+          "ppid": 14028,
+          "sequence": 122,
+          "event": "child_close",
+          "childPid": 12240,
+          "exitCode": 0,
+          "signalCode": null,
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": 0,
+          "signal": null,
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      }
+    ],
+    "relevantFixtureProcessesAfterRun": [],
+    "noObservedOrphanProcesses": true
+  },
+  "logs": {
+    "network": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\network-guard.jsonl",
+      "bytes": 5886,
+      "sha256": "a902a238845ff77bf4be5870dd4187dc9c3da12247d6912e52a63fbe18fb0f50"
+    },
+    "lifecycle": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-focused-v2\\process-lifecycle.jsonl",
+      "bytes": 285223,
+      "sha256": "335616d0cbb1ae85dcc9b6e812124dbd5f06b01006981e856c5fb474dbd4dcf0"
+    }
+  },
+  "safety": {
+    "realMonitorStopped": true,
+    "syntheticRuntimeFixturesOnly": true,
+    "externalNotifications": false,
+    "transactionsOrWalletOperations": false,
+    "noIntegrationTests": true,
+    "timeoutsOrAssertionsChangedByDiagnosticPreloader": false,
+    "readinessMessagesIntentionallyDelayedForControl": false,
+    "aggregateDeadlineIntentionallyLoweredForControl": false,
+    "externalOutputsAndTemporaryFilesOnly": true
+  }
+}

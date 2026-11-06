@@ -1,0 +1,239 @@
+{
+  "evidenceKind": "LOCAL_DOCUMENTATION_LINK_CHECK",
+  "checkedAt": "2026-11-01T15:00:48.506Z",
+  "documentCount": 14,
+  "linkCount": 46,
+  "passed": true,
+  "checks": [
+    {
+      "document": "README.md",
+      "target": "docs/thresholds.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-investigation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/testing.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase2/risk/live/risk-report.txt",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase2/risk/live/risk-result.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase2/phase1-regression/position-snapshot.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase2/verification-results.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase2/phase1-evidence-integrity.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/phase1/cli-report.txt",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/evidence.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase2-report.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/thresholds.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/architecture.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/accounting.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/oracle-investigation.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/testing.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/evidence.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/security-and-quality.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/reuse.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/phase2-files.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "docs/created-files.md",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "evidence/phase1/sources/MorphoBalancesLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "evidence/phase1/sources/MathLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "evidence/phase1/sources/SharesMathLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "evidence/phase1/sources/UtilsLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "evidence/phase1/sources/Morpho.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "evidence/phase1/sources/ConstantsLib.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/accounting.md",
+      "target": "evidence/phase1/sources/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/architecture.md",
+      "target": "docs/risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "docs/evidence.md",
+      "target": "docs/risk-engine.md",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/market-parameters.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/contract-verification.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/sources/official-registry-excerpts.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/oracle-investigation-live.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/sources/SelfManagedFeedsCache.sol",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/oracle-update-history.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/oracle-investigation-live.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/cli-report.txt",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/oracle-update-history.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/sources/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "docs/oracle-investigation.md",
+      "target": "evidence/phase1/source-runtime-matches.json",
+      "exists": true
+    },
+    {
+      "document": "docs/risk-engine.md",
+      "target": "docs/recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "docs/security-and-quality.md",
+      "target": "docs/recommendation-math.md",
+      "exists": true
+    },
+    {
+      "document": "docs/thresholds.md",
+      "target": "docs/risk-engine.md",
+      "exists": true
+    }
+  ]
+}

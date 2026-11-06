@@ -1,0 +1,46 @@
+{
+ "userVersion": {
+  "user_version": 5
+ },
+ "applicationId": {
+  "application_id": 1280790579
+ },
+ "journalMode": {
+  "journal_mode": "delete"
+ },
+ "quickCheck": {
+  "quick_check": "ok"
+ },
+ "integrityCheck": {
+  "integrity_check": "ok"
+ },
+ "foreignKeyCheck": [],
+ "tables": [
+  "alerts",
+  "cycles",
+  "deliveries",
+  "delivery_attempts",
+  "delivery_events",
+  "fingerprints",
+  "operational_events",
+  "oracle_assurance",
+  "provider_limits",
+  "schema_migrations",
+  "streams",
+  "worker_runtime"
+ ],
+ "counts": {
+  "alerts": 3,
+  "cycles": 12,
+  "deliveries": 3,
+  "delivery_attempts": 3,
+  "delivery_events": 9,
+  "fingerprints": 3,
+  "operational_events": 0,
+  "oracle_assurance": 12,
+  "provider_limits": 0,
+  "schema_migrations": 5,
+  "streams": 1,
+  "worker_runtime": 1
+ }
+}

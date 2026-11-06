@@ -1,0 +1,151 @@
+{
+  "evidenceKind": "HISTORICAL_CHAIN_REREAD_AGAINST_PHASE2",
+  "checkedAt": "2026-11-02T14:51:51.919Z",
+  "passed": true,
+  "before": {
+    "blockNumber": "21853902",
+    "blockHash": "0xfe044ec9c464d3899f431b23efc307e9ccb619a71d42fdfe4c0b7a2e346c88d3",
+    "debtAmount": "273629792897",
+    "collateralValue": "350480669854",
+    "liquidationCapacity": "320689812916",
+    "ltv": "780727202475920202",
+    "safetyRatio": "1171984269405613955",
+    "actionable": false,
+    "dataQuality": {
+      "oracle": "UNVERIFIED"
+    },
+    "repayment": {
+      "amount": {
+        "raw": "17077942565"
+      },
+      "calculation": {
+        "targetRatioWad": "1250000000000000000",
+        "allowedDebt": "256551850332",
+        "initialRepaymentEstimate": "17077942565",
+        "repaymentAmount": "17077942565",
+        "modeledPostRepaymentDebt": "256551850332",
+        "modeledResultingRatioWad": "1250000000003897847",
+        "simulation": {
+          "mode": "ASSETS",
+          "assets": "17077942565",
+          "sharesBurned": "16867635309052011",
+          "remainingBorrowShares": "253392528566221662",
+          "remainingTotalBorrowShares": "5307301810745421391",
+          "remainingTotalBorrowAssets": "5373473746518",
+          "remainingDebt": "256551850332"
+        },
+        "roundingMargin": {
+          "repaymentAboveInitialEstimate": "0",
+          "debtHeadroomBelowAllowed": "0"
+        },
+        "proof": {
+          "targetSatisfied": true,
+          "minimumProven": true,
+          "previousAmount": "17077942564",
+          "previousAmountPostDebt": "256551850333",
+          "searchIterations": 38
+        }
+      },
+      "actionable": false
+    },
+    "additionalCollateral": {
+      "amount": {
+        "raw": "21091061440441662813831"
+      },
+      "calculation": {
+        "targetRatioWad": "1250000000000000000",
+        "requiredCapacity": "342037241122",
+        "requiredCollateralValue": "373811192484",
+        "requiredCollateral": "337929627771769383467784",
+        "additionalCollateral": "21091061440441662813831",
+        "modeledNewCollateral": "337929627771769383467784",
+        "modeledCollateralValue": "373811192484",
+        "modeledCapacity": "342037241122",
+        "modeledPostAdditionRatioWad": "1250000000002740929",
+        "roundingMargin": {
+          "capacitySurplus": "0",
+          "correctionCollateralUnits": "0"
+        },
+        "proof": {
+          "targetSatisfied": true,
+          "minimumProven": true,
+          "previousCollateralCapacity": "342037241121"
+        }
+      },
+      "actionable": false
+    }
+  },
+  "after": {
+    "blockNumber": "21853902",
+    "blockHash": "0xfe044ec9c464d3899f431b23efc307e9ccb619a71d42fdfe4c0b7a2e346c88d3",
+    "debtAmount": "273629792897",
+    "collateralValue": "350480669854",
+    "liquidationCapacity": "320689812916",
+    "ltv": "780727202475920202",
+    "safetyRatio": "1171984269405613955",
+    "actionable": false,
+    "dataQuality": {
+      "oracle": "UNVERIFIED"
+    },
+    "repayment": {
+      "amount": {
+        "raw": "17077942565"
+      },
+      "calculation": {
+        "targetRatioWad": "1250000000000000000",
+        "allowedDebt": "256551850332",
+        "initialRepaymentEstimate": "17077942565",
+        "repaymentAmount": "17077942565",
+        "modeledPostRepaymentDebt": "256551850332",
+        "modeledResultingRatioWad": "1250000000003897847",
+        "simulation": {
+          "mode": "ASSETS",
+          "assets": "17077942565",
+          "sharesBurned": "16867635309052011",
+          "remainingBorrowShares": "253392528566221662",
+          "remainingTotalBorrowShares": "5307301810745421391",
+          "remainingTotalBorrowAssets": "5373473746518",
+          "remainingDebt": "256551850332"
+        },
+        "roundingMargin": {
+          "repaymentAboveInitialEstimate": "0",
+          "debtHeadroomBelowAllowed": "0"
+        },
+        "proof": {
+          "targetSatisfied": true,
+          "minimumProven": true,
+          "previousAmount": "17077942564",
+          "previousAmountPostDebt": "256551850333",
+          "searchIterations": 38
+        }
+      },
+      "actionable": false
+    },
+    "additionalCollateral": {
+      "amount": {
+        "raw": "21091061440441662813831"
+      },
+      "calculation": {
+        "targetRatioWad": "1250000000000000000",
+        "requiredCapacity": "342037241122",
+        "requiredCollateralValue": "373811192484",
+        "requiredCollateral": "337929627771769383467784",
+        "additionalCollateral": "21091061440441662813831",
+        "modeledNewCollateral": "337929627771769383467784",
+        "modeledCollateralValue": "373811192484",
+        "modeledCapacity": "342037241122",
+        "modeledPostAdditionRatioWad": "1250000000002740929",
+        "roundingMargin": {
+          "capacitySurplus": "0",
+          "correctionCollateralUnits": "0"
+        },
+        "proof": {
+          "targetSatisfied": true,
+          "minimumProven": true,
+          "previousCollateralCapacity": "342037241121"
+        }
+      },
+      "actionable": false
+    }
+  }
+}

@@ -1,0 +1,12 @@
+export declare const WAD: bigint;
+export declare const ORACLE_SCALE: bigint;
+export declare const VIRTUAL_ASSETS = 1n;
+export declare const VIRTUAL_SHARES = 1000000n;
+export declare function uint(value: bigint, bits?: 128 | 256): bigint;
+export declare function add(x: bigint, y: bigint, bits?: 128 | 256): bigint;
+export declare function sub(x: bigint, y: bigint): bigint;
+export declare function mul(x: bigint, y: bigint): bigint;
+export declare function mulDivDown(x: bigint, y: bigint, d: bigint): bigint;
+export declare function mulDivUp(x: bigint, y: bigint, d: bigint): bigint;
+export declare function toAssetsUp(shares: bigint, totalAssets: bigint, totalShares: bigint): bigint;
+export declare function toSharesDown(assets: bigint, totalAssets: bigint, totalShares: bigint): bigint;

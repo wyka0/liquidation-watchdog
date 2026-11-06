@@ -1,0 +1,6 @@
+{
+  "warningRatio": "1.30",
+  "criticalRatio": "1.10",
+  "targetRatio": "1.25",
+  "liquidationBoundary": "1.00"
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "sealedAt": "2026-11-06T00:42:51.304Z",
+  "authorization": "FINAL QUALIFICATION REPAIR: smallest evidence-justified runtime-process test correction only",
+  "files": [
+    {
+      "path": "test/runtime-process.test.ts",
+      "beforeSha256": "099f9e3bf952c30fbbb4b99e074e8aee8f13417e0ae84a0cbdaee21f6b829846",
+      "afterSha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb",
+      "beforeBytes": 4776,
+      "afterBytes": 5805,
+      "reason": "Test-only correction: independently track/reap child processes through close before fixture removal, reject late spawns for torn-down fixtures, and budget two sequential unchanged 30-second child horizons plus the existing normal 10-second assertion allowance. Preserve all four tests, forced-kill/recovery assertions, 3-second graceful shutdown assertion, application code and V2 IPC guard."
+    }
+  ],
+  "supportingEvidence": [
+    "original-failure-inspection.json",
+    "timing-analysis-unmodified-independent-v2-unmodified-loaded-v2.json",
+    "original-budget-latency-negative-control/summary.json",
+    "original-budget-latency-negative-control/process-lifecycle.jsonl"
+  ],
+  "excluded": [
+    "src/**",
+    "test/helpers/phase8-runtime.ts",
+    "vitest.config.ts",
+    "Stage 2 evidence",
+    "Git index/staged state/HEAD",
+    "unrelated user work"
+  ]
+}

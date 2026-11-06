@@ -1,0 +1,13 @@
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+ ✓ test/runtime-process.test.ts (4 tests | 3 skipped) 10541ms
+   ✓ PHASE8 FIXTURE: actual runtime processes (4)
+     ✓ fences a second process and recovers after actual forced OS termination with an unfinished cycle 10539ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 3 skipped (4)
+   Start at  06:18:49
+   Duration  14.00s (tests 77%, import 14%, transform 9%)
+
+JSON report written to [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/qualified-independent-v2/tests.json

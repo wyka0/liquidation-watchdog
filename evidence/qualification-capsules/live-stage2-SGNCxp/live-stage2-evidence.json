@@ -1,0 +1,1360 @@
+{
+  "schemaVersion": 1,
+  "evidenceKind": "LIVE_CHAIN_READ",
+  "purpose": "SINGLE_POSITION_FINITE_LIVE_MONITORING",
+  "startedAt": "2026-11-05T23:46:48.657Z",
+  "target": {
+    "positionId": "2868fdc6591f5ec9674c9a33febfd27023f136783e11c24cb6dbd5f82994a06f",
+    "chainId": 1672,
+    "protocol": "MORPHO_BLUE",
+    "protocolAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+    "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+    "account": "0x086eb9C2B14dD657ae77D07dF9115A2F946CE327",
+    "oracleAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+    "irmAddress": "0xD5E02889C13230458506CC842347c4E62F8cDF3a",
+    "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+    "collateralToken": "0x4809010926aec940b550D34a46A52739f996D75D"
+  },
+  "accountRole": "EXPLICITLY_CONFIGURED_PUBLIC_ACCOUNT_NOT_USER_WALLET",
+  "thresholds": {
+    "warningRatio": "1.30",
+    "criticalRatio": "1.10",
+    "targetRatio": "1.25",
+    "liquidationBoundary": "1.00"
+  },
+  "scope": "1d9d31ed07649d3c00247bb62b508432ece0d26c3f29ab74b8ff82fa7325eb61",
+  "configurationFingerprint": "59fb22e09b2b886afe8dbbb1f1c98fe693d93adeaf5d1ddcf8bbb606659b8fe1",
+  "configurationHashes": {
+    "position.json": "99f1e601d5301aad96ee1b05e91c47379380adc923f0c2d36116480e1d6e4c84",
+    "monitoring.json": "395ff3dcd8b3404d0ddd5780faa156c933ed1350cf4eded339a6c2adc3d2c2ce"
+  },
+  "endpoints": {
+    "rpc": "https://rpc.pharos.xyz",
+    "mcp": "https://mcp.pharos.xyz/mcp"
+  },
+  "status": "PASS_FINITE_LIVE_MONITOR_AND_CONSOLE_DELIVERY_ORACLE_UNVERIFIED",
+  "artifacts": [
+    {
+      "file": "live-monitor-snapshot.json",
+      "bytes": 350127,
+      "sha256": "c4df894aeb206fa42c808525a47b5ed7524f54d9915b354e8f01e3a5c770938a"
+    },
+    {
+      "file": "independent-pinned-verification.json",
+      "bytes": 38672,
+      "sha256": "087d245c444e415240d7753ac683c2104ed5954587950d4983f2aa9e50c6dfc8"
+    },
+    {
+      "file": "live-monitor-supplemental.json",
+      "bytes": 42200,
+      "sha256": "ee8b81e3c10b119d7f94688c923d7953b3fd4202965d144b6c23bc41ad3e06f6"
+    },
+    {
+      "file": "live-monitor-cycle-result.json",
+      "bytes": 227998,
+      "sha256": "c3ec832225f4fbcdcf3fb354dd59f4fc170d34ad4d3d942ea04be2d64a347c4b"
+    },
+    {
+      "file": "live-monitor-validation.json",
+      "bytes": 1874,
+      "sha256": "7651cdfd684bb5233453135fde55edd84b99c484c8ad743c7ef5cafe22b101fb"
+    },
+    {
+      "file": "live-monitor-risk.json",
+      "bytes": 56463,
+      "sha256": "b2402882d4a986758103e425c86581ac94ece34b4a5346a5ea07b394c0c34c47"
+    },
+    {
+      "file": "live-monitor-assurance.json",
+      "bytes": 45193,
+      "sha256": "86bb25858c1261259c50345120cc6edcd0806f06d40068eb4cf53582f5e4ddb6"
+    },
+    {
+      "file": "persisted-before-restart.json",
+      "bytes": 502590,
+      "sha256": "8f3b1338f5785707c76699ddfc176401f8ece95c2b7f23a498dcfe539ef694d6"
+    },
+    {
+      "file": "network-read-only-guard.json",
+      "bytes": 36245,
+      "sha256": "688fc973abe8f5075f4250a2c0abce17d02b84abf3cf616221f24580002ec9b3"
+    },
+    {
+      "file": "cycle-logs.json",
+      "bytes": 2372,
+      "sha256": "a0a5edae2a9c495f2769faa4130a2a01c6e9caea59b38f63546b01aab8134888"
+    },
+    {
+      "file": "console-alerts.txt",
+      "bytes": 3664,
+      "sha256": "1fa8721cd6de619e98f3ac46837627e02eb7f39bff042d6df0bd7168a938aaa8"
+    },
+    {
+      "file": "monitor-console.txt",
+      "bytes": 5654,
+      "sha256": "a83356fc69dd3f14cd50882dab2d3ed621d089a3315a5d2e55137e8210878385"
+    }
+  ],
+  "persistence": {
+    "status": "PASS",
+    "schemaVersion": 5,
+    "cycles": 1,
+    "alerts": 3,
+    "consoleDelivered": 3,
+    "attemptsEach": 1,
+    "pending": 0,
+    "runtimeStatus": "STOPPED"
+  },
+  "block": {
+    "number": "22225454",
+    "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+    "parentHash": "0x165dc5d790fcea58ab8af01a6a83332032dd5655c4db4b5315f7b974cff796e1",
+    "timestamp": "1793922408",
+    "timestampUtc": "2026-11-05T23:46:48.000Z"
+  },
+  "heads": {
+    "rpc": "22225459",
+    "mcp": "22225460",
+    "selectionLagBlocks": "5"
+  },
+  "observedChainIds": {
+    "rpc": "1672",
+    "mcp": "1672"
+  },
+  "snapshotIdentifier": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+  "observedAt": "2026-11-05T23:48:19.444Z",
+  "position": {
+    "supplyShares": "0",
+    "borrowShares": "17768613114986061183",
+    "collateral": "18706585513096000000000000"
+  },
+  "market": {
+    "totalSupplyAssets": "20600077805071",
+    "totalSupplyShares": "20361451692197549228",
+    "totalBorrowAssets": "18001632791443",
+    "totalBorrowShares": "17768614015958479961",
+    "lastUpdate": "1793909998",
+    "fee": "0"
+  },
+  "accounting": {
+    "elapsedSeconds": "12410",
+    "ratePerSecondWad": "1560788518",
+    "firstTerm": "19369385508380",
+    "secondTerm": "187586547",
+    "thirdTerm": "1211",
+    "interest": "348683942",
+    "accruedBorrowAssets": "18001981475385",
+    "accruedSupplyAssets": "20600426489013",
+    "accruedSupplyShares": "20361451692197549228",
+    "totalBorrowShares": "17768614015958479961",
+    "feeAmount": "0",
+    "feeShares": "0",
+    "debt": "18001980562580"
+  },
+  "tokens": {
+    "loan": {
+      "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "decimals": 6,
+      "name": "USDC",
+      "symbol": "USDC"
+    },
+    "collateral": {
+      "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+      "decimals": 18,
+      "name": "Wrapped Savings rUSD",
+      "symbol": "wsrUSD"
+    }
+  },
+  "decoded": {
+    "collateral": "18706585.513096",
+    "debt": "18001980.56258",
+    "safetyRatio": "1.052543254080507595",
+    "loanDecimals": 6,
+    "collateralDecimals": 18
+  },
+  "healthFactorWad": "1052543254080507595",
+  "risk": {
+    "mathematical": "CRITICAL",
+    "effective": "DATA_UNVERIFIED",
+    "actionability": "INDICATIVE_ONLY",
+    "actionable": false,
+    "recoveryEligibility": {
+      "eligible": false,
+      "status": "BLOCKED",
+      "reasonCodes": [
+        "RECOVERY_CHAIN_PROGRESSION_UNKNOWN",
+        "RECOVERY_ORACLE_ASSURANCE_NOT_VERIFIED",
+        "RECOVERY_ASSURANCE_GATE_NOT_MET",
+        "RECOVERY_ORACLE_FRESHNESS_NOT_VERIFIED",
+        "RECOVERY_INDEPENDENT_VALIDATION_NOT_VERIFIED",
+        "RECOVERY_CONFIGURATION_MISMATCH"
+      ]
+    },
+    "repayment": null,
+    "additionalCollateral": null,
+    "diagnostics": [
+      "ORACLE_UNVERIFIED",
+      "ORACLE_FRESHNESS_UNKNOWN"
+    ],
+    "progression": {
+      "state": "UNKNOWN",
+      "reason": "FIRST_OBSERVATION",
+      "advancedBlocks": null,
+      "blockNumber": "22225454",
+      "blockHash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+      "blockTimestamp": "1793922408",
+      "headNumber": "22225459",
+      "baselineBlockNumber": null,
+      "baselineBlockHash": null,
+      "sameBlockStreak": 0,
+      "evaluatedAt": "2026-11-05T23:48:19.444Z"
+    }
+  },
+  "thresholdResult": {
+    "mathematicalRiskState": "CRITICAL",
+    "numerator": "18947863201232000000000000000000",
+    "debt": "18001980562580",
+    "comparisons": {
+      "warningRatio": {
+        "thresholdWad": "1300000000000000000",
+        "debtTimesThreshold": "23402574731354000000000000000000",
+        "atOrBelow": true
+      },
+      "criticalRatio": {
+        "thresholdWad": "1100000000000000000",
+        "debtTimesThreshold": "19802178618838000000000000000000",
+        "atOrBelow": true
+      },
+      "targetRatio": {
+        "thresholdWad": "1250000000000000000",
+        "debtTimesThreshold": "22502475703225000000000000000000",
+        "atOrBelow": true
+      },
+      "liquidationBoundary": {
+        "thresholdWad": "1000000000000000000",
+        "debtTimesThreshold": "18001980562580000000000000000000",
+        "atOrBelow": false
+      }
+    }
+  },
+  "crossChecks": {
+    "productionComparisons": 58,
+    "productionMismatches": 0,
+    "sentinels": 6,
+    "contracts": 10,
+    "blockHashesStable": true,
+    "singlePinnedBlockInProductionTrace": true,
+    "directGetterComparisons": 10,
+    "separateArithmeticMatches": 17,
+    "directStableBeforeAfterHeaders": true
+  },
+  "alerts": [
+    {
+      "id": "alert_b7d6f901fb5242047f34f14fc1c74ae676806d8566740cdca908af36653a367f",
+      "code": "INITIAL_RISK",
+      "severity": "CRITICAL",
+      "timestamp": "2026-11-05T23:48:19.444Z",
+      "suggestedAction": {
+        "schemaVersion": 1,
+        "origin": "GENERATED",
+        "instruction": "Review this position and independently refresh the current chain and oracle state before making any financial decision.",
+        "rationale": "POSITION_REQUIRES_REVIEW",
+        "createdAt": "2026-11-05T23:48:19.444Z",
+        "evidence": {
+          "status": "NOT_QUALIFIED",
+          "cycleId": "a4e2d2de-af29-4f39-a534-c5dda37c5b60",
+          "chainId": 1672,
+          "account": "0x086eb9C2B14dD657ae77D07dF9115A2F946CE327",
+          "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+          "snapshotIdentifier": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+          "blockNumber": "22225454",
+          "blockHash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+          "blockTimestamp": "1793922408",
+          "progressionState": "UNKNOWN",
+          "progressionReason": "FIRST_OBSERVATION",
+          "oracleAssurance": "UNVERIFIED",
+          "oracleFreshness": "UNKNOWN",
+          "independentValidation": "UNKNOWN",
+          "evidenceInvalidated": false,
+          "oracleObservationTimestamp": "1793921075",
+          "timestampAnomalies": [],
+          "configurationChanges": [],
+          "recoveryEligibility": {
+            "eligible": false,
+            "status": "BLOCKED",
+            "reasonCodes": [
+              "RECOVERY_CHAIN_PROGRESSION_UNKNOWN",
+              "RECOVERY_ORACLE_ASSURANCE_NOT_VERIFIED",
+              "RECOVERY_ASSURANCE_GATE_NOT_MET",
+              "RECOVERY_ORACLE_FRESHNESS_NOT_VERIFIED",
+              "RECOVERY_INDEPENDENT_VALIDATION_NOT_VERIFIED",
+              "RECOVERY_CONFIGURATION_MISMATCH"
+            ]
+          }
+        },
+        "actionable": false,
+        "type": "NON_FINANCIAL",
+        "financialOptions": []
+      },
+      "renderedSha256": "b61e9c307a94fece8baabf0d29590b1bb5ef2f67ee6fb6bdbd8f5fec1ee29534"
+    },
+    {
+      "id": "alert_551ef4df81f5a02ea823c00ff0caf6c0b4ea9a3db990637bfc3306dbe3a08a3e",
+      "code": "DATA_QUALITY_CHANGED",
+      "severity": "WARNING",
+      "timestamp": "2026-11-05T23:48:19.444Z",
+      "suggestedAction": {
+        "schemaVersion": 1,
+        "origin": "GENERATED",
+        "instruction": "Do not transact from this alert; refresh the position and restore complete valid data before making a decision.",
+        "rationale": "DATA_REQUIRES_REFRESH",
+        "createdAt": "2026-11-05T23:48:19.444Z",
+        "evidence": {
+          "status": "NOT_QUALIFIED",
+          "cycleId": "a4e2d2de-af29-4f39-a534-c5dda37c5b60",
+          "chainId": 1672,
+          "account": "0x086eb9C2B14dD657ae77D07dF9115A2F946CE327",
+          "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+          "snapshotIdentifier": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+          "blockNumber": "22225454",
+          "blockHash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+          "blockTimestamp": "1793922408",
+          "progressionState": "UNKNOWN",
+          "progressionReason": "FIRST_OBSERVATION",
+          "oracleAssurance": "UNVERIFIED",
+          "oracleFreshness": "UNKNOWN",
+          "independentValidation": "UNKNOWN",
+          "evidenceInvalidated": false,
+          "oracleObservationTimestamp": "1793921075",
+          "timestampAnomalies": [],
+          "configurationChanges": [],
+          "recoveryEligibility": {
+            "eligible": false,
+            "status": "BLOCKED",
+            "reasonCodes": [
+              "RECOVERY_CHAIN_PROGRESSION_UNKNOWN",
+              "RECOVERY_ORACLE_ASSURANCE_NOT_VERIFIED",
+              "RECOVERY_ASSURANCE_GATE_NOT_MET",
+              "RECOVERY_ORACLE_FRESHNESS_NOT_VERIFIED",
+              "RECOVERY_INDEPENDENT_VALIDATION_NOT_VERIFIED",
+              "RECOVERY_CONFIGURATION_MISMATCH"
+            ]
+          }
+        },
+        "actionable": false,
+        "type": "NON_FINANCIAL",
+        "financialOptions": []
+      },
+      "renderedSha256": "3b7b17bdff39c15f578b251ed9ba53c4ba4fee4aa1e29f4fb64db3f9c2fee523"
+    },
+    {
+      "id": "alert_9c8ef2388a2bd46de1e0c55bce6ccb1aa3ff1a42dac70cd16cae711dacd607a2",
+      "code": "ORACLE_QUALITY_CHANGED",
+      "severity": "WARNING",
+      "timestamp": "2026-11-05T23:48:19.444Z",
+      "suggestedAction": {
+        "schemaVersion": 1,
+        "origin": "GENERATED",
+        "instruction": "Do not rely on financial estimates; independently verify the oracle source, freshness and configuration.",
+        "rationale": "ORACLE_REQUIRES_VERIFICATION",
+        "createdAt": "2026-11-05T23:48:19.444Z",
+        "evidence": {
+          "status": "NOT_QUALIFIED",
+          "cycleId": "a4e2d2de-af29-4f39-a534-c5dda37c5b60",
+          "chainId": 1672,
+          "account": "0x086eb9C2B14dD657ae77D07dF9115A2F946CE327",
+          "marketId": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+          "snapshotIdentifier": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+          "blockNumber": "22225454",
+          "blockHash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+          "blockTimestamp": "1793922408",
+          "progressionState": "UNKNOWN",
+          "progressionReason": "FIRST_OBSERVATION",
+          "oracleAssurance": "UNVERIFIED",
+          "oracleFreshness": "UNKNOWN",
+          "independentValidation": "UNKNOWN",
+          "evidenceInvalidated": false,
+          "oracleObservationTimestamp": "1793921075",
+          "timestampAnomalies": [],
+          "configurationChanges": [],
+          "recoveryEligibility": {
+            "eligible": false,
+            "status": "BLOCKED",
+            "reasonCodes": [
+              "RECOVERY_CHAIN_PROGRESSION_UNKNOWN",
+              "RECOVERY_ORACLE_ASSURANCE_NOT_VERIFIED",
+              "RECOVERY_ASSURANCE_GATE_NOT_MET",
+              "RECOVERY_ORACLE_FRESHNESS_NOT_VERIFIED",
+              "RECOVERY_INDEPENDENT_VALIDATION_NOT_VERIFIED",
+              "RECOVERY_CONFIGURATION_MISMATCH"
+            ]
+          }
+        },
+        "actionable": false,
+        "type": "NON_FINANCIAL",
+        "financialOptions": []
+      },
+      "renderedSha256": "1fadc9a391ff1e49b2febacc7f49b2abb26408aae9e346decdb59694cc3b3bb4"
+    }
+  ],
+  "oracle": {
+    "overall": "UNVERIFIED",
+    "gate": "DATA_UNVERIFIED",
+    "freshness": {
+      "state": "UNKNOWN",
+      "observationTimestamp": "1793921075",
+      "observationAgeSeconds": "1333",
+      "policyMaxAgeSeconds": null,
+      "policyOrigin": "NONE",
+      "policyRejected": false,
+      "verifiedHeartbeatSeconds": null,
+      "upstreamFreshnessGuaranteeSeconds": null,
+      "timestampMeaning": "WORKFLOW_SUPPLIED_OBSERVATION_TIME",
+      "onchainExpiryEnforced": false,
+      "timingConfigurationFingerprint": null,
+      "anomalies": [],
+      "evidence": [
+        {
+          "subjectAddress": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+          "chainId": 1672,
+          "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+          "sourceKind": "SNAPSHOT",
+          "block": {
+            "number": "22225454",
+            "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+            "timestamp": "1793922408"
+          },
+          "retrievedAt": "2026-11-05T23:47:20.525Z",
+          "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+          "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+          "confidence": "PROVEN",
+          "unresolved": [
+            "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+          ]
+        },
+        {
+          "subjectAddress": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+          "chainId": 1672,
+          "source": "evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+          "sourceKind": "VERIFIED_SOURCE",
+          "block": null,
+          "retrievedAt": "2026-11-01T13:50:02.085Z",
+          "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+          "artifactSha256": "cc61c1da8e2c5b6c25ed1c10db8851226b36a120616aefda8e978d8280b4cefe",
+          "confidence": "PROVEN",
+          "unresolved": [
+            "Source comments and interface names do not prove source operation, economic quote or operator identity."
+          ]
+        }
+      ]
+    },
+    "independent": {
+      "state": "UNKNOWN",
+      "availability": "NOT_CONFIGURED",
+      "sourceId": null,
+      "eligible": false,
+      "reasons": [
+        "NO_QUALIFIED_INDEPENDENT_SOURCE"
+      ],
+      "toleranceBps": null,
+      "morphoPrice": "1106992358384461601000000",
+      "independentPrice": null,
+      "candidate": null,
+      "selectedUpstreamId": null,
+      "base": {
+        "chainId": 1672,
+        "address": "0x4809010926aec940b550D34a46A52739f996D75D",
+        "decimals": 18
+      },
+      "quote": {
+        "chainId": 1672,
+        "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "decimals": 6
+      },
+      "evidenceMode": "PRODUCTION",
+      "blockTimestamp": "1793922408",
+      "selectedTimestamp": "1793921075",
+      "candidateAgeSeconds": null,
+      "timestampSkewSeconds": null,
+      "policyMaxAgeSeconds": null,
+      "policyMaxSkewSeconds": null,
+      "normalizedMorpho": null,
+      "normalizedIndependent": null,
+      "deviationBps": null,
+      "disagrees": false,
+      "evidence": []
+    },
+    "dimensions": {
+      "CONTRACT_IDENTITY": {
+        "state": "VERIFIED",
+        "rule": "IDENTITY_V1",
+        "satisfied": [
+          "CHAIN_AND_MARKET",
+          "PINNED_RUNTIME_HASHES",
+          "REPRODUCED_SOURCE"
+        ],
+        "missing": [],
+        "findingIds": [
+          "RUNTIME_0",
+          "RUNTIME_1",
+          "RUNTIME_2",
+          "RUNTIME_3",
+          "RUNTIME_4"
+        ]
+      },
+      "SOURCE_PROVENANCE": {
+        "state": "UNVERIFIED",
+        "rule": "SOURCE_V1",
+        "satisfied": [],
+        "missing": [
+          "EXACT_FEED_PRODUCT",
+          "WORKFLOW_SOURCE",
+          "ECONOMIC_INPUTS"
+        ],
+        "findingIds": [
+          "SOURCE_PROVENANCE"
+        ]
+      },
+      "OPERATOR_PROVENANCE": {
+        "state": "UNVERIFIED",
+        "rule": "OPERATOR_V1",
+        "satisfied": [],
+        "missing": [
+          "SOURCE_OPERATOR",
+          "SIGNER_OPERATORS",
+          "CONTROLLER_IDENTITIES"
+        ],
+        "findingIds": [
+          "OPERATOR_PROVENANCE"
+        ]
+      },
+      "PRICE_SEMANTICS": {
+        "state": "PARTIALLY_VERIFIED",
+        "rule": "SEMANTICS_V1",
+        "satisfied": [
+          "MECHANICAL_SCALING"
+        ],
+        "missing": [
+          "ECONOMIC_BASE_QUOTE",
+          "FEED_DENOMINATION"
+        ],
+        "findingIds": [
+          "PRICE_SEMANTICS"
+        ]
+      },
+      "FRESHNESS": {
+        "state": "UNKNOWN",
+        "rule": "FRESHNESS_V1",
+        "satisfied": [
+          "TIMESTAMP_SEMANTICS"
+        ],
+        "missing": [
+          "VERIFIED_HEARTBEAT",
+          "UPSTREAM_FRESHNESS_GUARANTEE"
+        ],
+        "findingIds": [
+          "TIMESTAMP_SEMANTICS",
+          "CACHE_EXPIRY",
+          "CONSUMER_EXPIRY"
+        ]
+      },
+      "INDEPENDENT_VALIDATION": {
+        "state": "UNKNOWN",
+        "rule": "INDEPENDENCE_V1",
+        "satisfied": [],
+        "missing": [
+          "NO_QUALIFIED_INDEPENDENT_SOURCE"
+        ],
+        "findingIds": [
+          "INDEPENDENT_VALIDATION"
+        ]
+      },
+      "CONFIGURATION_CONTROL": {
+        "state": "PARTIALLY_VERIFIED",
+        "rule": "CONTROL_V1",
+        "satisfied": [
+          "PERMISSION_BOUNDARIES",
+          "CURRENT_CONTROLLERS"
+        ],
+        "missing": [
+          "COMPLETE_SIGNER_CONFIGURATION",
+          "CONTROLLER_IDENTITIES"
+        ],
+        "findingIds": [
+          "CONFIGURATION_CONTROL"
+        ]
+      }
+    },
+    "configuration": {
+      "oracle": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+      "feed": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+      "cache": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+      "forwarder": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+      "feedId": "0x0007c129e624689953a2636c014531b2f0bd0c15f9a22211f53023354f309fa6",
+      "proxyOwner": "0x007DB8D5b32015E34f63Cf5312505ADf03Fcca5d",
+      "cacheOwner": "0x59538b88DB99635Eb9181AdFBd1F6CF5588DDFf0",
+      "forwarderOwner": "0xB8F1032c6E69ef81DB98CF036133b9CBeAD1B3b0",
+      "allowedWorkflowOwner": "0x0000000000000000000000000000000000000000",
+      "proxyImplementation": "0x0000000000000000000000000000000000000000",
+      "proxyAdmin": "0x0000000000000000000000000000000000000000",
+      "proxyBeacon": "0x0000000000000000000000000000000000000000",
+      "oracleRuntime": "0x2b4b39be4acacf49ae05c056a0debbe9bf8fff8e47c9ff6b67f101dbad34de9b",
+      "proxyRuntime": "0xace6df7e3159128786ca24c6ad172b38b0d69ae20f4fa8edae07ea0d39f93c9d",
+      "cacheRuntime": "0xa408ee37af0e83e6c4fab1f1a3c7927c8253b02ea28dbe14e9eaec9d123e9869",
+      "forwarderRuntime": "0x2b21870eb5ea9013a781ed3db7d5fab742b612b2ac8de0990ac9d95b22f795fc",
+      "compositionHash": "9976e527166818d50bdbb116f1e815fb4cf3c73c9fb77b59883fbf5829abe5d9",
+      "signerConfigurationHash": "cc92b70198852a789462d9e1ffd98c512ceca4db2df19cfe0fe3fb7a114f9ded",
+      "workflowConfigurationHash": "c1064241770fa5d3ecbec4ca9134fd61554691647fa7c592c19af5986e752a03",
+      "collateralToken": "0x4809010926aec940b550D34a46A52739f996D75D",
+      "loanToken": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+      "collateralDecimals": 18,
+      "loanDecimals": 6,
+      "feedDecimals": 18,
+      "denomination": "ECONOMIC_QUOTE_UNVERIFIED",
+      "descriptionHash": "88c8bc51c0fc3669fe7bd921f8e277592e49d52d725b4b37be8cb0bbdbbd000e",
+      "signerCoverage": "SAMPLED_ACTIVE_CONFIGS"
+    },
+    "evidenceInvalidated": false,
+    "price": "1106992358384461601000000",
+    "round": {
+      "roundId": "0",
+      "answer": "1106992358384461601",
+      "startedAt": "1793921075",
+      "updatedAt": "1793921075",
+      "answeredInRound": "0"
+    },
+    "observationTimestampUtc": "2026-11-05T23:24:35.000Z",
+    "providerIndependence": "RPC_MCP_SHARED_UPSTREAM_NOT_INDEPENDENT",
+    "supplementalStatus": "BOUNDED_READ_COMPLETE",
+    "supplementalRequests": 44,
+    "supplementalBounds": {
+      "requests": 96,
+      "wallMilliseconds": 120000,
+      "requestMilliseconds": 15000,
+      "responseBytes": 2000000,
+      "historyBlocks": "8000",
+      "queryBlocks": "1000",
+      "logs": 512,
+      "configurationEventBlocks": 8,
+      "updateTransactions": 2,
+      "signers": 31
+    },
+    "findings": [
+      {
+        "id": "RUNTIME_0",
+        "subjectAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+        "statement": "Runtime identity result for the exact selected dependency: VERIFIED.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+            "chainId": 1672,
+            "source": "evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/independent-recompilation.json",
+            "sourceKind": "COMPILER",
+            "block": {
+              "number": "21864844",
+              "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+              "timestamp": "1793553649"
+            },
+            "retrievedAt": "2026-11-01T17:23:46.680Z",
+            "method": "Exact-version native solc with SHA-256 and Keccak release checks; full runtime equality, with public-getter immutable binding where needed.",
+            "artifactSha256": "1d8626de9a4b8136a84e3dd625e00891fc05302879bd1c1525fce7e17d0bffcb",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "This is bytecode reproduction, not proof of feed economics, operator identity or heartbeat."
+            ]
+          }
+        ],
+        "unresolved": []
+      },
+      {
+        "id": "RUNTIME_1",
+        "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+        "statement": "Runtime identity result for the exact selected dependency: VERIFIED.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/independent-recompilation.json",
+            "sourceKind": "COMPILER",
+            "block": {
+              "number": "21864844",
+              "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+              "timestamp": "1793553649"
+            },
+            "retrievedAt": "2026-11-01T17:23:46.680Z",
+            "method": "Exact-version native solc with SHA-256 and Keccak release checks; full runtime equality, with public-getter immutable binding where needed.",
+            "artifactSha256": "1d8626de9a4b8136a84e3dd625e00891fc05302879bd1c1525fce7e17d0bffcb",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "This is bytecode reproduction, not proof of feed economics, operator identity or heartbeat."
+            ]
+          }
+        ],
+        "unresolved": []
+      },
+      {
+        "id": "RUNTIME_2",
+        "subjectAddress": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+        "statement": "Runtime identity result for the exact selected dependency: VERIFIED.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+            "chainId": 1672,
+            "source": "evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/independent-recompilation.json",
+            "sourceKind": "COMPILER",
+            "block": {
+              "number": "21864844",
+              "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+              "timestamp": "1793553649"
+            },
+            "retrievedAt": "2026-11-01T17:23:46.680Z",
+            "method": "Exact-version native solc with SHA-256 and Keccak release checks; full runtime equality, with public-getter immutable binding where needed.",
+            "artifactSha256": "1d8626de9a4b8136a84e3dd625e00891fc05302879bd1c1525fce7e17d0bffcb",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "This is bytecode reproduction, not proof of feed economics, operator identity or heartbeat."
+            ]
+          }
+        ],
+        "unresolved": []
+      },
+      {
+        "id": "RUNTIME_3",
+        "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+        "statement": "Runtime identity result for the exact selected dependency: VERIFIED.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+            "chainId": 1672,
+            "source": "evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/independent-recompilation.json",
+            "sourceKind": "COMPILER",
+            "block": {
+              "number": "21864844",
+              "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+              "timestamp": "1793553649"
+            },
+            "retrievedAt": "2026-11-01T17:23:46.680Z",
+            "method": "Exact-version native solc with SHA-256 and Keccak release checks; full runtime equality, with public-getter immutable binding where needed.",
+            "artifactSha256": "1d8626de9a4b8136a84e3dd625e00891fc05302879bd1c1525fce7e17d0bffcb",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "This is bytecode reproduction, not proof of feed economics, operator identity or heartbeat."
+            ]
+          }
+        ],
+        "unresolved": []
+      },
+      {
+        "id": "RUNTIME_4",
+        "subjectAddress": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+        "statement": "Runtime identity result for the exact selected dependency: VERIFIED.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+            "chainId": 1672,
+            "source": "evidence/phase4/oracle-research-2026-11-01T17-23-46-683Z-9ad554c5-ffdd-4f43-83d7-3a52a8abd91f/independent-recompilation.json",
+            "sourceKind": "COMPILER",
+            "block": {
+              "number": "21864844",
+              "hash": "0x34bed88e5dcc0890c2087cc2f2c7f71a484e74bd7a140cb5f8449c4196a61f8b",
+              "timestamp": "1793553649"
+            },
+            "retrievedAt": "2026-11-01T17:23:46.680Z",
+            "method": "Exact-version native solc with SHA-256 and Keccak release checks; full runtime equality, with public-getter immutable binding where needed.",
+            "artifactSha256": "1d8626de9a4b8136a84e3dd625e00891fc05302879bd1c1525fce7e17d0bffcb",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "This is bytecode reproduction, not proof of feed economics, operator identity or heartbeat."
+            ]
+          }
+        ],
+        "unresolved": []
+      },
+      {
+        "id": "DEPENDENCY_GRAPH",
+        "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+        "statement": "Market oracle reads a cache/feed facade; the facade owner can change its cache and feed ID. No economic upstream identity follows from these addresses.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+            "sourceKind": "VERIFIED_SOURCE",
+            "block": null,
+            "retrievedAt": "2026-11-01T13:50:09.686Z",
+            "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+            "artifactSha256": "82b18d00ba9c278686f5483df5ca3881f3bc2200d7532500c80b7ea81359ae06",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "Source comments and interface names do not prove source operation, economic quote or operator identity."
+            ]
+          }
+        ],
+        "unresolved": [
+          "Underlying economic source and feed operator identities are unresolved."
+        ]
+      },
+      {
+        "id": "SNAPSHOT_VALIDATION",
+        "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+        "statement": "Unchanged Phase 2 input validation: UNVERIFIED; block continuity conflict: false.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+            "sourceKind": "VERIFIED_SOURCE",
+            "block": null,
+            "retrievedAt": "2026-11-01T13:50:09.686Z",
+            "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+            "artifactSha256": "82b18d00ba9c278686f5483df5ca3881f3bc2200d7532500c80b7ea81359ae06",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "Source comments and interface names do not prove source operation, economic quote or operator identity."
+            ]
+          }
+        ],
+        "unresolved": [
+          "Snapshot validation does not establish the economic origin of a feed answer."
+        ]
+      },
+      {
+        "id": "SOURCE_PROVENANCE",
+        "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+        "statement": "The exact economic source behind the selected feed ID has not been established.",
+        "classification": "UNKNOWN",
+        "evidence": [
+          {
+            "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+            "chainId": 1672,
+            "source": "evidence/phase1/sources/SelfManagedFeedsCache.sol",
+            "sourceKind": "VERIFIED_SOURCE",
+            "block": null,
+            "retrievedAt": "2026-11-01T13:50:02.821Z",
+            "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+            "artifactSha256": "602a035ebd7ec5d258715dcb0e5c61d679f072b89ae774824668e4a13dcbd461",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "Source comments and interface names do not prove source operation, economic quote or operator identity."
+            ]
+          }
+        ],
+        "unresolved": [
+          "Workflow source code, feed-ID product mapping, aggregation inputs and economic quote remain unverified."
+        ]
+      },
+      {
+        "id": "OPERATOR_PROVENANCE",
+        "subjectAddress": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+        "statement": "On-chain owners, workflow identifiers and signer addresses do not identify their real-world operators.",
+        "classification": "UNKNOWN",
+        "evidence": [
+          {
+            "subjectAddress": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+            "chainId": 1672,
+            "source": "evidence/phase1/sources/KeystoneForwarder.sol",
+            "sourceKind": "VERIFIED_SOURCE",
+            "block": null,
+            "retrievedAt": "2026-11-01T13:50:08.023Z",
+            "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+            "artifactSha256": "edae1208bfe3f3f311382e05470e8954067324ff7bfdcee7772f2e8d20e0542c",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "Source comments and interface names do not prove source operation, economic quote or operator identity."
+            ]
+          }
+        ],
+        "unresolved": [
+          "Legal/operator identities, upstream independence and operational responsibilities are unverified."
+        ]
+      },
+      {
+        "id": "PRICE_SEMANTICS",
+        "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+        "statement": "Mechanical conversion: feed answer times 1000000; 18 feed decimals, 18 collateral decimals, 6 loan decimals, Morpho price scale 10^36.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+            "sourceKind": "VERIFIED_SOURCE",
+            "block": null,
+            "retrievedAt": "2026-11-01T13:50:09.686Z",
+            "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+            "artifactSha256": "82b18d00ba9c278686f5483df5ca3881f3bc2200d7532500c80b7ea81359ae06",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "Source comments and interface names do not prove source operation, economic quote or operator identity."
+            ]
+          }
+        ],
+        "unresolved": [
+          "The economic quote of the workflow answer is not proved; token symbols are insufficient."
+        ]
+      },
+      {
+        "id": "TIMESTAMP_SEMANTICS",
+        "subjectAddress": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+        "statement": "updatedAt and startedAt are the cache's workflow-supplied observation timestamp; round IDs are zero and historical round getters revert.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0xb5779919e2F183e59A34140331F7779cbFF1d1BC",
+            "chainId": 1672,
+            "source": "evidence/phase1/sources/SelfManagedFeedsCacheProxy.sol",
+            "sourceKind": "VERIFIED_SOURCE",
+            "block": null,
+            "retrievedAt": "2026-11-01T13:50:02.085Z",
+            "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+            "artifactSha256": "cc61c1da8e2c5b6c25ed1c10db8851226b36a120616aefda8e978d8280b4cefe",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "Source comments and interface names do not prove source operation, economic quote or operator identity."
+            ]
+          }
+        ],
+        "unresolved": [
+          "Observation time is claimed by the workflow; it is not the transaction publication time."
+        ]
+      },
+      {
+        "id": "CACHE_EXPIRY",
+        "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+        "statement": "Updates with timestamp less than or equal to the stored timestamp are skipped. The cache ignores validFromTimestamp, accepts future timestamps and has no age expiry; old answers remain readable.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+            "chainId": 1672,
+            "source": "evidence/phase1/sources/SelfManagedFeedsCache.sol",
+            "sourceKind": "VERIFIED_SOURCE",
+            "block": null,
+            "retrievedAt": "2026-11-01T13:50:02.821Z",
+            "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+            "artifactSha256": "602a035ebd7ec5d258715dcb0e5c61d679f072b89ae774824668e4a13dcbd461",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "Source comments and interface names do not prove source operation, economic quote or operator identity."
+            ]
+          }
+        ],
+        "unresolved": [
+          "No verified heartbeat or upstream maximum-age guarantee is available."
+        ]
+      },
+      {
+        "id": "CONSUMER_EXPIRY",
+        "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+        "statement": "The bound feed library rejects negative answers but does not enforce observation age; the local reader also rejects zero and invalid timestamps.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0x9416F861970C2a39c02ab7696Ef0496383d4E81b",
+            "chainId": 1672,
+            "source": "evidence/phase1/sources/verified-ChainlinkDataFeedLib.sol",
+            "sourceKind": "VERIFIED_SOURCE",
+            "block": null,
+            "retrievedAt": "2026-11-01T13:50:09.686Z",
+            "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+            "artifactSha256": "82b18d00ba9c278686f5483df5ca3881f3bc2200d7532500c80b7ea81359ae06",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "Source comments and interface names do not prove source operation, economic quote or operator identity."
+            ]
+          }
+        ],
+        "unresolved": [
+          "Successful price reads cannot establish freshness."
+        ]
+      },
+      {
+        "id": "INDEPENDENT_VALIDATION",
+        "subjectAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+        "statement": "No independently qualified, temporally aligned collateral/loan market-price comparator is configured. Original Morpho and candidate prices remain separate.",
+        "classification": "UNKNOWN",
+        "evidence": [
+          {
+            "subjectAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          }
+        ],
+        "unresolved": [
+          "Issuer redemption information and differently denominated or cross-chain feeds are not substitutes."
+        ]
+      },
+      {
+        "id": "COLLATERAL_ISSUER_REGISTRY",
+        "subjectAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+        "statement": "Reservoir issuer registry research for the exact Pharos collateral address; see the retained source evidence.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0x4809010926aec940b550D34a46A52739f996D75D",
+            "chainId": 1672,
+            "source": "evidence/phase4/independent-research-2026-11-01T17-30-38-572Z-cf7ce161-e80a-412c-aad3-79f1f03a8d15/reservoir-addresses.json",
+            "sourceKind": "OFFICIAL_DOCUMENT",
+            "block": null,
+            "retrievedAt": "2026-11-01T17:30:37.716Z",
+            "method": "Full bounded issuer registry and exact Pharos table row map chain-1672 collateral to wsrUSD; economic equivalence and feed quote remain separate questions.",
+            "artifactSha256": "9d5055471d0c44d2a7dbb46b1e212fe26896feec6c13ea6cd170d49596f52a2c",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "No selected-feed price mapping, USDC market quote or independence from the selected upstream is established."
+            ]
+          }
+        ],
+        "unresolved": [
+          "Issuer identity is not a verified market price or proof of this oracle's quote."
+        ]
+      },
+      {
+        "id": "CONFIGURATION_CONTROL",
+        "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+        "statement": "Owners can change cache/feed forwarding, workflow permissions and forwarder signers; source inspection defines permissions, not controller trustworthiness.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+            "chainId": 1672,
+            "source": "sha256:b00e8d0859e45aec43a33d1431665d8ce6ec8df0efc41874f3c89d8322671c95",
+            "sourceKind": "SNAPSHOT",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:47:20.525Z",
+            "method": "Snapshot address, block, runtime hashes and RPC/MCP consistency reviewed; canonical snapshot identifier and serialized artifact hash are separate.",
+            "artifactSha256": "3fcc33e2976625b88b904253dda7db1cd4c2001e8df569d8c8d48bf39f0c1fe5",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          },
+          {
+            "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+            "chainId": 1672,
+            "source": "evidence/phase1/sources/SelfManagedFeedsCache.sol",
+            "sourceKind": "VERIFIED_SOURCE",
+            "block": null,
+            "retrievedAt": "2026-11-01T13:50:02.821Z",
+            "method": "Inspected explorer source; bind behavior only when deployed runtime matches the reviewed hash.",
+            "artifactSha256": "602a035ebd7ec5d258715dcb0e5c61d679f072b89ae774824668e4a13dcbd461",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "Source comments and interface names do not prove source operation, economic quote or operator identity."
+            ]
+          }
+        ],
+        "unresolved": [
+          "All active signer configurations and authorized forwarder entries are not enumerated."
+        ]
+      },
+      {
+        "id": "BOUNDED_HISTORY",
+        "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+        "statement": "Supplemental investigation: BOUNDED_READ_COMPLETE; history is explicitly bounded.",
+        "classification": "PROVEN",
+        "evidence": [
+          {
+            "subjectAddress": "0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8",
+            "chainId": 1672,
+            "source": "https://rpc.pharos.xyz",
+            "sourceKind": "RPC",
+            "block": {
+              "number": "22225454",
+              "hash": "0x9515451fc030160d2c4014b4b663f0d024b50b5774bbb1bf3829bbe5cd4e883d",
+              "timestamp": "1793922408"
+            },
+            "retrievedAt": "2026-11-05T23:48:19.429Z",
+            "method": "Bounded logs, matched receipts/calldata and runtime-bound storage layout at the identified block.",
+            "artifactSha256": "ee8b81e3c10b119d7f94688c923d7953b3fd4202965d144b6c23bc41ad3e06f6",
+            "confidence": "PROVEN",
+            "unresolved": [
+              "RPC/MCP agreement is not independent consensus or proof of economic correctness."
+            ]
+          }
+        ],
+        "unresolved": [
+          "History is a bounded window, not a deployment-to-present enumeration.",
+          "Sampled DON configurations and workflow IDs do not enumerate all authorized entries.",
+          "Storage and RPC evidence do not identify real-world operators or economic data sources."
+        ]
+      }
+    ]
+  },
+  "completedAt": "2026-11-05T23:48:21.311Z",
+  "execution": {
+    "runOnceCalls": 1,
+    "liveReaderCalls": 1,
+    "supplementalCalls": 1,
+    "blockedNetworkAttempts": 0,
+    "networkRequests": 118,
+    "notificationChannels": [
+      "console"
+    ],
+    "actualConsoleMessages": 3,
+    "noContinuousMonitoring": true,
+    "noSchedulerActivated": true,
+    "noFixturePermission": true,
+    "noProductionConfigurationChange": true,
+    "noRemoteDatabase": true,
+    "noSigningBroadcastOrLendingOperation": true
+  }
+}

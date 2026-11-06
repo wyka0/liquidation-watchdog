@@ -1,0 +1,9 @@
+* text=auto eol=lf
+# Frozen evidence, qualified build and demo artifacts must retain their exact bytes.
+# This includes every approved SQLite database, sidecar, journal and lock file.
+evidence/** -text
+dist/** -text
+data/submission-demo/** -text
+# Source archives retain the exact fetched bytes used by the SHA-256 manifest.
+evidence/phase1/sources/*.sol -text whitespace=-blank-at-eof,cr-at-eol
+evidence/phase2/sources/*.sol -text whitespace=-blank-at-eof,cr-at-eol

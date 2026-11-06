@@ -1,0 +1,15 @@
+{
+  "evidenceKind": "LIVE_CHAIN_READ",
+  "retrievedAt": "2026-11-01T14:59:17.478Z",
+  "chainId": 1672,
+  "block": {
+    "number": "21856800",
+    "hash": "0x50cbf0f2173da46d748a980d546dc5e9c054ae151e7269fecb9c7b0f413f93db",
+    "parentHash": "0xcd6651d9175a68bcfe5022c88a5f16b388002d522ed2374ad692594ce2595d01",
+    "timestamp": "1793545125"
+  },
+  "accountRole": "PUBLIC_DEMONSTRATION_ACCOUNT_NOT_USER_WALLET",
+  "configured": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+  "derivedFromActualParameters": "0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73",
+  "matches": true
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "manifestSha256": "c11d4f22e92b3bc1657450460349d92292d8700a00b42467e223ee5aecd72dce",
+  "schemaVersion": 5,
+  "databaseSha256": "90af687462ebb1b0e17b77548f88ec31bc0773bf4a0825c95541f0461a036578",
+  "counts": {
+    "schema_migrations": 5,
+    "streams": 1,
+    "cycles": 2,
+    "fingerprints": 3,
+    "alerts": 3,
+    "deliveries": 3,
+    "delivery_attempts": 3,
+    "delivery_events": 9,
+    "provider_limits": 0,
+    "oracle_assurance": 2,
+    "worker_runtime": 1,
+    "operational_events": 0
+  },
+  "evidenceBundles": 2,
+  "evidenceFiles": 46,
+  "reviewedReferences": 6,
+  "actionable": false,
+  "created": true,
+  "mechanism": "SQLITE_ONLINE_BACKUP_API"
+}

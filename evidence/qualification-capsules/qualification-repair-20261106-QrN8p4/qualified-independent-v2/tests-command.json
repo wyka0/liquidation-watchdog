@@ -1,0 +1,35 @@
+{
+  "label": "tests",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "test/runtime-process.test.ts",
+    "-t",
+    "fences a second process",
+    "--configLoader=native",
+    "--no-cache",
+    "--no-fsModuleCache",
+    "--reporter=default",
+    "--reporter=json",
+    "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\tests.json"
+  ],
+  "cwd": "C:/liquidation-watchdog",
+  "pid": 4860,
+  "startedAt": "2026-11-06T00:48:48.361Z",
+  "completedAt": "2026-11-06T00:49:03.183Z",
+  "durationMs": 14819.0527,
+  "exitCode": 0,
+  "signal": null,
+  "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+  "stdout": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\tests.stdout.txt",
+    "bytes": 554,
+    "sha256": "2155ec8cc4941d9088cfd8a8e237b413bea1b401c01bf0c263eb3a3b352d535f"
+  },
+  "stderr": {
+    "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\qualified-independent-v2\\tests.stderr.txt",
+    "bytes": 336,
+    "sha256": "e7de150c607ddc721a185b2be588ba714cb4f2ec0ba08d60c0f72ee1a4ad881c"
+  }
+}

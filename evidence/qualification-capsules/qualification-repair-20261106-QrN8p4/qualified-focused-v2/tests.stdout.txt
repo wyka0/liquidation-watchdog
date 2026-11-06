@@ -1,0 +1,37 @@
+
+ RUN  v5.0.5 C:/liquidation-watchdog
+
+ ✓ test/runtime-storage.test.ts (13 tests) 8129ms
+   ✓ PHASE8 FIXTURE: existing-only storage and persistent workspace (13)
+     ✓ requires explicit migration and preserves a legacy database byte for byte 645ms
+     ✓ preserves current schema/content on existing-only opens and retains the writer fence 766ms
+     ✓ exclusively seeds pinned evidence, checks existing bytes, and fences a second service 2072ms
+     ✓ refuses a changed runtime evidence copy without replacing it or touching its release source 1210ms
+     ✓ checks persisted evidence references and fails on a missing local artifact 1510ms
+     ✓ bounds a real SQLite competing-write lock and rolls back without partial state 1317ms
+ ✓ test/runtime-lifecycle.test.ts (14 tests) 20615ms
+   ✓ PHASE8 FIXTURE: explicit single-process runtime lifecycle (14)
+     ✓ starts disabled without creating the database, rejects a duplicate process runtime, and closes cleanly 1531ms
+     ✓ fails closed without authentication, on missing enabled DB, enabled providers, invalid path, and oversized shutdown budget 1304ms
+     ✓ cancels startup on an immediate stop and releases the process owner without creating a database 1371ms
+     ✓ refuses an occupied HTTP port before starting monitoring and releases all acquired ownership 1489ms
+     ✓ serves API during an in-flight read, prevents overlap, settles the read on shutdown and preserves the database 1905ms
+     ✓ wires SIGINT to the same bounded shutdown and removes listeners (explicit Windows handler simulation) 1296ms
+     ✓ wires SIGTERM to the same bounded shutdown and removes listeners (explicit Windows handler simulation) 1261ms
+     ✓ bounds a non-cooperative read, preserves interrupted state and discards its late result 2498ms
+     ✓ does not hide terminal worker failure behind a healthy listener 1424ms
+     ✓ recovers interrupted cycles/outbox and preserves known-delivered records and dedup across restarts 3391ms
+     ✓ preserves an existing database byte-for-byte through repeated disabled starts and shutdowns 3072ms
+ ✓ test/runtime-process.test.ts (4 tests) 25211ms
+   ✓ PHASE8 FIXTURE: actual runtime processes (4)
+     ✓ guards source imports against HTTP construction, SQLite opens and provider requests 4060ms
+     ✓ shuts down a child runtime through SIGINT (Windows: IPC handler simulation) 6204ms
+     ✓ shuts down a child runtime through SIGTERM (Windows: IPC handler simulation) 5065ms
+     ✓ fences a second process and recovers after actual forced OS termination with an unfinished cycle 9878ms
+
+ Test Files  3 passed (3)
+      Tests  31 passed (31)
+   Start at  06:19:34
+   Duration  39.06s (tests 87%, import 10%, transform 3%)
+
+JSON report written to [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/qualification-repair-20261106-QrN8p4/qualified-focused-v2/tests.json

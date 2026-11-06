@@ -1,0 +1,176 @@
+{
+  "name": "qualified-runtime-process-v2",
+  "mode": "runtime-process",
+  "status": "PASS",
+  "tests": {
+    "success": true,
+    "files": 1,
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "todo": 0
+  },
+  "checks": [
+    {
+      "label": "tests",
+      "exitCode": 0,
+      "durationMs": 28276.037399999997
+    }
+  ],
+  "networkGuard": {
+    "version": "v2",
+    "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "records": 10,
+    "blockedRecords": 0,
+    "blockedLocalIPC": 0,
+    "demonstratedRemoteAttempts": 0,
+    "allowedLocalNamedPipes": 10,
+    "caveat": null
+  },
+  "cleanup": {
+    "remainingFixtureDirectories": [],
+    "removalAttempts": 3,
+    "removalErrors": [],
+    "pathsStillExist": [],
+    "children": [
+      {
+        "pid": 2232,
+        "exited": true,
+        "closed": true,
+        "disconnected": false,
+        "stateAtClose": {
+          "at": "2026-11-06T00:49:12.155Z",
+          "hrNs": "38000832148000",
+          "pid": 11388,
+          "ppid": 12332,
+          "sequence": 8,
+          "event": "child_close",
+          "childPid": 2232,
+          "exitCode": 0,
+          "signalCode": null,
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": 0,
+          "signal": null,
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 13944,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:49:17.005Z",
+          "hrNs": "38005682491900",
+          "pid": 11388,
+          "ppid": 12332,
+          "sequence": 27,
+          "event": "child_close",
+          "childPid": 13944,
+          "exitCode": 0,
+          "signalCode": null,
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": 0,
+          "signal": null,
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 12752,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:49:22.113Z",
+          "hrNs": "38010790211500",
+          "pid": 11388,
+          "ppid": 12332,
+          "sequence": 59,
+          "event": "child_close",
+          "childPid": 12752,
+          "exitCode": 0,
+          "signalCode": null,
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": 0,
+          "signal": null,
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 5512,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:49:27.787Z",
+          "hrNs": "38016464746500",
+          "pid": 11388,
+          "ppid": 12332,
+          "sequence": 108,
+          "event": "child_close",
+          "childPid": 5512,
+          "exitCode": null,
+          "signalCode": "SIGKILL",
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": null,
+          "signal": "SIGKILL",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 8220,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:49:32.212Z",
+          "hrNs": "38020888983700",
+          "pid": 11388,
+          "ppid": 12332,
+          "sequence": 122,
+          "event": "child_close",
+          "childPid": 8220,
+          "exitCode": 0,
+          "signalCode": null,
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": 0,
+          "signal": null,
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      }
+    ],
+    "relevantFixtureProcessesAfterRun": [],
+    "noObservedOrphanProcesses": true
+  }
+}

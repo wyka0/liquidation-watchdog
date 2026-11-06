@@ -1,0 +1,2 @@
+Prior evidence: 127/127 unchanged; 0 unexpected archive files.
+Phase 2 artifact hashes: 15/15; exact input/result replays: 3/3.

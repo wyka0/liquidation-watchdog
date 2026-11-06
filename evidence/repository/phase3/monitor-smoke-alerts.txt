@@ -1,0 +1,47 @@
+[2026-11-01T15:58:25.472Z] WARNING | alert_d21fed996bf8b5d6623028ab059913d04fec99afb1f97cc5bb1dc0b88596580d
+Position: 0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+State: UNKNOWN -> WARNING
+Safety ratio: 1.171985652690866991
+Data quality: UNKNOWN -> UNVERIFIED; effective state: DATA_UNVERIFIED
+Oracle data: UNVERIFIED; oracle verification: UNVERIFIED; heartbeat: UNKNOWN
+Actionability: false (INDICATIVE_ONLY)
+Snapshot: block 21859975; hash 0xa909ea40456353497d9d2c10fc94d8c3b59ce9c5418354e95889681ad908c823
+Snapshot ID: sha256:11621ae1efd83d0bf05d198288c41c17a54e505678585809a49eb87b47f26d3d; context: LIVE_AS_OF_BLOCK
+Reason: Oracle data quality changed; successful reads do not verify its economic source or heartbeat.
+Indicative repayment: 17077.855979 (token 0xC879C018dB60520F4355C26eD1a6D572cdAC1815); target 1.25; actionable: false.
+Indicative additional collateral: 21090.662583700135266449 (token 0x4809010926aec940b550D34a46A52739f996D75D); target 1.25; actionable: false.
+Recovery estimates are snapshot-bound, indicative and non-actionable. RPC/MCP share an upstream; agreement is not independent consensus.
+Delivery: console=DELIVERED (1 attempts)
+[2026-11-01T15:58:25.472Z] WARNING | alert_5eb0bbbbbb0a4eb328c7f78d8db413ec748451f80604a840ce766beae0b22b4f
+Position: 0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+State: UNKNOWN -> WARNING
+Safety ratio: 1.171985652690866991
+Data quality: UNKNOWN -> UNVERIFIED; effective state: DATA_UNVERIFIED
+Oracle data: UNVERIFIED; oracle verification: UNVERIFIED; heartbeat: UNKNOWN
+Actionability: false (INDICATIVE_ONLY)
+Snapshot: block 21859975; hash 0xa909ea40456353497d9d2c10fc94d8c3b59ce9c5418354e95889681ad908c823
+Snapshot ID: sha256:11621ae1efd83d0bf05d198288c41c17a54e505678585809a49eb87b47f26d3d; context: LIVE_AS_OF_BLOCK
+Reason: Effective data quality changed independently of mathematical risk.
+Indicative repayment: 17077.855979 (token 0xC879C018dB60520F4355C26eD1a6D572cdAC1815); target 1.25; actionable: false.
+Indicative additional collateral: 21090.662583700135266449 (token 0x4809010926aec940b550D34a46A52739f996D75D); target 1.25; actionable: false.
+Recovery estimates are snapshot-bound, indicative and non-actionable. RPC/MCP share an upstream; agreement is not independent consensus.
+Delivery: console=DELIVERED (1 attempts)
+[2026-11-01T15:58:25.472Z] WARNING | alert_78acf189664f209fe55ab81c86bd9a50111682facdf95d5a31f8a6efc9e0f3c8
+Position: 0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+State: UNKNOWN -> WARNING
+Safety ratio: 1.171985652690866991
+Data quality: UNKNOWN -> UNVERIFIED; effective state: DATA_UNVERIFIED
+Oracle data: UNVERIFIED; oracle verification: UNVERIFIED; heartbeat: UNKNOWN
+Actionability: false (INDICATIVE_ONLY)
+Snapshot: block 21859975; hash 0xa909ea40456353497d9d2c10fc94d8c3b59ce9c5418354e95889681ad908c823
+Snapshot ID: sha256:11621ae1efd83d0bf05d198288c41c17a54e505678585809a49eb87b47f26d3d; context: LIVE_AS_OF_BLOCK
+Reason: Initial indicative mathematical assessment at the identified block.
+Indicative repayment: 17077.855979 (token 0xC879C018dB60520F4355C26eD1a6D572cdAC1815); target 1.25; actionable: false.
+Indicative additional collateral: 21090.662583700135266449 (token 0x4809010926aec940b550D34a46A52739f996D75D); target 1.25; actionable: false.
+Recovery estimates are snapshot-bound, indicative and non-actionable. RPC/MCP share an upstream; agreement is not independent consensus.
+Delivery: console=DELIVERED (1 attempts)
+(node:15276) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

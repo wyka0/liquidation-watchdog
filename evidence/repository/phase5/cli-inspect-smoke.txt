@@ -1,0 +1,63 @@
+Liquidation Watchdog — Phase 1 read-only inspection
+Network: Pharos Pacific Mainnet (chain 1672)
+Evidence: LIVE_CHAIN_READ — as of the block below
+Block: 21924008 | 2026-11-02T10:20:00.000Z
+Block hash: 0x553c3ca252497573781f986fb0d98ed26f38452795213bc67a90cc5f09a605a7
+Observed heads: RPC 21924013 | MCP 21924014
+Morpho Blue (configured): 0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb
+Market: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+Parameter-derived market ID: 0xbea21c372be9729760844cb2d60879f5ced6a8a5bba9a538dea8801e8ac49e73
+IRM: 0xD5E02889C13230458506CC842347c4E62F8cDF3a
+Loan token: USDC (USDC) | 0xC879C018dB60520F4355C26eD1a6D572cdAC1815 | 6 decimals
+Collateral token: Wrapped Savings rUSD (wsrUSD) | 0x4809010926aec940b550D34a46A52739f996D75D | 18 decimals
+Account: 0xc6dD9976066F3364b4D6A72cD4F1fA0468327Aa7 (public demonstration account; NOT the user's wallet)
+Collateral: 316838.566331327720653953 wsrUSD
+Borrow shares: 270260163875273673
+Supply shares (stored): 0
+Accrued debt: 273666.641486 USDC
+Stored market assets (raw loan units): supply 5952073982495 | borrow 5390483818769
+Stored market shares: supply 5886569627533310138 | borrow 5324169446054473402
+Market lastUpdate: 2026-11-01T12:08:48.000Z | fee: 0%
+Accrued market borrow assets (raw): 5391277612314
+Accrued market supply assets (raw): 5952867776040 | supply shares: 5886569627533310138
+Accrued fee amount (raw): 0 | fee shares: 0
+Oracle: 0x9416F861970C2a39c02ab7696Ef0496383d4E81b | feed proxy: 0xb5779919e2F183e59A34140331F7779cbFF1d1BC
+Feed ID: 0x0007c129e624689953a2636c014531b2f0bd0c15f9a22211f53023354f309fa6 | cache: 0xd9F00c86ced2De92F6B7152b0492cb28edc4B5a8
+Feed version: SelfManagedFeedsCacheProxy 1.0.0 | description: SelfManagedFeedsCacheProxy
+Oracle price (raw; scale 1e36 in loan/collateral base units): 1106333676642502292000000
+Feed answer (18 decimals): 1.106333676642502292
+Feed rounds: roundId 0 | answeredInRound 0
+Feed updatedAt: 2026-11-02T09:24:33.000Z | age at block: 3327s
+Timestamp meaning: Report observationsTimestamp supplied by the authorized workflow; not block inclusion or independent price validation time.
+Heartbeat: UNVERIFIED — no acceptable age assumed
+On-chain age enforcement: absent in the investigated adapter
+Controllers: proxy owner 0x007DB8D5b32015E34f63Cf5312505ADf03Fcca5d | cache owner 0x59538b88DB99635Eb9181AdFBd1F6CF5588DDFf0
+Forwarder: 0x76c9cf548b4179F8901cda1f8623568b58215E62 | owner 0xB8F1032c6E69ef81DB98CF036133b9CBeAD1B3b0
+Borrow rate: 1843543045 WAD/second | 0.000000001843543045 per second
+Accrual elapsed: 79872s | market interest (raw): 793793545
+Collateral value (indicative): 350529.175991 USDC
+LLTV-adjusted maximum borrow (indicative): 320734.196031 USDC
+LLTV: 91.5%
+LTV: 78.0724288391407734%
+Provisional Morpho safety ratio (maxBorrow/accruedDebt): 1.171988643882297364
+Debt state: OUTSTANDING_DEBT
+Calculations: INDICATIVE AND NON-ACTIONABLE; no risk classification is assigned.
+Oracle quality: UNVERIFIED
+Overall snapshot quality: UNVERIFIED
+Quality by scope: network=VALID | contracts=VALID | market=VALID | position=VALID | tokens=VALID | oracle=UNVERIFIED | accounting=VALID | consistency=VALID | snapshot=VALID
+Snapshot: accepted for read-only indicative reporting
+MCP/RPC comparisons: 58/58 matched
+Block hash recheck: matched on both endpoints
+EVM block/timestamp sentinels: 6 checked on both paths
+Contract code: 10/10 present and matched
+RPC: https://rpc.pharos.xyz
+Chain MCP: https://mcp.pharos.xyz/mcp
+Provider relationship: hosted MCP reports the same upstream RPC; agreement is not independent consensus.
+Read trace: 36 public responses | started (UTC): 2026-11-02T10:20:02.583Z
+Retrieved (UTC): 2026-11-02T10:20:33.130Z
+
+Data-quality findings:
+- UNVERIFIED [oracle/ORACLE_SOURCE_UNVERIFIED]: The upstream workflow and exact feed identity are not independently established.
+- UNVERIFIED [oracle/ORACLE_OPERATOR_UNVERIFIED]: On-chain controller addresses are observable; their operator identities are unverified.
+- UNVERIFIED [oracle/HEARTBEAT_UNVERIFIED]: No verified heartbeat or maximum acceptable price age exists for this feed.
+Sanitized snapshot evidence saved under evidence/phase5/inspect/live/.

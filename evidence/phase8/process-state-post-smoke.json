@@ -1,0 +1,21 @@
+{
+  "kind": "PHASE8_OWNED_RUNTIME_PROCESS_CLEANUP",
+  "checkedAt": "2026-11-02T15:10:08.898Z",
+  "passed": true,
+  "command": "node [REDACTED_LOCAL_PATH]/AppData/Local/Temp/opencode/phase8-process.mjs process-state-post-smoke.json",
+  "query": {
+    "provider": "Win32_Process",
+    "filter": "Name = 'node.exe' AND (CommandLine LIKE '%dist%service.js%' OR CommandLine LIKE '%src%service.ts%' OR CommandLine LIKE '%dist%cli.js%' OR CommandLine LIKE '%src%cli.ts%' OR CommandLine LIKE '%phase5-worker.ts%' OR CommandLine LIKE '%phase8-runtime.ts%' OR CommandLine LIKE '%monitoring-smoke.ts%' OR CommandLine LIKE '%oracle-smoke.ts%' OR CommandLine LIKE '%operations-smoke.ts%' OR CommandLine LIKE '%phase5-stability.ts%' OR CommandLine LIKE '%phase8-reliability.ts%')",
+    "returnedProperties": [
+      "Name",
+      "ProcessId"
+    ]
+  },
+  "matchingProcesses": [],
+  "count": 0,
+  "commandLinesRetrieved": false,
+  "processesStoppedByThisCheck": 0,
+  "unrelatedSellerProcess": "NOT_TARGETED_OR_MODIFIED",
+  "productionServiceInstalled": false,
+  "indefiniteMonitoringStarted": false
+}

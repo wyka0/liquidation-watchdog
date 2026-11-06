@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "inspectedAt": "2026-11-06T00:26:40.196Z",
+  "node": "v24.14.1",
+  "system": {
+    "logicalCpus": 4,
+    "freeMemoryBytes": 2069176320,
+    "totalMemoryBytes": 8316850176
+  },
+  "originalFull": {
+    "path": "unit-tests.json",
+    "bytes": 408810,
+    "sha256": "bd1aba2cdbcd8f6bbbefda19ad7a7d175ee6748b1f570d9958b724d53a62711d",
+    "success": false,
+    "files": 49,
+    "total": 1007,
+    "passed": 1006,
+    "failed": 1,
+    "runtimeProcess": [
+      {
+        "name": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "startTime": 1793923004697,
+        "endTime": 1793923103549.113,
+        "status": "failed",
+        "message": "",
+        "assertions": [
+          {
+            "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+            "status": "passed",
+            "durationMs": 13448.871899999998,
+            "failureMessages": []
+          },
+          {
+            "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+            "status": "passed",
+            "durationMs": 22381.945000000003,
+            "failureMessages": []
+          },
+          {
+            "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+            "status": "passed",
+            "durationMs": 22866.783299999996,
+            "failureMessages": []
+          },
+          {
+            "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+            "status": "failed",
+            "durationMs": 40153.113,
+            "failureMessages": [
+              "Error: Test timed out in 40000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:47:3\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+              "Error: EPERM, Permission denied: \\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp\\opencode\\watchdog-phase3-fixture-aKX2ke '\\\\?\\[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp\\opencode\\watchdog-phase3-fixture-aKX2ke'\n    at rmSync (node:fs:1221:18)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:11:66\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1632:35\n    at wrapper (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2019:37)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3318:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3276:10)\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3602:52\n    at run (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1352:20)\n    at limiterFn (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1362:59)"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "originalFocused": {
+    "path": "runtime-rerun-tests.json",
+    "bytes": 2244,
+    "sha256": "87e5e86170466bf9ef4a20193a1905d98b1f9272a185fad293b83a3631b2a47a",
+    "success": true,
+    "files": 1,
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "runtimeProcess": [
+      {
+        "name": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "startTime": 1793923265788,
+        "endTime": 1793923360176.4016,
+        "status": "passed",
+        "message": "",
+        "assertions": [
+          {
+            "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+            "status": "passed",
+            "durationMs": 15881.981399999999,
+            "failureMessages": []
+          },
+          {
+            "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+            "status": "passed",
+            "durationMs": 23739.390399999997,
+            "failureMessages": []
+          },
+          {
+            "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+            "status": "passed",
+            "durationMs": 18135.907900000006,
+            "failureMessages": []
+          },
+          {
+            "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+            "status": "passed",
+            "durationMs": 36628.4016,
+            "failureMessages": []
+          }
+        ]
+      }
+    ]
+  },
+  "retainedLeftover": {
+    "directory": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\live-stage2-SGNCxp\\unit-tmp\\opencode\\watchdog-phase3-fixture-aKX2ke",
+    "files": [
+      {
+        "path": "storage/runtime-owner.sqlite",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "modifiedAt": "2026-11-05T23:58:03.933Z"
+      },
+      {
+        "path": "storage/watchdog.sqlite",
+        "bytes": 704512,
+        "sha256": "ab165ab7f6467564b373216fe71bfb80daa0ab9df1363839620d23e24a4813d2",
+        "modifiedAt": "2026-11-05T23:58:24.374Z"
+      },
+      {
+        "path": "storage/watchdog.sqlite-monitor-lock",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "modifiedAt": "2026-11-05T23:57:43.621Z"
+      }
+    ],
+    "databases": [
+      {
+        "path": "storage/runtime-owner.sqlite",
+        "copiedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "quickCheck": [
+          {
+            "quick_check": "ok"
+          }
+        ],
+        "counts": {}
+      },
+      {
+        "path": "storage/watchdog.sqlite",
+        "copiedSha256": "ab165ab7f6467564b373216fe71bfb80daa0ab9df1363839620d23e24a4813d2",
+        "quickCheck": [
+          {
+            "quick_check": "ok"
+          }
+        ],
+        "counts": {
+          "alerts": 6,
+          "cycles": 2,
+          "deliveries": 6,
+          "delivery_attempts": 6,
+          "delivery_events": 18,
+          "fingerprints": 6,
+          "operational_events": 0,
+          "oracle_assurance": 2,
+          "provider_limits": 0,
+          "schema_migrations": 5,
+          "streams": 1,
+          "worker_runtime": 1
+        },
+        "streams": [
+          {
+            "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+            "revision": 2
+          }
+        ],
+        "cycles": [
+          {
+            "id": "14a6232a-2bdf-4edc-a7a4-828da9f71f87",
+            "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+            "started_at": "2026-11-01T14:05:00.000Z",
+            "observed_at": "2026-11-01T14:05:00.000Z",
+            "completed_at": "2026-11-01T14:05:00.000Z",
+            "status": "INTERRUPTED"
+          },
+          {
+            "id": "8c97abcf-df3a-475a-a7cd-75b5238eed98",
+            "scope": "336b280ba879c3bbecba66a3d9f4c4cba7e012982abc19b324306992e858de20",
+            "started_at": "2026-11-01T14:05:00.000Z",
+            "observed_at": "2026-11-01T14:05:00.000Z",
+            "completed_at": "2026-11-01T14:05:00.000Z",
+            "status": "COMPLETED"
+          }
+        ],
+        "runtime": [
+          {
+            "status": "STOPPED",
+            "startedAt": "2026-11-01T14:05:00.000Z",
+            "updatedAt": "2026-11-01T14:05:00.000Z"
+          }
+        ]
+      },
+      {
+        "path": "storage/watchdog.sqlite-monitor-lock",
+        "copiedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "quickCheck": [
+          {
+            "quick_check": "ok"
+          }
+        ],
+        "counts": {}
+      }
+    ],
+    "originalsUnchanged": true
+  },
+  "originalGuard": {
+    "sha256": "486a717e1742b81f647c3df4e737ede4b73fdd3d6f72cc91d6e65a4c0010c846",
+    "records": 556,
+    "blockedRecords": 18,
+    "blockedByKind": {
+      "SOCKET": 18
+    },
+    "blockedLocalIPC": [
+      {
+        "pid": 644,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 644,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 7284,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 7284,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 15800,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 15800,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 808,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 808,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 11680,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 11680,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 6380,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 6380,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 16352,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 16352,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 15116,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 15116,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 12608,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      },
+      {
+        "pid": 12608,
+        "kind": "SOCKET",
+        "host": "LOCAL_IPC",
+        "port": null,
+        "outcome": "EXTERNAL_BLOCKED"
+      }
+    ],
+    "limitation": "The v1 log has no timestamps or IPC paths. Blocked LOCAL_IPC records do not demonstrate remote traffic and cannot assign a timeout phase or resource owner."
+  },
+  "correctedGuard": {
+    "path": "test-network-guard-v2.cjs",
+    "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "byteIdenticalCopy": true
+  },
+  "relevantProcessesAtInspection": [],
+  "constraints": {
+    "realMonitorStopped": true,
+    "onlySyntheticFailureDatabaseCopiesOpened": true,
+    "noRepositoryWrites": true,
+    "noProcessTermination": true
+  }
+}

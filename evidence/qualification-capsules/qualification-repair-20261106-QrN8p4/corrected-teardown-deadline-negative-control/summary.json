@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "name": "corrected-teardown-deadline-negative-control",
+  "mode": "deadline-latency-independent",
+  "status": "FAIL",
+  "completedAt": "2026-11-06T00:46:07.170Z",
+  "results": [
+    {
+      "label": "tests",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "test/runtime-process.test.ts",
+        "-t",
+        "fences a second process",
+        "--config",
+        "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\deadline-control.config.mjs",
+        "--configLoader=native",
+        "--no-cache",
+        "--no-fsModuleCache",
+        "--reporter=default",
+        "--reporter=json",
+        "--outputFile.json=[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\tests.json"
+      ],
+      "cwd": "C:/liquidation-watchdog",
+      "pid": 1120,
+      "startedAt": "2026-11-06T00:45:21.194Z",
+      "completedAt": "2026-11-06T00:46:06.444Z",
+      "durationMs": 45246.5847,
+      "exitCode": 1,
+      "signal": null,
+      "guardSha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+      "stdout": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\tests.stdout.txt",
+        "bytes": 847,
+        "sha256": "7a5580bf64e78edc11c794be906ff46a62cad0036692fe77c94ad545df6789ba"
+      },
+      "stderr": {
+        "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\tests.stderr.txt",
+        "bytes": 1154,
+        "sha256": "df0cf85c2c7d643850f12b40e89deb6f34b43bc2ae87a9c2d5d30470ff6ccf8c"
+      }
+    }
+  ],
+  "expectedSelectedTestAndFileCountsMet": false,
+  "evidenceClass": "EXPLICIT_DIAGNOSTIC_CONTROL_NOT_QUALIFICATION",
+  "tooling": {
+    "diagnostics": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\diagnostic-preloader-used.cjs",
+      "bytes": 6150,
+      "sha256": "2f7a67643235c6618a2fa650551d46f4245e0f8a297bfbb10c0764a511259c17"
+    },
+    "runner": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\test-runner-used.mjs",
+      "bytes": 11853,
+      "sha256": "0a55743febb86d81a7837f440b40093729d0a3efa1867eabe2c5c101a270175d"
+    },
+    "testSource": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\runtime-process-test-used.ts",
+      "bytes": 5805,
+      "sha256": "98a358c1a083cf84cbb2e3a7e8adf86986be630245943c5897e0be9d0e5665cb"
+    },
+    "runtimeHelper": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\runtime-helper-used.ts",
+      "bytes": 2335,
+      "sha256": "9d80eb2bf9e1b8468ca2458c6c571a67a110322e0e9b2bd34f0e66dee8191796"
+    },
+    "boundedLatencyControl": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\latency-preloader-used.cjs",
+      "bytes": 1465,
+      "sha256": "9b255b87037b338dc8a8bd7875eeecd3dae7f1fb5a772906e5c6b241a2d75910"
+    },
+    "deadlineControlConfig": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\deadline-control-config-used.mjs",
+      "bytes": 1558,
+      "sha256": "ae992e3a910515096452b37e3adc0b9e72c93b2aa1845b0dc2a80ab66c68ebc4"
+    },
+    "deadlineControlTransformedSource": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\explicit-deadline-transformed-test.ts",
+      "bytes": 5782,
+      "sha256": "260332738f4339ab43c37862d75c1c1781045686a775769aa9c2954b7fb6c1d6"
+    }
+  },
+  "tests": {
+    "success": false,
+    "files": 1,
+    "total": 4,
+    "passed": 0,
+    "failed": 1,
+    "pending": 3,
+    "todo": 0,
+    "assertions": [
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "guards source imports against HTTP construction, SQLite opens and provider requests",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGINT (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "shuts down a child runtime through SIGTERM (Windows: IPC handler simulation)",
+        "status": "skipped",
+        "failureMessages": []
+      },
+      {
+        "file": "C:/liquidation-watchdog/test/runtime-process.test.ts",
+        "title": "fences a second process and recovers after actual forced OS termination with an unfinished cycle",
+        "status": "failed",
+        "durationMs": 40226.619999999995,
+        "failureMessages": [
+          "Error: Test timed out in 40000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at C:/liquidation-watchdog/test/runtime-process.test.ts:68:3\n    at file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///C:/liquidation-watchdog/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+        ]
+      }
+    ]
+  },
+  "networkGuard": {
+    "version": "v2",
+    "sha256": "c20447118ed79039c832d6fdd171794659fcd905654e805adcd48ab67c614da6",
+    "records": 4,
+    "blockedRecords": 0,
+    "blockedLocalIPC": 0,
+    "demonstratedRemoteAttempts": 0,
+    "allowedLocalNamedPipes": 4,
+    "caveat": null
+  },
+  "cleanup": {
+    "remainingFixtureDirectories": [],
+    "removalAttempts": 1,
+    "removalErrors": [],
+    "pathsStillExist": [],
+    "children": [
+      {
+        "pid": 6348,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:45:47.105Z",
+          "hrNs": "37795785902300",
+          "pid": 4248,
+          "ppid": 1120,
+          "sequence": 37,
+          "event": "child_close",
+          "childPid": 6348,
+          "exitCode": null,
+          "signalCode": "SIGKILL",
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": null,
+          "signal": "SIGKILL",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      },
+      {
+        "pid": 9284,
+        "exited": true,
+        "closed": true,
+        "disconnected": true,
+        "stateAtClose": {
+          "at": "2026-11-06T00:46:06.146Z",
+          "hrNs": "37814826766600",
+          "pid": 4248,
+          "ppid": 1120,
+          "sequence": 51,
+          "event": "child_close",
+          "childPid": 9284,
+          "exitCode": null,
+          "signalCode": "SIGKILL",
+          "connected": false,
+          "stdoutDestroyed": true,
+          "stderrDestroyed": true,
+          "code": null,
+          "signal": "SIGKILL",
+          "handles": {
+            "Pipe": 1,
+            "Socket": 2,
+            "ChildProcess": 1
+          }
+        }
+      }
+    ],
+    "relevantFixtureProcessesAfterRun": [],
+    "noObservedOrphanProcesses": true
+  },
+  "logs": {
+    "network": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\network-guard.jsonl",
+      "bytes": 1352,
+      "sha256": "9e8783367cd3d7212c5bfb5338ebb7d051aa3a4626877c55d0c5a515572cd168"
+    },
+    "lifecycle": {
+      "file": "[REDACTED_LOCAL_PATH]\\AppData\\Local\\Temp\\opencode\\qualification-repair-20261106-QrN8p4\\corrected-teardown-deadline-negative-control\\process-lifecycle.jsonl",
+      "bytes": 35126,
+      "sha256": "6eb97bde105ac2e3f1127f6cd887b6d19647922a8088816cd522ac76b7ee5902"
+    }
+  },
+  "safety": {
+    "realMonitorStopped": true,
+    "syntheticRuntimeFixturesOnly": true,
+    "externalNotifications": false,
+    "transactionsOrWalletOperations": false,
+    "noIntegrationTests": true,
+    "timeoutsOrAssertionsChangedByDiagnosticPreloader": false,
+    "readinessMessagesIntentionallyDelayedForControl": true,
+    "aggregateDeadlineIntentionallyLoweredForControl": true,
+    "externalOutputsAndTemporaryFilesOnly": true
+  }
+}
